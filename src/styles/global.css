@@ -1,0 +1,128 @@
+/* 全局样式 - 宝可梦图鉴主题 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --safe-area-top: env(safe-area-inset-top);
+  --safe-area-bottom: env(safe-area-inset-bottom);
+
+  /* ===== 统一配色系统 ===== */
+  --poke-red: #ff4459;          /* 主品牌色：鲜亮 Poké Ball 红 */
+  --poke-red-deep: #e0314a;     /* 深红，用于渐变收尾/按压 */
+  --poke-red-soft: #ffe3e7;     /* 极浅红，用于激活背景 */
+  --poke-cream: #fff7f2;        /* 暖米白，页面底色 */
+  --poke-surface: #ffffff;      /* 卡片表面 */
+  --poke-ink: #2b2d42;          /* 主文字 */
+  --poke-ink-2: #5c5f73;        /* 次文字 */
+  --poke-ink-3: #9aa0b4;        /* 弱文字 */
+  --poke-line: #efeef2;         /* 分隔线 */
+  --poke-blue: #4dabf7;
+  --poke-yellow: #ffd43b;
+  --poke-dark: #2b2d42;
+
+  /* 统一阴影 */
+  --shadow-sm: 0 2px 8px rgba(43, 45, 66, 0.06);
+  --shadow-md: 0 6px 20px rgba(43, 45, 66, 0.08);
+  --shadow-lg: 0 12px 32px rgba(43, 45, 66, 0.12);
+
+  /* 统一圆角 */
+  --radius-sm: 12px;
+  --radius-md: 16px;
+  --radius-lg: 22px;
+  --radius-pill: 999px;
+
+  padding-top: var(--safe-area-top);
+  padding-bottom: var(--safe-area-bottom);
+}
+
+body {
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    'Helvetica Neue',
+    Arial,
+    'PingFang SC',
+    'Hiragino Sans GB',
+    'Microsoft YaHei',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--poke-cream);
+  color: var(--poke-ink);
+  -webkit-user-select: none;
+  user-select: none;
+  overscroll-behavior: none;
+}
+
+/* 全局细滚动条：可见但不额外占据位置（覆盖式半透明） */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.22) transparent;
+  -ms-overflow-style: auto;
+}
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.22);
+  border-radius: 6px;
+}
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 0, 0, 0.38);
+}
+
+#app {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* Vant 主题覆盖 */
+:root:root {
+  --van-primary-color: #ff4459;
+  --van-tabbar-item-active-color: #ff4459;
+  --van-button-primary-background-color: #ff4459;
+  --van-button-primary-border-color: #ff4459;
+}
+
+/* 共享页面顶部渐变背景（Tools / Settings 等页面使用） */
+.page-gradient::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 320px;
+  background: linear-gradient(
+    180deg,
+    var(--poke-red) 0%,
+    var(--poke-red) 42%,
+    var(--poke-red-deep) 64%,
+    #ffb3bd 82%,
+    var(--poke-cream) 100%
+  );
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* 共享「无数据」提示样式 */
+.no-data {
+  font-size: 14px;
+  color: var(--poke-ink-3);
+  text-align: center;
+  padding: 12px 0;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "android-vue-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "build:android": "vite build && npx cap sync android",
+    "db:update": "node scripts/build-pokemon-db.mjs",
+    "preview": "vite preview",
+    "cap:init": "npx cap init android-vue-app com.example.androidvueapp --web-dir=dist",
+    "cap:add": "npx cap add android",
+    "cap:sync": "npx cap sync",
+    "cap:open": "npx cap open android"
+  },
+  "dependencies": {
+    "@capacitor/core": "^7.2.0",
+    "pinia": "^3.0.2",
+    "vue": "^3.5.13",
+    "vue-router": "^4.5.0"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.2.0",
+    "@capacitor/cli": "^7.2.0",
+    "@vitejs/plugin-vue": "^5.2.3",
+    "exceljs": "^4.4.0",
+    "typescript": "~5.7.2",
+    "vant": "^4.9.15",
+    "vite": "^6.2.0",
+    "vue-tsc": "^2.2.0"
+  },
+  "volta": {
+    "node": "22.22.2"
+  }
+}

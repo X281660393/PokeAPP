@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="512" height="512">
+  <defs>
+    <clipPath id="ball"><circle cx="512" cy="512" r="472"/></clipPath>
+    <clipPath id="half"><rect x="0" y="512" width="1024" height="512"/></clipPath>
+  </defs>
+  <!-- outer outline -->
+  <circle cx="512" cy="512" r="472" fill="#171717"/>
+  <!-- face -->
+  <g clip-path="url(#ball)">
+    <!-- red top -->
+    <circle cx="512" cy="512" r="450" fill="#EF4444"/>
+    <!-- white bottom -->
+    <g clip-path="url(#half)">
+      <circle cx="512" cy="512" r="450" fill="#FFFFFF"/>
+    </g>
+    <!-- black belt -->
+    <rect x="62" y="458" width="900" height="108" fill="#171717"/>
+    <!-- center button ring -->
+    <circle cx="512" cy="512" r="135" fill="#171717"/>
+    <circle cx="512" cy="512" r="81" fill="#FFFFFF"/>
+  </g>
+</svg>

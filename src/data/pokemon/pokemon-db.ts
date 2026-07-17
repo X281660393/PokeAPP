@@ -1,0 +1,41015 @@
+// 此文件由 scripts/data-excel.mjs 从 Excel 导回生成（格式同 build-pokemon-db.mjs）。
+import type { PokemonDetail } from '@/types'
+
+export interface PokemonFull extends PokemonDetail {
+  /** 特性英文名 + 中文名（如 "静电(static)"）保留英文便于后续扩展 */
+}
+
+export const POKEMON_DB: PokemonFull[] = [
+  {
+  id: 1,
+  name: "bulbasaur",
+  nameZh: "妙蛙种子",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png",
+  height: 7,
+  weight: 69,
+  abilities: ["茂盛(overgrow)"],
+  hiddenAbilities: ["叶绿素(chlorophyll)"],
+  gen: 1,
+  region: "关都",
+  genera: "种子宝可梦",
+  description: "在出生后的一段时间内， 它会吸收背上种子里 储存着的营养成长。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 49
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 49
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 2,
+  name: "ivysaur",
+  nameZh: "妙蛙草",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/2.png",
+  height: 10,
+  weight: 130,
+  abilities: ["茂盛(overgrow)", "叶绿素(chlorophyll)"],
+  hiddenAbilities: ["叶绿素(chlorophyll)"],
+  gen: 1,
+  region: "关都",
+  genera: "种子宝可梦",
+  description: "沐浴在阳光下越久， 身体内会涌出越多力量， 背上的花苞也会渐渐成长。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 62
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 3,
+  name: "venusaur",
+  nameZh: "妙蛙花",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/3.png",
+  height: 20,
+  weight: 1000,
+  abilities: ["茂盛(overgrow)", "叶绿素(chlorophyll)"],
+  hiddenAbilities: ["叶绿素(chlorophyll)"],
+  gen: 1,
+  region: "关都",
+  genera: "种子宝可梦",
+  description: "花朵散发出的迷人香味 能安抚激动的心情， 甚至消弭斗争。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 82
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 83
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 4,
+  name: "charmander",
+  nameZh: "小火龙",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png",
+  height: 6,
+  weight: 85,
+  abilities: ["猛火(blaze)", "太阳之力(solar-power)"],
+  hiddenAbilities: ["太阳之力(solar-power)"],
+  gen: 1,
+  region: "关都",
+  genera: "蜥蜴宝可梦",
+  description: "生下来的时候， 尾巴上就有火焰在燃烧。 火焰熄灭时，它的生命也会结束。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 39
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 52
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 43
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 5,
+  name: "charmeleon",
+  nameZh: "火恐龙",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/5.png",
+  height: 11,
+  weight: 190,
+  abilities: ["猛火(blaze)", "太阳之力(solar-power)"],
+  hiddenAbilities: ["太阳之力(solar-power)"],
+  gen: 1,
+  region: "关都",
+  genera: "火焰宝可梦",
+  description: "如果它在战斗中亢奋起来， 就会喷出灼热的火焰， 把周围的东西烧得一干二净。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 58
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 64
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 58
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 6,
+  name: "charizard",
+  nameZh: "喷火龙",
+  types: ["fire", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+  height: 17,
+  weight: 905,
+  abilities: ["猛火(blaze)", "太阳之力(solar-power)"],
+  hiddenAbilities: ["太阳之力(solar-power)"],
+  gen: 1,
+  region: "关都",
+  genera: "火焰宝可梦",
+  description: "能用翅膀飞到距地面 １４００米的高度。 会吐出高温火焰。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 84
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 78
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 109
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 7,
+  name: "squirtle",
+  nameZh: "杰尼龟",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png",
+  height: 5,
+  weight: 90,
+  abilities: ["激流(torrent)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 1,
+  region: "关都",
+  genera: "小龟宝可梦",
+  description: "当它遇到危险的时候， 会将四肢收回龟壳里保护自己， 同时从嘴里喷出水来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 44
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 48
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 64
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 8,
+  name: "wartortle",
+  nameZh: "卡咪龟",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/8.png",
+  height: 10,
+  weight: 225,
+  abilities: ["激流(torrent)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 1,
+  region: "关都",
+  genera: "龟宝可梦",
+  description: "会灵巧地摆动自己 毛茸茸的耳朵和尾巴， 借此在水中保持平衡。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 59
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 63
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 9,
+  name: "blastoise",
+  nameZh: "水箭龟",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/9.png",
+  height: 16,
+  weight: 855,
+  abilities: ["激流(torrent)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 1,
+  region: "关都",
+  genera: "甲壳宝可梦",
+  description: "从龟壳上的大炮里 放出的喷射水流 足以贯穿厚实的铁板。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 79
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 83
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 78
+}]
+},
+  {
+  id: 10,
+  name: "caterpie",
+  nameZh: "绿毛虫",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png",
+  height: 3,
+  weight: 29,
+  abilities: ["鳞粉(shield-dust)", "逃跑(run-away)"],
+  hiddenAbilities: ["逃跑(run-away)"],
+  gen: 1,
+  region: "关都",
+  genera: "虫宝宝宝可梦",
+  description: "别看它的脚很短， 因为是吸盘，所以无论是 斜坡还是墙壁都能轻松前进。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 20
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 11,
+  name: "metapod",
+  nameZh: "铁甲蛹",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png",
+  height: 7,
+  weight: 99,
+  abilities: ["蜕皮(shed-skin)"],
+  hiddenAbilities: [],
+  gen: 1,
+  region: "关都",
+  genera: "蛹宝可梦",
+  description: "虽然有坚硬的外壳， 因为壳里的身体很软， 所以无法抵抗强力的攻击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 12,
+  name: "butterfree",
+  nameZh: "巴大蝶",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png",
+  height: 11,
+  weight: 320,
+  abilities: ["复眼(compound-eyes)", "有色眼镜(tinted-lens)"],
+  hiddenAbilities: ["有色眼镜(tinted-lens)"],
+  gen: 1,
+  region: "关都",
+  genera: "蝴蝶宝可梦",
+  description: "每天都忙着采集花蜜。 习惯往腿部的细毛上涂满花蜜， 然后带回巢穴里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 13,
+  name: "weedle",
+  nameZh: "独角虫",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/13.png",
+  height: 3,
+  weight: 32,
+  abilities: ["鳞粉(shield-dust)", "逃跑(run-away)"],
+  hiddenAbilities: ["逃跑(run-away)"],
+  gen: 1,
+  region: "关都",
+  genera: "毛毛虫宝可梦",
+  description: "头上长有尖锐的针。 它喜欢藏在森林或 草丛里大量吞食树叶。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 20
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 14,
+  name: "kakuna",
+  nameZh: "铁壳蛹",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/14.png",
+  height: 6,
+  weight: 100,
+  abilities: ["蜕皮(shed-skin)"],
+  hiddenAbilities: [],
+  gen: 1,
+  region: "关都",
+  genera: "蛹宝可梦",
+  description: "虽然几乎动也动不了， 但是如果遇到了危险， 有时似乎会竖起毒刺来反抗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 25
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 15,
+  name: "beedrill",
+  nameZh: "大针蜂",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/15.png",
+  height: 10,
+  weight: 295,
+  abilities: ["虫之预感(swarm)", "狙击手(sniper)"],
+  hiddenAbilities: ["狙击手(sniper)"],
+  gen: 1,
+  region: "关都",
+  genera: "毒蜂宝可梦",
+  description: "它会用双手和 尾部的３根毒针 反复刺伤敌人。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 16,
+  name: "pidgey",
+  nameZh: "波波",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/16.png",
+  height: 3,
+  weight: 18,
+  abilities: ["锐利目光(keen-eye)", "蹒跚(tangled-feet)", "健壮胸肌(big-pecks)"],
+  hiddenAbilities: ["健壮胸肌(big-pecks)"],
+  gen: 1,
+  region: "关都",
+  genera: "小鸟宝可梦",
+  description: "性格沉着冷静，即使受到 攻击也很少反击，只会朝 对手扬起沙子保护自己。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 56
+}]
+},
+  {
+  id: 17,
+  name: "pidgeotto",
+  nameZh: "比比鸟",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/17.png",
+  height: 11,
+  weight: 300,
+  abilities: ["锐利目光(keen-eye)", "蹒跚(tangled-feet)", "健壮胸肌(big-pecks)"],
+  hiddenAbilities: ["健壮胸肌(big-pecks)"],
+  gen: 1,
+  region: "关都",
+  genera: "鸟宝可梦",
+  description: "拥有超群的体力，而且 飞翔范围广，经常飞到 很远的地方寻找食物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 63
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 71
+}]
+},
+  {
+  id: 18,
+  name: "pidgeot",
+  nameZh: "大比鸟",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/18.png",
+  height: 15,
+  weight: 395,
+  abilities: ["锐利目光(keen-eye)", "蹒跚(tangled-feet)", "健壮胸肌(big-pecks)"],
+  hiddenAbilities: ["健壮胸肌(big-pecks)"],
+  gen: 1,
+  region: "关都",
+  genera: "鸟宝可梦",
+  description: "以２马赫的飞行速度来 觅食。它巨大的爪子是 非常令人惧怕的武器。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 83
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 101
+}]
+},
+  {
+  id: 19,
+  name: "rattata",
+  nameZh: "小拉达",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png",
+  height: 3,
+  weight: 35,
+  abilities: ["逃跑(run-away)", "毅力(guts)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 1,
+  region: "关都",
+  genera: "鼠宝可梦",
+  description: "有两颗大门牙，见什么咬什么。 只要看到１只小拉达出没， 附近肯定还住着40只以上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 56
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 72
+}]
+},
+  {
+  id: 20,
+  name: "raticate",
+  nameZh: "拉达",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/20.png",
+  height: 7,
+  weight: 185,
+  abilities: ["逃跑(run-away)", "毅力(guts)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 1,
+  region: "关都",
+  genera: "鼠宝可梦",
+  description: "它的后脚上长着 小蹼，以便它在 水中游泳寻找食物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 81
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 21,
+  name: "spearow",
+  nameZh: "烈雀",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/21.png",
+  height: 3,
+  weight: 20,
+  abilities: ["锐利目光(keen-eye)", "狙击手(sniper)"],
+  hiddenAbilities: ["狙击手(sniper)"],
+  gen: 1,
+  region: "关都",
+  genera: "小鸟宝可梦",
+  description: "不擅长高空飞行。 会以超高速在地盘里四处盘旋， 以保护自己的地盘不被侵犯。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 31
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 31
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 22,
+  name: "fearow",
+  nameZh: "大嘴雀",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/22.png",
+  height: 12,
+  weight: 380,
+  abilities: ["锐利目光(keen-eye)", "狙击手(sniper)"],
+  hiddenAbilities: ["狙击手(sniper)"],
+  gen: 1,
+  region: "关都",
+  genera: "鸟嘴宝可梦",
+  description: "很久以前就存在的宝可梦。 哪怕只察觉到一丝危险， 都会立即飞向高空。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 61
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 61
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 23,
+  name: "ekans",
+  nameZh: "阿柏蛇",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png",
+  height: 20,
+  weight: 69,
+  abilities: ["威吓(intimidate)", "蜕皮(shed-skin)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 1,
+  region: "关都",
+  genera: "蛇宝可梦",
+  description: "身体会随着年龄增长不断变长。 每到夜里，它会一圈圈地 将身体缠绕在树枝上休息。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 44
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 54
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 24,
+  name: "arbok",
+  nameZh: "阿柏怪",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/24.png",
+  height: 35,
+  weight: 650,
+  abilities: ["威吓(intimidate)", "蜕皮(shed-skin)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 1,
+  region: "关都",
+  genera: "眼镜蛇宝可梦",
+  description: "根据研究证实，它腹部 那可怕的纹路大约有 ６个种类已经得到确认。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 69
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 79
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 25,
+  name: "pikachu",
+  nameZh: "皮卡丘",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png",
+  height: 4,
+  weight: 60,
+  abilities: ["静电(static)", "避雷针(lightning-rod)"],
+  hiddenAbilities: ["避雷针(lightning-rod)"],
+  gen: 1,
+  region: "关都",
+  genera: "鼠宝可梦",
+  description: "皮卡丘们把尾巴 贴在一起交换电流， 其实是在互相打招呼。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 26,
+  name: "raichu",
+  nameZh: "雷丘",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/26.png",
+  height: 8,
+  weight: 300,
+  abilities: ["静电(static)", "避雷针(lightning-rod)"],
+  hiddenAbilities: ["避雷针(lightning-rod)"],
+  gen: 1,
+  region: "关都",
+  genera: "鼠宝可梦",
+  description: "如果电囊空了， 它就会直直地竖起尾巴， 收集空气中的电流。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 27,
+  name: "sandshrew",
+  nameZh: "穿山鼠",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/27.png",
+  height: 6,
+  weight: 120,
+  abilities: ["沙隐(sand-veil)", "拨沙(sand-rush)"],
+  hiddenAbilities: ["拨沙(sand-rush)"],
+  gen: 1,
+  region: "关都",
+  genera: "鼠宝可梦",
+  description: "会在地上挖洞建造巢穴。 挖洞时，即便遇到地里的坚硬岩石， 也能用尖锐的爪子弄碎后继续挖进。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 28,
+  name: "sandslash",
+  nameZh: "穿山王",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/28.png",
+  height: 10,
+  weight: 295,
+  abilities: ["沙隐(sand-veil)", "拨沙(sand-rush)"],
+  hiddenAbilities: ["拨沙(sand-rush)"],
+  gen: 1,
+  region: "关都",
+  genera: "鼠宝可梦",
+  description: "会将锐利的爪子钩在树上爬树。 这是为了设法使树果掉落， 分给等在树下的穿山鼠们。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 29,
+  name: "nidoran-f",
+  nameZh: "尼多兰",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/29.png",
+  height: 4,
+  weight: 70,
+  abilities: ["毒刺(poison-point)", "斗争心(rivalry)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 1,
+  region: "关都",
+  genera: "毒针宝可梦",
+  description: "用坚硬的门牙咬碎 树果吃。和雄性相比， 角的尖端稍圆一些。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 47
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 52
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 41
+}]
+},
+  {
+  id: 30,
+  name: "nidorina",
+  nameZh: "尼多娜",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/30.png",
+  height: 8,
+  weight: 200,
+  abilities: ["毒刺(poison-point)", "斗争心(rivalry)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 1,
+  region: "关都",
+  genera: "毒针宝可梦",
+  description: "如果族群遇到了危险， 会和伙伴们团结起来， 施展出超音波大合唱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 62
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 67
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 56
+}]
+},
+  {
+  id: 31,
+  name: "nidoqueen",
+  nameZh: "尼多后",
+  types: ["poison", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/31.png",
+  height: 13,
+  weight: 600,
+  abilities: ["毒刺(poison-point)", "斗争心(rivalry)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 1,
+  region: "关都",
+  genera: "钻锥宝可梦",
+  description: "把孩子放在背上刺与刺的 空隙里来哄它们。在这时 绝对不会释放毒素。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 92
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 87
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 76
+}]
+},
+  {
+  id: 32,
+  name: "nidoran-m",
+  nameZh: "尼多朗",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/32.png",
+  height: 5,
+  weight: 90,
+  abilities: ["毒刺(poison-point)", "斗争心(rivalry)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 1,
+  region: "关都",
+  genera: "毒针宝可梦",
+  description: "身材虽小，却性格勇敢。 为了保护相好的雌性， 会不顾生命果敢地战斗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 46
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 57
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 33,
+  name: "nidorino",
+  nameZh: "尼多力诺",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/33.png",
+  height: 9,
+  weight: 195,
+  abilities: ["毒刺(poison-point)", "斗争心(rivalry)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 1,
+  region: "关都",
+  genera: "毒针宝可梦",
+  description: "神经敏感，动不动就打架。 体内的肾上腺素一增加， 毒素的浓度也会提高。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 61
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 72
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 57
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 34,
+  name: "nidoking",
+  nameZh: "尼多王",
+  types: ["poison", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/34.png",
+  height: 14,
+  weight: 620,
+  abilities: ["毒刺(poison-point)", "斗争心(rivalry)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 1,
+  region: "关都",
+  genera: "钻锥宝可梦",
+  description: "以力量为傲的宝可梦。 用自己的粗尾巴和连钻石 都能击碎的角，豪爽地战斗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 81
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 102
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 77
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 35,
+  name: "clefairy",
+  nameZh: "皮皮",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/35.png",
+  height: 6,
+  weight: 75,
+  abilities: ["迷人之躯(cute-charm)", "魔法防守(magic-guard)", "友情防守(friend-guard)"],
+  hiddenAbilities: ["友情防守(friend-guard)"],
+  gen: 1,
+  region: "关都",
+  genera: "妖精宝可梦",
+  description: "因可爱的举止和叫声 而广受欢迎的宝可梦。 不过很少被人发现。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 36,
+  name: "clefable",
+  nameZh: "皮可西",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+  height: 13,
+  weight: 400,
+  abilities: ["迷人之躯(cute-charm)", "魔法防守(magic-guard)", "纯朴(unaware)"],
+  hiddenAbilities: ["纯朴(unaware)"],
+  gen: 1,
+  region: "关都",
+  genera: "妖精宝可梦",
+  description: "听觉灵敏，连１公里以外 针落地的声音都听得见， 因此平时会待在安静的地方。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 73
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 37,
+  name: "vulpix",
+  nameZh: "六尾",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png",
+  height: 6,
+  weight: 99,
+  abilities: ["引火(flash-fire)", "日照(drought)"],
+  hiddenAbilities: ["日照(drought)"],
+  gen: 1,
+  region: "关都",
+  genera: "狐狸宝可梦",
+  description: "随着身体的成长， ６根尾巴的毛发也会变得更漂亮。 紧紧抱着它时能感到微微的温暖。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 38
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 41
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 38,
+  name: "ninetales",
+  nameZh: "九尾",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+  height: 11,
+  weight: 199,
+  abilities: ["引火(flash-fire)", "日照(drought)"],
+  hiddenAbilities: ["日照(drought)"],
+  gen: 1,
+  region: "关都",
+  genera: "狐狸宝可梦",
+  description: "聪明伶俐，但爱记仇。 据说如果敢乱抓它的尾巴， 它就会缠着你作祟１０００年。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 73
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 76
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 81
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 39,
+  name: "jigglypuff",
+  nameZh: "胖丁",
+  types: ["normal", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png",
+  height: 5,
+  weight: 55,
+  abilities: ["迷人之躯(cute-charm)", "好胜(competitive)", "友情防守(friend-guard)"],
+  hiddenAbilities: ["友情防守(friend-guard)"],
+  gen: 1,
+  region: "关都",
+  genera: "气球宝可梦",
+  description: "能够随意改变声音的波长， 唱出听了绝对会 犯困的神奇旋律。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 115
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 20
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 40,
+  name: "wigglytuff",
+  nameZh: "胖可丁",
+  types: ["normal", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+  height: 10,
+  weight: 120,
+  abilities: ["迷人之躯(cute-charm)", "好胜(competitive)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 1,
+  region: "关都",
+  genera: "气球宝可梦",
+  description: "以自己细腻的体毛为傲。 尤其是额头上的卷毛， 更是有着天堂般的极致触感。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 140
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 41,
+  name: "zubat",
+  nameZh: "超音蝠",
+  types: ["poison", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png",
+  height: 8,
+  weight: 75,
+  abilities: ["精神力(inner-focus)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 1,
+  region: "关都",
+  genera: "蝙蝠宝可梦",
+  description: "栖息在晒不到阳光的洞窟里。 到了早晨便会和同伴聚集起来， 一边互相取暖一边睡觉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 42,
+  name: "golbat",
+  nameZh: "大嘴蝠",
+  types: ["poison", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/42.png",
+  height: 16,
+  weight: 550,
+  abilities: ["精神力(inner-focus)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 1,
+  region: "关都",
+  genera: "蝙蝠宝可梦",
+  description: "用小而灵活的脚走路。 会悄悄接近正在睡觉的猎物， 用尖牙咬住对方吸取血液。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 43,
+  name: "oddish",
+  nameZh: "走路草",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+  height: 5,
+  weight: 54,
+  abilities: ["叶绿素(chlorophyll)", "逃跑(run-away)"],
+  hiddenAbilities: ["逃跑(run-away)"],
+  gen: 1,
+  region: "关都",
+  genera: "杂草宝可梦",
+  description: "白天会为躲避太阳 而钻入凉爽的地下。 会通过沐浴月光成长。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 44,
+  name: "gloom",
+  nameZh: "臭臭花",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/44.png",
+  height: 8,
+  weight: 86,
+  abilities: ["叶绿素(chlorophyll)", "恶臭(stench)"],
+  hiddenAbilities: ["恶臭(stench)"],
+  gen: 1,
+  region: "关都",
+  genera: "杂草宝可梦",
+  description: "雌蕊会散发一种 极其强烈的恶臭， 能让２公里远的人昏倒。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 45,
+  name: "vileplume",
+  nameZh: "霸王花",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/45.png",
+  height: 12,
+  weight: 186,
+  abilities: ["叶绿素(chlorophyll)", "孢子(effect-spore)"],
+  hiddenAbilities: ["孢子(effect-spore)"],
+  gen: 1,
+  region: "关都",
+  genera: "花宝可梦",
+  description: "虽然花瓣越大， 就能放出越多的花粉， 但这样脑袋会变沉，容易疲倦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 46,
+  name: "paras",
+  nameZh: "派拉斯",
+  types: ["bug", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/46.png",
+  height: 3,
+  weight: 54,
+  abilities: ["孢子(effect-spore)", "干燥皮肤(dry-skin)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 1,
+  region: "关都",
+  genera: "蘑菇宝可梦",
+  description: "它会通过挖洞来从树根里 吸取营养，但大部分营养 都会被背上的蘑菇抢走。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 47,
+  name: "parasect",
+  nameZh: "派拉斯特",
+  types: ["bug", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/47.png",
+  height: 10,
+  weight: 295,
+  abilities: ["孢子(effect-spore)", "干燥皮肤(dry-skin)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 1,
+  region: "关都",
+  genera: "蘑菇宝可梦",
+  description: "由于虫子的精华不断被吸走， 在思考的似乎已经不是虫子， 而是背上的蘑菇了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 48,
+  name: "venonat",
+  nameZh: "毛球",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/48.png",
+  height: 10,
+  weight: 300,
+  abilities: ["复眼(compound-eyes)", "有色眼镜(tinted-lens)", "逃跑(run-away)"],
+  hiddenAbilities: ["逃跑(run-away)"],
+  gen: 1,
+  region: "关都",
+  genera: "昆虫宝可梦",
+  description: "在明亮的地方你便能发现它 具有雷达功能的大眼其实是 由许多个小眼睛聚集而成的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 49,
+  name: "venomoth",
+  nameZh: "摩鲁蛾",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/49.png",
+  height: 15,
+  weight: 125,
+  abilities: ["鳞粉(shield-dust)", "有色眼镜(tinted-lens)", "奇迹皮肤(wonder-skin)"],
+  hiddenAbilities: ["奇迹皮肤(wonder-skin)"],
+  gen: 1,
+  region: "关都",
+  genera: "毒蛾宝可梦",
+  description: "如果不小心把它翅膀上的鳞粉 沾到了身上，那不但会很难去除， 更糟的是毒素也会从那里渗入。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 50,
+  name: "diglett",
+  nameZh: "地鼠",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/50.png",
+  height: 2,
+  weight: 8,
+  abilities: ["沙隐(sand-veil)", "沙穴(arena-trap)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 1,
+  region: "关都",
+  genera: "鼹鼠宝可梦",
+  description: "在地下较浅的地方移动。 被它挖掘过的地面会鼓起来， 所以非常容易发现。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 10
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 25
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 51,
+  name: "dugtrio",
+  nameZh: "三地鼠",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/51.png",
+  height: 7,
+  weight: 333,
+  abilities: ["沙隐(sand-veil)", "沙穴(arena-trap)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 1,
+  region: "关都",
+  genera: "鼹鼠宝可梦",
+  description: "三胞胎的地鼠，拥有能够挖掘到 地下１００公里深的潜力。没人知道 它在地下的部分究竟长成什么样子。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 120
+}]
+},
+  {
+  id: 52,
+  name: "meowth",
+  nameZh: "喵喵",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png",
+  height: 4,
+  weight: 42,
+  abilities: ["捡拾(pickup)", "技术高手(technician)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 1,
+  region: "关都",
+  genera: "妖怪猫宝可梦",
+  description: "为了不弄脏额头上的 金币，会常常洗脸。 和伽勒尔的喵喵关系不好。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 53,
+  name: "persian",
+  nameZh: "猫老大",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/53.png",
+  height: 10,
+  weight: 320,
+  abilities: ["柔软(limber)", "技术高手(technician)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 1,
+  region: "关都",
+  genera: "暹罗猫宝可梦",
+  description: "拥有优雅高贵的身姿。 与野蛮的喵头目性格不合， 互相看不起对方。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 115
+}]
+},
+  {
+  id: 54,
+  name: "psyduck",
+  nameZh: "可达鸭",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png",
+  height: 8,
+  weight: 196,
+  abilities: ["湿气(damp)", "无关天气(cloud-nine)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 1,
+  region: "关都",
+  genera: "鸭宝可梦",
+  description: "头痛会随着压力逐渐累积 而不断加剧。会用强大的 念力击垮周围的一切。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 52
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 55,
+  name: "golduck",
+  nameZh: "哥达鸭",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/55.png",
+  height: 17,
+  weight: 766,
+  abilities: ["湿气(damp)", "无关天气(cloud-nine)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 1,
+  region: "关都",
+  genera: "鸭宝可梦",
+  description: "古老的故事中说， 它会把污染河水的 人类拖进水中带走。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 82
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 78
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 56,
+  name: "mankey",
+  nameZh: "猴怪",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/56.png",
+  height: 5,
+  weight: 280,
+  abilities: ["干劲(vital-spirit)", "愤怒穴位(anger-point)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 1,
+  region: "关都",
+  genera: "猪猴宝可梦",
+  description: "身体轻盈，在树上生活。 常因鸡毛蒜皮的小事发火 而飞扑到周围的东西上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 57,
+  name: "primeape",
+  nameZh: "火暴猴",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/57.png",
+  height: 10,
+  weight: 320,
+  abilities: ["干劲(vital-spirit)", "愤怒穴位(anger-point)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 1,
+  region: "关都",
+  genera: "猪猴宝可梦",
+  description: "只有在谁都不在身边的 时候才不生气，但几乎 没有人目击过这种情况。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 58,
+  name: "growlithe",
+  nameZh: "卡蒂狗",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+  height: 7,
+  weight: 190,
+  abilities: ["威吓(intimidate)", "引火(flash-fire)", "正义之心(justified)"],
+  hiddenAbilities: ["正义之心(justified)"],
+  gen: 1,
+  region: "关都",
+  genera: "小狗宝可梦",
+  description: "性格忠诚。 为了保护自己的训练家， 会拼命地朝对手狂吠。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 59,
+  name: "arcanine",
+  nameZh: "风速狗",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+  height: 19,
+  weight: 1550,
+  abilities: ["威吓(intimidate)", "引火(flash-fire)", "正义之心(justified)"],
+  hiddenAbilities: ["正义之心(justified)"],
+  gen: 1,
+  region: "关都",
+  genera: "传说宝可梦",
+  description: "从古时候起就是俘获了 众多人心的美丽宝可梦。 能像飞一样轻巧地奔跑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 60,
+  name: "poliwag",
+  nameZh: "蚊香蝌蚪",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png",
+  height: 6,
+  weight: 124,
+  abilities: ["储水(water-absorb)", "湿气(damp)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 1,
+  region: "关都",
+  genera: "蝌蚪宝可梦",
+  description: "在水流湍急的河里， 会把厚厚的嘴唇像吸盘那样 紧紧吸在岩石上避免被冲走。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 61,
+  name: "poliwhirl",
+  nameZh: "蚊香君",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png",
+  height: 10,
+  weight: 200,
+  abilities: ["储水(water-absorb)", "湿气(damp)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 1,
+  region: "关都",
+  genera: "蝌蚪宝可梦",
+  description: "流出的汗是黏滑的粘液状。 即使被敌人捉住， 也能哧溜一下滑走逃脱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 62,
+  name: "poliwrath",
+  nameZh: "蚊香泳士",
+  types: ["water", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/62.png",
+  height: 13,
+  weight: 540,
+  abilities: ["储水(water-absorb)", "湿气(damp)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 1,
+  region: "关都",
+  genera: "蝌蚪宝可梦",
+  description: "除了游泳还擅长格斗技。 能用经过锻炼的手臂 使出豪迈强力的拳击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 63,
+  name: "abra",
+  nameZh: "凯西",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/63.png",
+  height: 9,
+  weight: 195,
+  abilities: ["同步(synchronize)", "精神力(inner-focus)", "魔法防守(magic-guard)"],
+  hiddenAbilities: ["魔法防守(magic-guard)"],
+  gen: 1,
+  region: "关都",
+  genera: "念力宝可梦",
+  description: "能够在睡梦中使出瞬间移动。 据说它睡得越熟，就能 移动到越遥远的地方。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 25
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 15
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 64,
+  name: "kadabra",
+  nameZh: "勇基拉",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/64.png",
+  height: 13,
+  weight: 565,
+  abilities: ["同步(synchronize)", "精神力(inner-focus)", "魔法防守(magic-guard)"],
+  hiddenAbilities: ["魔法防守(magic-guard)"],
+  gen: 1,
+  region: "关都",
+  genera: "念力宝可梦",
+  description: "念力的威力大得惊人。 会把精神力量储存在额头的 星星里，以备进化之需。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 65,
+  name: "alakazam",
+  nameZh: "胡地",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/65.png",
+  height: 15,
+  weight: 480,
+  abilities: ["同步(synchronize)", "精神力(inner-focus)", "魔法防守(magic-guard)"],
+  hiddenAbilities: ["魔法防守(magic-guard)"],
+  gen: 1,
+  region: "关都",
+  genera: "念力宝可梦",
+  description: "会操纵强大的超能力。 据说它双手握着的汤勺 就是用那力量制造出来的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 120
+}]
+},
+  {
+  id: 66,
+  name: "machop",
+  nameZh: "腕力",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png",
+  height: 8,
+  weight: 195,
+  abilities: ["毅力(guts)", "无防守(no-guard)", "不屈之心(steadfast)"],
+  hiddenAbilities: ["不屈之心(steadfast)"],
+  gen: 1,
+  region: "关都",
+  genera: "怪力宝可梦",
+  description: "时时刻刻都充满力量。 由于体力过剩而去举起岩石 消磨时间，也因此变得更强。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 67,
+  name: "machoke",
+  nameZh: "豪力",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/67.png",
+  height: 15,
+  weight: 705,
+  abilities: ["毅力(guts)", "无防守(no-guard)", "不屈之心(steadfast)"],
+  hiddenAbilities: ["不屈之心(steadfast)"],
+  gen: 1,
+  region: "关都",
+  genera: "怪力宝可梦",
+  description: "有着不会疲劳的强韧肉体。 会去帮助人类完成例如 搬运沉重行李之类的工作。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 68,
+  name: "machamp",
+  nameZh: "怪力",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+  height: 16,
+  weight: 1300,
+  abilities: ["毅力(guts)", "无防守(no-guard)", "不屈之心(steadfast)"],
+  hiddenAbilities: ["不屈之心(steadfast)"],
+  gen: 1,
+  region: "关都",
+  genera: "怪力宝可梦",
+  description: "４只手臂在思考之前 就会反射性地行动， 使出多发拳击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 69,
+  name: "bellsprout",
+  nameZh: "喇叭芽",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/69.png",
+  height: 7,
+  weight: 40,
+  abilities: ["叶绿素(chlorophyll)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 1,
+  region: "关都",
+  genera: "花宝可梦",
+  description: "喜欢温度高，有一定 湿度的地方。它会用 身上的藤蔓抓小虫来吃。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 70,
+  name: "weepinbell",
+  nameZh: "口呆花",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/70.png",
+  height: 10,
+  weight: 64,
+  abilities: ["叶绿素(chlorophyll)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 1,
+  region: "关都",
+  genera: "捕蝇宝可梦",
+  description: "它在肚子饿的时候会 吞掉周围会动的东西， 分泌溶解液让其致命。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 71,
+  name: "victreebel",
+  nameZh: "大食花",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/71.png",
+  height: 17,
+  weight: 155,
+  abilities: ["叶绿素(chlorophyll)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 1,
+  region: "关都",
+  genera: "捕蝇宝可梦",
+  description: "用花蜜的香味引诱猎物。 据说被它吞入嘴里的东西， 只要1天就会溶解到连骨头都不剩。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 72,
+  name: "tentacool",
+  nameZh: "玛瑙水母",
+  types: ["water", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png",
+  height: 9,
+  weight: 455,
+  abilities: ["恒净之躯(clear-body)", "污泥浆(liquid-ooze)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 1,
+  region: "关都",
+  genera: "水母宝可梦",
+  description: "身体的大部分由水组成。 在海中，会和海水混为一体， 非常难以发现。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 73,
+  name: "tentacruel",
+  nameZh: "毒刺水母",
+  types: ["water", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+  height: 16,
+  weight: 550,
+  abilities: ["恒净之躯(clear-body)", "污泥浆(liquid-ooze)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 1,
+  region: "关都",
+  genera: "水母宝可梦",
+  description: "８０根触手伸缩自如。 会像撒网那样伸开触手 抓住猎物并刺入毒针。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 74,
+  name: "geodude",
+  nameZh: "小拳石",
+  types: ["rock", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png",
+  height: 4,
+  weight: 200,
+  abilities: ["坚硬脑袋(rock-head)", "结实(sturdy)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 1,
+  region: "关都",
+  genera: "岩石宝可梦",
+  description: "大多栖息于山路。由于 不留神踩到它会使它 大发雷霆，得多加小心。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 75,
+  name: "graveler",
+  nameZh: "隆隆石",
+  types: ["rock", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/75.png",
+  height: 10,
+  weight: 1050,
+  abilities: ["坚硬脑袋(rock-head)", "结实(sturdy)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 1,
+  region: "关都",
+  genera: "岩石宝可梦",
+  description: "常在山路上滚来滚去。 滚动时从来不关心 前面的路上都有什么。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 76,
+  name: "golem",
+  nameZh: "隆隆岩",
+  types: ["rock", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/76.png",
+  height: 14,
+  weight: 3000,
+  abilities: ["坚硬脑袋(rock-head)", "结实(sturdy)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 1,
+  region: "关都",
+  genera: "重量级宝可梦",
+  description: "刚蜕皮时浑身都白白的 非常柔软，但是接触到 空气之后会迅速变坚硬。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 77,
+  name: "ponyta",
+  nameZh: "小火马",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+  height: 10,
+  weight: 300,
+  abilities: ["逃跑(run-away)", "引火(flash-fire)", "火焰之躯(flame-body)"],
+  hiddenAbilities: ["火焰之躯(flame-body)"],
+  gen: 1,
+  region: "关都",
+  genera: "火马宝可梦",
+  description: "得到了小火马认可的人， 在触摸它燃烧着的鬃毛时 不会觉得烫手，真是不可思议。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 78,
+  name: "rapidash",
+  nameZh: "烈焰马",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+  height: 17,
+  weight: 950,
+  abilities: ["逃跑(run-away)", "引火(flash-fire)", "火焰之躯(flame-body)"],
+  hiddenAbilities: ["火焰之躯(flame-body)"],
+  gen: 1,
+  region: "关都",
+  genera: "火马宝可梦",
+  description: "奔跑速度最快的烈焰马 会成为首领，决定族群 前往的地点和奔跑速度。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 79,
+  name: "slowpoke",
+  nameZh: "呆呆兽",
+  types: ["water", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/79.png",
+  height: 12,
+  weight: 360,
+  abilities: ["迟钝(oblivious)", "我行我素(own-tempo)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 1,
+  region: "关都",
+  genera: "憨憨宝可梦",
+  description: "把尾巴泡在水里后会有甜味渗出， 因此它会以尾巴为诱饵 吸引宝可梦并将其钓起。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 80,
+  name: "slowbro",
+  nameZh: "呆壳兽",
+  types: ["water", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/80.png",
+  height: 16,
+  weight: 785,
+  abilities: ["迟钝(oblivious)", "我行我素(own-tempo)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 1,
+  region: "关都",
+  genera: "寄居蟹宝可梦",
+  description: "因为被大舌贝咬住而受到的刺激使它 变得能够两足直立行走。当大舌贝 离开后，它似乎就会变回呆呆兽。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 81,
+  name: "magnemite",
+  nameZh: "小磁怪",
+  types: ["electric", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png",
+  height: 3,
+  weight: 60,
+  abilities: ["磁力(magnet-pull)", "结实(sturdy)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 1,
+  region: "关都",
+  genera: "磁铁宝可梦",
+  description: "靠吃电来维持生命。 会一边从左右两边的组件 放射电磁波一边在空中飞行。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 25
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 82,
+  name: "magneton",
+  nameZh: "三合一磁怪",
+  types: ["electric", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/82.png",
+  height: 10,
+  weight: 600,
+  abilities: ["磁力(magnet-pull)", "结实(sturdy)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 1,
+  region: "关都",
+  genera: "磁铁宝可梦",
+  description: "会不断释放很强的的磁力。 在三合一磁怪接近时，大多数 电脑都会发生异常情况。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 83,
+  name: "farfetchd",
+  nameZh: "大葱鸭",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/83.png",
+  height: 8,
+  weight: 150,
+  abilities: ["锐利目光(keen-eye)", "精神力(inner-focus)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 1,
+  region: "关都",
+  genera: "黄嘴鸭宝可梦",
+  description: "用植物的茎来战斗。 茎的挥舞方式存在着 好几种不同的流派。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 52
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 58
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 62
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 84,
+  name: "doduo",
+  nameZh: "嘟嘟",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/84.png",
+  height: 14,
+  weight: 392,
+  abilities: ["逃跑(run-away)", "早起(early-bird)", "蹒跚(tangled-feet)"],
+  hiddenAbilities: ["蹒跚(tangled-feet)"],
+  gen: 1,
+  region: "关都",
+  genera: "两头鸟宝可梦",
+  description: "羽毛较短所以不擅长飞行， 但是拥有发达的双脚， 能够以很快的速度奔跑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 85,
+  name: "dodrio",
+  nameZh: "嘟嘟利",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/85.png",
+  height: 18,
+  weight: 852,
+  abilities: ["逃跑(run-away)", "早起(early-bird)", "蹒跚(tangled-feet)"],
+  hiddenAbilities: ["蹒跚(tangled-feet)"],
+  gen: 1,
+  region: "关都",
+  genera: "三头鸟宝可梦",
+  description: "由嘟嘟的某个头分裂 出的变种。以60千米的 时速在草原上奔跑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 86,
+  name: "seel",
+  nameZh: "小海狮",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png",
+  height: 11,
+  weight: 900,
+  abilities: ["厚脂肪(thick-fat)", "湿润之躯(hydration)", "冰冻之躯(ice-body)"],
+  hiddenAbilities: ["冰冻之躯(ice-body)"],
+  gen: 1,
+  region: "关都",
+  genera: "海狮宝可梦",
+  description: "喜欢天寒地冻的地方， 就算零下10度 也能愉快地游泳。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 87,
+  name: "dewgong",
+  nameZh: "白海狮",
+  types: ["water", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/87.png",
+  height: 17,
+  weight: 1200,
+  abilities: ["厚脂肪(thick-fat)", "湿润之躯(hydration)", "冰冻之躯(ice-body)"],
+  hiddenAbilities: ["冰冻之躯(ice-body)"],
+  gen: 1,
+  region: "关都",
+  genera: "海狮宝可梦",
+  description: "全身像雪一样白。十分耐寒， 即使是在有浮冰的大海里 也能很精神地游来游去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 88,
+  name: "grimer",
+  nameZh: "臭泥",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/88.png",
+  height: 9,
+  weight: 300,
+  abilities: ["恶臭(stench)", "黏着(sticky-hold)", "毒手(poison-touch)"],
+  hiddenAbilities: ["毒手(poison-touch)"],
+  gen: 1,
+  region: "关都",
+  genera: "污泥宝可梦",
+  description: "它由囤积的淤泥而形成。 臭到让人无法碰触，凡是 它走过的地方都寸草不生。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 89,
+  name: "muk",
+  nameZh: "臭臭泥",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/89.png",
+  height: 12,
+  weight: 300,
+  abilities: ["恶臭(stench)", "黏着(sticky-hold)", "毒手(poison-touch)"],
+  hiddenAbilities: ["毒手(poison-touch)"],
+  gen: 1,
+  region: "关都",
+  genera: "污泥宝可梦",
+  description: "非常难闻！气味臭到让人 窒息，但由于鼻子的退化， 它自己完全闻不到味道。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 90,
+  name: "shellder",
+  nameZh: "大舌贝",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png",
+  height: 3,
+  weight: 40,
+  abilities: ["硬壳盔甲(shell-armor)", "连续攻击(skill-link)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 1,
+  region: "关都",
+  genera: "双壳贝宝可梦",
+  description: "坚硬的壳能反弹任何攻击。 壳打开时，如果里面的部分 受到攻击，就会变得很脆弱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 91,
+  name: "cloyster",
+  nameZh: "刺甲贝",
+  types: ["water", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/91.png",
+  height: 15,
+  weight: 1325,
+  abilities: ["硬壳盔甲(shell-armor)", "连续攻击(skill-link)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 1,
+  region: "关都",
+  genera: "双壳贝宝可梦",
+  description: "一旦它把壳闭上， 无论是拥有什么样怪力的人 都无法将其打开。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 180
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 92,
+  name: "gastly",
+  nameZh: "鬼斯",
+  types: ["ghost", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/92.png",
+  height: 13,
+  weight: 1,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 1,
+  region: "关都",
+  genera: "气体状宝可梦",
+  description: "能用稀薄气体状的 身体潜入任何地方， 但只要起风就会被吹跑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 93,
+  name: "haunter",
+  nameZh: "鬼斯通",
+  types: ["ghost", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/93.png",
+  height: 16,
+  weight: 1,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 1,
+  region: "关都",
+  genera: "气体状宝可梦",
+  description: "如果黑暗中空空如也， 但你却感觉被什么盯上了， 那么鬼斯通一定就在那里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 94,
+  name: "gengar",
+  nameZh: "耿鬼",
+  types: ["ghost", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+  height: 15,
+  weight: 405,
+  abilities: ["诅咒之躯(cursed-body)"],
+  hiddenAbilities: [],
+  gen: 1,
+  region: "关都",
+  genera: "影子宝可梦",
+  description: "据说它会为了夺取 山中遇难者的生命 而从黑暗中出现。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 95,
+  name: "onix",
+  nameZh: "大岩蛇",
+  types: ["rock", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+  height: 88,
+  weight: 2100,
+  abilities: ["坚硬脑袋(rock-head)", "结实(sturdy)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 1,
+  region: "关都",
+  genera: "岩蛇宝可梦",
+  description: "弯曲扭动巨大结实的身体， 以时速８０公里的 猛烈劲头向前挖进。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 160
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 96,
+  name: "drowzee",
+  nameZh: "催眠貘",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/96.png",
+  height: 10,
+  weight: 324,
+  abilities: ["不眠(insomnia)", "预知梦(forewarn)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 1,
+  region: "关都",
+  genera: "催眠宝可梦",
+  description: "如果你每晚与它一起睡觉， 它偶尔会让你梦见 它以前吃过的梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 48
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 43
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 97,
+  name: "hypno",
+  nameZh: "引梦貘人",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/97.png",
+  height: 16,
+  weight: 756,
+  abilities: ["不眠(insomnia)", "预知梦(forewarn)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 1,
+  region: "关都",
+  genera: "催眠宝可梦",
+  description: "无意中遇到它的时候，如果 不小心和它对上视线会很危险。 它手里拿着的钟摆会让人睡着。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 73
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 73
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 67
+}]
+},
+  {
+  id: 98,
+  name: "krabby",
+  nameZh: "大钳蟹",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/98.png",
+  height: 4,
+  weight: 65,
+  abilities: ["怪力钳(hyper-cutter)", "硬壳盔甲(shell-armor)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 1,
+  region: "关都",
+  genera: "清水蟹宝可梦",
+  description: "如果危险逼近， 就会从嘴里吐出泡沫包裹全身， 让身体看起来更大。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 99,
+  name: "kingler",
+  nameZh: "巨钳蟹",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png",
+  height: 13,
+  weight: 600,
+  abilities: ["怪力钳(hyper-cutter)", "硬壳盔甲(shell-armor)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 1,
+  region: "关都",
+  genera: "钳子宝可梦",
+  description: "巨大的钳子破坏力十足， 但是因为太过沉重， 不战斗的时候就很碍事。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 100,
+  name: "voltorb",
+  nameZh: "霹雳电球",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/100.png",
+  height: 5,
+  weight: 104,
+  abilities: ["隔音(soundproof)", "静电(static)", "引爆(aftermath)"],
+  hiddenAbilities: ["引爆(aftermath)"],
+  gen: 1,
+  region: "关都",
+  genera: "球宝可梦",
+  description: "据说它与精灵球相似的外形 其实是它的保护色，但它 很容易自爆这一点也出人意料。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 101,
+  name: "electrode",
+  nameZh: "顽皮雷弹",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/101.png",
+  height: 12,
+  weight: 666,
+  abilities: ["隔音(soundproof)", "静电(static)", "引爆(aftermath)"],
+  hiddenAbilities: ["引爆(aftermath)"],
+  gen: 1,
+  region: "关都",
+  genera: "球宝可梦",
+  description: "只要受到一点撞击， 就会由于体内的 电能溢出导致爆炸。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 150
+}]
+},
+  {
+  id: 102,
+  name: "exeggcute",
+  nameZh: "蛋蛋",
+  types: ["grass", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/102.png",
+  height: 4,
+  weight: 25,
+  abilities: ["叶绿素(chlorophyll)", "收获(harvest)"],
+  hiddenAbilities: ["收获(harvest)"],
+  gen: 1,
+  region: "关都",
+  genera: "蛋宝可梦",
+  description: "６只不在一起就不安心。 哪怕只是少了１只， 都会马上想要逃跑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 103,
+  name: "exeggutor",
+  nameZh: "椰蛋树",
+  types: ["grass", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/103.png",
+  height: 20,
+  weight: 1200,
+  abilities: ["叶绿素(chlorophyll)", "收获(harvest)"],
+  hiddenAbilities: ["收获(harvest)"],
+  gen: 1,
+  region: "关都",
+  genera: "椰子宝可梦",
+  description: "３个脑袋联合起来 能使出强大的精神力量。 天气变阴时动作会变得迟钝。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 104,
+  name: "cubone",
+  nameZh: "卡拉卡拉",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png",
+  height: 4,
+  weight: 65,
+  abilities: ["坚硬脑袋(rock-head)", "避雷针(lightning-rod)", "战斗盔甲(battle-armor)"],
+  hiddenAbilities: ["战斗盔甲(battle-armor)"],
+  gen: 1,
+  region: "关都",
+  genera: "孤独宝可梦",
+  description: "它头上戴着死去母亲的头骨。 虽然也会因悲伤的梦境而哭泣， 但每流一次泪，都会变得更加坚强。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 105,
+  name: "marowak",
+  nameZh: "嘎啦嘎啦",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/105.png",
+  height: 10,
+  weight: 450,
+  abilities: ["坚硬脑袋(rock-head)", "避雷针(lightning-rod)", "战斗盔甲(battle-armor)"],
+  hiddenAbilities: ["战斗盔甲(battle-armor)"],
+  gen: 1,
+  region: "关都",
+  genera: "爱骨宝可梦",
+  description: "进化后，与原本戴在头上的 母亲头骨完全融为一体， 而且性格也变得十分凶暴。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 106,
+  name: "hitmonlee",
+  nameZh: "飞腿郎",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/106.png",
+  height: 15,
+  weight: 498,
+  abilities: ["柔软(limber)", "舍身(reckless)", "轻装(unburden)"],
+  hiddenAbilities: ["轻装(unburden)"],
+  gen: 1,
+  region: "关都",
+  genera: "踢腿宝可梦",
+  description: "腿能自由地伸缩， 即使离得很远， 也能把对手踢飞。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 53
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 87
+}]
+},
+  {
+  id: 107,
+  name: "hitmonchan",
+  nameZh: "快拳郎",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/107.png",
+  height: 14,
+  weight: 502,
+  abilities: ["锐利目光(keen-eye)", "铁拳(iron-fist)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 1,
+  region: "关都",
+  genera: "拳击宝可梦",
+  description: "打出的拳击甚至能劈开空气。 但攻击３分钟后， 它似乎就会想休息一下。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 79
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 76
+}]
+},
+  {
+  id: 108,
+  name: "lickitung",
+  nameZh: "大舌头",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/108.png",
+  height: 12,
+  weight: 655,
+  abilities: ["我行我素(own-tempo)", "迟钝(oblivious)", "无关天气(cloud-nine)"],
+  hiddenAbilities: ["无关天气(cloud-nine)"],
+  gen: 1,
+  region: "关都",
+  genera: "舔舔宝可梦",
+  description: "主要以虫宝可梦为食。 会用长长的舌头舔对手， 等对手麻痹后将其整个吞下。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 109,
+  name: "koffing",
+  nameZh: "瓦斯弹",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png",
+  height: 6,
+  weight: 10,
+  abilities: ["飘浮(levitate)", "化学变化气体(neutralizing-gas)", "恶臭(stench)"],
+  hiddenAbilities: ["恶臭(stench)"],
+  gen: 1,
+  region: "关都",
+  genera: "毒气宝可梦",
+  description: "污浊的空气是它的美味大餐。 据说在昔日的伽勒尔地区 曾经存在着更多的瓦斯弹。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 110,
+  name: "weezing",
+  nameZh: "双弹瓦斯",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+  height: 12,
+  weight: 95,
+  abilities: ["飘浮(levitate)", "化学变化气体(neutralizing-gas)", "恶臭(stench)"],
+  hiddenAbilities: ["恶臭(stench)"],
+  gen: 1,
+  region: "关都",
+  genera: "毒气宝可梦",
+  description: "虽然吸入空气的力量 稍弱于伽勒尔的双弹瓦斯， 制造出的毒素却更加强力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 111,
+  name: "rhyhorn",
+  nameZh: "独角犀牛",
+  types: ["ground", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/111.png",
+  height: 10,
+  weight: 1150,
+  abilities: ["避雷针(lightning-rod)", "坚硬脑袋(rock-head)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 1,
+  region: "关都",
+  genera: "尖尖宝可梦",
+  description: "脑子里只能记住一件事。 一旦开始猛冲，不管理由是什么 都会很快感到无所谓而忘掉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 112,
+  name: "rhydon",
+  nameZh: "钻角犀兽",
+  types: ["ground", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png",
+  height: 19,
+  weight: 1200,
+  abilities: ["避雷针(lightning-rod)", "坚硬脑袋(rock-head)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 1,
+  region: "关都",
+  genera: "钻锥宝可梦",
+  description: "全身被铠甲般的皮肤保护着。 甚至能在２０００度的熔岩里生存。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 113,
+  name: "chansey",
+  nameZh: "吉利蛋",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/113.png",
+  height: 11,
+  weight: 346,
+  abilities: ["自然回复(natural-cure)", "天恩(serene-grace)", "治愈之心(healer)"],
+  hiddenAbilities: ["治愈之心(healer)"],
+  gen: 1,
+  region: "关都",
+  genera: "蛋宝可梦",
+  description: "原本动作迟缓。 为了保护蛋不被抢走， 逃跑的速度才变快了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 250
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 5
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 5
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 114,
+  name: "tangela",
+  nameZh: "蔓藤怪",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+  height: 10,
+  weight: 350,
+  abilities: ["叶绿素(chlorophyll)", "叶子防守(leaf-guard)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 1,
+  region: "关都",
+  genera: "藤蔓状宝可梦",
+  description: "藤蔓有着独特的香气。 在伽勒尔的部分地区 被当做香草使用。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 115,
+  name: "kangaskhan",
+  nameZh: "袋兽",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+  height: 22,
+  weight: 800,
+  abilities: ["早起(early-bird)", "胆量(scrappy)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 1,
+  region: "关都",
+  genera: "亲子宝可梦",
+  description: "据记载，曾有没孩子的 袋兽将遇难人类的 小孩抚养长大。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 116,
+  name: "horsea",
+  nameZh: "墨海马",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/116.png",
+  height: 4,
+  weight: 80,
+  abilities: ["悠游自如(swift-swim)", "狙击手(sniper)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 1,
+  region: "关都",
+  genera: "龙宝可梦",
+  description: "会像跳舞一样在水中游动 以制造漩涡。作为娱乐， 会和伙伴比拼谁的漩涡更大。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 117,
+  name: "seadra",
+  nameZh: "海刺龙",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/117.png",
+  height: 12,
+  weight: 250,
+  abilities: ["毒刺(poison-point)", "狙击手(sniper)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 1,
+  region: "关都",
+  genera: "龙宝可梦",
+  description: "嘴巴虽然细，吸引力却很强。 就算是比嘴巴还大的猎物， 也能一瞬间吸进嘴里吃掉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 118,
+  name: "goldeen",
+  nameZh: "角金鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/118.png",
+  height: 6,
+  weight: 150,
+  abilities: ["悠游自如(swift-swim)", "水幕(water-veil)", "避雷针(lightning-rod)"],
+  hiddenAbilities: ["避雷针(lightning-rod)"],
+  gen: 1,
+  region: "关都",
+  genera: "金鱼宝可梦",
+  description: "背鳍和尾鳍像肌肉 那样发达。能够以 ５节的速度在水中游泳。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 67
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 63
+}]
+},
+  {
+  id: 119,
+  name: "seaking",
+  nameZh: "金鱼王",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+  height: 13,
+  weight: 390,
+  abilities: ["悠游自如(swift-swim)", "水幕(water-veil)", "避雷针(lightning-rod)"],
+  hiddenAbilities: ["避雷针(lightning-rod)"],
+  gen: 1,
+  region: "关都",
+  genera: "金鱼宝可梦",
+  description: "金鱼王之所以会用角挖穿 河底的岩石来筑巢，是为了 防止产下的卵被水流冲走。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 92
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 68
+}]
+},
+  {
+  id: 120,
+  name: "staryu",
+  nameZh: "海星星",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png",
+  height: 8,
+  weight: 345,
+  abilities: ["发光(illuminate)", "自然回复(natural-cure)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 1,
+  region: "关都",
+  genera: "星形宝可梦",
+  description: "虽然会遭到鱼宝可梦的啄食， 但身体即使被咬掉一块也能 马上再生，所以完全不在意。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 121,
+  name: "starmie",
+  nameZh: "宝石海星",
+  types: ["water", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png",
+  height: 11,
+  weight: 800,
+  abilities: ["发光(illuminate)", "自然回复(natural-cure)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 1,
+  region: "关都",
+  genera: "谜宝可梦",
+  description: "会高速旋转着身体 一边游泳一边吸收 微小的浮游生物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 115
+}]
+},
+  {
+  id: 122,
+  name: "mr-mime",
+  nameZh: "魔墙人偶",
+  types: ["psychic", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+  height: 13,
+  weight: 545,
+  abilities: ["隔音(soundproof)", "过滤(filter)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 1,
+  region: "关都",
+  genera: "屏障宝可梦",
+  description: "擅长表演默剧。 用手指放出的波动制造墙壁， 保护自己免于大多数攻击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 123,
+  name: "scyther",
+  nameZh: "飞天螳螂",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/123.png",
+  height: 15,
+  weight: 560,
+  abilities: ["虫之预感(swarm)", "技术高手(technician)", "不屈之心(steadfast)"],
+  hiddenAbilities: ["不屈之心(steadfast)"],
+  gen: 1,
+  region: "关都",
+  genera: "螳螂宝可梦",
+  description: "如果在森林中发现某个地方 有大量树木被砍倒，就说明 那里是飞天螳螂的领地。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 124,
+  name: "jynx",
+  nameZh: "迷唇姐",
+  types: ["ice", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+  height: 14,
+  weight: 406,
+  abilities: ["迟钝(oblivious)", "预知梦(forewarn)", "干燥皮肤(dry-skin)"],
+  hiddenAbilities: ["干燥皮肤(dry-skin)"],
+  gen: 1,
+  region: "关都",
+  genera: "人形宝可梦",
+  description: "伽勒尔的迷唇姐外表靓丽， 拥有纤细叫声的也不在少数， 甚至有为其着迷的粉丝。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 125,
+  name: "electabuzz",
+  nameZh: "电击兽",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/125.png",
+  height: 11,
+  weight: 300,
+  abilities: ["静电(static)", "干劲(vital-spirit)"],
+  hiddenAbilities: ["干劲(vital-spirit)"],
+  gen: 1,
+  region: "关都",
+  genera: "电击宝可梦",
+  description: "暴风雨来临时，它们就会 集结在高高的大树周围， 耐心地等待落雷。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 83
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 57
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 126,
+  name: "magmar",
+  nameZh: "鸭嘴火兽",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/126.png",
+  height: 13,
+  weight: 445,
+  abilities: ["火焰之躯(flame-body)", "干劲(vital-spirit)"],
+  hiddenAbilities: ["干劲(vital-spirit)"],
+  gen: 1,
+  region: "关都",
+  genera: "吐火宝可梦",
+  description: "全身时刻都在燃烧。 大家认为它是引发火灾的 原因之一，非常惧怕它。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 57
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 93
+}]
+},
+  {
+  id: 127,
+  name: "pinsir",
+  nameZh: "凯罗斯",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/127.png",
+  height: 15,
+  weight: 550,
+  abilities: ["怪力钳(hyper-cutter)", "破格(mold-breaker)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 1,
+  region: "关都",
+  genera: "锹形虫宝可梦",
+  description: "用角夹住猎物后， 不是直接把对方切成两半， 就是强行把对方扔飞。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 128,
+  name: "tauros",
+  nameZh: "肯泰罗",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/128.png",
+  height: 14,
+  weight: 884,
+  abilities: ["威吓(intimidate)", "愤怒穴位(anger-point)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 1,
+  region: "关都",
+  genera: "暴牛宝可梦",
+  description: "栖息在伽勒尔的肯泰罗 性格暴躁，决不允许 人类骑在自己的背上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 129,
+  name: "magikarp",
+  nameZh: "鲤鱼王",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/129.png",
+  height: 9,
+  weight: 100,
+  abilities: ["悠游自如(swift-swim)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 1,
+  region: "关都",
+  genera: "鱼宝可梦",
+  description: "又弱又可怜的宝可梦。 在水流比较快的地方 只能任凭自己被水冲走。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 20
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 10
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 15
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 20
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 130,
+  name: "gyarados",
+  nameZh: "暴鲤龙",
+  types: ["water", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/130.png",
+  height: 65,
+  weight: 2350,
+  abilities: ["威吓(intimidate)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 1,
+  region: "关都",
+  genera: "凶恶宝可梦",
+  description: "就算是在狂风暴雨中， 只要发狂的暴鲤龙出现， 一切都会被它烧毁殆尽。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 79
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 81
+}]
+},
+  {
+  id: 131,
+  name: "lapras",
+  nameZh: "拉普拉斯",
+  types: ["water", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+  height: 25,
+  weight: 2200,
+  abilities: ["储水(water-absorb)", "硬壳盔甲(shell-armor)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 1,
+  region: "关都",
+  genera: "乘载宝可梦",
+  description: "十分耐寒，不畏冰海。 皮肤滑滑的， 摸上去会有点凉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 130
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 132,
+  name: "ditto",
+  nameZh: "百变怪",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png",
+  height: 3,
+  weight: 40,
+  abilities: ["柔软(limber)", "变身者(imposter)"],
+  hiddenAbilities: ["变身者(imposter)"],
+  gen: 1,
+  region: "关都",
+  genera: "变身宝可梦",
+  description: "当两只百变怪相遇的时候， 为了能变成和对方相同的样子， 它们动起来会比平常更加剧烈。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 48
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 48
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 48
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 48
+}]
+},
+  {
+  id: 133,
+  name: "eevee",
+  nameZh: "伊布",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+  height: 3,
+  weight: 65,
+  abilities: ["逃跑(run-away)", "适应力(adaptability)", "危险预知(anticipation)"],
+  hiddenAbilities: ["危险预知(anticipation)"],
+  gen: 1,
+  region: "关都",
+  genera: "进化宝可梦",
+  description: "由于不稳定的遗传基因， 蕴含着各种各样进化 可能性的特殊宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 134,
+  name: "vaporeon",
+  nameZh: "水伊布",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/134.png",
+  height: 10,
+  weight: 290,
+  abilities: ["储水(water-absorb)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 1,
+  region: "关都",
+  genera: "吐泡宝可梦",
+  description: "身体细胞的结构与水分子相似。 它能和水融为一体， 让别人无法看见它。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 130
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 135,
+  name: "jolteon",
+  nameZh: "雷伊布",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/135.png",
+  height: 8,
+  weight: 245,
+  abilities: ["蓄电(volt-absorb)", "飞毛腿(quick-feet)"],
+  hiddenAbilities: ["飞毛腿(quick-feet)"],
+  gen: 1,
+  region: "关都",
+  genera: "雷宝可梦",
+  description: "能够吸入空气中的负离子， 有时会吐出大约有 １００００伏特的高压电。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 130
+}]
+},
+  {
+  id: 136,
+  name: "flareon",
+  nameZh: "火伊布",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/136.png",
+  height: 9,
+  weight: 250,
+  abilities: ["引火(flash-fire)", "毅力(guts)"],
+  hiddenAbilities: ["毅力(guts)"],
+  gen: 1,
+  region: "关都",
+  genera: "火宝可梦",
+  description: "会将吸入的空气的一部分 传送到自己体内的火囊里， 制造出１７００度的火焰。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 137,
+  name: "porygon",
+  nameZh: "多边兽",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/137.png",
+  height: 8,
+  weight: 365,
+  abilities: ["复制(trace)", "下载(download)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 1,
+  region: "关都",
+  genera: "虚拟宝可梦",
+  description: "近年来十分活跃于 电脑空间。到处检查 有没有可疑的数据。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 138,
+  name: "omanyte",
+  nameZh: "菊石兽",
+  types: ["rock", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/138.png",
+  height: 4,
+  weight: 75,
+  abilities: ["悠游自如(swift-swim)", "硬壳盔甲(shell-armor)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 1,
+  region: "关都",
+  genera: "漩涡宝可梦",
+  description: "已经灭绝的古代宝可梦。 依靠１０只脚来划水， 在水中轻盈地游曳。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 139,
+  name: "omastar",
+  nameZh: "多刺菊石兽",
+  types: ["rock", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/139.png",
+  height: 10,
+  weight: 350,
+  abilities: ["悠游自如(swift-swim)", "硬壳盔甲(shell-armor)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 1,
+  region: "关都",
+  genera: "漩涡宝可梦",
+  description: "拥有足以咬碎岩石的锋利牙齿， 但是能够袭击的猎物仅限 触手可以伸展的范围之内。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 125
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 140,
+  name: "kabuto",
+  nameZh: "化石盔",
+  types: ["rock", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/140.png",
+  height: 5,
+  weight: 115,
+  abilities: ["悠游自如(swift-swim)", "战斗盔甲(battle-armor)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 1,
+  region: "关都",
+  genera: "甲壳宝可梦",
+  description: "虽然存在已经灭绝的说法， 但据说在一部分地区 还是经常能见到它的身影。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 141,
+  name: "kabutops",
+  nameZh: "镰刀盔",
+  types: ["rock", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/141.png",
+  height: 13,
+  weight: 405,
+  abilities: ["悠游自如(swift-swim)", "战斗盔甲(battle-armor)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 1,
+  region: "关都",
+  genera: "甲壳宝可梦",
+  description: "灭绝的原因尚不明确。 曾经栖息在温暖的大海， 是性格残暴的古代宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 142,
+  name: "aerodactyl",
+  nameZh: "化石翼龙",
+  types: ["rock", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/142.png",
+  height: 18,
+  weight: 590,
+  abilities: ["坚硬脑袋(rock-head)", "压迫感(pressure)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 1,
+  region: "关都",
+  genera: "化石宝可梦",
+  description: "长着锯子般的牙齿。 甚至连钢属性宝可梦的皮肤 都会被它的牙齿撕成碎片。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 130
+}]
+},
+  {
+  id: 143,
+  name: "snorlax",
+  nameZh: "卡比兽",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/143.png",
+  height: 21,
+  weight: 4600,
+  abilities: ["免疫(immunity)", "厚脂肪(thick-fat)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 1,
+  region: "关都",
+  genera: "瞌睡宝可梦",
+  description: "拥有一个结实的胃， 即使吃了发霉腐烂的东西， 也完全不会吃坏肚子。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 160
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 144,
+  name: "articuno",
+  nameZh: "急冻鸟",
+  types: ["ice", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+  height: 17,
+  weight: 554,
+  abilities: ["压迫感(pressure)", "雪隐(snow-cloak)"],
+  hiddenAbilities: ["雪隐(snow-cloak)"],
+  gen: 1,
+  region: "关都",
+  genera: "冰冻宝可梦",
+  description: "拥有能够自由操纵冰 的能力。据说它栖息在 永久冻土的雪山。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 125
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 145,
+  name: "zapdos",
+  nameZh: "闪电鸟",
+  types: ["electric", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+  height: 16,
+  weight: 526,
+  abilities: ["压迫感(pressure)", "静电(static)"],
+  hiddenAbilities: ["静电(static)"],
+  gen: 1,
+  region: "关都",
+  genera: "电击宝可梦",
+  description: "传说的鸟宝可梦。 据说只要它一摩擦翅膀， 就会立刻发生落雷。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 146,
+  name: "moltres",
+  nameZh: "火焰鸟",
+  types: ["fire", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+  height: 20,
+  weight: 600,
+  abilities: ["压迫感(pressure)", "火焰之躯(flame-body)"],
+  hiddenAbilities: ["火焰之躯(flame-body)"],
+  gen: 1,
+  region: "关都",
+  genera: "火焰宝可梦",
+  description: "相传它会用燃烧着的 美丽翅膀照亮山道， 救助在此遇险的人。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 147,
+  name: "dratini",
+  nameZh: "迷你龙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/147.png",
+  height: 18,
+  weight: 33,
+  abilities: ["蜕皮(shed-skin)", "神奇鳞片(marvel-scale)"],
+  hiddenAbilities: ["神奇鳞片(marvel-scale)"],
+  gen: 1,
+  region: "关都",
+  genera: "龙宝可梦",
+  description: "长久以来被认为只存在于 幻想之中。额头小小的突起 是正在发育的角。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 41
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 64
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 148,
+  name: "dragonair",
+  nameZh: "哈克龙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/148.png",
+  height: 40,
+  weight: 165,
+  abilities: ["蜕皮(shed-skin)", "神奇鳞片(marvel-scale)"],
+  hiddenAbilities: ["神奇鳞片(marvel-scale)"],
+  gen: 1,
+  region: "关都",
+  genera: "龙宝可梦",
+  description: "把力量集中在尾巴的 珠子上操纵天气。 散发气场的样子非常神秘。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 61
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 84
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 149,
+  name: "dragonite",
+  nameZh: "快龙",
+  types: ["dragon", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+  height: 22,
+  weight: 2100,
+  abilities: ["精神力(inner-focus)", "多重鳞片(multiscale)"],
+  hiddenAbilities: ["多重鳞片(multiscale)"],
+  gen: 1,
+  region: "关都",
+  genera: "龙宝可梦",
+  description: "被称为大海的化身。 很多船都会把快龙的 雕像设置在船头。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 91
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 134
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 150,
+  name: "mewtwo",
+  nameZh: "超梦",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+  height: 20,
+  weight: 1220,
+  abilities: ["压迫感(pressure)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 1,
+  region: "关都",
+  genera: "基因宝可梦",
+  description: "超梦的基因几乎和梦幻 完全一样，但是大小和 性格却迥异得让人吃惊。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 106
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 154
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 130
+}]
+},
+  {
+  id: 151,
+  name: "mew",
+  nameZh: "梦幻",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png",
+  height: 4,
+  weight: 40,
+  abilities: ["同步(synchronize)"],
+  hiddenAbilities: [],
+  gen: 1,
+  region: "关都",
+  genera: "新种宝可梦",
+  description: "用显微镜可以看到 它身上极短极细 且密集的体毛。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 152,
+  name: "chikorita",
+  nameZh: "菊草叶",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/152.png",
+  height: 9,
+  weight: 64,
+  abilities: ["茂盛(overgrow)", "叶子防守(leaf-guard)"],
+  hiddenAbilities: ["叶子防守(leaf-guard)"],
+  gen: 2,
+  region: "城都",
+  genera: "叶子宝可梦",
+  description: "It uses the leaf on its head to determine the temperature and humidity. It loves to sunbathe.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 49
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 49
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 153,
+  name: "bayleef",
+  nameZh: "月桂叶",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/153.png",
+  height: 12,
+  weight: 158,
+  abilities: ["茂盛(overgrow)", "叶子防守(leaf-guard)"],
+  hiddenAbilities: ["叶子防守(leaf-guard)"],
+  gen: 2,
+  region: "城都",
+  genera: "叶子宝可梦",
+  description: "The scent of spices comes from around its neck. Somehow, sniffing it makes you want to fight.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 62
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 63
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 154,
+  name: "meganium",
+  nameZh: "大竺葵",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/154.png",
+  height: 18,
+  weight: 1005,
+  abilities: ["茂盛(overgrow)", "叶子防守(leaf-guard)"],
+  hiddenAbilities: ["叶子防守(leaf-guard)"],
+  gen: 2,
+  region: "城都",
+  genera: "芳草宝可梦",
+  description: "The aroma that rises from its petals contains a substance that calms aggressive feelings.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 82
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 83
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 155,
+  name: "cyndaquil",
+  nameZh: "火球鼠",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/155.png",
+  height: 5,
+  weight: 79,
+  abilities: ["猛火(blaze)", "引火(flash-fire)"],
+  hiddenAbilities: ["引火(flash-fire)"],
+  gen: 2,
+  region: "城都",
+  genera: "火鼠宝可梦",
+  description: "It is timid, and always curls it­ self up in a ball. If attacked, it flares up its back for protection.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 39
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 52
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 43
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 156,
+  name: "quilava",
+  nameZh: "火岩鼠",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/156.png",
+  height: 9,
+  weight: 190,
+  abilities: ["猛火(blaze)", "引火(flash-fire)"],
+  hiddenAbilities: ["引火(flash-fire)"],
+  gen: 2,
+  region: "城都",
+  genera: "火山宝可梦",
+  description: "Be careful if it turns its back during battle. It means that it will attack with the fire on its back.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 58
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 64
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 58
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 157,
+  name: "typhlosion",
+  nameZh: "火暴兽",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/157.png",
+  height: 17,
+  weight: 795,
+  abilities: ["猛火(blaze)", "引火(flash-fire)"],
+  hiddenAbilities: ["引火(flash-fire)"],
+  gen: 2,
+  region: "城都",
+  genera: "火山宝可梦",
+  description: "If its rage peaks, it becomes so hot that anything that touches it will instantly go up in flames.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 84
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 78
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 109
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 158,
+  name: "totodile",
+  nameZh: "小锯鳄",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/158.png",
+  height: 6,
+  weight: 95,
+  abilities: ["激流(torrent)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 2,
+  region: "城都",
+  genera: "大颚宝可梦",
+  description: "Its well-developed jaws are powerful and capable of crushing anything. Even its trainer must be careful.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 64
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 44
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 159,
+  name: "croconaw",
+  nameZh: "蓝鳄",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/159.png",
+  height: 11,
+  weight: 250,
+  abilities: ["激流(torrent)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 2,
+  region: "城都",
+  genera: "大颚宝可梦",
+  description: "If it loses a fang, a new one grows back in its place. There are always 48 fangs lining its mouth.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 59
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 160,
+  name: "feraligatr",
+  nameZh: "大力鳄",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/160.png",
+  height: 23,
+  weight: 888,
+  abilities: ["激流(torrent)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 2,
+  region: "城都",
+  genera: "大颚宝可梦",
+  description: "When it bites with its massive and powerful jaws, it shakes its head and savagely tears its victim up.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 79
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 83
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 78
+}]
+},
+  {
+  id: 161,
+  name: "sentret",
+  nameZh: "尾立",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/161.png",
+  height: 8,
+  weight: 60,
+  abilities: ["逃跑(run-away)", "锐利目光(keen-eye)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 2,
+  region: "城都",
+  genera: "放哨宝可梦",
+  description: "It has a very nervous nature. It stands up high on its tail so it can scan wide areas.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 46
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 34
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 162,
+  name: "furret",
+  nameZh: "大尾立",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/162.png",
+  height: 18,
+  weight: 325,
+  abilities: ["逃跑(run-away)", "锐利目光(keen-eye)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 2,
+  region: "城都",
+  genera: "长躯干宝可梦",
+  description: "It makes a nest to suit its long and skinny body. The nest is impossible for other POKéMON to enter.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 76
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 64
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 163,
+  name: "hoothoot",
+  nameZh: "咕咕",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/163.png",
+  height: 7,
+  weight: 212,
+  abilities: ["不眠(insomnia)", "锐利目光(keen-eye)", "有色眼镜(tinted-lens)"],
+  hiddenAbilities: ["有色眼镜(tinted-lens)"],
+  gen: 2,
+  region: "城都",
+  genera: "猫头鹰宝可梦",
+  description: "总是在固定的时间鸣叫， 因此也有训练家 拿它来代替钟表带出门。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 36
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 56
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 164,
+  name: "noctowl",
+  nameZh: "猫头夜鹰",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/164.png",
+  height: 16,
+  weight: 408,
+  abilities: ["不眠(insomnia)", "锐利目光(keen-eye)", "有色眼镜(tinted-lens)"],
+  hiddenAbilities: ["有色眼镜(tinted-lens)"],
+  gen: 2,
+  region: "城都",
+  genera: "猫头鹰宝可梦",
+  description: "开始思考事情时， 会将脖子旋转１８０度， 以此提高大脑的工作效率。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 86
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 96
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 165,
+  name: "ledyba",
+  nameZh: "芭瓢虫",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/165.png",
+  height: 10,
+  weight: 108,
+  abilities: ["虫之预感(swarm)", "早起(early-bird)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 2,
+  region: "城都",
+  genera: "五星宝可梦",
+  description: "非常胆小的宝可梦。 会和伙伴一起张开反射壁来保护巢穴。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 166,
+  name: "ledian",
+  nameZh: "安瓢虫",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/166.png",
+  height: 14,
+  weight: 356,
+  abilities: ["虫之预感(swarm)", "早起(early-bird)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 2,
+  region: "城都",
+  genera: "五星宝可梦",
+  description: "在夜空中飞翔的同时 会抛撒闪闪发光的粉末。 据说粉末沾到身上就会有好事发生。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 167,
+  name: "spinarak",
+  nameZh: "圆丝蛛",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/167.png",
+  height: 5,
+  weight: 85,
+  abilities: ["虫之预感(swarm)", "不眠(insomnia)", "狙击手(sniper)"],
+  hiddenAbilities: ["狙击手(sniper)"],
+  gen: 2,
+  region: "城都",
+  genera: "吐丝宝可梦",
+  description: "牙齿上的毒并不强烈， 但用来削弱那些挂在网上 无法动弹的猎物是绰绰有余了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 168,
+  name: "ariados",
+  nameZh: "阿利多斯",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/168.png",
+  height: 11,
+  weight: 335,
+  abilities: ["虫之预感(swarm)", "不眠(insomnia)", "狙击手(sniper)"],
+  hiddenAbilities: ["狙击手(sniper)"],
+  gen: 2,
+  region: "城都",
+  genera: "长腿宝可梦",
+  description: "会通过吐丝来捕捉猎物。 到了晚上，就会离开 巢穴并积极地狩猎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 169,
+  name: "crobat",
+  nameZh: "叉字蝠",
+  types: ["poison", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/169.png",
+  height: 18,
+  weight: 750,
+  abilities: ["精神力(inner-focus)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 2,
+  region: "城都",
+  genera: "蝙蝠宝可梦",
+  description: "可以自由地控制４根翅膀 振翅而飞。即使在狭窄的 洞窟内也能保持速度飞来飞去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 130
+}]
+},
+  {
+  id: 170,
+  name: "chinchou",
+  nameZh: "灯笼鱼",
+  types: ["water", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/170.png",
+  height: 5,
+  weight: 120,
+  abilities: ["蓄电(volt-absorb)", "发光(illuminate)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 2,
+  region: "城都",
+  genera: "琵琶鱼宝可梦",
+  description: "在黑暗的海底， 触手上不断闪烁着的光 是它们唯一的通信手段。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 38
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 38
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 56
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 56
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 67
+}]
+},
+  {
+  id: 171,
+  name: "lanturn",
+  nameZh: "电灯怪",
+  types: ["water", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/171.png",
+  height: 12,
+  weight: 225,
+  abilities: ["蓄电(volt-absorb)", "发光(illuminate)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 2,
+  region: "城都",
+  genera: "灯宝可梦",
+  description: "发出强光蒙住猎物的眼睛。 抓住那一瞬间的空档， 使其遭受电的攻击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 125
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 58
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 58
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 76
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 76
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 67
+}]
+},
+  {
+  id: 172,
+  name: "pichu",
+  nameZh: "皮丘",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/172.png",
+  height: 3,
+  weight: 20,
+  abilities: ["静电(static)", "避雷针(lightning-rod)"],
+  hiddenAbilities: ["避雷针(lightning-rod)"],
+  gen: 2,
+  region: "城都",
+  genera: "小鼠宝可梦",
+  description: "脸颊上的电囊还很小， 如果囊里的电太多了， 就会漏出来电到自己。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 20
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 15
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 173,
+  name: "cleffa",
+  nameZh: "皮宝宝",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/173.png",
+  height: 3,
+  weight: 30,
+  abilities: ["迷人之躯(cute-charm)", "魔法防守(magic-guard)", "友情防守(friend-guard)"],
+  hiddenAbilities: ["友情防守(friend-guard)"],
+  gen: 2,
+  region: "城都",
+  genera: "星形宝可梦",
+  description: "有着星星一样的轮廓。 由于那外形，人们相信 它是乘着流星而来的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 25
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 28
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 174,
+  name: "igglybuff",
+  nameZh: "宝宝丁",
+  types: ["normal", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/174.png",
+  height: 3,
+  weight: 10,
+  abilities: ["迷人之躯(cute-charm)", "好胜(competitive)", "友情防守(friend-guard)"],
+  hiddenAbilities: ["友情防守(friend-guard)"],
+  gen: 2,
+  region: "城都",
+  genera: "气球宝可梦",
+  description: "用柔软的身体弹跳著移动。 当它的体温上升时， 身体会变成深粉红色。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 15
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 20
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 175,
+  name: "togepi",
+  nameZh: "波克比",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/175.png",
+  height: 3,
+  weight: 15,
+  abilities: ["活力(hustle)", "天恩(serene-grace)", "超幸运(super-luck)"],
+  hiddenAbilities: ["超幸运(super-luck)"],
+  gen: 2,
+  region: "城都",
+  genera: "针球宝可梦",
+  description: "好运的象征。 据说在它的壳里 装着满满的幸福。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 176,
+  name: "togetic",
+  nameZh: "波克基古",
+  types: ["fairy", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/176.png",
+  height: 6,
+  weight: 32,
+  abilities: ["活力(hustle)", "天恩(serene-grace)", "超幸运(super-luck)"],
+  hiddenAbilities: ["超幸运(super-luck)"],
+  gen: 2,
+  region: "城都",
+  genera: "幸福宝可梦",
+  description: "不待在温柔的人身边 就会变得没有精神。 不挥动翅膀也能浮在空中。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 177,
+  name: "natu",
+  nameZh: "天然雀",
+  types: ["psychic", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/177.png",
+  height: 2,
+  weight: 20,
+  abilities: ["同步(synchronize)", "早起(early-bird)", "魔法镜(magic-bounce)"],
+  hiddenAbilities: ["魔法镜(magic-bounce)"],
+  gen: 2,
+  region: "城都",
+  genera: "小鸟宝可梦",
+  description: "由于羽翼未丰， 所以会跳着移动。 一直在注视着什么。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 178,
+  name: "xatu",
+  nameZh: "天然鸟",
+  types: ["psychic", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/178.png",
+  height: 15,
+  weight: 150,
+  abilities: ["同步(synchronize)", "早起(early-bird)", "魔法镜(magic-bounce)"],
+  hiddenAbilities: ["魔法镜(magic-bounce)"],
+  gen: 2,
+  region: "城都",
+  genera: "神秘宝可梦",
+  description: "能够看穿过去和未来。 日复一日注视着太阳 动向的奇异宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 179,
+  name: "mareep",
+  nameZh: "咩利羊",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/179.png",
+  height: 6,
+  weight: 78,
+  abilities: ["静电(static)", "正电(plus)"],
+  hiddenAbilities: ["正电(plus)"],
+  gen: 2,
+  region: "城都",
+  genera: "绵毛宝可梦",
+  description: "绒毛摩擦产生的电力会被储存起来。 如果觉得可爱而直接用手碰它的话， 就会被啪地一下电得又麻又痛。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 180,
+  name: "flaaffy",
+  nameZh: "茸茸羊",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/180.png",
+  height: 8,
+  weight: 133,
+  abilities: ["静电(static)", "正电(plus)"],
+  hiddenAbilities: ["正电(plus)"],
+  gen: 2,
+  region: "城都",
+  genera: "绵毛宝可梦",
+  description: "能将电力储存在松软的毛发中。 因为储存了太多电力，所以身上 有些地方已经变得光秃秃的了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 181,
+  name: "ampharos",
+  nameZh: "电龙",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/181.png",
+  height: 14,
+  weight: 615,
+  abilities: ["静电(static)", "正电(plus)"],
+  hiddenAbilities: ["正电(plus)"],
+  gen: 2,
+  region: "城都",
+  genera: "灯宝可梦",
+  description: "尾巴会发出很强的亮光。 从以前起，它就被船员们 当做路标而深受重视。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 182,
+  name: "bellossom",
+  nameZh: "美丽花",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
+  height: 4,
+  weight: 58,
+  abilities: ["叶绿素(chlorophyll)", "治愈之心(healer)"],
+  hiddenAbilities: ["治愈之心(healer)"],
+  gen: 2,
+  region: "城都",
+  genera: "花宝可梦",
+  description: "有时能看到美丽花聚在一起 做着像是跳舞一样的动作。 据说这是呼唤太阳的仪式。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 183,
+  name: "marill",
+  nameZh: "玛力露",
+  types: ["water", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/183.png",
+  height: 4,
+  weight: 85,
+  abilities: ["厚脂肪(thick-fat)", "大力士(huge-power)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 2,
+  region: "城都",
+  genera: "水鼠宝可梦",
+  description: "体毛的防水性能很好， 就算是从冰冷的海里上岸， 身体也会立刻干掉，一点都不冷。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 184,
+  name: "azumarill",
+  nameZh: "玛力露丽",
+  types: ["water", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/184.png",
+  height: 8,
+  weight: 285,
+  abilities: ["厚脂肪(thick-fat)", "大力士(huge-power)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 2,
+  region: "城都",
+  genera: "水兔宝可梦",
+  description: "会制作填满空气的泡泡。 当露力丽在河里玩的时候， 它就会用这个泡泡包住露力丽。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 185,
+  name: "sudowoodo",
+  nameZh: "树才怪",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/185.png",
+  height: 12,
+  weight: 380,
+  abilities: ["结实(sturdy)", "坚硬脑袋(rock-head)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 2,
+  region: "城都",
+  genera: "模仿宝可梦",
+  description: "为了不被袭击会模仿树的样子。 很讨厌水，所以下雨后， 不知什么时候就会消失。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 186,
+  name: "politoed",
+  nameZh: "蚊香蛙皇",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/186.png",
+  height: 11,
+  weight: 339,
+  abilities: ["储水(water-absorb)", "湿气(damp)", "降雨(drizzle)"],
+  hiddenAbilities: ["降雨(drizzle)"],
+  gen: 2,
+  region: "城都",
+  genera: "蛙宝可梦",
+  description: "雄性的叫声更响亮。 叫声低沉可怕的蚊香蛙皇 更能受到雌性的欢迎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 187,
+  name: "hoppip",
+  nameZh: "毽子草",
+  types: ["grass", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/187.png",
+  height: 4,
+  weight: 5,
+  abilities: ["叶绿素(chlorophyll)", "叶子防守(leaf-guard)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 2,
+  region: "城都",
+  genera: "棉草宝可梦",
+  description: "To keep from being blown away by the wind, they gather in clusters. They do enjoy gentle breezes, though.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 188,
+  name: "skiploom",
+  nameZh: "毽子花",
+  types: ["grass", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/188.png",
+  height: 6,
+  weight: 10,
+  abilities: ["叶绿素(chlorophyll)", "叶子防守(leaf-guard)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 2,
+  region: "城都",
+  genera: "棉草宝可梦",
+  description: "The bloom on top of its head opens and closes as the temperature fluc­ tuates up and down.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 189,
+  name: "jumpluff",
+  nameZh: "毽子棉",
+  types: ["grass", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/189.png",
+  height: 8,
+  weight: 30,
+  abilities: ["叶绿素(chlorophyll)", "叶子防守(leaf-guard)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 2,
+  region: "城都",
+  genera: "棉草宝可梦",
+  description: "Blown by seasonal winds, it circles the globe, scattering cotton spores as it goes.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 190,
+  name: "aipom",
+  nameZh: "长尾怪手",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/190.png",
+  height: 8,
+  weight: 115,
+  abilities: ["逃跑(run-away)", "捡拾(pickup)", "连续攻击(skill-link)"],
+  hiddenAbilities: ["连续攻击(skill-link)"],
+  gen: 2,
+  region: "城都",
+  genera: "长尾宝可梦",
+  description: "会从树上寻找猎物。 发现喜食的甜竹竹后， 就会兴奋地飞扑过去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 191,
+  name: "sunkern",
+  nameZh: "向日种子",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/191.png",
+  height: 3,
+  weight: 18,
+  abilities: ["叶绿素(chlorophyll)", "太阳之力(solar-power)", "早起(early-bird)"],
+  hiddenAbilities: ["早起(early-bird)"],
+  gen: 2,
+  region: "城都",
+  genera: "种子宝可梦",
+  description: "It may drop out of the sky suddenly. If attacked by a SPEAROW, it will violently shake its leaves.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 192,
+  name: "sunflora",
+  nameZh: "向日花怪",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/192.png",
+  height: 8,
+  weight: 85,
+  abilities: ["叶绿素(chlorophyll)", "太阳之力(solar-power)", "早起(early-bird)"],
+  hiddenAbilities: ["早起(early-bird)"],
+  gen: 2,
+  region: "城都",
+  genera: "太阳宝可梦",
+  description: "It converts sun­ light into energy. In the darkness after sunset, it closes its petals and becomes still.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 193,
+  name: "yanma",
+  nameZh: "蜻蜻蜓",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/193.png",
+  height: 12,
+  weight: 380,
+  abilities: ["加速(speed-boost)", "复眼(compound-eyes)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 2,
+  region: "城都",
+  genera: "薄翼宝可梦",
+  description: "If it flaps its wings really fast, it can generate shock waves that will shatter win­ dows in the area.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 194,
+  name: "wooper",
+  nameZh: "乌波",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+  height: 4,
+  weight: 85,
+  abilities: ["湿气(damp)", "储水(water-absorb)", "纯朴(unaware)"],
+  hiddenAbilities: ["纯朴(unaware)"],
+  gen: 2,
+  region: "城都",
+  genera: "水鱼宝可梦",
+  description: "为了在地面上行走时 不让皮肤干燥，会用 有毒的粘膜覆盖身体。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 195,
+  name: "quagsire",
+  nameZh: "沼王",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+  height: 14,
+  weight: 750,
+  abilities: ["湿气(damp)", "储水(water-absorb)", "纯朴(unaware)"],
+  hiddenAbilities: ["纯朴(unaware)"],
+  gen: 2,
+  region: "城都",
+  genera: "水鱼宝可梦",
+  description: "身体总是滑溜溜的。 虽然游泳时头总会撞到河底， 但它自己毫不在意。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 196,
+  name: "espeon",
+  nameZh: "太阳伊布",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/196.png",
+  height: 9,
+  weight: 265,
+  abilities: ["同步(synchronize)", "魔法镜(magic-bounce)"],
+  hiddenAbilities: ["魔法镜(magic-bounce)"],
+  gen: 2,
+  region: "城都",
+  genera: "太阳宝可梦",
+  description: "从额头的珠子放射出精神力量 进行战斗。当力量用尽时， 珠子的颜色也会褪去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 197,
+  name: "umbreon",
+  nameZh: "月亮伊布",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/197.png",
+  height: 10,
+  weight: 270,
+  abilities: ["同步(synchronize)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 2,
+  region: "城都",
+  genera: "月光宝可梦",
+  description: "在满月之夜或是兴奋的时候， 它身上圈圈一样的花纹 就会发出金黄色的光。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 198,
+  name: "murkrow",
+  nameZh: "黑暗鸦",
+  types: ["dark", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/198.png",
+  height: 5,
+  weight: 21,
+  abilities: ["不眠(insomnia)", "超幸运(super-luck)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 2,
+  region: "城都",
+  genera: "黑暗宝可梦",
+  description: "会为老大去寻找闪闪发光的东西。 据说它很不吉利，厌恶它的人也很多。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 42
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 42
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 91
+}]
+},
+  {
+  id: 199,
+  name: "slowking",
+  nameZh: "呆呆王",
+  types: ["water", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/199.png",
+  height: 20,
+  weight: 795,
+  abilities: ["迟钝(oblivious)", "我行我素(own-tempo)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 2,
+  region: "城都",
+  genera: "王者宝可梦",
+  description: "虽然无论向呆呆王提出 什么难题它都会帮忙解决， 但是谁都无法理解它的语言。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 200,
+  name: "misdreavus",
+  nameZh: "梦妖",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/200.png",
+  height: 7,
+  weight: 10,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 2,
+  region: "城都",
+  genera: "夜啼宝可梦",
+  description: "会通过模仿人哭叫的声音 来吓唬大家并以此为乐。 不擅长对付胆大的对手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 201,
+  name: "unown",
+  nameZh: "未知图腾",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/201.png",
+  height: 5,
+  weight: 50,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 2,
+  region: "城都",
+  genera: "象征宝可梦",
+  description: "Their shapes look like hieroglyphs on ancient tab­ lets. It is said that the two are somehow related.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 48
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 72
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 72
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 48
+}]
+},
+  {
+  id: 202,
+  name: "wobbuffet",
+  nameZh: "果然翁",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/202.png",
+  height: 13,
+  weight: 285,
+  abilities: ["踩影(shadow-tag)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 2,
+  region: "城都",
+  genera: "忍耐宝可梦",
+  description: "为了隐藏漆黑的尾巴 而悄悄地生活在黑暗之中。 不会主动发起攻击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 190
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 33
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 58
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 33
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 58
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 33
+}]
+},
+  {
+  id: 203,
+  name: "girafarig",
+  nameZh: "麒麟奇",
+  types: ["normal", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/203.png",
+  height: 15,
+  weight: 415,
+  abilities: ["精神力(inner-focus)", "早起(early-bird)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 2,
+  region: "城都",
+  genera: "长颈宝可梦",
+  description: "Its tail has a small brain of its own. Beware! If you get close, it may react to your scent and bite.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 204,
+  name: "pineco",
+  nameZh: "榛果球",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/204.png",
+  height: 6,
+  weight: 72,
+  abilities: ["结实(sturdy)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 2,
+  region: "城都",
+  genera: "蓑衣虫宝可梦",
+  description: "会用唾液将树皮粘在自己身上， 从而让自己变得又厚又大。 上了年纪的榛果球是无比巨大的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 205,
+  name: "forretress",
+  nameZh: "佛烈托斯",
+  types: ["bug", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/205.png",
+  height: 12,
+  weight: 1258,
+  abilities: ["结实(sturdy)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 2,
+  region: "城都",
+  genera: "蓑衣虫宝可梦",
+  description: "仅在吞下猎物的瞬间，壳里面的 身体才会出现，但至今仍未有 人或宝可梦见过其真面目。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 140
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 206,
+  name: "dunsparce",
+  nameZh: "土龙弟弟",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/206.png",
+  height: 15,
+  weight: 140,
+  abilities: ["天恩(serene-grace)", "逃跑(run-away)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 2,
+  region: "城都",
+  genera: "地蛇宝可梦",
+  description: "栖息在像迷宫一样的巢穴里。 能通过土壤的气味来判断自己的 位置，所以绝对不会迷路。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 207,
+  name: "gligar",
+  nameZh: "天蝎",
+  types: ["ground", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/207.png",
+  height: 11,
+  weight: 648,
+  abilities: ["怪力钳(hyper-cutter)", "沙隐(sand-veil)", "免疫(immunity)"],
+  hiddenAbilities: ["免疫(immunity)"],
+  gen: 2,
+  region: "城都",
+  genera: "飞蝎宝可梦",
+  description: "It flies straight at its target's face then clamps down on the star­ tled victim to inject poison.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 208,
+  name: "steelix",
+  nameZh: "大钢蛇",
+  types: ["steel", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/208.png",
+  height: 92,
+  weight: 4000,
+  abilities: ["坚硬脑袋(rock-head)", "结实(sturdy)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 2,
+  region: "城都",
+  genera: "铁蛇宝可梦",
+  description: "人们认为它的身体是因为 堆积了很多和泥土一起吞下的 铁元素，才会发生变化的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 200
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 209,
+  name: "snubbull",
+  nameZh: "布鲁",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/209.png",
+  height: 6,
+  weight: 78,
+  abilities: ["威吓(intimidate)", "逃跑(run-away)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 2,
+  region: "城都",
+  genera: "妖精宝可梦",
+  description: "它和看上去不同，其实很胆小。 所以如果把它和小狗宝可梦 放在一起，它就有可能会受到欺负。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 210,
+  name: "granbull",
+  nameZh: "布鲁皇",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/210.png",
+  height: 14,
+  weight: 487,
+  abilities: ["威吓(intimidate)", "飞毛腿(quick-feet)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 2,
+  region: "城都",
+  genera: "妖精宝可梦",
+  description: "虽然深受年轻女性的欢迎， 但它胆小怕事，内心柔弱， 所以无法成为一条看门犬。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 211,
+  name: "qwilfish",
+  nameZh: "千针鱼",
+  types: ["water", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/211.png",
+  height: 5,
+  weight: 39,
+  abilities: ["毒刺(poison-point)", "悠游自如(swift-swim)", "威吓(intimidate)"],
+  hiddenAbilities: ["威吓(intimidate)"],
+  gen: 2,
+  region: "城都",
+  genera: "气球宝可梦",
+  description: "全身上下的小针都是由鳞片 变化而来的。如果被刺中的话， 就会因中毒而昏迷。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 212,
+  name: "scizor",
+  nameZh: "巨钳螳螂",
+  types: ["bug", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/212.png",
+  height: 18,
+  weight: 1180,
+  abilities: ["虫之预感(swarm)", "技术高手(technician)", "轻金属(light-metal)"],
+  hiddenAbilities: ["轻金属(light-metal)"],
+  gen: 2,
+  region: "城都",
+  genera: "钳子宝可梦",
+  description: "虽然身体纤细，却有着 惊人的攻击力。身体的 肌肉也是由金属构成的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 213,
+  name: "shuckle",
+  nameZh: "壶壶",
+  types: ["bug", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
+  height: 6,
+  weight: 205,
+  abilities: ["结实(sturdy)", "贪吃鬼(gluttony)", "唱反调(contrary)"],
+  hiddenAbilities: ["唱反调(contrary)"],
+  gen: 2,
+  region: "城都",
+  genera: "发酵宝可梦",
+  description: "储存在壶形甲壳里的 树果会在不知不觉间 变成黏糊糊的果汁。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 20
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 10
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 230
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 10
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 230
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 5
+}]
+},
+  {
+  id: 214,
+  name: "heracross",
+  nameZh: "赫拉克罗斯",
+  types: ["bug", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
+  height: 15,
+  weight: 540,
+  abilities: ["虫之预感(swarm)", "毅力(guts)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 2,
+  region: "城都",
+  genera: "独角宝可梦",
+  description: "能轻轻松松地举起比自己 体重还重１００倍的东西， 是以一身怪力为傲的宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 215,
+  name: "sneasel",
+  nameZh: "狃拉",
+  types: ["dark", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/215.png",
+  height: 9,
+  weight: 280,
+  abilities: ["精神力(inner-focus)", "锐利目光(keen-eye)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 2,
+  region: "城都",
+  genera: "钩爪宝可梦",
+  description: "狡黠凶恶的性格。 趁着双亲不在就侵入巢穴， 将蛋盗出。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 115
+}]
+},
+  {
+  id: 216,
+  name: "teddiursa",
+  nameZh: "熊宝宝",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/216.png",
+  height: 6,
+  weight: 88,
+  abilities: ["捡拾(pickup)", "飞毛腿(quick-feet)", "采蜜(honey-gather)"],
+  hiddenAbilities: ["采蜜(honey-gather)"],
+  gen: 2,
+  region: "城都",
+  genera: "小熊宝可梦",
+  description: "If it finds honey, its crescent mark glows. It always licks its paws because they are soaked with honey.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 217,
+  name: "ursaring",
+  nameZh: "圈圈熊",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/217.png",
+  height: 18,
+  weight: 1258,
+  abilities: ["毅力(guts)", "飞毛腿(quick-feet)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 2,
+  region: "城都",
+  genera: "冬眠宝可梦",
+  description: "Although it is a good climber, it prefers to snap trees with its forelegs and eat fallen BERRIES.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 218,
+  name: "slugma",
+  nameZh: "熔岩虫",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/218.png",
+  height: 7,
+  weight: 350,
+  abilities: ["熔岩铠甲(magma-armor)", "火焰之躯(flame-body)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 2,
+  region: "城都",
+  genera: "熔岩宝可梦",
+  description: "Its body is made of magma. If it doesn’t keep moving, its body will cool and harden.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 219,
+  name: "magcargo",
+  nameZh: "熔岩蜗牛",
+  types: ["fire", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/219.png",
+  height: 8,
+  weight: 550,
+  abilities: ["熔岩铠甲(magma-armor)", "火焰之躯(flame-body)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 2,
+  region: "城都",
+  genera: "熔岩宝可梦",
+  description: "The shell on its back is just skin that has cooled and hardened. It breaks easily with a slight touch.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 220,
+  name: "swinub",
+  nameZh: "小山猪",
+  types: ["ice", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/220.png",
+  height: 4,
+  weight: 65,
+  abilities: ["迟钝(oblivious)", "雪隐(snow-cloak)", "厚脂肪(thick-fat)"],
+  hiddenAbilities: ["厚脂肪(thick-fat)"],
+  gen: 2,
+  region: "城都",
+  genera: "小猪宝可梦",
+  description: "嗅到诱人的香味时， 便会不顾一切地朝着 气味的方向飞奔过去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 221,
+  name: "piloswine",
+  nameZh: "长毛猪",
+  types: ["ice", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/221.png",
+  height: 11,
+  weight: 558,
+  abilities: ["迟钝(oblivious)", "雪隐(snow-cloak)", "厚脂肪(thick-fat)"],
+  hiddenAbilities: ["厚脂肪(thick-fat)"],
+  gen: 2,
+  region: "城都",
+  genera: "野猪宝可梦",
+  description: "虽然４只脚很短， 但因为蹄子很宽很粗糙， 所以就算在雪地上行走也不会打滑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 222,
+  name: "corsola",
+  nameZh: "太阳珊瑚",
+  types: ["water", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/222.png",
+  height: 6,
+  weight: 50,
+  abilities: ["活力(hustle)", "自然回复(natural-cure)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 2,
+  region: "城都",
+  genera: "珊瑚宝可梦",
+  description: "在温暖的大海里生活。 也曾经大量栖息于 上古时期的伽勒尔近海。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 223,
+  name: "remoraid",
+  nameZh: "铁炮鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/223.png",
+  height: 6,
+  weight: 120,
+  abilities: ["活力(hustle)", "狙击手(sniper)", "心情不定(moody)"],
+  hiddenAbilities: ["心情不定(moody)"],
+  gen: 2,
+  region: "城都",
+  genera: "喷射宝可梦",
+  description: "会用变成吸盘状的背鳍 吸附在巨翅飞鱼身上， 让它分一点吃剩的东西给自己吃。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 224,
+  name: "octillery",
+  nameZh: "章鱼桶",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/224.png",
+  height: 9,
+  weight: 285,
+  abilities: ["吸盘(suction-cups)", "狙击手(sniper)", "心情不定(moody)"],
+  hiddenAbilities: ["心情不定(moody)"],
+  gen: 2,
+  region: "城都",
+  genera: "喷射宝可梦",
+  description: "有着结实的坚硬脑袋。 会用带吸盘的脚缠住对手， 然后再一个劲地用头猛撞。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 225,
+  name: "delibird",
+  nameZh: "信使鸟",
+  types: ["ice", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/225.png",
+  height: 9,
+  weight: 160,
+  abilities: ["干劲(vital-spirit)", "活力(hustle)", "不眠(insomnia)"],
+  hiddenAbilities: ["不眠(insomnia)"],
+  gen: 2,
+  region: "城都",
+  genera: "搬运宝可梦",
+  description: "因为有跟人类及宝可梦 分享自己食物的习性， 所以一直都在到处寻找食物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 226,
+  name: "mantine",
+  nameZh: "巨翅飞鱼",
+  types: ["water", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/226.png",
+  height: 21,
+  weight: 2200,
+  abilities: ["悠游自如(swift-swim)", "储水(water-absorb)", "水幕(water-veil)"],
+  hiddenAbilities: ["水幕(water-veil)"],
+  gen: 2,
+  region: "城都",
+  genera: "风筝宝可梦",
+  description: "悠然地畅游在大海中。 就算有觊觎食物残渣的铁炮鱼 吸附在自己身上也毫不在意。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 140
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 227,
+  name: "skarmory",
+  nameZh: "盔甲鸟",
+  types: ["steel", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+  height: 17,
+  weight: 505,
+  abilities: ["锐利目光(keen-eye)", "结实(sturdy)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 2,
+  region: "城都",
+  genera: "钢甲鸟宝可梦",
+  description: "锐利的羽毛比剑还要锋利。 与钢铠鸦为领地 展开激烈的争斗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 140
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 228,
+  name: "houndour",
+  nameZh: "戴鲁比",
+  types: ["dark", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/228.png",
+  height: 6,
+  weight: 108,
+  abilities: ["早起(early-bird)", "引火(flash-fire)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 2,
+  region: "城都",
+  genera: "阴暗宝可梦",
+  description: "会在天亮之前反复发出恐怖的长嚎， 并以此来彰显自己群体的存在。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 229,
+  name: "houndoom",
+  nameZh: "黑鲁加",
+  types: ["dark", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/229.png",
+  height: 14,
+  weight: 350,
+  abilities: ["早起(early-bird)", "引火(flash-fire)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 2,
+  region: "城都",
+  genera: "阴暗宝可梦",
+  description: "恐怖的长嚎是其特征。 过去人们曾认为它是来自 地狱的使者而对其心存畏惧。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 230,
+  name: "kingdra",
+  nameZh: "刺龙王",
+  types: ["water", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/230.png",
+  height: 18,
+  weight: 1520,
+  abilities: ["悠游自如(swift-swim)", "狙击手(sniper)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 2,
+  region: "城都",
+  genera: "龙宝可梦",
+  description: "身上掉下的鳞片闪耀着 高雅而有深度的光泽， 甚至会被拿去进献给王族。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 231,
+  name: "phanpy",
+  nameZh: "小小象",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/231.png",
+  height: 5,
+  weight: 335,
+  abilities: ["捡拾(pickup)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 2,
+  region: "城都",
+  genera: "长鼻宝可梦",
+  description: "It swings its long snout around play­ fully, but because it is so strong, that can be dan­ gerous.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 232,
+  name: "donphan",
+  nameZh: "顿甲",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/232.png",
+  height: 11,
+  weight: 1200,
+  abilities: ["结实(sturdy)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 2,
+  region: "城都",
+  genera: "铠甲宝可梦",
+  description: "It has sharp, hard tusks and a rugged hide. Its TACKLE is strong enough to knock down a house.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 233,
+  name: "porygon2",
+  nameZh: "多边兽２型",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
+  height: 6,
+  weight: 325,
+  abilities: ["复制(trace)", "下载(download)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 2,
+  region: "城都",
+  genera: "虚拟宝可梦",
+  description: "在装载了ＡＩ功能后， 多边兽２型便开始用只有彼此 能懂的神秘语言互相交流了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 234,
+  name: "stantler",
+  nameZh: "惊角鹿",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/234.png",
+  height: 14,
+  weight: 712,
+  abilities: ["威吓(intimidate)", "察觉(frisk)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 2,
+  region: "城都",
+  genera: "大角宝可梦",
+  description: "The curved antlers subtly change the flow of air to create a strange space where real­ ity is distorted.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 73
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 62
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 235,
+  name: "smeargle",
+  nameZh: "图图犬",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/235.png",
+  height: 12,
+  weight: 580,
+  abilities: ["我行我素(own-tempo)", "技术高手(technician)", "心情不定(moody)"],
+  hiddenAbilities: ["心情不定(moody)"],
+  gen: 2,
+  region: "城都",
+  genera: "画画宝可梦",
+  description: "会用尾巴前端渗出的体液画下标记。 对于有些标记，爱好者会以高价买卖。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 236,
+  name: "tyrogue",
+  nameZh: "无畏小子",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/236.png",
+  height: 7,
+  weight: 210,
+  abilities: ["毅力(guts)", "不屈之心(steadfast)", "干劲(vital-spirit)"],
+  hiddenAbilities: ["干劲(vital-spirit)"],
+  gen: 2,
+  region: "城都",
+  genera: "打斗宝可梦",
+  description: "体型偏小却不可轻视， 因为它只要发现合适的对手 便会马上扑上去大打出手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 237,
+  name: "hitmontop",
+  nameZh: "战舞郎",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+  height: 14,
+  weight: 480,
+  abilities: ["威吓(intimidate)", "技术高手(technician)", "不屈之心(steadfast)"],
+  hiddenAbilities: ["不屈之心(steadfast)"],
+  gen: 2,
+  region: "城都",
+  genera: "倒立宝可梦",
+  description: "会通过倒立来扰乱 对方的节奏，然后 趁隙施展华丽的踢击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 238,
+  name: "smoochum",
+  nameZh: "迷唇娃",
+  types: ["ice", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/238.png",
+  height: 4,
+  weight: 60,
+  abilities: ["迟钝(oblivious)", "预知梦(forewarn)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 2,
+  region: "城都",
+  genera: "亲吻宝可梦",
+  description: "好奇心旺盛的宝可梦。 不管是什么都会试着用 嘴唇去触碰，确认是否喜欢。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 15
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 239,
+  name: "elekid",
+  nameZh: "电击怪",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/239.png",
+  height: 6,
+  weight: 235,
+  abilities: ["静电(static)", "干劲(vital-spirit)"],
+  hiddenAbilities: ["干劲(vital-spirit)"],
+  gen: 2,
+  region: "城都",
+  genera: "电气宝可梦",
+  description: "储存电力的本领还不到家。 为了吸取电力，会偷偷 潜入民宅寻找插座。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 63
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 37
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 240,
+  name: "magby",
+  nameZh: "鸭嘴宝宝",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/240.png",
+  height: 7,
+  weight: 214,
+  abilities: ["火焰之躯(flame-body)", "干劲(vital-spirit)"],
+  hiddenAbilities: ["干劲(vital-spirit)"],
+  gen: 2,
+  region: "城都",
+  genera: "火种宝可梦",
+  description: "栖息在火山地带。 会浸泡在岩浆中， 疗愈一整天的疲劳。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 37
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 83
+}]
+},
+  {
+  id: 241,
+  name: "miltank",
+  nameZh: "大奶罐",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/241.png",
+  height: 12,
+  weight: 755,
+  abilities: ["厚脂肪(thick-fat)", "胆量(scrappy)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 2,
+  region: "城都",
+  genera: "奶牛宝可梦",
+  description: "能挤出营养十足的鲜奶， 因此从很久以前开始就一直 支持着人类和宝可梦的生活。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 242,
+  name: "blissey",
+  nameZh: "幸福蛋",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/242.png",
+  height: 15,
+  weight: 468,
+  abilities: ["自然回复(natural-cure)", "天恩(serene-grace)", "治愈之心(healer)"],
+  hiddenAbilities: ["治愈之心(healer)"],
+  gen: 2,
+  region: "城都",
+  genera: "幸福宝可梦",
+  description: "会生下装满幸福的奇妙之蛋。 据说，吃下它的蛋的人， 能够对所有人都温柔相待。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 255
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 10
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 10
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 135
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 243,
+  name: "raikou",
+  nameZh: "雷公",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+  height: 19,
+  weight: 1780,
+  abilities: ["压迫感(pressure)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 2,
+  region: "城都",
+  genera: "天雷宝可梦",
+  description: "The rain clouds it carries let it fire thunderbolts at will. They say that it descended with lightning.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 115
+}]
+},
+  {
+  id: 244,
+  name: "entei",
+  nameZh: "炎帝",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+  height: 21,
+  weight: 1980,
+  abilities: ["压迫感(pressure)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 2,
+  region: "城都",
+  genera: "火山宝可梦",
+  description: "Volcanoes erupt when it barks. Un­ able to restrain its extreme power, it races headlong around the land.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 115
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 245,
+  name: "suicune",
+  nameZh: "水君",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+  height: 20,
+  weight: 1870,
+  abilities: ["压迫感(pressure)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 2,
+  region: "城都",
+  genera: "极光宝可梦",
+  description: "Said to be the reincarnation of north winds, it can instantly purify filthy, murky water.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 246,
+  name: "larvitar",
+  nameZh: "幼基拉斯",
+  types: ["rock", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/246.png",
+  height: 6,
+  weight: 720,
+  abilities: ["毅力(guts)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 2,
+  region: "城都",
+  genera: "岩石肤宝可梦",
+  description: "以吃土为生。 吃掉一座大山后， 就会为了成长而开始沉睡。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 64
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 41
+}]
+},
+  {
+  id: 247,
+  name: "pupitar",
+  nameZh: "沙基拉斯",
+  types: ["rock", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/247.png",
+  height: 12,
+  weight: 1520,
+  abilities: ["蜕皮(shed-skin)"],
+  hiddenAbilities: [],
+  gen: 2,
+  region: "城都",
+  genera: "子弹宝可梦",
+  description: "虽然是蛹却不会呆着不动。 在坚硬的甲壳之下 已经长出了手脚。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 84
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 51
+}]
+},
+  {
+  id: 248,
+  name: "tyranitar",
+  nameZh: "班基拉斯",
+  types: ["rock", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
+  height: 20,
+  weight: 2020,
+  abilities: ["扬沙(sand-stream)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 2,
+  region: "城都",
+  genera: "铠甲宝可梦",
+  description: "当它带着巨大轰鸣声迈开脚步， 就连大山都会为之崩裂， 周围的地形也会因此改变。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 134
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 61
+}]
+},
+  {
+  id: 249,
+  name: "lugia",
+  nameZh: "洛奇亚",
+  types: ["psychic", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+  height: 52,
+  weight: 2160,
+  abilities: ["压迫感(pressure)", "多重鳞片(multiscale)"],
+  hiddenAbilities: ["多重鳞片(multiscale)"],
+  gen: 2,
+  region: "城都",
+  genera: "潜水宝可梦",
+  description: "It is said that it quietly spends its time deep at the bottom of the sea because its powers are too strong.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 106
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 154
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 250,
+  name: "ho-oh",
+  nameZh: "凤王",
+  types: ["fire", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+  height: 38,
+  weight: 1990,
+  abilities: ["压迫感(pressure)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 2,
+  region: "城都",
+  genera: "虹色宝可梦",
+  description: "Legends claim this POKéMON flies the world's skies con­ tinuously on its magnificent seven- colored wings.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 106
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 154
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 251,
+  name: "celebi",
+  nameZh: "时拉比",
+  types: ["psychic", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/251.png",
+  height: 6,
+  weight: 50,
+  abilities: ["自然回复(natural-cure)"],
+  hiddenAbilities: [],
+  gen: 2,
+  region: "城都",
+  genera: "时空穿越宝可梦",
+  description: "从未来穿越时光而来。 能够治愈伤痛， 也会把自己的力量分给草木。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 252,
+  name: "treecko",
+  nameZh: "木守宫",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/252.png",
+  height: 5,
+  weight: 50,
+  abilities: ["茂盛(overgrow)", "轻装(unburden)"],
+  hiddenAbilities: ["轻装(unburden)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "林蜥宝可梦",
+  description: "TREECKO has small hooks on the bottom of its feet that enable it to scale vertical walls. This POKéMON attacks by slamming foes with its thick tail.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 253,
+  name: "grovyle",
+  nameZh: "森林蜥蜴",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/253.png",
+  height: 9,
+  weight: 216,
+  abilities: ["茂盛(overgrow)", "轻装(unburden)"],
+  hiddenAbilities: ["轻装(unburden)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "林蜥宝可梦",
+  description: "The leaves growing out of GROVYLE’s body are convenient for camouflaging it from enemies in the forest. This POKéMON is a master at climbing trees in jungles.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 254,
+  name: "sceptile",
+  nameZh: "蜥蜴王",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png",
+  height: 17,
+  weight: 522,
+  abilities: ["茂盛(overgrow)", "轻装(unburden)"],
+  hiddenAbilities: ["轻装(unburden)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "密林宝可梦",
+  description: "The leaves growing on SCEPTILE’s body are very sharp edged. This POKéMON is very agile - it leaps all over the branches of trees and jumps on its foe from above or behind.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 120
+}]
+},
+  {
+  id: 255,
+  name: "torchic",
+  nameZh: "火稚鸡",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/255.png",
+  height: 4,
+  weight: 25,
+  abilities: ["猛火(blaze)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "雏鸡宝可梦",
+  description: "TORCHIC sticks with its TRAINER, following behind with unsteady steps. This POKéMON breathes fire of over 1,800 degrees F, including fireballs that leave the foe scorched black.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 256,
+  name: "combusken",
+  nameZh: "力壮鸡",
+  types: ["fire", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/256.png",
+  height: 9,
+  weight: 195,
+  abilities: ["猛火(blaze)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "幼鸡宝可梦",
+  description: "COMBUSKEN toughens up its legs and thighs by running through fields and mountains. This POKéMON’s legs possess both speed and power, enabling it to dole out ten kicks in one second.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 257,
+  name: "blaziken",
+  nameZh: "火焰鸡",
+  types: ["fire", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png",
+  height: 19,
+  weight: 520,
+  abilities: ["猛火(blaze)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "猛火宝可梦",
+  description: "Flames spout from its wrists, enveloping its knuckles. Its punches scorch its foes.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 258,
+  name: "mudkip",
+  nameZh: "水跃鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/258.png",
+  height: 4,
+  weight: 76,
+  abilities: ["激流(torrent)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "沼鱼宝可梦",
+  description: "The fin on MUDKIP’s head acts as highly sensitive radar. Using this fin to sense movements of water and air, this POKéMON can determine what is taking place around it without using its eyes.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 259,
+  name: "marshtomp",
+  nameZh: "沼跃鱼",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/259.png",
+  height: 7,
+  weight: 280,
+  abilities: ["激流(torrent)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "沼鱼宝可梦",
+  description: "The surface of MARSHTOMP’s body is enveloped by a thin, sticky film that enables it to live on land. This POKéMON plays in mud on beaches when the ocean tide is low.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 260,
+  name: "swampert",
+  nameZh: "巨沼怪",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png",
+  height: 15,
+  weight: 819,
+  abilities: ["激流(torrent)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "沼鱼宝可梦",
+  description: "SWAMPERT is very strong. It has enough power to easily drag a boulder weighing more than a ton. This POKéMON also has powerful vision that lets it see even in murky water.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 261,
+  name: "poochyena",
+  nameZh: "土狼犬",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/261.png",
+  height: 5,
+  weight: 136,
+  abilities: ["逃跑(run-away)", "飞毛腿(quick-feet)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "紧咬宝可梦",
+  description: "At first sight, POOCHYENA takes a bite at anything that moves. This POKéMON chases after prey until the victim becomes exhausted. However, it may turn tail if the prey strikes back.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 262,
+  name: "mightyena",
+  nameZh: "大狼犬",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/262.png",
+  height: 10,
+  weight: 370,
+  abilities: ["威吓(intimidate)", "飞毛腿(quick-feet)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "紧咬宝可梦",
+  description: "It chases down prey in a pack. It will never disobey the commands of a skilled Trainer.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 263,
+  name: "zigzagoon",
+  nameZh: "蛇纹熊",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/263.png",
+  height: 4,
+  weight: 175,
+  abilities: ["捡拾(pickup)", "贪吃鬼(gluttony)", "飞毛腿(quick-feet)"],
+  hiddenAbilities: ["飞毛腿(quick-feet)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "豆狸宝可梦",
+  description: "伽勒尔的蛇纹熊适应了 其他地区环境后的样子。 十分擅长找东西。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 38
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 41
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 41
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 264,
+  name: "linoone",
+  nameZh: "直冲熊",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/264.png",
+  height: 5,
+  weight: 325,
+  abilities: ["捡拾(pickup)", "贪吃鬼(gluttony)", "飞毛腿(quick-feet)"],
+  hiddenAbilities: ["飞毛腿(quick-feet)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "猛冲宝可梦",
+  description: "用自己超群的爆发力 和锐利的爪子来制服猎物。 不擅长在弯曲的道路上奔跑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 61
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 61
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 265,
+  name: "wurmple",
+  nameZh: "刺尾虫",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/265.png",
+  height: 3,
+  weight: 36,
+  abilities: ["鳞粉(shield-dust)", "逃跑(run-away)"],
+  hiddenAbilities: ["逃跑(run-away)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "虫宝宝宝可梦",
+  description: "Using the spikes on its rear end,   WURMPLE peels the bark off trees and feeds on the sap that oozes out. This POKéMON’s feet are tipped with suction pads that allow it to cling to glass without slipping.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 266,
+  name: "silcoon",
+  nameZh: "甲壳茧",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/266.png",
+  height: 6,
+  weight: 100,
+  abilities: ["蜕皮(shed-skin)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "蛹宝可梦",
+  description: "SILCOON tethers itself to a tree branch using silk to keep from falling. There,  this POKéMON hangs quietly while it awaits evolution. It peers out of the silk cocoon through a small hole.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 267,
+  name: "beautifly",
+  nameZh: "狩猎凤蝶",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/267.png",
+  height: 10,
+  weight: 284,
+  abilities: ["虫之预感(swarm)", "斗争心(rivalry)"],
+  hiddenAbilities: ["斗争心(rivalry)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "蝴蝶宝可梦",
+  description: "BEAUTIFLY’s favorite food is the sweet pollen of flowers. If you want to see this POKéMON, just leave a potted flower by an open window. BEAUTIFLY is sure to come looking for pollen.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 268,
+  name: "cascoon",
+  nameZh: "盾甲茧",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/268.png",
+  height: 7,
+  weight: 115,
+  abilities: ["蜕皮(shed-skin)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "蛹宝可梦",
+  description: "CASCOON makes its protective cocoon by wrapping its body entirely with a fine silk from its mouth. Once the silk goes around its body, it hardens. This POKéMON prepares for its evolution inside the cocoon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 269,
+  name: "dustox",
+  nameZh: "毒粉蛾",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/269.png",
+  height: 12,
+  weight: 316,
+  abilities: ["鳞粉(shield-dust)", "复眼(compound-eyes)"],
+  hiddenAbilities: ["复眼(compound-eyes)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "毒蛾宝可梦",
+  description: "DUSTOX is instinctively drawn to light. Swarms of this POKéMON are attracted by the bright lights of cities, where they wreak havoc by stripping the leaves off roadside trees for food.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 270,
+  name: "lotad",
+  nameZh: "莲叶童子",
+  types: ["water", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
+  height: 5,
+  weight: 26,
+  abilities: ["悠游自如(swift-swim)", "雨盘(rain-dish)", "我行我素(own-tempo)"],
+  hiddenAbilities: ["我行我素(own-tempo)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "浮萍宝可梦",
+  description: "因为叶子长得太大太重， 所以才会改变习性， 漂浮在水面上生活。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 271,
+  name: "lombre",
+  nameZh: "莲帽小童",
+  types: ["water", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/271.png",
+  height: 12,
+  weight: 325,
+  abilities: ["悠游自如(swift-swim)", "雨盘(rain-dish)", "我行我素(own-tempo)"],
+  hiddenAbilities: ["我行我素(own-tempo)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "爽朗宝可梦",
+  description: "住在日照良好的水边。 白天在水草做的床上睡觉， 太阳下山后就会出来活动。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 272,
+  name: "ludicolo",
+  nameZh: "乐天河童",
+  types: ["water", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/272.png",
+  height: 15,
+  weight: 550,
+  abilities: ["悠游自如(swift-swim)", "雨盘(rain-dish)", "我行我素(own-tempo)"],
+  hiddenAbilities: ["我行我素(own-tempo)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "乐天宝可梦",
+  description: "乐天河童会跟着 欢快的音乐摇摆身体， 从而增强自己的力量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 273,
+  name: "seedot",
+  nameZh: "橡实果",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/273.png",
+  height: 5,
+  weight: 40,
+  abilities: ["叶绿素(chlorophyll)", "早起(early-bird)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "橡实宝可梦",
+  description: "会将头顶粘在树枝上悬挂着。 也有被大风吹落的时候。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 274,
+  name: "nuzleaf",
+  nameZh: "长鼻叶",
+  types: ["grass", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/274.png",
+  height: 10,
+  weight: 280,
+  abilities: ["叶绿素(chlorophyll)", "早起(early-bird)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "捉弄宝可梦",
+  description: "长鼻叶居住在大树上的洞穴里， 它吹奏出的草笛声 会让听到的人感到不安。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 275,
+  name: "shiftry",
+  nameZh: "狡猾天狗",
+  types: ["grass", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/275.png",
+  height: 13,
+  weight: 596,
+  abilities: ["叶绿素(chlorophyll)", "乘风(wind-rider)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "邪恶宝可梦",
+  description: "在森林深处静静地生活。 据说当它扇动大大的团扇， 就会刮起冬日寒风。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 276,
+  name: "taillow",
+  nameZh: "傲骨燕",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/276.png",
+  height: 3,
+  weight: 23,
+  abilities: ["毅力(guts)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "幼燕宝可梦",
+  description: "TAILLOW courageously stands its ground against foes, however strong they may be. This gutsy POKéMON will remain defiant even after a loss. On the other hand, it cries loudly if it becomes hungry.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 277,
+  name: "swellow",
+  nameZh: "大王燕",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/277.png",
+  height: 7,
+  weight: 198,
+  abilities: ["毅力(guts)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "燕子宝可梦",
+  description: "SWELLOW flies high above our heads, making graceful arcs in the sky. This POKéMON dives at a steep angle as soon as it spots its prey. The hapless prey is tightly grasped by SWELLOW’s clawed feet, preventing escape.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 125
+}]
+},
+  {
+  id: 278,
+  name: "wingull",
+  nameZh: "长翅鸥",
+  types: ["water", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/278.png",
+  height: 6,
+  weight: 95,
+  abilities: ["锐利目光(keen-eye)", "湿润之躯(hydration)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "海鸥宝可梦",
+  description: "利用气流， 不拍打翅膀就能飞上天空。 会在海边的岩壁上筑巢。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 279,
+  name: "pelipper",
+  nameZh: "大嘴鸥",
+  types: ["water", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png",
+  height: 12,
+  weight: 280,
+  abilities: ["锐利目光(keen-eye)", "降雨(drizzle)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "水鸟宝可梦",
+  description: "会贴着海面飞行， 用大大的鸟嘴连着海水一起 把食物捞起来带走。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 280,
+  name: "ralts",
+  nameZh: "拉鲁拉丝",
+  types: ["psychic", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/280.png",
+  height: 4,
+  weight: 66,
+  abilities: ["同步(synchronize)", "复制(trace)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "心情宝可梦",
+  description: "用红色的角捕捉到 人和宝可梦的温情后， 全身也会稍稍变暖起来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 28
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 25
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 25
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 281,
+  name: "kirlia",
+  nameZh: "奇鲁莉安",
+  types: ["psychic", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/281.png",
+  height: 8,
+  weight: 202,
+  abilities: ["同步(synchronize)", "复制(trace)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "感情宝可梦",
+  description: "可以通过操纵精神力量 扭曲周围的空间来看清未来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 38
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 282,
+  name: "gardevoir",
+  nameZh: "沙奈朵",
+  types: ["psychic", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
+  height: 16,
+  weight: 484,
+  abilities: ["同步(synchronize)", "复制(trace)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "包容宝可梦",
+  description: "如果是为了保护训练家， 它就会用尽自己的精神力量 制造出小型黑洞。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 283,
+  name: "surskit",
+  nameZh: "溜溜糖球",
+  types: ["bug", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/283.png",
+  height: 5,
+  weight: 17,
+  abilities: ["悠游自如(swift-swim)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "水黾宝可梦",
+  description: "栖息在水草丛生的池塘或沼泽里。 会经常和栖息地以及食物 都与自己相近的滴蛛争斗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 32
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 52
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 284,
+  name: "masquerain",
+  nameZh: "雨翅蛾",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/284.png",
+  height: 8,
+  weight: 36,
+  abilities: ["威吓(intimidate)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "眼珠宝可梦",
+  description: "像薄薄的翅膀一样的触角 很容易吸收湿气。 雨天会静静地待在树洞等地方度过。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 62
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 82
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 285,
+  name: "shroomish",
+  nameZh: "蘑蘑菇",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/285.png",
+  height: 4,
+  weight: 45,
+  abilities: ["孢子(effect-spore)", "毒疗(poison-heal)", "飞毛腿(quick-feet)"],
+  hiddenAbilities: ["飞毛腿(quick-feet)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "蘑菇宝可梦",
+  description: "SHROOMISH live in damp soil in the dark depths of forests. They are often found keeping still under fallen leaves. This POKéMON feeds on compost that is made up of fallen, rotted leaves.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 286,
+  name: "breloom",
+  nameZh: "斗笠菇",
+  types: ["grass", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/286.png",
+  height: 12,
+  weight: 392,
+  abilities: ["孢子(effect-spore)", "毒疗(poison-heal)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "蘑菇宝可梦",
+  description: "BRELOOM closes in on its foe with light and sprightly footwork, then throws punches with its stretchy arms. This POKéMON’s fighting technique puts boxers to shame.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 287,
+  name: "slakoth",
+  nameZh: "懒人獭",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/287.png",
+  height: 8,
+  weight: 240,
+  abilities: ["懒惰(truant)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "懒人宝可梦",
+  description: "SLAKOTH lolls around for over twenty hours every day. Because it moves so little, it does not need much food. This POKéMON’s sole daily meal consists of just three leaves.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 288,
+  name: "vigoroth",
+  nameZh: "过动猿",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/288.png",
+  height: 14,
+  weight: 465,
+  abilities: ["干劲(vital-spirit)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "暴猿宝可梦",
+  description: "VIGOROTH is always itching and agitated to go on a wild rampage. It simply can’t tolerate sitting still for even a minute. This POKéMON’s stress level rises if it can’t be moving constantly.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 289,
+  name: "slaking",
+  nameZh: "请假王",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/289.png",
+  height: 20,
+  weight: 1305,
+  abilities: ["懒惰(truant)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "怕麻烦宝可梦",
+  description: "SLAKING spends all day lying down and lolling about. It eats grass growing within its reach. If it eats all the grass it can reach, this POKéMON reluctantly moves to another spot.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 150
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 160
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 290,
+  name: "nincada",
+  nameZh: "土居忍士",
+  types: ["bug", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/290.png",
+  height: 5,
+  weight: 55,
+  abilities: ["复眼(compound-eyes)", "逃跑(run-away)"],
+  hiddenAbilities: ["逃跑(run-away)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "入门宝可梦",
+  description: "有时能在土里生活１０年以上。 会从树木的根部那里吸取营养。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 31
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 291,
+  name: "ninjask",
+  nameZh: "铁面忍者",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/291.png",
+  height: 8,
+  weight: 120,
+  abilities: ["加速(speed-boost)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "忍者宝可梦",
+  description: "行动十分迅速的宝可梦。 说它无论什么攻击都能避开也不夸张。 非常喜欢甘甜的树液。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 61
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 160
+}]
+},
+  {
+  id: 292,
+  name: "shedinja",
+  nameZh: "脱壳忍者",
+  types: ["bug", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/292.png",
+  height: 8,
+  weight: 12,
+  abilities: ["神奇守护(wonder-guard)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "空壳宝可梦",
+  description: "不拍动翅膀也能四处飞行。 身体里面空空的，是一种 不呼吸的奇妙宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 1
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 293,
+  name: "whismur",
+  nameZh: "咕妞妞",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/293.png",
+  height: 6,
+  weight: 163,
+  abilities: ["隔音(soundproof)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "细语宝可梦",
+  description: "一旦开始喊叫，就会被自己的声音 惊吓到，然后以更大的声音 大吼大叫起来。叫累了以后就会睡着，",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 64
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 51
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 23
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 51
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 23
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 28
+}]
+},
+  {
+  id: 294,
+  name: "loudred",
+  nameZh: "吼爆弹",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/294.png",
+  height: 10,
+  weight: 405,
+  abilities: ["隔音(soundproof)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "大声宝可梦",
+  description: "它发出的大叫声不仅会刺激听觉， 还会压缩空气造成冲击波 将敌人吹飞给予伤害。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 84
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 71
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 43
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 71
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 43
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 48
+}]
+},
+  {
+  id: 295,
+  name: "exploud",
+  nameZh: "爆音怪",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/295.png",
+  height: 15,
+  weight: 840,
+  abilities: ["隔音(soundproof)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "噪音宝可梦",
+  description: "它不仅仅会大喊大叫。为了和 伙伴相互传情达意，它会从 身体的洞里发出各种各样的音色。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 104
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 91
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 91
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 73
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 68
+}]
+},
+  {
+  id: 296,
+  name: "makuhita",
+  nameZh: "幕下力士",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/296.png",
+  height: 10,
+  weight: 864,
+  abilities: ["厚脂肪(thick-fat)", "毅力(guts)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "毅力宝可梦",
+  description: "据说为了培育强大的幕下力士， 存在着一种训练家们按传统 手法制作的火锅料理。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 297,
+  name: "hariyama",
+  nameZh: "铁掌力士",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/297.png",
+  height: 23,
+  weight: 2538,
+  abilities: ["厚脂肪(thick-fat)", "毅力(guts)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "猛推宝可梦",
+  description: "体型粗壮的铁掌力士未必强大。 即便身型矮小，也有身轻如燕， 擅长巧力的铁掌力士。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 144
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 298,
+  name: "azurill",
+  nameZh: "露力丽",
+  types: ["normal", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/298.png",
+  height: 2,
+  weight: 20,
+  abilities: ["厚脂肪(thick-fat)", "大力士(huge-power)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "水珠宝可梦",
+  description: "虽然是种性情温顺的宝可梦， 但生起气来，便会嗖嗖地挥舞起 尾巴上的大球来猛烈击打对手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 299,
+  name: "nosepass",
+  nameZh: "朝北鼻",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/299.png",
+  height: 10,
+  weight: 970,
+  abilities: ["结实(sturdy)", "磁力(magnet-pull)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "罗盘宝可梦",
+  description: "它会一动不动地用强力的 磁力将猎物吸过来狩猎。 但有时也会吸到天敌。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 135
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 300,
+  name: "skitty",
+  nameZh: "向尾喵",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/300.png",
+  height: 6,
+  weight: 110,
+  abilities: ["迷人之躯(cute-charm)", "一般皮肤(normalize)", "奇迹皮肤(wonder-skin)"],
+  hiddenAbilities: ["奇迹皮肤(wonder-skin)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "小猫宝可梦",
+  description: "SKITTY has the habit of becoming fascinated by moving objects and chasing them around. This POKéMON is known to chase after its own tail and become dizzy.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 301,
+  name: "delcatty",
+  nameZh: "优雅猫",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/301.png",
+  height: 11,
+  weight: 326,
+  abilities: ["迷人之躯(cute-charm)", "一般皮肤(normalize)", "奇迹皮肤(wonder-skin)"],
+  hiddenAbilities: ["奇迹皮肤(wonder-skin)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "清高宝可梦",
+  description: "DELCATTY prefers to live an unfettered existence in which it can do as it pleases at its own pace. Because this POKéMON eats and sleeps whenever it decides, its daily routines are completely random.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 302,
+  name: "sableye",
+  nameZh: "勾魂眼",
+  types: ["dark", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png",
+  height: 5,
+  weight: 110,
+  abilities: ["锐利目光(keen-eye)", "慢出(stall)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "黑暗宝可梦",
+  description: "会去吃宝石的结晶。 双眼在漆黑一片的地方 会发出宝石的光芒。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 303,
+  name: "mawile",
+  nameZh: "大嘴娃",
+  types: ["steel", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png",
+  height: 6,
+  weight: 115,
+  abilities: ["怪力钳(hyper-cutter)", "威吓(intimidate)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "欺骗宝可梦",
+  description: "大嘴娃能用自己那由钢角 变化而成的巨大颚部 将对手一口紧紧咬住。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 304,
+  name: "aron",
+  nameZh: "可可多拉",
+  types: ["steel", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/304.png",
+  height: 4,
+  weight: 600,
+  abilities: ["结实(sturdy)", "坚硬脑袋(rock-head)", "重金属(heavy-metal)"],
+  hiddenAbilities: ["重金属(heavy-metal)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "铁铠宝可梦",
+  description: "进化的时候，钢铁盔甲会 全部脱落。人们曾经 将其捡来活用于生活。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 305,
+  name: "lairon",
+  nameZh: "可多拉",
+  types: ["steel", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/305.png",
+  height: 9,
+  weight: 1200,
+  abilities: ["结实(sturdy)", "坚硬脑袋(rock-head)", "重金属(heavy-metal)"],
+  hiddenAbilities: ["重金属(heavy-metal)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "铁铠宝可梦",
+  description: "会用钢铁之躯互相撞击 来争夺地盘。仔细看会发现 钢铁盔甲上有伤痕和凹陷。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 140
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 306,
+  name: "aggron",
+  nameZh: "波士可多拉",
+  types: ["steel", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/306.png",
+  height: 21,
+  weight: 3600,
+  abilities: ["结实(sturdy)", "坚硬脑袋(rock-head)", "重金属(heavy-metal)"],
+  hiddenAbilities: ["重金属(heavy-metal)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "铁铠宝可梦",
+  description: "很久以前，有位国王由于希望 像波士可多拉一样强大而戴上了 模仿它的头部制成的头盔。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 180
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 307,
+  name: "meditite",
+  nameZh: "玛沙那",
+  types: ["fighting", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/307.png",
+  height: 6,
+  weight: 112,
+  abilities: ["瑜伽之力(pure-power)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "冥想宝可梦",
+  description: "MEDITITE undertakes rigorous mental training deep in the mountains. However, whenever it meditates, this POKéMON always loses its concentration and focus. As a result, its training never ends.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 308,
+  name: "medicham",
+  nameZh: "恰雷姆",
+  types: ["fighting", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/308.png",
+  height: 13,
+  weight: 315,
+  abilities: ["瑜伽之力(pure-power)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "冥想宝可梦",
+  description: "It is said that through meditation, MEDICHAM heightens energy inside its body and sharpens its sixth sense. This POKéMON hides its presence by merging itself with fields and mountains.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 309,
+  name: "electrike",
+  nameZh: "落雷兽",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/309.png",
+  height: 6,
+  weight: 152,
+  abilities: ["静电(static)", "避雷针(lightning-rod)", "负电(minus)"],
+  hiddenAbilities: ["负电(minus)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "闪电宝可梦",
+  description: "会在体毛中储存静电。 在空气干燥的季节 会从全身散发出火花。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 310,
+  name: "manectric",
+  nameZh: "雷电兽",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/310.png",
+  height: 15,
+  weight: 402,
+  abilities: ["静电(static)", "避雷针(lightning-rod)", "负电(minus)"],
+  hiddenAbilities: ["负电(minus)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "放电宝可梦",
+  description: "极少出现在人前。 据说它的住所就在雷电落下的地方。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 311,
+  name: "plusle",
+  nameZh: "正电拍拍",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/311.png",
+  height: 4,
+  weight: 42,
+  abilities: ["正电(plus)", "避雷针(lightning-rod)"],
+  hiddenAbilities: ["避雷针(lightning-rod)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "加油宝可梦",
+  description: "PLUSLE always acts as a cheerleader for its partners. Whenever a teammate puts out a good effort in battle, this POKéMON shorts out its body to create the crackling noises of sparks to show its joy.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 312,
+  name: "minun",
+  nameZh: "負电拍拍",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/312.png",
+  height: 4,
+  weight: 42,
+  abilities: ["负电(minus)", "蓄电(volt-absorb)"],
+  hiddenAbilities: ["蓄电(volt-absorb)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "加油宝可梦",
+  description: "MINUN is more concerned about cheering on its partners than its own safety. It shorts out the electricity in its body to create brilliant showers of sparks to cheer on its teammates.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 313,
+  name: "volbeat",
+  nameZh: "电萤虫",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/313.png",
+  height: 7,
+  weight: 177,
+  abilities: ["发光(illuminate)", "虫之预感(swarm)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "萤火虫宝可梦",
+  description: "With the arrival of night, VOLBEAT emits light from its tail. It communicates with others by adjusting the intensity and flashing of its light. This POKéMON is attracted by the sweet aroma of ILLUMISE.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 73
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 47
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 314,
+  name: "illumise",
+  nameZh: "甜甜萤",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/314.png",
+  height: 6,
+  weight: 177,
+  abilities: ["迟钝(oblivious)", "有色眼镜(tinted-lens)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "萤火虫宝可梦",
+  description: "ILLUMISE attracts a swarm of VOLBEAT using a sweet fragrance. Once the VOLBEAT have gathered, this POKéMON leads the lit-up swarm in drawing geometric designs on the canvas of the night sky.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 47
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 73
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 315,
+  name: "roselia",
+  nameZh: "毒蔷薇",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/315.png",
+  height: 3,
+  weight: 20,
+  abilities: ["自然回复(natural-cure)", "毒刺(poison-point)", "叶子防守(leaf-guard)"],
+  hiddenAbilities: ["叶子防守(leaf-guard)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "荆棘宝可梦",
+  description: "会用右手和左手分别放出 ２种不同的毒来进行攻击。 香气越浓越有精神。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 316,
+  name: "gulpin",
+  nameZh: "溶食兽",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/316.png",
+  height: 4,
+  weight: 103,
+  abilities: ["污泥浆(liquid-ooze)", "黏着(sticky-hold)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "胃袋宝可梦",
+  description: "It has a small heart and brain. Its stomach comprises most of its body, with enzymes to dissolve anything.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 43
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 53
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 43
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 53
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 317,
+  name: "swalot",
+  nameZh: "吞食兽",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/317.png",
+  height: 17,
+  weight: 800,
+  abilities: ["污泥浆(liquid-ooze)", "黏着(sticky-hold)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "毒袋宝可梦",
+  description: "When SWALOT spots prey, it spurts out a hideously toxic fluid from its pores and sprays the target. Once the prey has weakened, this POKéMON gulps it down whole with its cavernous mouth.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 73
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 83
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 73
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 83
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 318,
+  name: "carvanha",
+  nameZh: "利牙鱼",
+  types: ["water", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/318.png",
+  height: 8,
+  weight: 208,
+  abilities: ["粗糙皮肤(rough-skin)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "凶猛宝可梦",
+  description: "拥有锋利的牙齿和 结实的下颚。水手们绝不会 主动靠近利牙鱼的栖息地。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 20
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 20
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 319,
+  name: "sharpedo",
+  nameZh: "巨牙鲨",
+  types: ["water", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/319.png",
+  height: 18,
+  weight: 888,
+  abilities: ["粗糙皮肤(rough-skin)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "凶暴宝可梦",
+  description: "被称为大海恶霸。 进入它栖息海域的船只 会无一例外地遭到袭击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 320,
+  name: "wailmer",
+  nameZh: "吼吼鲸",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/320.png",
+  height: 20,
+  weight: 1300,
+  abilities: ["水幕(water-veil)", "迟钝(oblivious)", "压迫感(pressure)"],
+  hiddenAbilities: ["压迫感(pressure)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "球鲸宝可梦",
+  description: "喝入大量的海水之后， 身体会鼓成像球一样。 每天要吃掉１吨的食物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 130
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 321,
+  name: "wailord",
+  nameZh: "吼鲸王",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/321.png",
+  height: 145,
+  weight: 3980,
+  abilities: ["水幕(water-veil)", "迟钝(oblivious)", "压迫感(pressure)"],
+  hiddenAbilities: ["压迫感(pressure)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "浮鲸宝可梦",
+  description: "总之，因为超级巨大而受欢迎。 观看吼鲸王在各地都是 非常受欢迎的游览项目。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 170
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 322,
+  name: "numel",
+  nameZh: "呆火驼",
+  types: ["fire", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/322.png",
+  height: 7,
+  weight: 240,
+  abilities: ["迟钝(oblivious)", "单纯(simple)", "我行我素(own-tempo)"],
+  hiddenAbilities: ["我行我素(own-tempo)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "迟钝宝可梦",
+  description: "NUMEL is extremely dull witted - it doesn’t notice being hit. However, it can’t stand hunger for even a second. This POKéMON’s body is a seething cauldron of boiling magma.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 323,
+  name: "camerupt",
+  nameZh: "喷火驼",
+  types: ["fire", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/323.png",
+  height: 19,
+  weight: 2200,
+  abilities: ["熔岩铠甲(magma-armor)", "坚硬岩石(solid-rock)", "愤怒穴位(anger-point)"],
+  hiddenAbilities: ["愤怒穴位(anger-point)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "喷火宝可梦",
+  description: "CAMERUPT has a volcano inside its body. Magma of 18,000 degrees F courses through its body. Occasionally, the humps on this POKéMON’s back erupt, spewing the superheated magma.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 324,
+  name: "torkoal",
+  nameZh: "煤炭龟",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+  height: 5,
+  weight: 804,
+  abilities: ["白色烟雾(white-smoke)", "日照(drought)", "硬壳盔甲(shell-armor)"],
+  hiddenAbilities: ["硬壳盔甲(shell-armor)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "煤炭宝可梦",
+  description: "在弃用的煤矿中 住着很多煤炭龟， 它们会不停地挖掘煤炭。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 140
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 325,
+  name: "spoink",
+  nameZh: "跳跳猪",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/325.png",
+  height: 7,
+  weight: 306,
+  abilities: ["厚脂肪(thick-fat)", "我行我素(own-tempo)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "弹跳宝可梦",
+  description: "SPOINK bounces around on its tail. The shock of its bouncing makes its heart pump. As a result, this POKéMON cannot afford to stop bouncing - if it stops, its heart will stop.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 25
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 326,
+  name: "grumpig",
+  nameZh: "噗噗猪",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/326.png",
+  height: 9,
+  weight: 715,
+  abilities: ["厚脂肪(thick-fat)", "我行我素(own-tempo)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "操纵宝可梦",
+  description: "GRUMPIG uses the black pearls on its body to amplify its psychic power waves for gaining total control over its foe. When this POKéMON uses its special power, its snorting breath grows labored.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 327,
+  name: "spinda",
+  nameZh: "晃晃斑",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/327.png",
+  height: 11,
+  weight: 50,
+  abilities: ["我行我素(own-tempo)", "蹒跚(tangled-feet)", "唱反调(contrary)"],
+  hiddenAbilities: ["唱反调(contrary)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "斑点熊猫宝可梦",
+  description: "每一只身上的斑点花纹都不同。 会用晃晃悠悠的动作 绝妙地躲避对手的攻击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 328,
+  name: "trapinch",
+  nameZh: "大颚蚁",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/328.png",
+  height: 7,
+  weight: 150,
+  abilities: ["怪力钳(hyper-cutter)", "沙穴(arena-trap)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "蚁狮宝可梦",
+  description: "建造了绝对无法逃脱的 捣蒜钵状巢穴，并在巢穴里 等着猎物自己掉进来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 10
+}]
+},
+  {
+  id: 329,
+  name: "vibrava",
+  nameZh: "超音波幼虫",
+  types: ["ground", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/329.png",
+  height: 11,
+  weight: 153,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "振动宝可梦",
+  description: "为了让翅膀成长， 每天要用消化液溶化 并吸食大量的猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 330,
+  name: "flygon",
+  nameZh: "沙漠蜻蜓",
+  types: ["ground", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+  height: 20,
+  weight: 820,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "神秘宝可梦",
+  description: "由于它挥动翅膀的声音 好似女性优美的歌声， 因此被称为沙漠精灵。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 331,
+  name: "cacnea",
+  nameZh: "刺球仙人掌",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/331.png",
+  height: 4,
+  weight: 513,
+  abilities: ["沙隐(sand-veil)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "仙人掌宝可梦",
+  description: "CACNEA lives in arid locations such as deserts. It releases a strong aroma from its flower to attract prey. When prey comes near, this POKéMON shoots sharp thorns from its body to bring the victim down.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 332,
+  name: "cacturne",
+  nameZh: "梦歌仙人掌",
+  types: ["grass", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/332.png",
+  height: 13,
+  weight: 774,
+  abilities: ["沙隐(sand-veil)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "稻草人宝可梦",
+  description: "During the daytime, CACTURNE remains unmoving so that it does not lose any moisture to the harsh desert sun. This POKéMON becomes active at night when the temperature drops.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 333,
+  name: "swablu",
+  nameZh: "青绵鸟",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/333.png",
+  height: 4,
+  weight: 12,
+  abilities: ["自然回复(natural-cure)", "无关天气(cloud-nine)"],
+  hiddenAbilities: ["无关天气(cloud-nine)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "绵鸟宝可梦",
+  description: "看起来像是一团棉花云，因此 不易被敌人发现。据说翅膀是 随着世代演进逐渐变白的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 334,
+  name: "altaria",
+  nameZh: "七夕青鸟",
+  types: ["dragon", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+  height: 11,
+  weight: 206,
+  abilities: ["自然回复(natural-cure)", "无关天气(cloud-nine)"],
+  hiddenAbilities: ["无关天气(cloud-nine)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "哼唱宝可梦",
+  description: "虽然性情温顺，但如果被惹怒， 就会用尖锐的叫声威吓对方， 并且毫不留情地发动进攻。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 335,
+  name: "zangoose",
+  nameZh: "猫鼬斩",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/335.png",
+  height: 13,
+  weight: 403,
+  abilities: ["免疫(immunity)", "中毒激升(toxic-boost)"],
+  hiddenAbilities: ["中毒激升(toxic-boost)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "猫鼬宝可梦",
+  description: "It has feuded with Seviper for many generations. Its sharp claws are its biggest weapons.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 73
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 336,
+  name: "seviper",
+  nameZh: "饭匙蛇",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/336.png",
+  height: 27,
+  weight: 525,
+  abilities: ["蜕皮(shed-skin)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "牙蛇宝可梦",
+  description: "SEVIPER shares a generations-long feud with ZANGOOSE. The scars on its body are evidence of vicious battles. This POKéMON attacks using its sword- edged tail.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 73
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 337,
+  name: "lunatone",
+  nameZh: "月石",
+  types: ["rock", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/337.png",
+  height: 10,
+  weight: 1680,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "陨石宝可梦",
+  description: "第一次发现它是在 ４０年前陨石坠落的地方。 只要注视敌人就能使其入睡。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 338,
+  name: "solrock",
+  nameZh: "太阳岩",
+  types: ["rock", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/338.png",
+  height: 12,
+  weight: 1540,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "陨石宝可梦",
+  description: "太阳能量是其力量之源， 所以白天会很强。 旋转时身体会发光。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 339,
+  name: "barboach",
+  nameZh: "泥泥鳅",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/339.png",
+  height: 4,
+  weight: 19,
+  abilities: ["迟钝(oblivious)", "危险预知(anticipation)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "须鱼宝可梦",
+  description: "会用２根长长的胡须 探索浑浊的河底。 用湿滑的粘膜保护着身体。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 48
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 43
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 46
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 41
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 340,
+  name: "whiscash",
+  nameZh: "鲶鱼王",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/340.png",
+  height: 9,
+  weight: 236,
+  abilities: ["迟钝(oblivious)", "危险预知(anticipation)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "须鱼宝可梦",
+  description: "会将大沼泽划为自己的领地。 如果有敌人接近的话，它就会狂暴起来， 并引发大地震。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 78
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 73
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 76
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 71
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 341,
+  name: "corphish",
+  nameZh: "龙虾小兵",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/341.png",
+  height: 6,
+  weight: 115,
+  abilities: ["怪力钳(hyper-cutter)", "硬壳盔甲(shell-armor)", "适应力(adaptability)"],
+  hiddenAbilities: ["适应力(adaptability)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "无赖宝可梦",
+  description: "来自于外国的宝可梦， 现在已经回归了野生环境。 不管多么污浊的河水都能适应。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 43
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 342,
+  name: "crawdaunt",
+  nameZh: "铁螯龙虾",
+  types: ["water", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/342.png",
+  height: 11,
+  weight: 328,
+  abilities: ["怪力钳(hyper-cutter)", "硬壳盔甲(shell-armor)", "适应力(adaptability)"],
+  hiddenAbilities: ["适应力(adaptability)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "流氓宝可梦",
+  description: "有着热爱战斗的性格。 当遇到靠近自己领地的对手， 会毫不留情地将之打倒。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 63
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 343,
+  name: "baltoy",
+  nameZh: "天秤偶",
+  types: ["ground", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/343.png",
+  height: 5,
+  weight: 215,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "泥偶宝可梦",
+  description: "在古代遗迹被发现。 会一边旋转一边移动。 晚上睡觉的时候也是单脚站着。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 344,
+  name: "claydol",
+  nameZh: "念力土偶",
+  types: ["ground", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/344.png",
+  height: 15,
+  weight: 1080,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "泥偶宝可梦",
+  description: "似乎是从古代人做的 泥偶诞生而来的宝可梦。 能靠念力浮在空中移动。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 345,
+  name: "lileep",
+  nameZh: "触手百合",
+  types: ["rock", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/345.png",
+  height: 10,
+  weight: 238,
+  abilities: ["吸盘(suction-cups)", "引水(storm-drain)"],
+  hiddenAbilities: ["引水(storm-drain)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "海百合宝可梦",
+  description: "会吸附在海底岩石上， 用花瓣一样的触手 缠住接近自己的猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 66
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 41
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 77
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 61
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 87
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 23
+}]
+},
+  {
+  id: 346,
+  name: "cradily",
+  nameZh: "摇篮百合",
+  types: ["rock", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/346.png",
+  height: 15,
+  weight: 604,
+  abilities: ["吸盘(suction-cups)", "引水(storm-drain)"],
+  hiddenAbilities: ["引水(storm-drain)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "藤壶宝可梦",
+  description: "用触手将猎物缠住后， 会用消化液将其溶化， 然后吸收其中的养分。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 86
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 81
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 97
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 81
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 107
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 347,
+  name: "anorith",
+  nameZh: "太古羽虫",
+  types: ["rock", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/347.png",
+  height: 7,
+  weight: 125,
+  abilities: ["战斗盔甲(battle-armor)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "古虾宝可梦",
+  description: "会把８根翅膀当做船桨划水， 并且游泳的速度相当快。 是虫宝可梦的一种祖先。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 348,
+  name: "armaldo",
+  nameZh: "太古盔甲",
+  types: ["rock", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/348.png",
+  height: 15,
+  weight: 682,
+  abilities: ["战斗盔甲(battle-armor)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "甲胄宝可梦",
+  description: "栖息在陆地，但也擅长游泳。 会潜入大海寻找猎物， 用锋利的爪子给予致命一击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 349,
+  name: "feebas",
+  nameZh: "丑丑鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/349.png",
+  height: 6,
+  weight: 74,
+  abilities: ["悠游自如(swift-swim)", "迟钝(oblivious)", "适应力(adaptability)"],
+  hiddenAbilities: ["适应力(adaptability)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "鱼宝可梦",
+  description: "虽然外表丑陋， 但拥有顽强的生命力， 只要少量的水就能存活。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 20
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 15
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 20
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 10
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 350,
+  name: "milotic",
+  nameZh: "美纳斯",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
+  height: 62,
+  weight: 1620,
+  abilities: ["神奇鳞片(marvel-scale)", "好胜(competitive)", "迷人之躯(cute-charm)"],
+  hiddenAbilities: ["迷人之躯(cute-charm)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "慈爱宝可梦",
+  description: "据说目睹了美纳斯美丽 身姿的人，心中一切的 愤恨都能得到抚慰。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 79
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 125
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 81
+}]
+},
+  {
+  id: 351,
+  name: "castform",
+  nameZh: "飘浮泡泡",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/351.png",
+  height: 3,
+  weight: 8,
+  abilities: ["阴晴不定(forecast)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "天气宝可梦",
+  description: "样子会根据天气发生变化。 天气越恶劣， 性格也会变得越暴躁。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 352,
+  name: "kecleon",
+  nameZh: "变隐龙",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/352.png",
+  height: 10,
+  weight: 220,
+  abilities: ["变色(color-change)", "变幻自如(protean)"],
+  hiddenAbilities: ["变幻自如(protean)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "变色宝可梦",
+  description: "在不隐身的时候，身体的颜色 也会随着心情和状态改变。 颜色越浓的时候越有精神。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 353,
+  name: "shuppet",
+  nameZh: "怨影娃娃",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/353.png",
+  height: 6,
+  weight: 23,
+  abilities: ["不眠(insomnia)", "察觉(frisk)", "诅咒之躯(cursed-body)"],
+  hiddenAbilities: ["诅咒之躯(cursed-body)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "人偶宝可梦",
+  description: "流传着这样的古老俗语， 日暮时分，不要去 排列着怨影娃娃的房子。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 44
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 63
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 33
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 354,
+  name: "banette",
+  nameZh: "诅咒娃娃",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/354.png",
+  height: 11,
+  weight: 125,
+  abilities: ["不眠(insomnia)", "察觉(frisk)", "诅咒之躯(cursed-body)"],
+  hiddenAbilities: ["诅咒之躯(cursed-body)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "布偶宝可梦",
+  description: "因被丢弃的怨念而诞生。 听说，如果满足它受重视的需求， 就会变回原来的玩偶。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 64
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 83
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 355,
+  name: "duskull",
+  nameZh: "夜巡灵",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/355.png",
+  height: 8,
+  weight: 150,
+  abilities: ["飘浮(levitate)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "渡魂宝可梦",
+  description: "会让身体变透明， 然后偷偷地靠近猎物。 拥有穿过厚墙壁的能力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 20
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 356,
+  name: "dusclops",
+  nameZh: "彷徨夜灵",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png",
+  height: 16,
+  weight: 306,
+  abilities: ["压迫感(pressure)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "招手宝可梦",
+  description: "寻找游走的灵魂，吸入自己 空洞的身体里。没人知道 被吸入后会发生什么事。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 357,
+  name: "tropius",
+  nameZh: "热带龙",
+  types: ["grass", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/357.png",
+  height: 20,
+  weight: 1000,
+  abilities: ["叶绿素(chlorophyll)", "太阳之力(solar-power)", "收获(harvest)"],
+  hiddenAbilities: ["收获(harvest)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "水果宝可梦",
+  description: "脖子上的那串水果很美味， 很受欢迎。在温暖的地方， 有许多培育热带龙的牧场。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 99
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 68
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 83
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 72
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 87
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 51
+}]
+},
+  {
+  id: 358,
+  name: "chimecho",
+  nameZh: "风铃铃",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/358.png",
+  height: 6,
+  weight: 10,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "风铃宝可梦",
+  description: "CHIMECHO makes its cries echo inside its hollow body. When this POKéMON becomes enraged, its cries result in ultrasonic waves that have the power to knock foes flying.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 359,
+  name: "absol",
+  nameZh: "阿勃梭鲁",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+  height: 12,
+  weight: 470,
+  abilities: ["压迫感(pressure)", "超幸运(super-luck)", "正义之心(justified)"],
+  hiddenAbilities: ["正义之心(justified)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "灾祸宝可梦",
+  description: "由于拥有感知危险的能力， 因此它被人们误解为是 会招来灾祸的宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 360,
+  name: "wynaut",
+  nameZh: "小果然",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/360.png",
+  height: 6,
+  weight: 140,
+  abilities: ["踩影(shadow-tag)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "开朗宝可梦",
+  description: "具有集体行动的习性。 睡觉的时候会聚集在洞窟中， 和伙伴们把身体挨在一起。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 23
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 23
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 23
+}]
+},
+  {
+  id: 361,
+  name: "snorunt",
+  nameZh: "雪童子",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/361.png",
+  height: 7,
+  weight: 168,
+  abilities: ["精神力(inner-focus)", "冰冻之躯(ice-body)", "心情不定(moody)"],
+  hiddenAbilities: ["心情不定(moody)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "雪笠宝可梦",
+  description: "只能在寒冷的土地上生存。 即使在零下１００度的环境下 也能充满活力地到处蹦蹦跳跳。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 362,
+  name: "glalie",
+  nameZh: "冰鬼护",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/362.png",
+  height: 15,
+  weight: 2565,
+  abilities: ["精神力(inner-focus)", "冰冻之躯(ice-body)", "心情不定(moody)"],
+  hiddenAbilities: ["心情不定(moody)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "脸面宝可梦",
+  description: "用令空气中的水分 瞬间冻结的力量， 将猎物冰冻起来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 363,
+  name: "spheal",
+  nameZh: "海豹球",
+  types: ["ice", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/363.png",
+  height: 8,
+  weight: 395,
+  abilities: ["厚脂肪(thick-fat)", "冰冻之躯(ice-body)", "迟钝(oblivious)"],
+  hiddenAbilities: ["迟钝(oblivious)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "拍手宝可梦",
+  description: "会漂浮在波浪当中观察 大海的状况。一旦发现猎物， 就会通知群体里的帝牙海狮。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 364,
+  name: "sealeo",
+  nameZh: "海魔狮",
+  types: ["ice", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/364.png",
+  height: 11,
+  weight: 876,
+  abilities: ["厚脂肪(thick-fat)", "冰冻之躯(ice-body)", "迟钝(oblivious)"],
+  hiddenAbilities: ["迟钝(oblivious)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "滚球宝可梦",
+  description: "不管是海豹球还是精灵球， 只要是圆的物体都会 顶在鼻子上转来转去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 365,
+  name: "walrein",
+  nameZh: "帝牙海狮",
+  types: ["ice", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/365.png",
+  height: 14,
+  weight: 1506,
+  abilities: ["厚脂肪(thick-fat)", "冰冻之躯(ice-body)", "迟钝(oblivious)"],
+  hiddenAbilities: ["迟钝(oblivious)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "破冰宝可梦",
+  description: "它的獠牙一生都会持续生长。 即使在战斗中被折断也能逐渐恢复， 只需要１年的时间便能完好如初。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 366,
+  name: "clamperl",
+  nameZh: "珍珠贝",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/366.png",
+  height: 4,
+  weight: 525,
+  abilities: ["硬壳盔甲(shell-armor)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "双壳贝宝可梦",
+  description: "珍珠贝的珍珠非常贵重。 据说，其价值或许是 大舌贝珍珠的１０倍以上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 64
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 74
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 32
+}]
+},
+  {
+  id: 367,
+  name: "huntail",
+  nameZh: "猎斑鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/367.png",
+  height: 17,
+  weight: 270,
+  abilities: ["悠游自如(swift-swim)", "水幕(water-veil)"],
+  hiddenAbilities: ["水幕(water-veil)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "深海宝可梦",
+  description: "栖息在深海中。 传说，如果猎斑鱼被冲上沙滩， 就会有不祥的事情发生。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 104
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 94
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 52
+}]
+},
+  {
+  id: 368,
+  name: "gorebyss",
+  nameZh: "樱花鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/368.png",
+  height: 18,
+  weight: 226,
+  abilities: ["悠游自如(swift-swim)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "南海宝可梦",
+  description: "吸食猎物的体液。 剩下的肉会沉入海底， 成为其他宝可梦的食物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 84
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 114
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 52
+}]
+},
+  {
+  id: 369,
+  name: "relicanth",
+  nameZh: "古空棘鱼",
+  types: ["water", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png",
+  height: 10,
+  weight: 234,
+  abilities: ["悠游自如(swift-swim)", "坚硬脑袋(rock-head)", "结实(sturdy)"],
+  hiddenAbilities: ["结实(sturdy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "长寿宝可梦",
+  description: "在深海调查中被发现的宝可梦。 样子在１亿年间都没有任何变化， 被人们称为活化石。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 370,
+  name: "luvdisc",
+  nameZh: "爱心鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/370.png",
+  height: 6,
+  weight: 87,
+  abilities: ["悠游自如(swift-swim)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "相随宝可梦",
+  description: "温暖海域的珊瑚礁是它的栖息地。 特别喜欢在太阳珊瑚的枝条间睡觉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 43
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 371,
+  name: "bagon",
+  nameZh: "宝贝龙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/371.png",
+  height: 6,
+  weight: 421,
+  abilities: ["坚硬脑袋(rock-head)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "坚硬脑袋宝可梦",
+  description: "不会成群结队，喜欢单独生活。 脑袋很硬，只要猛地一撞， 就能把坚硬的岩石一分为二。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 372,
+  name: "shelgon",
+  nameZh: "甲壳龙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/372.png",
+  height: 11,
+  weight: 1105,
+  abilities: ["坚硬脑袋(rock-head)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "耐力宝可梦",
+  description: "可以不吃食物忍受饥饿。 据说当它用尽积蓄的能量后， 就会开始进化。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 373,
+  name: "salamence",
+  nameZh: "暴飞龙",
+  types: ["dragon", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/373.png",
+  height: 15,
+  weight: 1026,
+  abilities: ["威吓(intimidate)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "龙宝可梦",
+  description: "虽然在空中翱翔能够让它 乐在其中，但是一旦被惹怒， 就会大闹一番，不可收拾。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 374,
+  name: "beldum",
+  nameZh: "铁哑铃",
+  types: ["steel", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/374.png",
+  height: 6,
+  weight: 952,
+  abilities: ["恒净之躯(clear-body)", "轻金属(light-metal)"],
+  hiddenAbilities: ["轻金属(light-metal)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "铁球宝可梦",
+  description: "身体的细胞由磁铁构成。 循环于全身的不是血液， 而是磁力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 375,
+  name: "metang",
+  nameZh: "金属怪",
+  types: ["steel", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/375.png",
+  height: 12,
+  weight: 2025,
+  abilities: ["恒净之躯(clear-body)", "轻金属(light-metal)"],
+  hiddenAbilities: ["轻金属(light-metal)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "铁爪宝可梦",
+  description: "依靠磁力飞行。能够在空中 以高速穿过险峻的山岳， 让追捕的猎物无处可逃。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 376,
+  name: "metagross",
+  nameZh: "巨金怪",
+  types: ["steel", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png",
+  height: 16,
+  weight: 5500,
+  abilities: ["恒净之躯(clear-body)", "轻金属(light-metal)"],
+  hiddenAbilities: ["轻金属(light-metal)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "铁足宝可梦",
+  description: "２只金属怪组合起来的样子。 运用堪比超级计算机的 头脑打败敌人。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 377,
+  name: "regirock",
+  nameZh: "雷吉洛克",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png",
+  height: 17,
+  weight: 2300,
+  abilities: ["恒净之躯(clear-body)", "结实(sturdy)"],
+  hiddenAbilities: ["结实(sturdy)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "岩山宝可梦",
+  description: "人们通过最新的科学技术 对它的岩石身体做了调查， 但是并未发现大脑和心脏。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 200
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 378,
+  name: "regice",
+  nameZh: "雷吉艾斯",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
+  height: 18,
+  weight: 1750,
+  abilities: ["恒净之躯(clear-body)", "冰冻之躯(ice-body)"],
+  hiddenAbilities: ["冰冻之躯(ice-body)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "冰山宝可梦",
+  description: "拥有一副由冰构成的身体。 据说是诞生于冰河时期 冻得厚厚实实的冰块之下。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 200
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 379,
+  name: "registeel",
+  nameZh: "雷吉斯奇鲁",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png",
+  height: 19,
+  weight: 2050,
+  abilities: ["恒净之躯(clear-body)", "轻金属(light-metal)"],
+  hiddenAbilities: ["轻金属(light-metal)"],
+  gen: 3,
+  region: "丰缘",
+  genera: "黑金宝可梦",
+  description: "据说诞生于地幔之中， 在距今约１万年前 现身于地面之上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 150
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 150
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 380,
+  name: "latias",
+  nameZh: "拉帝亚斯",
+  types: ["dragon", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png",
+  height: 14,
+  weight: 400,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "无限宝可梦",
+  description: "LATIAS is highly sensitive to the emotions of people. If it senses any hostility, this POKéMON ruffles the feathers all over its body and cries shrilly to intimidate the foe.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 381,
+  name: "latios",
+  nameZh: "拉帝欧斯",
+  types: ["dragon", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png",
+  height: 20,
+  weight: 600,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "无限宝可梦",
+  description: "LATIOS has the ability to make its foe see an image of what it has seen or imagines in its head. This POKéMON is intelligent and understands human speech.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 382,
+  name: "kyogre",
+  nameZh: "盖欧卡",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png",
+  height: 45,
+  weight: 3520,
+  abilities: ["降雨(drizzle)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "海底宝可梦",
+  description: "KYOGRE has the power to create massive rain clouds that cover the entire sky and bring about torrential downpours. This POKéMON saved people who were suffering from droughts.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 150
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 140
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 383,
+  name: "groudon",
+  nameZh: "固拉多",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png",
+  height: 35,
+  weight: 9500,
+  abilities: ["日照(drought)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "大陆宝可梦",
+  description: "GROUDON has long been described in  mythology as the POKéMON that raised lands and expanded continents. This POKéMON took to sleep after a cataclysmic battle with KYOGRE.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 150
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 140
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 384,
+  name: "rayquaza",
+  nameZh: "烈空坐",
+  types: ["dragon", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png",
+  height: 70,
+  weight: 2065,
+  abilities: ["气闸(air-lock)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "天空宝可梦",
+  description: "RAYQUAZA lived for hundreds of millions of years in the earth’s ozone layer,  never descending to the ground. This POKéMON appears to feed on water and particles in the atmosphere.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 150
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 150
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 385,
+  name: "jirachi",
+  nameZh: "基拉祈",
+  types: ["steel", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png",
+  height: 3,
+  weight: 11,
+  abilities: ["天恩(serene-grace)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "祈愿宝可梦",
+  description: "传说当它从１０００年的 沉睡中醒来时，会实现 写在它头部许愿笺上的愿望。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 386,
+  name: "deoxys-normal",
+  nameZh: "代欧奇希斯",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png",
+  height: 17,
+  weight: 608,
+  abilities: ["压迫感(pressure)"],
+  hiddenAbilities: [],
+  gen: 3,
+  region: "丰缘",
+  genera: "ＤＮＡ宝可梦",
+  description: "The DNA of a space virus underwent a sudden mutation upon exposure to a laser beam and resulted in DEOXYS. The crystalline organ on this POKéMON’s chest appears to be its brain.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 150
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 150
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 150
+}]
+},
+  {
+  id: 387,
+  name: "turtwig",
+  nameZh: "草苗龟",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/387.png",
+  height: 4,
+  weight: 102,
+  abilities: ["茂盛(overgrow)", "硬壳盔甲(shell-armor)"],
+  hiddenAbilities: ["硬壳盔甲(shell-armor)"],
+  gen: 4,
+  region: "神奥",
+  genera: "嫩叶宝可梦",
+  description: "Made from soil, the shell on its back hardens when it drinks water. It lives along lakes.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 68
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 64
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 31
+}]
+},
+  {
+  id: 388,
+  name: "grotle",
+  nameZh: "树林龟",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/388.png",
+  height: 11,
+  weight: 970,
+  abilities: ["茂盛(overgrow)", "硬壳盔甲(shell-armor)"],
+  hiddenAbilities: ["硬壳盔甲(shell-armor)"],
+  gen: 4,
+  region: "神奥",
+  genera: "树丛宝可梦",
+  description: "A GROTLE that lives in the forest is said to have its own secret springwater.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 89
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 36
+}]
+},
+  {
+  id: 389,
+  name: "torterra",
+  nameZh: "土台龟",
+  types: ["grass", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/389.png",
+  height: 22,
+  weight: 3100,
+  abilities: ["茂盛(overgrow)", "硬壳盔甲(shell-armor)"],
+  hiddenAbilities: ["硬壳盔甲(shell-armor)"],
+  gen: 4,
+  region: "神奥",
+  genera: "大陆宝可梦",
+  description: "Some Pokémon are born on a Torterra’s back and spend their entire life there.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 109
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 56
+}]
+},
+  {
+  id: 390,
+  name: "chimchar",
+  nameZh: "小火焰猴",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/390.png",
+  height: 5,
+  weight: 62,
+  abilities: ["猛火(blaze)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 4,
+  region: "神奥",
+  genera: "小猴宝可梦",
+  description: "It agilely scales sheer cliffs to live atop craggy mountains. Its fire is put out when it sleeps.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 44
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 58
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 44
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 58
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 44
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 61
+}]
+},
+  {
+  id: 391,
+  name: "monferno",
+  nameZh: "猛火猴",
+  types: ["fire", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/391.png",
+  height: 9,
+  weight: 220,
+  abilities: ["猛火(blaze)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 4,
+  region: "神奥",
+  genera: "顽皮宝可梦",
+  description: "To intimidate attackers, it stretches the fire on its tail to make itself appear bigger.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 64
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 78
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 52
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 78
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 52
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 81
+}]
+},
+  {
+  id: 392,
+  name: "infernape",
+  nameZh: "烈焰猴",
+  types: ["fire", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/392.png",
+  height: 12,
+  weight: 550,
+  abilities: ["猛火(blaze)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 4,
+  region: "神奥",
+  genera: "火焰宝可梦",
+  description: "It uses a special kind of martial arts involving all its limbs. Its fire never goes out.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 76
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 104
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 71
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 104
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 71
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 108
+}]
+},
+  {
+  id: 393,
+  name: "piplup",
+  nameZh: "波加曼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/393.png",
+  height: 4,
+  weight: 52,
+  abilities: ["激流(torrent)", "好胜(competitive)"],
+  hiddenAbilities: ["好胜(competitive)"],
+  gen: 4,
+  region: "神奥",
+  genera: "企鹅宝可梦",
+  description: "Because it is very proud, it hates accepting food from people. Its thick down guards it from cold.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 53
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 51
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 53
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 61
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 56
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 394,
+  name: "prinplup",
+  nameZh: "波皇子",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/394.png",
+  height: 8,
+  weight: 230,
+  abilities: ["激流(torrent)", "好胜(competitive)"],
+  hiddenAbilities: ["好胜(competitive)"],
+  gen: 4,
+  region: "神奥",
+  genera: "企鹅宝可梦",
+  description: "It lives alone, away from others. Apparently, every one of them believes it is the most important.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 64
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 66
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 68
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 81
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 76
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 395,
+  name: "empoleon",
+  nameZh: "帝王拿波",
+  types: ["water", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/395.png",
+  height: 17,
+  weight: 845,
+  abilities: ["激流(torrent)", "好胜(competitive)"],
+  hiddenAbilities: ["好胜(competitive)"],
+  gen: 4,
+  region: "神奥",
+  genera: "皇帝宝可梦",
+  description: "The three horns that extend from its beak attest to its power. The leader has the biggest horns.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 84
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 86
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 88
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 111
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 101
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 396,
+  name: "starly",
+  nameZh: "姆克儿",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/396.png",
+  height: 3,
+  weight: 20,
+  abilities: ["锐利目光(keen-eye)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 4,
+  region: "神奥",
+  genera: "椋鸟宝可梦",
+  description: "They flock in great numbers. Though small, they flap their wings with great power.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 397,
+  name: "staravia",
+  nameZh: "姆克鸟",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/397.png",
+  height: 6,
+  weight: 155,
+  abilities: ["威吓(intimidate)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 4,
+  region: "神奥",
+  genera: "椋鸟宝可梦",
+  description: "It flies around forests and fields in search of bug Pokémon. It stays within a huge flock.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 398,
+  name: "staraptor",
+  nameZh: "姆克鹰",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/398.png",
+  height: 12,
+  weight: 249,
+  abilities: ["威吓(intimidate)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 4,
+  region: "神奥",
+  genera: "猛禽宝可梦",
+  description: "It has a savage nature. It will courageously challenge foes that are much larger.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 399,
+  name: "bidoof",
+  nameZh: "大牙狸",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/399.png",
+  height: 5,
+  weight: 200,
+  abilities: ["单纯(simple)", "纯朴(unaware)", "心情不定(moody)"],
+  hiddenAbilities: ["心情不定(moody)"],
+  gen: 4,
+  region: "神奥",
+  genera: "圆鼠宝可梦",
+  description: "A comparison revealed that Bidoof’s front teeth grow at the same rate as Rattata’s.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 59
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 31
+}]
+},
+  {
+  id: 400,
+  name: "bibarel",
+  nameZh: "大尾狸",
+  types: ["normal", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/400.png",
+  height: 10,
+  weight: 315,
+  abilities: ["单纯(simple)", "纯朴(unaware)", "心情不定(moody)"],
+  hiddenAbilities: ["心情不定(moody)"],
+  gen: 4,
+  region: "神奥",
+  genera: "河狸宝可梦",
+  description: "It makes its nest by damming streams with bark and mud. It is known as an industrious worker.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 79
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 71
+}]
+},
+  {
+  id: 401,
+  name: "kricketot",
+  nameZh: "圆法师",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/401.png",
+  height: 3,
+  weight: 22,
+  abilities: ["蜕皮(shed-skin)", "逃跑(run-away)"],
+  hiddenAbilities: ["逃跑(run-away)"],
+  gen: 4,
+  region: "神奥",
+  genera: "蟋蟀宝可梦",
+  description: "It shakes its head back to front, causing its antennae to hit each other and sound like a xylophone.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 37
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 25
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 41
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 41
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 402,
+  name: "kricketune",
+  nameZh: "音箱蟀",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/402.png",
+  height: 10,
+  weight: 255,
+  abilities: ["虫之预感(swarm)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 4,
+  region: "神奥",
+  genera: "蟋蟀宝可梦",
+  description: "It crosses its knifelike arms in front of its chest when it cries. It can compose melodies ad lib.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 77
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 51
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 51
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 403,
+  name: "shinx",
+  nameZh: "小猫怪",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/403.png",
+  height: 5,
+  weight: 95,
+  abilities: ["斗争心(rivalry)", "威吓(intimidate)", "毅力(guts)"],
+  hiddenAbilities: ["毅力(guts)"],
+  gen: 4,
+  region: "神奥",
+  genera: "闪光宝可梦",
+  description: "体毛通电后就会发光。 会摇晃明亮发光的尾巴 尖端来向伙伴发送信号。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 34
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 34
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 404,
+  name: "luxio",
+  nameZh: "勒克猫",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/404.png",
+  height: 9,
+  weight: 305,
+  abilities: ["斗争心(rivalry)", "威吓(intimidate)", "毅力(guts)"],
+  hiddenAbilities: ["毅力(guts)"],
+  gen: 4,
+  region: "神奥",
+  genera: "电光宝可梦",
+  description: "遇到敌人时会从脚 伸出有着百万伏特 威力的爪子来迎战。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 49
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 49
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 405,
+  name: "luxray",
+  nameZh: "伦琴猫",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/405.png",
+  height: 14,
+  weight: 420,
+  abilities: ["斗争心(rivalry)", "威吓(intimidate)", "毅力(guts)"],
+  hiddenAbilities: ["毅力(guts)"],
+  gen: 4,
+  region: "神奥",
+  genera: "目光宝可梦",
+  description: "由于透视需要消耗 大量的电能，因此它会 睡很长时间来积蓄能量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 79
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 79
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 406,
+  name: "budew",
+  nameZh: "含羞苞",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/406.png",
+  height: 2,
+  weight: 12,
+  abilities: ["自然回复(natural-cure)", "毒刺(poison-point)", "叶子防守(leaf-guard)"],
+  hiddenAbilities: ["叶子防守(leaf-guard)"],
+  gen: 4,
+  region: "神奥",
+  genera: "花苞宝可梦",
+  description: "对气温的变化很敏感。 当它开始打开花苞， 便是冬去春来之时。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 407,
+  name: "roserade",
+  nameZh: "罗丝雷朵",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/407.png",
+  height: 9,
+  weight: 145,
+  abilities: ["自然回复(natural-cure)", "毒刺(poison-point)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 4,
+  region: "神奥",
+  genera: "花束宝可梦",
+  description: "右手的毒是速效的， 左手的毒则是慢性的。 无论哪边的毒性都能致命。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 408,
+  name: "cranidos",
+  nameZh: "头盖龙",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/408.png",
+  height: 9,
+  weight: 315,
+  abilities: ["破格(mold-breaker)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 4,
+  region: "神奥",
+  genera: "头锤宝可梦",
+  description: "坚硬的头盖骨是其特征。 会用头锤撞断树木， 吃树上结的树果。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 67
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 409,
+  name: "rampardos",
+  nameZh: "战槌龙",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/409.png",
+  height: 16,
+  weight: 1025,
+  abilities: ["破格(mold-breaker)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 4,
+  region: "神奥",
+  genera: "头锤宝可梦",
+  description: "擅长头锤的古代宝可梦。 因为大脑真的很小， 所以也有说法它是因愚笨而灭亡的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 97
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 165
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 410,
+  name: "shieldon",
+  nameZh: "盾甲龙",
+  types: ["rock", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/410.png",
+  height: 5,
+  weight: 570,
+  abilities: ["结实(sturdy)", "隔音(soundproof)"],
+  hiddenAbilities: ["隔音(soundproof)"],
+  gen: 4,
+  region: "神奥",
+  genera: "护盾宝可梦",
+  description: "虽然从太古时代的地层中 发现了它的化石， 但尚未发现除了脸以外的部分。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 42
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 118
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 42
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 88
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 411,
+  name: "bastiodon",
+  nameZh: "护城龙",
+  types: ["rock", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/411.png",
+  height: 13,
+  weight: 1495,
+  abilities: ["结实(sturdy)", "隔音(soundproof)"],
+  hiddenAbilities: ["隔音(soundproof)"],
+  gen: 4,
+  region: "神奥",
+  genera: "护盾宝可梦",
+  description: "大约１亿年前的宝可梦。 极其结实的脸有着超越钢铁的硬度。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 52
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 168
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 47
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 138
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 412,
+  name: "burmy",
+  nameZh: "结草儿",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/412.png",
+  height: 2,
+  weight: 34,
+  abilities: ["蜕皮(shed-skin)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 4,
+  region: "神奥",
+  genera: "蓑衣虫宝可梦",
+  description: "To shelter itself from cold, wintry winds, it covers itself with a cloak made of twigs and leaves.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 29
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 29
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 36
+}]
+},
+  {
+  id: 413,
+  name: "wormadam-plant",
+  nameZh: "结草贵妇",
+  types: ["bug", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/413.png",
+  height: 5,
+  weight: 65,
+  abilities: ["危险预知(anticipation)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 4,
+  region: "神奥",
+  genera: "蓑衣虫宝可梦",
+  description: "When BURMY evolved, its cloak became a part of this Pokémon’s body. The cloak is never shed.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 59
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 79
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 36
+}]
+},
+  {
+  id: 414,
+  name: "mothim",
+  nameZh: "绅士蛾",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/414.png",
+  height: 9,
+  weight: 233,
+  abilities: ["虫之预感(swarm)", "有色眼镜(tinted-lens)"],
+  hiddenAbilities: ["有色眼镜(tinted-lens)"],
+  gen: 4,
+  region: "神奥",
+  genera: "蓑衣蛾宝可梦",
+  description: "It loves the honey of flowers and steals honey collected by COMBEE.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 94
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 94
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 66
+}]
+},
+  {
+  id: 415,
+  name: "combee",
+  nameZh: "三蜜蜂",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/415.png",
+  height: 3,
+  weight: 55,
+  abilities: ["采蜜(honey-gather)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 4,
+  region: "神奥",
+  genera: "幼蜂宝可梦",
+  description: "从早到晚都在采集花蜜。 这一切都是为了 自己的族群和蜂女王。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 42
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 42
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 416,
+  name: "vespiquen",
+  nameZh: "蜂女王",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/416.png",
+  height: 12,
+  weight: 385,
+  abilities: ["压迫感(pressure)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 4,
+  region: "神奥",
+  genera: "蜂巢宝可梦",
+  description: "能释放越多费洛蒙的蜂女王， 就能让越多的三蜜蜂 听从自己的指挥。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 102
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 102
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 417,
+  name: "pachirisu",
+  nameZh: "帕奇利兹",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/417.png",
+  height: 4,
+  weight: 39,
+  abilities: ["逃跑(run-away)", "捡拾(pickup)", "蓄电(volt-absorb)"],
+  hiddenAbilities: ["蓄电(volt-absorb)"],
+  gen: 4,
+  region: "神奥",
+  genera: "电松鼠宝可梦",
+  description: "It makes fur balls that crackle with static electricity. It stores them with berries in tree holes.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 418,
+  name: "buizel",
+  nameZh: "泳圈鼬",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/418.png",
+  height: 7,
+  weight: 295,
+  abilities: ["悠游自如(swift-swim)", "水幕(water-veil)"],
+  hiddenAbilities: ["水幕(water-veil)"],
+  gen: 4,
+  region: "神奥",
+  genera: "海鼬宝可梦",
+  description: "It has a flotation sac that is like an inflatable collar. It floats on water with its head out.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 419,
+  name: "floatzel",
+  nameZh: "浮潜鼬",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/419.png",
+  height: 11,
+  weight: 335,
+  abilities: ["悠游自如(swift-swim)", "水幕(water-veil)"],
+  hiddenAbilities: ["水幕(water-veil)"],
+  gen: 4,
+  region: "神奥",
+  genera: "海鼬宝可梦",
+  description: "It floats using its well-developed flotation sac. It assists in the rescues of drowning people.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 115
+}]
+},
+  {
+  id: 420,
+  name: "cherubi",
+  nameZh: "樱花宝",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/420.png",
+  height: 4,
+  weight: 33,
+  abilities: ["叶绿素(chlorophyll)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "樱桃宝可梦",
+  description: "身体越红的樱花宝 含有的营养越丰富， 味道也很甜很好吃。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 62
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 53
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 421,
+  name: "cherrim",
+  nameZh: "樱花儿",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png",
+  height: 5,
+  weight: 93,
+  abilities: ["花之礼(flower-gift)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "樱花宝可梦",
+  description: "盖起来的花瓣很硬。 即使被鸟宝可梦啄到， 也完全没问题。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 87
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 78
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 422,
+  name: "shellos",
+  nameZh: "无壳海兔",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/422.png",
+  height: 3,
+  weight: 63,
+  abilities: ["黏着(sticky-hold)", "引水(storm-drain)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 4,
+  region: "神奥",
+  genera: "海兔宝可梦",
+  description: "如果用力按住它， 它就会分泌出神秘的紫色液体。 虽然液体无害，不过黏糊糊的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 76
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 48
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 57
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 62
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 34
+}]
+},
+  {
+  id: 423,
+  name: "gastrodon",
+  nameZh: "海兔兽",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/423.png",
+  height: 9,
+  weight: 299,
+  abilities: ["黏着(sticky-hold)", "引水(storm-drain)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 4,
+  region: "神奥",
+  genera: "海兔宝可梦",
+  description: "身体软瘫瘫的但十分强韧。 因为它身体的软度可以 帮助分散它所受到的冲击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 111
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 83
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 68
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 92
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 82
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 39
+}]
+},
+  {
+  id: 424,
+  name: "ambipom",
+  nameZh: "双尾怪手",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/424.png",
+  height: 12,
+  weight: 203,
+  abilities: ["技术高手(technician)", "捡拾(pickup)", "连续攻击(skill-link)"],
+  hiddenAbilities: ["连续攻击(skill-link)"],
+  gen: 4,
+  region: "神奥",
+  genera: "长尾宝可梦",
+  description: "无论做什么都会用到尾巴。 如果被它的２条尾巴抱紧， 那就证明是真的和你很亲近。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 66
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 66
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 115
+}]
+},
+  {
+  id: 425,
+  name: "drifloon",
+  nameZh: "飘飘球",
+  types: ["ghost", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/425.png",
+  height: 4,
+  weight: 12,
+  abilities: ["引爆(aftermath)", "轻装(unburden)", "受热激升(flare-boost)"],
+  hiddenAbilities: ["受热激升(flare-boost)"],
+  gen: 4,
+  region: "神奥",
+  genera: "气球宝可梦",
+  description: "因魂魄聚集在一起而诞生。 到了湿气大的季节 就有可能大量出现。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 34
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 44
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 426,
+  name: "drifblim",
+  nameZh: "随风球",
+  types: ["ghost", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/426.png",
+  height: 12,
+  weight: 150,
+  abilities: ["引爆(aftermath)", "轻装(unburden)", "受热激升(flare-boost)"],
+  hiddenAbilities: ["受热激升(flare-boost)"],
+  gen: 4,
+  region: "神奥",
+  genera: "热气球宝可梦",
+  description: "会抓住人和宝可梦， 然后运到某个地方。 没人知道那地方是哪里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 150
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 44
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 54
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 427,
+  name: "buneary",
+  nameZh: "卷卷耳",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/427.png",
+  height: 4,
+  weight: 55,
+  abilities: ["逃跑(run-away)", "笨拙(klutz)", "柔软(limber)"],
+  hiddenAbilities: ["柔软(limber)"],
+  gen: 4,
+  region: "神奥",
+  genera: "兔子宝可梦",
+  description: "会利用把卷卷的耳朵伸直 时产生的威力进行攻击。 越训练，这一招式的威力就越强。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 66
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 44
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 44
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 56
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 428,
+  name: "lopunny",
+  nameZh: "长耳兔",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png",
+  height: 12,
+  weight: 333,
+  abilities: ["迷人之躯(cute-charm)", "笨拙(klutz)", "柔软(limber)"],
+  hiddenAbilities: ["柔软(limber)"],
+  gen: 4,
+  region: "神奥",
+  genera: "兔子宝可梦",
+  description: "当高温的季节结束后， 就会换上富含空气的 体毛，准备抵御寒冷。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 76
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 84
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 54
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 96
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 429,
+  name: "mismagius",
+  nameZh: "梦妖魔",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/429.png",
+  height: 9,
+  weight: 44,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "魔法宝可梦",
+  description: "会吟诵诅咒的语言， 让对方极度头疼，或是看到 恐怖的幻觉，深受折磨。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 430,
+  name: "honchkrow",
+  nameZh: "乌鸦头头",
+  types: ["dark", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/430.png",
+  height: 9,
+  weight: 273,
+  abilities: ["不眠(insomnia)", "超幸运(super-luck)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 4,
+  region: "神奥",
+  genera: "大头目宝可梦",
+  description: "和敌人战斗的基本都是跟班。 只有在最后刺入对手的致命一击 才会弄脏自己的手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 52
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 52
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 71
+}]
+},
+  {
+  id: 431,
+  name: "glameow",
+  nameZh: "魅力喵",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/431.png",
+  height: 5,
+  weight: 39,
+  abilities: ["柔软(limber)", "我行我素(own-tempo)", "锐利目光(keen-eye)"],
+  hiddenAbilities: ["锐利目光(keen-eye)"],
+  gen: 4,
+  region: "神奥",
+  genera: "装乖宝可梦",
+  description: "It claws if displeased and purrs when affectionate. Its fickleness is very popular among some.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 49
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 42
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 42
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 37
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 432,
+  name: "purugly",
+  nameZh: "东施喵",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/432.png",
+  height: 10,
+  weight: 438,
+  abilities: ["厚脂肪(thick-fat)", "我行我素(own-tempo)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 4,
+  region: "神奥",
+  genera: "虎斑猫宝可梦",
+  description: "It is a brazen brute that barges its way into another Pokémon’s nest and claims it as its own.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 71
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 82
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 64
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 64
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 59
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 112
+}]
+},
+  {
+  id: 433,
+  name: "chingling",
+  nameZh: "铃铛响",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/433.png",
+  height: 2,
+  weight: 6,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "铃铛宝可梦",
+  description: "It emits cries by agitating an orb at the back of its throat. It moves with flouncing hops.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 434,
+  name: "stunky",
+  nameZh: "臭鼬噗",
+  types: ["poison", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/434.png",
+  height: 4,
+  weight: 192,
+  abilities: ["恶臭(stench)", "引爆(aftermath)", "锐利目光(keen-eye)"],
+  hiddenAbilities: ["锐利目光(keen-eye)"],
+  gen: 4,
+  region: "神奥",
+  genera: "臭鼬宝可梦",
+  description: "要是它翘起尾巴把屁股对准了你， 请一定要小心。因为这表示它将要 喷出足以让人窒息的臭液。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 63
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 63
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 47
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 41
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 41
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 74
+}]
+},
+  {
+  id: 435,
+  name: "skuntank",
+  nameZh: "坦克臭鼬",
+  types: ["poison", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/435.png",
+  height: 10,
+  weight: 380,
+  abilities: ["恶臭(stench)", "引爆(aftermath)", "锐利目光(keen-eye)"],
+  hiddenAbilities: ["锐利目光(keen-eye)"],
+  gen: 4,
+  region: "神奥",
+  genera: "臭鼬宝可梦",
+  description: "从尾巴尖端喷出的液体 带有强烈的恶臭。 会在地面上挖洞建造巢穴。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 103
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 93
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 67
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 71
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 61
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 84
+}]
+},
+  {
+  id: 436,
+  name: "bronzor",
+  nameZh: "铜镜怪",
+  types: ["steel", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/436.png",
+  height: 5,
+  weight: 605,
+  abilities: ["飘浮(levitate)", "耐热(heatproof)", "重金属(heavy-metal)"],
+  hiddenAbilities: ["重金属(heavy-metal)"],
+  gen: 4,
+  region: "神奥",
+  genera: "青铜宝可梦",
+  description: "虽然人们说把铜镜怪打磨到发光， 它就能映照出真相， 但其实它非常讨厌被打磨。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 57
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 24
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 86
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 24
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 86
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 23
+}]
+},
+  {
+  id: 437,
+  name: "bronzong",
+  nameZh: "青铜钟",
+  types: ["steel", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/437.png",
+  height: 13,
+  weight: 1870,
+  abilities: ["飘浮(levitate)", "耐热(heatproof)", "重金属(heavy-metal)"],
+  hiddenAbilities: ["重金属(heavy-metal)"],
+  gen: 4,
+  region: "神奥",
+  genera: "铜钟宝可梦",
+  description: "它身上的纹路让 许多学者都认为它 原本并不存在于伽勒尔。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 67
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 89
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 116
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 79
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 116
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 33
+}]
+},
+  {
+  id: 438,
+  name: "bonsly",
+  nameZh: "盆才怪",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/438.png",
+  height: 5,
+  weight: 150,
+  abilities: ["结实(sturdy)", "坚硬脑袋(rock-head)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 4,
+  region: "神奥",
+  genera: "盆栽宝可梦",
+  description: "栖息在空气干燥岩石裸露的地方。 空气越是干燥，它身上的绿球 就越是会泛出暗淡的光泽。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 10
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 10
+}]
+},
+  {
+  id: 439,
+  name: "mime-jr",
+  nameZh: "魔尼尼",
+  types: ["psychic", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/439.png",
+  height: 6,
+  weight: 130,
+  abilities: ["隔音(soundproof)", "过滤(filter)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 4,
+  region: "神奥",
+  genera: "默剧宝可梦",
+  description: "像徒弟一样跟随着 擅长跳舞的踏冰人偶， 拼命模仿它的舞步。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 20
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 25
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 440,
+  name: "happiny",
+  nameZh: "小福蛋",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/440.png",
+  height: 6,
+  weight: 244,
+  abilities: ["自然回复(natural-cure)", "天恩(serene-grace)", "友情防守(friend-guard)"],
+  hiddenAbilities: ["友情防守(friend-guard)"],
+  gen: 4,
+  region: "神奥",
+  genera: "家家酒宝可梦",
+  description: "会把自己珍贵的浑圆石头 借给关系变得很要好的对象。 如果不还给它，它便会大哭大闹。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 5
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 5
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 15
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 441,
+  name: "chatot",
+  nameZh: "聒噪鸟",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/441.png",
+  height: 5,
+  weight: 19,
+  abilities: ["锐利目光(keen-eye)", "蹒跚(tangled-feet)", "健壮胸肌(big-pecks)"],
+  hiddenAbilities: ["健壮胸肌(big-pecks)"],
+  gen: 4,
+  region: "神奥",
+  genera: "音符宝可梦",
+  description: "It can learn and speak human words. If they gather, they all learn the same saying.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 76
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 92
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 42
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 91
+}]
+},
+  {
+  id: 442,
+  name: "spiritomb",
+  nameZh: "花岩怪",
+  types: ["ghost", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/442.png",
+  height: 10,
+  weight: 1080,
+  abilities: ["压迫感(pressure)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 4,
+  region: "神奥",
+  genera: "封印宝可梦",
+  description: "总是作恶多端， 于是被使用神奇法术的 旅人绑缚在楔石里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 92
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 108
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 92
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 108
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 443,
+  name: "gible",
+  nameZh: "圆陆鲨",
+  types: ["dragon", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/443.png",
+  height: 7,
+  weight: 205,
+  abilities: ["沙隐(sand-veil)", "粗糙皮肤(rough-skin)"],
+  hiddenAbilities: ["粗糙皮肤(rough-skin)"],
+  gen: 4,
+  region: "神奥",
+  genera: "陆鲨宝可梦",
+  description: "遇到会动的东西就会扑上去 将其拉回到自己住的横洞内。 虽然嘴很大，但胃口却比较小。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 58
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 444,
+  name: "gabite",
+  nameZh: "尖牙陆鲨",
+  types: ["dragon", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/444.png",
+  height: 14,
+  weight: 560,
+  abilities: ["沙隐(sand-veil)", "粗糙皮肤(rough-skin)"],
+  hiddenAbilities: ["粗糙皮肤(rough-skin)"],
+  gen: 4,
+  region: "神奥",
+  genera: "洞穴宝可梦",
+  description: "会把宝石埋藏在栖息的洞窟内。 入侵者闯入洞窟后，会立刻 被它用爪子和牙齿撕碎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 82
+}]
+},
+  {
+  id: 445,
+  name: "garchomp",
+  nameZh: "烈咬陆鲨",
+  types: ["dragon", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+  height: 19,
+  weight: 950,
+  abilities: ["沙隐(sand-veil)", "粗糙皮肤(rough-skin)"],
+  hiddenAbilities: ["粗糙皮肤(rough-skin)"],
+  gen: 4,
+  region: "神奥",
+  genera: "音速宝可梦",
+  description: "身手在陆地上也很矫捷， 在雪山上会赶在身体冻僵前 干掉猎物并返回住处。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 108
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 102
+}]
+},
+  {
+  id: 446,
+  name: "munchlax",
+  nameZh: "小卡比兽",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/446.png",
+  height: 6,
+  weight: 1050,
+  abilities: ["捡拾(pickup)", "厚脂肪(thick-fat)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 4,
+  region: "神奥",
+  genera: "大胃王宝可梦",
+  description: "在体毛下面储存食物。 如果是自己信赖的对象， 也会把食物分给对方一口。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 135
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 5
+}]
+},
+  {
+  id: 447,
+  name: "riolu",
+  nameZh: "利欧路",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/447.png",
+  height: 7,
+  weight: 202,
+  abilities: ["不屈之心(steadfast)", "精神力(inner-focus)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 4,
+  region: "神奥",
+  genera: "波纹宝可梦",
+  description: "除了能读懂对手的感情， 也能以“波导”这种形式的波 来观察大自然的样子。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 448,
+  name: "lucario",
+  nameZh: "路卡利欧",
+  types: ["fighting", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+  height: 12,
+  weight: 540,
+  abilities: ["不屈之心(steadfast)", "精神力(inner-focus)", "正义之心(justified)"],
+  hiddenAbilities: ["正义之心(justified)"],
+  gen: 4,
+  region: "神奥",
+  genera: "波导宝可梦",
+  description: "他能理解人类的想法， 因此只会去亲近 内心端正的训练家。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 449,
+  name: "hippopotas",
+  nameZh: "沙河马",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/449.png",
+  height: 8,
+  weight: 495,
+  abilities: ["扬沙(sand-stream)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 4,
+  region: "神奥",
+  genera: "河马宝可梦",
+  description: "主要在白天活动。 因为沙漠的夜晚会降温， 所以会钻到沙子的深处睡觉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 72
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 78
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 38
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 42
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 32
+}]
+},
+  {
+  id: 450,
+  name: "hippowdon",
+  nameZh: "河马兽",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
+  height: 20,
+  weight: 3000,
+  abilities: ["扬沙(sand-stream)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 4,
+  region: "神奥",
+  genera: "重量宝可梦",
+  description: "生气的时候非常凶暴。 会喷出储存在体内的 沙子来引发沙尘暴。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 108
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 112
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 118
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 68
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 72
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 47
+}]
+},
+  {
+  id: 451,
+  name: "skorupi",
+  nameZh: "钳尾蝎",
+  types: ["poison", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/451.png",
+  height: 8,
+  weight: 120,
+  abilities: ["战斗盔甲(battle-armor)", "狙击手(sniper)", "锐利目光(keen-eye)"],
+  hiddenAbilities: ["锐利目光(keen-eye)"],
+  gen: 4,
+  region: "神奥",
+  genera: "蝎子宝可梦",
+  description: "用尾巴上带毒的钩爪袭击对手。 一旦被夹住，毒素就会扩散开来， 导致全身无法动弹。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 452,
+  name: "drapion",
+  nameZh: "龙王蝎",
+  types: ["poison", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/452.png",
+  height: 13,
+  weight: 615,
+  abilities: ["战斗盔甲(battle-armor)", "狙击手(sniper)", "锐利目光(keen-eye)"],
+  hiddenAbilities: ["锐利目光(keen-eye)"],
+  gen: 4,
+  region: "神奥",
+  genera: "蝎怪宝可梦",
+  description: "虽然狰狞凶猛到被人们 称为沙之恶魔，但在河马兽 面前却表现得低调温顺。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 453,
+  name: "croagunk",
+  nameZh: "不良蛙",
+  types: ["poison", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/453.png",
+  height: 7,
+  weight: 230,
+  abilities: ["危险预知(anticipation)", "干燥皮肤(dry-skin)", "毒手(poison-touch)"],
+  hiddenAbilities: ["毒手(poison-touch)"],
+  gen: 4,
+  region: "神奥",
+  genera: "毒击宝可梦",
+  description: "毒素在稀释后能制成药品。 它是制药公司的吉祥物， 广受众人的欢迎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 48
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 61
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 61
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 454,
+  name: "toxicroak",
+  nameZh: "毒骷蛙",
+  types: ["poison", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/454.png",
+  height: 13,
+  weight: 444,
+  abilities: ["危险预知(anticipation)", "干燥皮肤(dry-skin)", "毒手(poison-touch)"],
+  hiddenAbilities: ["毒手(poison-touch)"],
+  gen: 4,
+  region: "神奥",
+  genera: "毒击宝可梦",
+  description: "制服了猎物之后， 便会呱呱地发出胜利的欢呼。 与蟾蜍王是相近的物种。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 83
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 106
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 86
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 455,
+  name: "carnivine",
+  nameZh: "尖牙笼",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/455.png",
+  height: 14,
+  weight: 270,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "捕虫宝可梦",
+  description: "It attracts prey with its sweet- smelling saliva, then chomps down. It takes a whole day to eat prey.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 74
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 72
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 72
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 46
+}]
+},
+  {
+  id: 456,
+  name: "finneon",
+  nameZh: "荧光鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/456.png",
+  height: 4,
+  weight: 70,
+  abilities: ["悠游自如(swift-swim)", "引水(storm-drain)", "水幕(water-veil)"],
+  hiddenAbilities: ["水幕(water-veil)"],
+  gen: 4,
+  region: "神奥",
+  genera: "飞翅鱼宝可梦",
+  description: "用发光的尾鳍引诱猎物。 白天会在海面附近， 到了夜里就向海的深处移动。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 49
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 49
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 56
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 49
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 61
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 66
+}]
+},
+  {
+  id: 457,
+  name: "lumineon",
+  nameZh: "霓虹鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/457.png",
+  height: 12,
+  weight: 240,
+  abilities: ["悠游自如(swift-swim)", "引水(storm-drain)", "水幕(water-veil)"],
+  hiddenAbilities: ["水幕(water-veil)"],
+  gen: 4,
+  region: "神奥",
+  genera: "霓虹宝可梦",
+  description: "像是爬行一样在深海的海底游泳。 鳍上发出的充满幻想的光 就像是夜空的星星。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 69
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 69
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 76
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 69
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 86
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 91
+}]
+},
+  {
+  id: 458,
+  name: "mantyke",
+  nameZh: "小球飞鱼",
+  types: ["water", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/458.png",
+  height: 10,
+  weight: 650,
+  abilities: ["悠游自如(swift-swim)", "储水(water-absorb)", "水幕(water-veil)"],
+  hiddenAbilities: ["水幕(water-veil)"],
+  gen: 4,
+  region: "神奥",
+  genera: "风筝宝可梦",
+  description: "混在铁炮鱼的大群里游泳。 受到敌人袭击的时候， 会和铁炮鱼们并肩作战。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 459,
+  name: "snover",
+  nameZh: "雪笠怪",
+  types: ["grass", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/459.png",
+  height: 10,
+  weight: 505,
+  abilities: ["降雪(snow-warning)", "隔音(soundproof)"],
+  hiddenAbilities: ["隔音(soundproof)"],
+  gen: 4,
+  region: "神奥",
+  genera: "树冰宝可梦",
+  description: "雪笠怪肚子上结出来的 口感好似冰棍的树果 是伽勒尔的火红不倒翁们的最爱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 62
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 62
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 460,
+  name: "abomasnow",
+  nameZh: "暴雪王",
+  types: ["grass", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/460.png",
+  height: 22,
+  weight: 1355,
+  abilities: ["降雪(snow-warning)", "隔音(soundproof)"],
+  hiddenAbilities: ["隔音(soundproof)"],
+  gen: 4,
+  region: "神奥",
+  genera: "树冰宝可梦",
+  description: "会引发暴风雪的宝可梦。 只要它摇动巨大的身体， 周围立刻会变得一片雪白。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 92
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 92
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 461,
+  name: "weavile",
+  nameZh: "玛狃拉",
+  types: ["dark", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/461.png",
+  height: 11,
+  weight: 340,
+  abilities: ["压迫感(pressure)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 4,
+  region: "神奥",
+  genera: "钩爪宝可梦",
+  description: "通过用爪子留下记号 来与伙伴联络。据说记号 的种类有５００种以上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 125
+}]
+},
+  {
+  id: 462,
+  name: "magnezone",
+  nameZh: "自爆磁怪",
+  types: ["electric", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/462.png",
+  height: 12,
+  weight: 1800,
+  abilities: ["磁力(magnet-pull)", "结实(sturdy)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 4,
+  region: "神奥",
+  genera: "磁场宝可梦",
+  description: "人们认为，它是因为受到特殊 磁场的影响，身体的分子构造 发生了变化，才进化成这样的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 463,
+  name: "lickilicky",
+  nameZh: "大舌舔",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/463.png",
+  height: 17,
+  weight: 1400,
+  abilities: ["我行我素(own-tempo)", "迟钝(oblivious)", "无关天气(cloud-nine)"],
+  hiddenAbilities: ["无关天气(cloud-nine)"],
+  gen: 4,
+  region: "神奥",
+  genera: "舔舔宝可梦",
+  description: "舌头的灵巧程度甚至不输给 人手，没有它做不到的事。 相反，手指却相当笨拙，",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 464,
+  name: "rhyperior",
+  nameZh: "超甲狂犀",
+  types: ["ground", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png",
+  height: 24,
+  weight: 2828,
+  abilities: ["避雷针(lightning-rod)", "坚硬岩石(solid-rock)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 4,
+  region: "神奥",
+  genera: "钻锥宝可梦",
+  description: "用护具弹开敌人的攻击， 在对手畏缩时用自己 引以为傲的钻头贯穿对方。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 115
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 140
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 465,
+  name: "tangrowth",
+  nameZh: "巨蔓藤",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/465.png",
+  height: 20,
+  weight: 1286,
+  abilities: ["叶绿素(chlorophyll)", "叶子防守(leaf-guard)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 4,
+  region: "神奥",
+  genera: "藤蔓状宝可梦",
+  description: "栖息的地域越是温暖，藤蔓 生长得就越快。藤蔓变长后， 它会亲手将其扯断使其变短。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 125
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 466,
+  name: "electivire",
+  nameZh: "电击魔兽",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/466.png",
+  height: 18,
+  weight: 1386,
+  abilities: ["电气引擎(motor-drive)", "干劲(vital-spirit)"],
+  hiddenAbilities: ["干劲(vital-spirit)"],
+  gen: 4,
+  region: "神奥",
+  genera: "雷电宝可梦",
+  description: "发电量在电气宝可梦当中 属于最高级别。可以从 尾巴尖端释放高压电流。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 123
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 67
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 467,
+  name: "magmortar",
+  nameZh: "鸭嘴炎兽",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/467.png",
+  height: 16,
+  weight: 680,
+  abilities: ["火焰之躯(flame-body)", "干劲(vital-spirit)"],
+  hiddenAbilities: ["干劲(vital-spirit)"],
+  gen: 4,
+  region: "神奥",
+  genera: "爆炎宝可梦",
+  description: "由于栖息在火山口，因此 身体逐渐变得像火山一样， 还长着类似岩浆库的器官。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 67
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 83
+}]
+},
+  {
+  id: 468,
+  name: "togekiss",
+  nameZh: "波克基斯",
+  types: ["fairy", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png",
+  height: 15,
+  weight: 380,
+  abilities: ["活力(hustle)", "天恩(serene-grace)", "超幸运(super-luck)"],
+  hiddenAbilities: ["超幸运(super-luck)"],
+  gen: 4,
+  region: "神奥",
+  genera: "祝福宝可梦",
+  description: "被称为会带来恩惠的宝可梦， 从很久很久以前开始， 人们就视它为吉祥之物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 469,
+  name: "yanmega",
+  nameZh: "远古巨蜓",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/469.png",
+  height: 19,
+  weight: 515,
+  abilities: ["加速(speed-boost)", "有色眼镜(tinted-lens)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 4,
+  region: "神奥",
+  genera: "勾蜓宝可梦",
+  description: "By churning its wings, it creates shock waves that inflict critical internal injuries to foes.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 86
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 76
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 86
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 116
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 56
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 470,
+  name: "leafeon",
+  nameZh: "叶伊布",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/470.png",
+  height: 10,
+  weight: 255,
+  abilities: ["叶子防守(leaf-guard)", "叶绿素(chlorophyll)"],
+  hiddenAbilities: ["叶绿素(chlorophyll)"],
+  gen: 4,
+  region: "神奥",
+  genera: "新绿宝可梦",
+  description: "尾巴好似锐利的刀刃， 锋利得无与伦比， 连大树都能一斩为二。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 471,
+  name: "glaceon",
+  nameZh: "冰伊布",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/471.png",
+  height: 8,
+  weight: 259,
+  abilities: ["雪隐(snow-cloak)", "冰冻之躯(ice-body)"],
+  hiddenAbilities: ["冰冻之躯(ice-body)"],
+  gen: 4,
+  region: "神奥",
+  genera: "新雪宝可梦",
+  description: "冰伊布释放出的冷气能 制造出粉状的雪。这使它受到 各个滑雪场的热烈欢迎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 472,
+  name: "gliscor",
+  nameZh: "天蝎王",
+  types: ["ground", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/472.png",
+  height: 20,
+  weight: 425,
+  abilities: ["怪力钳(hyper-cutter)", "沙隐(sand-veil)", "毒疗(poison-heal)"],
+  hiddenAbilities: ["毒疗(poison-heal)"],
+  gen: 4,
+  region: "神奥",
+  genera: "牙蝎宝可梦",
+  description: "It observes prey while hanging inverted from branches. When the chance presents itself, it swoops!",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 125
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 473,
+  name: "mamoswine",
+  nameZh: "象牙猪",
+  types: ["ice", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/473.png",
+  height: 25,
+  weight: 2910,
+  abilities: ["迟钝(oblivious)", "雪隐(snow-cloak)", "厚脂肪(thick-fat)"],
+  hiddenAbilities: ["厚脂肪(thick-fat)"],
+  gen: 4,
+  region: "神奥",
+  genera: "双牙宝可梦",
+  description: "它的力量就如外表那样强大。 天气越是寒冷，它的冰牙 就会长得越粗、越长、越结实。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 474,
+  name: "porygon-z",
+  nameZh: "多边兽乙型",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/474.png",
+  height: 9,
+  weight: 340,
+  abilities: ["适应力(adaptability)", "下载(download)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 4,
+  region: "神奥",
+  genera: "虚拟宝可梦",
+  description: "有人说它是通过追加程序进化的， 但关于它的改变是否真是进化， 在学会中也存在着意见分歧。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 475,
+  name: "gallade",
+  nameZh: "艾路雷朵",
+  types: ["psychic", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/475.png",
+  height: 16,
+  weight: 520,
+  abilities: ["不屈之心(steadfast)", "锋锐(sharpness)", "正义之心(justified)"],
+  hiddenAbilities: ["正义之心(justified)"],
+  gen: 4,
+  region: "神奥",
+  genera: "利刃宝可梦",
+  description: "能够敏锐地感知到 寻求帮助的感情， 并且火速赶去援助对方。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 476,
+  name: "probopass",
+  nameZh: "大朝北鼻",
+  types: ["rock", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/476.png",
+  height: 14,
+  weight: 3400,
+  abilities: ["结实(sturdy)", "磁力(magnet-pull)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 4,
+  region: "神奥",
+  genera: "罗盘宝可梦",
+  description: "使用３个小部件获取食物， 或是和敌人战斗。 本体基本上只负责下命令。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 145
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 150
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 477,
+  name: "dusknoir",
+  nameZh: "黑夜魔灵",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/477.png",
+  height: 22,
+  weight: 1066,
+  abilities: ["压迫感(pressure)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 4,
+  region: "神奥",
+  genera: "抓握宝可梦",
+  description: "用腹部的嘴将猎物整个吞下。 只会吃掉对方的魂魄， 离去时会把肉体吐出来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 135
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 135
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 478,
+  name: "froslass",
+  nameZh: "雪妖女",
+  types: ["ice", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
+  height: 13,
+  weight: 266,
+  abilities: ["雪隐(snow-cloak)", "诅咒之躯(cursed-body)"],
+  hiddenAbilities: ["诅咒之躯(cursed-body)"],
+  gen: 4,
+  region: "神奥",
+  genera: "雪国宝可梦",
+  description: "会吐出零下５０度的冷气 冻住猎物，并把它们带回 自己的巢穴，整齐地摆成一排。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 479,
+  name: "rotom",
+  nameZh: "洛托姆",
+  types: ["electric", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png",
+  height: 3,
+  weight: 3,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "等离子宝可梦",
+  description: "会用由离子构成的身体 潜入各种各样的机器里。 最喜欢恶作剧吓人。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 77
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 77
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 91
+}]
+},
+  {
+  id: 480,
+  name: "uxie",
+  nameZh: "由克希",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png",
+  height: 3,
+  weight: 3,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "知识宝可梦",
+  description: "Known as “The Being of Knowledge.” It is said that it can wipe out the memory of those who see its eyes.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 481,
+  name: "mesprit",
+  nameZh: "艾姆利多",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png",
+  height: 3,
+  weight: 3,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "感情宝可梦",
+  description: "Known as “The Being of Emotion.” It taught humans the nobility of sorrow, pain, and joy.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 482,
+  name: "azelf",
+  nameZh: "亚克诺姆",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png",
+  height: 3,
+  weight: 3,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "意志宝可梦",
+  description: "It is thought that Uxie, Mesprit, and Azelf all came from the same egg.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 115
+}]
+},
+  {
+  id: 483,
+  name: "dialga",
+  nameZh: "帝牙卢卡",
+  types: ["steel", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
+  height: 54,
+  weight: 6830,
+  abilities: ["压迫感(pressure)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 4,
+  region: "神奥",
+  genera: "时间宝可梦",
+  description: "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 150
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 484,
+  name: "palkia",
+  nameZh: "帕路奇亚",
+  types: ["water", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png",
+  height: 42,
+  weight: 3360,
+  abilities: ["压迫感(pressure)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 4,
+  region: "神奥",
+  genera: "空间宝可梦",
+  description: "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 150
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 485,
+  name: "heatran",
+  nameZh: "席多蓝恩",
+  types: ["fire", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png",
+  height: 17,
+  weight: 4300,
+  abilities: ["引火(flash-fire)", "火焰之躯(flame-body)"],
+  hiddenAbilities: ["火焰之躯(flame-body)"],
+  gen: 4,
+  region: "神奥",
+  genera: "火山口宝可梦",
+  description: "It dwells in volcanic caves. It digs in with its cross-shaped feet to crawl on ceilings and walls.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 91
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 106
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 106
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 77
+}]
+},
+  {
+  id: 486,
+  name: "regigigas",
+  nameZh: "雷吉奇卡斯",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png",
+  height: 37,
+  weight: 4200,
+  abilities: ["慢启动(slow-start)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "巨大宝可梦",
+  description: "据说它用各种各样的材料 制作了宝可梦后，把大陆 移动到了现在的位置。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 160
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 487,
+  name: "giratina-altered",
+  nameZh: "骑拉帝纳",
+  types: ["ghost", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png",
+  height: 45,
+  weight: 7500,
+  abilities: ["压迫感(pressure)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 4,
+  region: "神奥",
+  genera: "反抗宝可梦",
+  description: "A Pokémon that is said to live in a world on the reverse side of ours. It appears in an ancient cemetery.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 150
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 488,
+  name: "cresselia",
+  nameZh: "克雷色利亚",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png",
+  height: 15,
+  weight: 856,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "新月宝可梦",
+  description: "Shiny particles are released from its wings like a veil. It is said to represent the crescent moon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 120
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 489,
+  name: "phione",
+  nameZh: "霏欧纳",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/489.png",
+  height: 4,
+  weight: 31,
+  abilities: ["湿润之躯(hydration)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "海洋宝可梦",
+  description: "A Pokémon that lives in warm seas. It inflates the flotation sac on its head to drift and search for food.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 490,
+  name: "manaphy",
+  nameZh: "玛纳霏",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/490.png",
+  height: 3,
+  weight: 14,
+  abilities: ["湿润之躯(hydration)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "回游宝可梦",
+  description: "Born on a cold seafloor, it will swim great distances to return to its birthplace.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 491,
+  name: "darkrai",
+  nameZh: "达克莱伊",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png",
+  height: 15,
+  weight: 505,
+  abilities: ["梦魇(bad-dreams)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "暗黑宝可梦",
+  description: "It can lull people to sleep and make them dream. It is active during nights of the new moon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 125
+}]
+},
+  {
+  id: 492,
+  name: "shaymin-land",
+  nameZh: "谢米",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/492.png",
+  height: 2,
+  weight: 21,
+  abilities: ["自然回复(natural-cure)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "感谢宝可梦",
+  description: "It lives in flower patches and avoids detection by curling up to look like a flowering plant.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 493,
+  name: "arceus",
+  nameZh: "阿尔宙斯",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png",
+  height: 32,
+  weight: 3200,
+  abilities: ["多属性(multitype)"],
+  hiddenAbilities: [],
+  gen: 4,
+  region: "神奥",
+  genera: "创造宝可梦",
+  description: "It is said to have emerged from an egg in a place where there was nothing, then shaped the world.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 120
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 120
+}]
+},
+  {
+  id: 494,
+  name: "victini",
+  nameZh: "比克提尼",
+  types: ["psychic", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/494.png",
+  height: 4,
+  weight: 40,
+  abilities: ["胜利之星(victory-star)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "胜利宝可梦",
+  description: "This Pokémon brings victory. It is said that Trainers with Victini always win, regardless of the type of encounter.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 495,
+  name: "snivy",
+  nameZh: "藤藤蛇",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/495.png",
+  height: 6,
+  weight: 81,
+  abilities: ["茂盛(overgrow)", "唱反调(contrary)"],
+  hiddenAbilities: ["唱反调(contrary)"],
+  gen: 5,
+  region: "合众",
+  genera: "草蛇宝可梦",
+  description: "It is very intelligent and calm. Being exposed to lots of sunlight makes its movements swifter.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 63
+}]
+},
+  {
+  id: 496,
+  name: "servine",
+  nameZh: "青藤蛇",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/496.png",
+  height: 8,
+  weight: 160,
+  abilities: ["茂盛(overgrow)", "唱反调(contrary)"],
+  hiddenAbilities: ["唱反调(contrary)"],
+  gen: 5,
+  region: "合众",
+  genera: "草蛇宝可梦",
+  description: "It moves along the ground as if sliding. Its swift movements befuddle its foes, and it then attacks with a vine whip.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 83
+}]
+},
+  {
+  id: 497,
+  name: "serperior",
+  nameZh: "君主蛇",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/497.png",
+  height: 33,
+  weight: 630,
+  abilities: ["茂盛(overgrow)", "唱反调(contrary)"],
+  hiddenAbilities: ["唱反调(contrary)"],
+  gen: 5,
+  region: "合众",
+  genera: "皇家宝可梦",
+  description: "It can stop its opponents’ movements with just a glare. It takes in solar energy and boosts it internally.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 113
+}]
+},
+  {
+  id: 498,
+  name: "tepig",
+  nameZh: "暖暖猪",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/498.png",
+  height: 5,
+  weight: 99,
+  abilities: ["猛火(blaze)", "厚脂肪(thick-fat)"],
+  hiddenAbilities: ["厚脂肪(thick-fat)"],
+  gen: 5,
+  region: "合众",
+  genera: "火猪宝可梦",
+  description: "It can deftly dodge its foe’s attacks while shooting fireballs from its nose. It roasts berries before it eats them.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 63
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 499,
+  name: "pignite",
+  nameZh: "炒炒猪",
+  types: ["fire", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/499.png",
+  height: 10,
+  weight: 555,
+  abilities: ["猛火(blaze)", "厚脂肪(thick-fat)"],
+  hiddenAbilities: ["厚脂肪(thick-fat)"],
+  gen: 5,
+  region: "合众",
+  genera: "火猪宝可梦",
+  description: "When its internal fire flares up, its movements grow sharper and faster. When in trouble, it emits smoke.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 93
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 500,
+  name: "emboar",
+  nameZh: "炎武王",
+  types: ["fire", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/500.png",
+  height: 16,
+  weight: 1500,
+  abilities: ["猛火(blaze)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 5,
+  region: "合众",
+  genera: "大火猪宝可梦",
+  description: "It has mastered fast and powerful fighting moves. It grows a beard of fire.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 123
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 501,
+  name: "oshawott",
+  nameZh: "水水獭",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/501.png",
+  height: 5,
+  weight: 59,
+  abilities: ["激流(torrent)", "硬壳盔甲(shell-armor)"],
+  hiddenAbilities: ["硬壳盔甲(shell-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "海獭宝可梦",
+  description: "It fights using the scalchop on its stomach. In response to an attack, it retaliates immediately by slashing.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 63
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 502,
+  name: "dewott",
+  nameZh: "双刃丸",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/502.png",
+  height: 8,
+  weight: 245,
+  abilities: ["激流(torrent)", "硬壳盔甲(shell-armor)"],
+  hiddenAbilities: ["硬壳盔甲(shell-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "修行宝可梦",
+  description: "Strict training is how it learns its flowing double-scalchop technique.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 83
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 503,
+  name: "samurott",
+  nameZh: "大剑鬼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/503.png",
+  height: 15,
+  weight: 946,
+  abilities: ["激流(torrent)", "硬壳盔甲(shell-armor)"],
+  hiddenAbilities: ["硬壳盔甲(shell-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "威严宝可梦",
+  description: "One swing of the sword incorporated in its armor can fell an opponent. A simple glare from one of them quiets everybody.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 108
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 504,
+  name: "patrat",
+  nameZh: "探探鼠",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/504.png",
+  height: 5,
+  weight: 116,
+  abilities: ["逃跑(run-away)", "锐利目光(keen-eye)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 5,
+  region: "合众",
+  genera: "放哨宝可梦",
+  description: "Using food stored in cheek pouches, they can keep watch for days. They use their tails to communicate with others.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 39
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 39
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 505,
+  name: "watchog",
+  nameZh: "步哨鼠",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/505.png",
+  height: 11,
+  weight: 270,
+  abilities: ["发光(illuminate)", "锐利目光(keen-eye)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 5,
+  region: "合众",
+  genera: "警戒宝可梦",
+  description: "When they see an enemy, their tails stand high, and they spit the seeds of berries stored in their cheek pouches.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 69
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 69
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 77
+}]
+},
+  {
+  id: 506,
+  name: "lillipup",
+  nameZh: "小约克",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/506.png",
+  height: 4,
+  weight: 41,
+  abilities: ["干劲(vital-spirit)", "捡拾(pickup)", "逃跑(run-away)"],
+  hiddenAbilities: ["逃跑(run-away)"],
+  gen: 5,
+  region: "合众",
+  genera: "小狗宝可梦",
+  description: "比普通的小孩子还要 聪明许多。对于得到的关爱 和受到的伤害都不会忘怀。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 507,
+  name: "herdier",
+  nameZh: "哈约克",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/507.png",
+  height: 9,
+  weight: 147,
+  abilities: ["威吓(intimidate)", "拨沙(sand-rush)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 5,
+  region: "合众",
+  genera: "忠犬宝可梦",
+  description: "覆盖在身上的黑色体毛 既厚又有弹性，甚至能 把尖锐的牙齿也反弹回去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 508,
+  name: "stoutland",
+  nameZh: "长毛狗",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/508.png",
+  height: 12,
+  weight: 610,
+  abilities: ["威吓(intimidate)", "拨沙(sand-rush)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 5,
+  region: "合众",
+  genera: "宽大宝可梦",
+  description: "以自己气派的胡须为傲。 据说，每只个体在族群中的地位， 就是根据胡须长度来决定的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 509,
+  name: "purrloin",
+  nameZh: "扒手猫",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/509.png",
+  height: 4,
+  weight: 101,
+  abilities: ["柔软(limber)", "轻装(unburden)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 5,
+  region: "合众",
+  genera: "坏心眼宝可梦",
+  description: "会用可爱的动作让对手放下戒心， 趁对方靠过来时冷不防地用爪子 猛抓，然后得意地大笑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 41
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 37
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 37
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 66
+}]
+},
+  {
+  id: 510,
+  name: "liepard",
+  nameZh: "酷豹",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/510.png",
+  height: 11,
+  weight: 375,
+  abilities: ["柔软(limber)", "轻装(unburden)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 5,
+  region: "合众",
+  genera: "冷酷宝可梦",
+  description: "和猾大狐争抢地盘。 能够悄无声息地 从背后偷偷靠近猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 64
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 88
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 88
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 106
+}]
+},
+  {
+  id: 511,
+  name: "pansage",
+  nameZh: "花椰猴",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/511.png",
+  height: 6,
+  weight: 105,
+  abilities: ["贪吃鬼(gluttony)", "茂盛(overgrow)"],
+  hiddenAbilities: ["茂盛(overgrow)"],
+  gen: 5,
+  region: "合众",
+  genera: "草猴宝可梦",
+  description: "This Pokémon dwells deep in the forest. Eating a leaf from its head whisks weariness away as if by magic.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 53
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 64
+}]
+},
+  {
+  id: 512,
+  name: "simisage",
+  nameZh: "花椰猿",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/512.png",
+  height: 11,
+  weight: 305,
+  abilities: ["贪吃鬼(gluttony)", "茂盛(overgrow)"],
+  hiddenAbilities: ["茂盛(overgrow)"],
+  gen: 5,
+  region: "合众",
+  genera: "刺猴宝可梦",
+  description: "Ill tempered, it fights by swinging its barbed tail around wildly. The leaf growing on its head is very bitter.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 98
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 98
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 101
+}]
+},
+  {
+  id: 513,
+  name: "pansear",
+  nameZh: "爆香猴",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/513.png",
+  height: 6,
+  weight: 110,
+  abilities: ["贪吃鬼(gluttony)", "猛火(blaze)"],
+  hiddenAbilities: ["猛火(blaze)"],
+  gen: 5,
+  region: "合众",
+  genera: "高温宝可梦",
+  description: "When it is angered, the temperature of its head tuft reaches 600° F. It uses its tuft to roast berries.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 53
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 64
+}]
+},
+  {
+  id: 514,
+  name: "simisear",
+  nameZh: "爆香猿",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/514.png",
+  height: 10,
+  weight: 280,
+  abilities: ["贪吃鬼(gluttony)", "猛火(blaze)"],
+  hiddenAbilities: ["猛火(blaze)"],
+  gen: 5,
+  region: "合众",
+  genera: "火花宝可梦",
+  description: "It loves sweets because they become energy for the fire burning inside its body.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 98
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 98
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 101
+}]
+},
+  {
+  id: 515,
+  name: "panpour",
+  nameZh: "冷水猴",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/515.png",
+  height: 6,
+  weight: 135,
+  abilities: ["贪吃鬼(gluttony)", "激流(torrent)"],
+  hiddenAbilities: ["激流(torrent)"],
+  gen: 5,
+  region: "合众",
+  genera: "泼水宝可梦",
+  description: "The water stored inside the tuft on its head is full of nutrients. Plants that receive its water grow large.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 53
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 64
+}]
+},
+  {
+  id: 516,
+  name: "simipour",
+  nameZh: "冷水猿",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/516.png",
+  height: 10,
+  weight: 290,
+  abilities: ["贪吃鬼(gluttony)", "激流(torrent)"],
+  hiddenAbilities: ["激流(torrent)"],
+  gen: 5,
+  region: "合众",
+  genera: "放水宝可梦",
+  description: "The tuft on its head holds water. When the level runs low, it replenishes the tuft by siphoning up water with its tail.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 98
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 98
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 101
+}]
+},
+  {
+  id: 517,
+  name: "munna",
+  nameZh: "食梦梦",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/517.png",
+  height: 6,
+  weight: 233,
+  abilities: ["预知梦(forewarn)", "同步(synchronize)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 5,
+  region: "合众",
+  genera: "食梦宝可梦",
+  description: "在吃掉梦之后会吐出烟雾。 吃了快乐的梦时，烟雾是粉红色的； 如果是噩梦，烟雾则是黑灰色的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 76
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 25
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 67
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 24
+}]
+},
+  {
+  id: 518,
+  name: "musharna",
+  nameZh: "梦梦蚀",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/518.png",
+  height: 11,
+  weight: 605,
+  abilities: ["预知梦(forewarn)", "同步(synchronize)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 5,
+  region: "合众",
+  genera: "半梦半醒宝可梦",
+  description: "总是在打瞌睡做梦。 刚睡醒的时候会闹脾气， 所以最好别去招惹它。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 116
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 107
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 29
+}]
+},
+  {
+  id: 519,
+  name: "pidove",
+  nameZh: "豆豆鸽",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/519.png",
+  height: 3,
+  weight: 21,
+  abilities: ["健壮胸肌(big-pecks)", "超幸运(super-luck)", "斗争心(rivalry)"],
+  hiddenAbilities: ["斗争心(rivalry)"],
+  gen: 5,
+  region: "合众",
+  genera: "小鸽宝可梦",
+  description: "虽然既健忘又不太聪明， 因为性格认真且容易亲近人， 所以受到了许多训练家的喜爱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 36
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 520,
+  name: "tranquill",
+  nameZh: "咕咕鸽",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/520.png",
+  height: 6,
+  weight: 150,
+  abilities: ["健壮胸肌(big-pecks)", "超幸运(super-luck)", "斗争心(rivalry)"],
+  hiddenAbilities: ["斗争心(rivalry)"],
+  gen: 5,
+  region: "合众",
+  genera: "野鸽宝可梦",
+  description: "头脑聪明而且记性很好。 似乎有许多快递员 将它选为自己的搭档。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 62
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 77
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 62
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 42
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 521,
+  name: "unfezant",
+  nameZh: "高傲雉鸡",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/521.png",
+  height: 12,
+  weight: 290,
+  abilities: ["健壮胸肌(big-pecks)", "超幸运(super-luck)", "斗争心(rivalry)"],
+  hiddenAbilities: ["斗争心(rivalry)"],
+  gen: 5,
+  region: "合众",
+  genera: "自尊心宝可梦",
+  description: "头脑聪明，所以自尊心也强。 如果能成为高傲雉鸡的训练家， 所有人都会对你刮目相看。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 93
+}]
+},
+  {
+  id: 522,
+  name: "blitzle",
+  nameZh: "斑斑马",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/522.png",
+  height: 8,
+  weight: 298,
+  abilities: ["避雷针(lightning-rod)", "电气引擎(motor-drive)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 5,
+  region: "合众",
+  genera: "带电宝可梦",
+  description: "Its mane shines when it discharges electricity. They use their flashing manes to communicate with one another.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 32
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 32
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 76
+}]
+},
+  {
+  id: 523,
+  name: "zebstrika",
+  nameZh: "雷电斑马",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/523.png",
+  height: 16,
+  weight: 795,
+  abilities: ["避雷针(lightning-rod)", "电气引擎(motor-drive)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 5,
+  region: "合众",
+  genera: "雷电宝可梦",
+  description: "They have lightning-like movements. When Zebstrika run at full speed, the sound of thunder reverberates.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 116
+}]
+},
+  {
+  id: 524,
+  name: "roggenrola",
+  nameZh: "石丸子",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/524.png",
+  height: 4,
+  weight: 180,
+  abilities: ["结实(sturdy)", "碎裂铠甲(weak-armor)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 5,
+  region: "合众",
+  genera: "地幔宝可梦",
+  description: "会对声音产生反应而动起来。 在能量核心的影响下， 它摸起来暖暖的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 525,
+  name: "boldore",
+  nameZh: "地幔岩",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/525.png",
+  height: 9,
+  weight: 1020,
+  abilities: ["结实(sturdy)", "碎裂铠甲(weak-armor)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 5,
+  region: "合众",
+  genera: "矿石宝可梦",
+  description: "通过声音来探测四周。 要是惹它生气了，它会连 身体方向也不转就朝你追来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 526,
+  name: "gigalith",
+  nameZh: "庞岩怪",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/526.png",
+  height: 17,
+  weight: 2600,
+  abilities: ["结实(sturdy)", "扬沙(sand-stream)", "沙之力(sand-force)"],
+  hiddenAbilities: ["沙之力(sand-force)"],
+  gen: 5,
+  region: "合众",
+  genera: "高压宝可梦",
+  description: "它射出的能量弹具有 可以击飞翻斗车的破坏力。 不过只有在晴天才能射击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 527,
+  name: "woobat",
+  nameZh: "滚滚蝙蝠",
+  types: ["psychic", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/527.png",
+  height: 4,
+  weight: 21,
+  abilities: ["纯朴(unaware)", "笨拙(klutz)", "单纯(simple)"],
+  hiddenAbilities: ["单纯(simple)"],
+  gen: 5,
+  region: "合众",
+  genera: "蝙蝠宝可梦",
+  description: "一边发出超音波，一边 飞来飞去寻找虫宝可梦 来填饱自己的肚子。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 43
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 43
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 72
+}]
+},
+  {
+  id: 528,
+  name: "swoobat",
+  nameZh: "心蝙蝠",
+  types: ["psychic", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/528.png",
+  height: 9,
+  weight: 105,
+  abilities: ["纯朴(unaware)", "笨拙(klutz)", "单纯(simple)"],
+  hiddenAbilities: ["单纯(simple)"],
+  gen: 5,
+  region: "合众",
+  genera: "求爱宝可梦",
+  description: "据说有些地区的人觉得 它鼻子的形状很吉利， 而把它当成幸福的象征来祭拜。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 67
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 57
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 77
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 114
+}]
+},
+  {
+  id: 529,
+  name: "drilbur",
+  nameZh: "螺钉地鼠",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/529.png",
+  height: 3,
+  weight: 85,
+  abilities: ["拨沙(sand-rush)", "沙之力(sand-force)", "破格(mold-breaker)"],
+  hiddenAbilities: ["破格(mold-breaker)"],
+  gen: 5,
+  region: "合众",
+  genera: "鼹鼠宝可梦",
+  description: "会用爪子在地底挖掘前进。 一些农民因为担心它会 因此糟蹋蔬菜而讨厌它。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 68
+}]
+},
+  {
+  id: 530,
+  name: "excadrill",
+  nameZh: "龙头地鼠",
+  types: ["ground", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png",
+  height: 7,
+  weight: 404,
+  abilities: ["拨沙(sand-rush)", "沙之力(sand-force)", "破格(mold-breaker)"],
+  hiddenAbilities: ["破格(mold-breaker)"],
+  gen: 5,
+  region: "合众",
+  genera: "地底宝可梦",
+  description: "别名钻头王。在地底下 挖掘前进的速度 达到了每小时１５０公里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 88
+}]
+},
+  {
+  id: 531,
+  name: "audino",
+  nameZh: "差不多娃娃",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/531.png",
+  height: 11,
+  weight: 310,
+  abilities: ["治愈之心(healer)", "再生力(regenerator)", "笨拙(klutz)"],
+  hiddenAbilities: ["笨拙(klutz)"],
+  gen: 5,
+  region: "合众",
+  genera: "听力宝可梦",
+  description: "心地善良的宝可梦。 通过触角接触，就能了解 对方的心情和身体状况。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 103
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 86
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 86
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 532,
+  name: "timburr",
+  nameZh: "搬运小匠",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/532.png",
+  height: 6,
+  weight: 125,
+  abilities: ["毅力(guts)", "强行(sheer-force)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 5,
+  region: "合众",
+  genera: "筋骨宝可梦",
+  description: "如果搬运小匠可以搬起 自己体重３倍左右的方材， 就代表它进化的日子要到了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 533,
+  name: "gurdurr",
+  nameZh: "铁骨土人",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/533.png",
+  height: 12,
+  weight: 400,
+  abilities: ["毅力(guts)", "强行(sheer-force)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 5,
+  region: "合众",
+  genera: "筋骨宝可梦",
+  description: "能够灵巧地操纵工字钢。 虽然对拆除得心应手， 但却不太擅长组装。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 534,
+  name: "conkeldurr",
+  nameZh: "修建老匠",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/534.png",
+  height: 14,
+  weight: 870,
+  abilities: ["毅力(guts)", "强行(sheer-force)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 5,
+  region: "合众",
+  genera: "筋骨宝可梦",
+  description: "要是认真起来就会 扔掉手中的混凝土柱， 赤手空拳地扑向敌人。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 140
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 535,
+  name: "tympole",
+  nameZh: "圆蝌蚪",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/535.png",
+  height: 5,
+  weight: 45,
+  abilities: ["悠游自如(swift-swim)", "湿润之躯(hydration)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 5,
+  region: "合众",
+  genera: "蝌蚪宝可梦",
+  description: "通过音波来联系伙伴。 人类和其他宝可梦都 听不见它发出的警告声。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 64
+}]
+},
+  {
+  id: 536,
+  name: "palpitoad",
+  nameZh: "蓝蟾蜍",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/536.png",
+  height: 8,
+  weight: 170,
+  abilities: ["悠游自如(swift-swim)", "湿润之躯(hydration)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 5,
+  region: "合众",
+  genera: "振动宝可梦",
+  description: "有时也会发出悦耳的叫声。 身上突起物越大的蓝蟾蜍 越能在更广的音域来鸣叫。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 69
+}]
+},
+  {
+  id: 537,
+  name: "seismitoad",
+  nameZh: "蟾蜍王",
+  types: ["water", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png",
+  height: 15,
+  weight: 620,
+  abilities: ["悠游自如(swift-swim)", "毒手(poison-touch)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 5,
+  region: "合众",
+  genera: "振动宝可梦",
+  description: "在老年人之间广受欢迎。 因为他们觉得它身上的瘤 发出的震动拿来按摩刚刚好。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 74
+}]
+},
+  {
+  id: 538,
+  name: "throh",
+  nameZh: "投摔鬼",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/538.png",
+  height: 13,
+  weight: 555,
+  abilities: ["毅力(guts)", "精神力(inner-focus)", "破格(mold-breaker)"],
+  hiddenAbilities: ["破格(mold-breaker)"],
+  gen: 5,
+  region: "合众",
+  genera: "柔道宝可梦",
+  description: "５只一组一起努力练习。 在练习中掉队的投摔鬼 会扔掉带子离开团队。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 120
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 539,
+  name: "sawk",
+  nameZh: "打击鬼",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/539.png",
+  height: 14,
+  weight: 510,
+  abilities: ["结实(sturdy)", "精神力(inner-focus)", "破格(mold-breaker)"],
+  hiddenAbilities: ["破格(mold-breaker)"],
+  gen: 5,
+  region: "合众",
+  genera: "空手道宝可梦",
+  description: "不断重复练习的打击鬼 所使出的空手劈拥有 足以劈开大海的破坏力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 540,
+  name: "sewaddle",
+  nameZh: "虫宝包",
+  types: ["bug", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/540.png",
+  height: 3,
+  weight: 25,
+  abilities: ["虫之预感(swarm)", "叶绿素(chlorophyll)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 5,
+  region: "合众",
+  genera: "裁缝宝可梦",
+  description: "Leavanny dress it in clothes they made for it when it hatched. It hides its head in its hood while it is sleeping.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 53
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 541,
+  name: "swadloon",
+  nameZh: "宝包茧",
+  types: ["bug", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/541.png",
+  height: 5,
+  weight: 73,
+  abilities: ["叶子防守(leaf-guard)", "叶绿素(chlorophyll)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 5,
+  region: "合众",
+  genera: "足不出叶宝可梦",
+  description: "Forests where Swadloon live have superb foliage because the nutrients they make from fallen leaves nourish the plant life.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 63
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 542,
+  name: "leavanny",
+  nameZh: "保姆虫",
+  types: ["bug", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/542.png",
+  height: 12,
+  weight: 205,
+  abilities: ["虫之预感(swarm)", "叶绿素(chlorophyll)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 5,
+  region: "合众",
+  genera: "育儿宝可梦",
+  description: "Upon finding a small Pokémon, it weaves clothing for it from leaves, using the cutters on its arms and sticky silk.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 103
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 92
+}]
+},
+  {
+  id: 543,
+  name: "venipede",
+  nameZh: "百足蜈蚣",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/543.png",
+  height: 4,
+  weight: 53,
+  abilities: ["毒刺(poison-point)", "虫之预感(swarm)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 5,
+  region: "合众",
+  genera: "蜈蚣宝可梦",
+  description: "牙齿上有剧毒。一旦 发现看上去能吃的猎物， 就会不假思索地扑上去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 59
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 39
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 57
+}]
+},
+  {
+  id: 544,
+  name: "whirlipede",
+  nameZh: "车轮球",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/544.png",
+  height: 12,
+  weight: 585,
+  abilities: ["毒刺(poison-point)", "虫之预感(swarm)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 5,
+  region: "合众",
+  genera: "茧蜈蚣宝可梦",
+  description: "用坚硬的壳和带毒的刺 保护自己的身体， 积蓄进化所需的能量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 99
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 79
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 47
+}]
+},
+  {
+  id: 545,
+  name: "scolipede",
+  nameZh: "蜈蚣王",
+  types: ["bug", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/545.png",
+  height: 25,
+  weight: 2005,
+  abilities: ["毒刺(poison-point)", "虫之预感(swarm)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 5,
+  region: "合众",
+  genera: "巨蜈蚣宝可梦",
+  description: "会和焚焰蚣激烈地争夺 领地。输掉的那一方 会成为另一方的猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 89
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 69
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 112
+}]
+},
+  {
+  id: 546,
+  name: "cottonee",
+  nameZh: "木棉球",
+  types: ["grass", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/546.png",
+  height: 3,
+  weight: 6,
+  abilities: ["恶作剧之心(prankster)", "穿透(infiltrator)", "叶绿素(chlorophyll)"],
+  hiddenAbilities: ["叶绿素(chlorophyll)"],
+  gen: 5,
+  region: "合众",
+  genera: "棉球宝可梦",
+  description: "将木棉球和白蓬蓬的棉花 混合后编织出的布料极其精致， 因此常被高级品牌选用。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 27
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 37
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 66
+}]
+},
+  {
+  id: 547,
+  name: "whimsicott",
+  nameZh: "风妖精",
+  types: ["grass", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/547.png",
+  height: 7,
+  weight: 66,
+  abilities: ["恶作剧之心(prankster)", "穿透(infiltrator)", "叶绿素(chlorophyll)"],
+  hiddenAbilities: ["叶绿素(chlorophyll)"],
+  gen: 5,
+  region: "合众",
+  genera: "风隐宝可梦",
+  description: "每当沐浴阳光，身上的棉花 就会膨胀。如果膨胀过了头， 它就会把棉花扯开到处乱撒。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 67
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 77
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 116
+}]
+},
+  {
+  id: 548,
+  name: "petilil",
+  nameZh: "百合根娃娃",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/548.png",
+  height: 5,
+  weight: 66,
+  abilities: ["叶绿素(chlorophyll)", "我行我素(own-tempo)", "叶子防守(leaf-guard)"],
+  hiddenAbilities: ["叶子防守(leaf-guard)"],
+  gen: 5,
+  region: "合众",
+  genera: "根茎宝可梦",
+  description: "叶子的颜色越深就越健康。 有时也会在被精心照料过的 田地或花坛里定居下来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 549,
+  name: "lilligant",
+  nameZh: "裙儿小姐",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/549.png",
+  height: 11,
+  weight: 163,
+  abilities: ["叶绿素(chlorophyll)", "我行我素(own-tempo)", "叶子防守(leaf-guard)"],
+  hiddenAbilities: ["叶子防守(leaf-guard)"],
+  gen: 5,
+  region: "合众",
+  genera: "花饰宝可梦",
+  description: "用它的花朵制成的精油 虽有着极致香气，但价格 同时也贵得令人大跌眼镜。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 550,
+  name: "basculin-red-striped",
+  nameZh: "野蛮鲈鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/550.png",
+  height: 10,
+  weight: 180,
+  abilities: ["舍身(reckless)", "适应力(adaptability)", "破格(mold-breaker)"],
+  hiddenAbilities: ["破格(mold-breaker)"],
+  gen: 5,
+  region: "合众",
+  genera: "粗暴宝可梦",
+  description: "从前也曾经登上餐桌。 红条纹野蛮鲈鱼的肉脂肪含量高， 适合年轻人食用。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 92
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 98
+}]
+},
+  {
+  id: 551,
+  name: "sandile",
+  nameZh: "黑眼鳄",
+  types: ["ground", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/551.png",
+  height: 7,
+  weight: 152,
+  abilities: ["威吓(intimidate)", "自信过度(moxie)", "愤怒穴位(anger-point)"],
+  hiddenAbilities: ["愤怒穴位(anger-point)"],
+  gen: 5,
+  region: "合众",
+  genera: "沙漠鳄鱼宝可梦",
+  description: "个头虽小，腰腿却很有力。 会拨开沙子，在沙漠里 犹如游泳般地自在移动。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 72
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 552,
+  name: "krokorok",
+  nameZh: "混混鳄",
+  types: ["ground", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/552.png",
+  height: 10,
+  weight: 334,
+  abilities: ["威吓(intimidate)", "自信过度(moxie)", "愤怒穴位(anger-point)"],
+  hiddenAbilities: ["愤怒穴位(anger-point)"],
+  gen: 5,
+  region: "合众",
+  genera: "沙漠鳄鱼宝可梦",
+  description: "虽然拥有能在黑暗中看清事物的 特殊双眼，但由于沙漠的夜晚寒冷， 所以一般不怎么活动。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 82
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 74
+}]
+},
+  {
+  id: 553,
+  name: "krookodile",
+  nameZh: "流氓鳄",
+  types: ["ground", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png",
+  height: 15,
+  weight: 963,
+  abilities: ["威吓(intimidate)", "自信过度(moxie)", "愤怒穴位(anger-point)"],
+  hiddenAbilities: ["愤怒穴位(anger-point)"],
+  gen: 5,
+  region: "合众",
+  genera: "威吓宝可梦",
+  description: "虽然凶暴，但也有擅长忍耐的一面。 为了捕获猎物，可以在 沙子里静静等上好几天。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 117
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 92
+}]
+},
+  {
+  id: 554,
+  name: "darumaka",
+  nameZh: "火红不倒翁",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/554.png",
+  height: 6,
+  weight: 375,
+  abilities: ["活力(hustle)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 5,
+  region: "合众",
+  genera: "不倒翁宝可梦",
+  description: "在它睡觉的时候， 无论是推是拉，它都不会倒下。 因为象征着吉利而大受欢迎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 15
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 555,
+  name: "darmanitan-standard",
+  nameZh: "达摩狒狒",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/555.png",
+  height: 13,
+  weight: 929,
+  abilities: ["强行(sheer-force)", "达摩模式(zen-mode)"],
+  hiddenAbilities: ["达摩模式(zen-mode)"],
+  gen: 5,
+  region: "合众",
+  genera: "爆燃宝可梦",
+  description: "体内的火焰燃得越旺， 力量就越大。火焰的温度 有时甚至能超过１４００度。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 140
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 556,
+  name: "maractus",
+  nameZh: "沙铃仙人掌",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png",
+  height: 10,
+  weight: 280,
+  abilities: ["储水(water-absorb)", "叶绿素(chlorophyll)", "引水(storm-drain)"],
+  hiddenAbilities: ["引水(storm-drain)"],
+  gen: 5,
+  region: "合众",
+  genera: "仙人掌宝可梦",
+  description: "一年散播一次种子。 花的种子营养十足， 是沙漠中贵重的食粮。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 86
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 67
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 106
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 67
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 557,
+  name: "dwebble",
+  nameZh: "石居蟹",
+  types: ["bug", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/557.png",
+  height: 3,
+  weight: 145,
+  abilities: ["结实(sturdy)", "硬壳盔甲(shell-armor)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "石居宝可梦",
+  description: "如果找不到大小合适 的石头来当成自己的家， 它也会住到河马兽的洞里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 558,
+  name: "crustle",
+  nameZh: "岩殿居蟹",
+  types: ["bug", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/558.png",
+  height: 14,
+  weight: 2000,
+  abilities: ["结实(sturdy)", "硬壳盔甲(shell-armor)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "岩居宝可梦",
+  description: "厚实的钳子是它最大的武器。 硬度高到甚至能让 超甲狂犀的护具裂开。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 125
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 559,
+  name: "scraggy",
+  nameZh: "滑滑小子",
+  types: ["dark", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/559.png",
+  height: 6,
+  weight: 118,
+  abilities: ["蜕皮(shed-skin)", "自信过度(moxie)", "威吓(intimidate)"],
+  hiddenAbilities: ["威吓(intimidate)"],
+  gen: 5,
+  region: "合众",
+  genera: "蜕皮宝可梦",
+  description: "用结实的皮保护身体。 据说在皮伸展到极限时， 它就会开始进化。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 48
+}]
+},
+  {
+  id: 560,
+  name: "scrafty",
+  nameZh: "头巾混混",
+  types: ["dark", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
+  height: 11,
+  weight: 300,
+  abilities: ["蜕皮(shed-skin)", "自信过度(moxie)", "威吓(intimidate)"],
+  hiddenAbilities: ["威吓(intimidate)"],
+  gen: 5,
+  region: "合众",
+  genera: "恶党宝可梦",
+  description: "虽然性格非常粗鲁， 但也有重视家族、 伙伴和领地的另一面。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 561,
+  name: "sigilyph",
+  nameZh: "象征鸟",
+  types: ["psychic", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/561.png",
+  height: 14,
+  weight: 140,
+  abilities: ["奇迹皮肤(wonder-skin)", "魔法防守(magic-guard)", "有色眼镜(tinted-lens)"],
+  hiddenAbilities: ["有色眼镜(tinted-lens)"],
+  gen: 5,
+  region: "合众",
+  genera: "似鸟宝可梦",
+  description: "人们在象征鸟飞过的沙漠 的地下调查，结果在那里 发现了疑似古代都市的遗迹。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 58
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 103
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 562,
+  name: "yamask",
+  nameZh: "哭哭面具",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/562.png",
+  height: 5,
+  weight: 15,
+  abilities: ["木乃伊(mummy)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "魂宝可梦",
+  description: "古代人的灵魂变成了宝可梦。 为了寻找认得自己长相的人 而在遗迹里徘徊。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 38
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 563,
+  name: "cofagrigus",
+  nameZh: "迭失棺",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/563.png",
+  height: 17,
+  weight: 765,
+  abilities: ["木乃伊(mummy)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "棺木宝可梦",
+  description: "迭失棺象征着国王的财富， 因此许多古墓里 都有它的壁画。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 58
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 145
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 564,
+  name: "tirtouga",
+  nameZh: "原盖海龟",
+  types: ["water", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/564.png",
+  height: 7,
+  weight: 165,
+  abilities: ["坚硬岩石(solid-rock)", "结实(sturdy)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 5,
+  region: "合众",
+  genera: "古代龟宝可梦",
+  description: "由化石复活的宝可梦。 人们认为它是很多 龟宝可梦的祖先。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 54
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 78
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 103
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 22
+}]
+},
+  {
+  id: 565,
+  name: "carracosta",
+  nameZh: "肋骨海龟",
+  types: ["water", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/565.png",
+  height: 12,
+  weight: 810,
+  abilities: ["坚硬岩石(solid-rock)", "结实(sturdy)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 5,
+  region: "合众",
+  genera: "古代龟宝可梦",
+  description: "虽然和在水中相比动作 会变得迟缓，但是为了寻找 猎物也会登上陆地活动。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 74
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 108
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 133
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 83
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 32
+}]
+},
+  {
+  id: 566,
+  name: "archen",
+  nameZh: "始祖小鸟",
+  types: ["rock", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/566.png",
+  height: 5,
+  weight: 95,
+  abilities: ["软弱(defeatist)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "远古鸟宝可梦",
+  description: "被称为鸟宝可梦的祖先。 栖息在树上，以树果和 虫宝可梦为食。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 112
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 74
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 567,
+  name: "archeops",
+  nameZh: "始祖大鸟",
+  types: ["rock", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/567.png",
+  height: 14,
+  weight: 320,
+  abilities: ["软弱(defeatist)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "远古鸟宝可梦",
+  description: "虽然也会飞行， 但是似乎更擅长在 地面上捕捉猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 140
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 112
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 568,
+  name: "trubbish",
+  nameZh: "破破袋",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/568.png",
+  height: 6,
+  weight: 310,
+  abilities: ["恶臭(stench)", "黏着(sticky-hold)", "引爆(aftermath)"],
+  hiddenAbilities: ["引爆(aftermath)"],
+  gen: 5,
+  region: "合众",
+  genera: "垃圾袋宝可梦",
+  description: "诞生于塞满垃圾的垃圾袋里。 它嘴里喷出的毒气 是伽勒尔双弹瓦斯的最爱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 62
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 62
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 569,
+  name: "garbodor",
+  nameZh: "灰尘山",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/569.png",
+  height: 19,
+  weight: 1073,
+  abilities: ["恶臭(stench)", "碎裂铠甲(weak-armor)", "引爆(aftermath)"],
+  hiddenAbilities: ["引爆(aftermath)"],
+  gen: 5,
+  region: "合众",
+  genera: "垃圾场宝可梦",
+  description: "从右臂喷出的毒液十分危险， 虚弱的生物只要一沾到， 立刻就会丢掉性命。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 82
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 82
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 570,
+  name: "zorua",
+  nameZh: "索罗亚",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/570.png",
+  height: 7,
+  weight: 125,
+  abilities: ["幻觉(illusion)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "恶狐宝可梦",
+  description: "为了寻找食物，有时甚至会 幻化成人类出现在城镇里。 多数情况下会幻化成小孩。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 571,
+  name: "zoroark",
+  nameZh: "索罗亚克",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
+  height: 16,
+  weight: 811,
+  abilities: ["幻觉(illusion)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "妖狐宝可梦",
+  description: "孤独的训练家会命令 索罗亚克为自己展现幻像， 借以排遣孤身一人的寂寞。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 572,
+  name: "minccino",
+  nameZh: "泡沫栗鼠",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/572.png",
+  height: 4,
+  weight: 58,
+  abilities: ["迷人之躯(cute-charm)", "技术高手(technician)", "连续攻击(skill-link)"],
+  hiddenAbilities: ["连续攻击(skill-link)"],
+  gen: 5,
+  region: "合众",
+  genera: "栗鼠宝可梦",
+  description: "用尾巴互相抚摸来打招呼。 尾巴的毛比较蓬松的那一方 会表现得稍微威风些。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 573,
+  name: "cinccino",
+  nameZh: "奇诺栗鼠",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/573.png",
+  height: 5,
+  weight: 75,
+  abilities: ["迷人之躯(cute-charm)", "技术高手(technician)", "连续攻击(skill-link)"],
+  hiddenAbilities: ["连续攻击(skill-link)"],
+  gen: 5,
+  region: "合众",
+  genera: "围巾宝可梦",
+  description: "覆盖着特别油脂的毛发 可以挡住攻击。这种油 以高价在市场上流通。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 115
+}]
+},
+  {
+  id: 574,
+  name: "gothita",
+  nameZh: "哥德宝宝",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/574.png",
+  height: 4,
+  weight: 58,
+  abilities: ["察觉(frisk)", "好胜(competitive)", "踩影(shadow-tag)"],
+  hiddenAbilities: ["踩影(shadow-tag)"],
+  gen: 5,
+  region: "合众",
+  genera: "凝视宝可梦",
+  description: "哥德宝宝会在看似无人的地方 轻声地叫。它好像是在与某种 只有它才看得见的东西说话。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 575,
+  name: "gothorita",
+  nameZh: "哥德小童",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png",
+  height: 7,
+  weight: 180,
+  abilities: ["察觉(frisk)", "好胜(competitive)", "踩影(shadow-tag)"],
+  hiddenAbilities: ["踩影(shadow-tag)"],
+  gen: 5,
+  region: "合众",
+  genera: "操纵宝可梦",
+  description: "哥德小童的精神力量似乎会 在星光闪耀的夜晚达到最高点。 它与宇宙的关系至今不明。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 576,
+  name: "gothitelle",
+  nameZh: "哥德小姐",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
+  height: 15,
+  weight: 440,
+  abilities: ["察觉(frisk)", "好胜(competitive)", "踩影(shadow-tag)"],
+  hiddenAbilities: ["踩影(shadow-tag)"],
+  gen: 5,
+  region: "合众",
+  genera: "天体宝可梦",
+  description: "从哥德小姐那里 看到了自己下场的恶人 在那之后便销声匿迹了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 577,
+  name: "solosis",
+  nameZh: "单卵细胞球",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png",
+  height: 3,
+  weight: 10,
+  abilities: ["防尘(overcoat)", "魔法防守(magic-guard)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 5,
+  region: "合众",
+  genera: "细胞宝可梦",
+  description: "身体被特殊的液体包裹着， 许多人因此认为它 即使在宇宙中也能存活。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 578,
+  name: "duosion",
+  nameZh: "双卵细胞球",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/578.png",
+  height: 6,
+  weight: 80,
+  abilities: ["防尘(overcoat)", "魔法防守(magic-guard)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 5,
+  region: "合众",
+  genera: "分割宝可梦",
+  description: "由于它一分为二的大脑 思考的内容几乎完全不同， 导致它的行动非常难以预测。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 579,
+  name: "reuniclus",
+  nameZh: "人造细胞卵",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png",
+  height: 10,
+  weight: 201,
+  abilities: ["防尘(overcoat)", "魔法防守(magic-guard)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 5,
+  region: "合众",
+  genera: "增幅宝可梦",
+  description: "虽然有人说只要喝掉它特殊的液体 就能得到智慧，但对人造细胞卵 以外来说，那其实是剧毒。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 580,
+  name: "ducklett",
+  nameZh: "鸭宝宝",
+  types: ["water", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/580.png",
+  height: 5,
+  weight: 55,
+  abilities: ["锐利目光(keen-eye)", "健壮胸肌(big-pecks)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 5,
+  region: "合众",
+  genera: "水鸟宝可梦",
+  description: "These bird Pokémon are excellent divers. They swim around in the water eating their favorite food--peat moss.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 62
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 44
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 44
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 581,
+  name: "swanna",
+  nameZh: "舞天鹅",
+  types: ["water", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/581.png",
+  height: 13,
+  weight: 242,
+  abilities: ["锐利目光(keen-eye)", "健壮胸肌(big-pecks)", "湿润之躯(hydration)"],
+  hiddenAbilities: ["湿润之躯(hydration)"],
+  gen: 5,
+  region: "合众",
+  genera: "白鸟宝可梦",
+  description: "Swanna start to dance at dusk. The one dancing in the middle is the leader of the flock.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 87
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 87
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 98
+}]
+},
+  {
+  id: 582,
+  name: "vanillite",
+  nameZh: "迷你冰",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/582.png",
+  height: 4,
+  weight: 57,
+  abilities: ["冰冻之躯(ice-body)", "雪隐(snow-cloak)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "新雪宝可梦",
+  description: "据说它是从冰柱中诞生的。 为了能让自己生活得更舒适， 会吐出零下５０度的冷气冻住四周。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 36
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 44
+}]
+},
+  {
+  id: 583,
+  name: "vanillish",
+  nameZh: "多多冰",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/583.png",
+  height: 11,
+  weight: 410,
+  abilities: ["冰冻之躯(ice-body)", "雪隐(snow-cloak)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "冰雪宝可梦",
+  description: "性格和善，虽然会用 零下１００度的冷气冻住敌人， 但并不会伤及它们的性命。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 51
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 59
+}]
+},
+  {
+  id: 584,
+  name: "vanilluxe",
+  nameZh: "双倍多多冰",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png",
+  height: 13,
+  weight: 575,
+  abilities: ["冰冻之躯(ice-body)", "降雪(snow-warning)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "暴风雪宝可梦",
+  description: "体温在零下６度左右。 据说是由２只多多冰 贴在一起而诞生的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 71
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 79
+}]
+},
+  {
+  id: 585,
+  name: "deerling",
+  nameZh: "四季鹿",
+  types: ["normal", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/585.png",
+  height: 6,
+  weight: 195,
+  abilities: ["叶绿素(chlorophyll)", "食草(sap-sipper)", "天恩(serene-grace)"],
+  hiddenAbilities: ["天恩(serene-grace)"],
+  gen: 5,
+  region: "合众",
+  genera: "季节宝可梦",
+  description: "The color and scent of their fur changes to match the mountain grass. When they sense hostility, they hide in the grass.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 586,
+  name: "sawsbuck",
+  nameZh: "萌芽鹿",
+  types: ["normal", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/586.png",
+  height: 19,
+  weight: 925,
+  abilities: ["叶绿素(chlorophyll)", "食草(sap-sipper)", "天恩(serene-grace)"],
+  hiddenAbilities: ["天恩(serene-grace)"],
+  gen: 5,
+  region: "合众",
+  genera: "季节宝可梦",
+  description: "They migrate according to the seasons. People can tell the season by looking at Sawsbuck’s horns.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 587,
+  name: "emolga",
+  nameZh: "电飞鼠",
+  types: ["electric", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/587.png",
+  height: 4,
+  weight: 50,
+  abilities: ["静电(static)", "电气引擎(motor-drive)"],
+  hiddenAbilities: ["电气引擎(motor-drive)"],
+  gen: 5,
+  region: "合众",
+  genera: "飞鼠宝可梦",
+  description: "最喜欢甜甜的树果。有时也会 因为在脸颊的袋子里囤了太多 食物而无法好好飞行。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 103
+}]
+},
+  {
+  id: 588,
+  name: "karrablast",
+  nameZh: "盖盖虫",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/588.png",
+  height: 5,
+  weight: 59,
+  abilities: ["虫之预感(swarm)", "蜕皮(shed-skin)", "无防守(no-guard)"],
+  hiddenAbilities: ["无防守(no-guard)"],
+  gen: 5,
+  region: "合众",
+  genera: "啃咬宝可梦",
+  description: "用嘴里吐出的液体 来溶化小嘴蜗的壳， 只会去吃里面的身体。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 589,
+  name: "escavalier",
+  nameZh: "骑士蜗牛",
+  types: ["bug", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/589.png",
+  height: 10,
+  weight: 330,
+  abilities: ["虫之预感(swarm)", "硬壳盔甲(shell-armor)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 5,
+  region: "合众",
+  genera: "骑兵宝可梦",
+  description: "会举起长矛突击敌人。 有一幅名画描绘着 它和葱游兵决斗的场景。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 590,
+  name: "foongus",
+  nameZh: "哎呀球菇",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/590.png",
+  height: 2,
+  weight: 10,
+  abilities: ["孢子(effect-spore)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 5,
+  region: "合众",
+  genera: "蘑菇宝可梦",
+  description: "从双手喷出的孢子虽然 含有剧毒，但据说彻底干燥后 可以用作治疗肠胃的药。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 69
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 591,
+  name: "amoonguss",
+  nameZh: "败露球菇",
+  types: ["grass", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/591.png",
+  height: 6,
+  weight: 105,
+  abilities: ["孢子(effect-spore)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 5,
+  region: "合众",
+  genera: "蘑菇宝可梦",
+  description: "平常一般不太动。 只是一动不动地待在 掉落于地面的精灵球旁边。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 114
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 592,
+  name: "frillish-male",
+  nameZh: "轻飘飘",
+  types: ["water", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/592.png",
+  height: 12,
+  weight: 330,
+  abilities: ["储水(water-absorb)", "诅咒之躯(cursed-body)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 5,
+  region: "合众",
+  genera: "漂浮宝可梦",
+  description: "据流传至今的传说里所述， 它是由沉没到海底的古代都市 的居民变成的宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 593,
+  name: "jellicent-male",
+  nameZh: "胖嘟嘟",
+  types: ["water", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+  height: 22,
+  weight: 1350,
+  abilities: ["储水(water-absorb)", "诅咒之躯(cursed-body)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 5,
+  region: "合众",
+  genera: "漂浮宝可梦",
+  description: "每到满月时，胖嘟嘟会 成群结队地来到海面上。 这么做是为了等待猎物上门。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 594,
+  name: "alomomola",
+  nameZh: "保姆曼波",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/594.png",
+  height: 12,
+  weight: 316,
+  abilities: ["治愈之心(healer)", "湿润之躯(hydration)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 5,
+  region: "合众",
+  genera: "看护宝可梦",
+  description: "之所以会救助体弱的宝可梦， 好像是因为盯上它们的 宝可梦也会攻击它自己。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 165
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 595,
+  name: "joltik",
+  nameZh: "电电虫",
+  types: ["bug", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/595.png",
+  height: 1,
+  weight: 6,
+  abilities: ["复眼(compound-eyes)", "紧张感(unnerve)", "虫之预感(swarm)"],
+  hiddenAbilities: ["虫之预感(swarm)"],
+  gen: 5,
+  region: "合众",
+  genera: "吸附宝可梦",
+  description: "会附在其他宝可梦身上 吸取静电。经常会把自己 贴在来电汪的屁股上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 47
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 57
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 596,
+  name: "galvantula",
+  nameZh: "电蜘蛛",
+  types: ["bug", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/596.png",
+  height: 8,
+  weight: 143,
+  abilities: ["复眼(compound-eyes)", "紧张感(unnerve)", "虫之预感(swarm)"],
+  hiddenAbilities: ["虫之预感(swarm)"],
+  gen: 5,
+  region: "合众",
+  genera: "电蜘蛛宝可梦",
+  description: "为了捕捉不太会飞的幼鸟， 会在鸟宝可梦的巢穴附近 用带电的丝设下陷阱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 77
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 97
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 108
+}]
+},
+  {
+  id: 597,
+  name: "ferroseed",
+  nameZh: "种子铁球",
+  types: ["grass", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/597.png",
+  height: 6,
+  weight: 188,
+  abilities: ["铁刺(iron-barbs)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "刺果宝可梦",
+  description: "偏爱长着青苔的洞窟。 青苔中所含的酶能使它的 尖刺成长得又大又结实。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 44
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 91
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 24
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 86
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 10
+}]
+},
+  {
+  id: 598,
+  name: "ferrothorn",
+  nameZh: "坚果哑铃",
+  types: ["grass", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/598.png",
+  height: 10,
+  weight: 1100,
+  abilities: ["铁刺(iron-barbs)", "危险预知(anticipation)"],
+  hiddenAbilities: ["危险预知(anticipation)"],
+  gen: 5,
+  region: "合众",
+  genera: "刺球宝可梦",
+  description: "拥有比钢铁还坚硬的尖刺。 会利用触手上的尖刺 攀附在岩壁上移动。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 74
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 94
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 131
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 54
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 116
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 599,
+  name: "klink",
+  nameZh: "齿轮儿",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/599.png",
+  height: 3,
+  weight: 210,
+  abilities: ["正电(plus)", "负电(minus)", "恒净之躯(clear-body)"],
+  hiddenAbilities: ["恒净之躯(clear-body)"],
+  gen: 5,
+  region: "合众",
+  genera: "齿轮宝可梦",
+  description: "２个身体比双胞胎还要亲近。 要是换成别的齿轮儿。 就没有办法好好咬合。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 600,
+  name: "klang",
+  nameZh: "齿轮组",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/600.png",
+  height: 6,
+  weight: 510,
+  abilities: ["正电(plus)", "负电(minus)", "恒净之躯(clear-body)"],
+  hiddenAbilities: ["恒净之躯(clear-body)"],
+  gen: 5,
+  region: "合众",
+  genera: "齿轮宝可梦",
+  description: "被认为是工业技术的象征。 有许多伽勒尔当地的公司 选择它作为企业的标志。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 601,
+  name: "klinklang",
+  nameZh: "齿轮怪",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/601.png",
+  height: 6,
+  weight: 810,
+  abilities: ["正电(plus)", "负电(minus)", "恒净之躯(clear-body)"],
+  hiddenAbilities: ["恒净之躯(clear-body)"],
+  gen: 5,
+  region: "合众",
+  genera: "齿轮宝可梦",
+  description: "让３个齿轮高速旋转。 新增出来的那个带着 尖刺的齿轮并不是生物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 602,
+  name: "tynamo",
+  nameZh: "麻麻小鱼",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/602.png",
+  height: 2,
+  weight: 3,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "电鱼宝可梦",
+  description: "While one alone doesn’t have much power, a chain of many Tynamo can be as powerful as lightning.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 603,
+  name: "eelektrik",
+  nameZh: "麻麻鳗",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/603.png",
+  height: 12,
+  weight: 220,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "电鱼宝可梦",
+  description: "They coil around foes and shock them with electricity-generating organs that seem simply to be circular patterns.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 604,
+  name: "eelektross",
+  nameZh: "麻麻鳗鱼王",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/604.png",
+  height: 21,
+  weight: 805,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "电鱼宝可梦",
+  description: "They crawl out of the ocean using their arms. They will attack prey on shore and immediately drag it into the ocean.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 605,
+  name: "elgyem",
+  nameZh: "小灰怪",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/605.png",
+  height: 5,
+  weight: 90,
+  abilities: ["心灵感应(telepathy)", "同步(synchronize)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 5,
+  region: "合众",
+  genera: "脑宝可梦",
+  description: "在大约５０年前被发现的宝可梦。 会用又大又发达的大脑 操纵精神力量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 606,
+  name: "beheeyem",
+  nameZh: "大宇怪",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/606.png",
+  height: 10,
+  weight: 345,
+  abilities: ["心灵感应(telepathy)", "同步(synchronize)", "分析(analytic)"],
+  hiddenAbilities: ["分析(analytic)"],
+  gen: 5,
+  region: "合众",
+  genera: "脑宝可梦",
+  description: "能控制对方的记忆。 经常有人看到它 在麦田的上方徘徊。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 607,
+  name: "litwick",
+  nameZh: "烛光灵",
+  types: ["ghost", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/607.png",
+  height: 3,
+  weight: 31,
+  abilities: ["引火(flash-fire)", "火焰之躯(flame-body)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 5,
+  region: "合众",
+  genera: "蜡烛宝可梦",
+  description: "吸取到的灵魂越年轻， 头上的烛光就会 燃烧得越旺越诡异。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 608,
+  name: "lampent",
+  nameZh: "灯火幽灵",
+  types: ["ghost", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/608.png",
+  height: 6,
+  weight: 130,
+  abilities: ["引火(flash-fire)", "火焰之躯(flame-body)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 5,
+  region: "合众",
+  genera: "油灯宝可梦",
+  description: "伪装成灯的样子藏身在城镇里。 一旦发现了临近死期的人， 便会悄悄地跟在后面。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 609,
+  name: "chandelure",
+  nameZh: "水晶灯火灵",
+  types: ["ghost", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
+  height: 10,
+  weight: 343,
+  abilities: ["引火(flash-fire)", "火焰之躯(flame-body)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 5,
+  region: "合众",
+  genera: "引诱宝可梦",
+  description: "据说在用水晶灯火灵 来充当照明设备的房子里， 丧事会接连不断。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 145
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 610,
+  name: "axew",
+  nameZh: "牙牙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/610.png",
+  height: 6,
+  weight: 180,
+  abilities: ["斗争心(rivalry)", "破格(mold-breaker)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 5,
+  region: "合众",
+  genera: "牙宝可梦",
+  description: "会和伙伴们一起互撞牙齿来玩。 折断的牙齿会马上长出来， 所以丝毫都不会去在意。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 46
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 87
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 57
+}]
+},
+  {
+  id: 611,
+  name: "fraxure",
+  nameZh: "斧牙龙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/611.png",
+  height: 10,
+  weight: 360,
+  abilities: ["斗争心(rivalry)", "破格(mold-breaker)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 5,
+  region: "合众",
+  genera: "颚斧宝可梦",
+  description: "皮肤像盔甲一样坚硬。 非常擅长在撞击的同时 用牙齿猛刺的战法。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 66
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 117
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 67
+}]
+},
+  {
+  id: 612,
+  name: "haxorus",
+  nameZh: "双斧战龙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+  height: 18,
+  weight: 1055,
+  abilities: ["斗争心(rivalry)", "破格(mold-breaker)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 5,
+  region: "合众",
+  genera: "颚斧宝可梦",
+  description: "性格温和，但生起气来非常恐怖。 会用自己那引以为傲，可以 削铁如泥的牙齿攻击敌人。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 76
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 147
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 613,
+  name: "cubchoo",
+  nameZh: "喷嚏熊",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/613.png",
+  height: 5,
+  weight: 85,
+  abilities: ["雪隐(snow-cloak)", "拨雪(slush-rush)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 5,
+  region: "合众",
+  genera: "结冰宝可梦",
+  description: "使出招式前会先倒吸鼻涕。 鼻涕里所含有的强烈冷气 是冰属性招式的能量来源。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 614,
+  name: "beartic",
+  nameZh: "冻原熊",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/614.png",
+  height: 26,
+  weight: 2600,
+  abilities: ["雪隐(snow-cloak)", "拨雪(slush-rush)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 5,
+  region: "合众",
+  genera: "冻结宝可梦",
+  description: "在冰冷的大海里精力十足地游泳。 感到疲劳的时候会吐出气息 冻结海水，在冰面上休息。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 615,
+  name: "cryogonal",
+  nameZh: "几何雪花",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/615.png",
+  height: 11,
+  weight: 1480,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "结晶宝可梦",
+  description: "天气一热就会化为水蒸气。 到了夏天几乎到处都 看不到它的踪影。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 135
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 616,
+  name: "shelmet",
+  nameZh: "小嘴蜗",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/616.png",
+  height: 4,
+  weight: 77,
+  abilities: ["湿润之躯(hydration)", "硬壳盔甲(shell-armor)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 5,
+  region: "合众",
+  genera: "蜗牛宝可梦",
+  description: "有着会对电能产生反应 的奇异体质。不知为何， 和盖盖虫待在一起就会进化。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 617,
+  name: "accelgor",
+  nameZh: "敏捷虫",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/617.png",
+  height: 8,
+  weight: 253,
+  abilities: ["湿润之躯(hydration)", "黏着(sticky-hold)", "轻装(unburden)"],
+  hiddenAbilities: ["轻装(unburden)"],
+  gen: 5,
+  region: "合众",
+  genera: "脱壳宝可梦",
+  description: "脱壳后变得更轻巧了。 为了防止干燥，会将 带状的粘膜裹在身上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 145
+}]
+},
+  {
+  id: 618,
+  name: "stunfisk",
+  nameZh: "泥巴鱼",
+  types: ["ground", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/618.png",
+  height: 7,
+  weight: 110,
+  abilities: ["静电(static)", "柔软(limber)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 5,
+  region: "合众",
+  genera: "陷阱宝可梦",
+  description: "当从身上的黄色斑纹 里释放出强大电流时， 它会莫名地露出微笑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 109
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 66
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 84
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 81
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 99
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 32
+}]
+},
+  {
+  id: 619,
+  name: "mienfoo",
+  nameZh: "功夫鼬",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/619.png",
+  height: 9,
+  weight: 200,
+  abilities: ["精神力(inner-focus)", "再生力(regenerator)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 5,
+  region: "合众",
+  genera: "武术宝可梦",
+  description: "个头虽小脾气却很暴躁。 面对疏忽大意接近自己的 对手，会施展出华丽的连击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 620,
+  name: "mienshao",
+  nameZh: "师父鼬",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png",
+  height: 14,
+  weight: 355,
+  abilities: ["精神力(inner-focus)", "再生力(regenerator)", "舍身(reckless)"],
+  hiddenAbilities: ["舍身(reckless)"],
+  gen: 5,
+  region: "合众",
+  genera: "武术宝可梦",
+  description: "以迅雷不及掩耳的速度 使出踢击，即使是巨大的 岩石也能击得粉碎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 621,
+  name: "druddigon",
+  nameZh: "赤面龙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/621.png",
+  height: 16,
+  weight: 1390,
+  abilities: ["粗糙皮肤(rough-skin)", "强行(sheer-force)", "破格(mold-breaker)"],
+  hiddenAbilities: ["破格(mold-breaker)"],
+  gen: 5,
+  region: "合众",
+  genera: "洞穴宝可梦",
+  description: "性情凶暴而狡猾。 会把其他宝可梦挖出的巢穴 抢来当做自己的住处。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 77
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 48
+}]
+},
+  {
+  id: 622,
+  name: "golett",
+  nameZh: "泥偶小人",
+  types: ["ground", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/622.png",
+  height: 10,
+  weight: 920,
+  abilities: ["铁拳(iron-fist)", "笨拙(klutz)", "无防守(no-guard)"],
+  hiddenAbilities: ["无防守(no-guard)"],
+  gen: 5,
+  region: "合众",
+  genera: "魔像宝可梦",
+  description: "用黏土制成的宝可梦。 即使现在也一直遵循着 数千年前主人的命令。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 59
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 74
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 623,
+  name: "golurk",
+  nameZh: "泥偶巨人",
+  types: ["ground", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png",
+  height: 28,
+  weight: 3300,
+  abilities: ["铁拳(iron-fist)", "笨拙(klutz)", "无防守(no-guard)"],
+  hiddenAbilities: ["无防守(no-guard)"],
+  gen: 5,
+  region: "合众",
+  genera: "魔像宝可梦",
+  description: "虽然有人认为它体内 有着生成能量的永动机， 但至今仍未得到证实。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 89
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 124
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 624,
+  name: "pawniard",
+  nameZh: "驹刀小兵",
+  types: ["dark", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/624.png",
+  height: 5,
+  weight: 102,
+  abilities: ["不服输(defiant)", "精神力(inner-focus)", "压迫感(pressure)"],
+  hiddenAbilities: ["压迫感(pressure)"],
+  gen: 5,
+  region: "合众",
+  genera: "利器宝可梦",
+  description: "以劈斩司令为首领组成族群。 目标是有朝一日能统领同类， 所以每天都在不懈地锻炼。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 625,
+  name: "bisharp",
+  nameZh: "劈斩司令",
+  types: ["dark", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/625.png",
+  height: 16,
+  weight: 700,
+  abilities: ["不服输(defiant)", "精神力(inner-focus)", "压迫感(pressure)"],
+  hiddenAbilities: ["压迫感(pressure)"],
+  gen: 5,
+  region: "合众",
+  genera: "刀刃宝可梦",
+  description: "为了抢占能找到磨刀石 的地方，和斧牙龙展开了 激烈的斗争。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 626,
+  name: "bouffalant",
+  nameZh: "爆炸头水牛",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/626.png",
+  height: 16,
+  weight: 946,
+  abilities: ["舍身(reckless)", "食草(sap-sipper)", "隔音(soundproof)"],
+  hiddenAbilities: ["隔音(soundproof)"],
+  gen: 5,
+  region: "合众",
+  genera: "头锤牛宝可梦",
+  description: "会以约２０只的规模群居。 不知为何，背叛了族群的 爆炸头水牛脑袋上的毛会脱落。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 627,
+  name: "rufflet",
+  nameZh: "毛头小鹰",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/627.png",
+  height: 5,
+  weight: 105,
+  abilities: ["锐利目光(keen-eye)", "强行(sheer-force)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 5,
+  region: "合众",
+  genera: "雏鹰宝可梦",
+  description: "握力强，能把坚硬的树果 弄得粉碎。性急爱吵架， 无论对谁都会挑起战斗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 83
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 37
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 628,
+  name: "braviary",
+  nameZh: "勇士雄鹰",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/628.png",
+  height: 15,
+  weight: 410,
+  abilities: ["锐利目光(keen-eye)", "强行(sheer-force)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 5,
+  region: "合众",
+  genera: "勇猛宝可梦",
+  description: "性格粗暴、血气方刚， 因此被钢铠鸦夺走了 伽勒尔运送员的地位。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 123
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 57
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 629,
+  name: "vullaby",
+  nameZh: "秃鹰丫头",
+  types: ["dark", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/629.png",
+  height: 5,
+  weight: 90,
+  abilities: ["健壮胸肌(big-pecks)", "防尘(overcoat)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "尿布宝可梦",
+  description: "由于很快就会长大， 屁股上的骸骨会接着传给 巢里更小的秃鹰丫头用。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 630,
+  name: "mandibuzz",
+  nameZh: "秃鹰娜",
+  types: ["dark", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/630.png",
+  height: 12,
+  weight: 395,
+  abilities: ["健壮胸肌(big-pecks)", "防尘(overcoat)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 5,
+  region: "合众",
+  genera: "骨鹰宝可梦",
+  description: "把捡来的骨头装饰在身上。 在骨头形状这方面 似乎也是有流行趋势的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 631,
+  name: "heatmor",
+  nameZh: "熔蚁兽",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png",
+  height: 14,
+  weight: 580,
+  abilities: ["贪吃鬼(gluttony)", "引火(flash-fire)", "白色烟雾(white-smoke)"],
+  hiddenAbilities: ["白色烟雾(white-smoke)"],
+  gen: 5,
+  region: "合众",
+  genera: "食蚁兽宝可梦",
+  description: "将火焰当成舌头来使用。 会一点一点地熔化铁蚁 坚硬的外骨骼，然后把它吃掉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 97
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 66
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 66
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 632,
+  name: "durant",
+  nameZh: "铁蚁",
+  types: ["bug", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/632.png",
+  height: 3,
+  weight: 330,
+  abilities: ["虫之预感(swarm)", "活力(hustle)", "懒惰(truant)"],
+  hiddenAbilities: ["懒惰(truant)"],
+  gen: 5,
+  region: "合众",
+  genera: "铁蚁宝可梦",
+  description: "巨大的颚部能咬碎岩石。 为了不让沙螺蟒把蛋抢走， 会和其他同类一起并肩战斗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 58
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 109
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 112
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 48
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 109
+}]
+},
+  {
+  id: 633,
+  name: "deino",
+  nameZh: "单首龙",
+  types: ["dark", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/633.png",
+  height: 8,
+  weight: 173,
+  abilities: ["活力(hustle)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "粗鲁宝可梦",
+  description: "因为眼睛看不见， 所以会又撞又咬， 来判断四周的状况。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 52
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 38
+}]
+},
+  {
+  id: 634,
+  name: "zweilous",
+  nameZh: "双首暴龙",
+  types: ["dark", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/634.png",
+  height: 14,
+  weight: 500,
+  abilities: ["活力(hustle)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "粗暴宝可梦",
+  description: "２个头会争抢同一个食物。 明明没有去和别人战斗， 却总是遍体鳞伤。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 635,
+  name: "hydreigon",
+  nameZh: "三首恶龙",
+  types: ["dark", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/635.png",
+  height: 18,
+  weight: 1600,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "凶暴宝可梦",
+  description: "３个头会轮流去咬敌人。 在对方倒下之前， 绝对不会停止攻击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 92
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 98
+}]
+},
+  {
+  id: 636,
+  name: "larvesta",
+  nameZh: "燃烧虫",
+  types: ["bug", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/636.png",
+  height: 11,
+  weight: 288,
+  abilities: ["火焰之躯(flame-body)", "虫之预感(swarm)"],
+  hiddenAbilities: ["虫之预感(swarm)"],
+  gen: 5,
+  region: "合众",
+  genera: "火炬宝可梦",
+  description: "全身都相当温暖。 会从角的尖端喷出火焰， 借此威吓天敌或猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 637,
+  name: "volcarona",
+  nameZh: "火神蛾",
+  types: ["bug", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/637.png",
+  height: 16,
+  weight: 460,
+  abilities: ["火焰之躯(flame-body)", "虫之预感(swarm)"],
+  hiddenAbilities: ["虫之预感(swarm)"],
+  gen: 5,
+  region: "合众",
+  genera: "太阳宝可梦",
+  description: "从熊熊燃烧的火焰之茧中 诞生。在古代的壁画上 被描绘为火之神。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 638,
+  name: "cobalion",
+  nameZh: "勾帕路翁",
+  types: ["steel", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png",
+  height: 21,
+  weight: 2500,
+  abilities: ["正义之心(justified)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "铁心宝可梦",
+  description: "生来就具有领导风范。 即使是性格狂暴的宝可梦， 在勾帕路翁面前也会变得温顺。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 91
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 129
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 72
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 108
+}]
+},
+  {
+  id: 639,
+  name: "terrakion",
+  nameZh: "代拉基翁",
+  types: ["rock", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png",
+  height: 19,
+  weight: 2600,
+  abilities: ["正义之心(justified)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "岩窟宝可梦",
+  description: "代拉基翁为保护宝可梦 而与人类作战的传说 在合众地区广为流传。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 91
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 129
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 72
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 108
+}]
+},
+  {
+  id: 640,
+  name: "virizion",
+  nameZh: "毕力吉翁",
+  types: ["grass", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png",
+  height: 20,
+  weight: 2000,
+  abilities: ["正义之心(justified)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "草原宝可梦",
+  description: "以敏捷的身手像旋风一般将敌人 玩弄于股掌之中，会用锋利的角 毫不留情地切斩对手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 91
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 72
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 129
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 108
+}]
+},
+  {
+  id: 641,
+  name: "tornadus-incarnate",
+  nameZh: "龙卷云",
+  types: ["flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
+  height: 15,
+  weight: 630,
+  abilities: ["恶作剧之心(prankster)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 5,
+  region: "合众",
+  genera: "旋风宝可梦",
+  description: "The lower half of its body is wrapped in a cloud of energy. It zooms through the sky at 200 mph.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 79
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 111
+}]
+},
+  {
+  id: 642,
+  name: "thundurus-incarnate",
+  nameZh: "雷电云",
+  types: ["electric", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png",
+  height: 15,
+  weight: 610,
+  abilities: ["恶作剧之心(prankster)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 5,
+  region: "合众",
+  genera: "雷击宝可梦",
+  description: "Countless charred remains mar the landscape of places through which Thundurus has passed.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 79
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 111
+}]
+},
+  {
+  id: 643,
+  name: "reshiram",
+  nameZh: "莱希拉姆",
+  types: ["dragon", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png",
+  height: 32,
+  weight: 3300,
+  abilities: ["涡轮火焰(turboblaze)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "白阳宝可梦",
+  description: "在神话的叙述里，如果人类 蔑视真实、放纵欲望，它就会 用火焰烧尽他们的王国。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 150
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 644,
+  name: "zekrom",
+  nameZh: "捷克罗姆",
+  types: ["dragon", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
+  height: 29,
+  weight: 3450,
+  abilities: ["兆级电压(teravolt)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "黑阴宝可梦",
+  description: "在神话的描述里，如果人类 失去了正义之心，它就会用 狂暴的雷电毁灭他们的王国。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 150
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 645,
+  name: "landorus-incarnate",
+  nameZh: "土地云",
+  types: ["ground", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png",
+  height: 15,
+  weight: 680,
+  abilities: ["沙之力(sand-force)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 5,
+  region: "合众",
+  genera: "丰饶宝可梦",
+  description: "Lands visited by Landorus grant such bountiful crops that it has been hailed as “The Guardian of the Fields.”",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 89
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 101
+}]
+},
+  {
+  id: 646,
+  name: "kyurem",
+  nameZh: "酋雷姆",
+  types: ["dragon", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png",
+  height: 30,
+  weight: 3250,
+  abilities: ["压迫感(pressure)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "境界宝可梦",
+  description: "为了稳定细胞组织， 它似乎用自己制造出 的冷气冰冻着身体。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 125
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 647,
+  name: "keldeo-ordinary",
+  nameZh: "凯路迪欧",
+  types: ["water", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/647.png",
+  height: 14,
+  weight: 485,
+  abilities: ["正义之心(justified)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "幼马宝可梦",
+  description: "据说当它挺过了艰难的战斗， 额头上的角就能得到锻炼， 从而激发出自己真正的力量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 91
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 72
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 129
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 108
+}]
+},
+  {
+  id: 648,
+  name: "meloetta-aria",
+  nameZh: "美洛耶塔",
+  types: ["normal", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/648.png",
+  height: 6,
+  weight: 65,
+  abilities: ["天恩(serene-grace)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "旋律宝可梦",
+  description: "Its melodies are sung with a special vocalization method that can control the feelings of those who hear it.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 77
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 77
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 128
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 128
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 649,
+  name: "genesect",
+  nameZh: "盖诺赛克特",
+  types: ["bug", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/649.png",
+  height: 15,
+  weight: 825,
+  abilities: ["下载(download)"],
+  hiddenAbilities: [],
+  gen: 5,
+  region: "合众",
+  genera: "古生代宝可梦",
+  description: "Over 300 million years ago, it was feared as the strongest of hunters. It has been modified by Team Plasma.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 71
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 99
+}]
+},
+  {
+  id: 650,
+  name: "chespin",
+  nameZh: "哈力栗",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/650.png",
+  height: 4,
+  weight: 90,
+  abilities: ["茂盛(overgrow)", "防弹(bulletproof)"],
+  hiddenAbilities: ["防弹(bulletproof)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "刺栗宝可梦",
+  description: "The quills on its head are usually soft. When it flexes them, the points become so hard and sharp that they can pierce rock.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 56
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 61
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 48
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 38
+}]
+},
+  {
+  id: 651,
+  name: "quilladin",
+  nameZh: "胖胖哈力",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/651.png",
+  height: 7,
+  weight: 290,
+  abilities: ["茂盛(overgrow)", "防弹(bulletproof)"],
+  hiddenAbilities: ["防弹(bulletproof)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "刺铠宝可梦",
+  description: "It relies on its sturdy shell to deflect predators’ attacks. It counterattacks with its sharp quills.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 61
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 78
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 56
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 58
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 57
+}]
+},
+  {
+  id: 652,
+  name: "chesnaught",
+  nameZh: "布里卡隆",
+  types: ["grass", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/652.png",
+  height: 16,
+  weight: 900,
+  abilities: ["茂盛(overgrow)", "防弹(bulletproof)"],
+  hiddenAbilities: ["防弹(bulletproof)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "刺铠宝可梦",
+  description: "Its Tackle is forceful enough to flip a 50-ton tank. It shields its allies from danger with its own body.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 88
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 107
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 122
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 74
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 64
+}]
+},
+  {
+  id: 653,
+  name: "fennekin",
+  nameZh: "火狐狸",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/653.png",
+  height: 4,
+  weight: 94,
+  abilities: ["猛火(blaze)", "魔术师(magician)"],
+  hiddenAbilities: ["魔术师(magician)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "狐狸宝可梦",
+  description: "Eating a twig fills it with energy, and its roomy ears give vent to air hotter than 390 degrees Fahrenheit.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 62
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 654,
+  name: "braixen",
+  nameZh: "长尾火狐",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/654.png",
+  height: 10,
+  weight: 145,
+  abilities: ["猛火(blaze)", "魔术师(magician)"],
+  hiddenAbilities: ["魔术师(magician)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "狐狸宝可梦",
+  description: "It has a twig stuck in its tail. With friction from its tail fur, it sets the twig on fire and launches into battle.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 59
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 59
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 58
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 73
+}]
+},
+  {
+  id: 655,
+  name: "delphox",
+  nameZh: "妖火红狐",
+  types: ["fire", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/655.png",
+  height: 15,
+  weight: 390,
+  abilities: ["猛火(blaze)", "魔术师(magician)"],
+  hiddenAbilities: ["魔术师(magician)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "狐狸宝可梦",
+  description: "It gazes into the flame at the tip of its branch to achieve a focused state, which allows it to see into the future.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 69
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 72
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 114
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 104
+}]
+},
+  {
+  id: 656,
+  name: "froakie",
+  nameZh: "呱呱泡蛙",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/656.png",
+  height: 3,
+  weight: 70,
+  abilities: ["激流(torrent)", "变幻自如(protean)"],
+  hiddenAbilities: ["变幻自如(protean)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "泡蛙宝可梦",
+  description: "It secretes flexible bubbles from its chest and back. The bubbles reduce the damage it would otherwise take when attacked.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 41
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 56
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 62
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 44
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 71
+}]
+},
+  {
+  id: 657,
+  name: "frogadier",
+  nameZh: "呱头蛙",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/657.png",
+  height: 6,
+  weight: 109,
+  abilities: ["激流(torrent)", "变幻自如(protean)"],
+  hiddenAbilities: ["变幻自如(protean)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "泡蛙宝可梦",
+  description: "It can throw bubble-covered pebbles with precise control, hitting empty cans up to a hundred feet away.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 54
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 63
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 52
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 83
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 56
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 658,
+  name: "greninja",
+  nameZh: "甲贺忍蛙",
+  types: ["water", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/658.png",
+  height: 15,
+  weight: 400,
+  abilities: ["激流(torrent)", "变幻自如(protean)"],
+  hiddenAbilities: ["变幻自如(protean)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "忍者宝可梦",
+  description: "It creates throwing stars out of compressed water. When it spins them and throws them at high speed, these stars can split metal in two.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 67
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 103
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 71
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 122
+}]
+},
+  {
+  id: 659,
+  name: "bunnelby",
+  nameZh: "掘掘兔",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/659.png",
+  height: 4,
+  weight: 50,
+  abilities: ["捡拾(pickup)", "颊囊(cheek-pouch)", "大力士(huge-power)"],
+  hiddenAbilities: ["大力士(huge-power)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "挖洞宝可梦",
+  description: "对危险很敏感。只要听到 钢铠鸦拍打翅膀的声音， 就会马上挖洞钻进地下藏身。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 38
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 36
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 38
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 32
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 36
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 57
+}]
+},
+  {
+  id: 660,
+  name: "diggersby",
+  nameZh: "掘地兔",
+  types: ["normal", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/660.png",
+  height: 10,
+  weight: 424,
+  abilities: ["捡拾(pickup)", "颊囊(cheek-pouch)", "大力士(huge-power)"],
+  hiddenAbilities: ["大力士(huge-power)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "挖洞宝可梦",
+  description: "肚子上的体毛保温性能优秀。 在过去，人们会用它的落毛 来制作保暖服装。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 56
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 77
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 77
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 78
+}]
+},
+  {
+  id: 661,
+  name: "fletchling",
+  nameZh: "小箭雀",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/661.png",
+  height: 3,
+  weight: 17,
+  abilities: ["健壮胸肌(big-pecks)", "疾风之翼(gale-wings)"],
+  hiddenAbilities: ["疾风之翼(gale-wings)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "知更鸟宝可梦",
+  description: "一旦兴奋体温就会 急剧上升。赤手去摸 甚至有可能会被灼伤。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 43
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 38
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 62
+}]
+},
+  {
+  id: 662,
+  name: "fletchinder",
+  nameZh: "火箭雀",
+  types: ["fire", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/662.png",
+  height: 7,
+  weight: 160,
+  abilities: ["火焰之躯(flame-body)", "疾风之翼(gale-wings)"],
+  hiddenAbilities: ["疾风之翼(gale-wings)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "火花宝可梦",
+  description: "领地意识很强，性格好战。 火箭雀彼此之间会为了 觅食的地方发生争斗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 62
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 73
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 56
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 52
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 84
+}]
+},
+  {
+  id: 663,
+  name: "talonflame",
+  nameZh: "烈箭鹰",
+  types: ["fire", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/663.png",
+  height: 12,
+  weight: 245,
+  abilities: ["火焰之躯(flame-body)", "疾风之翼(gale-wings)"],
+  hiddenAbilities: ["疾风之翼(gale-wings)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "烈火宝可梦",
+  description: "会以５００公里的时速进行突击。 不给猎物留下逃跑的机会， 直接以猛烈的踢击将其解决。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 81
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 71
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 74
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 69
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 126
+}]
+},
+  {
+  id: 664,
+  name: "scatterbug",
+  nameZh: "粉蝶虫",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/664.png",
+  height: 3,
+  weight: 25,
+  abilities: ["鳞粉(shield-dust)", "复眼(compound-eyes)", "友情防守(friend-guard)"],
+  hiddenAbilities: ["友情防守(friend-guard)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "喷粉宝可梦",
+  description: "When under attack from bird Pokémon, it spews a poisonous black powder that causes paralysis on contact.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 38
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 27
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 665,
+  name: "spewpa",
+  nameZh: "粉蝶蛹",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/665.png",
+  height: 3,
+  weight: 84,
+  abilities: ["蜕皮(shed-skin)", "友情防守(friend-guard)"],
+  hiddenAbilities: ["友情防守(friend-guard)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "喷粉宝可梦",
+  description: "It lives hidden within thicket shadows. When predators attack, it quickly bristles the fur covering its body in an effort to threaten them.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 22
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 27
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 29
+}]
+},
+  {
+  id: 666,
+  name: "vivillon",
+  nameZh: "彩粉蝶",
+  types: ["bug", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/666.png",
+  height: 12,
+  weight: 170,
+  abilities: ["鳞粉(shield-dust)", "复眼(compound-eyes)", "友情防守(friend-guard)"],
+  hiddenAbilities: ["友情防守(friend-guard)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "鳞粉宝可梦",
+  description: "Vivillon with many different patterns are found all over the world. These patterns are affected by the climate of their habitat.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 52
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 89
+}]
+},
+  {
+  id: 667,
+  name: "litleo",
+  nameZh: "小狮狮",
+  types: ["fire", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/667.png",
+  height: 6,
+  weight: 135,
+  abilities: ["斗争心(rivalry)", "紧张感(unnerve)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "幼狮宝可梦",
+  description: "血气方刚且好奇心旺盛。 如果生气或是开始战斗， 短短的鬃毛就会变热。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 62
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 58
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 73
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 54
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 72
+}]
+},
+  {
+  id: 668,
+  name: "pyroar-male",
+  nameZh: "火炎狮",
+  types: ["fire", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/668.png",
+  height: 15,
+  weight: 815,
+  abilities: ["斗争心(rivalry)", "紧张感(unnerve)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "王者宝可梦",
+  description: "会吐出摄氏６０００度的气息， 但不会用于猎物。 因为更喜欢吃生的肉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 86
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 68
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 72
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 109
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 66
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 106
+}]
+},
+  {
+  id: 669,
+  name: "flabebe",
+  nameZh: "花蓓蓓",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/669.png",
+  height: 1,
+  weight: 1,
+  abilities: ["花幕(flower-veil)", "共生(symbiosis)"],
+  hiddenAbilities: ["共生(symbiosis)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "单朵宝可梦",
+  description: "头上的冠是收集花粉做成的。 蕴藏着治愈的效果。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 44
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 38
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 39
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 61
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 79
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 670,
+  name: "floette",
+  nameZh: "花叶蒂",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/670.png",
+  height: 2,
+  weight: 9,
+  abilities: ["花幕(flower-veil)", "共生(symbiosis)"],
+  hiddenAbilities: ["共生(symbiosis)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "单朵宝可梦",
+  description: "把自己的力量给花，用心地照料。 绝不原谅那些破坏花坛者。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 54
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 47
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 98
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 52
+}]
+},
+  {
+  id: 671,
+  name: "florges",
+  nameZh: "花洁夫人",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/671.png",
+  height: 11,
+  weight: 100,
+  abilities: ["花幕(flower-veil)", "共生(symbiosis)"],
+  hiddenAbilities: ["共生(symbiosis)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "花园宝可梦",
+  description: "拥有几百年的寿命。 据说会终其一生不断地守护着庭园。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 68
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 112
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 154
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 672,
+  name: "skiddo",
+  nameZh: "坐骑小羊",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/672.png",
+  height: 9,
+  weight: 310,
+  abilities: ["食草(sap-sipper)", "草之毛皮(grass-pelt)"],
+  hiddenAbilities: ["草之毛皮(grass-pelt)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "坐骑宝可梦",
+  description: "Thought to be one of the first Pokémon to live in harmony with humans, it has a placid disposition.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 66
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 62
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 57
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 52
+}]
+},
+  {
+  id: 673,
+  name: "gogoat",
+  nameZh: "坐骑山羊",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/673.png",
+  height: 17,
+  weight: 910,
+  abilities: ["食草(sap-sipper)", "草之毛皮(grass-pelt)"],
+  hiddenAbilities: ["草之毛皮(grass-pelt)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "坐骑宝可梦",
+  description: "It can tell how its Trainer is feeling by subtle shifts in the grip on its horns. This empathic sense lets them run as if one being.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 123
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 62
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 97
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 81
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 68
+}]
+},
+  {
+  id: 674,
+  name: "pancham",
+  nameZh: "顽皮熊猫",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/674.png",
+  height: 6,
+  weight: 80,
+  abilities: ["铁拳(iron-fist)", "破格(mold-breaker)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "顽皮宝可梦",
+  description: "为了不被小看而一直瞪着对手， 然而绷紧的神经一旦稍有放松， 它就会在无意中露出笑脸。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 67
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 82
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 62
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 46
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 675,
+  name: "pangoro",
+  nameZh: "霸道熊猫",
+  types: ["fighting", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png",
+  height: 21,
+  weight: 1360,
+  abilities: ["铁拳(iron-fist)", "破格(mold-breaker)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "恶颜宝可梦",
+  description: "通过叶子来洞悉敌人的动向。 只要使出一记拳击就能 让大型翻斗车变成废铁。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 124
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 78
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 69
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 71
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 676,
+  name: "furfrou",
+  nameZh: "多丽米亚",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/676.png",
+  height: 12,
+  weight: 280,
+  abilities: ["毛皮大衣(fur-coat)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "贵宾犬宝可梦",
+  description: "如果置之不理， 体毛会不断地长长， 但只允许信赖的人修剪。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 102
+}]
+},
+  {
+  id: 677,
+  name: "espurr",
+  nameZh: "妙喵",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/677.png",
+  height: 3,
+  weight: 35,
+  abilities: ["锐利目光(keen-eye)", "穿透(infiltrator)", "我行我素(own-tempo)"],
+  hiddenAbilities: ["我行我素(own-tempo)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "自制宝可梦",
+  description: "虽然拥有可以弹飞 职业摔角手的精神力量， 却因无法好好控制而感到烦恼。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 62
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 48
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 54
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 63
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 68
+}]
+},
+  {
+  id: 678,
+  name: "meowstic-male",
+  nameZh: "超能妙喵",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/678.png",
+  height: 6,
+  weight: 85,
+  abilities: ["锐利目光(keen-eye)", "穿透(infiltrator)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "抑制宝可梦",
+  description: "雄性的防卫本能很强， 在保护自己和伙伴时 能发挥最大的威力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 74
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 48
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 76
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 83
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 81
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 104
+}]
+},
+  {
+  id: 679,
+  name: "honedge",
+  nameZh: "独剑鞘",
+  types: ["steel", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/679.png",
+  height: 8,
+  weight: 20,
+  abilities: ["无防守(no-guard)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "刀剑宝可梦",
+  description: "独剑鞘剑格上的 蓝色眼珠是它的本体。 会用陈旧的布吸取人类的精气。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 37
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 28
+}]
+},
+  {
+  id: 680,
+  name: "doublade",
+  nameZh: "双剑鞘",
+  types: ["steel", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png",
+  height: 8,
+  weight: 45,
+  abilities: ["无防守(no-guard)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "刀剑宝可梦",
+  description: "２把剑会用令人眼花缭乱的 速度不断交替攻击和防御， 借以制服猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 59
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 150
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 49
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 681,
+  name: "aegislash-shield",
+  nameZh: "坚盾剑怪",
+  types: ["steel", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png",
+  height: 17,
+  weight: 530,
+  abilities: ["战斗切换(stance-change)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "王剑宝可梦",
+  description: "坚盾剑怪曾经用强大的灵力 控制人和宝可梦，建立了 适合自己生活的国家。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 140
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 140
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 682,
+  name: "spritzee",
+  nameZh: "粉香香",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/682.png",
+  height: 2,
+  weight: 5,
+  abilities: ["治愈之心(healer)", "芳香幕(aroma-veil)"],
+  hiddenAbilities: ["芳香幕(aroma-veil)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "香水宝可梦",
+  description: "身上飘出的香气 能让人们神魂颠倒。 贵妇们对它钟爱万分。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 52
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 63
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 23
+}]
+},
+  {
+  id: 683,
+  name: "aromatisse",
+  nameZh: "芳香精",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/683.png",
+  height: 8,
+  weight: 155,
+  abilities: ["治愈之心(healer)", "芳香幕(aroma-veil)"],
+  hiddenAbilities: ["芳香幕(aroma-veil)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "芳香宝可梦",
+  description: "会发出恶臭让敌人丧失战意， 或者发出芳香的味道 来帮助自己的伙伴。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 101
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 72
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 72
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 99
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 89
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 29
+}]
+},
+  {
+  id: 684,
+  name: "swirlix",
+  nameZh: "绵绵泡芙",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/684.png",
+  height: 4,
+  weight: 35,
+  abilities: ["甜幕(sweet-veil)", "轻装(unburden)"],
+  hiddenAbilities: ["轻装(unburden)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "棉花糖宝可梦",
+  description: "蓬松的体毛闻起来 就像棉花糖一样甜甜的。 会放出黏糊糊的丝缠住敌人。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 62
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 48
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 66
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 59
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 57
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 49
+}]
+},
+  {
+  id: 685,
+  name: "slurpuff",
+  nameZh: "胖甜妮",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/685.png",
+  height: 8,
+  weight: 50,
+  abilities: ["甜幕(sweet-veil)", "轻装(unburden)"],
+  hiddenAbilities: ["轻装(unburden)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "泡沫奶油宝可梦",
+  description: "因为体毛里富含空气， 所以摸起来十分柔软， 重量也比看起来要轻。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 82
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 86
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 72
+}]
+},
+  {
+  id: 686,
+  name: "inkay",
+  nameZh: "好啦鱿",
+  types: ["dark", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/686.png",
+  height: 4,
+  weight: 35,
+  abilities: ["唱反调(contrary)", "吸盘(suction-cups)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "回转宝可梦",
+  description: "会让敌人看到自己闪烁的 发光体来让对方丧失战意， 然后趁机逃之夭夭。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 53
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 54
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 53
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 37
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 46
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 687,
+  name: "malamar",
+  nameZh: "乌贼王",
+  types: ["dark", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png",
+  height: 15,
+  weight: 470,
+  abilities: ["唱反调(contrary)", "吸盘(suction-cups)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "倒转宝可梦",
+  description: "据说那些能够改变历史 的重大事件其实都和 乌贼王的催眠能力有关。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 86
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 92
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 88
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 68
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 73
+}]
+},
+  {
+  id: 688,
+  name: "binacle",
+  nameZh: "龟脚脚",
+  types: ["rock", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/688.png",
+  height: 5,
+  weight: 310,
+  abilities: ["硬爪(tough-claws)", "狙击手(sniper)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "双手宝可梦",
+  description: "如果２只龟脚脚配合得不好， 不但无法有效地攻击和防御， 甚至没办法生存下去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 42
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 52
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 67
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 39
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 56
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 689,
+  name: "barbaracle",
+  nameZh: "龟足巨铠",
+  types: ["rock", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/689.png",
+  height: 13,
+  weight: 960,
+  abilities: ["硬爪(tough-claws)", "狙击手(sniper)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "集合宝可梦",
+  description: "用手掌上的眼珠来观察 前后左右的状况。遇上危机时 手脚会自己动起来打倒对手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 54
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 86
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 68
+}]
+},
+  {
+  id: 690,
+  name: "skrelp",
+  nameZh: "垃垃藻",
+  types: ["poison", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/690.png",
+  height: 5,
+  weight: 73,
+  abilities: ["毒刺(poison-point)", "毒手(poison-touch)", "适应力(adaptability)"],
+  hiddenAbilities: ["适应力(adaptability)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "似草宝可梦",
+  description: "看上去很像腐烂的海藻， 因此会藏身于漂在海里的 碎藻中，骗过敌人的眼睛。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 691,
+  name: "dragalge",
+  nameZh: "毒藻龙",
+  types: ["poison", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/691.png",
+  height: 18,
+  weight: 815,
+  abilities: ["毒刺(poison-point)", "毒手(poison-touch)", "适应力(adaptability)"],
+  hiddenAbilities: ["适应力(adaptability)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "似草宝可梦",
+  description: "会通过将头上的伞状部分 伸出海面吸收阳光的方式， 在体内制造龙之能量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 97
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 123
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 44
+}]
+},
+  {
+  id: 692,
+  name: "clauncher",
+  nameZh: "铁臂枪虾",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/692.png",
+  height: 5,
+  weight: 83,
+  abilities: ["超级发射器(mega-launcher)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "水枪宝可梦",
+  description: "通过引爆积蓄在右臂钳子中的 气体，像发射子弹般 将水喷射出去，击倒敌人。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 53
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 62
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 58
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 44
+}]
+},
+  {
+  id: 693,
+  name: "clawitzer",
+  nameZh: "钢炮臂虾",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/693.png",
+  height: 13,
+  weight: 353,
+  abilities: ["超级发射器(mega-launcher)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "发射器宝可梦",
+  description: "右臂是能够喷射 海水炮弹的大炮。 威力大到足以击沉油轮。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 71
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 73
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 88
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 89
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 59
+}]
+},
+  {
+  id: 694,
+  name: "helioptile",
+  nameZh: "伞电蜥",
+  types: ["electric", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/694.png",
+  height: 5,
+  weight: 60,
+  abilities: ["干燥皮肤(dry-skin)", "沙隐(sand-veil)", "太阳之力(solar-power)"],
+  hiddenAbilities: ["太阳之力(solar-power)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "发电宝可梦",
+  description: "拥有太阳能发电的结构。 如果有人打扰它发电， 它就会因心理压力而衰弱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 44
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 38
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 33
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 61
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 43
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 695,
+  name: "heliolisk",
+  nameZh: "光电伞蜥",
+  types: ["electric", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/695.png",
+  height: 10,
+  weight: 210,
+  abilities: ["干燥皮肤(dry-skin)", "沙隐(sand-veil)", "太阳之力(solar-power)"],
+  hiddenAbilities: ["太阳之力(solar-power)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "发电宝可梦",
+  description: "如果展开颈伞沐浴阳光， 单凭１只光电伞蜥就能 制造出大城市所需的电力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 62
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 52
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 109
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 94
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 109
+}]
+},
+  {
+  id: 696,
+  name: "tyrunt",
+  nameZh: "宝宝暴龙",
+  types: ["rock", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/696.png",
+  height: 8,
+  weight: 260,
+  abilities: ["强壮之颚(strong-jaw)", "结实(sturdy)"],
+  hiddenAbilities: ["结实(sturdy)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "幼君宝可梦",
+  description: "又任性又爱撒娇。 即使它只是闹着玩， 也会让训练家受重伤。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 58
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 89
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 77
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 48
+}]
+},
+  {
+  id: 697,
+  name: "tyrantrum",
+  nameZh: "怪颚龙",
+  types: ["rock", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/697.png",
+  height: 25,
+  weight: 2700,
+  abilities: ["强壮之颚(strong-jaw)", "坚硬脑袋(rock-head)"],
+  hiddenAbilities: ["坚硬脑袋(rock-head)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "暴君宝可梦",
+  description: "如果被它的大颚咬到， 连汽车都会变得粉碎。 是古代世界的王者。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 82
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 121
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 119
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 69
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 59
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 71
+}]
+},
+  {
+  id: 698,
+  name: "amaura",
+  nameZh: "冰雪龙",
+  types: ["rock", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/698.png",
+  height: 13,
+  weight: 252,
+  abilities: ["冰冻皮肤(refrigerate)", "降雪(snow-warning)"],
+  hiddenAbilities: ["降雪(snow-warning)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "冻原宝可梦",
+  description: "已经灭绝的古代宝可梦。 有时候它还会以冰封的 状态被发现喔。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 77
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 59
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 67
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 46
+}]
+},
+  {
+  id: 699,
+  name: "aurorus",
+  nameZh: "冰雪巨龙",
+  types: ["rock", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/699.png",
+  height: 27,
+  weight: 2250,
+  abilities: ["冰冻皮肤(refrigerate)", "降雪(snow-warning)"],
+  hiddenAbilities: ["降雪(snow-warning)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "冻原宝可梦",
+  description: "当它被激怒时， 就会喷出猛烈的冷气， 把周围都冰封起来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 123
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 77
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 72
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 99
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 92
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 700,
+  name: "sylveon",
+  nameZh: "仙子伊布",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/700.png",
+  height: 10,
+  weight: 235,
+  abilities: ["迷人之躯(cute-charm)", "妖精皮肤(pixilate)"],
+  hiddenAbilities: ["妖精皮肤(pixilate)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "连结宝可梦",
+  description: "伽勒尔地区的童话中有着 美丽的仙子伊布击退了 可怕的龙宝可梦的故事。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 701,
+  name: "hawlucha",
+  nameZh: "摔角鹰人",
+  types: ["fighting", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/701.png",
+  height: 8,
+  weight: 215,
+  abilities: ["柔软(limber)", "轻装(unburden)", "破格(mold-breaker)"],
+  hiddenAbilities: ["破格(mold-breaker)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "摔角宝可梦",
+  description: "在使出致命的绝招之前 一定要先摆出华丽的姿势。 有时也会在这一刻遭到反击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 92
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 74
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 118
+}]
+},
+  {
+  id: 702,
+  name: "dedenne",
+  nameZh: "咚咚鼠",
+  types: ["electric", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/702.png",
+  height: 2,
+  weight: 22,
+  abilities: ["颊囊(cheek-pouch)", "捡拾(pickup)", "正电(plus)"],
+  hiddenAbilities: ["正电(plus)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "天线宝可梦",
+  description: "由于发电的能力弱， 会从插座或其他的 电气宝可梦那里偷电。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 67
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 58
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 57
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 81
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 67
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 101
+}]
+},
+  {
+  id: 703,
+  name: "carbink",
+  nameZh: "小碎钻",
+  types: ["rock", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/703.png",
+  height: 3,
+  weight: 57,
+  abilities: ["恒净之躯(clear-body)", "结实(sturdy)"],
+  hiddenAbilities: ["结实(sturdy)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "宝石宝可梦",
+  description: "据说在世界上的某处，有个 沉睡着许多小碎钻的矿脉， 它们的女王也在那里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 150
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 150
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 704,
+  name: "goomy",
+  nameZh: "黏黏宝",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/704.png",
+  height: 3,
+  weight: 28,
+  abilities: ["食草(sap-sipper)", "湿润之躯(hydration)", "黏滑(gooey)"],
+  hiddenAbilities: ["黏滑(gooey)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "软体生物宝可梦",
+  description: "它的触角是优秀的感觉器官。 只要感觉到有敌人就会立刻 藏起来，以此存活到了现在。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 705,
+  name: "sliggoo",
+  nameZh: "黏美儿",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/705.png",
+  height: 8,
+  weight: 175,
+  abilities: ["食草(sap-sipper)", "湿润之躯(hydration)", "黏滑(gooey)"],
+  hiddenAbilities: ["黏滑(gooey)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "软体生物宝可梦",
+  description: "背上的突起物里装着它 小小的脑子，里面只想着 吃饭和逃离敌人这两件事。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 53
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 83
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 113
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 706,
+  name: "goodra",
+  nameZh: "黏美龙",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/706.png",
+  height: 20,
+  weight: 1505,
+  abilities: ["食草(sap-sipper)", "湿润之躯(hydration)", "黏滑(gooey)"],
+  hiddenAbilities: ["黏滑(gooey)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "龙宝可梦",
+  description: "用伸长角产生的力道来 攻击对手，产生的威力比 重量级拳击手的拳击还强１００倍。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 150
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 707,
+  name: "klefki",
+  nameZh: "钥圈儿",
+  types: ["steel", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/707.png",
+  height: 2,
+  weight: 30,
+  abilities: ["恶作剧之心(prankster)", "魔术师(magician)"],
+  hiddenAbilities: ["魔术师(magician)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "钥匙串宝可梦",
+  description: "会用头的前端吸取金属离子。 之所以长得像钥匙，据说是因为 太过喜欢钥匙，情不自禁进行了模仿。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 57
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 91
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 87
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 708,
+  name: "phantump",
+  nameZh: "小木灵",
+  types: ["ghost", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/708.png",
+  height: 4,
+  weight: 70,
+  abilities: ["自然回复(natural-cure)", "察觉(frisk)", "收获(harvest)"],
+  hiddenAbilities: ["收获(harvest)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "树桩宝可梦",
+  description: "用类似人类小孩的声音鸣叫， 把大人引到森林的深处， 让他们在其中迷失方向。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 43
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 38
+}]
+},
+  {
+  id: 709,
+  name: "trevenant",
+  nameZh: "朽木妖",
+  types: ["ghost", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/709.png",
+  height: 15,
+  weight: 710,
+  abilities: ["自然回复(natural-cure)", "察觉(frisk)", "收获(harvest)"],
+  hiddenAbilities: ["收获(harvest)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "老树宝可梦",
+  description: "脚尖伸出来的根须 能连结森林中的树木， 并且自由自在地加以操纵。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 76
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 82
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 56
+}]
+},
+  {
+  id: 710,
+  name: "pumpkaboo-average",
+  nameZh: "南瓜精",
+  types: ["ghost", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/710.png",
+  height: 4,
+  weight: 50,
+  abilities: ["捡拾(pickup)", "察觉(frisk)", "不眠(insomnia)"],
+  hiddenAbilities: ["不眠(insomnia)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "南瓜宝可梦",
+  description: "南瓜的洞里发出的光 会催眠并控制 看到它的人和宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 49
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 66
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 44
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 51
+}]
+},
+  {
+  id: 711,
+  name: "gourgeist-average",
+  nameZh: "南瓜怪人",
+  types: ["ghost", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png",
+  height: 9,
+  weight: 125,
+  abilities: ["捡拾(pickup)", "察觉(frisk)", "不眠(insomnia)"],
+  hiddenAbilities: ["不眠(insomnia)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "南瓜宝可梦",
+  description: "南瓜怪人会在朔月的夜里 去别人家门口敲门。开了门的人 会被它带往另一个世界。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 122
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 58
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 84
+}]
+},
+  {
+  id: 712,
+  name: "bergmite",
+  nameZh: "冰宝",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/712.png",
+  height: 10,
+  weight: 995,
+  abilities: ["我行我素(own-tempo)", "冰冻之躯(ice-body)", "结实(sturdy)"],
+  hiddenAbilities: ["结实(sturdy)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "冰块宝可梦",
+  description: "栖息在极其寒冷的地域。 会把自己的脚冻在 冰岩怪的背上固定起来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 69
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 32
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 28
+}]
+},
+  {
+  id: 713,
+  name: "avalugg",
+  nameZh: "冰岩怪",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/713.png",
+  height: 20,
+  weight: 5050,
+  abilities: ["我行我素(own-tempo)", "冰冻之躯(ice-body)", "结实(sturdy)"],
+  hiddenAbilities: ["结实(sturdy)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "冰山宝可梦",
+  description: "虽然身体的裂缝会因 白天的活动而变大， 但只要一晚就能全部长好。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 117
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 184
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 44
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 46
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 28
+}]
+},
+  {
+  id: 714,
+  name: "noibat",
+  nameZh: "嗡蝠",
+  types: ["flying", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/714.png",
+  height: 5,
+  weight: 80,
+  abilities: ["察觉(frisk)", "穿透(infiltrator)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "音波宝可梦",
+  description: "可以控制所有频率的音波。 就算是体型巨大的宝可梦， 也对它的超音波束手无策。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 715,
+  name: "noivern",
+  nameZh: "音波龙",
+  types: ["flying", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png",
+  height: 15,
+  weight: 850,
+  abilities: ["察觉(frisk)", "穿透(infiltrator)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "音波宝可梦",
+  description: "在黑暗中一边飞行一边发出 能粉碎岩石的超音波痛击敌人， 然后用利齿给予致命的一击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 97
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 123
+}]
+},
+  {
+  id: 716,
+  name: "xerneas",
+  nameZh: "哲尔尼亚斯",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png",
+  height: 30,
+  weight: 2150,
+  abilities: ["妖精气场(fairy-aura)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "生命宝可梦",
+  description: "Legends say it can share eternal life. It slept for a thousand years in the form of a tree before its revival.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 126
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 131
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 131
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 98
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 99
+}]
+},
+  {
+  id: 717,
+  name: "yveltal",
+  nameZh: "伊裴尔塔尔",
+  types: ["dark", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png",
+  height: 58,
+  weight: 2030,
+  abilities: ["暗黑气场(dark-aura)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "破坏宝可梦",
+  description: "When this legendary Pokémon’s wings and tail feathers spread wide and glow red, it absorbs the life force of living creatures.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 126
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 131
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 131
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 98
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 99
+}]
+},
+  {
+  id: 718,
+  name: "zygarde-50",
+  nameZh: "基格尔德",
+  types: ["dragon", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png",
+  height: 50,
+  weight: 3050,
+  abilities: ["气场破坏(aura-break)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "秩序宝可梦",
+  description: "据说，在与威胁到生态系统者战斗时， 它会变化为更强大的样子。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 108
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 121
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 81
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 719,
+  name: "diancie",
+  nameZh: "蒂安希",
+  types: ["rock", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png",
+  height: 7,
+  weight: 88,
+  abilities: ["恒净之躯(clear-body)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "宝石宝可梦",
+  description: "A sudden transformation of Carbink, its pink, glimmering body is said to be the loveliest sight in the whole world.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 150
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 150
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 720,
+  name: "hoopa",
+  nameZh: "胡帕",
+  types: ["psychic", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/720.png",
+  height: 5,
+  weight: 90,
+  abilities: ["魔术师(magician)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "顽童宝可梦",
+  description: "This troublemaker sends anything and everything to faraway places using its loop, which can warp space.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 150
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 721,
+  name: "volcanion",
+  nameZh: "波尔凯尼恩",
+  types: ["fire", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/721.png",
+  height: 17,
+  weight: 1950,
+  abilities: ["储水(water-absorb)"],
+  hiddenAbilities: [],
+  gen: 6,
+  region: "卡洛斯",
+  genera: "蒸汽宝可梦",
+  description: "It lets out billows of steam and disappears into the dense fog. It’s said to live in mountains where humans do not tread.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 722,
+  name: "rowlet",
+  nameZh: "木木枭",
+  types: ["grass", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/722.png",
+  height: 3,
+  weight: 15,
+  abilities: ["茂盛(overgrow)", "远隔(long-reach)"],
+  hiddenAbilities: ["远隔(long-reach)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "草羽宝可梦",
+  description: "白天利用光合作用积蓄力量， 到了晚上则会悄无声息地 在空中飞翔，寻找猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 723,
+  name: "dartrix",
+  nameZh: "投羽枭",
+  types: ["grass", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/723.png",
+  height: 7,
+  weight: 160,
+  abilities: ["茂盛(overgrow)", "远隔(long-reach)"],
+  hiddenAbilities: ["远隔(long-reach)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "刃羽宝可梦",
+  description: "对整理翅膀丝毫不会怠慢。 这不单是因为它注重形象， 也是为了让刃羽保持锐利。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 52
+}]
+},
+  {
+  id: 724,
+  name: "decidueye",
+  nameZh: "狙射树枭",
+  types: ["grass", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png",
+  height: 16,
+  weight: 366,
+  abilities: ["茂盛(overgrow)", "远隔(long-reach)"],
+  hiddenAbilities: ["远隔(long-reach)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "箭羽宝可梦",
+  description: "只要０.１秒就可以在翅膀的 藤蔓上搭好箭羽、射向敌人， 并在敌人发现前贯穿其要害。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 107
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 725,
+  name: "litten",
+  nameZh: "火斑喵",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/725.png",
+  height: 4,
+  weight: 43,
+  abilities: ["猛火(blaze)", "威吓(intimidate)"],
+  hiddenAbilities: ["威吓(intimidate)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "火猫宝可梦",
+  description: "如果在得到火斑喵的 信任前就想抚摸它的话， 要小心它用尖锐的爪子抓你。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 726,
+  name: "torracat",
+  nameZh: "炎热喵",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/726.png",
+  height: 7,
+  weight: 250,
+  abilities: ["猛火(blaze)", "威吓(intimidate)"],
+  hiddenAbilities: ["威吓(intimidate)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "火猫宝可梦",
+  description: "如果敌人实力强劲， 它便会更有战斗的欲望， 火焰铃铛的火力也会随之上升。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 727,
+  name: "incineroar",
+  nameZh: "炽焰咆哮虎",
+  types: ["fire", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
+  height: 18,
+  weight: 830,
+  abilities: ["猛火(blaze)", "威吓(intimidate)"],
+  hiddenAbilities: ["威吓(intimidate)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "反派宝可梦",
+  description: "虽然行为举止十分粗野， 却也有着会去帮助 弱小宝可梦的温柔一面。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 728,
+  name: "popplio",
+  nameZh: "球球海狮",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/728.png",
+  height: 4,
+  weight: 75,
+  abilities: ["激流(torrent)", "湿润之声(liquid-voice)"],
+  hiddenAbilities: ["湿润之声(liquid-voice)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "海狮宝可梦",
+  description: "每天拼命地练习， 才终于能够制造出 又大又好用的气球。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 54
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 54
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 66
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 56
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 729,
+  name: "brionne",
+  nameZh: "花漾海狮",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/729.png",
+  height: 6,
+  weight: 175,
+  abilities: ["激流(torrent)", "湿润之声(liquid-voice)"],
+  hiddenAbilities: ["湿润之声(liquid-voice)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "偶像宝可梦",
+  description: "到了风平浪静的夜晚， 会配合领队西狮海壬的歌声 和伙伴们一起跳舞。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 69
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 69
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 91
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 81
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 730,
+  name: "primarina",
+  nameZh: "西狮海壬",
+  types: ["water", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
+  height: 18,
+  weight: 440,
+  abilities: ["激流(torrent)", "湿润之声(liquid-voice)"],
+  hiddenAbilities: ["湿润之声(liquid-voice)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "独唱者宝可梦",
+  description: "对战就是西狮海壬的舞台。 它那歌声和舞动气球的样子 使观战的人们为之倾倒。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 74
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 74
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 126
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 116
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 731,
+  name: "pikipek",
+  nameZh: "小笃儿",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/731.png",
+  height: 3,
+  weight: 12,
+  abilities: ["锐利目光(keen-eye)", "连续攻击(skill-link)", "捡拾(pickup)"],
+  hiddenAbilities: ["捡拾(pickup)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "啄木鸟宝可梦",
+  description: "拥有看着很细， 却很强韧的颈部肌肉。 能以每秒１６连击的速度猛啄树木。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 732,
+  name: "trumbeak",
+  nameZh: "喇叭啄鸟",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/732.png",
+  height: 6,
+  weight: 148,
+  abilities: ["锐利目光(keen-eye)", "连续攻击(skill-link)", "捡拾(pickup)"],
+  hiddenAbilities: ["捡拾(pickup)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "喇叭喙宝可梦",
+  description: "会将吃掉的树果种子从 口中射出。种子散落在大地上， 新的草木便会生长出来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 733,
+  name: "toucannon",
+  nameZh: "铳嘴大鸟",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/733.png",
+  height: 11,
+  weight: 260,
+  abilities: ["锐利目光(keen-eye)", "连续攻击(skill-link)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "铳炮宝可梦",
+  description: "因成双成对感情和睦而闻名。 它被视为一种吉祥的象征， 常被带到结婚仪式去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 734,
+  name: "yungoos",
+  nameZh: "猫鼬少",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/734.png",
+  height: 4,
+  weight: 60,
+  abilities: ["蹲守(stakeout)", "强壮之颚(strong-jaw)", "适应力(adaptability)"],
+  hiddenAbilities: ["适应力(adaptability)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "巡回宝可梦",
+  description: "什么都吃，但喜欢吃新鲜的活物。 所以会为了寻找猎物在路上四处游走。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 48
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 735,
+  name: "gumshoos",
+  nameZh: "猫鼬探长",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/735.png",
+  height: 7,
+  weight: 142,
+  abilities: ["蹲守(stakeout)", "强壮之颚(strong-jaw)", "适应力(adaptability)"],
+  hiddenAbilities: ["适应力(adaptability)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "蹲守宝可梦",
+  description: "忍耐力非常强， 但如果见到它爱吃的小拉达， 就会忘乎所以地扑过去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 88
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 736,
+  name: "grubbin",
+  nameZh: "强颚鸡母虫",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/736.png",
+  height: 4,
+  weight: 44,
+  abilities: ["虫之预感(swarm)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "幼虫宝可梦",
+  description: "会用巨大的颚部 在森林中挖地制造巢穴。 最喜欢甜甜的树汁。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 47
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 62
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 46
+}]
+},
+  {
+  id: 737,
+  name: "charjabug",
+  nameZh: "虫电宝",
+  types: ["bug", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/737.png",
+  height: 5,
+  weight: 105,
+  abilities: ["蓄电池(battery)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "蓄电池宝可梦",
+  description: "虫电宝消化吃掉的落叶时 会产生电能。它会把这些电能 储存在自己肚子上的电囊中。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 57
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 82
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 36
+}]
+},
+  {
+  id: 738,
+  name: "vikavolt",
+  nameZh: "锹农炮虫",
+  types: ["bug", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/738.png",
+  height: 15,
+  weight: 450,
+  abilities: ["飘浮(levitate)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "锹形虫宝可梦",
+  description: "如果它在飞翔时把虫电宝抱住 当作备用电池，就能连续发射 电力超高的电磁光束。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 77
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 145
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 739,
+  name: "crabrawler",
+  nameZh: "好胜蟹",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/739.png",
+  height: 6,
+  weight: 70,
+  abilities: ["怪力钳(hyper-cutter)", "铁拳(iron-fist)", "愤怒穴位(anger-point)"],
+  hiddenAbilities: ["愤怒穴位(anger-point)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "拳斗宝可梦",
+  description: "有时会把椰蛋树错认为椰子树 而爬上去。惹怒椰蛋树后 被抖落下来，并遭到踩踏。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 47
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 82
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 57
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 42
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 47
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 63
+}]
+},
+  {
+  id: 740,
+  name: "crabominable",
+  nameZh: "好胜毛蟹",
+  types: ["fighting", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/740.png",
+  height: 17,
+  weight: 1800,
+  abilities: ["怪力钳(hyper-cutter)", "铁拳(iron-fist)", "愤怒穴位(anger-point)"],
+  hiddenAbilities: ["愤怒穴位(anger-point)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "毛蟹宝可梦",
+  description: "比起思考，会先试着打打看。 曾经有过用拳头猛攻 打退雪崩的记录。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 97
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 132
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 77
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 62
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 67
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 741,
+  name: "oricorio-baile",
+  nameZh: "花舞鸟",
+  types: ["fire", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/741.png",
+  height: 6,
+  weight: 34,
+  abilities: ["舞者(dancer)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "舞蹈宝可梦",
+  description: "吸食了朱红色花蜜的花舞鸟。 训练家弄错指示的话就会非常生气。 是情感变化非常剧烈的家伙。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 98
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 93
+}]
+},
+  {
+  id: 742,
+  name: "cutiefly",
+  nameZh: "萌虻",
+  types: ["bug", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/742.png",
+  height: 1,
+  weight: 2,
+  abilities: ["采蜜(honey-gather)", "鳞粉(shield-dust)", "甜幕(sweet-veil)"],
+  hiddenAbilities: ["甜幕(sweet-veil)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "蜂虻宝可梦",
+  description: "从敌人散发出的气场 来判断对方下一步的行动。 能轻盈地躲开攻击并进行反击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 84
+}]
+},
+  {
+  id: 743,
+  name: "ribombee",
+  nameZh: "蝶结萌虻",
+  types: ["bug", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/743.png",
+  height: 2,
+  weight: 5,
+  abilities: ["采蜜(honey-gather)", "鳞粉(shield-dust)", "甜幕(sweet-veil)"],
+  hiddenAbilities: ["甜幕(sweet-veil)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "蜂虻宝可梦",
+  description: "最讨厌雨水弄湿自己。 因为伽勒尔地区阴天居多， 所以很难见得到它的身影。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 124
+}]
+},
+  {
+  id: 744,
+  name: "rockruff",
+  nameZh: "岩狗狗",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+  height: 5,
+  weight: 92,
+  abilities: ["锐利目光(keen-eye)", "干劲(vital-spirit)", "不屈之心(steadfast)"],
+  hiddenAbilities: ["不屈之心(steadfast)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "小狗宝可梦",
+  description: "将脖子上的岩石向地面 发射，以此威吓对手。 在对方畏缩的刹那发起袭击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 745,
+  name: "lycanroc-midday",
+  nameZh: "鬃岩狼人",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
+  height: 8,
+  weight: 250,
+  abilities: ["锐利目光(keen-eye)", "拨沙(sand-rush)", "不屈之心(steadfast)"],
+  hiddenAbilities: ["不屈之心(steadfast)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "狼宝可梦",
+  description: "会用敏捷的动作将猎物 一点一点逼入绝境。 利齿总是瞄准着对方的要害。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 112
+}]
+},
+  {
+  id: 746,
+  name: "wishiwashi-solo",
+  nameZh: "弱丁鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/746.png",
+  height: 2,
+  weight: 3,
+  abilities: ["鱼群(schooling)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "小鱼宝可梦",
+  description: "感觉到危险时眼睛就会变得湿润。 眼泪的光亮会成为召集伙伴的信号， 让许多的弱丁鱼聚在一起。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 20
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 747,
+  name: "mareanie",
+  nameZh: "好坏星",
+  types: ["poison", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/747.png",
+  height: 4,
+  weight: 80,
+  abilities: ["不仁不义(merciless)", "柔软(limber)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "非星宝可梦",
+  description: "和阿罗拉的好坏星不同， 伽勒尔的好坏星还没发现到 太阳珊瑚的枝有多好吃。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 53
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 62
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 43
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 52
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 748,
+  name: "toxapex",
+  nameZh: "超坏星",
+  types: ["poison", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/748.png",
+  height: 7,
+  weight: 145,
+  abilities: ["不仁不义(merciless)", "柔软(limber)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "非星宝可梦",
+  description: "体内的毒囊中储存着 满满的剧毒，毒性强到 能让吼鲸王都痛苦三天三夜。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 63
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 152
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 142
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 749,
+  name: "mudbray",
+  nameZh: "泥驴仔",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/749.png",
+  height: 10,
+  weight: 1100,
+  abilities: ["我行我素(own-tempo)", "持久力(stamina)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "驴宝可梦",
+  description: "在把自己吃土制造出的泥巴 涂在脚上之后，无论走在路况 多么差的路上都不会打滑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 750,
+  name: "mudsdale",
+  nameZh: "重泥挽马",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/750.png",
+  height: 25,
+  weight: 9200,
+  abilities: ["我行我素(own-tempo)", "持久力(stamina)", "精神力(inner-focus)"],
+  hiddenAbilities: ["精神力(inner-focus)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "挽马宝可梦",
+  description: "拥有很强的耐力， 可以不眠不休地拉着１０吨重的 货物纵贯伽勒尔地区。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 751,
+  name: "dewpider",
+  nameZh: "滴蛛",
+  types: ["water", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/751.png",
+  height: 3,
+  weight: 40,
+  abilities: ["水泡(water-bubble)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "水泡宝可梦",
+  description: "平时生活在水中， 也会戴上水泡去 陆地上寻找食物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 38
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 52
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 72
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 27
+}]
+},
+  {
+  id: 752,
+  name: "araquanid",
+  nameZh: "滴蛛霸",
+  types: ["water", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/752.png",
+  height: 18,
+  weight: 820,
+  abilities: ["水泡(water-bubble)", "储水(water-absorb)"],
+  hiddenAbilities: ["储水(water-absorb)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "水泡宝可梦",
+  description: "把滴蛛放进头上的水泡里， 一边喂它吃剩的食物， 一边照顾它。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 92
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 132
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 753,
+  name: "fomantis",
+  nameZh: "伪螳草",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/753.png",
+  height: 3,
+  weight: 15,
+  abilities: ["叶子防守(leaf-guard)", "唱反调(contrary)"],
+  hiddenAbilities: ["唱反调(contrary)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "镰草宝可梦",
+  description: "白天沐浴阳光， 呼呼大睡。到了半夜 才醒来并开始活动。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 754,
+  name: "lurantis",
+  nameZh: "兰螳花",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/754.png",
+  height: 9,
+  weight: 185,
+  abilities: ["叶子防守(leaf-guard)", "唱反调(contrary)"],
+  hiddenAbilities: ["唱反调(contrary)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "花镰宝可梦",
+  description: "双臂的花瓣既薄 又锋利。还能够 积蓄阳光发射光束。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 755,
+  name: "morelull",
+  nameZh: "睡睡菇",
+  types: ["grass", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/755.png",
+  height: 2,
+  weight: 15,
+  abilities: ["发光(illuminate)", "孢子(effect-spore)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "发光宝可梦",
+  description: "白天也生活在昏暗的森林里。 会一边闪烁一边散播发光的孢子 来让敌人陷入沉睡。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 756,
+  name: "shiinotic",
+  nameZh: "灯罩夜菇",
+  types: ["grass", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/756.png",
+  height: 10,
+  weight: 115,
+  abilities: ["发光(illuminate)", "孢子(effect-spore)", "雨盘(rain-dish)"],
+  hiddenAbilities: ["雨盘(rain-dish)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "发光宝可梦",
+  description: "如果大半夜在森林的深处 看见光亮，记住千万不要接近。 灯罩夜菇会让你睡着的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 757,
+  name: "salandit",
+  nameZh: "夜盗火蜥",
+  types: ["poison", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/757.png",
+  height: 6,
+  weight: 48,
+  abilities: ["腐蚀(corrosion)", "迟钝(oblivious)"],
+  hiddenAbilities: ["迟钝(oblivious)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "毒蜥宝可梦",
+  description: "悄悄地从背后靠近猎物， 在对方察觉之前释放毒气， 让对方动弹不得。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 48
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 44
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 71
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 77
+}]
+},
+  {
+  id: 758,
+  name: "salazzle",
+  nameZh: "焰后蜥",
+  types: ["poison", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
+  height: 12,
+  weight: 222,
+  abilities: ["腐蚀(corrosion)", "迟钝(oblivious)"],
+  hiddenAbilities: ["迟钝(oblivious)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "毒蜥宝可梦",
+  description: "据说焰后蜥之间在争斗时， 是通过比拼谁带着更多只 雄性夜盗火蜥来定胜负的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 64
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 111
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 117
+}]
+},
+  {
+  id: 759,
+  name: "stufful",
+  nameZh: "童偶熊",
+  types: ["normal", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/759.png",
+  height: 5,
+  weight: 68,
+  abilities: ["毛茸茸(fluffy)", "笨拙(klutz)", "迷人之躯(cute-charm)"],
+  hiddenAbilities: ["迷人之躯(cute-charm)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "抓狂宝可梦",
+  description: "为了保护自己的身体而 胡乱挥舞前脚的样子虽然可爱， 威力却大到能将大树折断。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 760,
+  name: "bewear",
+  nameZh: "穿着熊",
+  types: ["normal", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/760.png",
+  height: 21,
+  weight: 1350,
+  abilities: ["毛茸茸(fluffy)", "笨拙(klutz)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "强臂宝可梦",
+  description: "会用令格斗家都无地自容的技术 把逮住的猎物夹在腋下， 带回自己的住处。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 120
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 761,
+  name: "bounsweet",
+  nameZh: "甜竹竹",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/761.png",
+  height: 3,
+  weight: 32,
+  abilities: ["叶子防守(leaf-guard)", "迟钝(oblivious)", "甜幕(sweet-veil)"],
+  hiddenAbilities: ["甜幕(sweet-veil)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "水果宝可梦",
+  description: "受到袭击时流下的汗水 非常甜美可口。那种香气 会吸引更多敌人的注意。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 42
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 38
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 38
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 32
+}]
+},
+  {
+  id: 762,
+  name: "steenee",
+  nameZh: "甜舞妮",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/762.png",
+  height: 7,
+  weight: 82,
+  abilities: ["叶子防守(leaf-guard)", "迟钝(oblivious)", "甜幕(sweet-veil)"],
+  hiddenAbilities: ["甜幕(sweet-veil)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "水果宝可梦",
+  description: "会用头部的壳盖击打 飞来啄食自己的蓝鸦， 并且对它使出猛烈的踢击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 52
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 48
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 48
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 62
+}]
+},
+  {
+  id: 763,
+  name: "tsareena",
+  nameZh: "甜冷美后",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png",
+  height: 12,
+  weight: 214,
+  abilities: ["叶子防守(leaf-guard)", "女王的威严(queenly-majesty)", "甜幕(sweet-veil)"],
+  hiddenAbilities: ["甜幕(sweet-veil)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "水果宝可梦",
+  description: "用又尖又硬的脚尖施展脚踢， 朝对手的身体和心灵 留下无法磨灭的创伤。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 98
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 98
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 72
+}]
+},
+  {
+  id: 764,
+  name: "comfey",
+  nameZh: "花疗环环",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png",
+  height: 1,
+  weight: 3,
+  abilities: ["花幕(flower-veil)", "先行治疗(triage)", "自然回复(natural-cure)"],
+  hiddenAbilities: ["自然回复(natural-cure)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "摘花宝可梦",
+  description: "散发着迷人香气的宝可梦。 由于每只花疗环环身上的花都 不一样，所以香味也各不相同。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 51
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 52
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 82
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 765,
+  name: "oranguru",
+  nameZh: "智挥猩",
+  types: ["normal", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/765.png",
+  height: 15,
+  weight: 760,
+  abilities: ["精神力(inner-focus)", "心灵感应(telepathy)", "共生(symbiosis)"],
+  hiddenAbilities: ["共生(symbiosis)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "贤者宝可梦",
+  description: "对森林的各个角落都了如指掌。 如果有宝可梦受伤了， 就会去寻找药草为它们治疗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 766,
+  name: "passimian",
+  nameZh: "投掷猴",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png",
+  height: 20,
+  weight: 828,
+  abilities: ["接球手(receiver)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "配合宝可梦",
+  description: "２０几只形成团队来生活。 靠着每个成员明确的分工， 在严苛的大自然中生存下来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 767,
+  name: "wimpod",
+  nameZh: "胆小虫",
+  types: ["bug", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/767.png",
+  height: 5,
+  weight: 120,
+  abilities: ["跃跃欲逃(wimp-out)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "疾行宝可梦",
+  description: "成群聚集，随时提高警惕。 只要察觉到有敌人， 就会分散开来四处逃窜。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 25
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 768,
+  name: "golisopod",
+  nameZh: "具甲武者",
+  types: ["bug", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/768.png",
+  height: 20,
+  weight: 1080,
+  abilities: ["危险回避(emergency-exit)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "装甲宝可梦",
+  description: "生活在海底的洞窟或沉船里。 会去和八爪武师决战， 输掉的一方便会成为对方的食物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 140
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 769,
+  name: "sandygast",
+  nameZh: "沙丘娃",
+  types: ["ghost", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/769.png",
+  height: 5,
+  weight: 700,
+  abilities: ["遇水凝固(water-compaction)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "沙丘宝可梦",
+  description: "主要栖息在沙滩上。 操纵把手伸进自己嘴里的 对手，从而让自己变得更大。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 770,
+  name: "palossand",
+  nameZh: "噬沙堡爷",
+  types: ["ghost", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/770.png",
+  height: 13,
+  weight: 2500,
+  abilities: ["遇水凝固(water-compaction)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "沙堡宝可梦",
+  description: "虽然住在沙滩上，但是 讨厌水。要是淋了大雨， 就无法维持城堡的造型。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 771,
+  name: "pyukumuku",
+  nameZh: "拳海参",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/771.png",
+  height: 3,
+  weight: 12,
+  abilities: ["飞出的内在物(innards-out)", "纯朴(unaware)"],
+  hiddenAbilities: ["纯朴(unaware)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "海参宝可梦",
+  description: "覆盖着皮肤的粘液 具有出众的保湿效果， 即使在陆地上待好几天也不会干掉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 5
+}]
+},
+  {
+  id: 772,
+  name: "type-null",
+  nameZh: "属性：空",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/772.png",
+  height: 19,
+  weight: 1205,
+  abilities: ["战斗盔甲(battle-armor)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "人工宝可梦",
+  description: "以神话中的宝可梦为原型所 创造出的宝可梦，被戴上了 抑制力量失控的面罩。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 59
+}]
+},
+  {
+  id: 773,
+  name: "silvally",
+  nameZh: "银伴战兽",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png",
+  height: 23,
+  weight: 1005,
+  abilities: ["ＡＲ系统(rks-system)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "人工宝可梦",
+  description: "与所信赖的训练家之间的牵绊 是解放它真正力量的 最后一个要素。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 774,
+  name: "minior-red-meteor",
+  nameZh: "小陨星",
+  types: ["rock", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/774.png",
+  height: 3,
+  weight: 400,
+  abilities: ["界限盾壳(shields-down)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "流星宝可梦",
+  description: "外壳非常坚固，但落到地上的 冲击会让它碎成细屑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 775,
+  name: "komala",
+  nameZh: "树枕尾熊",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/775.png",
+  height: 4,
+  weight: 199,
+  abilities: ["绝对睡眠(comatose)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "半梦半醒宝可梦",
+  description: "到死都一直是睡着的状态， 是因为吃的叶子里含有 类似麻醉药的成分。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 776,
+  name: "turtonator",
+  nameZh: "爆焰龟兽",
+  types: ["fire", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/776.png",
+  height: 20,
+  weight: 2120,
+  abilities: ["硬壳盔甲(shell-armor)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "爆炸龟宝可梦",
+  description: "在火山上生活，吃下的硫磺 就是甲壳上炸药的原料。 连粪便也会爆炸，十分危险。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 78
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 135
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 91
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 36
+}]
+},
+  {
+  id: 777,
+  name: "togedemaru",
+  nameZh: "托戈德玛尔",
+  types: ["electric", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/777.png",
+  height: 3,
+  weight: 33,
+  abilities: ["铁刺(iron-barbs)", "避雷针(lightning-rod)", "结实(sturdy)"],
+  hiddenAbilities: ["结实(sturdy)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "蜷缩宝可梦",
+  description: "在危急时刻会把身体卷成一团， 倒竖起背上的尖刺， 不分青红皂白地发出电击。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 98
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 73
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 96
+}]
+},
+  {
+  id: 778,
+  name: "mimikyu-disguised",
+  nameZh: "谜拟丘",
+  types: ["ghost", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png",
+  height: 2,
+  weight: 7,
+  abilities: ["画皮(disguise)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "画皮宝可梦",
+  description: "有一位学者为了研究 而看了它的破布里面， 结果患上怪病而离开人世。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 96
+}]
+},
+  {
+  id: 779,
+  name: "bruxish",
+  nameZh: "磨牙彩皮鱼",
+  types: ["water", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/779.png",
+  height: 9,
+  weight: 190,
+  abilities: ["鲜艳之躯(dazzling)", "强壮之颚(strong-jaw)", "奇迹皮肤(wonder-skin)"],
+  hiddenAbilities: ["奇迹皮肤(wonder-skin)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "磨牙宝可梦",
+  description: "厚实的皮肤连好坏星的针 也穿不透。会用结实的牙齿 嘎嘣嘎嘣地咬碎针吃下去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 92
+}]
+},
+  {
+  id: 780,
+  name: "drampa",
+  nameZh: "老翁龙",
+  types: ["normal", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/780.png",
+  height: 30,
+  weight: 1850,
+  abilities: ["怒火冲天(berserk)", "食草(sap-sipper)", "无关天气(cloud-nine)"],
+  hiddenAbilities: ["无关天气(cloud-nine)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "悠游宝可梦",
+  description: "心地善良爱亲近人， 但只要生气就会 刮起强风吹倒一切。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 91
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 36
+}]
+},
+  {
+  id: 781,
+  name: "dhelmise",
+  nameZh: "破破舵轮",
+  types: ["ghost", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/781.png",
+  height: 39,
+  weight: 2100,
+  abilities: ["钢能力者(steelworker)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "碎藻宝可梦",
+  description: "把锚抛到海里，伏击猎物。 会去捕捉巨大的吼鲸王， 吸取它们的精气。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 131
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 86
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 782,
+  name: "jangmo-o",
+  nameZh: "心鳞宝",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/782.png",
+  height: 6,
+  weight: 297,
+  abilities: ["防弹(bulletproof)", "隔音(soundproof)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "鳞片宝可梦",
+  description: "体毛变成了像金属一般 坚硬的鳞片。通过敲击 鳞片来和伙伴交流。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 783,
+  name: "hakamo-o",
+  nameZh: "鳞甲龙",
+  types: ["dragon", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/783.png",
+  height: 12,
+  weight: 470,
+  abilities: ["防弹(bulletproof)", "隔音(soundproof)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "鳞片宝可梦",
+  description: "敲响鳞片，发出吼声， 接着向对手发起挑战， 并用锋利的爪子撕裂对手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 784,
+  name: "kommo-o",
+  nameZh: "杖尾鳞甲龙",
+  types: ["dragon", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png",
+  height: 16,
+  weight: 782,
+  abilities: ["防弹(bulletproof)", "隔音(soundproof)", "防尘(overcoat)"],
+  hiddenAbilities: ["防尘(overcoat)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "鳞片宝可梦",
+  description: "遗迹壁画中古代战士 身上穿着的盔甲是用 杖尾鳞甲龙的鳞片制成的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 125
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 785,
+  name: "tapu-koko",
+  nameZh: "卡璞・鸣鸣",
+  types: ["electric", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png",
+  height: 18,
+  weight: 205,
+  abilities: ["电气制造者(electric-surge)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "土地神宝可梦",
+  description: "操纵雷的美乐美乐的守护神。 好奇心旺盛， 会时不时在人们面前现身。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 130
+}]
+},
+  {
+  id: 786,
+  name: "tapu-lele",
+  nameZh: "卡璞・蝶蝶",
+  types: ["psychic", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png",
+  height: 12,
+  weight: 186,
+  abilities: ["精神制造者(psychic-surge)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "土地神宝可梦",
+  description: "被称为守护神，却兼有 天真无邪与残酷的性格， 被誉为自然的化身。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 787,
+  name: "tapu-bulu",
+  nameZh: "卡璞・哞哞",
+  types: ["grass", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png",
+  height: 19,
+  weight: 455,
+  abilities: ["青草制造者(grassy-surge)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "土地神宝可梦",
+  description: "会鸣响尾巴，告知自己的居所， 以避免不必要的战争。 是操纵草木的乌拉乌拉的守护神。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 788,
+  name: "tapu-fini",
+  nameZh: "卡璞・鳍鳍",
+  types: ["water", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
+  height: 13,
+  weight: 212,
+  abilities: ["薄雾制造者(misty-surge)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "土地神宝可梦",
+  description: "被称为守护神，但有时会给 随便靠近的对方带去恐怖的灾难。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 789,
+  name: "cosmog",
+  nameZh: "科斯莫古",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png",
+  height: 2,
+  weight: 1,
+  abilities: ["纯朴(unaware)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "星云宝可梦",
+  description: "没有警戒心且好奇心强， 所以经常会遇到麻烦。 危急时会用瞬间移动来逃跑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 43
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 29
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 31
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 29
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 31
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 37
+}]
+},
+  {
+  id: 790,
+  name: "cosmoem",
+  nameZh: "科斯莫姆",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png",
+  height: 1,
+  weight: 9999,
+  abilities: ["结实(sturdy)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "原始星宝可梦",
+  description: "以惊人的气势吸入 大气中的尘埃，努力用 内核制造着进化的能源。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 43
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 29
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 131
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 29
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 131
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 37
+}]
+},
+  {
+  id: 791,
+  name: "solgaleo",
+  nameZh: "索尔迦雷欧",
+  types: ["psychic", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png",
+  height: 34,
+  weight: 2300,
+  abilities: ["金属防护(full-metal-body)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "日轮宝可梦",
+  description: "曾经被称为 吞食太阳之兽。 能释放出无尽的光能。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 137
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 137
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 107
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 113
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 89
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 792,
+  name: "lunala",
+  nameZh: "露奈雅拉",
+  types: ["psychic", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png",
+  height: 40,
+  weight: 1200,
+  abilities: ["幻影防守(shadow-shield)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "月轮宝可梦",
+  description: "夺走四周所有的光， 自己则变身为满月的模样， 在黑夜中散发出光芒。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 137
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 113
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 89
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 137
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 107
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 793,
+  name: "nihilego",
+  nameZh: "虚吾伊德",
+  types: ["rock", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/793.png",
+  height: 12,
+  weight: 555,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "寄生宝可梦",
+  description: "从究极之洞出现，来到这个世界。 好像会寄生在宝可梦或 人类的身上生存下去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 109
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 53
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 47
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 127
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 131
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 103
+}]
+},
+  {
+  id: 794,
+  name: "buzzwole",
+  nameZh: "爆肌蚊",
+  types: ["bug", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/794.png",
+  height: 24,
+  weight: 3336,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "膨胀宝可梦",
+  description: "会炫耀膨胀到异常程度的肌肉。 是究极异兽中的一种。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 107
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 139
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 139
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 53
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 79
+}]
+},
+  {
+  id: 795,
+  name: "pheromosa",
+  nameZh: "费洛美螂",
+  types: ["bug", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/795.png",
+  height: 18,
+  weight: 250,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "美艳宝可梦",
+  description: "在这个世界是异类，很危险， 但在它原本栖息的世界， 好像只是寻常能见的生物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 71
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 137
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 37
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 137
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 37
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 151
+}]
+},
+  {
+  id: 796,
+  name: "xurkitree",
+  nameZh: "电束木",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/796.png",
+  height: 38,
+  weight: 1000,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "灯饰宝可梦",
+  description: "被称为究极异兽。 也有像树木一样将手脚 插入地面后一动不动的。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 83
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 89
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 71
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 173
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 71
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 83
+}]
+},
+  {
+  id: 797,
+  name: "celesteela",
+  nameZh: "铁火辉夜",
+  types: ["steel", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/797.png",
+  height: 92,
+  weight: 9999,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "发射宝可梦",
+  description: "在这个世界是异类，很危险， 但在它原本栖息的世界， 好像只是寻常能见的生物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 97
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 101
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 103
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 107
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 101
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 61
+}]
+},
+  {
+  id: 798,
+  name: "kartana",
+  nameZh: "纸御剑",
+  types: ["grass", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/798.png",
+  height: 3,
+  weight: 1,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "拔刀宝可梦",
+  description: "在这个世界是异类，很危险， 但在它原本栖息的世界， 好像只是寻常能见的生物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 59
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 181
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 131
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 59
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 31
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 109
+}]
+},
+  {
+  id: 799,
+  name: "guzzlord",
+  nameZh: "恶食大王",
+  types: ["dark", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/799.png",
+  height: 55,
+  weight: 8880,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "异食宝可梦",
+  description: "被称为究极异兽的未知生命。 不知是不是经常觉得肚子饿， 一直都在吃着什么东西。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 223
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 101
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 53
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 97
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 53
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 800,
+  name: "necrozma",
+  nameZh: "奈克洛兹玛",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png",
+  height: 24,
+  weight: 2300,
+  abilities: ["棱镜装甲(prism-armor)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "棱镜宝可梦",
+  description: "为生存而发狂般地寻找着光。 会发射出激光， 将所有东西切成碎片。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 97
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 107
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 101
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 127
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 89
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 79
+}]
+},
+  {
+  id: 801,
+  name: "magearna",
+  nameZh: "玛机雅娜",
+  types: ["steel", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/801.png",
+  height: 10,
+  weight: 805,
+  abilities: ["魂心(soul-heart)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "人造宝可梦",
+  description: "大约５００年前由科学家制作而成。 被称为魂心的部分是它的本体。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 802,
+  name: "marshadow",
+  nameZh: "玛夏多",
+  types: ["fighting", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/802.png",
+  height: 7,
+  weight: 222,
+  abilities: ["技术高手(technician)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "栖影宝可梦",
+  description: "拥有潜入一切影子里的能力， 所以在很长一段时间里 都没有任何人发现它。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 125
+}]
+},
+  {
+  id: 803,
+  name: "poipole",
+  nameZh: "毒贝比",
+  types: ["poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/803.png",
+  height: 6,
+  weight: 18,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "毒针宝可梦",
+  description: "栖息在异世界的究极异兽。 会从头部的毒针朝对手 喷出毒液，咯咯咯大笑。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 67
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 73
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 67
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 73
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 67
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 73
+}]
+},
+  {
+  id: 804,
+  name: "naganadel",
+  nameZh: "四颚针龙",
+  types: ["poison", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/804.png",
+  height: 36,
+  weight: 1500,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "毒针宝可梦",
+  description: "究极异兽中的一种。 会从毒针发射出 黏性很大又发光的毒液。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 73
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 73
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 73
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 127
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 73
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 121
+}]
+},
+  {
+  id: 805,
+  name: "stakataka",
+  nameZh: "垒磊石",
+  types: ["rock", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/805.png",
+  height: 55,
+  weight: 8200,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "石墙宝可梦",
+  description: "像是究极异兽的谜一般的生命体。 突然动起来并展开袭击的石墙， 正身就是这家伙。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 61
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 131
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 211
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 101
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 13
+}]
+},
+  {
+  id: 806,
+  name: "blacephalon",
+  nameZh: "砰头小丑",
+  types: ["fire", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/806.png",
+  height: 18,
+  weight: 130,
+  abilities: ["异兽提升(beast-boost)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "烟火宝可梦",
+  description: "从究极之洞里出现的究极异兽。 用爆炸吓唬对手， 趁那空当夺走对方的生命气息。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 53
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 127
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 53
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 151
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 79
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 107
+}]
+},
+  {
+  id: 807,
+  name: "zeraora",
+  nameZh: "捷拉奥拉",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/807.png",
+  height: 15,
+  weight: 445,
+  abilities: ["蓄电(volt-absorb)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "奔雷宝可梦",
+  description: "从手脚的肉球放电。 当捷拉奥拉奔驰而过时， 周围将充斥着电闪雷鸣，",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 88
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 112
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 102
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 143
+}]
+},
+  {
+  id: 808,
+  name: "meltan",
+  nameZh: "美录坦",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/808.png",
+  height: 2,
+  weight: 80,
+  abilities: ["磁力(magnet-pull)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "螺帽宝可梦",
+  description: "美录坦们虽然聚在一起生活， 但当时机到来，会由最强的那１只 吸收其他的伙伴来进化。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 46
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 34
+}]
+},
+  {
+  id: 809,
+  name: "melmetal",
+  nameZh: "美录梅塔",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/809.png",
+  height: 25,
+  weight: 8000,
+  abilities: ["铁拳(iron-fist)"],
+  hiddenAbilities: [],
+  gen: 7,
+  region: "阿罗拉",
+  genera: "螺帽宝可梦",
+  description: "美录梅塔利用离心力带动 沉重的螺帽挥出的拳击 被认为是宝可梦界之最。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 135
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 143
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 143
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 34
+}]
+},
+  {
+  id: 810,
+  name: "grookey",
+  nameZh: "敲音猴",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png",
+  height: 3,
+  weight: 50,
+  abilities: ["茂盛(overgrow)", "青草制造者(grassy-surge)"],
+  hiddenAbilities: ["青草制造者(grassy-surge)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "小猴宝可梦",
+  description: "会用木棒连续击打来攻击。 在以飞快的速度击打的同时， 情绪也会变得越来越高涨。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 811,
+  name: "thwackey",
+  nameZh: "啪咚猴",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/811.png",
+  height: 7,
+  weight: 140,
+  abilities: ["茂盛(overgrow)", "青草制造者(grassy-surge)"],
+  hiddenAbilities: ["青草制造者(grassy-surge)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "节拍宝可梦",
+  description: "打着激烈的节拍战斗时， 由于过于忘我，甚至不会 意识到自己已经把对手打昏了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 812,
+  name: "rillaboom",
+  nameZh: "轰擂金刚猩",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
+  height: 21,
+  weight: 900,
+  abilities: ["茂盛(overgrow)", "青草制造者(grassy-surge)"],
+  hiddenAbilities: ["青草制造者(grassy-surge)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "鼓手宝可梦",
+  description: "打鼓技巧最高超的那一只 会成为首领。性情温和， 重视族群的和谐相处。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 813,
+  name: "scorbunny",
+  nameZh: "炎兔儿",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png",
+  height: 3,
+  weight: 45,
+  abilities: ["猛火(blaze)", "自由者(libero)"],
+  hiddenAbilities: ["自由者(libero)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "兔子宝可梦",
+  description: "一旦做好了战斗的准备， 它鼻头上和脚底的肉球 就会发出极度的高温。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 71
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 69
+}]
+},
+  {
+  id: 814,
+  name: "raboot",
+  nameZh: "腾蹴小将",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png",
+  height: 6,
+  weight: 90,
+  abilities: ["猛火(blaze)", "自由者(libero)"],
+  hiddenAbilities: ["自由者(libero)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "兔子宝可梦",
+  description: "会用脚把树果从树木上 踢落，用来练习颠球， 借此锻炼自己的脚法。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 86
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 94
+}]
+},
+  {
+  id: 815,
+  name: "cinderace",
+  nameZh: "闪焰王牌",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
+  height: 14,
+  weight: 330,
+  abilities: ["猛火(blaze)", "自由者(libero)"],
+  hiddenAbilities: ["自由者(libero)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "前锋宝可梦",
+  description: "拥有熟练的进攻和防守技巧。 只要得到声援就会更有冲劲， 但有时会为了出风头而弄巧成拙。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 116
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 119
+}]
+},
+  {
+  id: 816,
+  name: "sobble",
+  nameZh: "泪眼蜥",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png",
+  height: 3,
+  weight: 40,
+  abilities: ["激流(torrent)", "狙击手(sniper)"],
+  hiddenAbilities: ["狙击手(sniper)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "水蜥宝可梦",
+  description: "皮肤在湿掉时会变色， 仿佛像是隐身了一样， 谁都看不见它的身影。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 817,
+  name: "drizzile",
+  nameZh: "变涩蜥",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/817.png",
+  height: 7,
+  weight: 115,
+  abilities: ["激流(torrent)", "狙击手(sniper)"],
+  hiddenAbilities: ["狙击手(sniper)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "水蜥宝可梦",
+  description: "头脑聪明但是怕麻烦。 为了不让敌人接近自己的地盘， 在各个地方都设下了陷阱。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 818,
+  name: "inteleon",
+  nameZh: "千面避役",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
+  height: 19,
+  weight: 452,
+  abilities: ["激流(torrent)", "狙击手(sniper)"],
+  hiddenAbilities: ["狙击手(sniper)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "特工宝可梦",
+  description: "能从指尖射出速度高达３马赫 的水枪。它的瞬膜能帮助它看穿 敌人的弱点，准确地击中要害。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 120
+}]
+},
+  {
+  id: 819,
+  name: "skwovet",
+  nameZh: "贪心栗鼠",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/819.png",
+  height: 3,
+  weight: 25,
+  abilities: ["颊囊(cheek-pouch)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "贪吃宝可梦",
+  description: "由于它无论何时都在吃树果， 使得它比外表看起来还要顽强。 会出现在田地里寻找树果。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 820,
+  name: "greedent",
+  nameZh: "藏饱栗鼠",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/820.png",
+  height: 6,
+  weight: 60,
+  abilities: ["颊囊(cheek-pouch)", "贪吃鬼(gluttony)"],
+  hiddenAbilities: ["贪吃鬼(gluttony)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "贪欲宝可梦",
+  description: "无论多么坚硬的树果壳 都能用引以为傲的大牙咬碎。 在伽勒尔是很常见的宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 120
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 821,
+  name: "rookidee",
+  nameZh: "稚山雀",
+  types: ["flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/821.png",
+  height: 2,
+  weight: 18,
+  abilities: ["锐利目光(keen-eye)", "紧张感(unnerve)", "健壮胸肌(big-pecks)"],
+  hiddenAbilities: ["健壮胸肌(big-pecks)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "小鸟宝可梦",
+  description: "娇小的体型让它能敏捷地飞翔。 利用攻其不备的战法将体型 巨大的对手玩弄于股掌之间。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 38
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 47
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 33
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 57
+}]
+},
+  {
+  id: 822,
+  name: "corvisquire",
+  nameZh: "蓝鸦",
+  types: ["flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/822.png",
+  height: 8,
+  weight: 160,
+  abilities: ["锐利目光(keen-eye)", "紧张感(unnerve)", "健壮胸肌(big-pecks)"],
+  hiddenAbilities: ["健壮胸肌(big-pecks)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "乌鸦宝可梦",
+  description: "经历无数次艰难的战斗后， 它学会了该如何正确地 判断敌人的力量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 67
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 43
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 77
+}]
+},
+  {
+  id: 823,
+  name: "corviknight",
+  nameZh: "钢铠鸦",
+  types: ["flying", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/823.png",
+  height: 22,
+  weight: 750,
+  abilities: ["压迫感(pressure)", "紧张感(unnerve)", "镜甲(mirror-armor)"],
+  hiddenAbilities: ["镜甲(mirror-armor)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "乌鸦宝可梦",
+  description: "拥有优秀飞行能力和极度 聪明头脑的它在伽勒尔地区 从事飞翔出租车的工作。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 98
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 87
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 67
+}]
+},
+  {
+  id: 824,
+  name: "blipbug",
+  nameZh: "索侦虫",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/824.png",
+  height: 4,
+  weight: 80,
+  abilities: ["虫之预感(swarm)", "复眼(compound-eyes)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "幼虫宝可梦",
+  description: "经常出现在田地里的宝可梦。 会通过长在身体上的毛 来感应周围发生的事。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 25
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 20
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 20
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 25
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 825,
+  name: "dottler",
+  nameZh: "天罩虫",
+  types: ["bug", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/825.png",
+  height: 4,
+  weight: 195,
+  abilities: ["虫之预感(swarm)", "复眼(compound-eyes)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "天线罩宝可梦",
+  description: "正在壳里成长着。 用精神力量掌握外界的 状况，做好进化的准备。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 826,
+  name: "orbeetle",
+  nameZh: "以欧路普",
+  types: ["bug", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/826.png",
+  height: 4,
+  weight: 408,
+  abilities: ["虫之预感(swarm)", "察觉(frisk)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "七星宝可梦",
+  description: "释放出精神力量来调查 周围的情况。它的侦测范围 甚至可以达到方圆１０公里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 827,
+  name: "nickit",
+  nameZh: "狡小狐",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/827.png",
+  height: 6,
+  weight: 89,
+  abilities: ["逃跑(run-away)", "轻装(unburden)", "蹲守(stakeout)"],
+  hiddenAbilities: ["蹲守(stakeout)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "狐狸宝可梦",
+  description: "性格谨慎且狡猾。 在偷盗食物逃走的时候 会用尾巴擦掉自己的足迹。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 28
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 28
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 47
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 52
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 828,
+  name: "thievul",
+  nameZh: "猾大狐",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/828.png",
+  height: 12,
+  weight: 199,
+  abilities: ["逃跑(run-away)", "轻装(unburden)", "蹲守(stakeout)"],
+  hiddenAbilities: ["蹲守(stakeout)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "狐狸宝可梦",
+  description: "靠着轻盈的身体和锐利的 爪子到处去偷食物和蛋。 逐电犬是它的天敌。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 58
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 58
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 87
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 92
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 829,
+  name: "gossifleur",
+  nameZh: "幼棉棉",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/829.png",
+  height: 4,
+  weight: 22,
+  abilities: ["棉絮(cotton-down)", "再生力(regenerator)", "孢子(effect-spore)"],
+  hiddenAbilities: ["孢子(effect-spore)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "花饰宝可梦",
+  description: "会随着微风一边转圈圈一边 愉快地唱歌。许多人因为喜欢 这可爱的模样而培育它。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 10
+}]
+},
+  {
+  id: 830,
+  name: "eldegoss",
+  nameZh: "白蓬蓬",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/830.png",
+  height: 5,
+  weight: 25,
+  abilities: ["棉絮(cotton-down)", "再生力(regenerator)", "孢子(effect-spore)"],
+  hiddenAbilities: ["孢子(effect-spore)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "棉饰宝可梦",
+  description: "用它头上的棉絮制成的线 有着十分美丽动人的光泽， 是伽勒尔地区的名产。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 831,
+  name: "wooloo",
+  nameZh: "毛辫羊",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
+  height: 6,
+  weight: 60,
+  abilities: ["毛茸茸(fluffy)", "逃跑(run-away)", "防弹(bulletproof)"],
+  hiddenAbilities: ["防弹(bulletproof)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "绵羊宝可梦",
+  description: "要是身上的毛长得太长就会 不能动弹。用毛辫羊的体毛 织成的布结实得让人吃惊。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 42
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 48
+}]
+},
+  {
+  id: 832,
+  name: "dubwool",
+  nameZh: "毛毛角羊",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+  height: 13,
+  weight: 430,
+  abilities: ["毛茸茸(fluffy)", "不屈之心(steadfast)", "防弹(bulletproof)"],
+  hiddenAbilities: ["防弹(bulletproof)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "绵羊宝可梦",
+  description: "长得长长的角是为了 向异性求爱而存在的。 它从不会把角当做武器。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 88
+}]
+},
+  {
+  id: 833,
+  name: "chewtle",
+  nameZh: "咬咬龟",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/833.png",
+  height: 3,
+  weight: 85,
+  abilities: ["强壮之颚(strong-jaw)", "硬壳盔甲(shell-armor)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "咬住宝可梦",
+  description: "会用头上硬如岩石的角攻击敌人。 趁其不备之时大口咬住对方， 一旦咬住便再也不会松口。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 64
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 38
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 38
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 44
+}]
+},
+  {
+  id: 834,
+  name: "drednaw",
+  nameZh: "暴噬龟",
+  types: ["water", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png",
+  height: 10,
+  weight: 1155,
+  abilities: ["强壮之颚(strong-jaw)", "硬壳盔甲(shell-armor)", "悠游自如(swift-swim)"],
+  hiddenAbilities: ["悠游自如(swift-swim)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "紧咬宝可梦",
+  description: "颈部可以伸缩。 能从远处迅速伸长颈部， 用锐利的牙齿解决对手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 48
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 68
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 74
+}]
+},
+  {
+  id: 835,
+  name: "yamper",
+  nameZh: "来电汪",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/835.png",
+  height: 3,
+  weight: 135,
+  abilities: ["捡球(ball-fetch)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "小狗宝可梦",
+  description: "因为想要得到零食而 帮助人类工作的贪吃鬼。 总是带着电火花跑来跑去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 59
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 26
+}]
+},
+  {
+  id: 836,
+  name: "boltund",
+  nameZh: "逐电犬",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/836.png",
+  height: 10,
+  weight: 340,
+  abilities: ["强壮之颚(strong-jaw)", "好胜(competitive)"],
+  hiddenAbilities: ["好胜(competitive)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "狗宝可梦",
+  description: "电力增强了它的脚力。 当以最高速度奔跑时， 时速可以轻易超过９０公里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 69
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 121
+}]
+},
+  {
+  id: 837,
+  name: "rolycoly",
+  nameZh: "小炭仔",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/837.png",
+  height: 3,
+  weight: 120,
+  abilities: ["蒸汽机(steam-engine)", "耐热(heatproof)", "引火(flash-fire)"],
+  hiddenAbilities: ["引火(flash-fire)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "煤炭宝可梦",
+  description: "在满是岩石的崎岖之路上 也能像独轮车那样自在移动。 靠燃烧煤炭维持生命。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 838,
+  name: "carkol",
+  nameZh: "大炭车",
+  types: ["rock", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/838.png",
+  height: 11,
+  weight: 780,
+  abilities: ["蒸汽机(steam-engine)", "火焰之躯(flame-body)", "引火(flash-fire)"],
+  hiddenAbilities: ["引火(flash-fire)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "煤炭宝可梦",
+  description: "能通过高速旋转自己的脚， 以３０公里的时速奔跑。 能喷出１０００度的火焰。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 839,
+  name: "coalossal",
+  nameZh: "巨炭山",
+  types: ["rock", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png",
+  height: 28,
+  weight: 3105,
+  abilities: ["蒸汽机(steam-engine)", "火焰之躯(flame-body)", "引火(flash-fire)"],
+  hiddenAbilities: ["引火(flash-fire)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "煤炭宝可梦",
+  description: "进入战斗状态后， 它会把煤炭山燃烧得通红， 飞撒火花来烧焦四周。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 840,
+  name: "applin",
+  nameZh: "啃果虫",
+  types: ["grass", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/840.png",
+  height: 2,
+  weight: 5,
+  abilities: ["熟成(ripen)", "贪吃鬼(gluttony)", "防弹(bulletproof)"],
+  hiddenAbilities: ["防弹(bulletproof)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "苹果居宝可梦",
+  description: "一出生就躲进了苹果中。 一边吃果肉一边成长。 进化方向因苹果的味道而定。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 841,
+  name: "flapple",
+  nameZh: "苹裹龙",
+  types: ["grass", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/841.png",
+  height: 3,
+  weight: 10,
+  abilities: ["熟成(ripen)", "贪吃鬼(gluttony)", "活力(hustle)"],
+  hiddenAbilities: ["活力(hustle)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "苹果翅宝可梦",
+  description: "会用苹果皮的翅膀飞翔， 并吐出强酸性的唾液。 可以变成苹果的形状。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 842,
+  name: "appletun",
+  nameZh: "丰蜜龙",
+  types: ["grass", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/842.png",
+  height: 4,
+  weight: 130,
+  abilities: ["熟成(ripen)", "贪吃鬼(gluttony)", "厚脂肪(thick-fat)"],
+  hiddenAbilities: ["厚脂肪(thick-fat)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "苹果汁宝可梦",
+  description: "身体被甜甜的蜜汁包裹， 背部的皮尤其甘甜， 过去曾经是小孩的零食。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 843,
+  name: "silicobra",
+  nameZh: "沙包蛇",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/843.png",
+  height: 22,
+  weight: 76,
+  abilities: ["吐沙(sand-spit)", "蜕皮(shed-skin)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "沙蛇宝可梦",
+  description: "会从鼻孔喷射出沙子， 趁敌人看不清的时候 躲进地底下藏身。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 52
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 57
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 46
+}]
+},
+  {
+  id: 844,
+  name: "sandaconda",
+  nameZh: "沙螺蟒",
+  types: ["ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/844.png",
+  height: 38,
+  weight: 655,
+  abilities: ["吐沙(sand-spit)", "蜕皮(shed-skin)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "沙蛇宝可梦",
+  description: "它之所以会以独特的方式 盘绕自己的身体，是为了能 更高效地喷射砂囊中的沙子。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 107
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 125
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 71
+}]
+},
+  {
+  id: 845,
+  name: "cramorant",
+  nameZh: "古月鸟",
+  types: ["flying", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
+  height: 8,
+  weight: 180,
+  abilities: ["一口导弹(gulp-missile)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "一口吞宝可梦",
+  description: "非常贪吃，会把刺梭鱼整只 吞进嘴里。偶尔也会搞错对象 去咬其他的宝可梦。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 846,
+  name: "arrokuda",
+  nameZh: "刺梭鱼",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/846.png",
+  height: 5,
+  weight: 10,
+  abilities: ["悠游自如(swift-swim)", "螺旋尾鳍(propeller-tail)"],
+  hiddenAbilities: ["螺旋尾鳍(propeller-tail)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "突击宝可梦",
+  description: "吃饱了之后动作会变得 极度迟缓，于是就被 古月鸟整只吞了下去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 41
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 63
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 66
+}]
+},
+  {
+  id: 847,
+  name: "barraskewda",
+  nameZh: "戽斗尖梭",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png",
+  height: 13,
+  weight: 300,
+  abilities: ["悠游自如(swift-swim)", "螺旋尾鳍(propeller-tail)"],
+  hiddenAbilities: ["螺旋尾鳍(propeller-tail)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "穿刺宝可梦",
+  description: "会旋转着自己的尾鳍 一口气突击。能够以超过 １００节的速度贯穿猎物。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 61
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 123
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 136
+}]
+},
+  {
+  id: 848,
+  name: "toxel",
+  nameZh: "电音婴",
+  types: ["electric", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/848.png",
+  height: 4,
+  weight: 110,
+  abilities: ["胆怯(rattled)", "静电(static)", "笨拙(klutz)"],
+  hiddenAbilities: ["笨拙(klutz)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "婴儿宝可梦",
+  description: "通过让自身的毒素产生 化学反应来发电。电力 虽然弱，却能造成麻痹。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 38
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 54
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 849,
+  name: "toxtricity-amped",
+  nameZh: "颤弦蝾螈",
+  types: ["electric", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png",
+  height: 16,
+  weight: 400,
+  abilities: ["庞克摇滚(punk-rock)", "正电(plus)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "庞克宝可梦",
+  description: "气势汹汹的急性子。 会大口喝下浑浊的水， 吸收其中所含的毒素。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 98
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 114
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 850,
+  name: "sizzlipede",
+  nameZh: "烧火蚣",
+  types: ["fire", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/850.png",
+  height: 7,
+  weight: 10,
+  abilities: ["引火(flash-fire)", "白色烟雾(white-smoke)", "火焰之躯(flame-body)"],
+  hiddenAbilities: ["火焰之躯(flame-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "发热宝可梦",
+  description: "会用滚烫的身体勒紧猎物， 等到烤得恰到好处之时， 就把它们大口大口地吃掉。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 851,
+  name: "centiskorch",
+  nameZh: "焚焰蚣",
+  types: ["fire", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/851.png",
+  height: 30,
+  weight: 1200,
+  abilities: ["引火(flash-fire)", "白色烟雾(white-smoke)", "火焰之躯(flame-body)"],
+  hiddenAbilities: ["火焰之躯(flame-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "发热宝可梦",
+  description: "性格极具攻击性。 危险的不只是它烧烫的身体， 大大的獠牙也锐利无比。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 852,
+  name: "clobbopus",
+  nameZh: "拳拳蛸",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/852.png",
+  height: 6,
+  weight: 40,
+  abilities: ["柔软(limber)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "缠人宝可梦",
+  description: "智商大致相当于３岁的儿童。 虽然触手经常断掉，但因为 能再生，所以它并不在意。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 68
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 32
+}]
+},
+  {
+  id: 853,
+  name: "grapploct",
+  nameZh: "八爪武师",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png",
+  height: 16,
+  weight: 390,
+  abilities: ["柔软(limber)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "柔术宝可梦",
+  description: "会为了试自己的身手 而登上陆地寻找对手。 战斗结束后就会回到海里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 118
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 42
+}]
+},
+  {
+  id: 854,
+  name: "sinistea",
+  nameZh: "来悲茶",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/854.png",
+  height: 1,
+  weight: 2,
+  abilities: ["碎裂铠甲(weak-armor)", "诅咒之躯(cursed-body)"],
+  hiddenAbilities: ["诅咒之躯(cursed-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "红茶宝可梦",
+  description: "被它当成住处的茶杯 是有名的古董餐具。 市面上有很多赝品。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 74
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 54
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 855,
+  name: "polteageist",
+  nameZh: "怖思壶",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/855.png",
+  height: 2,
+  weight: 4,
+  abilities: ["碎裂铠甲(weak-armor)", "诅咒之躯(cursed-body)"],
+  hiddenAbilities: ["诅咒之躯(cursed-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "红茶宝可梦",
+  description: "每当发现喝剩的红茶， 它就会把自己的身体倒进去， 让那壶红茶变成怖思壶。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 134
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 114
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 856,
+  name: "hatenna",
+  nameZh: "迷布莉姆",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/856.png",
+  height: 4,
+  weight: 34,
+  abilities: ["治愈之心(healer)", "危险预知(anticipation)", "魔法镜(magic-bounce)"],
+  hiddenAbilities: ["魔法镜(magic-bounce)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "宁静宝可梦",
+  description: "喜欢没有人烟的地方。 一旦感觉到强烈的感情， 就会一溜烟地逃走。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 42
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 56
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 53
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 39
+}]
+},
+  {
+  id: 857,
+  name: "hattrem",
+  nameZh: "提布莉姆",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/857.png",
+  height: 6,
+  weight: 48,
+  abilities: ["治愈之心(healer)", "危险预知(anticipation)", "魔法镜(magic-bounce)"],
+  hiddenAbilities: ["魔法镜(magic-bounce)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "肃静宝可梦",
+  description: "会用头上的辫子攻击对手， 让对方安静下来。破坏力 强到能一击ＫＯ职业拳击手。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 57
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 86
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 73
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 49
+}]
+},
+  {
+  id: 858,
+  name: "hatterene",
+  nameZh: "布莉姆温",
+  types: ["psychic", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png",
+  height: 21,
+  weight: 51,
+  abilities: ["治愈之心(healer)", "危险预知(anticipation)", "魔法镜(magic-bounce)"],
+  hiddenAbilities: ["魔法镜(magic-bounce)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "寂静宝可梦",
+  description: "又被称为森林魔女。 如果有人大吵大闹，可能会 被它用触手上的爪子撕碎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 57
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 136
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 103
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 29
+}]
+},
+  {
+  id: 859,
+  name: "impidimp",
+  nameZh: "捣蛋小妖",
+  types: ["dark", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/859.png",
+  height: 4,
+  weight: 55,
+  abilities: ["恶作剧之心(prankster)", "察觉(frisk)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "捉弄宝可梦",
+  description: "不但会溜进民宅偷盗， 还会吸收人们悔恨时 的负面能量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 860,
+  name: "morgrem",
+  nameZh: "诈唬魔",
+  types: ["dark", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/860.png",
+  height: 8,
+  weight: 125,
+  abilities: ["恶作剧之心(prankster)", "察觉(frisk)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "坏心眼宝可梦",
+  description: "喜欢动歪脑筋，把人们 引诱到深夜的森林中。 似乎拥有培育农作物的能力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 861,
+  name: "grimmsnarl",
+  nameZh: "长毛巨魔",
+  types: ["dark", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png",
+  height: 15,
+  weight: 610,
+  abilities: ["恶作剧之心(prankster)", "察觉(frisk)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "健美宝可梦",
+  description: "毛发能发挥肌肉纤维般的作用。 伸展开来时会像触手那样 把对手缠绕起来。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 862,
+  name: "obstagoon",
+  nameZh: "堵拦熊",
+  types: ["dark", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/862.png",
+  height: 16,
+  weight: 460,
+  abilities: ["舍身(reckless)", "毅力(guts)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "停止宝可梦",
+  description: "在不断的斗争中得到了进化。 它交叉着双臂发出的怒吼 能让一切对手都为之胆怯。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 93
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 101
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 81
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 863,
+  name: "perrserker",
+  nameZh: "喵头目",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/863.png",
+  height: 8,
+  weight: 280,
+  abilities: ["战斗盔甲(battle-armor)", "硬爪(tough-claws)", "钢之意志(steely-spirit)"],
+  hiddenAbilities: ["钢之意志(steely-spirit)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "维京宝可梦",
+  description: "在日复一日的战斗中得以进化。 进化的结果是那危险的指甲， 留长后能当作短剑来用。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 864,
+  name: "cursola",
+  nameZh: "魔灵珊瑚",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png",
+  height: 10,
+  weight: 4,
+  abilities: ["碎裂铠甲(weak-armor)", "灭亡之躯(perish-body)"],
+  hiddenAbilities: ["灭亡之躯(perish-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "珊瑚宝可梦",
+  description: "一定要小心它那包覆着 灵魂的灵体。如果触摸到， 就会像石头一样动弹不得。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 145
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 130
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 865,
+  name: "sirfetchd",
+  nameZh: "葱游兵",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png",
+  height: 8,
+  weight: 1170,
+  abilities: ["不屈之心(steadfast)", "胆量(scrappy)"],
+  hiddenAbilities: ["胆量(scrappy)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "黄嘴鸭宝可梦",
+  description: "会用坚硬的葱叶抵挡攻击， 接着用锋利的茎反击。 它的葱既是武器也是食材。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 62
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 68
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 82
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 866,
+  name: "mr-rime",
+  nameZh: "踏冰人偶",
+  types: ["ice", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/866.png",
+  height: 15,
+  weight: 582,
+  abilities: ["蹒跚(tangled-feet)", "除障(screen-cleaner)", "冰冻之躯(ice-body)"],
+  hiddenAbilities: ["冰冻之躯(ice-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "喜剧演员宝可梦",
+  description: "幽默的动作使它获得了 众人的喜爱。能从腹部的 图案释放出精神力量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 867,
+  name: "runerigus",
+  nameZh: "迭失板",
+  types: ["ground", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/867.png",
+  height: 16,
+  weight: 666,
+  abilities: ["游魂(wandering-spirit)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "怨念宝可梦",
+  description: "绝对不能触摸它影子般的 身体，否则它会让你看到 印刻在它画中的恐怖记忆。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 58
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 145
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 868,
+  name: "milcery",
+  nameZh: "小仙奶",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/868.png",
+  height: 2,
+  weight: 3,
+  abilities: ["甜幕(sweet-veil)", "芳香幕(aroma-veil)"],
+  hiddenAbilities: ["芳香幕(aroma-veil)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "鲜奶油宝可梦",
+  description: "据说有小仙奶 现身过的蛋糕店 保证能生意兴隆。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 61
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 34
+}]
+},
+  {
+  id: 869,
+  name: "alcremie",
+  nameZh: "霜奶仙",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png",
+  height: 3,
+  weight: 5,
+  abilities: ["甜幕(sweet-veil)", "芳香幕(aroma-veil)"],
+  hiddenAbilities: ["芳香幕(aroma-veil)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "鲜奶油宝可梦",
+  description: "当它感到幸福的时候， 手中产生出的鲜奶油 会变得更加香浓甜美。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 121
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 64
+}]
+},
+  {
+  id: 870,
+  name: "falinks",
+  nameZh: "列阵兵",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/870.png",
+  height: 30,
+  weight: 620,
+  abilities: ["战斗盔甲(battle-armor)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "阵形宝可梦",
+  description: "６只为一体的宝可梦。 惯于团队行动，会一边 变换阵形一边战斗。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 871,
+  name: "pincurchin",
+  nameZh: "啪嚓海胆",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/871.png",
+  height: 3,
+  weight: 10,
+  abilities: ["避雷针(lightning-rod)", "电气制造者(electric-surge)"],
+  hiddenAbilities: ["电气制造者(electric-surge)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "海胆宝可梦",
+  description: "每根刺里都储存着电力。 即使是折断的刺也至少 能连续放电３小时。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 48
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 101
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 91
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 15
+}]
+},
+  {
+  id: 872,
+  name: "snom",
+  nameZh: "雪吞虫",
+  types: ["ice", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/872.png",
+  height: 3,
+  weight: 38,
+  abilities: ["鳞粉(shield-dust)", "冰鳞粉(ice-scales)"],
+  hiddenAbilities: ["冰鳞粉(ice-scales)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "虫宝宝宝可梦",
+  description: "会吃地面上的积雪。 吃得越多，背上的 刺就会长得越挺拔。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 25
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 873,
+  name: "frosmoth",
+  nameZh: "雪绒蛾",
+  types: ["ice", "bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/873.png",
+  height: 13,
+  weight: 420,
+  abilities: ["鳞粉(shield-dust)", "冰鳞粉(ice-scales)"],
+  hiddenAbilities: ["冰鳞粉(ice-scales)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "冰蛾宝可梦",
+  description: "绝不放过破坏山野环境的人。 会用冰冷的翅膀四处飞翔， 制造出暴风雪来惩罚他们。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 874,
+  name: "stonjourner",
+  nameZh: "巨石丁",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png",
+  height: 25,
+  weight: 5200,
+  abilities: ["能量点(power-spot)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "巨石宝可梦",
+  description: "每年会有一天，它们会在 特定的时间突然出现， 聚集在一起排成一个圈。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 135
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 20
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 20
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 875,
+  name: "eiscue-ice",
+  nameZh: "冰砌鹅",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/875.png",
+  height: 14,
+  weight: 890,
+  abilities: ["结冻头(ice-face)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "企鹅宝可梦",
+  description: "无论何时都用冰块冰镇着 自己怕热的脸。会把头顶 上的毛垂到海里钓食物吃。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 876,
+  name: "indeedee-male",
+  nameZh: "爱管侍",
+  types: ["psychic", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/876.png",
+  height: 9,
+  weight: 280,
+  abilities: ["精神力(inner-focus)", "同步(synchronize)", "精神制造者(psychic-surge)"],
+  hiddenAbilities: ["精神制造者(psychic-surge)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "感情宝可梦",
+  description: "能通过自己的角去 感受附近生物的情感。 正面情绪是它的能量之源。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 877,
+  name: "morpeko-full-belly",
+  nameZh: "莫鲁贝可",
+  types: ["electric", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png",
+  height: 3,
+  weight: 30,
+  abilities: ["饱了又饿(hunger-switch)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "双面宝可梦",
+  description: "无论怎么吃都会马上肚子饿。 十分珍爱自己用电烘烤过的 种子，随时都带在身上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 58
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 58
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 58
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 878,
+  name: "cufant",
+  nameZh: "铜象",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/878.png",
+  height: 12,
+  weight: 1000,
+  abilities: ["强行(sheer-force)", "重金属(heavy-metal)"],
+  hiddenAbilities: ["重金属(heavy-metal)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "像铜宝可梦",
+  description: "擅长需要力气的工作。 铜质的身体会因雨水而生锈， 转变成鲜艳的绿色。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 49
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 49
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 879,
+  name: "copperajah",
+  nameZh: "大王铜象",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/879.png",
+  height: 30,
+  weight: 6500,
+  abilities: ["强行(sheer-force)", "重金属(heavy-metal)"],
+  hiddenAbilities: ["重金属(heavy-metal)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "像铜宝可梦",
+  description: "群居的宝可梦。 鼻子的握力十分强劲， 甚至能把大石头弄得粉碎。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 122
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 69
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 69
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 880,
+  name: "dracozolt",
+  nameZh: "雷鸟龙",
+  types: ["electric", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/880.png",
+  height: 18,
+  weight: 1900,
+  abilities: ["蓄电(volt-absorb)", "活力(hustle)", "拨沙(sand-rush)"],
+  hiddenAbilities: ["拨沙(sand-rush)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "化石宝可梦",
+  description: "会用尾部结实的肌肉 发电。与下半身相比， 上半身真的太小了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 881,
+  name: "arctozolt",
+  nameZh: "雷鸟海兽",
+  types: ["electric", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/881.png",
+  height: 23,
+  weight: 1500,
+  abilities: ["蓄电(volt-absorb)", "静电(static)", "拨雪(slush-rush)"],
+  hiddenAbilities: ["拨雪(slush-rush)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "化石宝可梦",
+  description: "曾经生活在古代的海边， 能用身体的冰来保存食物， 但由于动作太迟缓而灭绝了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 882,
+  name: "dracovish",
+  nameZh: "鳃鱼龙",
+  types: ["water", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/882.png",
+  height: 23,
+  weight: 2150,
+  abilities: ["储水(water-absorb)", "强壮之颚(strong-jaw)", "拨沙(sand-rush)"],
+  hiddenAbilities: ["拨沙(sand-rush)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "化石宝可梦",
+  description: "虽然能用自豪的脚力 以６０公里的时速奔跑， 但是只能在水中呼吸。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 883,
+  name: "arctovish",
+  nameZh: "鳃鱼海兽",
+  types: ["water", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/883.png",
+  height: 20,
+  weight: 1750,
+  abilities: ["储水(water-absorb)", "冰冻之躯(ice-body)", "拨雪(slush-rush)"],
+  hiddenAbilities: ["拨雪(slush-rush)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "化石宝可梦",
+  description: "面部的皮肤无论受到什么攻击 都不会受伤，但由于呼吸起来 不方便而灭绝了。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 884,
+  name: "duraludon",
+  nameZh: "铝钢龙",
+  types: ["steel", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png",
+  height: 18,
+  weight: 400,
+  abilities: ["轻金属(light-metal)", "重金属(heavy-metal)", "坚毅(stalwart)"],
+  hiddenAbilities: ["坚毅(stalwart)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "合金宝可梦",
+  description: "由特殊金属构成的身体 十分轻盈，能够灵活地活动。 不喜欢下雨，所以住在洞窟里。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 885,
+  name: "dreepy",
+  nameZh: "多龙梅西亚",
+  types: ["dragon", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/885.png",
+  height: 5,
+  weight: 20,
+  abilities: ["恒净之躯(clear-body)", "穿透(infiltrator)", "诅咒之躯(cursed-body)"],
+  hiddenAbilities: ["诅咒之躯(cursed-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "哀怨宝可梦",
+  description: "虽然单独１只弱得甚至敌不过小孩， 但会和伙伴合作一起锻炼， 通过进化而变得更强。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 28
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 82
+}]
+},
+  {
+  id: 886,
+  name: "drakloak",
+  nameZh: "多龙奇",
+  types: ["dragon", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/886.png",
+  height: 14,
+  weight: 110,
+  abilities: ["恒净之躯(clear-body)", "穿透(infiltrator)", "诅咒之躯(cursed-body)"],
+  hiddenAbilities: ["诅咒之躯(cursed-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "保姆宝可梦",
+  description: "要是没让自己在照顾的多龙梅西亚 乘在头上就静不下心来，甚至会 因此试图把别的宝可梦放到头上。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 102
+}]
+},
+  {
+  id: 887,
+  name: "dragapult",
+  nameZh: "多龙巴鲁托",
+  types: ["dragon", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png",
+  height: 30,
+  weight: 500,
+  abilities: ["恒净之躯(clear-body)", "穿透(infiltrator)", "诅咒之躯(cursed-body)"],
+  hiddenAbilities: ["诅咒之躯(cursed-body)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "隐形宝可梦",
+  description: "它角里的多龙梅西亚 似乎满心期待着能被 以音速发射出去。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 88
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 142
+}]
+},
+  {
+  id: 888,
+  name: "zacian",
+  nameZh: "苍响",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png",
+  height: 28,
+  weight: 1100,
+  abilities: ["不挠之剑(intrepid-sword)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "强者宝可梦",
+  description: "这只宝可梦被认为是沉睡已久的 藏玛然特的姐姐，也有人 认为它们之间是劲敌关系。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 92
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 138
+}]
+},
+  {
+  id: 889,
+  name: "zamazenta",
+  nameZh: "藏玛然特",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png",
+  height: 29,
+  weight: 2100,
+  abilities: ["不屈之盾(dauntless-shield)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "强者宝可梦",
+  description: "以石像般的姿态陷入 长久沉眠的宝可梦。 几乎就要被人们所遗忘。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 92
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 138
+}]
+},
+  {
+  id: 890,
+  name: "eternatus",
+  nameZh: "无极汰那",
+  types: ["poison", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png",
+  height: 200,
+  weight: 9500,
+  abilities: ["压迫感(pressure)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "超极巨宝可梦",
+  description: "来自于２万年前坠落 到地上的陨石之中。 似乎与极巨化之谜有所关联。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 140
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 145
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 130
+}]
+},
+  {
+  id: 891,
+  name: "kubfu",
+  nameZh: "熊徒弟",
+  types: ["fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png",
+  height: 6,
+  weight: 120,
+  abilities: ["精神力(inner-focus)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "拳法宝可梦",
+  description: "拉紧头上又白又长的体毛， 就会变得斗气势高昂， 并从丹田涌出力量。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 72
+}]
+},
+  {
+  id: 892,
+  name: "urshifu-single-strike",
+  nameZh: "武道熊师",
+  types: ["fighting", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png",
+  height: 19,
+  weight: 1050,
+  abilities: ["无形拳(unseen-fist)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "拳法宝可梦",
+  description: "生活在遥远地区的山岳地带。 通过在断崖绝壁上奔跑 来锻炼腰腿，磨炼招式。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 63
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 97
+}]
+},
+  {
+  id: 893,
+  name: "zarude",
+  nameZh: "萨戮德",
+  types: ["dark", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/893.png",
+  height: 18,
+  weight: 700,
+  abilities: ["叶子防守(leaf-guard)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "恶猿宝可梦",
+  description: "长在身上的藤蔓断掉之后 会变成土壤的养分， 帮助森林中的植物成长。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 894,
+  name: "regieleki",
+  nameZh: "雷吉艾勒奇",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png",
+  height: 12,
+  weight: 1450,
+  abilities: ["电晶体(transistor)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "电子宝可梦",
+  description: "整个身体是制造电能的 器官。可以制造出 伽勒尔全域所需的电力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 200
+}]
+},
+  {
+  id: 895,
+  name: "regidrago",
+  nameZh: "雷吉铎拉戈",
+  types: ["dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png",
+  height: 21,
+  weight: 2000,
+  abilities: ["龙颚(dragons-maw)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "龙玉宝可梦",
+  description: "整个身体是龙之能量的 结晶。据说它拥有 所有龙宝可梦的能力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 200
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 100
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 50
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 896,
+  name: "glastrier",
+  nameZh: "雪暴马",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png",
+  height: 22,
+  weight: 8000,
+  abilities: ["苍白嘶鸣(chilling-neigh)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "烈马宝可梦",
+  description: "拥有十分惊人的怪力。 戴在脸上的冰之面罩 硬度是钻石的１００倍",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 145
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 897,
+  name: "spectrier",
+  nameZh: "灵幽马",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png",
+  height: 20,
+  weight: 445,
+  abilities: ["漆黑嘶鸣(grim-neigh)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "骏马宝可梦",
+  description: "在黑暗的夜晚中奔跑，吸取 正在睡觉的生物的生命能量。 喜欢孤独和静寂。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 145
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 130
+}]
+},
+  {
+  id: 898,
+  name: "calyrex",
+  nameZh: "蕾冠王",
+  types: ["psychic", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png",
+  height: 11,
+  weight: 77,
+  abilities: ["紧张感(unnerve)"],
+  hiddenAbilities: [],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "国王宝可梦",
+  description: "曾经在很久以前统治着 伽勒尔的传说之王。拥有 治愈心灵和让草木发芽的能力。",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 899,
+  name: "wyrdeer",
+  nameZh: "诡角鹿",
+  types: ["normal", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/899.png",
+  height: 18,
+  weight: 951,
+  abilities: ["威吓(intimidate)", "察觉(frisk)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "大角宝可梦",
+  description: "The black orbs shine with an uncanny light when the Pokémon is erecting invisible barriers. The fur shed from its beard retains heat well and is a highly useful material for winter clothing.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 103
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 72
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 900,
+  name: "kleavor",
+  nameZh: "劈斧螳螂",
+  types: ["bug", "rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/900.png",
+  height: 18,
+  weight: 890,
+  abilities: ["虫之预感(swarm)", "强行(sheer-force)", "锋锐(sharpness)"],
+  hiddenAbilities: ["锋锐(sharpness)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "斧钺宝可梦",
+  description: "A violent creature that fells towering trees with its crude axes and shields itself with hard stone. If one should chance upon this Pokémon in the wilds, one's only recourse is to flee.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 901,
+  name: "ursaluna",
+  nameZh: "月月熊",
+  types: ["ground", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/901.png",
+  height: 24,
+  weight: 2900,
+  abilities: ["毅力(guts)", "防弹(bulletproof)", "紧张感(unnerve)"],
+  hiddenAbilities: ["紧张感(unnerve)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "泥炭宝可梦",
+  description: "I believe it was Hisui's swampy terrain that gave Ursaluna its burly physique and newfound capacity to manipulate peat at will.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 130
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 140
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 105
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 902,
+  name: "basculegion-male",
+  nameZh: "幽尾玄鱼",
+  types: ["water", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/902.png",
+  height: 30,
+  weight: 1100,
+  abilities: ["悠游自如(swift-swim)", "适应力(adaptability)", "破格(mold-breaker)"],
+  hiddenAbilities: ["破格(mold-breaker)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "大鱼宝可梦",
+  description: "Clads itself in the souls of comrades that perished before fulfilling their goals of journeying upstream. No other species throughout all Hisui's rivers is Basculegion's equal.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 120
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 112
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 78
+}]
+},
+  {
+  id: 903,
+  name: "sneasler",
+  nameZh: "大狃拉",
+  types: ["fighting", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/903.png",
+  height: 13,
+  weight: 430,
+  abilities: ["压迫感(pressure)", "轻装(unburden)", "毒手(poison-touch)"],
+  hiddenAbilities: ["毒手(poison-touch)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "攀崖宝可梦",
+  description: "Because of Sneasler's virulent poison and daunting physical prowess, no other species could hope to best it on the frozen highlands. Preferring solitude, this species does not form packs.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 120
+}]
+},
+  {
+  id: 904,
+  name: "overqwil",
+  nameZh: "万针鱼",
+  types: ["dark", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/904.png",
+  height: 25,
+  weight: 605,
+  abilities: ["毒刺(poison-point)", "悠游自如(swift-swim)", "威吓(intimidate)"],
+  hiddenAbilities: ["威吓(intimidate)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "剑山宝可梦",
+  description: "Its lancelike spikes and savage temperament have earned it the nickname ”sea fiend.” It slurps up poison to nourish itself.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 905,
+  name: "enamorus-incarnate",
+  nameZh: "眷恋云",
+  types: ["fairy", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/905.png",
+  height: 16,
+  weight: 480,
+  abilities: ["迷人之躯(cute-charm)", "唱反调(contrary)"],
+  hiddenAbilities: ["唱反调(contrary)"],
+  gen: 8,
+  region: "伽勒尔",
+  genera: "爱憎宝可梦",
+  description: "When it flies to this land from across the sea, the bitter winter comes to an end. According to legend, this Pokémon's love gives rise to the budding of fresh life across Hisui.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 74
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 106
+}]
+},
+  {
+  id: 906,
+  name: "sprigatito",
+  nameZh: "新叶喵",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/906.png",
+  height: 4,
+  weight: 41,
+  abilities: ["茂盛(overgrow)", "变幻自如(protean)"],
+  hiddenAbilities: ["变幻自如(protean)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "草猫宝可梦",
+  description: "Its fluffy fur is similar in composition to plants. This Pokémon frequently washes its face to keep it from drying out.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 61
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 54
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 907,
+  name: "floragato",
+  nameZh: "蒂蕾喵",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/907.png",
+  height: 9,
+  weight: 122,
+  abilities: ["茂盛(overgrow)", "变幻自如(protean)"],
+  hiddenAbilities: ["变幻自如(protean)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "草猫宝可梦",
+  description: "Floragato deftly wields the vine hidden beneath its long fur, slamming the hard flower bud against its opponents.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 61
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 63
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 83
+}]
+},
+  {
+  id: 908,
+  name: "meowscarada",
+  nameZh: "魔幻假面喵",
+  types: ["grass", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/908.png",
+  height: 15,
+  weight: 312,
+  abilities: ["茂盛(overgrow)", "变幻自如(protean)"],
+  hiddenAbilities: ["变幻自如(protean)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "魔术师宝可梦",
+  description: "This Pokémon uses the reflective fur lining its cape to camouflage the stem of its flower, creating the illusion that the flower is floating.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 76
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 81
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 123
+}]
+},
+  {
+  id: 909,
+  name: "fuecoco",
+  nameZh: "呆火鳄",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/909.png",
+  height: 4,
+  weight: 98,
+  abilities: ["猛火(blaze)", "纯朴(unaware)"],
+  hiddenAbilities: ["纯朴(unaware)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "火鳄宝可梦",
+  description: "It lies on warm rocks and uses the heat absorbed by its square-shaped scales to create fire energy.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 67
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 59
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 63
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 36
+}]
+},
+  {
+  id: 910,
+  name: "crocalor",
+  nameZh: "炙烫鳄",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/910.png",
+  height: 10,
+  weight: 307,
+  abilities: ["猛火(blaze)", "纯朴(unaware)"],
+  hiddenAbilities: ["纯朴(unaware)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "火鳄宝可梦",
+  description: "The combination of Crocalor’s fire energy and overflowing vitality has caused an egg-shaped fireball to appear on the Pokémon’s head.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 81
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 78
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 58
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 49
+}]
+},
+  {
+  id: 911,
+  name: "skeledirge",
+  nameZh: "骨纹巨声鳄",
+  types: ["fire", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/911.png",
+  height: 16,
+  weight: 3265,
+  abilities: ["猛火(blaze)", "纯朴(unaware)"],
+  hiddenAbilities: ["纯朴(unaware)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "歌手宝可梦",
+  description: "The fiery bird changes shape when Skeledirge sings. Rumor has it that the bird was born when the fireball on Skeledirge’s head gained a soul.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 104
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 66
+}]
+},
+  {
+  id: 912,
+  name: "quaxly",
+  nameZh: "润水鸭",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/912.png",
+  height: 5,
+  weight: 61,
+  abilities: ["激流(torrent)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "小鸭宝可梦",
+  description: "This Pokémon migrated to Paldea from distant lands long ago. The gel secreted by its feathers repels water and grime.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 913,
+  name: "quaxwell",
+  nameZh: "涌跃鸭",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/913.png",
+  height: 12,
+  weight: 215,
+  abilities: ["激流(torrent)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "习艺宝可梦",
+  description: "These Pokémon constantly run through shallow waters to train their legs, then compete with each other to see which of them kicks most gracefully.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 914,
+  name: "quaquaval",
+  nameZh: "狂欢浪舞鸭",
+  types: ["water", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/914.png",
+  height: 18,
+  weight: 619,
+  abilities: ["激流(torrent)", "自信过度(moxie)"],
+  hiddenAbilities: ["自信过度(moxie)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "舞者宝可梦",
+  description: "A single kick from a Quaquaval can send a truck rolling. This Pokémon uses its powerful legs to perform striking dances from far-off lands.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 915,
+  name: "lechonk",
+  nameZh: "爱吃豚",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/915.png",
+  height: 5,
+  weight: 102,
+  abilities: ["芳香幕(aroma-veil)", "贪吃鬼(gluttony)", "厚脂肪(thick-fat)"],
+  hiddenAbilities: ["厚脂肪(thick-fat)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "猪宝可梦",
+  description: "It searches for food all day. It possesses a keen sense of smell but doesn’t use it for anything other than foraging.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 54
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 916,
+  name: "oinkologne-male",
+  nameZh: "飘香豚",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/916.png",
+  height: 10,
+  weight: 1200,
+  abilities: ["甩不掉的气味(lingering-aroma)", "贪吃鬼(gluttony)", "厚脂肪(thick-fat)"],
+  hiddenAbilities: ["厚脂肪(thick-fat)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "猪宝可梦",
+  description: "Oinkologne is proud of its fine, glossy skin. It emits a concentrated scent from the tip of its tail.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 59
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 917,
+  name: "tarountula",
+  nameZh: "团珠蛛",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/917.png",
+  height: 3,
+  weight: 40,
+  abilities: ["不眠(insomnia)", "蹲守(stakeout)"],
+  hiddenAbilities: ["蹲守(stakeout)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "线球宝可梦",
+  description: "The ball of threads wrapped around its body is elastic enough to deflect the scythes of Scyther, this Pokémon’s natural enemy.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 41
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 29
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 918,
+  name: "spidops",
+  nameZh: "操陷蛛",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/918.png",
+  height: 10,
+  weight: 165,
+  abilities: ["不眠(insomnia)", "蹲守(stakeout)"],
+  hiddenAbilities: ["蹲守(stakeout)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "陷阱宝可梦",
+  description: "It clings to branches and ceilings using its threads and moves without a sound. It takes out its prey before the prey even notices it.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 79
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 92
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 52
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 86
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 919,
+  name: "nymble",
+  nameZh: "豆蟋蟀",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/919.png",
+  height: 2,
+  weight: 10,
+  abilities: ["虫之预感(swarm)", "有色眼镜(tinted-lens)"],
+  hiddenAbilities: ["有色眼镜(tinted-lens)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "蝗虫宝可梦",
+  description: "It has its third set of legs folded up. When it’s in a tough spot, this Pokémon jumps over 30 feet using the strength of its legs.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 33
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 46
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 21
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 920,
+  name: "lokix",
+  nameZh: "烈腿蝗",
+  types: ["bug", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/920.png",
+  height: 10,
+  weight: 175,
+  abilities: ["虫之预感(swarm)", "有色眼镜(tinted-lens)"],
+  hiddenAbilities: ["有色眼镜(tinted-lens)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "蝗虫宝可梦",
+  description: "When it decides to fight all out, it stands on its previously folded legs to enter Showdown Mode. It neutralizes its enemies in short order.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 71
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 102
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 78
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 52
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 92
+}]
+},
+  {
+  id: 921,
+  name: "pawmi",
+  nameZh: "布拨",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/921.png",
+  height: 3,
+  weight: 25,
+  abilities: ["静电(static)", "自然回复(natural-cure)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "鼠宝可梦",
+  description: "It has underdeveloped electric sacs on its cheeks. These sacs can produce electricity only if Pawmi rubs them furiously with the pads on its forepaws.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 20
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 922,
+  name: "pawmo",
+  nameZh: "布土拨",
+  types: ["electric", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/922.png",
+  height: 4,
+  weight: 65,
+  abilities: ["蓄电(volt-absorb)", "自然回复(natural-cure)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "鼠宝可梦",
+  description: "When its group is attacked, Pawmo is the first to leap into battle, defeating enemies with a fighting technique that utilizes electric shocks.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 923,
+  name: "pawmot",
+  nameZh: "巴布土拨",
+  types: ["electric", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/923.png",
+  height: 9,
+  weight: 410,
+  abilities: ["蓄电(volt-absorb)", "自然回复(natural-cure)", "铁拳(iron-fist)"],
+  hiddenAbilities: ["铁拳(iron-fist)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "押掌宝可梦",
+  description: "This Pokémon normally is slow to react, but once it enters battle, it will strike down its enemies with lightning-fast movements.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 924,
+  name: "tandemaus",
+  nameZh: "一对鼠",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/924.png",
+  height: 3,
+  weight: 18,
+  abilities: ["逃跑(run-away)", "捡拾(pickup)", "我行我素(own-tempo)"],
+  hiddenAbilities: ["我行我素(own-tempo)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "成对宝可梦",
+  description: "Exhibiting great teamwork, they use their incisors to cut pieces out of any material that might be useful for a nest, then make off with them.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 925,
+  name: "maushold-family-of-four",
+  nameZh: "一家鼠",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/925.png",
+  height: 3,
+  weight: 28,
+  abilities: ["友情防守(friend-guard)", "颊囊(cheek-pouch)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "家族宝可梦",
+  description: "The two little ones just appeared one day. The group might be a family of related Pokémon, but nobody knows for sure.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 74
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 111
+}]
+},
+  {
+  id: 926,
+  name: "fidough",
+  nameZh: "狗仔包",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/926.png",
+  height: 3,
+  weight: 109,
+  abilities: ["我行我素(own-tempo)", "笨拙(klutz)"],
+  hiddenAbilities: ["笨拙(klutz)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "小狗宝可梦",
+  description: "This Pokémon is smooth and moist to the touch. Yeast in Fidough’s breath induces fermentation in the Pokémon’s vicinity.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 37
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 927,
+  name: "dachsbun",
+  nameZh: "麻花犬",
+  types: ["fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/927.png",
+  height: 5,
+  weight: 149,
+  abilities: ["焦香之躯(well-baked-body)", "芳香幕(aroma-veil)"],
+  hiddenAbilities: ["芳香幕(aroma-veil)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "狗宝可梦",
+  description: "The pleasant aroma that emanates from this Pokémon’s body helps wheat grow, so Dachsbun has been treasured by farming villages.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 57
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 928,
+  name: "smoliv",
+  nameZh: "迷你芙",
+  types: ["grass", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/928.png",
+  height: 3,
+  weight: 65,
+  abilities: ["早起(early-bird)", "收获(harvest)"],
+  hiddenAbilities: ["收获(harvest)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "橄榄宝可梦",
+  description: "It protects itself from enemies by emitting oil from the fruit on its head. This oil is bitter and astringent enough to make someone flinch.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 41
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 58
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 51
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 929,
+  name: "dolliv",
+  nameZh: "奥利纽",
+  types: ["grass", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/929.png",
+  height: 6,
+  weight: 119,
+  abilities: ["早起(early-bird)", "收获(harvest)"],
+  hiddenAbilities: ["收获(harvest)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "橄榄宝可梦",
+  description: "Dolliv shares its tasty, fresh-scented oil with others. This species has coexisted with humans since times long gone.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 52
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 53
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 78
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 78
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 33
+}]
+},
+  {
+  id: 930,
+  name: "arboliva",
+  nameZh: "奥利瓦",
+  types: ["grass", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/930.png",
+  height: 14,
+  weight: 482,
+  abilities: ["掉出种子(seed-sower)", "收获(harvest)"],
+  hiddenAbilities: ["收获(harvest)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "橄榄宝可梦",
+  description: "This calm Pokémon is very compassionate. It will share its delicious, nutrient-rich oil with weakened Pokémon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 78
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 69
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 109
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 39
+}]
+},
+  {
+  id: 931,
+  name: "squawkabilly-green-plumage",
+  nameZh: "怒鹦哥",
+  types: ["normal", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/931.png",
+  height: 6,
+  weight: 24,
+  abilities: ["威吓(intimidate)", "活力(hustle)", "毅力(guts)"],
+  hiddenAbilities: ["毅力(guts)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "鹦鹉宝可梦",
+  description: "These Pokémon prefer to live in cities. They form flocks based on the color of their feathers, and they fight over territory.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 82
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 96
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 51
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 51
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 92
+}]
+},
+  {
+  id: 932,
+  name: "nacli",
+  nameZh: "盐石宝",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/932.png",
+  height: 4,
+  weight: 160,
+  abilities: ["洁净之盐(purifying-salt)", "结实(sturdy)", "恒净之躯(clear-body)"],
+  hiddenAbilities: ["恒净之躯(clear-body)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "岩盐宝可梦",
+  description: "It was born in a layer of rock salt deep under the earth. This species was particularly treasured in the old days, as they would share precious salt.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 75
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 25
+}]
+},
+  {
+  id: 933,
+  name: "naclstack",
+  nameZh: "盐石垒",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/933.png",
+  height: 6,
+  weight: 1050,
+  abilities: ["洁净之盐(purifying-salt)", "结实(sturdy)", "恒净之躯(clear-body)"],
+  hiddenAbilities: ["恒净之躯(clear-body)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "岩盐宝可梦",
+  description: "This Pokémon dry cures its prey by spraying salt over them. The curing process steals away the water in the prey’s body.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 934,
+  name: "garganacl",
+  nameZh: "盐石巨灵",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/934.png",
+  height: 23,
+  weight: 2400,
+  abilities: ["洁净之盐(purifying-salt)", "结实(sturdy)", "恒净之躯(clear-body)"],
+  hiddenAbilities: ["恒净之躯(clear-body)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "岩盐宝可梦",
+  description: "Garganacl will rub its fingertips together and sprinkle injured Pokémon with salt. Even severe wounds will promptly heal afterward.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 935,
+  name: "charcadet",
+  nameZh: "炭小侍",
+  types: ["fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/935.png",
+  height: 6,
+  weight: 105,
+  abilities: ["引火(flash-fire)", "火焰之躯(flame-body)"],
+  hiddenAbilities: ["火焰之躯(flame-body)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "小火星宝可梦",
+  description: "Burnt charcoal came to life and became a Pokémon. Possessing a fiery fighting spirit, Charcadet will battle even tough opponents.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 936,
+  name: "armarouge",
+  nameZh: "红莲铠骑",
+  types: ["fire", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/936.png",
+  height: 15,
+  weight: 850,
+  abilities: ["引火(flash-fire)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "火战士宝可梦",
+  description: "Armarouge evolved through the use of a set of armor that belonged to a distinguished warrior. This Pokémon is incredibly loyal.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 937,
+  name: "ceruledge",
+  nameZh: "苍炎刃鬼",
+  types: ["fire", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/937.png",
+  height: 16,
+  weight: 620,
+  abilities: ["引火(flash-fire)", "碎裂铠甲(weak-armor)"],
+  hiddenAbilities: ["碎裂铠甲(weak-armor)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "火剑士宝可梦",
+  description: "The fiery blades on its arms burn fiercely with the lingering resentment of a sword wielder who fell before accomplishing their goal.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 125
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 938,
+  name: "tadbulb",
+  nameZh: "光蚪仔",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/938.png",
+  height: 3,
+  weight: 4,
+  abilities: ["我行我素(own-tempo)", "静电(static)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "电蝌蚪宝可梦",
+  description: "Tadbulb shakes its tail to generate electricity. If it senses danger, it will make its head blink on and off to alert its allies.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 61
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 31
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 41
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 59
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 939,
+  name: "bellibolt",
+  nameZh: "电肚蛙",
+  types: ["electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/939.png",
+  height: 12,
+  weight: 1130,
+  abilities: ["电力转换(electromorphosis)", "静电(static)", "湿气(damp)"],
+  hiddenAbilities: ["湿气(damp)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "电蛙宝可梦",
+  description: "When this Pokémon expands and contracts its wobbly body, the belly-button dynamo in its stomach produces a huge amount of electricity.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 109
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 64
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 91
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 103
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 83
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 940,
+  name: "wattrel",
+  nameZh: "电海燕",
+  types: ["electric", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/940.png",
+  height: 4,
+  weight: 36,
+  abilities: ["风力发电(wind-power)", "蓄电(volt-absorb)", "好胜(competitive)"],
+  hiddenAbilities: ["好胜(competitive)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "海燕宝可梦",
+  description: "When its wings catch the wind, the bones within produce electricity. This Pokémon dives into the ocean, catching prey by electrocuting them.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 941,
+  name: "kilowattrel",
+  nameZh: "大电海燕",
+  types: ["electric", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/941.png",
+  height: 14,
+  weight: 386,
+  abilities: ["风力发电(wind-power)", "蓄电(volt-absorb)", "好胜(competitive)"],
+  hiddenAbilities: ["好胜(competitive)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "军舰鸟宝可梦",
+  description: "Kilowattrel inflates its throat sac to amplify its electricity. By riding the wind, this Pokémon can fly over 430 miles in a day.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 125
+}]
+},
+  {
+  id: 942,
+  name: "maschiff",
+  nameZh: "偶叫獒",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/942.png",
+  height: 5,
+  weight: 160,
+  abilities: ["威吓(intimidate)", "逃跑(run-away)", "蹲守(stakeout)"],
+  hiddenAbilities: ["蹲守(stakeout)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "小辈宝可梦",
+  description: "It always scowls in an attempt to make opponents take it seriously, but even crying children will burst into laughter when they see Maschiff’s face.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 60
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 78
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 51
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 51
+}]
+},
+  {
+  id: 943,
+  name: "mabosstiff",
+  nameZh: "獒教父",
+  types: ["dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/943.png",
+  height: 11,
+  weight: 610,
+  abilities: ["威吓(intimidate)", "看门犬(guard-dog)", "蹲守(stakeout)"],
+  hiddenAbilities: ["蹲守(stakeout)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "大佬宝可梦",
+  description: "This Pokémon can store energy in its large dewlap. Mabosstiff unleashes this energy all at once to blow away enemies.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 944,
+  name: "shroodle",
+  nameZh: "滋汁鼹",
+  types: ["poison", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/944.png",
+  height: 2,
+  weight: 7,
+  abilities: ["轻装(unburden)", "顺手牵羊(pickpocket)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "毒鼠宝可梦",
+  description: "Though usually a mellow Pokémon, it will sink its sharp, poison-soaked front teeth into any that anger it, causing paralysis in the object of its ire.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 40
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 945,
+  name: "grafaiai",
+  nameZh: "涂标客",
+  types: ["poison", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/945.png",
+  height: 7,
+  weight: 272,
+  abilities: ["轻装(unburden)", "毒手(poison-touch)", "恶作剧之心(prankster)"],
+  hiddenAbilities: ["恶作剧之心(prankster)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "毒猴宝可梦",
+  description: "The color of the poisonous saliva depends on what the Pokémon eats. Grafaiai covers its fingers in its saliva and draws patterns on trees in forests.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 63
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 72
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 946,
+  name: "bramblin",
+  nameZh: "纳噬草",
+  types: ["grass", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/946.png",
+  height: 6,
+  weight: 6,
+  abilities: ["乘风(wind-rider)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "滚草宝可梦",
+  description: "A soul unable to move on to the afterlife was blown around by the wind until it got tangled up with dried grass and became a Pokémon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 35
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 947,
+  name: "brambleghast",
+  nameZh: "怖纳噬草",
+  types: ["grass", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/947.png",
+  height: 12,
+  weight: 60,
+  abilities: ["乘风(wind-rider)", "穿透(infiltrator)"],
+  hiddenAbilities: ["穿透(infiltrator)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "滚草宝可梦",
+  description: "It will open the branches of its head to envelop its prey. Once it absorbs all the life energy it needs, it expels the prey and discards it.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 948,
+  name: "toedscool",
+  nameZh: "原野水母",
+  types: ["ground", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/948.png",
+  height: 9,
+  weight: 330,
+  abilities: ["菌丝之力(mycelium-might)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "木耳宝可梦",
+  description: "Toedscool lives in muggy forests. The flaps that fall from its body are chewy and very delicious.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 40
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 35
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 949,
+  name: "toedscruel",
+  nameZh: "陆地水母",
+  types: ["ground", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/949.png",
+  height: 19,
+  weight: 580,
+  abilities: ["菌丝之力(mycelium-might)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "木耳宝可梦",
+  description: "These Pokémon gather into groups and form colonies deep within forests. They absolutely hate it when strangers approach.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 80
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 950,
+  name: "klawf",
+  nameZh: "毛崖蟹",
+  types: ["rock"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/950.png",
+  height: 13,
+  weight: 790,
+  abilities: ["愤怒甲壳(anger-shell)", "硬壳盔甲(shell-armor)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "埋伏宝可梦",
+  description: "Klawf hangs upside-down from cliffs, waiting for prey. But Klawf can’t remain in this position for long because its blood rushes to its head.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 951,
+  name: "capsakid",
+  nameZh: "热辣娃",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/951.png",
+  height: 3,
+  weight: 30,
+  abilities: ["叶绿素(chlorophyll)", "不眠(insomnia)", "笨拙(klutz)"],
+  hiddenAbilities: ["笨拙(klutz)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "热辣宝可梦",
+  description: "The more sunlight this Pokémon bathes in, the more spicy chemicals are produced by its body, and thus the spicier its moves become.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 62
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 62
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 952,
+  name: "scovillain",
+  nameZh: "狠辣椒",
+  types: ["grass", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/952.png",
+  height: 9,
+  weight: 150,
+  abilities: ["叶绿素(chlorophyll)", "不眠(insomnia)", "心情不定(moody)"],
+  hiddenAbilities: ["心情不定(moody)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "热辣宝可梦",
+  description: "The red head converts spicy chemicals into fire energy and blasts the surrounding area with a super spicy stream of flame.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 108
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 108
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 953,
+  name: "rellor",
+  nameZh: "虫滚泥",
+  types: ["bug"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/953.png",
+  height: 2,
+  weight: 10,
+  abilities: ["复眼(compound-eyes)", "蜕皮(shed-skin)"],
+  hiddenAbilities: ["蜕皮(shed-skin)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "滚动宝可梦",
+  description: "This Pokémon creates a mud ball by mixing sand and dirt with psychic energy. It treasures its mud ball more than its own life.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 41
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 31
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 58
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 30
+}]
+},
+  {
+  id: 954,
+  name: "rabsca",
+  nameZh: "虫甲圣",
+  types: ["bug", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/954.png",
+  height: 3,
+  weight: 35,
+  abilities: ["同步(synchronize)", "心灵感应(telepathy)"],
+  hiddenAbilities: ["心灵感应(telepathy)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "滚动宝可梦",
+  description: "The body that supports the ball barely moves. Therefore, it is thought that the true body of this Pokémon is actually inside the ball.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 75
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 115
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 955,
+  name: "flittle",
+  nameZh: "飘飘雏",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/955.png",
+  height: 2,
+  weight: 15,
+  abilities: ["危险预知(anticipation)", "察觉(frisk)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "褶边宝可梦",
+  description: "Flittle’s toes levitate about half an inch above the ground because of the psychic power emitted from the frills on the Pokémon’s belly.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 30
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 30
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 30
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 956,
+  name: "espathra",
+  nameZh: "超能艳鸵",
+  types: ["psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/956.png",
+  height: 19,
+  weight: 900,
+  abilities: ["跟风(opportunist)", "察觉(frisk)", "加速(speed-boost)"],
+  hiddenAbilities: ["加速(speed-boost)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "鸵鸟宝可梦",
+  description: "It immobilizes opponents by bathing them in psychic power from its large eyes. Despite its appearance, it has a vicious temperament.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 95
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 101
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 105
+}]
+},
+  {
+  id: 957,
+  name: "tinkatink",
+  nameZh: "小锻匠",
+  types: ["fairy", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/957.png",
+  height: 4,
+  weight: 89,
+  abilities: ["破格(mold-breaker)", "我行我素(own-tempo)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "锤炼宝可梦",
+  description: "It swings its handmade hammer around to protect itself, but the hammer is often stolen by Pokémon that eat metal.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 64
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 58
+}]
+},
+  {
+  id: 958,
+  name: "tinkatuff",
+  nameZh: "巧锻匠",
+  types: ["fairy", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/958.png",
+  height: 7,
+  weight: 591,
+  abilities: ["破格(mold-breaker)", "我行我素(own-tempo)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "锤子宝可梦",
+  description: "This Pokémon will attack groups of Pawniard and Bisharp, gathering metal from them in order to create a large and sturdy hammer.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 82
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 78
+}]
+},
+  {
+  id: 959,
+  name: "tinkaton",
+  nameZh: "巨锻匠",
+  types: ["fairy", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/959.png",
+  height: 7,
+  weight: 1128,
+  abilities: ["破格(mold-breaker)", "我行我素(own-tempo)", "顺手牵羊(pickpocket)"],
+  hiddenAbilities: ["顺手牵羊(pickpocket)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "锤子宝可梦",
+  description: "This intelligent Pokémon has a very daring disposition. It knocks rocks into the sky with its hammer, aiming for flying Corviknight.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 77
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 94
+}]
+},
+  {
+  id: 960,
+  name: "wiglett",
+  nameZh: "海地鼠",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/960.png",
+  height: 12,
+  weight: 18,
+  abilities: ["黏滑(gooey)", "胆怯(rattled)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "糯鳗宝可梦",
+  description: "This Pokémon can pick up the scent of a Veluza just over 65 feet away and will hide itself in the sand.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 10
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 25
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 25
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 95
+}]
+},
+  {
+  id: 961,
+  name: "wugtrio",
+  nameZh: "三海地鼠",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/961.png",
+  height: 12,
+  weight: 54,
+  abilities: ["黏滑(gooey)", "胆怯(rattled)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "糯鳗宝可梦",
+  description: "It has a vicious temperament, contrary to what its appearance may suggest. It wraps its long bodies around prey, then drags the prey into its den.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 35
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 50
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 120
+}]
+},
+  {
+  id: 962,
+  name: "bombirdier",
+  nameZh: "下石鸟",
+  types: ["flying", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/962.png",
+  height: 15,
+  weight: 429,
+  abilities: ["健壮胸肌(big-pecks)", "锐利目光(keen-eye)", "搬岩(rocky-payload)"],
+  hiddenAbilities: ["搬岩(rocky-payload)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "掉东西宝可梦",
+  description: "It gathers things up in an apron made from shed feathers added to the Pokémon’s chest feathers, then drops those things from high places for fun.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 103
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 82
+}]
+},
+  {
+  id: 963,
+  name: "finizen",
+  nameZh: "波普海豚",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/963.png",
+  height: 13,
+  weight: 602,
+  abilities: ["水幕(water-veil)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "海豚宝可梦",
+  description: "It likes playing with others of its kind using the water ring on its tail. It uses ultrasonic waves to sense the emotions of other living creatures.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 40
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 964,
+  name: "palafin-zero",
+  nameZh: "海豚侠",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/964.png",
+  height: 13,
+  weight: 602,
+  abilities: ["全能变身(zero-to-hero)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "海豚宝可梦",
+  description: "This Pokémon changes its appearance if it hears its allies calling for help. Palafin will never show anybody its moment of transformation.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 72
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 62
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 965,
+  name: "varoom",
+  nameZh: "噗隆隆",
+  types: ["steel", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/965.png",
+  height: 10,
+  weight: 350,
+  abilities: ["防尘(overcoat)", "慢启动(slow-start)"],
+  hiddenAbilities: ["慢启动(slow-start)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "单汽缸宝可梦",
+  description: "It is said that this Pokémon was born when an unknown poison Pokémon entered and inspirited an engine left at a scrap-processing factory.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 63
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 47
+}]
+},
+  {
+  id: 966,
+  name: "revavroom",
+  nameZh: "普隆隆姆",
+  types: ["steel", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/966.png",
+  height: 18,
+  weight: 1200,
+  abilities: ["防尘(overcoat)", "过滤(filter)"],
+  hiddenAbilities: ["过滤(filter)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "多汽缸宝可梦",
+  description: "It creates a gas out of poison and minerals from rocks. It then detonates the gas in its cylinders—now numbering eight—to generate energy.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 119
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 54
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 67
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 967,
+  name: "cyclizar",
+  nameZh: "摩托蜥",
+  types: ["dragon", "normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/967.png",
+  height: 16,
+  weight: 630,
+  abilities: ["蜕皮(shed-skin)", "再生力(regenerator)"],
+  hiddenAbilities: ["再生力(regenerator)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "坐骑宝可梦",
+  description: "Apparently Cyclizar has been allowing people to ride on its back since ancient times. Depictions of this have been found in 10,000-year-old murals.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 121
+}]
+},
+  {
+  id: 968,
+  name: "orthworm",
+  nameZh: "拖拖蚓",
+  types: ["steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/968.png",
+  height: 25,
+  weight: 3100,
+  abilities: ["食土(earth-eater)", "沙隐(sand-veil)"],
+  hiddenAbilities: ["沙隐(sand-veil)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "蚯蚓宝可梦",
+  description: "When attacked, this Pokémon will wield the tendrils on its body like fists and pelt the opponent with a storm of punches.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 70
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 145
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 65
+}]
+},
+  {
+  id: 969,
+  name: "glimmet",
+  nameZh: "晶光芽",
+  types: ["rock", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/969.png",
+  height: 7,
+  weight: 80,
+  abilities: ["毒满地(toxic-debris)", "腐蚀(corrosion)"],
+  hiddenAbilities: ["腐蚀(corrosion)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "矿石宝可梦",
+  description: "It absorbs nutrients from cave walls. The petals it wears are made of crystallized poison.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 48
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 35
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 42
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 105
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 970,
+  name: "glimmora",
+  nameZh: "晶光花",
+  types: ["rock", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/970.png",
+  height: 15,
+  weight: 450,
+  abilities: ["毒满地(toxic-debris)", "腐蚀(corrosion)"],
+  hiddenAbilities: ["腐蚀(corrosion)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "矿石宝可梦",
+  description: "When this Pokémon detects danger, it will open up its crystalline petals and fire beams from its conical body.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 83
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 81
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 86
+}]
+},
+  {
+  id: 971,
+  name: "greavard",
+  nameZh: "墓仔狗",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/971.png",
+  height: 6,
+  weight: 350,
+  abilities: ["捡拾(pickup)", "毛茸茸(fluffy)"],
+  hiddenAbilities: ["毛茸茸(fluffy)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "鬼犬宝可梦",
+  description: "It is said that a dog Pokémon that died in the wild without ever interacting with a human was reborn as this Pokémon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 50
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 61
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 34
+}]
+},
+  {
+  id: 972,
+  name: "houndstone",
+  nameZh: "墓扬犬",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/972.png",
+  height: 20,
+  weight: 150,
+  abilities: ["拨沙(sand-rush)", "毛茸茸(fluffy)"],
+  hiddenAbilities: ["毛茸茸(fluffy)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "鬼犬宝可梦",
+  description: "Houndstone spends most of its time sleeping in graveyards. Among all the dog Pokémon, this one is most loyal to its master.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 72
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 101
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 97
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 68
+}]
+},
+  {
+  id: 973,
+  name: "flamigo",
+  nameZh: "纏红鹤",
+  types: ["flying", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/973.png",
+  height: 16,
+  weight: 370,
+  abilities: ["胆量(scrappy)", "蹒跚(tangled-feet)", "同台共演(costar)"],
+  hiddenAbilities: ["同台共演(costar)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "同步宝可梦",
+  description: "This Pokémon apparently ties the base of its neck into a knot so that energy stored in its belly does not escape from its beak.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 82
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 74
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 64
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 974,
+  name: "cetoddle",
+  nameZh: "走鲸",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/974.png",
+  height: 12,
+  weight: 450,
+  abilities: ["厚脂肪(thick-fat)", "雪隐(snow-cloak)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "陆鲸宝可梦",
+  description: "This species left the ocean and began living on land a very long time ago. It seems to be closely related to Wailmer.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 108
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 68
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 30
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 40
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 43
+}]
+},
+  {
+  id: 975,
+  name: "cetitan",
+  nameZh: "浩大鲸",
+  types: ["ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/975.png",
+  height: 45,
+  weight: 7000,
+  abilities: ["厚脂肪(thick-fat)", "拨雪(slush-rush)", "强行(sheer-force)"],
+  hiddenAbilities: ["强行(sheer-force)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "陆鲸宝可梦",
+  description: "This Pokémon wanders around snowy, icy areas. It protects its body with powerful muscles and a thick layer of fat under its skin.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 170
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 113
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 65
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 55
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 73
+}]
+},
+  {
+  id: 976,
+  name: "veluza",
+  nameZh: "轻身鳕",
+  types: ["water", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/976.png",
+  height: 25,
+  weight: 900,
+  abilities: ["破格(mold-breaker)", "锋锐(sharpness)"],
+  hiddenAbilities: ["锋锐(sharpness)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "卸除宝可梦",
+  description: "When Veluza discards unnecessary flesh, its mind becomes honed and its psychic power increases. The spare flesh has a mild but delicious flavor.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 102
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 73
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 78
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 977,
+  name: "dondozo",
+  nameZh: "吃吼霸",
+  types: ["water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/977.png",
+  height: 120,
+  weight: 2200,
+  abilities: ["纯朴(unaware)", "迟钝(oblivious)", "水幕(water-veil)"],
+  hiddenAbilities: ["水幕(water-veil)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "大鲶宝可梦",
+  description: "This Pokémon is a glutton, but it’s bad at getting food. It teams up with a Tatsugiri to catch prey.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 150
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 35
+}]
+},
+  {
+  id: 978,
+  name: "tatsugiri-curly",
+  nameZh: "米立龙",
+  types: ["dragon", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/978.png",
+  height: 3,
+  weight: 80,
+  abilities: ["发号施令(commander)", "引水(storm-drain)"],
+  hiddenAbilities: ["引水(storm-drain)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "拟态宝可梦",
+  description: "This is a small dragon Pokémon. It lives inside the mouth of Dondozo to protect itself from enemies on the outside.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 68
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 50
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 95
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 82
+}]
+},
+  {
+  id: 979,
+  name: "annihilape",
+  nameZh: "弃世猴",
+  types: ["fighting", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/979.png",
+  height: 12,
+  weight: 560,
+  abilities: ["干劲(vital-spirit)", "精神力(inner-focus)", "不服输(defiant)"],
+  hiddenAbilities: ["不服输(defiant)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "愤怒猴宝可梦",
+  description: "When its anger rose beyond a critical point, this Pokémon gained power that is unfettered by the limits of its physical body.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 110
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 90
+}]
+},
+  {
+  id: 980,
+  name: "clodsire",
+  nameZh: "土王",
+  types: ["poison", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/980.png",
+  height: 18,
+  weight: 2230,
+  abilities: ["毒刺(poison-point)", "储水(water-absorb)", "纯朴(unaware)"],
+  hiddenAbilities: ["纯朴(unaware)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "刺鱼宝可梦",
+  description: "When attacked, this Pokémon will retaliate by sticking thick spines out from its body. It’s a risky move that puts everything on the line.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 130
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 20
+}]
+},
+  {
+  id: 981,
+  name: "farigiraf",
+  nameZh: "奇麒麟",
+  types: ["normal", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/981.png",
+  height: 32,
+  weight: 1600,
+  abilities: ["反刍(cud-chew)", "尾甲(armor-tail)", "食草(sap-sipper)"],
+  hiddenAbilities: ["食草(sap-sipper)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "长颈宝可梦",
+  description: "Now that the brain waves from the head and tail are synced up, the psychic power of this Pokémon is 10 times stronger than Girafarig’s.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 120
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 90
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 110
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 982,
+  name: "dudunsparce-two-segment",
+  nameZh: "土龙节节",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/982.png",
+  height: 36,
+  weight: 392,
+  abilities: ["天恩(serene-grace)", "逃跑(run-away)", "胆怯(rattled)"],
+  hiddenAbilities: ["胆怯(rattled)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "地蛇宝可梦",
+  description: "This Pokémon uses its hard tail to make its nest by boring holes into bedrock deep underground. The nest can reach lengths of over six miles.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 125
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 100
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 75
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 983,
+  name: "kingambit",
+  nameZh: "仆刀将军",
+  types: ["dark", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/983.png",
+  height: 20,
+  weight: 1200,
+  abilities: ["不服输(defiant)", "大将(supreme-overlord)", "压迫感(pressure)"],
+  hiddenAbilities: ["压迫感(pressure)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "大刀宝可梦",
+  description: "Only a Bisharp that stands above all others in its vast army can evolve into Kingambit.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 984,
+  name: "great-tusk",
+  nameZh: "雄伟牙",
+  types: ["ground", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/984.png",
+  height: 22,
+  weight: 3200,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "Sightings of this Pokémon have occurred in recent years. The name Great Tusk was taken from a creature listed in a certain book.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 115
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 131
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 131
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 53
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 53
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 87
+}]
+},
+  {
+  id: 985,
+  name: "scream-tail",
+  nameZh: "吼叫尾",
+  types: ["fairy", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/985.png",
+  height: 12,
+  weight: 80,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "There has been only one reported sighting of this Pokémon. It resembles a mysterious creature depicted in an old expedition journal.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 115
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 99
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 111
+}]
+},
+  {
+  id: 986,
+  name: "brute-bonnet",
+  nameZh: "猛恶菇",
+  types: ["grass", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/986.png",
+  height: 12,
+  weight: 210,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "It is possible that the creature listed as Brute Bonnet in a certain book could actually be this Pokémon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 111
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 127
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 99
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 79
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 99
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 987,
+  name: "flutter-mane",
+  nameZh: "振翼发",
+  types: ["ghost", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/987.png",
+  height: 14,
+  weight: 40,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "This Pokémon has characteristics similar to those of Flutter Mane, a creature mentioned in a certain book.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 55
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 55
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 135
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 135
+}]
+},
+  {
+  id: 988,
+  name: "slither-wing",
+  nameZh: "爬地翅",
+  types: ["bug", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/988.png",
+  height: 32,
+  weight: 920,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "This mysterious Pokémon has some similarities to a creature that an old book introduced as Slither Wing.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 79
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 105
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 81
+}]
+},
+  {
+  id: 989,
+  name: "sandy-shocks",
+  nameZh: "沙铁皮",
+  types: ["electric", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/989.png",
+  height: 23,
+  weight: 600,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "It slightly resembles a Magneton that lived for 10,000 years and was featured in an article in a paranormal magazine.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 81
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 97
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 121
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 101
+}]
+},
+  {
+  id: 990,
+  name: "iron-treads",
+  nameZh: "铁轍迹",
+  types: ["ground", "steel"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/990.png",
+  height: 9,
+  weight: 2400,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "This Pokémon closely resembles a scientific weapon that a paranormal magazine claimed was sent to this planet by aliens.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 112
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 120
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 72
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 106
+}]
+},
+  {
+  id: 991,
+  name: "iron-bundle",
+  nameZh: "铁包袱",
+  types: ["ice", "water"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/991.png",
+  height: 6,
+  weight: 110,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "Its shape is similar to a robot featured in a paranormal magazine article. The robot was said to have been created by an ancient civilization.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 56
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 114
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 124
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 136
+}]
+},
+  {
+  id: 992,
+  name: "iron-hands",
+  nameZh: "铁臂膀",
+  types: ["fighting", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/992.png",
+  height: 18,
+  weight: 3807,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "It is very similar to a cyborg covered exclusively by a paranormal magazine. The cyborg was said to be the modified form of a certain athlete.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 154
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 140
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 108
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 50
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 68
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 993,
+  name: "iron-jugulis",
+  nameZh: "铁脖颈",
+  types: ["dark", "flying"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/993.png",
+  height: 13,
+  weight: 1110,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "It resembles a certain Pokémon introduced in a paranormal magazine, described as the offspring of a Hydreigon that fell in love with a robot.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 94
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 86
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 122
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 108
+}]
+},
+  {
+  id: 994,
+  name: "iron-moth",
+  nameZh: "铁毒蛾",
+  types: ["fire", "poison"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/994.png",
+  height: 12,
+  weight: 360,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "This Pokémon resembles an unknown object described in a paranormal magazine as a UFO sent to observe humanity.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 70
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 60
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 140
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 110
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 995,
+  name: "iron-thorns",
+  nameZh: "铁荆棘",
+  types: ["rock", "electric"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/995.png",
+  height: 16,
+  weight: 3030,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "It has some similarities to a Pokémon introduced in a dubious magazine as a Tyranitar from one billion years into the future.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 134
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 84
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 72
+}]
+},
+  {
+  id: 996,
+  name: "frigibax",
+  nameZh: "凉脊龙",
+  types: ["dragon", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/996.png",
+  height: 5,
+  weight: 170,
+  abilities: ["热交换(thermal-exchange)", "冰冻之躯(ice-body)"],
+  hiddenAbilities: ["冰冻之躯(ice-body)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "冰鳍宝可梦",
+  description: "Frigibax absorbs heat through its dorsal fin and converts the heat into ice energy. The higher the temperature, the more energy Frigibax stores.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 65
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 35
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 45
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 55
+}]
+},
+  {
+  id: 997,
+  name: "arctibax",
+  nameZh: "冻脊龙",
+  types: ["dragon", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/997.png",
+  height: 8,
+  weight: 300,
+  abilities: ["热交换(thermal-exchange)", "冰冻之躯(ice-body)"],
+  hiddenAbilities: ["冰冻之躯(ice-body)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "冰鳍宝可梦",
+  description: "Arctibax freezes the air around it, protecting its face with an ice mask and turning its dorsal fin into a blade of ice.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 95
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 66
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 45
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 62
+}]
+},
+  {
+  id: 998,
+  name: "baxcalibur",
+  nameZh: "戟脊龙",
+  types: ["dragon", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/998.png",
+  height: 21,
+  weight: 2100,
+  abilities: ["热交换(thermal-exchange)", "冰冻之躯(ice-body)"],
+  hiddenAbilities: ["冰冻之躯(ice-body)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "冰龙宝可梦",
+  description: "This Pokémon blasts cryogenic air out from its mouth. This air can instantly freeze even liquid-hot lava.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 115
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 145
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 92
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 86
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 87
+}]
+},
+  {
+  id: 999,
+  name: "gimmighoul",
+  nameZh: "索财灵",
+  types: ["ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/999.png",
+  height: 3,
+  weight: 50,
+  abilities: ["胆怯(rattled)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝箱宝可梦",
+  description: "This Pokémon was born inside a treasure chest about 1,500 years ago. It sucks the life-force out of scoundrels who try to steal the treasure.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 45
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 30
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 70
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 75
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 70
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 10
+}]
+},
+  {
+  id: 1000,
+  name: "gholdengo",
+  nameZh: "赛富豪",
+  types: ["steel", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1000.png",
+  height: 12,
+  weight: 300,
+  abilities: ["黄金之躯(good-as-gold)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝者宝可梦",
+  description: "Its body seems to be made up of 1,000 coins. This Pokémon gets along well with others and is quick to make friends with anybody.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 87
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 95
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 133
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 91
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 84
+}]
+},
+  {
+  id: 1001,
+  name: "wo-chien",
+  nameZh: "古简蜗",
+  types: ["dark", "grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1001.png",
+  height: 15,
+  weight: 742,
+  abilities: ["灾祸之简(tablets-of-ruin)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "灾厄宝可梦",
+  description: "The grudge of a person punished for writing the king’s evil deeds upon wooden tablets has clad itself in dead leaves to become a Pokémon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 85
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 135
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 1002,
+  name: "chien-pao",
+  nameZh: "古剑豹",
+  types: ["dark", "ice"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1002.png",
+  height: 19,
+  weight: 1522,
+  abilities: ["灾祸之剑(sword-of-ruin)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "灾厄宝可梦",
+  description: "This Pokémon can control 100 tons of fallen snow. It plays around innocently by leaping in and out of avalanches it has caused.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 90
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 135
+}]
+},
+  {
+  id: 1003,
+  name: "ting-lu",
+  nameZh: "古鼎鹿",
+  types: ["dark", "ground"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1003.png",
+  height: 27,
+  weight: 6997,
+  abilities: ["灾祸之鼎(vessel-of-ruin)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "灾厄宝可梦",
+  description: "The fear poured into an ancient ritual vessel has clad itself in rocks and dirt to become a Pokémon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 155
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 110
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 125
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 45
+}]
+},
+  {
+  id: 1004,
+  name: "chi-yu",
+  nameZh: "古玉鱼",
+  types: ["dark", "fire"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1004.png",
+  height: 4,
+  weight: 49,
+  abilities: ["灾祸之玉(beads-of-ruin)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "灾厄宝可梦",
+  description: "It controls flames burning at over 5,400 degrees Fahrenheit. It casually swims through the sea of lava it creates by melting rock and sand.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 55
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 120
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 100
+}]
+},
+  {
+  id: 1005,
+  name: "roaring-moon",
+  nameZh: "轰鸣月",
+  types: ["dragon", "dark"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1005.png",
+  height: 20,
+  weight: 3800,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "It is possible that this is the creature listed as Roaring Moon in an expedition journal that still holds many mysteries.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 139
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 71
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 55
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 101
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 119
+}]
+},
+  {
+  id: 1006,
+  name: "iron-valiant",
+  nameZh: "铁武者",
+  types: ["fairy", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1006.png",
+  height: 14,
+  weight: 350,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "It has some similarities to a mad scientist’s invention covered in a paranormal magazine.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 74
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 90
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 60
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 116
+}]
+},
+  {
+  id: 1007,
+  name: "koraidon",
+  nameZh: "故勒顿",
+  types: ["fighting", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1007.png",
+  height: 25,
+  weight: 3030,
+  abilities: ["绯红脉动(orichalcum-pulse)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "This seems to be the Winged King mentioned in an old expedition journal. It was said to have split the land with its bare fists.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 135
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 85
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 100
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 135
+}]
+},
+  {
+  id: 1008,
+  name: "miraidon",
+  nameZh: "密勒顿",
+  types: ["electric", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1008.png",
+  height: 35,
+  weight: 2400,
+  abilities: ["强子引擎(hadron-engine)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "Much remains unknown about this creature. It resembles Cyclizar, but it is far more ruthless and powerful.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 100
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 85
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 135
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 115
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 135
+}]
+},
+  {
+  id: 1009,
+  name: "walking-wake",
+  nameZh: "波荡水",
+  types: ["water", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1009.png",
+  height: 35,
+  weight: 2800,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "This ferocious creature is shrouded in mystery. It's named after an aquatic monster mentioned in an old expedition journal.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 99
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 83
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 91
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 83
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 109
+}]
+},
+  {
+  id: 1010,
+  name: "iron-leaves",
+  nameZh: "铁斑叶",
+  types: ["grass", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1010.png",
+  height: 15,
+  weight: 1250,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "悖谬宝可梦",
+  description: "Many of its physical characteristics match those of a Virizion from the future that was covered in a paranormal magazine.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 130
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 88
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 108
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 104
+}]
+},
+  {
+  id: 1011,
+  name: "dipplin",
+  nameZh: "裹蜜虫",
+  types: ["grass", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1011.png",
+  height: 4,
+  weight: 97,
+  abilities: ["甘露之蜜(supersweet-syrup)", "贪吃鬼(gluttony)", "黏着(sticky-hold)"],
+  hiddenAbilities: ["黏着(sticky-hold)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "Dipplin is two creatures in one Pokémon. Its evolution was triggered by a special apple grown only in one place.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 95
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 40
+}]
+},
+  {
+  id: 1012,
+  name: "poltchageist",
+  nameZh: "斯魔茶",
+  types: ["grass", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1012.png",
+  height: 1,
+  weight: 11,
+  abilities: ["款待(hospitality)", "耐热(heatproof)"],
+  hiddenAbilities: ["耐热(heatproof)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "Supposedly, the regrets of a tea ceremony master who died before perfecting his craft lingered in some matcha and became a Pokémon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 40
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 45
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 45
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 74
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 54
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 50
+}]
+},
+  {
+  id: 1013,
+  name: "sinistcha",
+  nameZh: "来悲粗茶",
+  types: ["grass", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1013.png",
+  height: 2,
+  weight: 22,
+  abilities: ["款待(hospitality)", "耐热(heatproof)"],
+  hiddenAbilities: ["耐热(heatproof)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "It pretends to be tea, trying to fool people into drinking it so it can drain their life-force. Its ruse is generally unsuccessful.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 71
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 60
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 106
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 121
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 70
+}]
+},
+  {
+  id: 1014,
+  name: "okidogi",
+  nameZh: "够赞狗",
+  types: ["poison", "fighting"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1014.png",
+  height: 18,
+  weight: 922,
+  abilities: ["毒锁链(toxic-chain)", "看门犬(guard-dog)"],
+  hiddenAbilities: ["看门犬(guard-dog)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "After all its muscles were stimulated by the toxic chain around its neck, Okidogi transformed and gained a powerful physique.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 88
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 128
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 115
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 58
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 86
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 80
+}]
+},
+  {
+  id: 1015,
+  name: "munkidori",
+  nameZh: "愿增猿",
+  types: ["poison", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1015.png",
+  height: 10,
+  weight: 122,
+  abilities: ["毒锁链(toxic-chain)", "察觉(frisk)"],
+  hiddenAbilities: ["察觉(frisk)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "The chain is made from toxins that enhance capabilities. It stimulated Munkidori's brain and caused the Pokémon's psychic powers to bloom.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 88
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 75
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 66
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 130
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 90
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 106
+}]
+},
+  {
+  id: 1016,
+  name: "fezandipiti",
+  nameZh: "吉雉鸡",
+  types: ["poison", "fairy"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1016.png",
+  height: 14,
+  weight: 301,
+  abilities: ["毒锁链(toxic-chain)", "技术高手(technician)"],
+  hiddenAbilities: ["技术高手(technician)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "Fezandipiti owes its beautiful looks and lovely voice to the toxic stimulants emanating from the chain wrapped around its body.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 88
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 91
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 82
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 70
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 125
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 99
+}]
+},
+  {
+  id: 1017,
+  name: "ogerpon",
+  nameZh: "厄诡椪",
+  types: ["grass"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1017.png",
+  height: 12,
+  weight: 398,
+  abilities: ["不服输(defiant)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "This Pokémon's type changes based on which mask it's wearing. It confounds its enemies with nimble movements and kicks.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 80
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 84
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 60
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 96
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 110
+}]
+},
+  {
+  id: 1018,
+  name: "archaludon",
+  nameZh: "铝钢桥龙",
+  types: ["steel", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1018.png",
+  height: 20,
+  weight: 600,
+  abilities: ["持久力(stamina)", "结实(sturdy)", "坚毅(stalwart)"],
+  hiddenAbilities: ["坚毅(stalwart)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "It gathers static electricity from its surroundings. The beams it launches when down on all fours are tremendously powerful.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 105
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 130
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 125
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 65
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 85
+}]
+},
+  {
+  id: 1019,
+  name: "hydrapple",
+  nameZh: "蜜集大蛇",
+  types: ["grass", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1019.png",
+  height: 18,
+  weight: 930,
+  abilities: ["甘露之蜜(supersweet-syrup)", "再生力(regenerator)", "黏着(sticky-hold)"],
+  hiddenAbilities: ["黏着(sticky-hold)"],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "Seven syrpents live inside an apple made of syrup. The syrpent in the center is the commander.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 106
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 80
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 110
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 120
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 80
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 44
+}]
+},
+  {
+  id: 1020,
+  name: "gouging-fire",
+  nameZh: "破空焰",
+  types: ["fire", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1020.png",
+  height: 35,
+  weight: 5900,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "There are scant few reports of this creature being sighted. One short video shows it rampaging and spouting pillars of flame.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 105
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 115
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 121
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 93
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 91
+}]
+},
+  {
+  id: 1021,
+  name: "raging-bolt",
+  nameZh: "猛雷鼓",
+  types: ["electric", "dragon"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1021.png",
+  height: 52,
+  weight: 4800,
+  abilities: ["古代活性(protosynthesis)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "It's said to incinerate everything around it with lightning launched from its fur. Very little is known about this creature.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 125
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 73
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 91
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 137
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 89
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 75
+}]
+},
+  {
+  id: 1022,
+  name: "iron-boulder",
+  nameZh: "鐵磐岩",
+  types: ["rock", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1022.png",
+  height: 15,
+  weight: 1625,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "It resembles a Pokémon described in a dubious magazine as a Terrakion that had been modified by an evil organization.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 120
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 80
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 68
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 108
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 124
+}]
+},
+  {
+  id: 1023,
+  name: "iron-crown",
+  nameZh: "鐵頭殼",
+  types: ["steel", "psychic"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1023.png",
+  height: 16,
+  weight: 1560,
+  abilities: ["夸克充能(quark-drive)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "It resembles a mysterious object introduced in a paranormal magazine as a cutting-edge weapon shaped like a Cobalion.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 72
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 100
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 122
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 108
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 98
+}]
+},
+  {
+  id: 1024,
+  name: "terapagos",
+  nameZh: "太乐巴戈斯",
+  types: ["normal"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1024.png",
+  height: 2,
+  weight: 65,
+  abilities: ["太晶变形(tera-shift)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "Terapagos protects itself using its power to transform energy into hard crystals. This Pokémon is the source of the Terastal phenomenon.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 90
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 65
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 85
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 65
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 85
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 60
+}]
+},
+  {
+  id: 1025,
+  name: "pecharunt",
+  nameZh: "桃歹郎",
+  types: ["poison", "ghost"],
+  spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1025.png",
+  height: 3,
+  weight: 3,
+  abilities: ["毒傀儡(poison-puppeteer)"],
+  hiddenAbilities: [],
+  gen: 9,
+  region: "帕底亚",
+  genera: "宝可梦",
+  description: "It feeds others toxic mochi that draw out desires and capabilities. Those who eat the mochi fall under Pecharunt’s control, chained to its will.",
+  stats: [{
+  key: "hp",
+  nameZh: "HP",
+  value: 88
+}, {
+  key: "attack",
+  nameZh: "攻击",
+  value: 88
+}, {
+  key: "defense",
+  nameZh: "防御",
+  value: 160
+}, {
+  key: "special-attack",
+  nameZh: "特攻",
+  value: 88
+}, {
+  key: "special-defense",
+  nameZh: "特防",
+  value: 88
+}, {
+  key: "speed",
+  nameZh: "速度",
+  value: 88
+}]
+},
+]
+
+export const POKEMON_BY_ID: Record<number, PokemonFull> = Object.fromEntries(
+  POKEMON_DB.map((p) => [p.id, p]),
+)
+
+export const POKEMON_TOTAL = 1025
