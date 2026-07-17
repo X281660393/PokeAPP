@@ -16,4 +16,7 @@ export default defineConfig({
   },
   // Capacitor 会用 file:// 协议加载，生产构建需要相对路径
   base: './',
+  build: {
+  chunkSizeWarningLimit: 2000
+  }
 })
