@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <!-- 在线精灵图需允许外部图片源（PokeAPI sprites CDN） -->
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data:; font-src 'self' https://at.alicdn.com; img-src 'self' data: https://raw.githubusercontent.com https://*.githubusercontent.com; connect-src 'self' https://pokeapi.co https://raw.githubusercontent.com;"
-    />
-    <link rel="icon" type="image/svg+xml" href="/pokeball.svg" />
-    <!-- Viewport for mobile -->
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
-    />
-    <title>宝可梦小图鉴</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- 在线精灵图需允许外部图片源（PokeAPI sprites CDN） -->
+  <meta http-equiv="Content-Security-Policy"
+    content="default-src 'self' 'unsafe-inline' 'unsafe-eval' data:; font-src 'self' https://at.alicdn.com; img-src 'self' data: https://raw.githubusercontent.com https://*.githubusercontent.com; connect-src 'self' https://pokeapi.co https://raw.githubusercontent.com;" />
+  <link rel="icon" type="image/svg+xml" href="/pokeball.svg" />
+  <!-- Viewport for mobile -->
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>宝可梦小图鉴</title>
+</head>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
 </html>

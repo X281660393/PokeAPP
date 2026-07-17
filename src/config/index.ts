@@ -60,11 +60,11 @@ export interface AppConfig {
 
 export const APP_CONFIG: AppConfig = {
   name: '宝可梦小图鉴',
-  version: '1.0.0',
+  version: '1.0.1',
   author: '悄悄取名',
   email: '281660393@qq.com',
   dataSource: 'PokeAPI',
-  dataVersion: '2026.07.1',
+  dataVersion: '2026.07.18',
   update: {
     enabled: true,
     checkUrl: '',
