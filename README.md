@@ -113,6 +113,13 @@ PokeAPP/
 
 本项目仅用于学习交流。宝可梦（Pokémon）相关名称、形象版权归 Nintendo / Game Freak / The Pokémon Company 所有。
 
+## 📮 问题反馈
+
+使用中遇到问题、有建议或发现数据错误，欢迎反馈：
+
+- **📧 邮箱**：[281660393@qq.com](mailto:281660393@qq.com)
+- 反馈时请尽量附上：设备 / 浏览器信息、问题截图、复现步骤，方便快速定位。
+
 ---
 
 <div align="center">

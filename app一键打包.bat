@@ -34,6 +34,8 @@ if not defined JDK_HOME (
   )
 )
 set "JAVA_HOME=%JDK_HOME%"
+REM 关键：把 jdk-21 的 bin 强制放到 PATH 最前面，确保 gradle 用 jdk-21 而非 PATH 里的 JDK17
+set "PATH=%JAVA_HOME%\bin;%PATH%"
 set "GRADLE_USER_HOME=%USERPROFILE%\.gradle"
 echo [OK] JDK: %JAVA_HOME%
 
