@@ -9,6 +9,7 @@ import {
   type MoveMethod,
 } from '@/data/relations'
 import { MOVE_DB } from '@/data/moves/pokemon-moves'
+import type { MoveDesc } from '@/data/moves/pokemon-move-descriptions'
 import { TypeBadge, SearchBox, TypeFilterTag } from '@/components'
 
 const CAT_LABEL: Record<string, string> = {
@@ -16,9 +17,6 @@ const CAT_LABEL: Record<string, string> = {
   special: '特殊',
   status: '变化',
 }
-/** 分类排序权重：物理/特殊 在前，变化 置后 */
-const CAT_ORDER: Record<string, number> = { physical: 0, special: 1, status: 2 }
-
 const route = useRoute()
 const router = useRouter()
 
@@ -38,22 +36,17 @@ const filtered = computed(() => {
   if (q) list = list.filter((m) => m.info.nameZh.includes(q) || m.key.includes(q.toLowerCase()))
   if (selectedType.value) list = list.filter((m) => m.info.type === selectedType.value)
   if (selectedCat.value) list = list.filter((m) => m.info.category === selectedCat.value)
-  // 排序优化：①分类（物理/特殊→变化）②威力降序 ③中文名稳定排序
-  return list
-    .slice()
-    .sort((a, b) => {
-      const ca = CAT_ORDER[a.info.category] ?? 9
-      const cb = CAT_ORDER[b.info.category] ?? 9
-      if (ca !== cb) return ca - cb
-      const pa = a.info.power ?? -1
-      const pb = b.info.power ?? -1
-      if (pa !== pb) return pb - pa
-      return a.info.nameZh.localeCompare(b.info.nameZh, 'zh-Hans-CN')
-    })
+  // 按数据文件（MOVE_DB）原样顺序输出，不做额外排序
+  return list.slice()
 })
 
 const selectedMove = computed(() =>
   selectedKey.value ? MOVE_LIST.find((m) => m.key === selectedKey.value) ?? null : null,
+)
+/** 招式「介绍/技能效果」中文数据（懒加载，避免放大包体） */
+const moveDescMap = ref<Record<string, MoveDesc>>({})
+const moveDesc = computed<MoveDesc | null>(() =>
+  selectedKey.value ? (moveDescMap.value[selectedKey.value] ?? null) : null,
 )
 const learners = computed(() =>
   selectedKey.value ? getMoveLearners(selectedKey.value) : [],
@@ -68,8 +61,41 @@ function resetFilters() {
   selectedType.value = ''
   selectedCat.value = ''
 }
+/** 打开详情前记录的列表滚动位置，用于返回时还原（不置顶） */
+let savedScrollY = 0
+/** 取当前真实滚动位置（兼容 WebView / 不同滚动根） */
+function getScrollTop(): number {
+  return (
+    window.scrollY ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop ||
+    0
+  )
+}
+/** 返回列表后还原滚动位置：等列表重新渲染、高度稳定后再滚动 */
+function restoreScroll() {
+  const top = savedScrollY
+  if (!top) return
+  const doScroll = () => {
+    const root = document.scrollingElement || document.documentElement
+    if (root.scrollHeight >= top) {
+      window.scrollTo({ top })
+      return true
+    }
+    return false
+  }
+  requestAnimationFrame(() => {
+    if (!doScroll()) {
+      requestAnimationFrame(doScroll)
+      setTimeout(doScroll, 150)
+    }
+  })
+}
 function openMove(key: string) {
+  savedScrollY = getScrollTop()
   selectedKey.value = key
+  // 写入 URL，使历史记录选中态；从「相关」跳走再返回时可还原详情
+  router.push({ query: { key } })
 }
 /** 点击「可学习宝可梦」跳转详情页 */
 function goPokemon(id: number) {
@@ -87,16 +113,30 @@ function scrollToTop() {
 onMounted(() => {
   window.addEventListener('scroll', onScroll, { passive: true })
   onScroll()
+  // 懒加载招式「介绍/技能效果」中文数据（与 MOVE_DB 解耦）
+  import('@/data/moves/pokemon-move-descriptions').then((m) => {
+    moveDescMap.value = m.MOVE_DESCRIPTIONS
+  })
 })
 onBeforeUnmount(() => {
   window.removeEventListener('scroll', onScroll)
 })
 
 // 支持通过 ?key= 深链直接打开招式详情（如场地/状态页关联招式跳转）
+// 同时：缺失 key 时清空选中，返回列表态也能正确还原
+// 从详情返回列表时，还原打开前的滚动位置（不置顶）
 watch(
   () => route.query.key,
   (k) => {
-    if (typeof k === 'string' && MOVE_DB[k]) selectedKey.value = k
+    if (typeof k === 'string' && MOVE_DB[k]) {
+      selectedKey.value = k
+    } else {
+      const wasDetail = selectedKey.value !== null
+      selectedKey.value = null
+      if (wasDetail) {
+        restoreScroll()
+      }
+    }
   },
   { immediate: true },
 )
@@ -232,6 +272,43 @@ watch(
           </div>
         </div>
       </div>
+
+      <!-- 技能效果（具体数值 additionalEffect 最前，其次 description + 机制列表 + 范围） -->
+      <section
+        v-if="moveDesc?.description || (moveDesc?.effect && moveDesc.effect.length) || moveDesc?.additionalEffect || moveDesc?.range"
+        class="ms-desc-block"
+      >
+        <h3 class="block-title">技能效果</h3>
+        <p
+          v-if="moveDesc.additionalEffect"
+          class="ms-add-effect"
+        >
+          {{ moveDesc.additionalEffect }}
+        </p>
+        <p
+          v-if="moveDesc.description"
+          class="ms-desc-text"
+        >
+          {{ moveDesc.description }}
+        </p>
+        <ul
+          v-if="moveDesc.effect && moveDesc.effect.length"
+          class="ms-effect-list"
+        >
+          <li
+            v-for="(e, i) in moveDesc.effect"
+            :key="i"
+          >
+            {{ e }}
+          </li>
+        </ul>
+        <p
+          v-if="moveDesc.range"
+          class="ms-range"
+        >
+          攻击范围：{{ moveDesc.range }}
+        </p>
+      </section>
 
       <h3 class="block-title">
         可学习宝可梦
@@ -469,14 +546,67 @@ watch(
   color: var(--poke-ink-3);
 }
 
-.block-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--poke-ink);
-  margin: 4px 0 10px;
-  padding-left: 10px;
-  border-left: 4px solid var(--poke-red);
+/* 介绍 / 技能效果 */
+.ms-desc-block {
+  margin-bottom: 14px;
 }
+.ms-desc-block:last-of-type {
+  margin-bottom: 6px;
+}
+/* 具体数值效果（麻痹概率 / 属性±几级 / 自身伤害）——最突出 */
+.ms-add-effect {
+  margin: 0 0 10px;
+  font-size: 14px;
+  line-height: 1.75;
+  font-weight: 600;
+  color: var(--poke-ink);
+  background: #fff3e0;
+  border-left: 3px solid var(--poke-red);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  padding: 10px 12px;
+  white-space: pre-line;
+}
+/* 游戏内标准说明——辅助，弱化 */
+.ms-desc-text {
+  margin: 0 0 10px;
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: var(--poke-ink-2);
+  background: var(--poke-cream);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+}
+.ms-effect-list {
+  margin: 0 0 10px;
+  padding: 4px 0 4px 4px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.ms-effect-list li {
+  position: relative;
+  padding-left: 16px;
+  font-size: 13px;
+  line-height: 1.6;
+  color: var(--poke-ink-2);
+}
+.ms-effect-list li::before {
+  content: '';
+  position: absolute;
+  left: 2px;
+  top: 8px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--poke-red);
+}
+.ms-range {
+  margin: 0;
+  font-size: 13px;
+  color: var(--poke-ink-3);
+}
+
 .ms-sub {
   font-size: 12px;
   font-weight: 400;

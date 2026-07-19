@@ -3,66 +3,75 @@ import type { StatusInfo } from '@/types'
 
 export const STATUS_DB: Record<string, StatusInfo> = {
   "poison": {
-  nameZh: "中毒",
-  color: "#A33EA1",
-  descZh: "陷入中毒的宝可梦每回合损失少量ＨＰ，直到战斗结束或解除。可由「毒刺」「孢子」等特性/招式引发。",
-  relatedAbilities: ["poison-point", "poison-touch", "effect-spore", "poison-heal", "toxic-boost", "merciless", "corrosion"],
-  relatedMoves: ["poison-jab", "poison-sting", "toxic", "sludge-bomb"]
-},
+    nameZh: "中毒",
+    color: "#A33EA1",
+    descZh: "陷入中毒的宝可梦每回合损失少量ＨＰ，直到战斗结束或解除。可由「毒刺」「孢子」等特性/招式引发。",
+    effectzh: "陷入中毒的宝可梦每回合损失最大ＨＰ的 1/8。可通过招式（如毒针、污泥炸弹、浊雾）、特性（如毒刺、孢子、毒手）或道具（如麻痹果）引发。拥有免疫、排毒等特性或使用解毒、全部解除等招式可解除。持续直到战斗结束或主动解除。",
+    relatedAbilities: ["poison-point", "poison-touch", "effect-spore", "poison-heal", "toxic-boost", "merciless", "corrosion"],
+    relatedMoves: ["poison-jab", "poison-sting", "toxic", "sludge-bomb"]
+  },
   "bad-poison": {
-  nameZh: "剧毒",
-  color: "#7B2CBF",
-  descZh: "剧毒会随回合逐渐加重，每回合损失ＨＰ持续增加，是比普通中毒更危险的持续伤害状态。",
-  relatedAbilities: ["toxic-debris", "poison-puppeteer"],
-  relatedMoves: ["toxic"]
-},
+    nameZh: "剧毒",
+    color: "#7B2CBF",
+    descZh: "剧毒会随回合逐渐加重，每回合损失ＨＰ持续增加，是比普通中毒更危险的持续伤害状态。",
+    effectzh: "剧毒每回合损失ＨＰ随回合逐渐加重：第 1 回合损失 1/16、之后每回合 +1/16，上限 15/16。由招式「剧毒」或特性「毒碎块」「毒傀儡」等引发。可通过全部解除、解毒等招式或免疫等特性解除；交换下场不会解除。",
+    relatedAbilities: ["toxic-debris", "poison-puppeteer"],
+    relatedMoves: ["toxic"]
+  },
   "paralysis": {
-  nameZh: "麻痹",
-  color: "#F7D02C",
-  descZh: "陷入麻痹的宝可梦速度下降，且每回合有概率无法行动。可由「静电」「闪电」等引发。",
-  relatedAbilities: ["static", "limber", "quick-feet"],
-  relatedMoves: ["thunder-wave", "thunderbolt", "glare", "stun-spore"]
-},
+    nameZh: "麻痹",
+    color: "#F7D02C",
+    descZh: "陷入麻痹的宝可梦速度下降，且每回合有概率无法行动。可由「静电」「闪电」等引发。",
+    effectzh: "陷入麻痹的宝可梦速度降为原本的 1/4；每回合有 25% 概率无法行动。可由特性（如静电）、招式（如电磁波、闪电、麻痹粉）或道具引发。拥有柔软、结实等特性可免疫。持续直到使用治愈铃声、全部解除等招式或交换下场后解除。",
+    relatedAbilities: ["static", "limber", "quick-feet"],
+    relatedMoves: ["thunder-wave", "thunderbolt", "glare", "stun-spore"]
+  },
   "burn": {
-  nameZh: "灼伤",
-  color: "#EE8130",
-  descZh: "陷入灼伤的宝可梦每回合损失少量ＨＰ，且物理招式威力减半。可由「火焰之躯」等引发。",
-  relatedAbilities: ["flame-body", "water-veil", "heatproof", "flare-boost", "thermal-exchange"],
-  relatedMoves: ["will-o-wisp", "ember", "fire-punch"]
-},
+    nameZh: "灼伤",
+    color: "#EE8130",
+    descZh: "陷入灼伤的宝可梦每回合损失少量ＨＰ，且物理招式威力减半。可由「火焰之躯」等引发。",
+    effectzh: "陷入灼伤的宝可梦每回合损失最大ＨＰ的 1/16；且使用的物理招式威力减半。可由特性（如火焰之躯）、招式（如鬼火、火花、喷射火焰）或道具（如火焰宝珠）引发。拥有水幕、热量储存等特性可免疫。持续直到全部解除、治愈铃声等解除或交换下场后解除。",
+    relatedAbilities: ["flame-body", "water-veil", "heatproof", "flare-boost", "thermal-exchange"],
+    relatedMoves: ["will-o-wisp", "ember", "fire-punch"]
+  },
   "freeze": {
-  nameZh: "冰冻",
-  color: "#96D9D6",
-  descZh: "陷入冰冻的宝可梦无法行动，直到解除。火属性招式或特定招式可解冻。可由「冰冻之风」等引发。",
-  relatedAbilities: ["magma-armor"],
-  relatedMoves: ["ice-beam", "blizzard", "icy-wind"]
-},
+    nameZh: "冰冻",
+    color: "#96D9D6",
+    descZh: "陷入冰冻的宝可梦无法行动，直到解除。火属性招式或特定招式可解冻。可由「冰冻之风」等引发。",
+    effectzh: "陷入冰冻的宝可梦完全无法行动。可由招式（如冰冻光束、暴风雪、冰冻之风）或特性（如降雪）引发。火属性招式（如喷射火焰）命中时、或使用「解除冰冻」等招式可解冻；第八世代起也会在固定回合后自行解冻。拥有熔岩铠甲、魔法防守等特性可免疫。",
+    relatedAbilities: ["magma-armor"],
+    relatedMoves: ["ice-beam", "blizzard", "icy-wind"]
+  },
   "sleep": {
-  nameZh: "睡眠",
-  color: "#9B8FB0",
-  descZh: "陷入睡眠的宝可梦在若干回合内无法行动，之后会自动醒来。可由「催眠粉」「灭亡之歌」等引发。",
-  relatedAbilities: ["insomnia", "vital-spirit", "early-bird", "sweet-veil", "comatose"],
-  relatedMoves: ["sleep-powder", "spore", "perish-song"]
-},
+    nameZh: "睡眠",
+    color: "#9B8FB0",
+    descZh: "陷入睡眠的宝可梦在若干回合内无法行动，之后会自动醒来。可由「催眠粉」「灭亡之歌」等引发。",
+    effectzh: "陷入睡眠的宝可梦在指定回合数（通常为 1~3 回合）内无法行动，之后自动醒来。可由招式（如催眠粉、孢子、灭亡之歌）或特性（如不眠）引发。拥有失眠、活力、早起、甜幕、假寐等特性可免疫或缩短。灭亡之歌会在第 3 回合结束时强制陷入昏厥。",
+    relatedAbilities: ["insomnia", "vital-spirit", "early-bird", "sweet-veil", "comatose"],
+    relatedMoves: ["sleep-powder", "spore", "perish-song"]
+  },
   "confusion": {
-  nameZh: "混乱",
-  color: "#B07CC6",
-  descZh: "陷入混乱的宝可梦每回合有概率攻击自己，也可能正常行动。可由「混乱光」等引发。",
-  relatedAbilities: ["own-tempo", "tangled-feet"],
-  relatedMoves: ["confuse-ray"]
-},
+    nameZh: "混乱",
+    color: "#B07CC6",
+    descZh: "陷入混乱的宝可梦每回合有概率攻击自己，也可能正常行动。可由「混乱光」等引发。",
+    effectzh: "陷入混乱的宝可梦每回合有约 33% 概率攻击自己（造成无属性的物理伤害，不享受属性加成）；其余回合可正常行动。混乱最多持续 4 回合后自动解除。可由招式（如混乱光、破坏光线）或特性引发；拥有我行我素、净体等特性可免疫。",
+    relatedAbilities: ["own-tempo", "tangled-feet"],
+    relatedMoves: ["confuse-ray"]
+  },
   "infatuation": {
-  nameZh: "着迷",
-  color: "#F95587",
-  descZh: "被着迷的宝可梦每回合有概率无法行动（因思念对手）。可由「迷人」等引发。",
-  relatedAbilities: ["oblivious", "cute-charm"],
-  relatedMoves: ["attract"]
-},
+    nameZh: "着迷",
+    color: "#F95587",
+    descZh: "被着迷的宝可梦每回合有概率无法行动（因思念对手）。可由「迷人」等引发。",
+    effectzh: "被着迷的宝可梦每回合有 50% 概率无法行动（因思念对手而无法做出指令）。可由招式（如迷人、灭亡之歌）或特性（如魅力身躯）引发。拥有自我意识、活力等特性可免疫。交换下场可解除着迷状态。",
+    relatedAbilities: ["oblivious", "cute-charm"],
+    relatedMoves: ["attract"]
+  },
   "flinch": {
-  nameZh: "畏缩",
-  color: "#C22E28",
-  descZh: "畏缩的宝可梦在本回合无法行动（仅当前回合）。多由「先制招式」或特定招式引发，拥有「不挠之剑」等可防畏缩。",
-  relatedAbilities: ["inner-focus", "steadfast", "dauntless-shield"],
-  relatedMoves: ["bite"]
-},
+    nameZh: "畏缩",
+    color: "#C22E28",
+    descZh: "畏缩的宝可梦在本回合无法行动（仅当前回合）。多由「先制招式」或特定招式引发，拥有「不挠之剑」等可防畏缩。",
+    effectzh: "畏缩的宝可梦在该回合无法行动，但只影响当前回合、不会持续到下一回合。多由先制招式（如电光一闪、神速）或「咬住」「铁头」「头锤」等招式引发；拥有不挠之剑、不屈之志等特性，或携带王者之证、锐利之牙等道具可防止畏缩。",
+    relatedAbilities: ["inner-focus", "steadfast", "dauntless-shield"],
+    relatedMoves: ["bite"]
+  },
 }

@@ -479,14 +479,6 @@ const pickerList = computed(() => {
 }
 
 /* 标题 */
-.block-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--poke-ink);
-  margin: 4px 0 10px;
-  padding-left: 10px;
-  border-left: 4px solid var(--poke-red);
-}
 .tb-sub {
   font-size: 12px;
   font-weight: 400;

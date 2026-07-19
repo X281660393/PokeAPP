@@ -59,7 +59,7 @@ poke/
 │   │   │   └── pokemon-regions.ts # 【新增】按地区分类：POKEMON_BY_REGION / REGION_LIST / MEGA_BY_REGION
 │   │   ├── moves/           # 招式库（pokemon-moves.ts，脚本生成）
 │   │   ├── abilities/       # 特性库（pokemon-abilities.ts，脚本生成）
-│   │   ├── items/           # 道具库（pokemon-items.ts，手动维护，已按分类）
+│   │   ├── items/           # 道具库（pokemon-items.ts → 单一 `ITEM_DB` 扁平字面量，102 条）
 │   │   └── battle/          # 战斗环境
 │   │       ├── pokemon-status.ts   # 异常状态
 │   │       ├── pokemon-terrain.ts  # 场地
@@ -98,3 +98,20 @@ poke/
 - 删除未使用的 stores/app.ts（旧模板 counter demo）
 - 每个模块目录都有 index.ts 统一导出，方便导入
 - 2026-07-17：data/ 按分类拆为 pokemon/ moves/ abilities/ items/ battle/ 子目录；新增 pokemon-regions.ts 按地区（关都…帕底亚）派生分类宝可梦，并更新 4 个生成脚本与所有导入路径，保证后续可重新生成数据
+
+### 道具数据（2026-07-19 重写为 1425 条）
+- `src/data/items/pokemon-items.ts` 现由 **`scripts/build-items.mjs`** 从 `C:/Users/28166/Desktop/pokemon-dataset-zh-main/data/item_list.json` 生成（1425 条，替代旧 102 条手工维护）。改道具数据请**改 JSON 源或调脚本后重跑 `node scripts/build-items.mjs`**，不要手编 TS。
+- ITEM_DB 每条字段：`nameZh` / `nameJa?` / `nameEn?` / `category`(直接父分类) / `icon?`(`./items/{key}.png`) / `descZh`(数组描述已 join '\n')。`ItemInfo` 类型已同步扩展这 3 个可选字段。
+- **key 策略**：slug(name_en)+去重后缀（与旧 102 条英文 slug 风格一致；`Poké Ball`→`poke-ball`）。`name_en` 有 39 重复、19 重音，不能直接当 key。
+- **图标**：`build-items.mjs` 把 `data/images/items/{中文名}.png` 复制到 `public/items/{key}.png`（共 1422 张；17 个数组图标取首个存在帧；3 个真缺图不写 icon 字段；旧英文 slug 同名图标作回退）。`public/items/` 现已 1422 个图标，离线可用。
+- `src/views/tools/ItemSearch.vue`：分类由硬编码 8 个改为从 ITEM_DB 动态派生（25 个叶子分类）；搜索含 nameZh/nameEn/nameJa/key；详情展示 nameEn+nameJa+icon；已删除引用未提供字段（description/price/attributes/effect）的死模板块。
+- `scripts/excel-config.mjs` 的「道具」表已扩到 7 列（英文名/中文名/日文名/英文全名/分类/图标/描述），新字段标 `optional: true`，保证转Excel/转回Ts 往返不丢字段（已验证：导出 1425→导入 1425，0 警告）。
+- 保留 `scripts/data-excel.mjs` + `excel-config.mjs`：通用 Excel 往返工具。
+
+### data-excel 工具链（2026-07-19 v2 优化）
+- `scripts/data-excel.mjs` 已优化为 v2：① `lit()` 修复对象 key 不加引号的 bug（`special-attack` 等连字符 key 现正确输出 `'special-attack'`）；② `lit()` 支持嵌套缩进；③ `loadTS()` 加文件级缓存（tools.ts 三张表/复合表的 movesFile/外键 lookup 不再重复加载）；④ import 时 xlsx 被 Excel 占用给友好提示；⑤ 全局 `warnCount` 收集警告末尾汇总；⑥ 跳过 Excel 末尾空行（用第一列判断，不依赖 `field.kind==='id'`，因宝可梦"编号"/小工具"id"的 kind 不是 'id'）；⑦ 新增 `--dry-run` 选项；⑧ 末尾打印总表数/总行数/耗时。
+- CLI: `node scripts/data-excel.mjs export [path]` / `import [path] [--dry-run]`；bat 文件不变。
+- 同步修复 `src/data/pokemon/pokemon-mega.ts` 的语法 bug：`special-attack:` / `special-defense:` 未加引号（旧 lit() 生成），esbuild 严格解析会报错。已手动加引号修复（纯语法，不改语义）。
+- 验证：export 14 张表 5141 行 → dry-run import 14 张表 5141 行，行数完全一致，0 警告。
+- 现有 `data-excel/宝可梦小图鉴_数据.xlsx` 是 7 月 18 日旧版（只有 10 张表，缺招式描述/图鉴描述/超级进化/进化链）。要更新到 14 张表，跑一次 `转Excel.bat` 即可。
+- **effectzh 字段（2026-07-19 增加）**：特性/道具/天气/场地/异常 五类数据的 TS/类型/excel-config 均已加 `effectzh?`（「详细效果说明」，区别于 `descZh` 叙事描述）。道具的 effectzh 暂无数据源，留空待 Excel 填。新增 `scripts/add-effectzh.mjs` 可一键从 `.bak` + `abilities/*.json` 重新注入。五张表已在 excel-config 加「效果」列（optional），round-trip 不丢。天气/场地/异常经 `CodexSearch.vue` 自动显示 effectzh；特性在 `AbilityDetail.vue`/`AbilitySearch.vue` 显示；道具在 `ItemSearch.vue` 详情显示。

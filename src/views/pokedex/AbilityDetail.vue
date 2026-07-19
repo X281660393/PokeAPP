@@ -31,6 +31,19 @@ function goBack() {
           <span class="ability-name-en">{{ nameEn }}</span>
         </div>
         <p class="ability-desc">{{ ability.descZh || "暂无该特性的详细介绍。" }}</p>
+        <p
+          class="ability-desc"
+          v-if="ability.intro && ability.intro !== ability.descZh"
+        >
+          {{ ability.intro }}
+        </p>
+        <p
+          class="ability-desc ability-effect"
+          v-if="ability.effectzh"
+          style="white-space: pre-line"
+        >
+          {{ ability.effectzh }}
+        </p>
       </InfoCard>
       <InfoCard v-else>
         <p class="no-data">未找到特性「{{ nameEn }}」的数据。</p>
@@ -74,5 +87,9 @@ function goBack() {
   font-size: 14px;
   color: var(--poke-ink-2);
   line-height: 1.7;
+}
+
+.ability-effect {
+  margin-top: 10px;
 }
 </style>

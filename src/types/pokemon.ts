@@ -85,6 +85,10 @@ export interface AbilityInfo {
   nameZh: string
   /** 特性中文描述 */
   descZh: string
+  /** 特性介绍（与 descZh 可能不同，详情页「特性介绍」块使用） */
+  intro?: string
+  /** 特性详细效果说明（含换行，详情页「效果」块使用） */
+  effectzh?: string
 }
 
 /** 详情页使用的已解析特性（中文名 + 英文名 + 是否隐藏特性） */
@@ -115,13 +119,21 @@ export interface MegaForm {
   stats: Record<string, number>
 }
 
-/** 道具信息（共享表，按英文名索引，key 即 nameEn） */
+/** 道具信息（共享表，按英文 slug 索引，key 即 slug） */
 export interface ItemInfo {
   nameZh: string
-  /** 道具分类（如 精灵球 / 进化石 / 回复 / 战斗增强 / 树果 / 携带道具） */
+  /** 道具日文名（可选） */
+  nameJa?: string
+  /** 道具英文全名（可选，如 "Poké Ball"） */
+  nameEn?: string
+  /** 道具分类（直接父分类，如 野外使用的道具 / 携带物品 / 精灵球 / 贵重道具） */
   category: string
+  /** 道具图标相对路径（可选，如 ./items/poke-ball.png；缺失则不填） */
+  icon?: string
   /** 道具中文描述 */
   descZh: string
+  /** 道具详细效果说明（含换行，可在 Excel 中编辑） */
+  effectzh?: string
 }
 
 /** 天气信息（共享表，按英文名索引，key 即 nameEn） */
@@ -129,6 +141,8 @@ export interface WeatherInfo {
   nameZh: string
   /** 天气中文描述 */
   descZh: string
+  /** 天气详细效果（对战机制说明） */
+  effectzh?: string
   /** 相关特性英文名（对应 ABILITY_DB 的 key），用于跨链接 */
   relatedAbilities?: string[]
 }
@@ -138,6 +152,8 @@ export interface TerrainInfo {
   nameZh: string
   /** 场地中文描述 */
   descZh: string
+  /** 场地详细效果（对战机制说明） */
+  effectzh?: string
   /** 相关特性英文名（对应 ABILITY_DB 的 key） */
   relatedAbilities?: string[]
   /** 相关招式英文名（对应 MOVE_DB 的 key） */
@@ -151,6 +167,8 @@ export interface StatusInfo {
   color: string
   /** 异常状态中文描述 */
   descZh: string
+  /** 异常状态详细效果（对战机制说明） */
+  effectzh?: string
   /** 相关特性英文名（对应 ABILITY_DB 的 key） */
   relatedAbilities?: string[]
   /** 相关招式英文名（对应 MOVE_DB 的 key） */
