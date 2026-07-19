@@ -1,59 +1,111 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
-import { useRoute, useRouter } from 'vue-router'
-import { ABILITY_LIST, getAbilityOwners } from '@/data/relations'
-import { TypeBadge, SearchBox } from '@/components'
+import { computed, ref, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
+import { ABILITY_LIST, getAbilityOwners } from "@/data/relations";
+import type { AbilityInfo } from "@/types";
+import { TypeBadge, SearchBox } from "@/components";
 
-const router = useRouter()
-const route = useRoute()
+const router = useRouter();
+const route = useRoute();
 
-const query = ref('')
+const query = ref("");
 /** 图片加载失败时隐藏 */
-const spriteErr = ref<Set<number>>(new Set())
+const spriteErr = ref<Set<number>>(new Set());
 function onSpriteErr(id: number) {
-  spriteErr.value.add(id)
+  spriteErr.value.add(id);
 }
-const selectedKey = ref<string | null>(null)
+const selectedKey = ref<string | null>(null);
+/** 进入详情前记录列表滚动位置，返回时还原（不跳回顶部） */
+const savedScrollY = ref(0);
+/** 取当前真实滚动位置（兼容 WebView / 不同滚动根） */
+function getScrollTop(): number {
+  return (
+    window.scrollY ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop ||
+    0
+  );
+}
+/** 返回列表后还原滚动位置：等列表重新渲染、高度稳定后再滚动，
+ *  避免 nextTick 时图片未加载导致高度不足、scroll 被夹到 0 */
+function restoreScroll() {
+  const top = savedScrollY.value;
+  if (!top) return;
+  const doScroll = () => {
+    const root = document.scrollingElement || document.documentElement;
+    if (root.scrollHeight >= top) {
+      window.scrollTo({ top });
+      return true;
+    }
+    return false;
+  };
+  requestAnimationFrame(() => {
+    if (!doScroll()) {
+      requestAnimationFrame(doScroll);
+      setTimeout(doScroll, 150);
+    }
+  });
+}
 
 const filtered = computed(() => {
-  const q = query.value.trim()
-  let list = ABILITY_LIST
+  const q = query.value.trim();
+  let list = ABILITY_LIST;
   if (q) {
-    const ql = q.toLowerCase()
+    const ql = q.toLowerCase();
     list = list.filter(
       (a) => a.info.nameZh.includes(q) || a.key.toLowerCase().includes(ql),
-    )
+    );
   }
-  // 排序优化：统一按中文名排序，结果稳定可预期
-  return list
-    .slice()
-    .sort((a, b) => a.info.nameZh.localeCompare(b.info.nameZh, 'zh-Hans-CN'))
-})
+  // 按数据文件（ABILITY_DB）原样顺序输出，不做额外排序
+  return list.slice();
+});
 
 const selectedAbility = computed(() =>
-  selectedKey.value ? ABILITY_LIST.find((a) => a.key === selectedKey.value) ?? null : null,
-)
-const owners = computed(() => (selectedKey.value ? getAbilityOwners(selectedKey.value) : []))
-const shownOwners = computed(() => owners.value.slice(0, 60))
+  selectedKey.value
+    ? ABILITY_LIST.find((a) => a.key === selectedKey.value) ?? null
+    : null,
+);
+// 详情数据直接取自合并后的 ABILITY_DB（含 intro / effectzh）
+const abilityDesc = computed<AbilityInfo | null>(() =>
+  selectedKey.value ? selectedAbility.value?.info ?? null : null,
+);
+const owners = computed(() =>
+  selectedKey.value ? getAbilityOwners(selectedKey.value) : [],
+);
+const shownOwners = computed(() => owners.value.slice(0, 60));
 
 function openAbility(key: string) {
-  selectedKey.value = key
+  // 记录列表当前滚动位置，返回时还原
+  savedScrollY.value = getScrollTop();
+  selectedKey.value = key;
+  // 写入 URL，使历史记录选中态；从「相关」跳走再返回时可还原详情
+  router.push({ query: { key } });
 }
 /** 点击「拥有该特性的宝可梦」跳转详情页 */
 function goPokemon(id: number) {
-  router.push(`/pokemon/${id}`)
+  router.push(`/pokemon/${id}`);
 }
 
 // 支持通过 ?key= 深链直接打开特性详情（如场地/状态页关联特性跳转）
+// 同时：缺失 key 时清空选中，返回列表态也能正确还原
 watch(
   () => route.query.key,
   (k) => {
-    if (typeof k === 'string' && ABILITY_LIST.some((a) => a.key === k)) {
-      selectedKey.value = k
+    if (typeof k === "string" && ABILITY_LIST.some((a) => a.key === k)) {
+      selectedKey.value = k;
+    } else {
+      selectedKey.value = null;
     }
   },
   { immediate: true },
-)
+);
+
+// 从详情返回列表时还原滚动位置（selectedKey 由有值变为 null）
+watch(selectedKey, (val, old) => {
+  if (old && !val) {
+    restoreScroll();
+  }
+});
 </script>
 
 <template>
@@ -66,9 +118,7 @@ watch(
           placeholder="搜索特性名称"
         />
       </div>
-      <div class="ab-count">
-        共 {{ filtered.length }} 个特性
-      </div>
+      <div class="ab-count">共 {{ filtered.length }} 个特性</div>
       <div class="ab-list">
         <button
           v-for="a in filtered"
@@ -95,7 +145,25 @@ watch(
       </div>
 
       <div class="ab-detail-card">
-        <p class="ab-desc">{{ selectedAbility.info.descZh }}</p>
+        <h3 class="block-title">特性介绍</h3>
+        <p
+          class="ab-desc"
+          v-if="
+            abilityDesc?.descZh &&
+            abilityDesc.descZh !== selectedAbility.info.effectzh
+          "
+        >
+          {{ abilityDesc.descZh }}
+        </p>
+        <template v-if="abilityDesc?.effectzh">
+          <h3 class="block-title">效果</h3>
+          <p
+            class="ab-desc"
+            style="white-space: pre-line"
+          >
+            {{ abilityDesc.effectzh }}
+          </p>
+        </template>
       </div>
 
       <h3 class="block-title">
@@ -209,14 +277,21 @@ watch(
 
 .ab-detail-head {
   display: flex;
-  align-items: center;
-  gap: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
   padding: 6px 2px 12px;
 }
 .ab-detail-title {
   font-size: 18px;
   font-weight: 800;
   color: var(--poke-ink);
+}
+.ab-detail-subtitle {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--poke-ink-2);
 }
 .ab-detail-card {
   background: var(--poke-surface);
@@ -231,14 +306,6 @@ watch(
   color: var(--poke-ink-2);
 }
 
-.block-title {
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--poke-ink);
-  margin: 4px 0 10px;
-  padding-left: 10px;
-  border-left: 4px solid var(--poke-red);
-}
 .ab-sub {
   font-size: 12px;
   font-weight: 400;

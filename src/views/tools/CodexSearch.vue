@@ -1,69 +1,136 @@
 <script setup lang="ts">
-import { computed, ref } from 'vue'
-import { useRouter } from 'vue-router'
-import { ABILITY_DB } from '@/data/abilities/pokemon-abilities'
-import { MOVE_DB } from '@/data/moves/pokemon-moves'
-import { SearchBox } from '@/components'
+import { computed, ref, watch } from "vue";
+import { useRoute, useRouter } from "vue-router";
+import { ABILITY_DB } from "@/data/abilities/pokemon-abilities";
+import { MOVE_DB } from "@/data/moves/pokemon-moves";
+import { SearchBox } from "@/components";
 
 /** 通用条目形状：天气 / 场地 / 异常状态 共享（不含 key，key 由 db 的索引提供） */
 interface CodexData {
-  nameZh: string
-  descZh: string
-  color?: string
-  relatedAbilities?: string[]
-  relatedMoves?: string[]
+  nameZh: string;
+  descZh: string;
+  effectzh?: string;
+  color?: string;
+  relatedAbilities?: string[];
+  relatedMoves?: string[];
 }
 
 interface CodexEntry extends CodexData {
-  key: string
+  key: string;
 }
 
 const props = defineProps<{
-  db: Record<string, CodexData>
-  placeholder: string
-}>()
+  db: Record<string, CodexData>;
+  placeholder: string;
+}>();
 
-const router = useRouter()
+const router = useRouter();
+const route = useRoute();
 
 const list = computed<CodexEntry[]>(() =>
   Object.entries(props.db).map(([key, info]) => ({ key, ...info })),
-)
+);
 
-const query = ref('')
-const selectedKey = ref<string | null>(null)
+const query = ref("");
+const selectedKey = ref<string | null>(null);
+/** 进入详情前记录列表滚动位置，返回时还原（不跳回顶部） */
+const savedScrollY = ref(0);
+/** 取当前真实滚动位置（兼容 WebView / 不同滚动根） */
+function getScrollTop(): number {
+  return (
+    window.scrollY ||
+    document.documentElement.scrollTop ||
+    document.body.scrollTop ||
+    0
+  );
+}
+/** 返回列表后还原滚动位置：等列表重新渲染、高度稳定后再滚动 */
+function restoreScroll() {
+  const top = savedScrollY.value;
+  if (!top) return;
+  const doScroll = () => {
+    const root = document.scrollingElement || document.documentElement;
+    if (root.scrollHeight >= top) {
+      window.scrollTo({ top });
+      return true;
+    }
+    return false;
+  };
+  requestAnimationFrame(() => {
+    if (!doScroll()) {
+      requestAnimationFrame(doScroll);
+      setTimeout(doScroll, 150);
+    }
+  });
+}
+
+/** 点击列表项：写入 URL（?sel=），让历史记录选中态，返回时还原详情 */
+function selectItem(key: string) {
+  savedScrollY.value = getScrollTop();
+  selectedKey.value = key;
+  router.push({ query: { sel: key } });
+}
+
+/** 详情页返回：清掉 URL 的 ?sel=，回到列表态（并还原滚动） */
+function backToList() {
+  if (route.query.sel) router.push({ query: {} });
+  else selectedKey.value = null;
+}
+
+// 从 URL 的 ?sel= 还原选中（含返回/前进、深链进入）
+watch(
+  () => route.query.sel,
+  (k) => {
+    selectedKey.value = typeof k === "string" && props.db[k] ? k : null;
+  },
+  { immediate: true },
+);
+
+// 从详情返回列表时还原滚动位置（selectedKey 由有值变为 null）
+watch(selectedKey, (val, old) => {
+  if (old && !val) {
+    restoreScroll();
+  }
+});
 
 const filtered = computed(() => {
-  const q = query.value.trim().toLowerCase()
-  let l = list.value
-  if (q) l = l.filter((i) => i.nameZh.includes(q) || i.key.includes(q))
-  return l
-})
+  const q = query.value.trim().toLowerCase();
+  let l = list.value;
+  if (q) l = l.filter((i) => i.nameZh.includes(q) || i.key.includes(q));
+  return l;
+});
 
 const selected = computed(() =>
-  selectedKey.value ? list.value.find((i) => i.key === selectedKey.value) ?? null : null,
-)
+  selectedKey.value
+    ? list.value.find((i) => i.key === selectedKey.value) ?? null
+    : null,
+);
 
 /** 相关特性：解析为 { key, nameZh }，便于点击跳转 */
 const relatedAbilities = computed(() => {
-  if (!selected.value?.relatedAbilities) return []
-  return selected.value.relatedAbilities
-    .map((k) => ({ key: k, nameZh: ABILITY_DB[k]?.nameZh ?? k }))
-})
+  if (!selected.value?.relatedAbilities) return [];
+  return selected.value.relatedAbilities.map((k) => ({
+    key: k,
+    nameZh: ABILITY_DB[k]?.nameZh ?? k,
+  }));
+});
 
 /** 相关招式：解析为 { key, nameZh }，便于点击跳转 */
 const relatedMoves = computed(() => {
-  if (!selected.value?.relatedMoves) return []
-  return selected.value.relatedMoves
-    .map((k) => ({ key: k, nameZh: MOVE_DB[k]?.nameZh ?? k }))
-})
+  if (!selected.value?.relatedMoves) return [];
+  return selected.value.relatedMoves.map((k) => ({
+    key: k,
+    nameZh: MOVE_DB[k]?.nameZh ?? k,
+  }));
+});
 
 /** 跳转到特性查询（携带 key 深链，复用「特性查」界面，不新建详情页） */
 function goAbility(key: string) {
-  router.push({ path: '/tools/ability-search', query: { key } })
+  router.push({ path: "/tools/ability-search", query: { key } });
 }
 /** 跳转到招式详情（携带 key 深链） */
 function goMove(key: string) {
-  router.push({ path: '/tools/move-search', query: { key } })
+  router.push({ path: "/tools/move-search", query: { key } });
 }
 </script>
 
@@ -77,16 +144,14 @@ function goMove(key: string) {
         />
       </div>
 
-      <div class="cs-count">
-        共 {{ filtered.length }} 项
-      </div>
+      <div class="cs-count">共 {{ filtered.length }} 项</div>
 
       <div class="cs-list">
         <button
           v-for="i in filtered"
           :key="i.key"
           class="cs-item"
-          @click="selectedKey = i.key"
+          @click="selectItem(i.key)"
         >
           <span
             v-if="i.color"
@@ -106,8 +171,17 @@ function goMove(key: string) {
     </template>
 
     <template v-else>
-      <div class="cs-detail-head">
-        <span class="cs-detail-title">
+      <!-- 头部：返回 + 色点 + 名称 -->
+      <div class="cs-hero">
+        <button
+          class="cs-back"
+          type="button"
+          aria-label="返回"
+          @click="backToList"
+        >
+          ‹
+        </button>
+        <span class="cs-hero-title">
           <span
             v-if="selected.color"
             class="cs-dot cs-dot--lg"
@@ -117,8 +191,19 @@ function goMove(key: string) {
         </span>
       </div>
 
-      <div class="cs-detail-card">
-        <p class="cs-detail-desc">{{ selected.descZh }}</p>
+      <div class="cs-card">
+        <h4 class="block-title">介绍</h4>
+        <p class="cs-desc">{{ selected.descZh }}</p>
+
+        <template v-if="selected.effectzh">
+          <h4 class="block-title">效果</h4>
+          <p
+            class="cs-effect"
+            style="white-space: pre-line"
+          >
+            {{ selected.effectzh }}
+          </p>
+        </template>
 
         <div
           v-if="relatedAbilities.length"
@@ -222,31 +307,66 @@ function goMove(key: string) {
   font-size: 18px;
 }
 
-.cs-detail-head {
+/* ===== 详情页（hero + 卡片） ===== */
+.cs-hero {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 6px 2px 12px;
+  gap: 12px;
+  padding: 10px 2px 16px;
 }
-.cs-detail-title {
+.cs-back {
+  flex-shrink: 0;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: var(--poke-surface);
+  box-shadow: var(--shadow-sm);
+  border-radius: 50%;
+  font-size: 26px;
+  line-height: 1;
+  color: var(--poke-ink-2);
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.12s;
+}
+.cs-back:active {
+  transform: scale(0.94);
+}
+.cs-hero-title {
   flex: 1;
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 800;
   color: var(--poke-ink);
+  line-height: 1.2;
 }
-.cs-detail-card {
+.cs-card {
   background: var(--poke-surface);
   border-radius: var(--radius-md);
-  padding: 16px;
+  padding: 18px 16px;
   box-shadow: var(--shadow-sm);
+  margin-bottom: 14px;
 }
-.cs-detail-desc {
-  font-size: 14px;
-  line-height: 1.7;
+.cs-desc {
+  font-size: 14.5px;
+  line-height: 1.8;
   color: var(--poke-ink);
+  text-align: justify;
+}
+.cs-effect {
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: var(--poke-red-soft);
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--poke-ink);
+  text-align: justify;
 }
 .cs-related {
   margin-top: 16px;

@@ -126,3 +126,24 @@ body::-webkit-scrollbar-thumb:hover {
   text-align: center;
   padding: 12px 0;
 }
+
+/* 共享区块标题（详情页 / 工具页统一视觉） */
+.block-title {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--poke-ink);
+  margin: 18px 0 10px;
+  padding-left: 10px;
+  border-left: 4px solid var(--poke-red);
+  line-height: 1.3;
+}
+/* 卡片内首个区块标题：紧贴卡片顶部，避免顶部过大留白 */
+.is-card > .block-title:first-child,
+.is-detail-card > .block-title:first-child,
+.ab-detail-card > .block-title:first-child,
+.ms-detail-card > .block-title:first-child,
+.cs-card > .block-title:first-child,
+.cs-detail-card > .block-title:first-child,
+.ev-preview > .block-title:first-child {
+  margin-top: 0;
+}

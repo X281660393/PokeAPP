@@ -4,7 +4,8 @@ import { useRoute, useRouter } from "vue-router";
 import { usePokedexStore } from "@/stores/pokedex";
 import { useSettingsStore } from "@/stores/settings";
 import { TypeBadge, StatBar, ArrowIcon, DetailNav, InfoCard } from "@/components";
-import { MAX_STAT_VALUE, STAT_ORDER, STAT_NAME_ZH, statColor } from "@/constants/pokemon";
+import { MAX_STAT_VALUE, STAT_ORDER, STAT_NAME_ZH, statColor, getTextColorOn } from "@/constants/pokemon";
+import { REGION_COLORS } from "@/data/pokemon/pokemon-regions";
 import EvoChain from "./EvoChain.vue";
 import { MEGA_EVOLUTIONS } from "@/data/pokemon/pokemon-mega";
 import { getRegionZhOfPokemon } from "@/data/pokemon/pokemon-regions";
@@ -73,17 +74,144 @@ const abilityDb = ref<Record<string, AbilityInfo>>({});
 const evoRootMap = ref<Record<number, number>>({});
 const evoTrees = ref<Record<number, EvoNode>>({});
 
+// 各版本图鉴介绍数据集（1.9MB，按需动态加载，避免主包体积膨胀）
+const descMap = ref<Record<number, { key: string; description: string }[]>>({});
+
 onMounted(async () => {
-  const [movesMod, abilMod, evoMod] = await Promise.all([
+  const [movesMod, abilMod, evoMod, descMod] = await Promise.all([
     import("@/data/moves/pokemon-moves"),
     import("@/data/abilities/pokemon-abilities"),
     import("@/data/pokemon/pokemon-evo"),
+    import("@/data/pokemon/pokedex-descriptions"),
   ]);
   moveDb.value = movesMod.MOVE_DB;
   pokemonMoves.value = movesMod.POKEMON_MOVES;
   abilityDb.value = abilMod.ABILITY_DB;
   evoRootMap.value = evoMod.EVO_ROOT;
   evoTrees.value = evoMod.EVO_TREES;
+  descMap.value = descMod.POKEDEX_DESCRIPTIONS;
+});
+
+// ——— 图鉴介绍（按世代分组平铺展示） ———
+const GEN_REGION: Record<number, string> = {
+  1: "kanto", 2: "johto", 3: "hoenn", 4: "sinnoh", 5: "unova",
+  6: "kalos", 7: "alola", 8: "galar", 9: "paldea",
+};
+const GEN_LABEL = ["", "第一", "第二", "第三", "第四", "第五", "第六", "第七", "第八", "第九"];
+
+/** 版本图鉴介绍 UI 元数据：版本 key → 中文标签 / 世代 / 徽章色 */
+const DESC_VERSION_META: Record<string, { label: string; gen: number; color: string }> = {
+  // 第一世代
+  red: { label: "红", gen: 1, color: "#E74C3C" },
+  blue: { label: "蓝", gen: 1, color: "#3498DB" },
+  green: { label: "绿", gen: 1, color: "#2ECC71" },
+  yellow: { label: "皮卡丘", gen: 1, color: "#F1C40F" },
+  // 第二世代
+  gold: { label: "金", gen: 2, color: "#E6B422" },
+  silver: { label: "银", gen: 2, color: "#BDC3C7" },
+  crystal: { label: "水晶", gen: 2, color: "#00CED1" },
+  // 第三世代
+  ruby: { label: "红宝石", gen: 3, color: "#D91C5C" },
+  sapphire: { label: "蓝宝石", gen: 3, color: "#1C5CD9" },
+  emerald: { label: "绿宝石", gen: 3, color: "#2ECC71" },
+  firered: { label: "火红", gen: 3, color: "#FF4500" },
+  leafgreen: { label: "叶绿", gen: 3, color: "#32CD32" },
+  // 第四世代
+  diamond: { label: "钻石", gen: 4, color: "#A3E4F7" },
+  pearl: { label: "珍珠", gen: 4, color: "#F7C8C8" },
+  platinum: { label: "白金", gen: 4, color: "#4ECDC4" },
+  heartgold: { label: "心金", gen: 4, color: "#DAA520" },
+  soulsilver: { label: "魂银", gen: 4, color: "#A8A8A8" },
+  // 第五世代
+  black: { label: "黑", gen: 5, color: "#333333" },
+  white: { label: "白", gen: 5, color: "#F0F0F0" },
+  "black-2": { label: "黑2", gen: 5, color: "#1C1C1C" },
+  "white-2": { label: "白2", gen: 5, color: "#F5F5F5" },
+  // 第六世代
+  x: { label: "X", gen: 6, color: "#3A7BD5" },
+  y: { label: "Y", gen: 6, color: "#D53939" },
+  "omega-ruby": { label: "欧米加红宝石", gen: 6, color: "#D91C5C" },
+  "alpha-sapphire": { label: "阿尔法蓝宝石", gen: 6, color: "#1C5CD9" },
+  // 第七世代
+  sun: { label: "太阳", gen: 7, color: "#FF8C42" },
+  moon: { label: "月亮", gen: 7, color: "#4A6FA5" },
+  "ultra-sun": { label: "究极太阳", gen: 7, color: "#FF6B35" },
+  "ultra-moon": { label: "究极月亮", gen: 7, color: "#2A3B94" },
+  "lets-go-pikachu": { label: "Let's Go! 皮卡丘", gen: 7, color: "#FFD700" },
+  "lets-go-eevee": { label: "Let's Go! 伊布", gen: 7, color: "#8B6F47" },
+  // 第八世代
+  sword: { label: "剑", gen: 8, color: "#3A6EA5" },
+  shield: { label: "盾", gen: 8, color: "#C0392B" },
+  "brilliant-diamond": { label: "晶灿钻石", gen: 8, color: "#A3E4F7" },
+  "shining-pearl": { label: "明亮珍珠", gen: 8, color: "#F7C8C8" },
+  "legends-arceus": { label: "传说 阿尔宙斯", gen: 8, color: "#B8860B" },
+  // 第九世代
+  scarlet: { label: "朱", gen: 9, color: "#FF4500" },
+  violet: { label: "紫", gen: 9, color: "#8A2BE2" },
+  "legends-z-a": { label: "传说 Z-A", gen: 9, color: "#27AE60" },
+};
+
+interface DescGroupEntry {
+  key: string;
+  labels: string[];
+  color: string;
+  textColor: string;
+  description: string;
+}
+interface DescGroup {
+  gen: number;
+  header: string;
+  color: string;
+  entries: DescGroupEntry[];
+}
+
+const descEntries = computed(() => descMap.value[pokemonId.value] || []);
+/** 按世代分组、同文本合并、排序后的图鉴介绍（用于平铺展示） */
+const descGrouped = computed<DescGroup[]>(() => {
+  // 1) 按世代收集原始条目
+  const rawByGen = new Map<number, DescGroupEntry[]>();
+  for (const e of descEntries.value) {
+    const meta = DESC_VERSION_META[e.key];
+    if (!meta) continue;
+    let arr = rawByGen.get(meta.gen);
+    if (!arr) {
+      arr = [];
+      rawByGen.set(meta.gen, arr);
+    }
+    arr.push({
+      key: e.key,
+      labels: [meta.label],
+      color: meta.color,
+      textColor: getTextColorOn(meta.color),
+      description: e.description,
+    });
+  }
+
+  // 2) 逐世代按图鉴文字合并（相同文字的多个版本合并为一个标签）
+  const groups: DescGroup[] = [];
+  for (const gen of Array.from(rawByGen.keys()).sort((a, b) => a - b)) {
+    const arr = rawByGen.get(gen)!;
+    const merged: DescGroupEntry[] = [];
+    const byDesc = new Map<string, DescGroupEntry>();
+    for (const e of arr) {
+      const hit = byDesc.get(e.description);
+      if (hit) {
+        // 合并：版本标签追加到 labels 数组，颜色/文字色沿用首个版本
+        hit.labels.push(e.labels[0]);
+      } else {
+        const ne: DescGroupEntry = { ...e };
+        byDesc.set(e.description, ne);
+        merged.push(ne);
+      }
+    }
+    groups.push({
+      gen,
+      header: `${GEN_LABEL[gen]}世代`,
+      color: REGION_COLORS[GEN_REGION[gen]] || "#888",
+      entries: merged,
+    });
+  }
+  return groups;
 });
 
 function getMoveInfo(nameEn: string): MoveInfo | undefined {
@@ -611,6 +739,45 @@ function toggleTypeGroup(type: string) {
           <p v-if="!movesByType.length" class="no-data">暂无数据</p>
         </div>
       </InfoCard>
+
+      <!-- 图鉴介绍（按世代分组平铺展示） -->
+      <InfoCard v-if="descGrouped.length" title="图鉴介绍" class="desc-pokedex-card">
+        <div
+          v-for="g in descGrouped"
+          :key="g.gen"
+          class="desc-gen-block"
+        >
+          <div class="desc-gen-header-wrap">
+            <div
+              class="desc-gen-header"
+              :style="{ background: g.color }"
+            >
+              {{ g.header }}
+            </div>
+          </div>
+          <div class="desc-gen-list">
+            <div
+              v-for="e in g.entries"
+              :key="e.key"
+              class="desc-version-row"
+            >
+              <span
+                class="desc-version-badge"
+                :style="{ background: e.color, color: e.textColor }"
+              >
+                <span
+                  v-for="(label, idx) in e.labels"
+                  :key="idx"
+                  class="desc-version-label"
+                >{{ label }}</span>
+              </span>
+              <div class="desc-version-text-box">
+                <p class="desc-version-text">{{ e.description }}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </InfoCard>
     </div>
   </div>
 </template>
@@ -1048,6 +1215,76 @@ function toggleTypeGroup(type: string) {
   border-color: var(--poke-red);
   color: var(--poke-red);
   background: #fff0f0;
+}
+
+/* 图鉴介绍：按世代分组平铺展示 */
+.desc-gen-block {
+  background: #fff;
+  border: 1px solid var(--poke-line);
+  border-radius: 14px;
+  padding: 12px 12px 14px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.desc-gen-block:last-child {
+  margin-bottom: 0;
+}
+.desc-gen-header-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.desc-gen-header {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 16px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+}
+.desc-gen-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.desc-version-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.desc-version-badge {
+  flex: 0 0 88px;
+  width: 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+.desc-version-label {
+  display: block;
+}
+.desc-version-text-box {
+  flex: 1;
+  background: var(--poke-cream);
+  border-radius: 10px;
+  padding: 8px 12px;
+  min-width: 0;
+}
+.desc-version-text {
+  margin: 0;
+  font-size: 14px;
+  color: var(--poke-ink);
+  line-height: 1.6;
 }
 
 /* 进化链卡片：横向滚动容器（手机端避免被裁切） */

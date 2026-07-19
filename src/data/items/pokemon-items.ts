@@ -2,514 +2,5053 @@
 import type { ItemInfo } from '@/types'
 
 export const ITEM_DB: Record<string, ItemInfo> = {
-  "poke-ball": {
-  nameZh: "精灵球",
-  category: "精灵球",
-  descZh: "最基本的球。用来捕捉野生的宝可梦。"
-},
-  "great-ball": {
-  nameZh: "超级球",
-  category: "精灵球",
-  descZh: "比精灵球更易捉到宝可梦的性能较好的球。"
-},
-  "ultra-ball": {
-  nameZh: "高级球",
-  category: "精灵球",
-  descZh: "比超级球更易捉到宝可梦的性能优秀的球。"
-},
-  "master-ball": {
-  nameZh: "大师球",
-  category: "精灵球",
-  descZh: "一定能捉到野生宝可梦的最高级球。"
-},
-  "safari-ball": {
-  nameZh: "狩猎球",
-  category: "精灵球",
-  descZh: "狩猎地带专用的球。性能与超级球相同。"
-},
-  "net-ball": {
-  nameZh: "捕网球",
-  category: "精灵球",
-  descZh: "易捕到水属性和虫属性宝可梦的球。"
-},
-  "dive-ball": {
-  nameZh: "潜水球",
-  category: "精灵球",
-  descZh: "易捕到水底宝可梦的球。"
-},
-  "nest-ball": {
-  nameZh: "巢穴球",
-  category: "精灵球",
-  descZh: "宝可梦等级越低越易捕到的球。"
-},
-  "repeat-ball": {
-  nameZh: "重复球",
-  category: "精灵球",
-  descZh: "易捕到已收录在图鉴里的宝可梦的球。"
-},
-  "timer-ball": {
-  nameZh: "计时球",
-  category: "精灵球",
-  descZh: "战斗回合越多越易捕到宝可梦的球。"
-},
-  "luxury-ball": {
-  nameZh: "豪华球",
-  category: "精灵球",
-  descZh: "捉到的宝可梦会变得很爱亲密训练家的球。"
-},
-  "dusk-ball": {
-  nameZh: "黑暗球",
-  category: "精灵球",
-  descZh: "易捕到洞窟或夜晚宝可梦的球。"
-},
-  "heal-ball": {
-  nameZh: "治愈球",
-  category: "精灵球",
-  descZh: "捉到后宝可梦的ＨＰ和状态会全部恢复的球。"
-},
-  "quick-ball": {
-  nameZh: "速度球",
-  category: "精灵球",
-  descZh: "在战斗刚开始时投出特别易捕到宝可梦的球。"
-},
-  "dream-ball": {
-  nameZh: "梦境球",
-  category: "精灵球",
-  descZh: "在连入名人堂后可于宽广路口捉到宝可梦的球。"
-},
-  "fire-stone": {
-  nameZh: "火之石",
-  category: "进化石",
-  descZh: "让某些特定的宝可梦进化而成的鲜红石头。"
-},
-  "water-stone": {
-  nameZh: "水之石",
-  category: "进化石",
-  descZh: "让某些特定的宝可梦进化而成的深蓝石头。"
-},
-  "thunder-stone": {
-  nameZh: "雷之石",
-  category: "进化石",
-  descZh: "让某些特定的宝可梦进化而成的黄色石头。"
-},
-  "leaf-stone": {
-  nameZh: "叶之石",
-  category: "进化石",
-  descZh: "让某些特定的宝可梦进化而成的翠绿石头。"
-},
-  "moon-stone": {
-  nameZh: "月之石",
-  category: "进化石",
-  descZh: "让某些特定的宝可梦进化而成的圆月形石头。"
-},
-  "sun-stone": {
-  nameZh: "太阳之石",
-  category: "进化石",
-  descZh: "让某些特定的宝可梦进化而成的朝阳形石头。"
-},
-  "shiny-stone": {
-  nameZh: "光之石",
-  category: "进化石",
-  descZh: "让某些特定的宝可梦进化而成的闪亮石头。"
-},
-  "dawn-stone": {
-  nameZh: "暗之石",
-  category: "进化石",
-  descZh: "让某些特定的宝可梦进化而成的黑白石头。"
-},
-  "potion": {
-  nameZh: "伤药",
-  category: "回复",
-  descZh: "撒在受伤的宝可梦身上，回复２０点ＨＰ。"
-},
-  "super-potion": {
-  nameZh: "好伤药",
-  category: "回复",
-  descZh: "撒在受伤的宝可梦身上，回复５０点ＨＰ。"
-},
-  "hyper-potion": {
-  nameZh: "超伤药",
-  category: "回复",
-  descZh: "撒在受伤的宝可梦身上，回复２００点ＨＰ。"
-},
-  "max-potion": {
-  nameZh: "全满药",
-  category: "回复",
-  descZh: "撒在受伤的宝可梦身上，将ＨＰ完全回复。"
-},
-  "full-restore": {
-  nameZh: "全复药",
-  category: "回复",
-  descZh: "将ＨＰ和状态异常完全回复的贵重的药。"
-},
-  "revive": {
-  nameZh: "活力块",
-  category: "回复",
-  descZh: "让濒死的宝可梦复活，并回复一半的ＨＰ。"
-},
-  "max-revive": {
-  nameZh: "精神片",
-  category: "回复",
-  descZh: "让濒死的宝可梦复活，并完全回复ＨＰ。"
-},
-  "antidote": {
-  nameZh: "解毒药",
-  category: "回复",
-  descZh: "解除宝可梦中毒状态的药。"
-},
-  "burn-heal": {
-  nameZh: "灼伤药",
-  category: "回复",
-  descZh: "解除宝可梦灼伤状态的药。"
-},
-  "ice-heal": {
-  nameZh: "解冻药",
-  category: "回复",
-  descZh: "解除宝可梦冰冻状态的药。"
-},
-  "awakening": {
-  nameZh: "解眠药",
-  category: "回复",
-  descZh: "解除宝可梦睡眠状态的药。"
-},
-  "paralyze-heal": {
-  nameZh: "解麻痹药",
-  category: "回复",
-  descZh: "解除宝可梦麻痹状态的药。"
-},
-  "full-heal": {
-  nameZh: "万能药",
-  category: "回复",
-  descZh: "解除宝可梦全部状态异常（中毒、麻痹、灼伤、睡眠、冰冻、混乱）的药。"
-},
-  "x-attack": {
-  nameZh: "攻击增强剂",
-  category: "战斗增强",
-  descZh: "战斗中提升宝可梦攻击的强化道具。"
-},
-  "x-defense": {
-  nameZh: "防御增强剂",
-  category: "战斗增强",
-  descZh: "战斗中提升宝可梦防御的强化道具。"
-},
-  "x-speed": {
-  nameZh: "速度增强剂",
-  category: "战斗增强",
-  descZh: "战斗中提升宝可梦速度的强化道具。"
-},
-  "x-sp-atk": {
-  nameZh: "特攻增强剂",
-  category: "战斗增强",
-  descZh: "战斗中提升宝可梦特攻的强化道具。"
-},
-  "x-sp-def": {
-  nameZh: "特防增强剂",
-  category: "战斗增强",
-  descZh: "战斗中提升宝可梦特防的强化道具。"
-},
-  "x-accuracy": {
-  nameZh: "命中增强剂",
-  category: "战斗增强",
-  descZh: "战斗中提升宝可梦命中的强化道具。"
-},
-  "guard-spec": {
-  nameZh: "防护镜",
-  category: "战斗增强",
-  descZh: "让宝可梦在１次战斗内不会被对手降低能力的道具。"
-},
-  "dire-hit": {
-  nameZh: "焦点镜",
-  category: "战斗增强",
-  descZh: "让宝可梦在１次战斗内容易击中要害的道具。"
-},
-  "charcoal": {
-  nameZh: "木炭",
-  category: "携带道具",
-  descZh: "携带后火属性招式威力提升的火之道具。"
-},
-  "mystic-water": {
-  nameZh: "神秘水滴",
-  category: "携带道具",
-  descZh: "携带后水属性招式威力提升的水滴。"
-},
-  "magnet": {
-  nameZh: "磁铁",
-  category: "携带道具",
-  descZh: "携带后电属性招式威力提升的磁铁。"
-},
-  "miracle-seed": {
-  nameZh: "奇迹种子",
-  category: "携带道具",
-  descZh: "携带后草属性招式威力提升的种子。"
-},
-  "never-melt-ice": {
-  nameZh: "不融冰",
-  category: "携带道具",
-  descZh: "携带后冰属性招式威力提升的冰。"
-},
-  "black-belt": {
-  nameZh: "黑带",
-  category: "携带道具",
-  descZh: "携带后格斗属性招式威力提升的带子。"
-},
-  "black-glasses": {
-  nameZh: "黑色眼镜",
-  category: "携带道具",
-  descZh: "携带后恶属性招式威力提升的眼镜。"
-},
-  "metal-coat": {
-  nameZh: "金属膜",
-  category: "携带道具",
-  descZh: "携带后钢属性招式威力提升的膜。"
-},
-  "soft-sand": {
-  nameZh: "柔软沙子",
-  category: "携带道具",
-  descZh: "携带后地面属性招式威力提升的沙子。"
-},
-  "sharp-beak": {
-  nameZh: "锐利鸟嘴",
-  category: "携带道具",
-  descZh: "携带后飞行属性招式威力提升的鸟嘴。"
-},
-  "silk-scarf": {
-  nameZh: "丝绸围巾",
-  category: "携带道具",
-  descZh: "携带后一般属性招式威力提升的围巾。"
-},
-  "twisted-spoon": {
-  nameZh: "弯曲汤匙",
-  category: "携带道具",
-  descZh: "携带后超能力属性招式威力提升的汤匙。"
-},
-  "poison-barb": {
-  nameZh: "毒针",
-  category: "携带道具",
-  descZh: "携带后毒属性招式威力提升的针。"
-},
+  "bright-powder": {
+    nameZh: "光粉",
+    nameJa: "ひかりのこな",
+    nameEn: "Bright Powder",
+    category: "携带物品",
+    icon: "./items/bright-powder.png",
+    descZh: "闪闪发光的粉末。携带后，光芒会迷惑对手，从而使其招式变得不容易命中。",
+    effectzh: "对手招式命中率降低10%。"
+  },
+  "quick-claw": {
+    nameZh: "先制之爪",
+    nameJa: "せんせいのツメ",
+    nameEn: "Quick Claw",
+    category: "携带物品",
+    icon: "./items/quick-claw.png",
+    descZh: "又轻又尖锐的爪子。携带后，有时能比对手先一步行动。",
+    effectzh: "25%几率能够先制行动。"
+  },
+  "king-s-rock": {
+    nameZh: "王者之证",
+    nameJa: "おうじゃのしるし",
+    nameEn: "King's Rock",
+    category: "携带物品",
+    icon: "./items/king-s-rock.png",
+    descZh: "携带后进行攻击，在造成伤害时，有时会让对手畏缩。",
+    effectzh: "30%几率使被击中者陷入害怕而退缩。"
+  },
   "silver-powder": {
-  nameZh: "银粉",
-  category: "携带道具",
-  descZh: "携带后虫属性招式威力提升的粉。"
-},
-  "hard-stone": {
-  nameZh: "硬石头",
-  category: "携带道具",
-  descZh: "携带后岩石属性招式威力提升的石头。"
-},
-  "spell-tag": {
-  nameZh: "咒术符",
-  category: "携带道具",
-  descZh: "携带后幽灵属性招式威力提升的符。"
-},
-  "dragon-fang": {
-  nameZh: "龙之牙",
-  category: "携带道具",
-  descZh: "携带后龙属性招式威力提升的牙。"
-},
-  "fairy-feather": {
-  nameZh: "妖精羽毛",
-  category: "携带道具",
-  descZh: "携带后妖精属性招式威力提升的羽毛。"
-},
-  "leftovers": {
-  nameZh: "吃剩的东西",
-  category: "携带道具",
-  descZh: "携带后每回合会一点点回复ＨＰ的饭团。"
-},
+    nameZh: "银粉",
+    nameJa: "ぎんのこな",
+    nameEn: "Silver Powder",
+    category: "携带物品",
+    icon: "./items/silver-powder.png",
+    descZh: "散发着银色光辉的粉末。携带后，虫属性的招式威力就会提高。",
+    effectzh: "虫属性招式威力提升20%。"
+  },
+  "amulet-coin": {
+    nameZh: "护符金币",
+    nameJa: "おまもりこばん",
+    nameEn: "Amulet Coin",
+    category: "携带物品",
+    icon: "./items/amulet-coin.png",
+    descZh: "只要携带它的宝可梦在战斗时出场一次，就能获得2倍金钱。",
+    effectzh: "战斗获得金钱变为2倍。"
+  },
+  "cleanse-tag": {
+    nameZh: "洁净之符",
+    nameJa: "きよめのおふだ",
+    nameEn: "Cleanse Tag",
+    category: "携带物品",
+    icon: "./items/cleanse-tag.png",
+    descZh: "让排在最前面的宝可梦携带后，野生宝可梦就会不容易出现。",
+    effectzh: "野生宝可梦出现率降低。"
+  },
+  "smoke-ball": {
+    nameZh: "烟雾球",
+    nameJa: "けむりだま",
+    nameEn: "Smoke Ball",
+    category: "携带物品",
+    icon: "./items/smoke-ball.png",
+    descZh: "携带它的宝可梦在和野生宝可梦的战斗中绝对可以逃走。",
+    effectzh: "必定能从野生战斗中逃走。"
+  },
+  "everstone": {
+    nameZh: "不变之石",
+    nameJa: "かわらずのいし",
+    nameEn: "Everstone",
+    category: "携带物品",
+    icon: "./items/everstone.png",
+    descZh: "携带后，宝可梦在此期间不会进化的神奇石头。",
+    effectzh: "携带的宝可梦不会进化；孵蛋时50%几率遗传性格。"
+  },
+  "focus-band": {
+    nameZh: "气势头带",
+    nameJa: "きあいのハチマキ",
+    nameEn: "Focus Band",
+    category: "携带物品",
+    icon: "./items/focus-band.png",
+    descZh: "携带后，即便受到可能会导致濒死的招式，有时也能仅以1HP撑过去。",
+    effectzh: "10%几率承受致命伤害仅剩1HP。"
+  },
   "lucky-egg": {
-  nameZh: "幸运蛋",
-  category: "携带道具",
-  descZh: "携带后获得的经验值变多的蛋。"
-},
+    nameZh: "幸运蛋",
+    nameJa: "しあわせタマゴ",
+    nameEn: "Lucky Egg",
+    category: "携带物品",
+    icon: "./items/lucky-egg.png",
+    descZh: "满载着幸福的蛋。携带它的宝可梦获得的经验值会少量增加。",
+    effectzh: "携带的宝可梦获得经验值提升50%。"
+  },
+  "scope-lens": {
+    nameZh: "焦点镜",
+    nameJa: "ピントレンズ",
+    nameEn: "Scope Lens",
+    category: "携带物品",
+    icon: "./items/scope-lens.png",
+    descZh: "能看见弱点的镜片。携带它的宝可梦的招式会变得容易击中要害。",
+    effectzh: "招式更容易击中要害（会心率提升）。"
+  },
+  "metal-coat": {
+    nameZh: "金属膜",
+    nameJa: "メタルコート",
+    nameEn: "Metal Coat",
+    category: "携带物品",
+    icon: "./items/metal-coat.png",
+    descZh: "特殊的金属膜。携带后，钢属性的招式威力就会提高。",
+    effectzh: "钢属性招式威力提升20%。"
+  },
+  "leftovers": {
+    nameZh: "吃剩的东西",
+    nameJa: "たべのこし",
+    nameEn: "Leftovers",
+    category: "携带物品",
+    icon: "./items/leftovers.png",
+    descZh: "携带后，宝可梦的HP会在战斗期间缓缓回复。",
+    effectzh: "每回合结束时回复最大HP的1／16。"
+  },
+  "dragon-scale": {
+    nameZh: "龙之鳞片",
+    nameJa: "りゅうのウロコ",
+    nameEn: "Dragon Scale",
+    category: "携带物品",
+    icon: "./items/dragon-scale.png",
+    descZh: "又硬又坚固的鳞片。龙属性宝可梦有时会携带它。",
+    effectzh: "用于培育（暴飞龙进化道具）。"
+  },
+  "light-ball": {
+    nameZh: "电气球",
+    nameJa: "でんきだま",
+    nameEn: "Light Ball",
+    category: "携带物品",
+    icon: "./items/light-ball.png",
+    descZh: "让皮卡丘携带后，攻击和特攻的威力就会提高的神奇之球。",
+    effectzh: "皮卡丘携带时特攻提升100%（×2）。"
+  },
+  "soft-sand": {
+    nameZh: "柔软沙子",
+    nameJa: "やわらかいすな",
+    nameEn: "Soft Sand",
+    category: "携带物品",
+    icon: "./items/soft-sand.png",
+    descZh: "手感细腻的沙子。携带后，地面属性的招式威力就会提高。",
+    effectzh: "地面属性招式威力提升20%。"
+  },
+  "hard-stone": {
+    nameZh: "硬石头",
+    nameJa: "かたいいし",
+    nameEn: "Hard Stone",
+    category: "携带物品",
+    icon: "./items/hard-stone.png",
+    descZh: "绝对不会裂开的石头。携带后，岩石属性的招式威力就会提高。",
+    effectzh: "岩石属性招式威力提升20%。"
+  },
+  "miracle-seed": {
+    nameZh: "奇迹种子",
+    nameJa: "きせきのタネ",
+    nameEn: "Miracle Seed",
+    category: "携带物品",
+    icon: "./items/miracle-seed.png",
+    descZh: "孕育生命的种子。携带后，草属性的招式威力就会提高。",
+    effectzh: "草属性招式威力提升20%。"
+  },
+  "black-glasses": {
+    nameZh: "黑色眼镜",
+    nameJa: "くろいメガネ",
+    nameEn: "Black Glasses",
+    category: "携带物品",
+    icon: "./items/black-glasses.png",
+    descZh: "看上去很奇怪的眼镜。携带后，恶属性的招式威力就会提高。",
+    effectzh: "恶属性招式威力提升20%。"
+  },
+  "black-belt": {
+    nameZh: "黑带",
+    nameJa: "くろおび",
+    nameEn: "Black Belt",
+    category: "携带物品",
+    icon: "./items/black-belt.png",
+    descZh: "能振作精神的带子。携带后，格斗属性的招式威力就会提高。",
+    effectzh: "格斗属性招式威力提升20%。"
+  },
+  "magnet": {
+    nameZh: "磁铁",
+    nameJa: "じしゃく",
+    nameEn: "Magnet",
+    category: "携带物品",
+    icon: "./items/magnet.png",
+    descZh: "强力的磁铁。携带后，电属性的招式威力就会提高。",
+    effectzh: "电属性招式威力提升20%。"
+  },
+  "mystic-water": {
+    nameZh: "神秘水滴",
+    nameJa: "しんぴのしずく",
+    nameEn: "Mystic Water",
+    category: "携带物品",
+    icon: "./items/mystic-water.png",
+    descZh: "水滴形状的宝石。携带后，水属性的招式威力就会提高。",
+    effectzh: "水属性招式威力提升20%。"
+  },
+  "sharp-beak": {
+    nameZh: "锐利鸟嘴",
+    nameJa: "するどいくちばし",
+    nameEn: "Sharp Beak",
+    category: "携带物品",
+    icon: "./items/sharp-beak.png",
+    descZh: "又长又尖的鸟嘴。携带后，飞行属性的招式威力就会提高。",
+    effectzh: "飞行属性招式威力提升20%。"
+  },
+  "poison-barb": {
+    nameZh: "毒针",
+    nameJa: "どくバリ",
+    nameEn: "Poison Barb",
+    category: "携带物品",
+    icon: "./items/poison-barb.png",
+    descZh: "有毒的小针。携带后，毒属性的招式威力就会提高。",
+    effectzh: "毒属性招式威力提升20%。"
+  },
+  "never-melt-ice": {
+    nameZh: "不融冰",
+    nameJa: "とけないこおり",
+    nameEn: "Never-Melt Ice",
+    category: "携带物品",
+    icon: "./items/never-melt-ice.png",
+    descZh: "能隔绝热量的冰。携带后，冰属性的招式威力就会提高。",
+    effectzh: "冰属性招式威力提升20%。"
+  },
+  "spell-tag": {
+    nameZh: "诅咒之符",
+    nameJa: "のろいのおふだ",
+    nameEn: "Spell Tag",
+    category: "携带物品",
+    icon: "./items/spell-tag.png",
+    descZh: "古怪可怕的咒符。携带后，幽灵属性的招式威力就会提高。",
+    effectzh: "幽灵属性招式威力提升20%。"
+  },
+  "twisted-spoon": {
+    nameZh: "弯曲的汤匙",
+    nameJa: "まがったスプーン",
+    nameEn: "Twisted Spoon",
+    category: "携带物品",
+    icon: "./items/twisted-spoon.png",
+    descZh: "注入了念力的汤匙。携带后，超能力属性的招式威力就会提高。",
+    effectzh: "超能属性招式威力提升20%。"
+  },
+  "charcoal": {
+    nameZh: "木炭",
+    nameJa: "もくたん",
+    nameEn: "Charcoal",
+    category: "携带物品",
+    icon: "./items/charcoal.png",
+    descZh: "焚烧用的燃料。携带后，火属性的招式威力就会提高。",
+    effectzh: "火属性招式威力提升20%。"
+  },
+  "dragon-fang": {
+    nameZh: "龙之牙",
+    nameJa: "りゅうのキバ",
+    nameEn: "Dragon Fang",
+    category: "携带物品",
+    icon: "./items/dragon-fang.png",
+    descZh: "坚硬锐利的牙齿。携带后，龙属性的招式威力就会提高。",
+    effectzh: "龙属性招式威力提升20%。"
+  },
+  "pink-bow": {
+    nameZh: "粉红色丝带",
+    nameJa: "ピンクのリボン",
+    nameEn: "Pink Bow",
+    category: "携带物品",
+    icon: "./items/pink-bow.png",
+    descZh: "携带后，一般屬性的招式威力就会提高。",
+    effectzh: "装饰用，旧作中提升一般属性招式威力。"
+  },
+  "polkadot-bow": {
+    nameZh: "水玉色之带",
+    nameJa: "みずたまりボン",
+    nameEn: "Polkadot Bow",
+    category: "携带物品",
+    icon: "./items/polkadot-bow.png",
+    descZh: "携带后，一般屬性的招式威力就会提高。",
+    effectzh: "装饰用，旧作中提升一般属性招式威力。"
+  },
+  "silk-scarf": {
+    nameZh: "丝绸围巾",
+    nameJa: "シルクのスカーフ",
+    nameEn: "Silk Scarf",
+    category: "携带物品",
+    icon: "./items/silk-scarf.png",
+    descZh: "手感不错的围巾。携带后，一般属性的招式威力就会提高。",
+    effectzh: "一般属性招式威力提升20%。"
+  },
+  "berserk-gene": {
+    nameZh: "破坏基因",
+    nameJa: "はかいのいでんし",
+    nameEn: "Berserk Gene",
+    category: "携带物品",
+    icon: "./items/berserk-gene.png",
+    descZh: "攻击的威力就会提高，但会造成混乱。",
+    effectzh: "攻击提升2级，但之后必定陷入混乱（一次性）。"
+  },
+  "up-grade": {
+    nameZh: "升级数据",
+    nameJa: "アップグレード",
+    nameEn: "Up-Grade",
+    category: "携带物品",
+    icon: "./items/up-grade.png",
+    descZh: "内部储存了各种信息的透明机器。西尔佛公司制造。",
+    effectzh: "用于培育（多边兽进化道具）。"
+  },
+  "lucky-punch": {
+    nameZh: "吉利拳",
+    nameJa: "ラッキーパンチ",
+    nameEn: "Lucky Punch",
+    category: "携带物品",
+    icon: "./items/lucky-punch.png",
+    descZh: "能带来幸运的拳套。让吉利蛋携带后，招式会变得容易击中要害。",
+    effectzh: "吉利蛋携带时招式更容易击中要害。"
+  },
+  "metal-powder": {
+    nameZh: "金属粉",
+    nameJa: "メタルパウダー",
+    nameEn: "Metal Powder",
+    category: "携带物品",
+    icon: "./items/metal-powder.png",
+    descZh: "让百变怪携带后，防御就会提高的神奇粉末。非常细腻坚硬。",
+    effectzh: "百变怪携带时防御提升100%。"
+  },
+  "quick-powder": {
+    nameZh: "速度粉",
+    nameJa: "スピードパウダー",
+    nameEn: "Quick Powder",
+    category: "携带物品",
+    icon: "./items/quick-powder.png",
+    descZh: "让百变怪携带后，速度就会提高的神奇粉末。非常细腻坚硬。",
+    effectzh: "百变怪携带时速度提升100%。"
+  },
+  "thick-club": {
+    nameZh: "粗骨头",
+    nameJa: "ふといホネ",
+    nameEn: "Thick Club",
+    category: "携带物品",
+    icon: "./items/thick-club.png",
+    descZh: "某种坚硬的骨头。让卡拉卡拉或嘎啦嘎啦携带后，攻击就会提高。",
+    effectzh: "卡拉卡拉／嘎啦嘎啦携带时攻击提升100%。"
+  },
+  "stick": {
+    nameZh: "大葱",
+    nameJa: "ながねぎ",
+    nameEn: "Stick",
+    category: "携带物品",
+    icon: "./items/stick.png",
+    descZh: "非常长且坚硬的茎。让大葱鸭携带后，招式会变得容易击中要害。",
+    effectzh: "大葱鸭携带时招式更容易击中要害。"
+  },
+  "berry": {
+    nameZh: "果实",
+    nameJa: "きのみ",
+    nameEn: "Berry",
+    category: "携带物品",
+    icon: "./items/berry.png",
+    descZh: "携带后，可以回復自己10点体力。",
+    effectzh: "携带后，可以回復自己10点体力。"
+  },
+  "gold-berry": {
+    nameZh: "黄金的果实",
+    nameJa: "おうごんのみ",
+    nameEn: "Gold Berry",
+    category: "携带物品",
+    icon: "./items/gold-berry.png",
+    descZh: "携带后，可以回復自己30点体力。",
+    effectzh: "携带后，可以回復自己30点体力。"
+  },
+  "przcureberry": {
+    nameZh: "消除麻痹的果实",
+    nameJa: "まひなおしのみ",
+    nameEn: "PRZCureBerry",
+    category: "携带物品",
+    icon: "./items/przcureberry.png",
+    descZh: "携带后，可以治愈自己的麻痹状态。",
+    effectzh: "携带后，可以治愈自己的麻痹状态。"
+  },
+  "psncureberry": {
+    nameZh: "解毒的果实",
+    nameJa: "どくけしのみ",
+    nameEn: "PSNCureBerry",
+    category: "携带物品",
+    icon: "./items/psncureberry.png",
+    descZh: "携带后，可以治愈自己的中毒状态。",
+    effectzh: "携带后，可以治愈自己的中毒状态。"
+  },
+  "bitter-berry": {
+    nameZh: "苦涩的果实",
+    nameJa: "にがいきのみ",
+    nameEn: "Bitter Berry",
+    category: "携带物品",
+    icon: "./items/bitter-berry.png",
+    descZh: "携带后，可以治愈自己的混乱状态。",
+    effectzh: "携带后，可以治愈自己的混乱状态。"
+  },
+  "burnt-berry": {
+    nameZh: "烧烤的果实",
+    nameJa: "やけたきのみ",
+    nameEn: "Burnt Berry",
+    category: "携带物品",
+    icon: "./items/burnt-berry.png",
+    descZh: "携带后，可以治愈自己的冰冻状态。",
+    effectzh: "携带后，可以治愈自己的冰冻状态。"
+  },
+  "ice-berry": {
+    nameZh: "冰冻的果实",
+    nameJa: "こおったきのみ",
+    nameEn: "Ice Berry",
+    category: "携带物品",
+    icon: "./items/ice-berry.png",
+    descZh: "携带后，可以治愈自己的灼伤状态。",
+    effectzh: "携带后，可以治愈自己的灼伤状态。"
+  },
+  "mint-berry": {
+    nameZh: "薄荷的果实",
+    nameJa: "はっかのみ",
+    nameEn: "Mint Berry",
+    category: "携带物品",
+    icon: "./items/mint-berry.png",
+    descZh: "携带后，可以治愈自己的睡眠状态。",
+    effectzh: "旧版树果，回复少量HP。"
+  },
+  "miracleberry": {
+    nameZh: "奇迹的果实",
+    nameJa: "きせきのみ",
+    nameEn: "MiracleBerry",
+    category: "携带物品",
+    icon: "./items/miracleberry.png",
+    descZh: "携带后，可以治愈自己所有的异常状态。",
+    effectzh: "携带后，可以治愈自己所有的异常状态。"
+  },
+  "mysteryberry": {
+    nameZh: "神奇的果实",
+    nameJa: "ふしぎなきのみ",
+    nameEn: "MysteryBerry",
+    category: "携带物品",
+    icon: "./items/mysteryberry.png",
+    descZh: "携带后，可以在战斗中回复自己的PP。",
+    effectzh: "携带后，可以在战斗中回复自己的PP。"
+  },
+  "white-herb": {
+    nameZh: "白色香草",
+    nameJa: "しろいハーブ",
+    nameEn: "White Herb",
+    category: "携带物品",
+    icon: "./items/white-herb.png",
+    descZh: "当携带它的宝可梦能力降低时，仅能回到之前的状态1次。",
+    effectzh: "战斗开始时消除自身所有能力下降（每场一次）。"
+  },
+  "mental-herb": {
+    nameZh: "心灵香草",
+    nameJa: "メンタルハーブ",
+    nameEn: "Mental Herb",
+    category: "携带物品",
+    icon: "./items/mental-herb.png",
+    descZh: "当携带它的宝可梦无法自由使出招式时，仅会回复1次。",
+    effectzh: "消除挑衅／力量戏法等带来的束缚效果（每场一次）。"
+  },
+  "power-herb": {
+    nameZh: "强力香草",
+    nameJa: "パワフルハーブ",
+    nameEn: "Power Herb",
+    category: "携带物品",
+    icon: "./items/power-herb.png",
+    descZh: "携带它的宝可梦仅有1次机会可以在第1回合使出需要蓄力的招式。",
+    effectzh: "蓄力招式可于使出当回合立即发动。"
+  },
+  "macho-brace": {
+    nameZh: "强制锻炼器",
+    nameJa: "きょうせいギプス",
+    nameEn: "Macho Brace",
+    category: "携带物品",
+    icon: "./items/macho-brace.png",
+    descZh: "又硬又重的锻炼器。虽然携带后速度会降低，但会比平时更容易茁壮成长。",
+    effectzh: "努力值获得翻倍，但速度减半。"
+  },
+  "soothe-bell": {
+    nameZh: "安抚之铃",
+    nameJa: "やすらぎのすず",
+    nameEn: "Soothe Bell",
+    category: "携带物品",
+    icon: "./items/soothe-bell.png",
+    descZh: "音色悦耳的铃铛。携带它的宝可梦会受到安抚，变得容易和训练家亲密。",
+    effectzh: "亲密度提升速度加快（约1.5倍）。"
+  },
   "choice-band": {
-  nameZh: "讲究头带",
-  category: "携带道具",
-  descZh: "携带后攻击提升，但只能使用已选的招式。"
-},
+    nameZh: "讲究头带",
+    nameJa: "こだわりハチマキ",
+    nameEn: "Choice Band",
+    category: "携带物品",
+    icon: "./items/choice-band.png",
+    descZh: "有点讲究的头带。虽然携带后攻击会提高，但只能使出相同的招式。",
+    effectzh: "攻击提升50%，但只能使用上场后使出的第一个招式。"
+  },
   "choice-specs": {
-  nameZh: "讲究眼镜",
-  category: "携带道具",
-  descZh: "携带后特攻提升，但只能使用已选的招式。"
-},
+    nameZh: "讲究眼镜",
+    nameJa: "こだわりメガネ",
+    nameEn: "Choice Specs",
+    category: "携带物品",
+    icon: "./items/choice-specs.png",
+    descZh: "有点讲究的眼镜。虽然携带后特攻会提高，但只能使出相同的招式。",
+    effectzh: "特攻提升50%，但只能使用上场后使出的第一个招式。"
+  },
   "choice-scarf": {
-  nameZh: "讲究围巾",
-  category: "携带道具",
-  descZh: "携带后速度提升，但只能使用已选的招式。"
-},
-  "life-orb": {
-  nameZh: "生命宝珠",
-  category: "携带道具",
-  descZh: "携带后招式威力提升，但每回合会受到少量伤害。"
-},
-  "focus-sash": {
-  nameZh: "气势披带",
-  category: "携带道具",
-  descZh: "携带后即使受到致命伤害，也能仅剩１ＨＰ撑住１次。"
-},
-  "eviolite": {
-  nameZh: "进化奇石",
-  category: "携带道具",
-  descZh: "携带后未进化的宝可梦防御与特防提升。"
-},
-  "assault-vest": {
-  nameZh: "突击背心",
-  category: "携带道具",
-  descZh: "携带后特防提升，但无法使用变化招式。"
-},
-  "rocky-helmet": {
-  nameZh: "凸凸头盔",
-  category: "携带道具",
-  descZh: "携带后，用接触类招式攻击自己的对手会受到伤害。"
-},
-  "heavy-duty-boots": {
-  nameZh: "防滑靴",
-  category: "携带道具",
-  descZh: "携带后不会受到场地效果的影响。"
-},
+    nameZh: "讲究围巾",
+    nameJa: "こだわりスカーフ",
+    nameEn: "Choice Scarf",
+    category: "携带物品",
+    icon: "./items/choice-scarf.png",
+    descZh: "有点讲究的围巾。虽然携带后速度会提高，但只能使出相同的招式。",
+    effectzh: "速度提升50%，但只能使用上场后使出的第一个招式。"
+  },
+  "soul-dew": {
+    nameZh: "心之水滴",
+    nameJa: "こころのしずく",
+    nameEn: "Soul Dew",
+    category: "携带物品",
+    icon: "./items/soul-dew.png",
+    descZh: "让拉帝欧斯或拉帝亚斯携带后，超能力和龙属性的招式威力就会提高的神奇珠子。",
+    effectzh: "拉帝亚斯／拉帝欧斯携带时超能／龙属性招式威力提升20%。"
+  },
+  "deep-sea-tooth": {
+    nameZh: "深海之牙",
+    nameJa: "しんかいのキバ",
+    nameEn: "Deep Sea Tooth",
+    category: "携带物品",
+    icon: "./items/deep-sea-tooth.png",
+    descZh: "让珍珠贝携带后，特攻就会提高的牙齿。散发着闪亮的银光。",
+    effectzh: "珍珠贝携带时特攻大幅提升（×2）。"
+  },
+  "deep-sea-scale": {
+    nameZh: "深海鳞片",
+    nameJa: "しんかいのウロコ",
+    nameEn: "Deep Sea Scale",
+    category: "携带物品",
+    icon: "./items/deep-sea-scale.png",
+    descZh: "让珍珠贝携带后，特防就会提高的鳞片。散发着淡淡的粉红色光芒。",
+    effectzh: "珍珠贝携带时防御大幅提升。"
+  },
+  "shell-bell": {
+    nameZh: "贝壳之铃",
+    nameJa: "かいがらのすず",
+    nameEn: "Shell Bell",
+    category: "携带物品",
+    icon: "./items/shell-bell.png",
+    descZh: "当携带它的宝可梦攻击对手并造成伤害时，能回复少量HP。",
+    effectzh: "造成伤害的1／8回复自身HP。"
+  },
+  "sea-incense": {
+    nameZh: "海潮薰香",
+    nameJa: "うしおのおこう",
+    nameEn: "Sea Incense",
+    category: "携带物品",
+    icon: "./items/sea-incense.png",
+    descZh: "有着神奇香气的薰香。携带后，水属性的招式威力就会提高。",
+    effectzh: "用于培育（产蛋相关）。"
+  },
+  "lax-incense": {
+    nameZh: "悠闲薰香",
+    nameJa: "のんきのおこう",
+    nameEn: "Lax Incense",
+    category: "携带物品",
+    icon: "./items/lax-incense.png",
+    descZh: "携带后，薰香的神奇香气会迷惑对手，其招式会变得不容易命中。",
+    effectzh: "对手招式命中率降低10%。"
+  },
+  "odd-incense": {
+    nameZh: "奇异薰香",
+    nameJa: "あやしいおこう",
+    nameEn: "Odd Incense",
+    category: "携带物品",
+    icon: "./items/odd-incense.png",
+    descZh: "有着神奇香气的薰香。携带后，超能力属性的招式威力就会提高。",
+    effectzh: "用于培育（产蛋相关）。"
+  },
+  "rock-incense": {
+    nameZh: "岩石薰香",
+    nameJa: "がんせきおこう",
+    nameEn: "Rock Incense",
+    category: "携带物品",
+    icon: "./items/rock-incense.png",
+    descZh: "有着神奇香气的薰香。携带后，岩石属性的招式威力就会提高。",
+    effectzh: "用于培育（产蛋相关）。"
+  },
+  "full-incense": {
+    nameZh: "饱腹薰香",
+    nameJa: "まんぷくおこう",
+    nameEn: "Full Incense",
+    category: "携带物品",
+    icon: "./items/full-incense.png",
+    descZh: "有着神奇香气的薰香。携带后，宝可梦的行动会比平时更加迟缓。",
+    effectzh: "能力比对手更慢（后手）。"
+  },
+  "wave-incense": {
+    nameZh: "涟漪薰香",
+    nameJa: "さざなみのおこう",
+    nameEn: "Wave Incense",
+    category: "携带物品",
+    icon: "./items/wave-incense.png",
+    descZh: "有着神奇香气的薰香。携带后，水属性的招式威力就会提高。",
+    effectzh: "帮助宝可梦放松，用于培育。"
+  },
+  "rose-incense": {
+    nameZh: "花朵薰香",
+    nameJa: "おはなのおこう",
+    nameEn: "Rose Incense",
+    category: "携带物品",
+    icon: "./items/rose-incense.png",
+    descZh: "有着神奇香气的薰香。携带后，草属性的招式威力就会提高。",
+    effectzh: "用于培育（产蛋相关）。"
+  },
+  "luck-incense": {
+    nameZh: "幸运薰香",
+    nameJa: "こううんのおこう",
+    nameEn: "Luck Incense",
+    category: "携带物品",
+    icon: "./items/luck-incense.png",
+    descZh: "只要携带它的宝可梦在战斗时出场一次，就能获得2倍金钱。",
+    effectzh: "战斗获得金钱变为2倍。"
+  },
+  "pure-incense": {
+    nameZh: "洁净薰香",
+    nameJa: "きよめのおこう",
+    nameEn: "Pure Incense",
+    category: "携带物品",
+    icon: "./items/pure-incense.png",
+    descZh: "让排在最前面的宝可梦携带后，野生宝可梦就会不容易出现。",
+    effectzh: "必定能从野生宝可梦的战斗中逃走。"
+  },
+  "red-scarf": {
+    nameZh: "红色头巾",
+    nameJa: "あかいバンダナ",
+    nameEn: "Red Scarf",
+    category: "携带物品",
+    icon: "./items/red-scarf.png",
+    descZh: "携带它去参加华丽大赛的宝可梦会比平时看上去更加帅气。",
+    effectzh: "华丽大赛装饰，提升酷炫表现。"
+  },
+  "blue-scarf": {
+    nameZh: "蓝色头巾",
+    nameJa: "あおいバンダナ",
+    nameEn: "Blue Scarf",
+    category: "携带物品",
+    icon: "./items/blue-scarf.png",
+    descZh: "携带它去参加华丽大赛的宝可梦会比平时看上去更加美丽。",
+    effectzh: "华丽大赛装饰，提升美丽表现。"
+  },
+  "pink-scarf": {
+    nameZh: "粉红头巾",
+    nameJa: "ピンクのバンダナ",
+    nameEn: "Pink Scarf",
+    category: "携带物品",
+    icon: "./items/pink-scarf.png",
+    descZh: "携带它去参加华丽大赛的宝可梦会比平时看上去更加可爱。",
+    effectzh: "华丽大赛装饰，提升可爱表现。"
+  },
+  "green-scarf": {
+    nameZh: "绿色头巾",
+    nameJa: "みどりのバンダナ",
+    nameEn: "Green Scarf",
+    category: "携带物品",
+    icon: "./items/green-scarf.png",
+    descZh: "携带它去参加华丽大赛的宝可梦会比平时看上去更加聪明。",
+    effectzh: "华丽大赛装饰，提升聪明表现。"
+  },
+  "yellow-scarf": {
+    nameZh: "黄色头巾",
+    nameJa: "きいろのバンダナ",
+    nameEn: "Yellow Scarf",
+    category: "携带物品",
+    icon: "./items/yellow-scarf.png",
+    descZh: "携带它去参加华丽大赛的宝可梦会比平时看上去更加强壮。",
+    effectzh: "华丽大赛装饰，提升坚强表现。"
+  },
+  "red-orb": {
+    nameZh: "朱红色宝珠",
+    nameJa: "べにいろのたま",
+    nameEn: "Red Orb",
+    category: "携带物品",
+    icon: "./items/red-orb.png",
+    descZh: "散发着红色光辉的宝珠。据说和丰缘地区的传说渊源颇深。",
+    effectzh: "固拉多携带时进入原始回归形态。"
+  },
+  "blue-orb": {
+    nameZh: "靛蓝色宝珠",
+    nameJa: "あいいろのたま",
+    nameEn: "Blue Orb",
+    category: "携带物品",
+    icon: "./items/blue-orb.png",
+    descZh: "散发着蓝色光辉的宝珠。据说和丰缘地区的传说渊源颇深。",
+    effectzh: "盖欧卡携带时进入原始回归形态。"
+  },
+  "flame-plate": {
+    nameZh: "火球石板",
+    nameJa: "ひのたまプレート",
+    nameEn: "Flame Plate",
+    category: "携带物品",
+    icon: "./items/flame-plate.png",
+    descZh: "火属性的石板。携带后，火属性的招式威力就会增强。",
+    effectzh: "火属性招式威力提升20%。"
+  },
+  "splash-plate": {
+    nameZh: "水滴石板",
+    nameJa: "しずくプレート",
+    nameEn: "Splash Plate",
+    category: "携带物品",
+    icon: "./items/splash-plate.png",
+    descZh: "水属性的石板。携带后，水属性的招式威力就会增强。",
+    effectzh: "水属性招式威力提升20%。"
+  },
+  "zap-plate": {
+    nameZh: "雷电石板",
+    nameJa: "いかずちプレート",
+    nameEn: "Zap Plate",
+    category: "携带物品",
+    icon: "./items/zap-plate.png",
+    descZh: "电属性的石板。携带后，电属性的招式威力就会增强。",
+    effectzh: "电属性招式威力提升20%。"
+  },
+  "meadow-plate": {
+    nameZh: "碧绿石板",
+    nameJa: "みどりのプレート",
+    nameEn: "Meadow Plate",
+    category: "携带物品",
+    icon: "./items/meadow-plate.png",
+    descZh: "草属性的石板。携带后，草属性的招式威力就会增强。",
+    effectzh: "草属性招式威力提升20%。"
+  },
+  "icicle-plate": {
+    nameZh: "冰柱石板",
+    nameJa: "つららのプレート",
+    nameEn: "Icicle Plate",
+    category: "携带物品",
+    icon: "./items/icicle-plate.png",
+    descZh: "冰属性的石板。携带后，冰属性的招式威力就会增强。",
+    effectzh: "冰属性招式威力提升20%。"
+  },
+  "fist-plate": {
+    nameZh: "拳头石板",
+    nameJa: "こぶしのプレート",
+    nameEn: "Fist Plate",
+    category: "携带物品",
+    icon: "./items/fist-plate.png",
+    descZh: "格斗属性的石板。携带后，格斗属性的招式威力就会增强。",
+    effectzh: "格斗属性招式威力提升20%。"
+  },
+  "toxic-plate": {
+    nameZh: "剧毒石板",
+    nameJa: "もうどくプレート",
+    nameEn: "Toxic Plate",
+    category: "携带物品",
+    icon: "./items/toxic-plate.png",
+    descZh: "毒属性的石板。携带后，毒属性的招式威力就会增强。",
+    effectzh: "毒属性招式威力提升20%。"
+  },
+  "earth-plate": {
+    nameZh: "大地石板",
+    nameJa: "だいちのプレート",
+    nameEn: "Earth Plate",
+    category: "携带物品",
+    icon: "./items/earth-plate.png",
+    descZh: "地面属性的石板。携带后，地面属性的招式威力就会增强。",
+    effectzh: "地面属性招式威力提升20%。"
+  },
+  "sky-plate": {
+    nameZh: "蓝天石板",
+    nameJa: "あおぞらプレート",
+    nameEn: "Sky Plate",
+    category: "携带物品",
+    icon: "./items/sky-plate.png",
+    descZh: "飞行属性的石板。携带后，飞行属性的招式威力就会增强。",
+    effectzh: "飞行属性招式威力提升20%。"
+  },
+  "mind-plate": {
+    nameZh: "神奇石板",
+    nameJa: "ふしぎのプレート",
+    nameEn: "Mind Plate",
+    category: "携带物品",
+    icon: "./items/mind-plate.png",
+    descZh: "超能力属性的石板。携带后，超能力属性的招式威力就会增强。",
+    effectzh: "超能属性招式威力提升20%。"
+  },
+  "insect-plate": {
+    nameZh: "玉虫石板",
+    nameJa: "たまむしプレート",
+    nameEn: "Insect Plate",
+    category: "携带物品",
+    icon: "./items/insect-plate.png",
+    descZh: "虫属性的石板。携带后，虫属性的招式威力就会增强。",
+    effectzh: "虫属性招式威力提升20%。"
+  },
+  "stone-plate": {
+    nameZh: "岩石石板",
+    nameJa: "がんせきプレート",
+    nameEn: "Stone Plate",
+    category: "携带物品",
+    icon: "./items/stone-plate.png",
+    descZh: "岩石属性的石板。携带后，岩石属性的招式威力就会增强。",
+    effectzh: "岩石属性招式威力提升20%。"
+  },
+  "spooky-plate": {
+    nameZh: "妖怪石板",
+    nameJa: "もののけプレート",
+    nameEn: "Spooky Plate",
+    category: "携带物品",
+    icon: "./items/spooky-plate.png",
+    descZh: "幽灵属性的石板。携带后，幽灵属性的招式威力就会增强。",
+    effectzh: "幽灵属性招式威力提升20%。"
+  },
+  "draco-plate": {
+    nameZh: "龙之石板",
+    nameJa: "りゅうのプレート",
+    nameEn: "Draco Plate",
+    category: "携带物品",
+    icon: "./items/draco-plate.png",
+    descZh: "龙属性的石板。携带后，龙属性的招式威力就会增强。",
+    effectzh: "龙属性招式威力提升20%。"
+  },
+  "dread-plate": {
+    nameZh: "恶颜石板",
+    nameJa: "こわもてプレート",
+    nameEn: "Dread Plate",
+    category: "携带物品",
+    icon: "./items/dread-plate.png",
+    descZh: "恶属性的石板。携带后，恶属性的招式威力就会增强。",
+    effectzh: "恶属性招式威力提升20%。"
+  },
+  "iron-plate": {
+    nameZh: "钢铁石板",
+    nameJa: "こうてつプレート",
+    nameEn: "Iron Plate",
+    category: "携带物品",
+    icon: "./items/iron-plate.png",
+    descZh: "钢属性的石板。携带后，钢属性的招式威力就会增强。",
+    effectzh: "钢属性招式威力提升20%。"
+  },
+  "pixie-plate": {
+    nameZh: "妖精石板",
+    nameJa: "せいれいプレート",
+    nameEn: "Pixie Plate",
+    category: "携带物品",
+    icon: "./items/pixie-plate.png",
+    descZh: "妖精属性的石板。携带后，妖精属性的招式威力就会增强。",
+    effectzh: "妖精属性招式威力提升20%。"
+  },
+  "oval-stone": {
+    nameZh: "浑圆之石",
+    nameJa: "まんまるいし",
+    nameEn: "Oval Stone",
+    category: "携带物品",
+    icon: "./items/oval-stone.png",
+    descZh: "能让某些特定宝可梦进化的神奇石头。像珠子一般圆润。",
+    effectzh: "用于培育（进化相关）。"
+  },
   "adamant-orb": {
-  nameZh: "固执宝珠",
-  category: "携带道具",
-  descZh: "帝牙卢卡携带后龙与钢属性招式威力提升。"
-},
+    nameZh: "金刚宝珠",
+    nameJa: "こんごうだま",
+    nameEn: "Adamant Orb",
+    category: "携带物品",
+    icon: "./items/adamant-orb.png",
+    descZh: "让帝牙卢卡携带的话，龙和钢属性的招式威力就会提高。散发着光辉的宝珠。",
+    effectzh: "帝牙卢卡携带时钢／龙属性招式威力提升20%。"
+  },
   "lustrous-orb": {
-  nameZh: "白玉宝珠",
-  category: "携带道具",
-  descZh: "帕路奇亚携带后水与龙属性招式威力提升。"
-},
+    nameZh: "白玉宝珠",
+    nameJa: "しらたま",
+    nameEn: "Lustrous Orb",
+    category: "携带物品",
+    icon: "./items/lustrous-orb.png",
+    descZh: "让帕路奇亚携带的话，龙和水属性的招式威力就会提高。散发着美丽光辉的宝珠。",
+    effectzh: "帕路奇亚携带时水／龙属性招式威力提升20%。"
+  },
   "griseous-orb": {
-  nameZh: "白金宝珠",
-  category: "携带道具",
-  descZh: "骑拉帝纳携带后幽灵与龙属性招式威力提升。"
-},
-  "sitrus-berry": {
-  nameZh: "文柚果",
-  category: "树果",
-  descZh: "ＨＰ减少一半时，会回复ＨＰ的树果。"
-},
-  "oran-berry": {
-  nameZh: "橙橙果",
-  category: "树果",
-  descZh: "回复１０点ＨＰ的树果。"
-},
-  "pecha-berry": {
-  nameZh: "桃桃果",
-  category: "树果",
-  descZh: "能治愈中毒状态的树果。"
-},
-  "rawst-berry": {
-  nameZh: "柿仔果",
-  category: "树果",
-  descZh: "能治愈灼伤状态的树果。"
-},
+    nameZh: "白金宝珠",
+    nameJa: "はっきんだま",
+    nameEn: "Griseous Orb",
+    category: "携带物品",
+    icon: "./items/griseous-orb.png",
+    descZh: "让骑拉帝纳携带的话，龙和幽灵属性的招式威力就会提高。散发着光辉的宝珠。",
+    effectzh: "骑拉帝纳携带时幽灵／龙属性招式威力提升20%。"
+  },
+  "protector": {
+    nameZh: "护具",
+    nameJa: "プロテクター",
+    nameEn: "Protector",
+    category: "携带物品",
+    icon: "./items/protector.png",
+    descZh: "某种护具。非常坚硬而且沉重。某种宝可梦很喜欢它。",
+    effectzh: "用于培育（特定宝可梦进化道具）。"
+  },
+  "electirizer": {
+    nameZh: "电力增幅器",
+    nameJa: "エレキブースター",
+    nameEn: "Electirizer",
+    category: "携带物品",
+    icon: "./items/electirizer.png",
+    descZh: "积蓄着庞大电气力量的箱子。某种宝可梦很喜欢它。",
+    effectzh: "用于培育（电击兽进化道具）。"
+  },
+  "magmarizer": {
+    nameZh: "熔岩增幅器",
+    nameJa: "マグマブースター",
+    nameEn: "Magmarizer",
+    category: "携带物品",
+    icon: "./items/magmarizer.png",
+    descZh: "积蓄着庞大熔岩能量的箱子。某种宝可梦很喜欢它。",
+    effectzh: "用于培育（鸭嘴炎兽进化道具）。"
+  },
+  "dubious-disc": {
+    nameZh: "可疑补丁",
+    nameJa: "あやしいパッチ",
+    nameEn: "Dubious Disc",
+    category: "携带物品",
+    icon: "./items/dubious-disc.png",
+    descZh: "内部储存了奇怪信息的透明机器。制造者不明。",
+    effectzh: "用于培育（多边兽进化道具）。"
+  },
+  "reaper-cloth": {
+    nameZh: "灵界之布",
+    nameJa: "れいかいのぬの",
+    nameEn: "Reaper Cloth",
+    category: "携带物品",
+    icon: "./items/reaper-cloth.png",
+    descZh: "蕴含着惊人强大灵力的布。某种宝可梦很喜欢它。",
+    effectzh: "用于培育（魔墙人偶进化道具）。"
+  },
+  "razor-claw": {
+    nameZh: "锐利之爪",
+    nameJa: "するどいツメ",
+    nameEn: "Razor Claw",
+    category: "携带物品",
+    icon: "./items/razor-claw.png",
+    descZh: "尖锐的爪子。携带后，招式会变得容易击中要害。",
+    effectzh: "招式更容易击中要害（会心率提升）；用于特定进化。"
+  },
+  "razor-fang": {
+    nameZh: "锐利之牙",
+    nameJa: "するどいキバ",
+    nameEn: "Razor Fang",
+    category: "携带物品",
+    icon: "./items/razor-fang.png",
+    descZh: "尖锐的牙齿。携带后，在给予伤害时，有时会让对手畏缩。",
+    effectzh: "30%几率使被击中者陷入害怕。"
+  },
+  "wide-lens": {
+    nameZh: "广角镜",
+    nameJa: "こうかくレンズ",
+    nameEn: "Wide Lens",
+    category: "携带物品",
+    icon: "./items/wide-lens.png",
+    descZh: "能放大观看物体的镜片。携带后，招式的命中率就会少量提高。",
+    effectzh: "招式命中率提升10%。"
+  },
+  "muscle-band": {
+    nameZh: "力量头带",
+    nameJa: "ちからのハチマキ",
+    nameEn: "Muscle Band",
+    category: "携带物品",
+    icon: "./items/muscle-band.png",
+    descZh: "力如泉涌的头带。携带后，物理招式的威力就会少量提高。",
+    effectzh: "物理招式威力提升10%。"
+  },
+  "wise-glasses": {
+    nameZh: "博识眼镜",
+    nameJa: "ものしりメガネ",
+    nameEn: "Wise Glasses",
+    category: "携带物品",
+    icon: "./items/wise-glasses.png",
+    descZh: "装着很厚镜片的眼镜。携带后，特殊招式的威力就会少量提高。",
+    effectzh: "特殊招式威力提升10%。"
+  },
+  "expert-belt": {
+    nameZh: "达人带",
+    nameJa: "たつじんのおび",
+    nameEn: "Expert Belt",
+    category: "携带物品",
+    icon: "./items/expert-belt.png",
+    descZh: "用惯了的黑色带子。携带后，效果绝佳时的招式威力就会少量提高。",
+    effectzh: "效果绝佳的招式威力提升20%。"
+  },
+  "light-clay": {
+    nameZh: "光之黏土",
+    nameJa: "ひかりのねんど",
+    nameEn: "Light Clay",
+    category: "携带物品",
+    icon: "./items/light-clay.png",
+    descZh: "当携带它的宝可梦使出光墙或反射壁时，效果会比平时持续得更长。",
+    effectzh: "反射壁／光墙／戏法空间持续时间延长至8回合。"
+  },
+  "life-orb": {
+    nameZh: "生命宝珠",
+    nameJa: "いのちのたま",
+    nameEn: "Life Orb",
+    category: "携带物品",
+    icon: "./items/life-orb.png",
+    descZh: "携带后，虽然每次攻击时HP少量减少，但招式的威力会提高。",
+    effectzh: "招式威力提升30%，但每回合损失最大HP的1／10。"
+  },
+  "toxic-orb": {
+    nameZh: "剧毒宝珠",
+    nameJa: "どくどくだま",
+    nameEn: "Toxic Orb",
+    category: "携带物品",
+    icon: "./items/toxic-orb.png",
+    descZh: "触碰后会放出毒的神奇宝珠。携带后，在战斗时会变成剧毒状态。",
+    effectzh: "每回合陷入剧毒。"
+  },
+  "flame-orb": {
+    nameZh: "火焰宝珠",
+    nameJa: "かえんだま",
+    nameEn: "Flame Orb",
+    category: "携带物品",
+    icon: "./items/flame-orb.png",
+    descZh: "触碰后会放出热量的神奇宝珠。携带后，在战斗时会变成灼伤状态。",
+    effectzh: "每回合陷入灼伤。"
+  },
+  "focus-sash": {
+    nameZh: "气势披带",
+    nameJa: "きあいのタスキ",
+    nameEn: "Focus Sash",
+    category: "携带物品",
+    icon: "./items/focus-sash.png",
+    descZh: "携带后，在HP全满时，即便受到可能会导致濒死的招式，也能仅以1HP撑过去1次。",
+    effectzh: "满HP时受到致命伤害仅剩1HP（每场战斗一次）。"
+  },
+  "zoom-lens": {
+    nameZh: "对焦镜",
+    nameJa: "フォーカスレンズ",
+    nameEn: "Zoom Lens",
+    category: "携带物品",
+    icon: "./items/zoom-lens.png",
+    descZh: "当携带它的宝可梦比对手行动迟缓时，招式会变得容易命中。",
+    effectzh: "后手时招式命中率提升20%。"
+  },
+  "metronome": {
+    nameZh: "节拍器",
+    nameJa: "メトロノーム",
+    nameEn: "Metronome",
+    category: "携带物品",
+    icon: "./items/metronome.png",
+    descZh: "携带后，连续使出相同招式时，威力就会提高。不再使出相同招式时，威力就会复原。",
+    effectzh: "连续使用同一招式时，威力每回合提升10%（最多20%）。"
+  },
+  "iron-ball": {
+    nameZh: "黑色铁球",
+    nameJa: "くろいてっきゅう",
+    nameEn: "Iron Ball",
+    category: "携带物品",
+    icon: "./items/iron-ball.png",
+    descZh: "携带后，速度会降低。飞行属性以及飘浮宝可梦会被地面招式击中。",
+    effectzh: "速度减半且免疫地面属性招式；用于特定进化。"
+  },
+  "lagging-tail": {
+    nameZh: "后攻之尾",
+    nameJa: "こうこうのしっぽ",
+    nameEn: "Lagging Tail",
+    category: "携带物品",
+    icon: "./items/lagging-tail.png",
+    descZh: "非常沉重的某种尾巴。携带后，行动会比平时更加迟缓。",
+    effectzh: "能力比对手更慢（后手）。"
+  },
+  "destiny-knot": {
+    nameZh: "红线",
+    nameJa: "あかいいと",
+    nameEn: "Destiny Knot",
+    category: "携带物品",
+    icon: "./items/destiny-knot.png",
+    descZh: "长长的鲜红色细线。携带后，在自己着迷时能让对手也着迷。",
+    effectzh: "孵蛋时父母双方各随机遗传5项个体值中的高个体。"
+  },
+  "black-sludge": {
+    nameZh: "黑色污泥",
+    nameJa: "くろいヘドロ",
+    nameEn: "Black Sludge",
+    category: "携带物品",
+    icon: "./items/black-sludge.png",
+    descZh: "携带后，毒属性的宝可梦会缓缓回复HP。其他属性的话，HP则会减少。",
+    effectzh: "毒属性每回合回复最大HP的1／16；非毒属性每回合损失最大HP的1／8。"
+  },
+  "icy-rock": {
+    nameZh: "冰冷岩石",
+    nameJa: "つめたいいわ",
+    nameEn: "Icy Rock",
+    category: "携带物品",
+    icon: "./items/icy-rock.png",
+    descZh: "携带它的宝可梦使出冰雹的话，冰雹的时间就会比平时更长。",
+    effectzh: "使出的冰雹持续时间延长至8回合。"
+  },
+  "smooth-rock": {
+    nameZh: "沙沙岩石",
+    nameJa: "さらさらいわ",
+    nameEn: "Smooth Rock",
+    category: "携带物品",
+    icon: "./items/smooth-rock.png",
+    descZh: "携带它的宝可梦使出沙暴的话，沙暴的时间就会比平时更长。",
+    effectzh: "使出的沙暴持续时间延长至8回合。"
+  },
+  "heat-rock": {
+    nameZh: "炽热岩石",
+    nameJa: "あついいわ",
+    nameEn: "Heat Rock",
+    category: "携带物品",
+    icon: "./items/heat-rock.png",
+    descZh: "携带它的宝可梦使出大晴天的话，晴天的时间就会比平时更长。",
+    effectzh: "使出的大晴天持续时间延长至8回合。"
+  },
+  "damp-rock": {
+    nameZh: "潮湿岩石",
+    nameJa: "しめったいわ",
+    nameEn: "Damp Rock",
+    category: "携带物品",
+    icon: "./items/damp-rock.png",
+    descZh: "携带它的宝可梦使出求雨的话，下雨的时间就会比平时更长。",
+    effectzh: "使出的求雨持续时间延长至8回合。"
+  },
+  "grip-claw": {
+    nameZh: "紧缠钩爪",
+    nameJa: "ねばりのかぎづめ",
+    nameEn: "Grip Claw",
+    category: "携带物品",
+    icon: "./items/grip-claw.png",
+    descZh: "携带后，绑紧以及紧束等会持续造成伤害的招式的回合数会增加。",
+    effectzh: "束缚／绑紧等招式的持续时间延长至最大值。"
+  },
+  "sticky-barb": {
+    nameZh: "附着针",
+    nameJa: "くっつきバリ",
+    nameEn: "Sticky Barb",
+    category: "携带物品",
+    icon: "./items/sticky-barb.png",
+    descZh: "携带后，每回合都会受到伤害。有时也会附着到碰到自己的对手身上。",
+    effectzh: "接触类招式攻击后附着对手，每回合损失其最大HP的1／8；可被夺取。"
+  },
+  "power-bracer": {
+    nameZh: "力量护腕",
+    nameJa: "パワーリスト",
+    nameEn: "Power Bracer",
+    category: "携带物品",
+    icon: "./items/power-bracer.png",
+    descZh: "虽然携带后速度会降低，但宝可梦的攻击会比平时成长得更高。",
+    effectzh: "携带时获得的攻击努力值翻倍。"
+  },
+  "power-belt": {
+    nameZh: "力量腰带",
+    nameJa: "パワーベルト",
+    nameEn: "Power Belt",
+    category: "携带物品",
+    icon: "./items/power-belt.png",
+    descZh: "虽然携带后速度会降低，但宝可梦的防御会比平时成长得更高。",
+    effectzh: "携带时获得的防御努力值翻倍。"
+  },
+  "power-lens": {
+    nameZh: "力量镜",
+    nameJa: "パワーレンズ",
+    nameEn: "Power Lens",
+    category: "携带物品",
+    icon: "./items/power-lens.png",
+    descZh: "虽然携带后速度会降低，但宝可梦的特攻会比平时成长得更高。",
+    effectzh: "携带时获得的特攻努力值翻倍。"
+  },
+  "power-band": {
+    nameZh: "力量束带",
+    nameJa: "パワーバンド",
+    nameEn: "Power Band",
+    category: "携带物品",
+    icon: "./items/power-band.png",
+    descZh: "虽然携带后速度会降低，但宝可梦的特防会比平时成长得更高。",
+    effectzh: "携带时获得的特防努力值翻倍。"
+  },
+  "power-anklet": {
+    nameZh: "力量护踝",
+    nameJa: "パワーアンクル",
+    nameEn: "Power Anklet",
+    category: "携带物品",
+    icon: "./items/power-anklet.png",
+    descZh: "虽然携带后速度会降低，但宝可梦的速度会比平时成长得更高。",
+    effectzh: "携带时获得的速度努力值翻倍。"
+  },
+  "power-weight": {
+    nameZh: "力量负重",
+    nameJa: "パワーウエイト",
+    nameEn: "Power Weight",
+    category: "携带物品",
+    icon: "./items/power-weight.png",
+    descZh: "虽然携带后速度会降低，但宝可梦的HP会比平时成长得更高。",
+    effectzh: "携带时获得的HP努力值翻倍。"
+  },
+  "shed-shell": {
+    nameZh: "美丽空壳",
+    nameJa: "きれいなぬけがら",
+    nameEn: "Shed Shell",
+    category: "携带物品",
+    icon: "./items/shed-shell.png",
+    descZh: "结实坚硬的空壳。携带它的宝可梦必定可以和后备的宝可梦进行替换。",
+    effectzh: "换下场时清除自身能力变化与状态。"
+  },
+  "big-root": {
+    nameZh: "大根茎",
+    nameJa: "おおきなねっこ",
+    nameEn: "Big Root",
+    category: "携带物品",
+    icon: "./items/big-root.png",
+    descZh: "携带后，吸取HP的招式可以比平时更多地回复自己的HP。",
+    effectzh: "吸取类招式回复量提升30%。"
+  },
+  "douse-drive": {
+    nameZh: "水流卡带",
+    nameJa: "アクアカセット",
+    nameEn: "Douse Drive",
+    category: "携带物品",
+    icon: "./items/douse-drive.png",
+    descZh: "这是让盖诺赛克特携带的卡带。携带后，高科技光炮这招式就会变为水属性。",
+    effectzh: "代欧奇希斯携带时改变属性／形态。"
+  },
+  "shock-drive": {
+    nameZh: "闪电卡带",
+    nameJa: "イナズマカセット",
+    nameEn: "Shock Drive",
+    category: "携带物品",
+    icon: "./items/shock-drive.png",
+    descZh: "这是让盖诺赛克特携带的卡带。携带后，高科技光炮这招式就会变为电属性。",
+    effectzh: "代欧奇希斯携带时改变属性／形态。"
+  },
+  "burn-drive": {
+    nameZh: "火焰卡带",
+    nameJa: "ブレイズカセット",
+    nameEn: "Burn Drive",
+    category: "携带物品",
+    icon: "./items/burn-drive.png",
+    descZh: "这是让盖诺赛克特携带的卡带。携带后，高科技光炮这招式就会变为火属性。",
+    effectzh: "代欧奇希斯携带时改变属性／形态。"
+  },
+  "chill-drive": {
+    nameZh: "冰冻卡带",
+    nameJa: "フリーズカセット",
+    nameEn: "Chill Drive",
+    category: "携带物品",
+    icon: "./items/chill-drive.png",
+    descZh: "这是让盖诺赛克特携带的卡带。携带后，高科技光炮这招式就会变为冰属性。",
+    effectzh: "代欧奇希斯携带时改变属性／形态。"
+  },
+  "prism-scale": {
+    nameZh: "美丽鳞片",
+    nameJa: "きれいなウロコ",
+    nameEn: "Prism Scale",
+    category: "携带物品",
+    icon: "./items/prism-scale.png",
+    descZh: "能让某些特定宝可梦进化的神奇鳞片。散发着虹色光辉。",
+    effectzh: "用于培育（丑丑鱼进化道具）。"
+  },
+  "eviolite": {
+    nameZh: "进化奇石",
+    nameJa: "しんかのきせき",
+    nameEn: "Eviolite",
+    category: "携带物品",
+    icon: "./items/eviolite.png",
+    descZh: "进化的神奇石块。携带后，还能进化的宝可梦的防御和特防就会提高。",
+    effectzh: "未进化宝可梦的防御与特防提升50%。"
+  },
+  "float-stone": {
+    nameZh: "轻石",
+    nameJa: "かるいし",
+    nameEn: "Float Stone",
+    category: "携带物品",
+    icon: "./items/float-stone.png",
+    descZh: "非常轻的石头。携带后，宝可梦的体重会变轻。",
+    effectzh: "携带时体重减半（影响招式威力与先制）。"
+  },
+  "rocky-helmet": {
+    nameZh: "凸凸头盔",
+    nameJa: "ゴツゴツメット",
+    nameEn: "Rocky Helmet",
+    category: "携带物品",
+    icon: "./items/rocky-helmet.png",
+    descZh: "让宝可梦携带后，在受到打击招式攻击时，能给予对手伤害。",
+    effectzh: "受到接触类招式攻击时，攻击方受到最大HP的1／6伤害。"
+  },
+  "air-balloon": {
+    nameZh: "气球",
+    nameJa: "ふうせん",
+    nameEn: "Air Balloon",
+    category: "携带物品",
+    icon: "./items/air-balloon.png",
+    descZh: "让宝可梦携带后，宝可梦会浮在空中。受到攻击就会破裂。",
+    effectzh: "免疫地面属性招式（被击中后消失）。"
+  },
+  "red-card": {
+    nameZh: "红牌",
+    nameJa: "レッドカード",
+    nameEn: "Red Card",
+    category: "携带物品",
+    icon: "./items/red-card.png",
+    descZh: "有着神奇力量的卡片。携带后，能让使用了招式的对手退场。",
+    effectzh: "被击中后强制对手换下一只宝可梦（自身不换）。"
+  },
+  "ring-target": {
+    nameZh: "标靶",
+    nameJa: "ねらいのまと",
+    nameEn: "Ring Target",
+    category: "携带物品",
+    icon: "./items/ring-target.png",
+    descZh: "原本因宝可梦的属性相克关系而无效的招式现在会变得能够击中自己。",
+    effectzh: "使对手对自身的招式必定命中（自身更易被击中）。"
+  },
+  "binding-band": {
+    nameZh: "紧绑束带",
+    nameJa: "しめつけバンド",
+    nameEn: "Binding Band",
+    category: "携带物品",
+    icon: "./items/binding-band.png",
+    descZh: "能增强绑紧招式的束带。携带后，绑紧招式的威力会变强。",
+    effectzh: "束缚／绑定造成的伤害提升（每回合约最大HP的1／8）。"
+  },
+  "absorb-bulb": {
+    nameZh: "球根",
+    nameJa: "きゅうこん",
+    nameEn: "Absorb Bulb",
+    category: "携带物品",
+    icon: "./items/absorb-bulb.png",
+    descZh: "一次性使用的球根。携带它的宝可梦如果受到水属性招式的攻击，特攻就会提高。",
+    effectzh: "受到水属性招式攻击时特攻提升1级并消耗。"
+  },
+  "cell-battery": {
+    nameZh: "充电电池",
+    nameJa: "じゅうでんち",
+    nameEn: "Cell Battery",
+    category: "携带物品",
+    icon: "./items/cell-battery.png",
+    descZh: "一次性使用的充电电池。携带它的宝可梦如果受到电属性招式的攻击，攻击就会提高。",
+    effectzh: "受到电属性招式攻击时特攻提升1级并消耗。"
+  },
+  "eject-button": {
+    nameZh: "逃脱按键",
+    nameJa: "だっしゅつボタン",
+    nameEn: "Eject Button",
+    category: "携带物品",
+    icon: "./items/eject-button.png",
+    descZh: "携带它的宝可梦如果受到招式攻击，就能逃脱战斗，并和同行的其他宝可梦进行替换。",
+    effectzh: "被击中后强制自身换下。"
+  },
+  "fire-gem": {
+    nameZh: "火之宝石",
+    nameJa: "ほのおのジュエル",
+    nameEn: "Fire Gem",
+    category: "携带物品",
+    icon: "./items/fire-gem.png",
+    descZh: "火属性的宝石。携带后，火属性的招式威力仅会增强1次。",
+    effectzh: "火属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "water-gem": {
+    nameZh: "水之宝石",
+    nameJa: "みずのジュエル",
+    nameEn: "Water Gem",
+    category: "携带物品",
+    icon: "./items/water-gem.png",
+    descZh: "水属性的宝石。携带后，水属性的招式威力仅会增强1次。",
+    effectzh: "水属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "electric-gem": {
+    nameZh: "电之宝石",
+    nameJa: "でんきのジュエル",
+    nameEn: "Electric Gem",
+    category: "携带物品",
+    icon: "./items/electric-gem.png",
+    descZh: "电属性的宝石。携带后，电属性的招式威力仅会增强1次。",
+    effectzh: "电属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "grass-gem": {
+    nameZh: "草之宝石",
+    nameJa: "くさのジュエル",
+    nameEn: "Grass Gem",
+    category: "携带物品",
+    icon: "./items/grass-gem.png",
+    descZh: "草属性的宝石。携带后，草属性的招式威力仅会增强1次。",
+    effectzh: "草属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "ice-gem": {
+    nameZh: "冰之宝石",
+    nameJa: "こおりのジュエル",
+    nameEn: "Ice Gem",
+    category: "携带物品",
+    icon: "./items/ice-gem.png",
+    descZh: "冰属性的宝石。携带后，冰属性的招式威力仅会增强1次。",
+    effectzh: "冰属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "fighting-gem": {
+    nameZh: "格斗宝石",
+    nameJa: "かくとうジュエル",
+    nameEn: "Fighting Gem",
+    category: "携带物品",
+    icon: "./items/fighting-gem.png",
+    descZh: "格斗属性的宝石。携带后，格斗属性的招式威力仅会增强1次。",
+    effectzh: "格斗属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "poison-gem": {
+    nameZh: "毒之宝石",
+    nameJa: "どくのジュエル",
+    nameEn: "Poison Gem",
+    category: "携带物品",
+    icon: "./items/poison-gem.png",
+    descZh: "毒属性的宝石。携带后，毒属性的招式威力仅会增强1次。",
+    effectzh: "毒属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "ground-gem": {
+    nameZh: "地面宝石",
+    nameJa: "じめんのジュエル",
+    nameEn: "Ground Gem",
+    category: "携带物品",
+    icon: "./items/ground-gem.png",
+    descZh: "地面属性的宝石。携带后，地面属性的招式威力仅会增强1次。",
+    effectzh: "地面属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "flying-gem": {
+    nameZh: "飞行宝石",
+    nameJa: "ひこうのジュエル",
+    nameEn: "Flying Gem",
+    category: "携带物品",
+    icon: "./items/flying-gem.png",
+    descZh: "飞行属性的宝石。携带后，飞行属性的招式威力仅会增强1次。",
+    effectzh: "飞行属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "psychic-gem": {
+    nameZh: "超能力宝石",
+    nameJa: "エスパージュエル",
+    nameEn: "Psychic Gem",
+    category: "携带物品",
+    icon: "./items/psychic-gem.png",
+    descZh: "超能力属性的宝石。携带后，超能力属性的招式威力仅会增强1次。",
+    effectzh: "超能属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "bug-gem": {
+    nameZh: "虫之宝石",
+    nameJa: "むしのジュエル",
+    nameEn: "Bug Gem",
+    category: "携带物品",
+    icon: "./items/bug-gem.png",
+    descZh: "虫属性的宝石。携带后，虫属性的招式威力仅会增强1次。",
+    effectzh: "虫属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "rock-gem": {
+    nameZh: "岩石宝石",
+    nameJa: "いわのジュエル",
+    nameEn: "Rock Gem",
+    category: "携带物品",
+    icon: "./items/rock-gem.png",
+    descZh: "岩石属性的宝石。携带后，岩石属性的招式威力仅会增强1次。",
+    effectzh: "岩石属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "ghost-gem": {
+    nameZh: "幽灵宝石",
+    nameJa: "ゴーストジュエル",
+    nameEn: "Ghost Gem",
+    category: "携带物品",
+    icon: "./items/ghost-gem.png",
+    descZh: "幽灵属性的宝石。携带后，幽灵属性的招式威力仅会增强1次。",
+    effectzh: "幽灵属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "dragon-gem": {
+    nameZh: "龙之宝石",
+    nameJa: "ドラゴンジュエル",
+    nameEn: "Dragon Gem",
+    category: "携带物品",
+    icon: "./items/dragon-gem.png",
+    descZh: "龙属性的宝石。携带后，龙属性的招式威力仅会增强1次。",
+    effectzh: "龙属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "dark-gem": {
+    nameZh: "恶之宝石",
+    nameJa: "あくのジュエル",
+    nameEn: "Dark Gem",
+    category: "携带物品",
+    icon: "./items/dark-gem.png",
+    descZh: "恶属性的宝石。携带后，恶属性的招式威力仅会增强1次。",
+    effectzh: "恶属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "steel-gem": {
+    nameZh: "钢之宝石",
+    nameJa: "はがねのジュエル",
+    nameEn: "Steel Gem",
+    category: "携带物品",
+    icon: "./items/steel-gem.png",
+    descZh: "钢属性的宝石。携带后，钢属性的招式威力仅会增强1次。",
+    effectzh: "钢属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "normal-gem": {
+    nameZh: "一般宝石",
+    nameJa: "ノーマルジュエル",
+    nameEn: "Normal Gem",
+    category: "携带物品",
+    icon: "./items/normal-gem.png",
+    descZh: "一般属性的宝石。携带后，一般属性的招式威力仅会增强1次。",
+    effectzh: "一般属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "fairy-gem": {
+    nameZh: "妖精宝石",
+    nameJa: "ようせいジュエル",
+    nameEn: "Fairy Gem",
+    category: "携带物品",
+    icon: "./items/fairy-gem.png",
+    descZh: "妖精属性的宝石。携带后，妖精属性的招式威力会仅增强1次。",
+    effectzh: "妖精属性招式威力提升30%（使用一次后消耗）。"
+  },
+  "weakness-policy": {
+    nameZh: "弱点保险",
+    nameJa: "じゃくてんほけん",
+    nameEn: "Weakness Policy",
+    category: "携带物品",
+    icon: "./items/weakness-policy.png",
+    descZh: "被针对弱点时，攻击和特攻就会大幅提高。",
+    effectzh: "受到效果绝佳伤害时，攻击与特攻各提升2级。"
+  },
+  "blunder-policy": {
+    nameZh: "打空保险",
+    nameJa: "からぶりほけん",
+    nameEn: "Blunder Policy",
+    category: "携带物品",
+    icon: "./items/blunder-policy.png",
+    descZh: "招式因命中率影响而落空时，速度会大幅提高。",
+    effectzh: "招式落空（Miss）时速度提升2级。"
+  },
+  "assault-vest": {
+    nameZh: "突击背心",
+    nameJa: "とつげきチョッキ",
+    nameEn: "Assault Vest",
+    category: "携带物品",
+    icon: "./items/assault-vest.png",
+    descZh: "会变得富有攻击性的背心。虽然携带后特防会提高，但会无法使出变化招式。",
+    effectzh: "特防提升50%，但只能使用攻击招式。"
+  },
+  "whipped-dream": {
+    nameZh: "泡沫奶油",
+    nameJa: "ホイップポップ",
+    nameEn: "Whipped Dream",
+    category: "携带物品",
+    icon: "./items/whipped-dream.png",
+    descZh: "松松软软起着泡的，稍微有点甜的奶油。某种宝可梦很喜欢它。",
+    effectzh: "用于培育（粉香香进化道具）。"
+  },
+  "sachet": {
+    nameZh: "香袋",
+    nameJa: "においぶくろ",
+    nameEn: "Sachet",
+    category: "携带物品",
+    icon: "./items/sachet.png",
+    descZh: "装着散发微浓香气的香料的袋子。某种宝可梦很喜欢它。",
+    effectzh: "用于培育（绵绵泡芙进化道具）。"
+  },
+  "luminous-moss": {
+    nameZh: "光苔",
+    nameJa: "ひかりごけ",
+    nameEn: "Luminous Moss",
+    category: "携带物品",
+    icon: "./items/luminous-moss.png",
+    descZh: "一次性使用的光苔。携带它的宝可梦如果受到水属性招式攻击，特防就会提高。",
+    effectzh: "用于培育（opy? 提升亲密度道具）。"
+  },
+  "snowball-2": {
+    nameZh: "雪球",
+    nameJa: "ゆきだま",
+    nameEn: "Snowball",
+    category: "携带物品",
+    icon: "./items/snowball-2.png",
+    descZh: "一次性使用的雪球。携带它的宝可梦如果受到冰属性招式攻击，攻击就会提高。",
+    effectzh: "用于培育（穿山鼠进化道具）。"
+  },
+  "safety-goggles": {
+    nameZh: "防尘护目镜",
+    nameJa: "ぼうじんゴーグル",
+    nameEn: "Safety Goggles",
+    category: "携带物品",
+    icon: "./items/safety-goggles.png",
+    descZh: "不单是天气造成的伤害，就连粉末类招式的效果也能防御的护目镜。",
+    effectzh: "免疫沙暴、冰雹等天气伤害及粉末／孢子类招式。"
+  },
+  "adrenaline-orb": {
+    nameZh: "胆怯球",
+    nameJa: "ビビリだま",
+    nameEn: "Adrenaline Orb",
+    category: "携带物品",
+    icon: "./items/adrenaline-orb.png",
+    descZh: "让宝可梦携带后，在受到威吓时速度会提高。",
+    effectzh: "被威吓等迫使退场的效果触发时，速度提升1级。"
+  },
+  "terrain-extender": {
+    nameZh: "大地膜",
+    nameJa: "グランドコート",
+    nameEn: "Terrain Extender",
+    category: "携带物品",
+    icon: "./items/terrain-extender.png",
+    descZh: "当携带它的宝可梦利用招式或特性展开场地时，场地的持续时间会比平时更长。",
+    effectzh: "场地类状态持续时间延长至8回合。"
+  },
+  "protective-pads": {
+    nameZh: "部位护具",
+    nameJa: "ぼうごパット",
+    nameEn: "Protective Pads",
+    category: "携带物品",
+    icon: "./items/protective-pads.png",
+    descZh: "不会受到触碰攻击对手时本应受到的效果。",
+    effectzh: "不受接触类招式的附加效果影响。"
+  },
+  "electric-seed": {
+    nameZh: "电气种子",
+    nameJa: "エレキシード",
+    nameEn: "Electric Seed",
+    category: "携带物品",
+    icon: "./items/electric-seed.png",
+    descZh: "让宝可梦携带后，在电气场地上使用，防御就会提高。",
+    effectzh: "电气场地出现时防御提升（并消耗）。"
+  },
+  "psychic-seed": {
+    nameZh: "精神种子",
+    nameJa: "サイコシード",
+    nameEn: "Psychic Seed",
+    category: "携带物品",
+    icon: "./items/psychic-seed.png",
+    descZh: "让宝可梦携带后，在精神场地上使用，特防就会提高。",
+    effectzh: "精神场地出现时特防提升（并消耗）。"
+  },
+  "misty-seed": {
+    nameZh: "薄雾种子",
+    nameJa: "ミストシード",
+    nameEn: "Misty Seed",
+    category: "携带物品",
+    icon: "./items/misty-seed.png",
+    descZh: "让宝可梦携带后，在薄雾场地上使用，特防就会提高。",
+    effectzh: "薄雾场地出现时特防提升（并消耗）。"
+  },
+  "grassy-seed": {
+    nameZh: "青草种子",
+    nameJa: "グラスシード",
+    nameEn: "Grassy Seed",
+    category: "携带物品",
+    icon: "./items/grassy-seed.png",
+    descZh: "让宝可梦携带后，在青草场地上使用，防御就会提高。",
+    effectzh: "青草场地出现时防御提升（并消耗）。"
+  },
+  "fighting-memory": {
+    nameZh: "战斗存储碟",
+    nameJa: "ファイトメモリ",
+    nameEn: "Fighting Memory",
+    category: "携带物品",
+    icon: "./items/fighting-memory.png",
+    descZh: "装有格斗属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为格斗属性。"
+  },
+  "flying-memory": {
+    nameZh: "飞翔存储碟",
+    nameJa: "フライングメモリ",
+    nameEn: "Flying Memory",
+    category: "携带物品",
+    icon: "./items/flying-memory.png",
+    descZh: "装有飞行属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为飞行属性。"
+  },
+  "poison-memory": {
+    nameZh: "毒存储碟",
+    nameJa: "ポイズンメモリ",
+    nameEn: "Poison Memory",
+    category: "携带物品",
+    icon: "./items/poison-memory.png",
+    descZh: "装有毒属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为毒属性。"
+  },
+  "ground-memory": {
+    nameZh: "大地存储碟",
+    nameJa: "グラウンドメモリ",
+    nameEn: "Ground Memory",
+    category: "携带物品",
+    icon: "./items/ground-memory.png",
+    descZh: "装有地面属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为地面属性。"
+  },
+  "rock-memory": {
+    nameZh: "岩石存储碟",
+    nameJa: "ロックメモリ",
+    nameEn: "Rock Memory",
+    category: "携带物品",
+    icon: "./items/rock-memory.png",
+    descZh: "装有岩石属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为岩石属性。"
+  },
+  "bug-memory": {
+    nameZh: "虫子存储碟",
+    nameJa: "バグメモリ",
+    nameEn: "Bug Memory",
+    category: "携带物品",
+    icon: "./items/bug-memory.png",
+    descZh: "装有虫属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为虫属性。"
+  },
+  "ghost-memory": {
+    nameZh: "幽灵存储碟",
+    nameJa: "ゴーストメモリ",
+    nameEn: "Ghost Memory",
+    category: "携带物品",
+    icon: "./items/ghost-memory.png",
+    descZh: "装有幽灵属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为幽灵属性。"
+  },
+  "steel-memory": {
+    nameZh: "钢铁存储碟",
+    nameJa: "スチールメモリ",
+    nameEn: "Steel Memory",
+    category: "携带物品",
+    icon: "./items/steel-memory.png",
+    descZh: "装有钢属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为钢属性。"
+  },
+  "fire-memory": {
+    nameZh: "火焰存储碟",
+    nameJa: "ファイヤーメモリ",
+    nameEn: "Fire Memory",
+    category: "携带物品",
+    icon: "./items/fire-memory.png",
+    descZh: "装有火属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为火属性。"
+  },
+  "water-memory": {
+    nameZh: "清水存储碟",
+    nameJa: "ウオーターメモリ",
+    nameEn: "Water Memory",
+    category: "携带物品",
+    icon: "./items/water-memory.png",
+    descZh: "装有水属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为水属性。"
+  },
+  "grass-memory": {
+    nameZh: "青草存储碟",
+    nameJa: "グラスメモリ",
+    nameEn: "Grass Memory",
+    category: "携带物品",
+    icon: "./items/grass-memory.png",
+    descZh: "装有草属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为草属性。"
+  },
+  "electric-memory": {
+    nameZh: "电子存储碟",
+    nameJa: "エレクトロメモリ",
+    nameEn: "Electric Memory",
+    category: "携带物品",
+    icon: "./items/electric-memory.png",
+    descZh: "装有电属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为电属性。"
+  },
+  "psychic-memory": {
+    nameZh: "精神存储碟",
+    nameJa: "サイキックメモリ",
+    nameEn: "Psychic Memory",
+    category: "携带物品",
+    icon: "./items/psychic-memory.png",
+    descZh: "装有超能力属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为超能属性。"
+  },
+  "ice-memory": {
+    nameZh: "冰雪存储碟",
+    nameJa: "アイスメモリ",
+    nameEn: "Ice Memory",
+    category: "携带物品",
+    icon: "./items/ice-memory.png",
+    descZh: "装有冰属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为冰属性。"
+  },
+  "dragon-memory": {
+    nameZh: "龙存储碟",
+    nameJa: "ドラゴンメモリ",
+    nameEn: "Dragon Memory",
+    category: "携带物品",
+    icon: "./items/dragon-memory.png",
+    descZh: "装有龙属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为龙属性。"
+  },
+  "dark-memory": {
+    nameZh: "黑暗存储碟",
+    nameJa: "ダークメモリ",
+    nameEn: "Dark Memory",
+    category: "携带物品",
+    icon: "./items/dark-memory.png",
+    descZh: "装有恶属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为恶属性。"
+  },
+  "fairy-memory": {
+    nameZh: "妖精存储碟",
+    nameJa: "フェアリーメモリ",
+    nameEn: "Fairy Memory",
+    category: "携带物品",
+    icon: "./items/fairy-memory.png",
+    descZh: "装有妖精属性数据的存储碟。特定宝可梦携带后，属性就会发生变化。",
+    effectzh: "银伴战兽携带时属性变为妖精属性。"
+  },
+  "rusted-sword": {
+    nameZh: "腐朽的剑",
+    nameJa: "くちたけん",
+    nameEn: "Rusted Sword",
+    category: "携带物品",
+    icon: "./items/rusted-sword.png",
+    descZh: "据说很久以前，英雄就是拿着这把剑驱走了灾厄。而现在早已变得锈迹斑斑。",
+    effectzh: "苍响携带时进入剑之王形态（属性变为钢／妖精）。"
+  },
+  "rusted-shield": {
+    nameZh: "腐朽的盾",
+    nameJa: "くちたたて",
+    nameEn: "Rusted Shield",
+    category: "携带物品",
+    icon: "./items/rusted-shield.png",
+    descZh: "据说很久以前，英雄就是拿着这面盾驱走了灾厄。而现在早已变得锈迹斑斑。",
+    effectzh: "藏玛然特携带时进入盾之王形态（属性变为格斗／岩石）。"
+  },
+  "strawberry-sweet": {
+    nameZh: "草莓糖饰",
+    nameJa: "いちごアメざいく",
+    nameEn: "Strawberry Sweet",
+    category: "携带物品",
+    icon: "./items/strawberry-sweet.png",
+    descZh: "草莓形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+    effectzh: "草莓形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。"
+  },
+  "love-sweet": {
+    nameZh: "爱心糖饰",
+    nameJa: "ハートアメざいく",
+    nameEn: "Love Sweet",
+    category: "携带物品",
+    icon: "./items/love-sweet.png",
+    descZh: "爱心形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+    effectzh: "爱心形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。"
+  },
+  "berry-sweet": {
+    nameZh: "野莓糖饰",
+    nameJa: "ベリーアメざいく",
+    nameEn: "Berry Sweet",
+    category: "携带物品",
+    icon: "./items/berry-sweet.png",
+    descZh: "浆果形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+    effectzh: "浆果形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。"
+  },
+  "clover-sweet": {
+    nameZh: "幸运草糖饰",
+    nameJa: "よつばアメざいく",
+    nameEn: "Clover Sweet",
+    category: "携带物品",
+    icon: "./items/clover-sweet.png",
+    descZh: "四叶草形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+    effectzh: "四叶草形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。"
+  },
+  "flower-sweet": {
+    nameZh: "花朵糖饰",
+    nameJa: "おはなアメざいく",
+    nameEn: "Flower Sweet",
+    category: "携带物品",
+    icon: "./items/flower-sweet.png",
+    descZh: "花朵形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+    effectzh: "花朵形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。"
+  },
+  "star-sweet": {
+    nameZh: "星星糖饰",
+    nameJa: "スターアメざいく",
+    nameEn: "Star Sweet",
+    category: "携带物品",
+    icon: "./items/star-sweet.png",
+    descZh: "星星形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+    effectzh: "星星形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。"
+  },
+  "ribbon-sweet": {
+    nameZh: "蝴蝶结糖饰",
+    nameJa: "リボンアメざいく",
+    nameEn: "Ribbon Sweet",
+    category: "携带物品",
+    icon: "./items/ribbon-sweet.png",
+    descZh: "蝴蝶结形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。",
+    effectzh: "蝴蝶结形状的工艺糖果。让小仙奶携带的话，会高兴地转圈圈。"
+  },
+  "throat-spray": {
+    nameZh: "爽喉喷雾",
+    nameJa: "のどスプレー",
+    nameEn: "Throat Spray",
+    category: "携带物品",
+    icon: "./items/throat-spray.png",
+    descZh: "使用声音相关的招式时，特攻会提高。",
+    effectzh: "使出变化招式后特攻提升1级（每场一次）。"
+  },
+  "eject-pack": {
+    nameZh: "避难背包",
+    nameJa: "だっしゅつパック",
+    nameEn: "Eject Pack",
+    category: "携带物品",
+    icon: "./items/eject-pack.png",
+    descZh: "当携带它的宝可梦能力下降时，同行宝可梦就会自动替换上场。",
+    effectzh: "能力被降低时强制自身换下。"
+  },
+  "heavy-duty-boots": {
+    nameZh: "厚底靴",
+    nameJa: "あつぞこブーツ",
+    nameEn: "Heavy-Duty Boots",
+    category: "携带物品",
+    icon: "./items/heavy-duty-boots.png",
+    descZh: "不受脚下陷阱等的影响。",
+    effectzh: "免疫场地与天气造成的间接伤害。"
+  },
+  "room-service": {
+    nameZh: "客房服务",
+    nameJa: "ルームサービス",
+    nameEn: "Room Service",
+    category: "携带物品",
+    icon: "./items/room-service.png",
+    descZh: "让宝可梦携带后，在戏法空间使用时，速度会下降。",
+    effectzh: "处于下雨／沙暴等天气时速度降低（对手相对更快）。"
+  },
+  "utility-umbrella": {
+    nameZh: "万能伞",
+    nameJa: "ばんのうがさ",
+    nameEn: "Utility Umbrella",
+    category: "携带物品",
+    icon: "./items/utility-umbrella.png",
+    descZh: "携带它的宝可梦将不受各种天气的影响。",
+    effectzh: "免疫天气造成的自身能力强化／弱化。"
+  },
+  "adamant-crystal": {
+    nameZh: "大金刚宝玉",
+    nameJa: "だいこんごうだま",
+    nameEn: "Adamant Crystal",
+    category: "携带物品",
+    icon: "./items/adamant-crystal.png",
+    descZh: "光辉灿烂的大珠子。对帝牙卢卡使用后，能使之力量高涨并改变形态。",
+    effectzh: "帝牙卢卡携带时钢／龙属性招式威力提升20%。"
+  },
+  "lustrous-globe": {
+    nameZh: "大白宝玉",
+    nameJa: "だいしらたま",
+    nameEn: "Lustrous Globe",
+    category: "携带物品",
+    icon: "./items/lustrous-globe.png",
+    descZh: "光辉灿烂的大珠子。对帕路奇亚使用后，能使之力量高涨并改变形态。",
+    effectzh: "帕路奇亚携带时水／龙属性招式威力提升20%。"
+  },
+  "griseous-core": {
+    nameZh: "大白金宝玉",
+    nameJa: "だいはっきんだま",
+    nameEn: "Griseous Core",
+    category: "携带物品",
+    icon: "./items/griseous-core.png",
+    descZh: "光辉灿烂的大珠子。对骑拉帝纳使用后，能使之力量高涨并改变形态。",
+    effectzh: "骑拉帝纳携带时幽灵／龙属性招式威力提升20%。"
+  },
+  "booster-energy": {
+    nameZh: "驱劲能量",
+    nameJa: "ブーストエナジー",
+    nameEn: "Booster Energy",
+    category: "携带物品",
+    icon: "./items/booster-energy.png",
+    descZh: "充满能量的胶囊。让有某种特性的宝可梦携带后，其能力会得到提升。",
+    effectzh: "对应的悖论宝可梦携带时，依天气提升速度或防御／特防。"
+  },
+  "ability-shield": {
+    nameZh: "特性护具",
+    nameJa: "とくせいガード",
+    nameEn: "Ability Shield",
+    category: "携带物品",
+    icon: "./items/ability-shield.png",
+    descZh: "可爱而有个性的盾。携带后，特性不会被对手改变。",
+    effectzh: "防止自身特性被更改或消除。"
+  },
+  "clear-amulet": {
+    nameZh: "清净坠饰",
+    nameJa: "クリアチャーム",
+    nameEn: "Clear Amulet",
+    category: "携带物品",
+    icon: "./items/clear-amulet.png",
+    descZh: "光芒晶莹剔透的坠饰。携带后，不会因为对手的招式或特性而被降低能力。",
+    effectzh: "防止自身能力被对手降低。"
+  },
+  "mirror-herb": {
+    nameZh: "模仿香草",
+    nameJa: "ものまねハーブ",
+    nameEn: "Mirror Herb",
+    category: "携带物品",
+    icon: "./items/mirror-herb.png",
+    descZh: "携带它的宝可梦仅有1次机会可以在对手提高能力时，对其进行模仿并提高同样的能力。",
+    effectzh: "复制对手获得的能力提升效果。"
+  },
+  "punching-glove": {
+    nameZh: "拳击手套",
+    nameJa: "パンチグローブ",
+    nameEn: "Punching Glove",
+    category: "携带物品",
+    icon: "./items/punching-glove.png",
+    descZh: "保护拳头的手套。携带后，拳击招式的威力会提高，且变得拳击时不会接触到对手。",
+    effectzh: "拳击招式威力提升10%且不被接触类招式影响。"
+  },
+  "covert-cloak": {
+    nameZh: "密探斗篷",
+    nameJa: "おんみつマント",
+    nameEn: "Covert Cloak",
+    category: "携带物品",
+    icon: "./items/covert-cloak.png",
+    descZh: "能骗过敌人眼睛的带帽披风。携带后，能够隐藏身体，变得不会受到招式的追加效果影响。",
+    effectzh: "免疫招式的附加效果（仍受伤害）。"
+  },
+  "loaded-dice": {
+    nameZh: "机变骰子",
+    nameJa: "いかさまダイス",
+    nameEn: "Loaded Dice",
+    category: "携带物品",
+    icon: "./items/loaded-dice.png",
+    descZh: "只会出现好数字的骰子。携带后，在使用连续招式时，能使出较多次招式。",
+    effectzh: "多段招式的段数倾向更多。"
+  },
+  "leader-s-crest": {
+    nameZh: "头领凭证",
+    nameJa: "かしらのしるし",
+    nameEn: "Leader's Crest",
+    category: "携带物品",
+    icon: "./items/leader-s-crest.png",
+    descZh: "像久经岁月的刃器一样的碎片。只有率领着驹刀小兵群体的劈斩司令能携带着。",
+    effectzh: "古简蜗携带时提升特定招式威力。"
+  },
+  "fairy-feather": {
+    nameZh: "妖精之羽",
+    nameJa: "ようせいのハネ",
+    nameEn: "Fairy Feather",
+    category: "携带物品",
+    icon: "./items/fairy-feather.png",
+    descZh: "接触到光后就会微微发光的羽毛。携带后，妖精属性的招式威力就会提高。",
+    effectzh: "妖精属性招式威力提升20%。"
+  },
+  "cornerstone-mask": {
+    nameZh: "础石面具",
+    nameJa: "いしずえのめん",
+    nameEn: "Cornerstone Mask",
+    category: "携带物品",
+    icon: "./items/cornerstone-mask.png",
+    descZh: "用结晶装饰的木雕面具。让厄诡椪携带后，就会用岩石属性覆盖全身进行战斗。",
+    effectzh: "厄诡椪携带时进入础石面具形态。"
+  },
+  "wellspring-mask": {
+    nameZh: "水井面具",
+    nameJa: "いどのめん",
+    nameEn: "Wellspring Mask",
+    category: "携带物品",
+    icon: "./items/wellspring-mask.png",
+    descZh: "用结晶装饰的木雕面具。让厄诡椪携带后，就会用水属性覆盖全身进行战斗。",
+    effectzh: "厄诡椪携带时进入水井面具形态。"
+  },
+  "hearthflame-mask": {
+    nameZh: "火灶面具",
+    nameJa: "かまどのめん",
+    nameEn: "Hearthflame Mask",
+    category: "携带物品",
+    icon: "./items/hearthflame-mask.png",
+    descZh: "用结晶装饰的木雕面具。让厄诡椪携带后，就会用火属性覆盖全身进行战斗。",
+    effectzh: "厄诡椪携带时进入火灶面具形态。"
+  },
+  "poke-ball": {
+    nameZh: "精灵球",
+    nameJa: "モンスターボール",
+    nameEn: "Poké Ball",
+    category: "精灵球",
+    icon: "./items/poke-ball.png",
+    descZh: "用于投向野生宝可梦并将其捕捉的球。它是胶囊样式的。\n不可思议的球。用于投向野生宝可梦并将其捕捉。需收集材料并通过工艺制作来生产。",
+    effectzh: "基础球，捕获率倍率×1。"
+  },
+  "great-ball": {
+    nameZh: "超级球",
+    nameJa: "スーパーボール",
+    nameEn: "Great Ball",
+    category: "精灵球",
+    icon: "./items/great-ball.png",
+    descZh: "比起精灵球来更容易捉到宝可梦的，性能还算不错的球。\n不可思议的球。比起精灵球来更容易捉到宝可梦的，性能还算不错的球。",
+    effectzh: "捕获率倍率×1.5。"
+  },
+  "ultra-ball": {
+    nameZh: "高级球",
+    nameJa: "ハイパーボール",
+    nameEn: "Ultra Ball",
+    category: "精灵球",
+    icon: "./items/ultra-ball.png",
+    descZh: "比起超级球来更容易捉到宝可梦的，性能非常不错的球。\n不可思议的球。比起超级球来更容易捉到宝可梦的，性能非常不错的球。",
+    effectzh: "捕获率倍率×2。"
+  },
+  "safari-ball": {
+    nameZh: "狩猎球",
+    nameJa: "サファリボール",
+    nameEn: "Safari Ball",
+    category: "精灵球",
+    icon: "./items/safari-ball.png",
+    descZh: "曾在关都地区的狩猎地带以及神奥地区的大湿地被使用。是一种特殊的球。",
+    effectzh: "狩猎地带专用，捕获率倍率×1.5。"
+  },
+  "master-ball": {
+    nameZh: "大师球",
+    nameJa: "マスターボール",
+    nameEn: "Master Ball",
+    category: "精灵球",
+    icon: "./items/master-ball.png",
+    descZh: "必定能捉到野生宝可梦的，性能最好的球。",
+    effectzh: "必定捕获成功（捕获率100%）。"
+  },
+  "fast-ball": {
+    nameZh: "速度球",
+    nameJa: "スピードボール",
+    nameEn: "Fast Ball",
+    category: "精灵球",
+    icon: "./items/fast-ball.png",
+    descZh: "有点与众不同的球。能很容易地捕捉逃跑速度很快的宝可梦。",
+    effectzh: "速度种族值≥100的宝可梦捕获率倍率×4。"
+  },
+  "level-ball": {
+    nameZh: "等级球",
+    nameJa: "レベルボール",
+    nameEn: "Level Ball",
+    category: "精灵球",
+    icon: "./items/level-ball.png",
+    descZh: "有点与众不同的球。要捕捉的宝可梦比自己宝可梦的等级越低，就会越容易捕捉。",
+    effectzh: "同行宝可梦等级越高捕获率越高（最高约×8）。"
+  },
+  "lure-ball": {
+    nameZh: "诱饵球",
+    nameJa: "ルアーボール",
+    nameEn: "Lure Ball",
+    category: "精灵球",
+    icon: "./items/lure-ball.png",
+    descZh: "有点与众不同的球。能很容易地捕捉用钓竿钓上来的宝可梦。",
+    effectzh: "钓鱼时使出捕获率倍率×3（其他方式×1）。"
+  },
+  "love-ball": {
+    nameZh: "甜蜜球",
+    nameJa: "ラブラブボール",
+    nameEn: "Love Ball",
+    category: "精灵球",
+    icon: "./items/love-ball.png",
+    descZh: "有点与众不同的球。能很容易地捕捉和自己宝可梦性别不同的宝可梦。",
+    effectzh: "与同行宝可梦为同一种类且异性时，捕获率倍率×8。"
+  },
+  "friend-ball": {
+    nameZh: "友友球",
+    nameJa: "フレンドボール",
+    nameEn: "Friend Ball",
+    category: "精灵球",
+    icon: "./items/friend-ball.png",
+    descZh: "有点与众不同的球。捉到的野生宝可梦会立刻变得和训练家亲密起来。",
+    effectzh: "捕获的宝可梦亲密度直接变为200。"
+  },
+  "moon-ball": {
+    nameZh: "月亮球",
+    nameJa: "ムーンボール",
+    nameEn: "Moon Ball",
+    category: "精灵球",
+    icon: "./items/moon-ball.png",
+    descZh: "有点与众不同的球。能很容易地捕捉使用月之石进化的宝可梦。",
+    effectzh: "由月之石进化的宝可梦捕获率倍率×4。"
+  },
+  "heavy-ball": {
+    nameZh: "沉重球",
+    nameJa: "ヘビーボール",
+    nameEn: "Heavy Ball",
+    category: "精灵球",
+    icon: "./items/heavy-ball.png",
+    descZh: "有点与众不同的球。越是身体沉重的宝可梦就越容易捕捉到。\n沉重而无法远投，但若能命中掉以轻心的宝可梦，就能发挥强大的捕获能力。",
+    effectzh: "按体重加算捕获率（最重+30），越重越容易捕获。"
+  },
+  "leaden-ball": {
+    nameZh: "超重球",
+    nameJa: "メガトンボール",
+    nameEn: "Leaden Ball",
+    category: "精灵球",
+    icon: "./items/leaden-ball.png",
+    descZh: "强化后的沉重球。沉重而无法远投，但若能命中掉以轻心的宝可梦，就能发挥强大的捕获能力。",
+    effectzh: "对体重重的宝可梦捕获率更高。"
+  },
+  "gigaton-ball": {
+    nameZh: "巨重球",
+    nameJa: "ギガトンボール",
+    nameEn: "Gigaton Ball",
+    category: "精灵球",
+    icon: "./items/gigaton-ball.png",
+    descZh: "强化到最高阶的沉重球。沉重而无法远投，但若能命中掉以轻心的宝可梦，就能发挥强大的捕获能力。",
+    effectzh: "对体重极大的宝可梦捕获率极高（投掷较慢）。"
+  },
+  "sport-ball": {
+    nameZh: "竞赛球",
+    nameJa: "コンペボール",
+    nameEn: "Sport Ball",
+    category: "精灵球",
+    icon: "./items/sport-ball.png",
+    descZh: "曾在城都地区的捕虫大赛上使用的特殊的球。",
+    effectzh: "捕虫大会专用，捕获率倍率×1.5。"
+  },
+  "park-ball": {
+    nameZh: "公园球",
+    nameJa: "パークボール",
+    nameEn: "Park Ball",
+    category: "精灵球",
+    icon: "./items/park-ball.png",
+    descZh: "在伙伴公园里使用的特殊的球。",
+    effectzh: "伙伴公园专用，必定捕获成功。"
+  },
+  "net-ball": {
+    nameZh: "捕网球",
+    nameJa: "ネットボール",
+    nameEn: "Net Ball",
+    category: "精灵球",
+    icon: "./items/net-ball.png",
+    descZh: "有点与众不同的球。能很容易地捕捉水属性和虫属性的宝可梦。",
+    effectzh: "水属性或虫属性宝可梦捕获率倍率×3。"
+  },
+  "dive-ball": {
+    nameZh: "潜水球",
+    nameJa: "ダイブボール",
+    nameEn: "Dive Ball",
+    category: "精灵球",
+    icon: "./items/dive-ball.png",
+    descZh: "有点与众不同的球。能很容易地捕捉生活在水世界里的宝可梦。",
+    effectzh: "水面／水下或钓鱼时捕获率倍率×3.5（其他×1）。"
+  },
+  "nest-ball": {
+    nameZh: "巢穴球",
+    nameJa: "ネストボール",
+    nameEn: "Nest Ball",
+    category: "精灵球",
+    icon: "./items/nest-ball.png",
+    descZh: "有点与众不同的球。捕捉的野生宝可梦越弱，就会越容易捕捉。",
+    effectzh: "目标等级越低捕获率越高（等级≤10时约×3）。"
+  },
+  "repeat-ball": {
+    nameZh: "重复球",
+    nameJa: "リピートボール",
+    nameEn: "Repeat Ball",
+    category: "精灵球",
+    icon: "./items/repeat-ball.png",
+    descZh: "有点与众不同的球。能很容易地捕捉以前曾捉到过的宝可梦。",
+    effectzh: "已登入图鉴的宝可梦捕获率倍率×3。"
+  },
+  "timer-ball": {
+    nameZh: "计时球",
+    nameJa: "タイマーボール",
+    nameEn: "Timer Ball",
+    category: "精灵球",
+    icon: "./items/timer-ball.png",
+    descZh: "有点与众不同的球。对手行动得越多，宝可梦就会越容易捕捉。",
+    effectzh: "战斗回合越多捕获率越高（每回合约+0.3，最高×4）。"
+  },
+  "luxury-ball": {
+    nameZh: "豪华球",
+    nameJa: "ゴージャスボール",
+    nameEn: "Luxury Ball",
+    category: "精灵球",
+    icon: "./items/luxury-ball.png",
+    descZh: "住着十分惬意的球。捉到的野生宝可梦会变得容易和训练家亲密。",
+    effectzh: "捕获率倍率×1，但捕获后亲密度提升更快。"
+  },
+  "premier-ball": {
+    nameZh: "纪念球",
+    nameJa: "プレミアボール",
+    nameEn: "Premier Ball",
+    category: "精灵球",
+    icon: "./items/premier-ball.png",
+    descZh: "有点珍贵的球。特制出来的某种纪念品。",
+    effectzh: "捕获率倍率×1，购买精灵球时的赠品。"
+  },
+  "dusk-ball": {
+    nameZh: "黑暗球",
+    nameJa: "ダークボール",
+    nameEn: "Dusk Ball",
+    category: "精灵球",
+    icon: "./items/dusk-ball.png",
+    descZh: "有点与众不同的球。能很容易地在夜晚捕捉宝可梦。",
+    effectzh: "洞窟或夜晚使出时捕获率倍率×3.5（其他×1）。"
+  },
+  "heal-ball": {
+    nameZh: "治愈球",
+    nameJa: "ヒールボール",
+    nameEn: "Heal Ball",
+    category: "精灵球",
+    icon: "./items/heal-ball.png",
+    descZh: "有点温柔的球。能回复捉到的宝可梦的HP并治愈异常状态。",
+    effectzh: "捕获后宝可梦的HP与异常状态完全回复。"
+  },
+  "quick-ball": {
+    nameZh: "先机球",
+    nameJa: "クイックボール",
+    nameEn: "Quick Ball",
+    category: "精灵球",
+    icon: "./items/quick-ball.png",
+    descZh: "有点与众不同的球。如果在没有被对手察觉的状态下使用，就能很容易地捉到宝可梦。",
+    effectzh: "战斗第1回合使出时捕获率倍率×5（其他×1）。"
+  },
+  "cherish-ball": {
+    nameZh: "贵重球",
+    nameJa: "プレシャスボール",
+    nameEn: "Cherish Ball",
+    category: "精灵球",
+    icon: "./items/cherish-ball.png",
+    descZh: "相当珍贵的球。特制出来的某种纪念品。",
+    effectzh: "活动赠送专用，无法用于捕捉野生宝可梦。"
+  },
+  "dream-ball": {
+    nameZh: "梦境球",
+    nameJa: "ドリームボール",
+    nameEn: "Dream Ball",
+    category: "精灵球",
+    icon: "./items/dream-ball.png",
+    descZh: "有点与众不同的球。能很容易地捕捉睡眠状态的宝可梦。",
+    effectzh: "处于睡眠状态的宝可梦捕获率倍率×4（其他×1）。"
+  },
+  "beast-ball": {
+    nameZh: "究极球",
+    nameJa: "ウルトラボール",
+    nameEn: "Beast Ball",
+    category: "精灵球",
+    icon: "./items/beast-ball.png",
+    descZh: "有点与众不同的球。很难捕捉宝可梦。",
+    effectzh: "究极异兽捕获率倍率×5（其他×0.1）。"
+  },
+  "feather-ball": {
+    nameZh: "飞羽球",
+    nameJa: "フェザーボール",
+    nameEn: "Feather Ball",
+    category: "精灵球",
+    icon: "./items/feather-ball.png",
+    descZh: "能直线高速飞行的球。在捕捉动作快速的宝可梦及飞在高空的宝可梦时十分有效。",
+    effectzh: "对飞行属性宝可梦捕获率更高，且更容易命中。"
+  },
+  "wing-ball": {
+    nameZh: "飞翼球",
+    nameJa: "ウイングボール",
+    nameEn: "Wing Ball",
+    category: "精灵球",
+    icon: "./items/wing-ball.png",
+    descZh: "强化后的飞羽球。能直线高速飞行，在捕捉动作快速的宝可梦及飞在高空的宝可梦时十分有效。",
+    effectzh: "对飞行属性宝可梦捕获率更高。"
+  },
+  "jet-ball": {
+    nameZh: "飞梭球",
+    nameJa: "ジェットボール",
+    nameEn: "Jet Ball",
+    category: "精灵球",
+    icon: "./items/jet-ball.png",
+    descZh: "强化到最高阶的飞羽球。能直线高速飞行，在捕捉动作快速的宝可梦及飞在高空的宝可梦时十分有效。",
+    effectzh: "对速度极快的宝可梦捕获率更高。"
+  },
+  "strange-ball": {
+    nameZh: "奇异球",
+    nameJa: "ストレンジボール",
+    nameEn: "Strange Ball",
+    category: "精灵球",
+    icon: "./items/strange-ball.png",
+    descZh: "ーーー",
+    effectzh: "捕获率随宝可梦种类而变化（特殊球）。"
+  },
+  "guard-spec": {
+    nameZh: "能力防守",
+    nameJa: "エフェクトガード",
+    nameEn: "Guard Spec.",
+    category: "战斗道具",
+    icon: "./items/guard-spec.png",
+    descZh: "在战斗中，5回合内不让我方能力降低的道具。",
+    effectzh: "5回合内防止我方能力被降低。"
+  },
+  "dire-hit": {
+    nameZh: "要害攻击",
+    nameJa: "クリティカット",
+    nameEn: "Dire Hit",
+    category: "战斗道具",
+    icon: "./items/dire-hit.png",
+    descZh: "击中要害的几率会大幅提高。只能使用1次。离场后，效果便会消失。",
+    effectzh: "战斗中使用1次，会心率提升2级（离场后失效）。"
+  },
+  "x-attack": {
+    nameZh: "力量强化",
+    nameJa: "プラスパワー",
+    nameEn: "X Attack",
+    category: "战斗道具",
+    icon: "./items/x-attack.png",
+    descZh: "大幅提高战斗中宝可梦攻击的道具。离场后，效果便会消失。",
+    effectzh: "战斗中使用1次，攻击提升2级（离场后失效）。"
+  },
+  "x-defense": {
+    nameZh: "防御强化",
+    nameJa: "ディフェンダー",
+    nameEn: "X Defense",
+    category: "战斗道具",
+    icon: "./items/x-defense.png",
+    descZh: "大幅提高战斗中宝可梦防御的道具。离场后，效果便会消失。",
+    effectzh: "战斗中使用1次，防御提升2级（离场后失效）。"
+  },
+  "x-sp-atk": {
+    nameZh: "特攻强化",
+    nameJa: "スペシャルアップ",
+    nameEn: "X Sp. Atk",
+    category: "战斗道具",
+    icon: "./items/x-sp-atk.png",
+    descZh: "大幅提高战斗中宝可梦特攻的道具。离场后，效果便会消失。",
+    effectzh: "战斗中使用1次，特攻提升2级（离场后失效）。"
+  },
+  "x-sp-def": {
+    nameZh: "特防强化",
+    nameJa: "スペシャルガード",
+    nameEn: "X Sp. Def",
+    category: "战斗道具",
+    icon: "./items/x-sp-def.png",
+    descZh: "大幅提高战斗中宝可梦特防的道具。离场后，效果便会消失。",
+    effectzh: "战斗中使用1次，特防提升2级（离场后失效）。"
+  },
+  "x-speed": {
+    nameZh: "速度强化",
+    nameJa: "スピーダー",
+    nameEn: "X Speed",
+    category: "战斗道具",
+    icon: "./items/x-speed.png",
+    descZh: "大幅提高战斗中宝可梦速度的道具。离场后，效果便会消失。",
+    effectzh: "战斗中使用1次，速度提升2级（离场后失效）。"
+  },
+  "x-accuracy": {
+    nameZh: "命中强化",
+    nameJa: "ヨクアタール",
+    nameEn: "X Accuracy",
+    category: "战斗道具",
+    icon: "./items/x-accuracy.png",
+    descZh: "大幅提高战斗中宝可梦命中的道具。离场后，效果便会消失。",
+    effectzh: "战斗中使用1次，命中率提升2级（离场后失效）。"
+  },
+  "poke-doll": {
+    nameZh: "皮皮玩偶",
+    nameJa: "ピッピにんぎょう",
+    nameEn: "Poké Doll",
+    category: "战斗道具",
+    icon: "./items/poke-doll.png",
+    descZh: "能吸引宝可梦注意的道具。在和野生宝可梦的战斗中绝对可以逃走。",
+    effectzh: "能吸引宝可梦注意的道具。在和野生宝可梦的战斗中绝对可以逃走。"
+  },
+  "fluffy-tail": {
+    nameZh: "向尾喵的尾巴",
+    nameJa: "エネコのシッポ",
+    nameEn: "Fluffy Tail",
+    category: "战斗道具",
+    icon: "./items/fluffy-tail.png",
+    descZh: "能吸引宝可梦注意的道具。在和野生宝可梦的战斗中绝对可以逃走。",
+    effectzh: "能吸引宝可梦注意的道具。在和野生宝可梦的战斗中绝对可以逃走。"
+  },
+  "poke-toy": {
+    nameZh: "宝可尾草",
+    nameJa: "ポケじゃらし",
+    nameEn: "Poké Toy",
+    category: "战斗道具",
+    icon: "./items/poke-toy.png",
+    descZh: "能吸引宝可梦注意的道具。在和野生宝可梦的战斗中绝对可以逃走。",
+    effectzh: "能吸引宝可梦注意的道具。在和野生宝可梦的战斗中绝对可以逃走。"
+  },
+  "max-mushrooms": {
+    nameZh: "极巨菇菇",
+    nameJa: "ダイキノコ",
+    nameEn: "Max Mushrooms",
+    category: "战斗道具",
+    icon: "./items/max-mushrooms.png",
+    descZh: "拥有某种神奇力量的蘑菇，能改变宝可梦极巨化的样子。在战斗中，可以提高宝可梦所有的能力。",
+    effectzh: "拥有某种神奇力量的蘑菇，能改变宝可梦极巨化的样子。在战斗中，可以提高宝可梦所有的能力。"
+  },
+  "aux-power": {
+    nameZh: "进攻药丸",
+    nameJa: "せめのがんやく",
+    nameEn: "Aux Power",
+    category: "战斗道具",
+    icon: "./items/aux-power.png",
+    descZh: "大大提高战斗中宝可梦进攻力的道具。离场后，效果便会消失。",
+    effectzh: "大大提高战斗中宝可梦进攻力的道具。离场后，效果便会消失。"
+  },
+  "aux-guard": {
+    nameZh: "防守药丸",
+    nameJa: "まもりのがんやく",
+    nameEn: "Aux Guard",
+    category: "战斗道具",
+    icon: "./items/aux-guard.png",
+    descZh: "大大提高战斗中宝可梦防守力的道具。离场后，效果便会消失。",
+    effectzh: "大大提高战斗中宝可梦防守力的道具。离场后，效果便会消失。"
+  },
+  "aux-powerguard": {
+    nameZh: "多重强化",
+    nameJa: "マルチアップ",
+    nameEn: "Aux Powerguard",
+    category: "战斗道具",
+    icon: "./items/aux-powerguard.png",
+    descZh: "大大提高战斗中宝可梦进攻力和防守力的道具。离场后，效果便会消失。",
+    effectzh: "大大提高战斗中宝可梦进攻力和防守力的道具。离场后，效果便会消失。"
+  },
+  "aux-evasion": {
+    nameZh: "闪避强化",
+    nameJa: "ヨクアタラーヌ",
+    nameEn: "Aux Evasion",
+    category: "战斗道具",
+    icon: "./items/aux-evasion.png",
+    descZh: "让宝可梦在战斗中变得较不易被对手招式命中的道具。离场后，效果便会消失。",
+    effectzh: "让宝可梦在战斗中变得较不易被对手招式命中的道具。离场后，效果便会消失。"
+  },
+  "choice-dumpling": {
+    nameZh: "讲究粽",
+    nameJa: "こだわりちまき",
+    nameEn: "Choice Dumpling",
+    category: "战斗道具",
+    icon: "./items/choice-dumpling.png",
+    descZh: "使用后会让宝可梦陷入热衷的粽子。所热衷的招式给予的伤害会增加，同时自己受到的伤害也会增加。",
+    effectzh: "使用后会让宝可梦陷入热衷的粽子。所热衷的招式给予的伤害会增加，同时自己受到的伤害也会增加。"
+  },
+  "twice-spiced-radish": {
+    nameZh: "双倍腌菜",
+    nameJa: "にばいづけ",
+    nameEn: "Twice-Spiced Radish",
+    category: "战斗道具",
+    icon: "./items/twice-spiced-radish.png",
+    descZh: "可让宝可梦获得加倍效果的腌菜。使用后宝可梦的招式造成的伤害会暂时变成1.5倍。",
+    effectzh: "可让宝可梦获得加倍效果的腌菜。使用后宝可梦的招式造成的伤害会暂时变成1.5倍。"
+  },
+  "swap-snack": {
+    nameZh: "颠倒烧",
+    nameJa: "あべこべやき",
+    nameEn: "Swap Snack",
+    category: "战斗道具",
+    icon: "./items/swap-snack.png",
+    descZh: "不可思议的食物。使用后可让宝可梦的进攻力和防守力暂时互换。",
+    effectzh: "不可思议的食物。使用后可让宝可梦的进攻力和防守力暂时互换。"
+  },
+  "potion": {
+    nameZh: "伤药",
+    nameJa: "キズぐすり",
+    nameEn: "Potion",
+    category: "回复道具",
+    icon: "./items/potion.png",
+    descZh: "喷雾式伤药。能让1只宝可梦回复20HP。",
+    effectzh: "回复20点HP。"
+  },
+  "super-potion": {
+    nameZh: "好伤药",
+    nameJa: "いいキズぐすり",
+    nameEn: "Super Potion",
+    category: "回复道具",
+    icon: "./items/super-potion.png",
+    descZh: "喷雾式伤药。能让1只宝可梦回复60HP。",
+    effectzh: "回复60点HP。"
+  },
+  "hyper-potion": {
+    nameZh: "厉害伤药",
+    nameJa: "すごいキズぐすり",
+    nameEn: "Hyper Potion",
+    category: "回复道具",
+    icon: "./items/hyper-potion.png",
+    descZh: "喷雾式伤药。能让1只宝可梦回复120HP。",
+    effectzh: "回复200点HP。"
+  },
+  "max-potion": {
+    nameZh: "全满药",
+    nameJa: "まんたんのくすり",
+    nameEn: "Max Potion",
+    category: "回复道具",
+    icon: "./items/max-potion.png",
+    descZh: "喷雾式伤药。能让1只宝可梦回复所有HP。",
+    effectzh: "回复全部HP。"
+  },
+  "full-restore": {
+    nameZh: "全复药",
+    nameJa: "かいふくのくすり",
+    nameEn: "Full Restore",
+    category: "回复道具",
+    icon: "./items/full-restore.png",
+    descZh: "能回复1只宝可梦的所有HP并治愈所有异常状态。",
+    effectzh: "回复全部HP并治愈所有异常状态。"
+  },
+  "antidote": {
+    nameZh: "解毒药",
+    nameJa: "どくけし",
+    nameEn: "Antidote",
+    category: "回复道具",
+    icon: "./items/antidote.png",
+    descZh: "喷雾式药水。能治愈1只宝可梦的中毒状态。",
+    effectzh: "治愈中毒。"
+  },
+  "burn-heal": {
+    nameZh: "灼伤药",
+    nameJa: "やけどなおし",
+    nameEn: "Burn Heal",
+    category: "回复道具",
+    icon: "./items/burn-heal.png",
+    descZh: "喷雾式药水。能治愈1只宝可梦的灼伤状态。",
+    effectzh: "治愈灼伤。"
+  },
+  "ice-heal": {
+    nameZh: "解冻药",
+    nameJa: "こおりなおし",
+    nameEn: "Ice Heal",
+    category: "回复道具",
+    icon: "./items/ice-heal.png",
+    descZh: "喷雾式药水。能治愈1只宝可梦的冰冻状态。",
+    effectzh: "治愈冰冻。"
+  },
+  "awakening": {
+    nameZh: "解眠药",
+    nameJa: "ねむけざまし",
+    nameEn: "Awakening",
+    category: "回复道具",
+    icon: "./items/awakening.png",
+    descZh: "喷雾式药水。能治愈1只宝可梦的睡眠状态。",
+    effectzh: "治愈睡眠。"
+  },
+  "paralyze-heal": {
+    nameZh: "解麻药",
+    nameJa: "まひなおし",
+    nameEn: "Paralyze Heal",
+    category: "回复道具",
+    icon: "./items/paralyze-heal.png",
+    descZh: "喷雾式药水。能治愈1只宝可梦的麻痹状态。",
+    effectzh: "喷雾式药水。能治愈1只宝可梦的麻痹状态。"
+  },
+  "full-heal": {
+    nameZh: "万灵药",
+    nameJa: "なんでもなおし",
+    nameEn: "Full Heal",
+    category: "回复道具",
+    icon: "./items/full-heal.png",
+    descZh: "喷雾式药水。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "治愈所有异常状态。"
+  },
+  "revive": {
+    nameZh: "活力碎片",
+    nameJa: "げんきのかけら",
+    nameEn: "Revive",
+    category: "回复道具",
+    icon: "./items/revive.png",
+    descZh: "能让1只陷入濒死的宝可梦重获生机，并回复一半HP。",
+    effectzh: "复活并回复一半HP。"
+  },
+  "max-revive": {
+    nameZh: "活力块",
+    nameJa: "げんきのかたまり",
+    nameEn: "Max Revive",
+    category: "回复道具",
+    icon: "./items/max-revive.png",
+    descZh: "能让1只陷入濒死的宝可梦重获生机，并回复所有HP。",
+    effectzh: "复活并回复全部HP。"
+  },
+  "fresh-water": {
+    nameZh: "美味之水",
+    nameJa: "おいしいみず",
+    nameEn: "Fresh Water",
+    category: "回复道具",
+    icon: "./items/fresh-water.png",
+    descZh: "富含矿物质的水。能让1只宝可梦回复30HP。",
+    effectzh: "回复50点HP。"
+  },
+  "soda-pop": {
+    nameZh: "劲爽汽水",
+    nameJa: "サイコソーダ",
+    nameEn: "Soda Pop",
+    category: "回复道具",
+    icon: "./items/soda-pop.png",
+    descZh: "翻腾着气泡的汽水。能让1只宝可梦回复50HP。",
+    effectzh: "回复60点HP。"
+  },
+  "lemonade": {
+    nameZh: "果汁牛奶",
+    nameJa: "ミックスオレ",
+    nameEn: "Lemonade",
+    category: "回复道具",
+    icon: "./items/lemonade.png",
+    descZh: "非常香甜的牛奶。能让1只宝可梦回复70HP。",
+    effectzh: "回复80点HP。"
+  },
+  "moomoo-milk": {
+    nameZh: "哞哞鲜奶",
+    nameJa: "モーモーミルク",
+    nameEn: "Moomoo Milk",
+    category: "回复道具",
+    icon: "./items/moomoo-milk.png",
+    descZh: "营养百分百的牛奶。能让1只宝可梦回复100HP。",
+    effectzh: "营养百分百的牛奶。能让1只宝可梦回复100HP。"
+  },
+  "energy-powder": {
+    nameZh: "元气粉",
+    nameJa: "ちからのこな",
+    nameEn: "Energy Powder",
+    category: "回复道具",
+    icon: "./items/energy-powder.png",
+    descZh: "非常苦的药粉。能让1只宝可梦回复60HP。",
+    effectzh: "回复60点HP（但亲密度下降）。"
+  },
+  "energy-root": {
+    nameZh: "元气根",
+    nameJa: "ちからのねっこ",
+    nameEn: "Energy Root",
+    category: "回复道具",
+    icon: "./items/energy-root.png",
+    descZh: "非常苦的根。能让1只宝可梦回复120HP。",
+    effectzh: "回复120点HP（但亲密度大幅下降）。"
+  },
+  "heal-powder": {
+    nameZh: "万能粉",
+    nameJa: "ばんのうごな",
+    nameEn: "Heal Powder",
+    category: "回复道具",
+    icon: "./items/heal-powder.png",
+    descZh: "非常苦的药粉。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "治愈所有异常状态（但亲密度下降）。"
+  },
+  "revival-herb": {
+    nameZh: "复活草",
+    nameJa: "ふっかつそう",
+    nameEn: "Revival Herb",
+    category: "回复道具",
+    icon: "./items/revival-herb.png",
+    descZh: "非常苦的药草。能让1只濒死的宝可梦回复所有HP。",
+    effectzh: "复活并使HP回复一半（但亲密度大幅下降）。"
+  },
+  "ether": {
+    nameZh: "PP单项小补剂",
+    nameJa: "ピーピーエイド",
+    nameEn: "Ether",
+    category: "回复道具",
+    icon: "./items/ether.png",
+    descZh: "能让宝可梦学会的其中1个招式回复10PP。",
+    effectzh: "能让宝可梦学会的其中1个招式回复10PP。"
+  },
+  "max-ether": {
+    nameZh: "PP单项全补剂",
+    nameJa: "ピーピーリカバー",
+    nameEn: "Max Ether",
+    category: "回复道具",
+    icon: "./items/max-ether.png",
+    descZh: "能让宝可梦学会的其中1个招式回复所有PP。",
+    effectzh: "能让宝可梦学会的其中1个招式回复所有PP。"
+  },
+  "elixir": {
+    nameZh: "PP多项小补剂",
+    nameJa: "ピーピーエイダー",
+    nameEn: "Elixir",
+    category: "回复道具",
+    icon: "./items/elixir.png",
+    descZh: "能让宝可梦学会的4个招式各回复10PP。",
+    effectzh: "能让宝可梦学会的4个招式各回复10PP。"
+  },
+  "max-elixir": {
+    nameZh: "PP多项全补剂",
+    nameJa: "ピーピーマックス",
+    nameEn: "Max Elixir",
+    category: "回复道具",
+    icon: "./items/max-elixir.png",
+    descZh: "能让宝可梦学会的4个招式回复所有PP。",
+    effectzh: "能让宝可梦学会的4个招式回复所有PP。"
+  },
+  "rage-candy-bar": {
+    nameZh: "愤怒馒头",
+    nameJa: "いかりまんじゅう",
+    nameEn: "Rage Candy Bar",
+    category: "回复道具",
+    icon: "./items/rage-candy-bar.png",
+    descZh: "卡吉镇特产的馒头。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "卡吉镇特产的馒头。能治愈1只宝可梦的所有异常状态。"
+  },
+  "lava-cookie": {
+    nameZh: "釜炎仙贝",
+    nameJa: "フエンせんべい",
+    nameEn: "Lava Cookie",
+    category: "回复道具",
+    icon: "./items/lava-cookie.png",
+    descZh: "釜炎特产的仙贝。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "回复80点HP。"
+  },
+  "old-gateau": {
+    nameZh: "森之羊羹",
+    nameJa: "もりのヨウカン",
+    nameEn: "Old Gateau",
+    category: "回复道具",
+    icon: "./items/old-gateau.png",
+    descZh: "百代不为人知的特产。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "治愈所有异常状态。"
+  },
+  "casteliacone": {
+    nameZh: "飞云冰淇淋",
+    nameJa: "ヒウンアイス",
+    nameEn: "Casteliacone",
+    category: "回复道具",
+    icon: "./items/casteliacone.png",
+    descZh: "飞云市特产的冰淇淋。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "回复80点HP。"
+  },
+  "lumiose-galette": {
+    nameZh: "密阿雷格雷派饼",
+    nameJa: "ミアレガレット",
+    nameEn: "Lumiose Galette",
+    category: "回复道具",
+    icon: "./items/lumiose-galette.png",
+    descZh: "在密阿雷市很受欢迎的点心。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "在密阿雷市很受欢迎的点心。能治愈1只宝可梦的所有异常状态。"
+  },
+  "shalour-sable": {
+    nameZh: "娑罗沙布蕾",
+    nameJa: "シャラサブレ",
+    nameEn: "Shalour Sable",
+    category: "回复道具",
+    icon: "./items/shalour-sable.png",
+    descZh: "娑罗市特产的沙布蕾。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "回复60点HP。"
+  },
+  "big-malasada": {
+    nameZh: "大马拉萨达",
+    nameJa: "おおきいマラサダ",
+    nameEn: "Big Malasada",
+    category: "回复道具",
+    icon: "./items/big-malasada.png",
+    descZh: "阿罗拉特产的油炸面包。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "阿罗拉特产的油炸面包。能治愈1只宝可梦的所有异常状态。"
+  },
+  "pewter-crunchies": {
+    nameZh: "深灰米果",
+    nameJa: "ニビあられ",
+    nameEn: "Pewter Crunchies",
+    category: "回复道具",
+    icon: "./items/pewter-crunchies.png",
+    descZh: "深灰特产的糕点。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "深灰特产的糕点。能治愈1只宝可梦的所有异常状态。"
+  },
+  "jubilife-muffin": {
+    nameZh: "祝庆玛芬",
+    nameJa: "コトブキマフィン",
+    nameEn: "Jubilife Muffin",
+    category: "回复道具",
+    icon: "./items/jubilife-muffin.png",
+    descZh: "祝庆村不为人知的特产，是宝可梦喜爱的食物，如今正渐渐流行起来。吃下后能治愈异常状态。",
+    effectzh: "祝庆村不为人知的特产，是宝可梦喜爱的食物，如今正渐渐流行起来。吃下后能治愈异常状态。"
+  },
+  "berry-juice": {
+    nameZh: "树果汁",
+    nameJa: "きのみジュース",
+    nameEn: "Berry Juice",
+    category: "回复道具",
+    icon: "./items/berry-juice.png",
+    descZh: "100%树果果汁。能让1只宝可梦回复20HP。",
+    effectzh: "HP低于1／2时自动回复20点HP（仅一次）。"
+  },
+  "sweet-heart": {
+    nameZh: "心形甜点",
+    nameJa: "ハートスイーツ",
+    nameEn: "Sweet Heart",
+    category: "回复道具",
+    icon: "./items/sweet-heart.png",
+    descZh: "非常甜腻的巧克力。能让1只宝可梦回复20HP。",
+    effectzh: "回复20点HP。"
+  },
+  "sacred-ash": {
+    nameZh: "圣灰",
+    nameJa: "せいなるはい",
+    nameEn: "Sacred Ash",
+    category: "回复道具",
+    icon: "./items/sacred-ash.png",
+    descZh: "能让陷入濒死的全部宝可梦回复所有HP。",
+    effectzh: "使我方全部失去战斗能力的宝可梦复活并回复全部HP。"
+  },
+  "max-honey": {
+    nameZh: "极巨甜蜜",
+    nameJa: "ダイミツ",
+    nameEn: "Max Honey",
+    category: "回复道具",
+    icon: "./items/max-honey.png",
+    descZh: "极巨化的蜂女王制造出的蜜汁。放进极巨汤里，就能让汤的味道变得很温和。与活力块具有相同的效果。",
+    effectzh: "极巨化的蜂女王制造出的蜜汁。放进极巨汤里，就能让汤的味道变得很温和。与活力块具有相同的效果。"
+  },
+  "remedy": {
+    nameZh: "中药",
+    nameJa: "カンポーやく",
+    nameEn: "Remedy",
+    category: "回复道具",
+    icon: "./items/remedy.png",
+    descZh: "效果和伤药一样，能让1只宝可梦回复60HP，但味道很苦，友好度会降低。",
+    effectzh: "效果和伤药一样，能让1只宝可梦回复60HP，但味道很苦，友好度会降低。"
+  },
+  "fine-remedy": {
+    nameZh: "好中药",
+    nameJa: "いいカンポーやく",
+    nameEn: "Fine Remedy",
+    category: "回复道具",
+    icon: "./items/fine-remedy.png",
+    descZh: "效果和好伤药一样，能让1只宝可梦回复100HP，但味道很苦，友好度会降低。",
+    effectzh: "效果和好伤药一样，能让1只宝可梦回复100HP，但味道很苦，友好度会降低。"
+  },
+  "superb-remedy": {
+    nameZh: "厉害中药",
+    nameJa: "すごいカンポーやく",
+    nameEn: "Superb Remedy",
+    category: "回复道具",
+    icon: "./items/superb-remedy.png",
+    descZh: "效果和厉害伤药一样，能让1只宝可梦回复150HP，但味道很苦，友好度会降低。",
+    effectzh: "效果和厉害伤药一样，能让1只宝可梦回复150HP，但味道很苦，友好度会降低。"
+  },
+  "venusaurite": {
+    nameZh: "妙蛙花进化石",
+    nameJa: "フシギバナイト",
+    nameEn: "Venusaurite",
+    category: "超级石",
+    icon: "./items/venusaurite.png",
+    descZh: "让妙蛙花携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，妙蛙花在战斗中可以超级进化。"
+  },
+  "charizardite-x": {
+    nameZh: "喷火龙进化石Ｘ",
+    nameJa: "リザードナイトX",
+    nameEn: "Charizardite X",
+    category: "超级石",
+    icon: "./items/charizardite-x.png",
+    descZh: "让喷火龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，喷火龙Ｘ在战斗中可以超级进化。"
+  },
+  "charizardite-y": {
+    nameZh: "喷火龙进化石Ｙ",
+    nameJa: "リザードナイトY",
+    nameEn: "Charizardite Y",
+    category: "超级石",
+    icon: "./items/charizardite-y.png",
+    descZh: "让喷火龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，喷火龙Ｙ在战斗中可以超级进化。"
+  },
+  "blastoisinite": {
+    nameZh: "水箭龟进化石",
+    nameJa: "カメックスナイト",
+    nameEn: "Blastoisinite",
+    category: "超级石",
+    icon: "./items/blastoisinite.png",
+    descZh: "让水箭龟携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，水箭龟在战斗中可以超级进化。"
+  },
+  "beedrillite": {
+    nameZh: "大针蜂进化石",
+    nameJa: "スピアナイト",
+    nameEn: "Beedrillite",
+    category: "超级石",
+    icon: "./items/beedrillite.png",
+    descZh: "让大针蜂携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，大针蜂在战斗中可以超级进化。"
+  },
+  "pidgeotite": {
+    nameZh: "大比鸟进化石",
+    nameJa: "ピジョットナイト",
+    nameEn: "Pidgeotite",
+    category: "超级石",
+    icon: "./items/pidgeotite.png",
+    descZh: "让大比鸟携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，大比鸟在战斗中可以超级进化。"
+  },
+  "clefablite": {
+    nameZh: "皮可西进化石",
+    nameJa: "ピクシナイト",
+    nameEn: "Clefablite",
+    category: "超级石",
+    icon: "./items/clefablite.png",
+    descZh: "让皮可西携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，皮可西在战斗中可以超级进化。"
+  },
+  "alakazite": {
+    nameZh: "胡地进化石",
+    nameJa: "フーディナイト",
+    nameEn: "Alakazite",
+    category: "超级石",
+    icon: "./items/alakazite.png",
+    descZh: "让胡地携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，胡地在战斗中可以超级进化。"
+  },
+  "victreebelite": {
+    nameZh: "大食花进化石",
+    nameJa: "ウツボットナイト",
+    nameEn: "Victreebelite",
+    category: "超级石",
+    icon: "./items/victreebelite.png",
+    descZh: "让大食花携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，大食花在战斗中可以超级进化。"
+  },
+  "slowbronite": {
+    nameZh: "呆壳兽进化石",
+    nameJa: "ヤドランナイト",
+    nameEn: "Slowbronite",
+    category: "超级石",
+    icon: "./items/slowbronite.png",
+    descZh: "让呆壳兽携带后，在战斗时就能进行超级进化的一种超级石。对伽勒尔的样子没有效果。",
+    effectzh: "携带后，呆壳兽在战斗中可以超级进化。"
+  },
+  "gengarite": {
+    nameZh: "耿鬼进化石",
+    nameJa: "ゲンガナイト",
+    nameEn: "Gengarite",
+    category: "超级石",
+    icon: "./items/gengarite.png",
+    descZh: "让耿鬼携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，耿鬼在战斗中可以超级进化。"
+  },
+  "kangaskhanite": {
+    nameZh: "袋兽进化石",
+    nameJa: "ガルーラナイト",
+    nameEn: "Kangaskhanite",
+    category: "超级石",
+    icon: "./items/kangaskhanite.png",
+    descZh: "让袋兽携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，袋兽在战斗中可以超级进化。"
+  },
+  "starminite": {
+    nameZh: "宝石海星进化石",
+    nameJa: "スターミナイト",
+    nameEn: "Starminite",
+    category: "超级石",
+    icon: "./items/starminite.png",
+    descZh: "让宝石海星携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，宝石海星在战斗中可以超级进化。"
+  },
+  "pinsirite": {
+    nameZh: "凯罗斯进化石",
+    nameJa: "カイロスナイト",
+    nameEn: "Pinsirite",
+    category: "超级石",
+    icon: "./items/pinsirite.png",
+    descZh: "让凯罗斯携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，凯罗斯在战斗中可以超级进化。"
+  },
+  "gyaradosite": {
+    nameZh: "暴鲤龙进化石",
+    nameJa: "ギャラドスナイト",
+    nameEn: "Gyaradosite",
+    category: "超级石",
+    icon: "./items/gyaradosite.png",
+    descZh: "让暴鲤龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，暴鲤龙在战斗中可以超级进化。"
+  },
+  "aerodactylite": {
+    nameZh: "化石翼龙进化石",
+    nameJa: "リプテラナイト",
+    nameEn: "Aerodactylite",
+    category: "超级石",
+    icon: "./items/aerodactylite.png",
+    descZh: "让化石翼龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，化石翼龙在战斗中可以超级进化。"
+  },
+  "dragoninite": {
+    nameZh: "快龙进化石",
+    nameJa: "カイリューナイト",
+    nameEn: "Dragoninite",
+    category: "超级石",
+    icon: "./items/dragoninite.png",
+    descZh: "让快龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，快龙在战斗中可以超级进化。"
+  },
+  "mewtwonite-x": {
+    nameZh: "超梦进化石Ｘ",
+    nameJa: "ミュウツナイトX",
+    nameEn: "Mewtwonite X",
+    category: "超级石",
+    icon: "./items/mewtwonite-x.png",
+    descZh: "让超梦携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，超梦Ｘ在战斗中可以超级进化。"
+  },
+  "mewtwonite-y": {
+    nameZh: "超梦进化石Ｙ",
+    nameJa: "ミュウツナイトY",
+    nameEn: "Mewtwonite Y",
+    category: "超级石",
+    icon: "./items/mewtwonite-y.png",
+    descZh: "让超梦携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，超梦Ｙ在战斗中可以超级进化。"
+  },
+  "meganiumite": {
+    nameZh: "大竺葵进化石",
+    nameJa: "メガニウムナイト",
+    nameEn: "Meganiumite",
+    category: "超级石",
+    icon: "./items/meganiumite.png",
+    descZh: "让大竺葵携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，大竺葵在战斗中可以超级进化。"
+  },
+  "feraligite": {
+    nameZh: "大力鳄进化石",
+    nameJa: "オーダイルナイト",
+    nameEn: "Feraligite",
+    category: "超级石",
+    icon: "./items/feraligite.png",
+    descZh: "让大力鳄携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，大力鳄在战斗中可以超级进化。"
+  },
+  "ampharosite": {
+    nameZh: "电龙进化石",
+    nameJa: "デンリュウナイト",
+    nameEn: "Ampharosite",
+    category: "超级石",
+    icon: "./items/ampharosite.png",
+    descZh: "让电龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，电龙在战斗中可以超级进化。"
+  },
+  "steelixite": {
+    nameZh: "大钢蛇进化石",
+    nameJa: "ハガネールナイト",
+    nameEn: "Steelixite",
+    category: "超级石",
+    icon: "./items/steelixite.png",
+    descZh: "让大钢蛇携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，大钢蛇在战斗中可以超级进化。"
+  },
+  "scizorite": {
+    nameZh: "巨钳螳螂进化石",
+    nameJa: "ハッサムナイト",
+    nameEn: "Scizorite",
+    category: "超级石",
+    icon: "./items/scizorite.png",
+    descZh: "让巨钳螳螂携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，巨钳螳螂在战斗中可以超级进化。"
+  },
+  "heracronite": {
+    nameZh: "赫拉克罗斯进化石",
+    nameJa: "ヘラクロスナイト",
+    nameEn: "Heracronite",
+    category: "超级石",
+    icon: "./items/heracronite.png",
+    descZh: "让赫拉克罗斯携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，赫拉克罗斯在战斗中可以超级进化。"
+  },
+  "skarmorite": {
+    nameZh: "盔甲鸟进化石",
+    nameJa: "エアームドナイト",
+    nameEn: "Skarmorite",
+    category: "超级石",
+    icon: "./items/skarmorite.png",
+    descZh: "让盔甲鸟携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，盔甲鸟在战斗中可以超级进化。"
+  },
+  "houndoominite": {
+    nameZh: "黑鲁加进化石",
+    nameJa: "ヘルガナイト",
+    nameEn: "Houndoominite",
+    category: "超级石",
+    icon: "./items/houndoominite.png",
+    descZh: "让黑鲁加携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，黑鲁加在战斗中可以超级进化。"
+  },
+  "tyranitarite": {
+    nameZh: "班基拉斯进化石",
+    nameJa: "バンギラスナイト",
+    nameEn: "Tyranitarite",
+    category: "超级石",
+    icon: "./items/tyranitarite.png",
+    descZh: "让班基拉斯携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，班基拉斯在战斗中可以超级进化。"
+  },
+  "sceptilite": {
+    nameZh: "蜥蜴王进化石",
+    nameJa: "ジュカインナイト",
+    nameEn: "Sceptilite",
+    category: "超级石",
+    icon: "./items/sceptilite.png",
+    descZh: "让蜥蜴王携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，蜥蜴王在战斗中可以超级进化。"
+  },
+  "blazikenite": {
+    nameZh: "火焰鸡进化石",
+    nameJa: "バシャーモナイト",
+    nameEn: "Blazikenite",
+    category: "超级石",
+    icon: "./items/blazikenite.png",
+    descZh: "让火焰鸡携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，火焰鸡在战斗中可以超级进化。"
+  },
+  "swampertite": {
+    nameZh: "巨沼怪进化石",
+    nameJa: "ラグラージナイト",
+    nameEn: "Swampertite",
+    category: "超级石",
+    icon: "./items/swampertite.png",
+    descZh: "让巨沼怪携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，巨沼怪在战斗中可以超级进化。"
+  },
+  "gardevoirite": {
+    nameZh: "沙奈朵进化石",
+    nameJa: "サーナイトナイト",
+    nameEn: "Gardevoirite",
+    category: "超级石",
+    icon: "./items/gardevoirite.png",
+    descZh: "让沙奈朵携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，沙奈朵在战斗中可以超级进化。"
+  },
+  "sablenite": {
+    nameZh: "勾魂眼进化石",
+    nameJa: "ヤミラミナイト",
+    nameEn: "Sablenite",
+    category: "超级石",
+    icon: "./items/sablenite.png",
+    descZh: "让勾魂眼携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，勾魂眼在战斗中可以超级进化。"
+  },
+  "mawilite": {
+    nameZh: "大嘴娃进化石",
+    nameJa: "クチートナイト",
+    nameEn: "Mawilite",
+    category: "超级石",
+    icon: "./items/mawilite.png",
+    descZh: "让大嘴娃携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，大嘴娃在战斗中可以超级进化。"
+  },
+  "aggronite": {
+    nameZh: "波士可多拉进化石",
+    nameJa: "ボスゴドラナイト",
+    nameEn: "Aggronite",
+    category: "超级石",
+    icon: "./items/aggronite.png",
+    descZh: "让波士可多拉携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，波士可多拉在战斗中可以超级进化。"
+  },
+  "medichamite": {
+    nameZh: "恰雷姆进化石",
+    nameJa: "チャーレムナイト",
+    nameEn: "Medichamite",
+    category: "超级石",
+    icon: "./items/medichamite.png",
+    descZh: "让恰雷姆携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，恰雷姆在战斗中可以超级进化。"
+  },
+  "manectite": {
+    nameZh: "雷电兽进化石",
+    nameJa: "ライボルトナイト",
+    nameEn: "Manectite",
+    category: "超级石",
+    icon: "./items/manectite.png",
+    descZh: "让雷电兽携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，雷电兽在战斗中可以超级进化。"
+  },
+  "sharpedonite": {
+    nameZh: "巨牙鲨进化石",
+    nameJa: "サメハダナイト",
+    nameEn: "Sharpedonite",
+    category: "超级石",
+    icon: "./items/sharpedonite.png",
+    descZh: "让巨牙鲨携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，巨牙鲨在战斗中可以超级进化。"
+  },
+  "cameruptite": {
+    nameZh: "喷火驼进化石",
+    nameJa: "バクーダナイト",
+    nameEn: "Cameruptite",
+    category: "超级石",
+    icon: "./items/cameruptite.png",
+    descZh: "让喷火驼携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，喷火驼在战斗中可以超级进化。"
+  },
+  "altarianite": {
+    nameZh: "七夕青鸟进化石",
+    nameJa: "チルタリスナイト",
+    nameEn: "Altarianite",
+    category: "超级石",
+    icon: "./items/altarianite.png",
+    descZh: "让七夕青鸟携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，七夕青鸟在战斗中可以超级进化。"
+  },
+  "banettite": {
+    nameZh: "诅咒娃娃进化石",
+    nameJa: "ジュペッタナイト",
+    nameEn: "Banettite",
+    category: "超级石",
+    icon: "./items/banettite.png",
+    descZh: "让诅咒娃娃携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，诅咒娃娃在战斗中可以超级进化。"
+  },
+  "absolite": {
+    nameZh: "阿勃梭鲁进化石",
+    nameJa: "アブソルナイト",
+    nameEn: "Absolite",
+    category: "超级石",
+    icon: "./items/absolite.png",
+    descZh: "让阿勃梭鲁携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，阿勃梭鲁在战斗中可以超级进化。"
+  },
+  "glalitite": {
+    nameZh: "冰鬼护进化石",
+    nameJa: "オニゴーリナイト",
+    nameEn: "Glalitite",
+    category: "超级石",
+    icon: "./items/glalitite.png",
+    descZh: "让冰鬼护携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，冰鬼护在战斗中可以超级进化。"
+  },
+  "salamencite": {
+    nameZh: "暴飞龙进化石",
+    nameJa: "ボーマンダナイト",
+    nameEn: "Salamencite",
+    category: "超级石",
+    icon: "./items/salamencite.png",
+    descZh: "让暴飞龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，暴飞龙在战斗中可以超级进化。"
+  },
+  "metagrossite": {
+    nameZh: "巨金怪进化石",
+    nameJa: "メタグロスナイト",
+    nameEn: "Metagrossite",
+    category: "超级石",
+    icon: "./items/metagrossite.png",
+    descZh: "让巨金怪携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，巨金怪在战斗中可以超级进化。"
+  },
+  "latiasite": {
+    nameZh: "拉帝亚斯进化石",
+    nameJa: "ラティアスナイト",
+    nameEn: "Latiasite",
+    category: "超级石",
+    icon: "./items/latiasite.png",
+    descZh: "让拉帝亚斯携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，拉帝亚斯在战斗中可以超级进化。"
+  },
+  "latiosite": {
+    nameZh: "拉帝欧斯进化石",
+    nameJa: "ラティオスナイト",
+    nameEn: "Latiosite",
+    category: "超级石",
+    icon: "./items/latiosite.png",
+    descZh: "让拉帝欧斯携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，拉帝欧斯在战斗中可以超级进化。"
+  },
+  "lopunnite": {
+    nameZh: "长耳兔进化石",
+    nameJa: "ミミロップナイト",
+    nameEn: "Lopunnite",
+    category: "超级石",
+    icon: "./items/lopunnite.png",
+    descZh: "让长耳兔携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，长耳兔在战斗中可以超级进化。"
+  },
+  "garchompite": {
+    nameZh: "烈咬陆鲨进化石",
+    nameJa: "ガブリアスナイト",
+    nameEn: "Garchompite",
+    category: "超级石",
+    icon: "./items/garchompite.png",
+    descZh: "让烈咬陆鲨携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，烈咬陆鲨在战斗中可以超级进化。"
+  },
+  "lucarionite": {
+    nameZh: "路卡利欧进化石",
+    nameJa: "ルカリオナイト",
+    nameEn: "Lucarionite",
+    category: "超级石",
+    icon: "./items/lucarionite.png",
+    descZh: "让路卡利欧携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，路卡利欧在战斗中可以超级进化。"
+  },
+  "abomasite": {
+    nameZh: "暴雪王进化石",
+    nameJa: "ユキノオナイト",
+    nameEn: "Abomasite",
+    category: "超级石",
+    icon: "./items/abomasite.png",
+    descZh: "让暴雪王携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，暴雪王在战斗中可以超级进化。"
+  },
+  "galladite": {
+    nameZh: "艾路雷朵进化石",
+    nameJa: "エルレイドナイト",
+    nameEn: "Galladite",
+    category: "超级石",
+    icon: "./items/galladite.png",
+    descZh: "让艾路雷朵携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，艾路雷朵在战斗中可以超级进化。"
+  },
+  "froslassite": {
+    nameZh: "雪妖女进化石",
+    nameJa: "ユキメノコナイト",
+    nameEn: "Froslassite",
+    category: "超级石",
+    icon: "./items/froslassite.png",
+    descZh: "让雪妖女携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，雪妖女在战斗中可以超级进化。"
+  },
+  "emboarite": {
+    nameZh: "炎武王进化石",
+    nameJa: "エンブオナイト",
+    nameEn: "Emboarite",
+    category: "超级石",
+    icon: "./items/emboarite.png",
+    descZh: "让炎武王携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，炎武王在战斗中可以超级进化。"
+  },
+  "excadrite": {
+    nameZh: "龙头地鼠进化石",
+    nameJa: "ドリュウズナイト",
+    nameEn: "Excadrite",
+    category: "超级石",
+    icon: "./items/excadrite.png",
+    descZh: "让龙头地鼠携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，龙头地鼠在战斗中可以超级进化。"
+  },
+  "audinite": {
+    nameZh: "差不多娃娃进化石",
+    nameJa: "タブンネナイト",
+    nameEn: "Audinite",
+    category: "超级石",
+    icon: "./items/audinite.png",
+    descZh: "让差不多娃娃携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，差不多娃娃在战斗中可以超级进化。"
+  },
+  "scolipite": {
+    nameZh: "蜈蚣王进化石",
+    nameJa: "ペンドラナイト",
+    nameEn: "Scolipite",
+    category: "超级石",
+    icon: "./items/scolipite.png",
+    descZh: "让蜈蚣王携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，蜈蚣王在战斗中可以超级进化。"
+  },
+  "scraftinite": {
+    nameZh: "头巾混混进化石",
+    nameJa: "ズルズキナイト",
+    nameEn: "Scraftinite",
+    category: "超级石",
+    icon: "./items/scraftinite.png",
+    descZh: "让头巾混混携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，头巾混混在战斗中可以超级进化。"
+  },
+  "eelektrossite": {
+    nameZh: "麻麻鳗鱼王进化石",
+    nameJa: "シビルドナイト",
+    nameEn: "Eelektrossite",
+    category: "超级石",
+    icon: "./items/eelektrossite.png",
+    descZh: "让麻麻鳗鱼王携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，麻麻鳗鱼王在战斗中可以超级进化。"
+  },
+  "chandelurite": {
+    nameZh: "水晶灯火灵进化石",
+    nameJa: "シャンデラナイト",
+    nameEn: "Chandelurite",
+    category: "超级石",
+    icon: "./items/chandelurite.png",
+    descZh: "让水晶灯火灵携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，水晶灯火灵在战斗中可以超级进化。"
+  },
+  "chesnaughtite": {
+    nameZh: "布里卡隆进化石",
+    nameJa: "ブリガロナイト",
+    nameEn: "Chesnaughtite",
+    category: "超级石",
+    icon: "./items/chesnaughtite.png",
+    descZh: "让布里卡隆携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，布里卡隆在战斗中可以超级进化。"
+  },
+  "delphoxite": {
+    nameZh: "妖火红狐进化石",
+    nameJa: "マフォクシナイト",
+    nameEn: "Delphoxite",
+    category: "超级石",
+    icon: "./items/delphoxite.png",
+    descZh: "让妖火红狐携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，妖火红狐在战斗中可以超级进化。"
+  },
+  "greninjite": {
+    nameZh: "甲贺忍蛙进化石",
+    nameJa: "ゲッコウガナイト",
+    nameEn: "Greninjite",
+    category: "超级石",
+    icon: "./items/greninjite.png",
+    descZh: "让甲贺忍蛙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，甲贺忍蛙在战斗中可以超级进化。"
+  },
+  "pyroarite": {
+    nameZh: "火炎狮进化石",
+    nameJa: "カエンジシナイト",
+    nameEn: "Pyroarite",
+    category: "超级石",
+    icon: "./items/pyroarite.png",
+    descZh: "让火炎狮携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，火炎狮在战斗中可以超级进化。"
+  },
+  "floettite": {
+    nameZh: "花叶蒂进化石",
+    nameJa: "フラエッテナイト",
+    nameEn: "Floettite",
+    category: "超级石",
+    icon: "./items/floettite.png",
+    descZh: "让特别的花叶蒂携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，花叶蒂在战斗中可以超级进化。"
+  },
+  "malamarite": {
+    nameZh: "乌贼王进化石",
+    nameJa: "カラマネロ‎ナイト",
+    nameEn: "Malamarite",
+    category: "超级石",
+    icon: "./items/malamarite.png",
+    descZh: "让乌贼王携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，乌贼王在战斗中可以超级进化。"
+  },
+  "barbaracite": {
+    nameZh: "龟足巨铠进化石",
+    nameJa: "ガメノデスナイト",
+    nameEn: "Barbaracite",
+    category: "超级石",
+    icon: "./items/barbaracite.png",
+    descZh: "让龟足巨铠携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，龟足巨铠在战斗中可以超级进化。"
+  },
+  "dragalgite": {
+    nameZh: "毒藻龙进化石",
+    nameJa: "ドラミドナイト",
+    nameEn: "Dragalgite",
+    category: "超级石",
+    icon: "./items/dragalgite.png",
+    descZh: "让毒藻龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，毒藻龙在战斗中可以超级进化。"
+  },
+  "hawluchanite": {
+    nameZh: "摔角鹰人进化石",
+    nameJa: "ルチャブルナイト",
+    nameEn: "Hawluchanite",
+    category: "超级石",
+    icon: "./items/hawluchanite.png",
+    descZh: "让摔角鹰人携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，摔角鹰人在战斗中可以超级进化。"
+  },
+  "zygardite": {
+    nameZh: "基格尔德进化石",
+    nameJa: "ジガルデナイト",
+    nameEn: "Zygardite",
+    category: "超级石",
+    icon: "./items/zygardite.png",
+    descZh: "让基格尔德携带并在战斗时变成完全体形态，就能进行超级进化的一种超级石。",
+    effectzh: "携带后，基格尔德在战斗中可以超级进化。"
+  },
+  "diancite": {
+    nameZh: "蒂安希进化石",
+    nameJa: "ディアンシナイト",
+    nameEn: "Diancite",
+    category: "超级石",
+    icon: "./items/diancite.png",
+    descZh: "让蒂安希携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，蒂安希在战斗中可以超级进化。"
+  },
+  "drampanite": {
+    nameZh: "老翁龙进化石",
+    nameJa: "ジジーロナイト",
+    nameEn: "Drampanite",
+    category: "超级石",
+    icon: "./items/drampanite.png",
+    descZh: "让老翁龙携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，老翁龙在战斗中可以超级进化。"
+  },
+  "falinksite": {
+    nameZh: "列阵兵进化石",
+    nameJa: "タイレーツナイト",
+    nameEn: "Falinksite",
+    category: "超级石",
+    icon: "./items/falinksite.png",
+    descZh: "让列阵兵携带后，在战斗时就能进行超级进化的一种神奇超级石。",
+    effectzh: "携带后，列阵兵在战斗中可以超级进化。"
+  },
+  "normalium-z": {
+    nameZh: "一般Ｚ",
+    nameJa: "ノーマルＺ",
+    nameEn: "Normalium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/normalium-z.png",
+    descZh: "可用它来制造用于对战并能将一般属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将一般属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "firium-z": {
+    nameZh: "火Ｚ",
+    nameJa: "ホノオＺ",
+    nameEn: "Firium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/firium-z.png",
+    descZh: "可用它来制造用于对战并能将火属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将火属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "waterium-z": {
+    nameZh: "水Ｚ",
+    nameJa: "ミズＺ",
+    nameEn: "Waterium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/waterium-z.png",
+    descZh: "可用它来制造用于对战并能将水属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将水属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "electrium-z": {
+    nameZh: "电Ｚ",
+    nameJa: "デンキＺ",
+    nameEn: "Electrium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/electrium-z.png",
+    descZh: "可用它来制造用于对战并能将电属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将电属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "grassium-z": {
+    nameZh: "草Ｚ",
+    nameJa: "クサＺ",
+    nameEn: "Grassium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/grassium-z.png",
+    descZh: "可用它来制造用于对战并能将草属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将草属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "icium-z": {
+    nameZh: "冰Ｚ",
+    nameJa: "コオリＺ",
+    nameEn: "Icium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/icium-z.png",
+    descZh: "可用它来制造用于对战并能将冰属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将冰属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "fightinium-z": {
+    nameZh: "格斗Ｚ",
+    nameJa: "カクトウＺ",
+    nameEn: "Fightinium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/fightinium-z.png",
+    descZh: "可用它来制造用于对战并能将格斗属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将格斗属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "poisonium-z": {
+    nameZh: "毒Ｚ",
+    nameJa: "ドクＺ",
+    nameEn: "Poisonium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/poisonium-z.png",
+    descZh: "可用它来制造用于对战并能将毒属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将毒属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "groundium-z": {
+    nameZh: "地面Ｚ",
+    nameJa: "ジメンＺ",
+    nameEn: "Groundium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/groundium-z.png",
+    descZh: "可用它来制造用于对战并能将地面属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将地面属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "flyinium-z": {
+    nameZh: "飞行Ｚ",
+    nameJa: "ヒコウＺ",
+    nameEn: "Flyinium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/flyinium-z.png",
+    descZh: "可用它来制造用于对战并能将飞行属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将飞行属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "psychium-z": {
+    nameZh: "超能力Ｚ",
+    nameJa: "エスパーＺ",
+    nameEn: "Psychium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/psychium-z.png",
+    descZh: "可用它来制造用于对战并能将超能力属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将超能力属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "buginium-z": {
+    nameZh: "虫Ｚ",
+    nameJa: "ムシＺ",
+    nameEn: "Buginium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/buginium-z.png",
+    descZh: "可用它来制造用于对战并能将虫属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将虫属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "rockium-z": {
+    nameZh: "岩石Ｚ",
+    nameJa: "イワＺ",
+    nameEn: "Rockium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/rockium-z.png",
+    descZh: "可用它来制造用于对战并能将岩石属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将岩石属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "ghostium-z": {
+    nameZh: "幽灵Ｚ",
+    nameJa: "ゴーストＺ",
+    nameEn: "Ghostium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/ghostium-z.png",
+    descZh: "可用它来制造用于对战并能将幽灵属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将幽灵属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "dragonium-z": {
+    nameZh: "龙Ｚ",
+    nameJa: "ドラゴンＺ",
+    nameEn: "Dragonium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/dragonium-z.png",
+    descZh: "可用它来制造用于对战并能将龙属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将龙属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "darkinium-z": {
+    nameZh: "恶Ｚ",
+    nameJa: "アクＺ",
+    nameEn: "Darkinium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/darkinium-z.png",
+    descZh: "可用它来制造用于对战并能将恶属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将恶属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "steelium-z": {
+    nameZh: "钢Ｚ",
+    nameJa: "ハガネＺ",
+    nameEn: "Steelium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/steelium-z.png",
+    descZh: "可用它来制造用于对战并能将钢属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将钢属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "fairium-z": {
+    nameZh: "妖精Ｚ",
+    nameJa: "フェアリーＺ",
+    nameEn: "Fairium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/fairium-z.png",
+    descZh: "可用它来制造用于对战并能将妖精属性招式升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将妖精属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "pikanium-z": {
+    nameZh: "皮卡丘Ｚ",
+    nameJa: "ピカチュウＺ",
+    nameEn: "Pikanium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/pikanium-z.png",
+    descZh: "可用它来制造用于对战并能将皮卡丘的伏特攻击升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将皮卡丘属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "decidium-z": {
+    nameZh: "狙射树枭Ｚ",
+    nameJa: "ジュナイパーＺ",
+    nameEn: "Decidium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/decidium-z.png",
+    descZh: "可用它来制造用于对战并能将狙射树枭的缝影升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将狙射树枭属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "incinium-z": {
+    nameZh: "炽焰咆哮虎Ｚ",
+    nameJa: "ガオガエンＺ",
+    nameEn: "Incinium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/incinium-z.png",
+    descZh: "可用它来制造用于对战并能将炽焰咆哮虎的ＤＤ金勾臂升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将炽焰咆哮虎属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "primarium-z": {
+    nameZh: "西狮海壬Ｚ",
+    nameJa: "アシレーヌＺ",
+    nameEn: "Primarium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/primarium-z.png",
+    descZh: "可用它来制造用于对战并能将西狮海壬的泡影的咏叹调升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将西狮海壬属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "tapunium-z": {
+    nameZh: "卡璞Ｚ",
+    nameJa: "カプＺ",
+    nameEn: "Tapunium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/tapunium-z.png",
+    descZh: "可用它来制造用于对战并能将卡璞们的自然之怒升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将卡璞属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "marshadium-z": {
+    nameZh: "玛夏多Ｚ",
+    nameJa: "マーシャドーＺ",
+    nameEn: "Marshadium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/marshadium-z.png",
+    descZh: "可用它来制造用于对战并能将玛夏多的暗影偷盗升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将玛夏多属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "aloraichium-z": {
+    nameZh: "阿罗雷Ｚ",
+    nameJa: "アロライＺ",
+    nameEn: "Aloraichium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/aloraichium-z.png",
+    descZh: "可用它来制造用于对战并能将阿罗拉地区雷丘的十万伏特升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将阿罗雷属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "snorlium-z": {
+    nameZh: "卡比兽Ｚ",
+    nameJa: "カビゴンＺ",
+    nameEn: "Snorlium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/snorlium-z.png",
+    descZh: "可用它来制造用于对战并能将卡比兽的终极冲击升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将卡比兽属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "eevium-z": {
+    nameZh: "伊布Ｚ",
+    nameJa: "イーブイＺ",
+    nameEn: "Eevium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/eevium-z.png",
+    descZh: "可用它来制造用于对战并能将伊布的珍藏升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将伊布属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "mewnium-z": {
+    nameZh: "梦幻Ｚ",
+    nameJa: "ミュウＺ",
+    nameEn: "Mewnium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/mewnium-z.png",
+    descZh: "可用它来制造用于对战并能将梦幻的精神强念升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将梦幻属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "pikashunium-z": {
+    nameZh: "智皮卡Ｚ",
+    nameJa: "サトピカＺ",
+    nameEn: "Pikashunium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/pikashunium-z.png",
+    descZh: "可用它来制造用于对战并能将戴着帽子的皮卡丘的十万伏特升级成特殊Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将智皮卡属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "solganium-z": {
+    nameZh: "索尔迦雷欧Ｚ",
+    nameJa: "ソルガレオＺ",
+    nameEn: "Solganium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/solganium-z.png",
+    descZh: "可用它来制造用于对战并能将索尔迦雷欧的流星闪冲升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将索尔迦雷欧属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "lunalium-z": {
+    nameZh: "露奈雅拉Ｚ",
+    nameJa: "ルナアーラＺ",
+    nameEn: "Lunalium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/lunalium-z.png",
+    descZh: "可用它来制造用于对战并能将露奈雅拉的暗影之光升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将露奈雅拉属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "ultranecrozium-z": {
+    nameZh: "究极奈克洛Ｚ",
+    nameJa: "ウルトラネクロＺ",
+    nameEn: "Ultranecrozium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/ultranecrozium-z.png",
+    descZh: "能让和索尔迦雷欧或露奈雅拉合体的奈克洛兹玛变成崭新样子的结晶。",
+    effectzh: "携带后，可将究极奈克洛属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "mimikium-z": {
+    nameZh: "谜拟ＱＺ",
+    nameJa: "ミミッキュＺ",
+    nameEn: "Mimikium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/mimikium-z.png",
+    descZh: "可用它来制造用于对战并能将谜拟Ｑ的嬉闹升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将谜拟Ｑ属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "lycanium-z": {
+    nameZh: "鬃岩狼人Ｚ",
+    nameJa: "ルガルガンＺ",
+    nameEn: "Lycanium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/lycanium-z.png",
+    descZh: "可用它来制造用于对战并能将鬃岩狼人的尖石攻击升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将鬃岩狼人属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "kommonium-z": {
+    nameZh: "杖尾鳞甲龙Ｚ",
+    nameJa: "ジャラランガＺ",
+    nameEn: "Kommonium Z",
+    category: "训练家使用的Ｚ纯晶",
+    icon: "./items/kommonium-z.png",
+    descZh: "可用它来制造用于对战并能将杖尾鳞甲龙的鳞片噪音升级成Ｚ招式的Ｚ力量结晶。",
+    effectzh: "携带后，可将杖尾鳞甲龙属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "normalium-z-2": {
+    nameZh: "一般Ｚ",
+    nameJa: "ノーマルＺ",
+    nameEn: "Normalium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/normalium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将一般属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将一般属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "firium-z-2": {
+    nameZh: "火Ｚ",
+    nameJa: "ホノオＺ",
+    nameEn: "Firium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/firium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将火属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将火属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "waterium-z-2": {
+    nameZh: "水Ｚ",
+    nameJa: "ミズＺ",
+    nameEn: "Waterium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/waterium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将水属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将水属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "electrium-z-2": {
+    nameZh: "电Ｚ",
+    nameJa: "デンキＺ",
+    nameEn: "Electrium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/electrium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将电属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将电属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "grassium-z-2": {
+    nameZh: "草Ｚ",
+    nameJa: "クサＺ",
+    nameEn: "Grassium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/grassium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将草属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将草属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "icium-z-2": {
+    nameZh: "冰Ｚ",
+    nameJa: "コオリＺ",
+    nameEn: "Icium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/icium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将冰属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将冰属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "fightinium-z-2": {
+    nameZh: "格斗Ｚ",
+    nameJa: "カクトウＺ",
+    nameEn: "Fightinium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/fightinium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将格斗属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将格斗属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "poisonium-z-2": {
+    nameZh: "毒Ｚ",
+    nameJa: "ドクＺ",
+    nameEn: "Poisonium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/poisonium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将毒属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将毒属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "groundium-z-2": {
+    nameZh: "地面Ｚ",
+    nameJa: "ジメンＺ",
+    nameEn: "Groundium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/groundium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将地面属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将地面属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "flyinium-z-2": {
+    nameZh: "飞行Ｚ",
+    nameJa: "ヒコウＺ",
+    nameEn: "Flyinium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/flyinium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将飞行属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将飞行属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "psychium-z-2": {
+    nameZh: "超能力Ｚ",
+    nameJa: "エスパーＺ",
+    nameEn: "Psychium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/psychium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将超能力属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将超能力属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "buginium-z-2": {
+    nameZh: "虫Ｚ",
+    nameJa: "ムシＺ",
+    nameEn: "Buginium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/buginium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将虫属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将虫属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "rockium-z-2": {
+    nameZh: "岩石Ｚ",
+    nameJa: "イワＺ",
+    nameEn: "Rockium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/rockium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将岩石属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将岩石属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "ghostium-z-2": {
+    nameZh: "幽灵Ｚ",
+    nameJa: "ゴーストＺ",
+    nameEn: "Ghostium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/ghostium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将幽灵属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将幽灵属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "dragonium-z-2": {
+    nameZh: "龙Ｚ",
+    nameJa: "ドラゴンＺ",
+    nameEn: "Dragonium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/dragonium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将龙属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将龙属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "darkinium-z-2": {
+    nameZh: "恶Ｚ",
+    nameJa: "アクＺ",
+    nameEn: "Darkinium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/darkinium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将恶属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将恶属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "steelium-z-2": {
+    nameZh: "钢Ｚ",
+    nameJa: "ハガネＺ",
+    nameEn: "Steelium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/steelium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将钢属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将钢属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "fairium-z-2": {
+    nameZh: "妖精Ｚ",
+    nameJa: "フェアリーＺ",
+    nameEn: "Fairium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/fairium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将妖精属性的招式升级成Ｚ招式。",
+    effectzh: "携带后，可将妖精属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "pikanium-z-2": {
+    nameZh: "皮卡丘Ｚ",
+    nameJa: "ピカチュウＺ",
+    nameEn: "Pikanium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/pikanium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将皮卡丘的伏特攻击升级成Ｚ招式。",
+    effectzh: "携带后，可将皮卡丘属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "decidium-z-2": {
+    nameZh: "狙射树枭Ｚ",
+    nameJa: "ジュナイパーＺ",
+    nameEn: "Decidium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/decidium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将狙射树枭的缝影升级成Ｚ招式。",
+    effectzh: "携带后，可将狙射树枭属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "incinium-z-2": {
+    nameZh: "炽焰咆哮虎Ｚ",
+    nameJa: "ガオガエンＺ",
+    nameEn: "Incinium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/incinium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将炽焰咆哮虎的ＤＤ金勾臂升级成Ｚ招式。",
+    effectzh: "携带后，可将炽焰咆哮虎属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "primarium-z-2": {
+    nameZh: "西狮海壬Ｚ",
+    nameJa: "アシレーヌＺ",
+    nameEn: "Primarium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/primarium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将西狮海壬的泡影的咏叹调升级成Ｚ招式。",
+    effectzh: "携带后，可将西狮海壬属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "tapunium-z-2": {
+    nameZh: "卡璞Ｚ",
+    nameJa: "カプＺ",
+    nameEn: "Tapunium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/tapunium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将卡璞们的自然之怒升级成Ｚ招式。",
+    effectzh: "携带后，可将卡璞属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "marshadium-z-2": {
+    nameZh: "玛夏多Ｚ",
+    nameJa: "マーシャドーＺ",
+    nameEn: "Marshadium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/marshadium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将玛夏多的暗影偷盗升级成Ｚ招式。",
+    effectzh: "携带后，可将玛夏多属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "aloraichium-z-2": {
+    nameZh: "阿罗雷Ｚ",
+    nameJa: "アロライＺ",
+    nameEn: "Aloraichium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/aloraichium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将阿罗拉地区雷丘的十万伏特升级成Ｚ招式。",
+    effectzh: "携带后，可将阿罗雷属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "snorlium-z-2": {
+    nameZh: "卡比兽Ｚ",
+    nameJa: "カビゴンＺ",
+    nameEn: "Snorlium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/snorlium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将卡比兽的终极冲击升级成Ｚ招式。",
+    effectzh: "携带后，可将卡比兽属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "eevium-z-2": {
+    nameZh: "伊布Ｚ",
+    nameJa: "イーブイＺ",
+    nameEn: "Eevium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/eevium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将伊布的珍藏升级成Ｚ招式。",
+    effectzh: "携带后，可将伊布属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "mewnium-z-2": {
+    nameZh: "梦幻Ｚ",
+    nameJa: "ミュウＺ",
+    nameEn: "Mewnium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/mewnium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将梦幻的精神强念升级成Ｚ招式。",
+    effectzh: "携带后，可将梦幻属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "pikashunium-z-2": {
+    nameZh: "智皮卡Ｚ",
+    nameJa: "サトピカＺ",
+    nameEn: "Pikashunium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/pikashunium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将戴着帽子的皮卡丘的十万伏特升级成Ｚ招式。",
+    effectzh: "携带后，可将智皮卡属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "solganium-z-2": {
+    nameZh: "索尔迦雷欧Ｚ",
+    nameJa: "ソルガレオＺ",
+    nameEn: "Solganium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/solganium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将索尔迦雷欧的流星闪冲升级成Ｚ招式。",
+    effectzh: "携带后，可将索尔迦雷欧属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "lunalium-z-2": {
+    nameZh: "露奈雅拉Ｚ",
+    nameJa: "ルナアーラＺ",
+    nameEn: "Lunalium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/lunalium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将露奈雅拉的暗影之光升级成Ｚ招式。",
+    effectzh: "携带后，可将露奈雅拉属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "ultranecrozium-z-2": {
+    nameZh: "究极奈克洛Ｚ",
+    nameJa: "ウルトラネクロＺ",
+    nameEn: "Ultranecrozium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/ultranecrozium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将奈克洛兹玛的光子喷涌升级成Ｚ招式。",
+    effectzh: "携带后，可将究极奈克洛属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "mimikium-z-2": {
+    nameZh: "谜拟ＱＺ",
+    nameJa: "ミミッキュＺ",
+    nameEn: "Mimikium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/mimikium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将谜拟Ｑ的嬉闹升级成Ｚ招式。",
+    effectzh: "携带后，可将谜拟Ｑ属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "lycanium-z-2": {
+    nameZh: "鬃岩狼人Ｚ",
+    nameJa: "ルガルガンＺ",
+    nameEn: "Lycanium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/lycanium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将鬃岩狼人的尖石攻击升级成Ｚ招式。",
+    effectzh: "携带后，可将鬃岩狼人属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
+  "kommonium-z-2": {
+    nameZh: "杖尾鳞甲龙Ｚ",
+    nameJa: "ジャラランガＺ",
+    nameEn: "Kommonium Z",
+    category: "宝可梦使用的Ｚ纯晶",
+    icon: "./items/kommonium-z-2.png",
+    descZh: "Ｚ力量的结晶。会将杖尾鳞甲龙的鳞片噪音升级成Ｚ招式。",
+    effectzh: "携带后，可将杖尾鳞甲龙属性的招式转化为对应的Ｚ招式（威力大幅提升并附带额外效果）。"
+  },
   "cheri-berry": {
-  nameZh: "樱子果",
-  category: "树果",
-  descZh: "能治愈麻痹状态的树果。"
-},
+    nameZh: "樱子果",
+    nameJa: "クラボのみ",
+    nameEn: "Cheri Berry",
+    category: "树果",
+    icon: "./items/cheri-berry.png",
+    descZh: "让宝可梦携带后，可以治愈麻痹。",
+    effectzh: "携带时陷入麻痹则自动解除并消耗。"
+  },
   "chesto-berry": {
-  nameZh: "零余果",
-  category: "树果",
-  descZh: "能治愈睡眠状态的树果。"
-},
+    nameZh: "零余果",
+    nameJa: "カゴのみ",
+    nameEn: "Chesto Berry",
+    category: "树果",
+    icon: "./items/chesto-berry.png",
+    descZh: "让宝可梦携带后，可以治愈睡眠。",
+    effectzh: "携带时陷入睡眠则自动解除并消耗。"
+  },
+  "pecha-berry": {
+    nameZh: "桃桃果",
+    nameJa: "モモンのみ",
+    nameEn: "Pecha Berry",
+    category: "树果",
+    icon: "./items/pecha-berry.png",
+    descZh: "让宝可梦携带后，可以治愈中毒。",
+    effectzh: "携带时陷入中毒则自动解除并消耗。"
+  },
+  "rawst-berry": {
+    nameZh: "莓莓果",
+    nameJa: "チーゴのみ",
+    nameEn: "Rawst Berry",
+    category: "树果",
+    icon: "./items/rawst-berry.png",
+    descZh: "让宝可梦携带后，可以治愈灼伤。",
+    effectzh: "携带时陷入灼伤则自动解除并消耗。"
+  },
   "aspear-berry": {
-  nameZh: "蕃荔果",
-  category: "树果",
-  descZh: "能治愈冰冻状态的树果。"
-},
-  "persim-berry": {
-  nameZh: "芭乐果",
-  category: "树果",
-  descZh: "能治愈混乱状态的树果。"
-},
-  "lum-berry": {
-  nameZh: "智盆果",
-  category: "树果",
-  descZh: "能治愈所有状态异常的树果。"
-},
+    nameZh: "利木果",
+    nameJa: "ナナシのみ",
+    nameEn: "Aspear Berry",
+    category: "树果",
+    icon: "./items/aspear-berry.png",
+    descZh: "让宝可梦携带后，可以治愈冰冻。",
+    effectzh: "携带时陷入冰冻则自动解除并消耗。"
+  },
   "leppa-berry": {
-  nameZh: "霏欧果",
-  category: "树果",
-  descZh: "能回复１０点已减少的ＰＰ的树果。"
-},
+    nameZh: "苹野果",
+    nameJa: "ヒメリのみ",
+    nameEn: "Leppa Berry",
+    category: "树果",
+    icon: "./items/leppa-berry.png",
+    descZh: "让宝可梦携带后，可以回复10PP。",
+    effectzh: "PP归零时自动回复10点PP并消耗。"
+  },
+  "oran-berry": {
+    nameZh: "橙橙果",
+    nameJa: "オレンのみ",
+    nameEn: "Oran Berry",
+    category: "树果",
+    icon: "./items/oran-berry.png",
+    descZh: "让宝可梦携带后，可以回复10HP。",
+    effectzh: "HP低于1／2时自动回复10点HP并消耗。"
+  },
+  "persim-berry": {
+    nameZh: "柿仔果",
+    nameJa: "キーのみ",
+    nameEn: "Persim Berry",
+    category: "树果",
+    icon: "./items/persim-berry.png",
+    descZh: "让宝可梦携带后，可以治愈混乱。",
+    effectzh: "携带时陷入生气则自动解除并消耗。"
+  },
+  "lum-berry": {
+    nameZh: "木子果",
+    nameJa: "ラムのみ",
+    nameEn: "Lum Berry",
+    category: "树果",
+    icon: "./items/lum-berry.png",
+    descZh: "让宝可梦携带后，可以治愈所有异常状态。",
+    effectzh: "携带时陷入任何异常状态则自动解除并消耗。"
+  },
+  "sitrus-berry": {
+    nameZh: "文柚果",
+    nameJa: "オボンのみ",
+    nameEn: "Sitrus Berry",
+    category: "树果",
+    icon: "./items/sitrus-berry.png",
+    descZh: "让宝可梦携带后，可以回复少量HP。",
+    effectzh: "HP低于1／2时自动回复最大HP的1／4并消耗。"
+  },
   "figy-berry": {
-  nameZh: "番荔果",
-  category: "树果",
-  descZh: "喜欢的宝可梦吃下后会回复ＨＰ，讨厌的则会觉得辣。"
-},
+    nameZh: "勿花果",
+    nameJa: "フィラのみ",
+    nameEn: "Figy Berry",
+    category: "树果",
+    icon: "./items/figy-berry.png",
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
+  },
+  "wiki-berry": {
+    nameZh: "异奇果",
+    nameJa: "ウイのみ",
+    nameEn: "Wiki Berry",
+    category: "树果",
+    icon: "./items/wiki-berry.png",
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
+  },
+  "mago-berry": {
+    nameZh: "芒芒果",
+    nameJa: "マゴのみ",
+    nameEn: "Mago Berry",
+    category: "树果",
+    icon: "./items/mago-berry.png",
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
+  },
+  "aguav-berry": {
+    nameZh: "乐芭果",
+    nameJa: "バンジのみ",
+    nameEn: "Aguav Berry",
+    category: "树果",
+    icon: "./items/aguav-berry.png",
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
+  },
+  "iapapa-berry": {
+    nameZh: "芭亚果",
+    nameJa: "イアのみ",
+    nameEn: "Iapapa Berry",
+    category: "树果",
+    icon: "./items/iapapa-berry.png",
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
+  },
+  "razz-berry": {
+    nameZh: "蔓莓果",
+    nameJa: "ズリのみ",
+    nameEn: "Razz Berry",
+    category: "树果",
+    icon: "./items/razz-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨强壮。黄色的果实尝起来是酸的。",
+    effectzh: "用于制作宝可方块，制作出来的宝可方块可用来打磨强壮。黄色的果实尝起来是酸的。"
+  },
+  "silver-razz-berry": {
+    nameZh: "银色蔓莓果",
+    nameJa: "ぎんのズリのみ",
+    nameEn: "Silver Razz Berry",
+    category: "树果",
+    icon: "./items/silver-razz-berry.png",
+    descZh: "把这树果交给宝可梦后，宝可梦就会变得容易捕捉。",
+    effectzh: "把这树果交给宝可梦后，宝可梦就会变得容易捕捉。"
+  },
+  "golden-razz-berry": {
+    nameZh: "金色蔓莓果",
+    nameJa: "きんのズリのみ",
+    nameEn: "Golden Razz Berry",
+    category: "树果",
+    icon: "./items/golden-razz-berry.png",
+    descZh: "把这树果交给宝可梦后，宝可梦就会变得十分容易捕捉。",
+    effectzh: "把这树果交给宝可梦后，宝可梦就会变得十分容易捕捉。"
+  },
+  "bluk-berry": {
+    nameZh: "墨莓果",
+    nameJa: "ブリーのみ",
+    nameEn: "Bluk Berry",
+    category: "树果",
+    icon: "./items/bluk-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。蓝色的果实尝起来是涩的。",
+    effectzh: "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。蓝色的果实尝起来是涩的。"
+  },
+  "nanab-berry": {
+    nameZh: "蕉香果",
+    nameJa: "ナナのみ",
+    nameEn: "Nanab Berry",
+    category: "树果",
+    icon: "./items/nanab-berry.png",
+    descZh: "捕捉宝可梦时，把这树果交给宝可梦就能稍微平复一下对方的情绪。",
+    effectzh: "捕捉宝可梦时，把这树果交给宝可梦就能稍微平复一下对方的情绪。"
+  },
+  "silver-nanab-berry": {
+    nameZh: "银色蕉香果",
+    nameJa: "ぎんのナナのみ",
+    nameEn: "Silver Nanab Berry",
+    category: "树果",
+    icon: "./items/silver-nanab-berry.png",
+    descZh: "捕捉宝可梦时，把这树果交给宝可梦就能平复对方的情绪。",
+    effectzh: "捕捉宝可梦时，把这树果交给宝可梦就能平复对方的情绪。"
+  },
+  "golden-nanab-berry": {
+    nameZh: "金色蕉香果",
+    nameJa: "きんのナナのみ",
+    nameEn: "Golden Nanab Berry",
+    category: "树果",
+    icon: "./items/golden-nanab-berry.png",
+    descZh: "捕捉宝可梦时，把这树果交给宝可梦就能有效地平复对方的情绪。",
+    effectzh: "捕捉宝可梦时，把这树果交给宝可梦就能有效地平复对方的情绪。"
+  },
+  "wepear-berry": {
+    nameZh: "西梨果",
+    nameJa: "セシナのみ",
+    nameEn: "Wepear Berry",
+    category: "树果",
+    icon: "./items/wepear-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。绿色的果实尝起来是苦的。",
+    effectzh: "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。绿色的果实尝起来是苦的。"
+  },
+  "pinap-berry": {
+    nameZh: "凰梨果",
+    nameJa: "パイルのみ",
+    nameEn: "Pinap Berry",
+    category: "树果",
+    icon: "./items/pinap-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨强壮。黄色的果实尝起来是酸的。",
+    effectzh: "用于制作宝可方块，制作出来的宝可方块可用来打磨强壮。黄色的果实尝起来是酸的。"
+  },
+  "silver-pinap-berry": {
+    nameZh: "银色凰梨果",
+    nameJa: "ぎんのパイルのみ",
+    nameEn: "Silver Pinap Berry",
+    category: "树果",
+    icon: "./items/silver-pinap-berry.png",
+    descZh: "如果把这树果交给宝可梦，那么接下来捉住该宝可梦时，会更容易获得道具。",
+    effectzh: "如果把这树果交给宝可梦，那么接下来捉住该宝可梦时，会更容易获得道具。"
+  },
+  "golden-pinap-berry": {
+    nameZh: "金色凰梨果",
+    nameJa: "きんのパイルのみ",
+    nameEn: "Golden Pinap Berry",
+    category: "树果",
+    icon: "./items/golden-pinap-berry.png",
+    descZh: "如果把这树果交给宝可梦，那么接下来捉住该宝可梦时，会非常容易获得道具。",
+    effectzh: "如果把这树果交给宝可梦，那么接下来捉住该宝可梦时，会非常容易获得道具。"
+  },
+  "pomeg-berry": {
+    nameZh: "榴石果",
+    nameJa: "ザロクのみ",
+    nameEn: "Pomeg Berry",
+    category: "树果",
+    icon: "./items/pomeg-berry.png",
+    descZh: "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但HP的基础点数会降低。",
+    effectzh: "提升亲密度，但HP基础点数减少。"
+  },
+  "kelpsy-berry": {
+    nameZh: "藻根果",
+    nameJa: "ネコブのみ",
+    nameEn: "Kelpsy Berry",
+    category: "树果",
+    icon: "./items/kelpsy-berry.png",
+    descZh: "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但攻击的基础点数会降低。",
+    effectzh: "提升亲密度，但攻击基础点数减少。"
+  },
+  "qualot-berry": {
+    nameZh: "比巴果",
+    nameJa: "タポルのみ",
+    nameEn: "Qualot Berry",
+    category: "树果",
+    icon: "./items/qualot-berry.png",
+    descZh: "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但防御的基础点数会降低。",
+    effectzh: "提升亲密度，但防御基础点数减少。"
+  },
+  "hondew-berry": {
+    nameZh: "哈密果",
+    nameJa: "ロメのみ",
+    nameEn: "Hondew Berry",
+    category: "树果",
+    icon: "./items/hondew-berry.png",
+    descZh: "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但特攻的基础点数会降低。",
+    effectzh: "提升亲密度，但特攻基础点数减少。"
+  },
+  "grepa-berry": {
+    nameZh: "萄葡果",
+    nameJa: "ウブのみ",
+    nameEn: "Grepa Berry",
+    category: "树果",
+    icon: "./items/grepa-berry.png",
+    descZh: "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但特防的基础点数会降低。",
+    effectzh: "提升亲密度，但特防基础点数减少。"
+  },
+  "tamato-berry": {
+    nameZh: "茄番果",
+    nameJa: "マトマのみ",
+    nameEn: "Tamato Berry",
+    category: "树果",
+    icon: "./items/tamato-berry.png",
+    descZh: "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但速度的基础点数会降低。",
+    effectzh: "提升亲密度，但速度基础点数减少。"
+  },
+  "cornn-berry": {
+    nameZh: "玉黍果",
+    nameJa: "モコシのみ",
+    nameEn: "Cornn Berry",
+    category: "树果",
+    icon: "./items/cornn-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「坚强」造型。"
+  },
+  "magost-berry": {
+    nameZh: "岳竹果",
+    nameJa: "ゴスのみ",
+    nameEn: "Magost Berry",
+    category: "树果",
+    icon: "./items/magost-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨可爱。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「可爱」造型。"
+  },
+  "rabuta-berry": {
+    nameZh: "茸丹果",
+    nameJa: "ラブタのみ",
+    nameEn: "Rabuta Berry",
+    category: "树果",
+    icon: "./items/rabuta-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「坚强」造型。"
+  },
+  "nomel-berry": {
+    nameZh: "檬柠果",
+    nameJa: "ノメルのみ",
+    nameEn: "Nomel Berry",
+    category: "树果",
+    icon: "./items/nomel-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨强壮。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「聪明」造型。"
+  },
+  "spelon-berry": {
+    nameZh: "刺角果",
+    nameJa: "ノワキのみ",
+    nameEn: "Spelon Berry",
+    category: "树果",
+    icon: "./items/spelon-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨可爱。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「可爱」造型。"
+  },
+  "pamtre-berry": {
+    nameZh: "椰木果",
+    nameJa: "シーヤのみ",
+    nameEn: "Pamtre Berry",
+    category: "树果",
+    icon: "./items/pamtre-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「可爱」造型。"
+  },
+  "watmel-berry": {
+    nameZh: "瓜西果",
+    nameJa: "カイスのみ",
+    nameEn: "Watmel Berry",
+    category: "树果",
+    icon: "./items/watmel-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「聪明」造型。"
+  },
+  "durin-berry": {
+    nameZh: "金枕果",
+    nameJa: "ドリのみ",
+    nameEn: "Durin Berry",
+    category: "树果",
+    icon: "./items/durin-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨聪明。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「美丽」造型。"
+  },
+  "belue-berry": {
+    nameZh: "靛莓果",
+    nameJa: "ベリブのみ",
+    nameEn: "Belue Berry",
+    category: "树果",
+    icon: "./items/belue-berry.png",
+    descZh: "用于制作宝可方块，制作出来的宝可方块可用来打磨美丽。在其他地区很少见的树果。",
+    effectzh: "用于制作宝可方块，提升「美丽」造型。"
+  },
+  "occa-berry": {
+    nameZh: "巧可果",
+    nameJa: "オッカのみ",
+    nameEn: "Occa Berry",
+    category: "树果",
+    icon: "./items/occa-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的火属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的火属性招式时，威力减弱（伤害减半）。"
+  },
+  "passho-berry": {
+    nameZh: "千香果",
+    nameJa: "イトケのみ",
+    nameEn: "Passho Berry",
+    category: "树果",
+    icon: "./items/passho-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的水属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的水属性招式时，威力减弱（伤害减半）。"
+  },
+  "wacan-berry": {
+    nameZh: "烛木果",
+    nameJa: "ソクノのみ",
+    nameEn: "Wacan Berry",
+    category: "树果",
+    icon: "./items/wacan-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的电属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的电属性招式时，威力减弱（伤害减半）。"
+  },
+  "rindo-berry": {
+    nameZh: "罗子果",
+    nameJa: "リンドのみ",
+    nameEn: "Rindo Berry",
+    category: "树果",
+    icon: "./items/rindo-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的草属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的草属性招式时，威力减弱（伤害减半）。"
+  },
+  "yache-berry": {
+    nameZh: "番荔果",
+    nameJa: "ヤチェのみ",
+    nameEn: "Yache Berry",
+    category: "树果",
+    icon: "./items/yache-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的冰属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的冰属性招式时，威力减弱（伤害减半）。"
+  },
+  "chople-berry": {
+    nameZh: "莲蒲果",
+    nameJa: "ヨプのみ",
+    nameEn: "Chople Berry",
+    category: "树果",
+    icon: "./items/chople-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的格斗属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的格斗属性招式时，威力减弱（伤害减半）。"
+  },
+  "kebia-berry": {
+    nameZh: "通通果",
+    nameJa: "ビアーのみ",
+    nameEn: "Kebia Berry",
+    category: "树果",
+    icon: "./items/kebia-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的毒属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的毒属性招式时，威力减弱（伤害减半）。"
+  },
+  "shuca-berry": {
+    nameZh: "腰木果",
+    nameJa: "シュカのみ",
+    nameEn: "Shuca Berry",
+    category: "树果",
+    icon: "./items/shuca-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的地面属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的地面属性招式时，威力减弱（伤害减半）。"
+  },
+  "coba-berry": {
+    nameZh: "棱瓜果",
+    nameJa: "バコウのみ",
+    nameEn: "Coba Berry",
+    category: "树果",
+    icon: "./items/coba-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的飞行属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的飞行属性招式时，威力减弱（伤害减半）。"
+  },
+  "payapa-berry": {
+    nameZh: "福禄果",
+    nameJa: "ウタンのみ",
+    nameEn: "Payapa Berry",
+    category: "树果",
+    icon: "./items/payapa-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的超能力属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的超能属性招式时，威力减弱（伤害减半）。"
+  },
+  "tanga-berry": {
+    nameZh: "扁樱果",
+    nameJa: "タンガのみ",
+    nameEn: "Tanga Berry",
+    category: "树果",
+    icon: "./items/tanga-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的虫属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的虫属性招式时，威力减弱（伤害减半）。"
+  },
+  "charti-berry": {
+    nameZh: "草蚕果",
+    nameJa: "ヨロギのみ",
+    nameEn: "Charti Berry",
+    category: "树果",
+    icon: "./items/charti-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的岩石属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的岩石属性招式时，威力减弱（伤害减半）。"
+  },
+  "kasib-berry": {
+    nameZh: "佛柑果",
+    nameJa: "カシブのみ",
+    nameEn: "Kasib Berry",
+    category: "树果",
+    icon: "./items/kasib-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的幽灵属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的幽灵属性招式时，威力减弱（伤害减半）。"
+  },
+  "haban-berry": {
+    nameZh: "莓榴果",
+    nameJa: "ハバンのみ",
+    nameEn: "Haban Berry",
+    category: "树果",
+    icon: "./items/haban-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的龙属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的龙属性招式时，威力减弱（伤害减半）。"
+  },
+  "colbur-berry": {
+    nameZh: "刺耳果",
+    nameJa: "ナモのみ",
+    nameEn: "Colbur Berry",
+    category: "树果",
+    icon: "./items/colbur-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的恶属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的恶属性招式时，威力减弱（伤害减半）。"
+  },
+  "babiri-berry": {
+    nameZh: "霹霹果",
+    nameJa: "リリバのみ",
+    nameEn: "Babiri Berry",
+    category: "树果",
+    icon: "./items/babiri-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的钢属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的钢属性招式时，威力减弱（伤害减半）。"
+  },
+  "chilan-berry": {
+    nameZh: "灯浆果",
+    nameJa: "ホズのみ",
+    nameEn: "Chilan Berry",
+    category: "树果",
+    icon: "./items/chilan-berry.png",
+    descZh: "让宝可梦携带后，在受到一般属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的一般属性招式时，威力减弱（伤害减半）。"
+  },
   "liechi-berry": {
-  nameZh: "利木果",
-  category: "树果",
-  descZh: "ＨＰ减少一半时，会提升攻击的树果。"
-},
+    nameZh: "枝荔果",
+    nameJa: "チイラのみ",
+    nameEn: "Liechi Berry",
+    category: "树果",
+    icon: "./items/liechi-berry.png",
+    descZh: "让宝可梦携带后，危机时，自己的攻击就会提高。",
+    effectzh: "HP≤1／4时攻击提升2级并消耗。"
+  },
   "ganlon-berry": {
-  nameZh: "艮宁果",
-  category: "树果",
-  descZh: "ＨＰ减少一半时，会提升防御的树果。"
-},
+    nameZh: "龙睛果",
+    nameJa: "リュガのみ",
+    nameEn: "Ganlon Berry",
+    category: "树果",
+    icon: "./items/ganlon-berry.png",
+    descZh: "让宝可梦携带后，危机时，自己的防御就会提高。",
+    effectzh: "HP≤1／4时防御提升2级并消耗。"
+  },
   "salac-berry": {
-  nameZh: "沙鳞果",
-  category: "树果",
-  descZh: "ＨＰ减少一半时，会提升速度的树果。"
-},
+    nameZh: "沙鳞果",
+    nameJa: "カムラのみ",
+    nameEn: "Salac Berry",
+    category: "树果",
+    icon: "./items/salac-berry.png",
+    descZh: "让宝可梦携带后，危机时，自己的速度就会提高。",
+    effectzh: "HP≤1／4时速度提升2级并消耗。"
+  },
   "petaya-berry": {
-  nameZh: "枇枇杷果",
-  category: "树果",
-  descZh: "ＨＰ减少一半时，会提升特攻的树果。"
-},
+    nameZh: "龙火果",
+    nameJa: "ヤタピのみ",
+    nameEn: "Petaya Berry",
+    category: "树果",
+    icon: "./items/petaya-berry.png",
+    descZh: "让宝可梦携带后，危机时，自己的特攻就会提高。",
+    effectzh: "HP≤1／4时特攻提升2级并消耗。"
+  },
   "apicot-berry": {
-  nameZh: "乐音果",
-  category: "树果",
-  descZh: "ＨＰ减少一半时，会提升特防的树果。"
-},
-  "hm-cut": {
-  nameZh: "居合斩",
-  category: "秘传技能",
-  descZh: "可以切断挡路小树的秘传招式学习器。"
-},
-  "hm-fly": {
-  nameZh: "飞翔",
-  category: "秘传技能",
-  descZh: "可以飞到去过的宝可梦中心的秘传招式学习器。"
-},
-  "hm-surfl": {
-  nameZh: "冲浪",
-  category: "秘传技能",
-  descZh: "可在水面移动的秘传招式学习器。"
-},
-  "hm-strength": {
-  nameZh: "怪力",
-  category: "秘传技能",
-  descZh: "可以推动岩石的秘传招式学习器。"
-},
-  "hm-rocksmash": {
-  nameZh: "碎岩",
-  category: "秘传技能",
-  descZh: "可以击碎岩石的秘传招式学习器。"
-},
-  "bicycle": {
-  nameZh: "自行车",
-  category: "重要道具",
-  descZh: "以比跑步更快的速度移动的交通工具。"
-},
-  "old-rod": {
-  nameZh: "旧钓竿",
-  category: "重要道具",
-  descZh: "在水源处能钓到宝可梦的钓竿。"
-},
-  "good-rod": {
-  nameZh: "好钓竿",
-  category: "重要道具",
-  descZh: "能钓到稍大宝可梦的钓竿。"
-},
-  "super-rod": {
-  nameZh: "厉害钓竿",
-  category: "重要道具",
-  descZh: "能钓到各种宝可梦的钓竿。"
-},
-  "tm-case": {
-  nameZh: "招式学习器盒",
-  category: "重要道具",
-  descZh: "用来收纳招式学习器（ＴＭ）和秘传学习器（ＨＭ）的盒子。"
-},
+    nameZh: "杏仔果",
+    nameJa: "ズアのみ",
+    nameEn: "Apicot Berry",
+    category: "树果",
+    icon: "./items/apicot-berry.png",
+    descZh: "让宝可梦携带后，危机时，自己的特防就会提高。",
+    effectzh: "HP≤1／4时特防提升2级并消耗。"
+  },
+  "lansat-berry": {
+    nameZh: "兰萨果",
+    nameJa: "サンのみ",
+    nameEn: "Lansat Berry",
+    category: "树果",
+    icon: "./items/lansat-berry.png",
+    descZh: "让宝可梦携带后，危机时，攻击会变得容易击中要害。",
+    effectzh: "HP≤1／4时会心率提升2级并消耗。"
+  },
+  "starf-berry": {
+    nameZh: "星桃果",
+    nameJa: "スターのみ",
+    nameEn: "Starf Berry",
+    category: "树果",
+    icon: "./items/starf-berry.png",
+    descZh: "让宝可梦携带后，危机时，某一项能力就会大幅提高。",
+    effectzh: "HP≤1／4时随机一项能力提升2级并消耗。"
+  },
+  "enigma-berry": {
+    nameZh: "谜芝果",
+    nameJa: "ナゾのみ",
+    nameEn: "Enigma Berry",
+    category: "树果",
+    icon: "./items/enigma-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的招式攻击时，可以回复HP。",
+    effectzh: "受到效果绝佳伤害时随机获得一种效果。"
+  },
+  "pumkin-berry": {
+    nameZh: "金南果",
+    nameJa: "カチャのみ",
+    nameEn: "Pumkin Berry",
+    category: "树果",
+    icon: "./items/pumkin-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "drash-berry": {
+    nameZh: "无青果",
+    nameJa: "ブーカのみ",
+    nameEn: "Drash Berry",
+    category: "树果",
+    icon: "./items/drash-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "eggant-berry": {
+    nameZh: "子茄果",
+    nameJa: "ビスナのみ",
+    nameEn: "Eggant Berry",
+    category: "树果",
+    icon: "./items/eggant-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "strib-berry": {
+    nameZh: "青豌果",
+    nameJa: "エドマのみ",
+    nameEn: "Strib Berry",
+    category: "树果",
+    icon: "./items/strib-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "chilan-berry-2": {
+    nameZh: "灯浆果",
+    nameJa: "ホズのみ",
+    nameEn: "Chilan Berry",
+    category: "树果",
+    icon: "./items/chilan-berry-2.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "nutpea-berry": {
+    nameZh: "生花果",
+    nameJa: "ラッカのみ",
+    nameEn: "Nutpea Berry",
+    category: "树果",
+    icon: "./items/nutpea-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "ginema-berry": {
+    nameZh: "葱首果",
+    nameJa: "ギネマのみ",
+    nameEn: "Ginema Berry",
+    category: "树果",
+    icon: "./items/ginema-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "kuo-berry": {
+    nameZh: "葵秋果",
+    nameJa: "クオのみ",
+    nameEn: "Kuo Berry",
+    category: "树果",
+    icon: "./items/kuo-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "yago-berry": {
+    nameZh: "苦凉果",
+    nameJa: "ヤゴのみ",
+    nameEn: "Yago Berry",
+    category: "树果",
+    icon: "./items/yago-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "touga-berry": {
+    nameZh: "热椒果",
+    nameJa: "トウガのみ",
+    nameEn: "Touga Berry",
+    category: "树果",
+    icon: "./items/touga-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "niniku-berry": {
+    nameZh: "蒜蒜果",
+    nameJa: "ニニクのみ",
+    nameEn: "Niniku Berry",
+    category: "树果",
+    icon: "./items/niniku-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "topo-berry": {
+    nameZh: "铃薯果",
+    nameJa: "トポのみ",
+    nameEn: "Topo Berry",
+    category: "树果",
+    icon: "./items/topo-berry.png",
+    descZh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。",
+    effectzh: "用于制作宝可方块，种在松软的土里会长出神秘的果实。"
+  },
+  "micle-berry": {
+    nameZh: "奇秘果",
+    nameJa: "ミクルのみ",
+    nameEn: "Micle Berry",
+    category: "树果",
+    icon: "./items/micle-berry.png",
+    descZh: "让宝可梦携带后，危机时，招式的命中率仅会提高1次。",
+    effectzh: "HP≤1／4时下一只招式命中率提升（不会Miss）并消耗。"
+  },
+  "custap-berry": {
+    nameZh: "释陀果",
+    nameJa: "イバンのみ",
+    nameEn: "Custap Berry",
+    category: "树果",
+    icon: "./items/custap-berry.png",
+    descZh: "让宝可梦携带后，危机时，行动仅会变快1次。",
+    effectzh: "HP≤1／4时必定先制行动并消耗。"
+  },
+  "jaboca-berry": {
+    nameZh: "嘉珍果",
+    nameJa: "ジャポのみ",
+    nameEn: "Jaboca Berry",
+    category: "树果",
+    icon: "./items/jaboca-berry.png",
+    descZh: "让宝可梦携带后，在受到物理招式攻击时，能给予对手伤害。",
+    effectzh: "受到物理招式攻击时给予对手伤害并消耗。"
+  },
+  "rowap-berry": {
+    nameZh: "雾莲果",
+    nameJa: "レンブのみ",
+    nameEn: "Rowap Berry",
+    category: "树果",
+    icon: "./items/rowap-berry.png",
+    descZh: "让宝可梦携带后，在受到特殊招式攻击时，能给予对手伤害。",
+    effectzh: "携带时受到特殊招式攻击，给予对手少量伤害并消耗。"
+  },
+  "roseli-berry": {
+    nameZh: "洛玫果",
+    nameJa: "ロゼルのみ",
+    nameEn: "Roseli Berry",
+    category: "树果",
+    icon: "./items/roseli-berry.png",
+    descZh: "让宝可梦携带后，在受到效果绝佳的妖精属性招式攻击时，能令其威力减弱。",
+    effectzh: "受到效果绝佳的妖精属性招式时，威力减弱（伤害减半）。"
+  },
+  "kee-berry": {
+    nameZh: "亚开果",
+    nameJa: "アッキのみ",
+    nameEn: "Kee Berry",
+    category: "树果",
+    icon: "./items/kee-berry.png",
+    descZh: "让宝可梦携带后，在受到物理招式攻击时，自己的防御就会提高。",
+    effectzh: "受到物理招式攻击时防御提升1级并消耗。"
+  },
+  "maranga-berry": {
+    nameZh: "香罗果",
+    nameJa: "タラプのみ",
+    nameEn: "Maranga Berry",
+    category: "树果",
+    icon: "./items/maranga-berry.png",
+    descZh: "让宝可梦携带后，在受到特殊招式攻击时，自己的特防就会提高。",
+    effectzh: "受到特殊招式攻击时特防提升1级并消耗。"
+  },
+  "hopo-berry": {
+    nameZh: "花啤果",
+    nameJa: "ポフのみ",
+    nameEn: "Hopo Berry",
+    category: "树果",
+    icon: "./items/hopo-berry.png",
+    descZh: "让宝可梦吃下后，可以回复PP。野生的宝可梦吃下后，对周围的反应会变得迟钝。",
+    effectzh: "吃下后可回复10点PP。"
+  },
+  "roto-hatch": {
+    nameZh: "孵蛋碰碰",
+    nameJa: "タマゴふかポン",
+    nameEn: "Roto Hatch",
+    category: "洛托姆之力",
+    icon: "./items/roto-hatch.png",
+    descZh: "洛托姆之力的一种，使用后，蛋就会变得非常容易孵化。",
+    effectzh: "洛托姆之力的一种，使用后，蛋就会变得非常容易孵化。"
+  },
+  "roto-bargain": {
+    nameZh: "优惠碰碰",
+    nameJa: "やすうりポン",
+    nameEn: "Roto Bargain",
+    category: "洛托姆之力",
+    icon: "./items/roto-bargain.png",
+    descZh: "洛托姆之力的一种，使用后，友好商店的商品就会变成半价。",
+    effectzh: "洛托姆之力的一种，使用后，友好商店的商品就会变成半价。"
+  },
+  "roto-prize-money": {
+    nameZh: "零花钱碰碰",
+    nameJa: "おこづかいポン",
+    nameEn: "Roto Prize Money",
+    category: "洛托姆之力",
+    icon: "./items/roto-prize-money.png",
+    descZh: "洛托姆之力的一种，对战后能得到的零花钱会变成3倍。",
+    effectzh: "洛托姆之力的一种，对战后能得到的零花钱会变成3倍。"
+  },
+  "roto-exp-points": {
+    nameZh: "经验碰碰",
+    nameJa: "けいけんポン",
+    nameEn: "Roto Exp. Points",
+    category: "洛托姆之力",
+    icon: "./items/roto-exp-points.png",
+    descZh: "洛托姆之力的一种，对战后能得到的经验值会稍微增加。",
+    effectzh: "洛托姆之力的一种，对战后能得到的经验值会稍微增加。"
+  },
+  "roto-friendship": {
+    nameZh: "亲密碰碰",
+    nameJa: "なつきポン",
+    nameEn: "Roto Friendship",
+    category: "洛托姆之力",
+    icon: "./items/roto-friendship.png",
+    descZh: "洛托姆之力的一种，带在身边的宝可梦会变得非常容易亲近。",
+    effectzh: "洛托姆之力的一种，带在身边的宝可梦会变得非常容易亲近。"
+  },
+  "roto-encounter": {
+    nameZh: "相遇碰碰",
+    nameJa: "みっけポン",
+    nameEn: "Roto Encounter",
+    category: "洛托姆之力",
+    icon: "./items/roto-encounter.png",
+    descZh: "洛托姆之力的一种，一定时间内，会变得容易遇到高等级的野生宝可梦。",
+    effectzh: "洛托姆之力的一种，一定时间内，会变得容易遇到高等级的野生宝可梦。"
+  },
+  "roto-stealth": {
+    nameZh: "隐身碰碰",
+    nameJa: "かくれポン",
+    nameEn: "Roto Stealth",
+    category: "洛托姆之力",
+    icon: "./items/roto-stealth.png",
+    descZh: "洛托姆之力的一种，一定时间内，会变得完全不会遇到野生宝可梦。",
+    effectzh: "洛托姆之力的一种，一定时间内，会变得完全不会遇到野生宝可梦。"
+  },
+  "roto-hp-restore": {
+    nameZh: "HP回复碰碰",
+    nameJa: "HPかいふくポン",
+    nameEn: "Roto HP Restore",
+    category: "洛托姆之力",
+    icon: "./items/roto-hp-restore.png",
+    descZh: "洛托姆之力的一种，正在战斗的我方宝可梦的HP会全部回复。",
+    effectzh: "洛托姆之力的一种，正在战斗的我方宝可梦的HP会全部回复。"
+  },
+  "roto-pp-restore": {
+    nameZh: "PP回复碰碰",
+    nameJa: "PPかいふくポン",
+    nameEn: "Roto PP Restore",
+    category: "洛托姆之力",
+    icon: "./items/roto-pp-restore.png",
+    descZh: "洛托姆之力的一种，正在战斗的我方宝可梦的PP会全部回复。",
+    effectzh: "洛托姆之力的一种，正在战斗的我方宝可梦的PP会全部回复。"
+  },
+  "roto-boost": {
+    nameZh: "加油碰碰",
+    nameJa: "おうえんポン",
+    nameEn: "Roto Boost",
+    category: "洛托姆之力",
+    icon: "./items/roto-boost.png",
+    descZh: "洛托姆之力的一种，正在战斗的我方宝可梦的所有能力都会提高。",
+    effectzh: "洛托姆之力的一种，正在战斗的我方宝可梦的所有能力都会提高。"
+  },
+  "roto-catch": {
+    nameZh: "捕捉碰碰",
+    nameJa: "つかまえポン",
+    nameEn: "Roto Catch",
+    category: "洛托姆之力",
+    icon: "./items/roto-catch.png",
+    descZh: "洛托姆之力的一种，使用后，眼前的野生宝可梦会变得非常容易捕捉。",
+    effectzh: "洛托姆之力的一种，使用后，眼前的野生宝可梦会变得非常容易捕捉。"
+  },
 }
