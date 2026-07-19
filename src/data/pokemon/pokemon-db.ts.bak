@@ -219,7 +219,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "火焰宝可梦",
-    description: "能用翅膀飞到距地面 １４００米的高度。 会吐出高温火焰。",
+    description: "能用翅膀飞到距地面 1400米的高度。 会吐出高温火焰。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -579,7 +579,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "毒蜂宝可梦",
-    description: "它会用双手和 尾部的３根毒针 反复刺伤敌人。",
+    description: "它会用双手和 尾部的3根毒针 反复刺伤敌人。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -699,7 +699,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "鸟宝可梦",
-    description: "以２马赫的飞行速度来 觅食。它巨大的爪子是 非常令人惧怕的武器。",
+    description: "以2马赫的飞行速度来 觅食。它巨大的爪子是 非常令人惧怕的武器。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -739,7 +739,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "鼠宝可梦",
-    description: "有两颗大门牙，见什么咬什么。 只要看到１只小拉达出没， 附近肯定还住着40只以上。",
+    description: "有两颗大门牙，见什么咬什么。 只要看到1只小拉达出没， 附近肯定还住着40只以上。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -939,7 +939,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "眼镜蛇宝可梦",
-    description: "根据研究证实，它腹部 那可怕的纹路大约有 ６个种类已经得到确认。",
+    description: "根据研究证实，它腹部 那可怕的纹路大约有 6个种类已经得到确认。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -1419,7 +1419,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "妖精宝可梦",
-    description: "听觉灵敏，连１公里以外 针落地的声音都听得见， 因此平时会待在安静的地方。",
+    description: "听觉灵敏，连1公里以外 针落地的声音都听得见， 因此平时会待在安静的地方。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -1459,7 +1459,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "狐狸宝可梦",
-    description: "随着身体的成长， ６根尾巴的毛发也会变得更漂亮。 紧紧抱着它时能感到微微的温暖。",
+    description: "随着身体的成长， 6根尾巴的毛发也会变得更漂亮。 紧紧抱着它时能感到微微的温暖。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -1499,7 +1499,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "狐狸宝可梦",
-    description: "聪明伶俐，但爱记仇。 据说如果敢乱抓它的尾巴， 它就会缠着你作祟１０００年。",
+    description: "聪明伶俐，但爱记仇。 据说如果敢乱抓它的尾巴， 它就会缠着你作祟1000年。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -1739,7 +1739,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "杂草宝可梦",
-    description: "雌蕊会散发一种 极其强烈的恶臭， 能让２公里远的人昏倒。",
+    description: "雌蕊会散发一种 极其强烈的恶臭， 能让2公里远的人昏倒。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -2019,7 +2019,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "鼹鼠宝可梦",
-    description: "三胞胎的地鼠，拥有能够挖掘到 地下１００公里深的潜力。没人知道 它在地下的部分究竟长成什么样子。",
+    description: "三胞胎的地鼠，拥有能够挖掘到 地下100公里深的潜力。没人知道 它在地下的部分究竟长成什么样子。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -2699,7 +2699,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "怪力宝可梦",
-    description: "４只手臂在思考之前 就会反射性地行动， 使出多发拳击。",
+    description: "4只手臂在思考之前 就会反射性地行动， 使出多发拳击。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -2899,7 +2899,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "水母宝可梦",
-    description: "８０根触手伸缩自如。 会像撒网那样伸开触手 抓住猎物并刺入毒针。",
+    description: "80根触手伸缩自如。 会像撒网那样伸开触手 抓住猎物并刺入毒针。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -3779,7 +3779,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "岩蛇宝可梦",
-    description: "弯曲扭动巨大结实的身体， 以时速８０公里的 猛烈劲头向前挖进。",
+    description: "弯曲扭动巨大结实的身体， 以时速80公里的 猛烈劲头向前挖进。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -4059,7 +4059,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "蛋宝可梦",
-    description: "６只不在一起就不安心。 哪怕只是少了１只， 都会马上想要逃跑。",
+    description: "6只不在一起就不安心。 哪怕只是少了1只， 都会马上想要逃跑。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -4099,7 +4099,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "椰子宝可梦",
-    description: "３个脑袋联合起来 能使出强大的精神力量。 天气变阴时动作会变得迟钝。",
+    description: "3个脑袋联合起来 能使出强大的精神力量。 天气变阴时动作会变得迟钝。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -4259,7 +4259,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "拳击宝可梦",
-    description: "打出的拳击甚至能劈开空气。 但攻击３分钟后， 它似乎就会想休息一下。",
+    description: "打出的拳击甚至能劈开空气。 但攻击3分钟后， 它似乎就会想休息一下。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -4459,7 +4459,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "钻锥宝可梦",
-    description: "全身被铠甲般的皮肤保护着。 甚至能在２０００度的熔岩里生存。",
+    description: "全身被铠甲般的皮肤保护着。 甚至能在2000度的熔岩里生存。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -4699,7 +4699,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "金鱼宝可梦",
-    description: "背鳍和尾鳍像肌肉 那样发达。能够以 ５节的速度在水中游泳。",
+    description: "背鳍和尾鳍像肌肉 那样发达。能够以 5节的速度在水中游泳。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -5379,7 +5379,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "雷宝可梦",
-    description: "能够吸入空气中的负离子， 有时会吐出大约有 １００００伏特的高压电。",
+    description: "能够吸入空气中的负离子， 有时会吐出大约有 10000伏特的高压电。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -5419,7 +5419,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "火宝可梦",
-    description: "会将吸入的空气的一部分 传送到自己体内的火囊里， 制造出１７００度的火焰。",
+    description: "会将吸入的空气的一部分 传送到自己体内的火囊里， 制造出1700度的火焰。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -5499,7 +5499,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 1,
     region: "关都",
     genera: "漩涡宝可梦",
-    description: "已经灭绝的古代宝可梦。 依靠１０只脚来划水， 在水中轻盈地游曳。",
+    description: "已经灭绝的古代宝可梦。 依靠10只脚来划水， 在水中轻盈地游曳。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -6539,7 +6539,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 2,
     region: "城都",
     genera: "猫头鹰宝可梦",
-    description: "开始思考事情时， 会将脖子旋转１８０度， 以此提高大脑的工作效率。",
+    description: "开始思考事情时， 会将脖子旋转180度， 以此提高大脑的工作效率。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -6739,7 +6739,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 2,
     region: "城都",
     genera: "蝙蝠宝可梦",
-    description: "可以自由地控制４根翅膀 振翅而飞。即使在狭窄的 洞窟内也能保持速度飞来飞去。",
+    description: "可以自由地控制4根翅膀 振翅而飞。即使在狭窄的 洞窟内也能保持速度飞来飞去。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -8539,7 +8539,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 2,
     region: "城都",
     genera: "独角宝可梦",
-    description: "能轻轻松松地举起比自己 体重还重１００倍的东西， 是以一身怪力为傲的宝可梦。",
+    description: "能轻轻松松地举起比自己 体重还重100倍的东西， 是以一身怪力为傲的宝可梦。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -8819,7 +8819,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 2,
     region: "城都",
     genera: "野猪宝可梦",
-    description: "虽然４只脚很短， 但因为蹄子很宽很粗糙， 所以就算在雪地上行走也不会打滑。",
+    description: "虽然4只脚很短， 但因为蹄子很宽很粗糙， 所以就算在雪地上行走也不会打滑。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -9289,7 +9289,7 @@ export const POKEMON_DB: PokemonFull[] = [
   {
     id: 233,
     name: "porygon2",
-    nameZh: "多边兽２型",
+    nameZh: "多边兽2型",
     types: ["normal"],
     spriteUrl: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/233.png",
     height: 6,
@@ -9299,7 +9299,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 2,
     region: "城都",
     genera: "虚拟宝可梦",
-    description: "在装载了ＡＩ功能后， 多边兽２型便开始用只有彼此 能懂的神秘语言互相交流了。",
+    description: "在装载了ＡＩ功能后， 多边兽2型便开始用只有彼此 能懂的神秘语言互相交流了。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -11579,7 +11579,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "入门宝可梦",
-    description: "有时能在土里生活１０年以上。 会从树木的根部那里吸取营养。",
+    description: "有时能在土里生活10年以上。 会从树木的根部那里吸取营养。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -12579,7 +12579,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "荆棘宝可梦",
-    description: "会用右手和左手分别放出 ２种不同的毒来进行攻击。 香气越浓越有精神。",
+    description: "会用右手和左手分别放出 2种不同的毒来进行攻击。 香气越浓越有精神。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -12779,7 +12779,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "球鲸宝可梦",
-    description: "喝入大量的海水之后， 身体会鼓成像球一样。 每天要吃掉１吨的食物。",
+    description: "喝入大量的海水之后， 身体会鼓成像球一样。 每天要吃掉1吨的食物。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -13459,7 +13459,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "陨石宝可梦",
-    description: "第一次发现它是在 ４０年前陨石坠落的地方。 只要注视敌人就能使其入睡。",
+    description: "第一次发现它是在 40年前陨石坠落的地方。 只要注视敌人就能使其入睡。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -13539,7 +13539,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "须鱼宝可梦",
-    description: "会用２根长长的胡须 探索浑浊的河底。 用湿滑的粘膜保护着身体。",
+    description: "会用2根长长的胡须 探索浑浊的河底。 用湿滑的粘膜保护着身体。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -13859,7 +13859,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "古虾宝可梦",
-    description: "会把８根翅膀当做船桨划水， 并且游泳的速度相当快。 是虫宝可梦的一种祖先。",
+    description: "会把8根翅膀当做船桨划水， 并且游泳的速度相当快。 是虫宝可梦的一种祖先。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -14419,7 +14419,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "雪笠宝可梦",
-    description: "只能在寒冷的土地上生存。 即使在零下１００度的环境下 也能充满活力地到处蹦蹦跳跳。",
+    description: "只能在寒冷的土地上生存。 即使在零下100度的环境下 也能充满活力地到处蹦蹦跳跳。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -14579,7 +14579,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "破冰宝可梦",
-    description: "它的獠牙一生都会持续生长。 即使在战斗中被折断也能逐渐恢复， 只需要１年的时间便能完好如初。",
+    description: "它的獠牙一生都会持续生长。 即使在战斗中被折断也能逐渐恢复， 只需要1年的时间便能完好如初。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -14619,7 +14619,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "双壳贝宝可梦",
-    description: "珍珠贝的珍珠非常贵重。 据说，其价值或许是 大舌贝珍珠的１０倍以上。",
+    description: "珍珠贝的珍珠非常贵重。 据说，其价值或许是 大舌贝珍珠的10倍以上。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -14739,7 +14739,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "长寿宝可梦",
-    description: "在深海调查中被发现的宝可梦。 样子在１亿年间都没有任何变化， 被人们称为活化石。",
+    description: "在深海调查中被发现的宝可梦。 样子在1亿年间都没有任何变化， 被人们称为活化石。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -15019,7 +15019,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "铁足宝可梦",
-    description: "２只金属怪组合起来的样子。 运用堪比超级计算机的 头脑打败敌人。",
+    description: "2只金属怪组合起来的样子。 运用堪比超级计算机的 头脑打败敌人。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -15139,7 +15139,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "黑金宝可梦",
-    description: "据说诞生于地幔之中， 在距今约１万年前 现身于地面之上。",
+    description: "据说诞生于地幔之中， 在距今约1万年前 现身于地面之上。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -15379,7 +15379,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 3,
     region: "丰缘",
     genera: "祈愿宝可梦",
-    description: "传说当它从１０００年的 沉睡中醒来时，会实现 写在它头部许愿笺上的愿望。",
+    description: "传说当它从1000年的 沉睡中醒来时，会实现 写在它头部许愿笺上的愿望。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -16419,7 +16419,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 4,
     region: "神奥",
     genera: "护盾宝可梦",
-    description: "大约１亿年前的宝可梦。 极其结实的脸有着超越钢铁的硬度。",
+    description: "大约1亿年前的宝可梦。 极其结实的脸有着超越钢铁的硬度。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -16939,7 +16939,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 4,
     region: "神奥",
     genera: "长尾宝可梦",
-    description: "无论做什么都会用到尾巴。 如果被它的２条尾巴抱紧， 那就证明是真的和你很亲近。",
+    description: "无论做什么都会用到尾巴。 如果被它的2条尾巴抱紧， 那就证明是真的和你很亲近。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -18419,7 +18419,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 4,
     region: "神奥",
     genera: "钩爪宝可梦",
-    description: "通过用爪子留下记号 来与伙伴联络。据说记号 的种类有５００种以上。",
+    description: "通过用爪子留下记号 来与伙伴联络。据说记号 的种类有500种以上。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -19019,7 +19019,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 4,
     region: "神奥",
     genera: "罗盘宝可梦",
-    description: "使用３个小部件获取食物， 或是和敌人战斗。 本体基本上只负责下命令。",
+    description: "使用3个小部件获取食物， 或是和敌人战斗。 本体基本上只负责下命令。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -19099,7 +19099,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 4,
     region: "神奥",
     genera: "雪国宝可梦",
-    description: "会吐出零下５０度的冷气 冻住猎物，并把它们带回 自己的巢穴，整齐地摆成一排。",
+    description: "会吐出零下50度的冷气 冻住猎物，并把它们带回 自己的巢穴，整齐地摆成一排。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -21179,7 +21179,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "地底宝可梦",
-    description: "别名钻头王。在地底下 挖掘前进的速度 达到了每小时１５０公里。",
+    description: "别名钻头王。在地底下 挖掘前进的速度 达到了每小时150公里。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -21259,7 +21259,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "筋骨宝可梦",
-    description: "如果搬运小匠可以搬起 自己体重３倍左右的方材， 就代表它进化的日子要到了。",
+    description: "如果搬运小匠可以搬起 自己体重3倍左右的方材， 就代表它进化的日子要到了。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -21499,7 +21499,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "柔道宝可梦",
-    description: "５只一组一起努力练习。 在练习中掉队的投摔鬼 会扔掉带子离开团队。",
+    description: "5只一组一起努力练习。 在练习中掉队的投摔鬼 会扔掉带子离开团队。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -22179,7 +22179,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "爆燃宝可梦",
-    description: "体内的火焰燃得越旺， 力量就越大。火焰的温度 有时甚至能超过１４００度。",
+    description: "体内的火焰燃得越旺， 力量就越大。火焰的温度 有时甚至能超过1400度。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -23259,7 +23259,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "新雪宝可梦",
-    description: "据说它是从冰柱中诞生的。 为了能让自己生活得更舒适， 会吐出零下５０度的冷气冻住四周。",
+    description: "据说它是从冰柱中诞生的。 为了能让自己生活得更舒适， 会吐出零下50度的冷气冻住四周。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -23299,7 +23299,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "冰雪宝可梦",
-    description: "性格和善，虽然会用 零下１００度的冷气冻住敌人， 但并不会伤及它们的性命。",
+    description: "性格和善，虽然会用 零下100度的冷气冻住敌人， 但并不会伤及它们的性命。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -23339,7 +23339,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "暴风雪宝可梦",
-    description: "体温在零下６度左右。 据说是由２只多多冰 贴在一起而诞生的。",
+    description: "体温在零下6度左右。 据说是由2只多多冰 贴在一起而诞生的。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -23939,7 +23939,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "齿轮宝可梦",
-    description: "２个身体比双胞胎还要亲近。 要是换成别的齿轮儿。 就没有办法好好咬合。",
+    description: "2个身体比双胞胎还要亲近。 要是换成别的齿轮儿。 就没有办法好好咬合。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -24019,7 +24019,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "齿轮宝可梦",
-    description: "让３个齿轮高速旋转。 新增出来的那个带着 尖刺的齿轮并不是生物。",
+    description: "让3个齿轮高速旋转。 新增出来的那个带着 尖刺的齿轮并不是生物。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -24179,7 +24179,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "脑宝可梦",
-    description: "在大约５０年前被发现的宝可梦。 会用又大又发达的大脑 操纵精神力量。",
+    description: "在大约50年前被发现的宝可梦。 会用又大又发达的大脑 操纵精神力量。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -25019,7 +25019,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "头锤牛宝可梦",
-    description: "会以约２０只的规模群居。 不知为何，背叛了族群的 爆炸头水牛脑袋上的毛会脱落。",
+    description: "会以约20只的规模群居。 不知为何，背叛了族群的 爆炸头水牛脑袋上的毛会脱落。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -25339,7 +25339,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "粗暴宝可梦",
-    description: "２个头会争抢同一个食物。 明明没有去和别人战斗， 却总是遍体鳞伤。",
+    description: "2个头会争抢同一个食物。 明明没有去和别人战斗， 却总是遍体鳞伤。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -25379,7 +25379,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 5,
     region: "合众",
     genera: "凶暴宝可梦",
-    description: "３个头会轮流去咬敌人。 在对方倒下之前， 绝对不会停止攻击。",
+    description: "3个头会轮流去咬敌人。 在对方倒下之前， 绝对不会停止攻击。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -26499,7 +26499,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 6,
     region: "卡洛斯",
     genera: "烈火宝可梦",
-    description: "会以５００公里的时速进行突击。 不给猎物留下逃跑的机会， 直接以猛烈的踢击将其解决。",
+    description: "会以500公里的时速进行突击。 不给猎物留下逃跑的机会， 直接以猛烈的踢击将其解决。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -26699,7 +26699,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 6,
     region: "卡洛斯",
     genera: "王者宝可梦",
-    description: "会吐出摄氏６０００度的气息， 但不会用于猎物。 因为更喜欢吃生的肉。",
+    description: "会吐出摄氏6000度的气息， 但不会用于猎物。 因为更喜欢吃生的肉。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -27179,7 +27179,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 6,
     region: "卡洛斯",
     genera: "刀剑宝可梦",
-    description: "２把剑会用令人眼花缭乱的 速度不断交替攻击和防御， 借以制服猎物。",
+    description: "2把剑会用令人眼花缭乱的 速度不断交替攻击和防御， 借以制服猎物。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -27499,7 +27499,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 6,
     region: "卡洛斯",
     genera: "双手宝可梦",
-    description: "如果２只龟脚脚配合得不好， 不但无法有效地攻击和防御， 甚至没办法生存下去。",
+    description: "如果2只龟脚脚配合得不好， 不但无法有效地攻击和防御， 甚至没办法生存下去。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -27779,7 +27779,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 6,
     region: "卡洛斯",
     genera: "发电宝可梦",
-    description: "如果展开颈伞沐浴阳光， 单凭１只光电伞蜥就能 制造出大城市所需的电力。",
+    description: "如果展开颈伞沐浴阳光， 单凭1只光电伞蜥就能 制造出大城市所需的电力。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -28219,7 +28219,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 6,
     region: "卡洛斯",
     genera: "龙宝可梦",
-    description: "用伸长角产生的力道来 攻击对手，产生的威力比 重量级拳击手的拳击还强１００倍。",
+    description: "用伸长角产生的力道来 攻击对手，产生的威力比 重量级拳击手的拳击还强100倍。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -28939,7 +28939,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 7,
     region: "阿罗拉",
     genera: "箭羽宝可梦",
-    description: "只要０.１秒就可以在翅膀的 藤蔓上搭好箭羽、射向敌人， 并在敌人发现前贯穿其要害。",
+    description: "只要0.1秒就可以在翅膀的 藤蔓上搭好箭羽、射向敌人， 并在敌人发现前贯穿其要害。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -29219,7 +29219,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 7,
     region: "阿罗拉",
     genera: "啄木鸟宝可梦",
-    description: "拥有看着很细， 却很强韧的颈部肌肉。 能以每秒１６连击的速度猛啄树木。",
+    description: "拥有看着很细， 却很强韧的颈部肌肉。 能以每秒16连击的速度猛啄树木。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -29979,7 +29979,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 7,
     region: "阿罗拉",
     genera: "挽马宝可梦",
-    description: "拥有很强的耐力， 可以不眠不休地拉着１０吨重的 货物纵贯伽勒尔地区。",
+    description: "拥有很强的耐力， 可以不眠不休地拉着10吨重的 货物纵贯伽勒尔地区。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -30619,7 +30619,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 7,
     region: "阿罗拉",
     genera: "配合宝可梦",
-    description: "２０几只形成团队来生活。 靠着每个成员明确的分工， 在严苛的大自然中生存下来。",
+    description: "20几只形成团队来生活。 靠着每个成员明确的分工， 在严苛的大自然中生存下来。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -32019,7 +32019,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 7,
     region: "阿罗拉",
     genera: "人造宝可梦",
-    description: "大约５００年前由科学家制作而成。 被称为魂心的部分是它的本体。",
+    description: "大约500年前由科学家制作而成。 被称为魂心的部分是它的本体。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -32299,7 +32299,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 7,
     region: "阿罗拉",
     genera: "螺帽宝可梦",
-    description: "美录坦们虽然聚在一起生活， 但当时机到来，会由最强的那１只 吸收其他的伙伴来进化。",
+    description: "美录坦们虽然聚在一起生活， 但当时机到来，会由最强的那1只 吸收其他的伙伴来进化。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -32699,7 +32699,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "特工宝可梦",
-    description: "能从指尖射出速度高达３马赫 的水枪。它的瞬膜能帮助它看穿 敌人的弱点，准确地击中要害。",
+    description: "能从指尖射出速度高达3马赫 的水枪。它的瞬膜能帮助它看穿 敌人的弱点，准确地击中要害。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -33019,7 +33019,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "七星宝可梦",
-    description: "释放出精神力量来调查 周围的情况。它的侦测范围 甚至可以达到方圆１０公里。",
+    description: "释放出精神力量来调查 周围的情况。它的侦测范围 甚至可以达到方圆10公里。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -33419,7 +33419,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "狗宝可梦",
-    description: "电力增强了它的脚力。 当以最高速度奔跑时， 时速可以轻易超过９０公里。",
+    description: "电力增强了它的脚力。 当以最高速度奔跑时， 时速可以轻易超过90公里。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -33499,7 +33499,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "煤炭宝可梦",
-    description: "能通过高速旋转自己的脚， 以３０公里的时速奔跑。 能喷出１０００度的火焰。",
+    description: "能通过高速旋转自己的脚， 以30公里的时速奔跑。 能喷出1000度的火焰。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -33859,7 +33859,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "穿刺宝可梦",
-    description: "会旋转着自己的尾鳍 一口气突击。能够以超过 １００节的速度贯穿猎物。",
+    description: "会旋转着自己的尾鳍 一口气突击。能够以超过 100节的速度贯穿猎物。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -34059,7 +34059,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "缠人宝可梦",
-    description: "智商大致相当于３岁的儿童。 虽然触手经常断掉，但因为 能再生，所以它并不在意。",
+    description: "智商大致相当于3岁的儿童。 虽然触手经常断掉，但因为 能再生，所以它并不在意。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -34779,7 +34779,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "阵形宝可梦",
-    description: "６只为一体的宝可梦。 惯于团队行动，会一边 变换阵形一边战斗。",
+    description: "6只为一体的宝可梦。 惯于团队行动，会一边 变换阵形一边战斗。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -34819,7 +34819,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "海胆宝可梦",
-    description: "每根刺里都储存着电力。 即使是折断的刺也至少 能连续放电３小时。",
+    description: "每根刺里都储存着电力。 即使是折断的刺也至少 能连续放电3小时。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -35259,7 +35259,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "化石宝可梦",
-    description: "虽然能用自豪的脚力 以６０公里的时速奔跑， 但是只能在水中呼吸。",
+    description: "虽然能用自豪的脚力 以60公里的时速奔跑， 但是只能在水中呼吸。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -35379,7 +35379,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "哀怨宝可梦",
-    description: "虽然单独１只弱得甚至敌不过小孩， 但会和伙伴合作一起锻炼， 通过进化而变得更强。",
+    description: "虽然单独1只弱得甚至敌不过小孩， 但会和伙伴合作一起锻炼， 通过进化而变得更强。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -35579,7 +35579,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "超极巨宝可梦",
-    description: "来自于２万年前坠落 到地上的陨石之中。 似乎与极巨化之谜有所关联。",
+    description: "来自于2万年前坠落 到地上的陨石之中。 似乎与极巨化之谜有所关联。",
     stats: [{
       key: "hp",
       nameZh: "HP",
@@ -35819,7 +35819,7 @@ export const POKEMON_DB: PokemonFull[] = [
     gen: 8,
     region: "伽勒尔",
     genera: "烈马宝可梦",
-    description: "拥有十分惊人的怪力。 戴在脸上的冰之面罩 硬度是钻石的１００倍",
+    description: "拥有十分惊人的怪力。 戴在脸上的冰之面罩 硬度是钻石的100倍",
     stats: [{
       key: "hp",
       nameZh: "HP",

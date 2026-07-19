@@ -5,16 +5,16 @@ export const STATUS_DB: Record<string, StatusInfo> = {
   "poison": {
     nameZh: "中毒",
     color: "#A33EA1",
-    descZh: "陷入中毒的宝可梦每回合损失少量ＨＰ，直到战斗结束或解除。可由「毒刺」「孢子」等特性/招式引发。",
-    effectzh: "陷入中毒的宝可梦每回合损失最大ＨＰ的 1/8。可通过招式（如毒针、污泥炸弹、浊雾）、特性（如毒刺、孢子、毒手）或道具（如麻痹果）引发。拥有免疫、排毒等特性或使用解毒、全部解除等招式可解除。持续直到战斗结束或主动解除。",
+    descZh: "陷入中毒的宝可梦每回合损失少量HP，直到战斗结束或解除。可由「毒刺」「孢子」等特性/招式引发。",
+    effectzh: "陷入中毒的宝可梦每回合损失最大HP的 1/8。可通过招式（如毒针、污泥炸弹、浊雾）、特性（如毒刺、孢子、毒手）或道具（如麻痹果）引发。拥有免疫、排毒等特性或使用解毒、全部解除等招式可解除。持续直到战斗结束或主动解除。",
     relatedAbilities: ["poison-point", "poison-touch", "effect-spore", "poison-heal", "toxic-boost", "merciless", "corrosion"],
     relatedMoves: ["poison-jab", "poison-sting", "toxic", "sludge-bomb"]
   },
   "bad-poison": {
     nameZh: "剧毒",
     color: "#7B2CBF",
-    descZh: "剧毒会随回合逐渐加重，每回合损失ＨＰ持续增加，是比普通中毒更危险的持续伤害状态。",
-    effectzh: "剧毒每回合损失ＨＰ随回合逐渐加重：第 1 回合损失 1/16、之后每回合 +1/16，上限 15/16。由招式「剧毒」或特性「毒碎块」「毒傀儡」等引发。可通过全部解除、解毒等招式或免疫等特性解除；交换下场不会解除。",
+    descZh: "剧毒会随回合逐渐加重，每回合损失HP持续增加，是比普通中毒更危险的持续伤害状态。",
+    effectzh: "剧毒每回合损失HP随回合逐渐加重：第 1 回合损失 1/16、之后每回合 +1/16，上限 15/16。由招式「剧毒」或特性「毒碎块」「毒傀儡」等引发。可通过全部解除、解毒等招式或免疫等特性解除；交换下场不会解除。",
     relatedAbilities: ["toxic-debris", "poison-puppeteer"],
     relatedMoves: ["toxic"]
   },
@@ -29,8 +29,8 @@ export const STATUS_DB: Record<string, StatusInfo> = {
   "burn": {
     nameZh: "灼伤",
     color: "#EE8130",
-    descZh: "陷入灼伤的宝可梦每回合损失少量ＨＰ，且物理招式威力减半。可由「火焰之躯」等引发。",
-    effectzh: "陷入灼伤的宝可梦每回合损失最大ＨＰ的 1/16；且使用的物理招式威力减半。可由特性（如火焰之躯）、招式（如鬼火、火花、喷射火焰）或道具（如火焰宝珠）引发。拥有水幕、热量储存等特性可免疫。持续直到全部解除、治愈铃声等解除或交换下场后解除。",
+    descZh: "陷入灼伤的宝可梦每回合损失少量HP，且物理招式威力减半。可由「火焰之躯」等引发。",
+    effectzh: "陷入灼伤的宝可梦每回合损失最大HP的 1/16；且使用的物理招式威力减半。可由特性（如火焰之躯）、招式（如鬼火、火花、喷射火焰）或道具（如火焰宝珠）引发。拥有水幕、热量储存等特性可免疫。持续直到全部解除、治愈铃声等解除或交换下场后解除。",
     relatedAbilities: ["flame-body", "water-veil", "heatproof", "flare-boost", "thermal-exchange"],
     relatedMoves: ["will-o-wisp", "ember", "fire-punch"]
   },

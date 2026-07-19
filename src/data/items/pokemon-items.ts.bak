@@ -9,7 +9,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/bright-powder.png",
     descZh: "闪闪发光的粉末。携带后，光芒会迷惑对手，从而使其招式变得不容易命中。",
-    effectzh: "对手招式命中率降低１０％。"
+    effectzh: "对手招式命中率降低10%。"
   },
   "quick-claw": {
     nameZh: "先制之爪",
@@ -18,7 +18,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/quick-claw.png",
     descZh: "又轻又尖锐的爪子。携带后，有时能比对手先一步行动。",
-    effectzh: "２５％几率能够先制行动。"
+    effectzh: "25%几率能够先制行动。"
   },
   "king-s-rock": {
     nameZh: "王者之证",
@@ -27,7 +27,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/king-s-rock.png",
     descZh: "携带后进行攻击，在造成伤害时，有时会让对手畏缩。",
-    effectzh: "３０％几率使被击中者陷入害怕而退缩。"
+    effectzh: "30%几率使被击中者陷入害怕而退缩。"
   },
   "silver-powder": {
     nameZh: "银粉",
@@ -36,7 +36,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/silver-powder.png",
     descZh: "散发着银色光辉的粉末。携带后，虫属性的招式威力就会提高。",
-    effectzh: "虫属性招式威力提升２０％。"
+    effectzh: "虫属性招式威力提升20%。"
   },
   "amulet-coin": {
     nameZh: "护符金币",
@@ -44,8 +44,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Amulet Coin",
     category: "携带物品",
     icon: "./items/amulet-coin.png",
-    descZh: "只要携带它的宝可梦在战斗时出场一次，就能获得２倍金钱。",
-    effectzh: "战斗获得金钱变为２倍。"
+    descZh: "只要携带它的宝可梦在战斗时出场一次，就能获得2倍金钱。",
+    effectzh: "战斗获得金钱变为2倍。"
   },
   "cleanse-tag": {
     nameZh: "洁净之符",
@@ -72,7 +72,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/everstone.png",
     descZh: "携带后，宝可梦在此期间不会进化的神奇石头。",
-    effectzh: "携带的宝可梦不会进化；孵蛋时５０％几率遗传性格。"
+    effectzh: "携带的宝可梦不会进化；孵蛋时50%几率遗传性格。"
   },
   "focus-band": {
     nameZh: "气势头带",
@@ -80,8 +80,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Focus Band",
     category: "携带物品",
     icon: "./items/focus-band.png",
-    descZh: "携带后，即便受到可能会导致濒死的招式，有时也能仅以１ＨＰ撑过去。",
-    effectzh: "１０％几率承受致命伤害仅剩１ＨＰ。"
+    descZh: "携带后，即便受到可能会导致濒死的招式，有时也能仅以1HP撑过去。",
+    effectzh: "10%几率承受致命伤害仅剩1HP。"
   },
   "lucky-egg": {
     nameZh: "幸运蛋",
@@ -90,7 +90,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/lucky-egg.png",
     descZh: "满载着幸福的蛋。携带它的宝可梦获得的经验值会少量增加。",
-    effectzh: "携带的宝可梦获得经验值提升５０％。"
+    effectzh: "携带的宝可梦获得经验值提升50%。"
   },
   "scope-lens": {
     nameZh: "焦点镜",
@@ -108,7 +108,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/metal-coat.png",
     descZh: "特殊的金属膜。携带后，钢属性的招式威力就会提高。",
-    effectzh: "钢属性招式威力提升２０％。"
+    effectzh: "钢属性招式威力提升20%。"
   },
   "leftovers": {
     nameZh: "吃剩的东西",
@@ -116,8 +116,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Leftovers",
     category: "携带物品",
     icon: "./items/leftovers.png",
-    descZh: "携带后，宝可梦的ＨＰ会在战斗期间缓缓回复。",
-    effectzh: "每回合结束时回复最大ＨＰ的１／１６。"
+    descZh: "携带后，宝可梦的HP会在战斗期间缓缓回复。",
+    effectzh: "每回合结束时回复最大HP的1／16。"
   },
   "dragon-scale": {
     nameZh: "龙之鳞片",
@@ -135,7 +135,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/light-ball.png",
     descZh: "让皮卡丘携带后，攻击和特攻的威力就会提高的神奇之球。",
-    effectzh: "皮卡丘携带时特攻提升１００％（×２）。"
+    effectzh: "皮卡丘携带时特攻提升100%（×2）。"
   },
   "soft-sand": {
     nameZh: "柔软沙子",
@@ -144,7 +144,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/soft-sand.png",
     descZh: "手感细腻的沙子。携带后，地面属性的招式威力就会提高。",
-    effectzh: "地面属性招式威力提升２０％。"
+    effectzh: "地面属性招式威力提升20%。"
   },
   "hard-stone": {
     nameZh: "硬石头",
@@ -153,7 +153,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/hard-stone.png",
     descZh: "绝对不会裂开的石头。携带后，岩石属性的招式威力就会提高。",
-    effectzh: "岩石属性招式威力提升２０％。"
+    effectzh: "岩石属性招式威力提升20%。"
   },
   "miracle-seed": {
     nameZh: "奇迹种子",
@@ -162,7 +162,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/miracle-seed.png",
     descZh: "孕育生命的种子。携带后，草属性的招式威力就会提高。",
-    effectzh: "草属性招式威力提升２０％。"
+    effectzh: "草属性招式威力提升20%。"
   },
   "black-glasses": {
     nameZh: "黑色眼镜",
@@ -171,7 +171,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/black-glasses.png",
     descZh: "看上去很奇怪的眼镜。携带后，恶属性的招式威力就会提高。",
-    effectzh: "恶属性招式威力提升２０％。"
+    effectzh: "恶属性招式威力提升20%。"
   },
   "black-belt": {
     nameZh: "黑带",
@@ -180,7 +180,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/black-belt.png",
     descZh: "能振作精神的带子。携带后，格斗属性的招式威力就会提高。",
-    effectzh: "格斗属性招式威力提升２０％。"
+    effectzh: "格斗属性招式威力提升20%。"
   },
   "magnet": {
     nameZh: "磁铁",
@@ -189,7 +189,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/magnet.png",
     descZh: "强力的磁铁。携带后，电属性的招式威力就会提高。",
-    effectzh: "电属性招式威力提升２０％。"
+    effectzh: "电属性招式威力提升20%。"
   },
   "mystic-water": {
     nameZh: "神秘水滴",
@@ -198,7 +198,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/mystic-water.png",
     descZh: "水滴形状的宝石。携带后，水属性的招式威力就会提高。",
-    effectzh: "水属性招式威力提升２０％。"
+    effectzh: "水属性招式威力提升20%。"
   },
   "sharp-beak": {
     nameZh: "锐利鸟嘴",
@@ -207,7 +207,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/sharp-beak.png",
     descZh: "又长又尖的鸟嘴。携带后，飞行属性的招式威力就会提高。",
-    effectzh: "飞行属性招式威力提升２０％。"
+    effectzh: "飞行属性招式威力提升20%。"
   },
   "poison-barb": {
     nameZh: "毒针",
@@ -216,7 +216,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/poison-barb.png",
     descZh: "有毒的小针。携带后，毒属性的招式威力就会提高。",
-    effectzh: "毒属性招式威力提升２０％。"
+    effectzh: "毒属性招式威力提升20%。"
   },
   "never-melt-ice": {
     nameZh: "不融冰",
@@ -225,7 +225,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/never-melt-ice.png",
     descZh: "能隔绝热量的冰。携带后，冰属性的招式威力就会提高。",
-    effectzh: "冰属性招式威力提升２０％。"
+    effectzh: "冰属性招式威力提升20%。"
   },
   "spell-tag": {
     nameZh: "诅咒之符",
@@ -234,7 +234,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/spell-tag.png",
     descZh: "古怪可怕的咒符。携带后，幽灵属性的招式威力就会提高。",
-    effectzh: "幽灵属性招式威力提升２０％。"
+    effectzh: "幽灵属性招式威力提升20%。"
   },
   "twisted-spoon": {
     nameZh: "弯曲的汤匙",
@@ -243,7 +243,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/twisted-spoon.png",
     descZh: "注入了念力的汤匙。携带后，超能力属性的招式威力就会提高。",
-    effectzh: "超能属性招式威力提升２０％。"
+    effectzh: "超能属性招式威力提升20%。"
   },
   "charcoal": {
     nameZh: "木炭",
@@ -252,7 +252,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/charcoal.png",
     descZh: "焚烧用的燃料。携带后，火属性的招式威力就会提高。",
-    effectzh: "火属性招式威力提升２０％。"
+    effectzh: "火属性招式威力提升20%。"
   },
   "dragon-fang": {
     nameZh: "龙之牙",
@@ -261,7 +261,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/dragon-fang.png",
     descZh: "坚硬锐利的牙齿。携带后，龙属性的招式威力就会提高。",
-    effectzh: "龙属性招式威力提升２０％。"
+    effectzh: "龙属性招式威力提升20%。"
   },
   "pink-bow": {
     nameZh: "粉红色丝带",
@@ -288,7 +288,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/silk-scarf.png",
     descZh: "手感不错的围巾。携带后，一般属性的招式威力就会提高。",
-    effectzh: "一般属性招式威力提升２０％。"
+    effectzh: "一般属性招式威力提升20%。"
   },
   "berserk-gene": {
     nameZh: "破坏基因",
@@ -297,7 +297,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/berserk-gene.png",
     descZh: "攻击的威力就会提高，但会造成混乱。",
-    effectzh: "攻击提升２级，但之后必定陷入混乱（一次性）。"
+    effectzh: "攻击提升2级，但之后必定陷入混乱（一次性）。"
   },
   "up-grade": {
     nameZh: "升级数据",
@@ -324,7 +324,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/metal-powder.png",
     descZh: "让百变怪携带后，防御就会提高的神奇粉末。非常细腻坚硬。",
-    effectzh: "百变怪携带时防御提升１００％。"
+    effectzh: "百变怪携带时防御提升100%。"
   },
   "quick-powder": {
     nameZh: "速度粉",
@@ -333,7 +333,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/quick-powder.png",
     descZh: "让百变怪携带后，速度就会提高的神奇粉末。非常细腻坚硬。",
-    effectzh: "百变怪携带时速度提升１００％。"
+    effectzh: "百变怪携带时速度提升100%。"
   },
   "thick-club": {
     nameZh: "粗骨头",
@@ -342,7 +342,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/thick-club.png",
     descZh: "某种坚硬的骨头。让卡拉卡拉或嘎啦嘎啦携带后，攻击就会提高。",
-    effectzh: "卡拉卡拉／嘎啦嘎啦携带时攻击提升１００％。"
+    effectzh: "卡拉卡拉／嘎啦嘎啦携带时攻击提升100%。"
   },
   "stick": {
     nameZh: "大葱",
@@ -359,8 +359,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Berry",
     category: "携带物品",
     icon: "./items/berry.png",
-    descZh: "携带后，可以回復自己１０点体力。",
-    effectzh: "携带后，可以回復自己１０点体力。"
+    descZh: "携带后，可以回復自己10点体力。",
+    effectzh: "携带后，可以回復自己10点体力。"
   },
   "gold-berry": {
     nameZh: "黄金的果实",
@@ -368,8 +368,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Gold Berry",
     category: "携带物品",
     icon: "./items/gold-berry.png",
-    descZh: "携带后，可以回復自己３０点体力。",
-    effectzh: "携带后，可以回復自己３０点体力。"
+    descZh: "携带后，可以回復自己30点体力。",
+    effectzh: "携带后，可以回復自己30点体力。"
   },
   "przcureberry": {
     nameZh: "消除麻痹的果实",
@@ -423,7 +423,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/mint-berry.png",
     descZh: "携带后，可以治愈自己的睡眠状态。",
-    effectzh: "旧版树果，回复少量ＨＰ。"
+    effectzh: "旧版树果，回复少量HP。"
   },
   "miracleberry": {
     nameZh: "奇迹的果实",
@@ -440,8 +440,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "MysteryBerry",
     category: "携带物品",
     icon: "./items/mysteryberry.png",
-    descZh: "携带后，可以在战斗中回复自己的ＰＰ。",
-    effectzh: "携带后，可以在战斗中回复自己的ＰＰ。"
+    descZh: "携带后，可以在战斗中回复自己的PP。",
+    effectzh: "携带后，可以在战斗中回复自己的PP。"
   },
   "white-herb": {
     nameZh: "白色香草",
@@ -449,7 +449,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "White Herb",
     category: "携带物品",
     icon: "./items/white-herb.png",
-    descZh: "当携带它的宝可梦能力降低时，仅能回到之前的状态１次。",
+    descZh: "当携带它的宝可梦能力降低时，仅能回到之前的状态1次。",
     effectzh: "战斗开始时消除自身所有能力下降（每场一次）。"
   },
   "mental-herb": {
@@ -458,7 +458,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Mental Herb",
     category: "携带物品",
     icon: "./items/mental-herb.png",
-    descZh: "当携带它的宝可梦无法自由使出招式时，仅会回复１次。",
+    descZh: "当携带它的宝可梦无法自由使出招式时，仅会回复1次。",
     effectzh: "消除挑衅／力量戏法等带来的束缚效果（每场一次）。"
   },
   "power-herb": {
@@ -467,7 +467,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Power Herb",
     category: "携带物品",
     icon: "./items/power-herb.png",
-    descZh: "携带它的宝可梦仅有１次机会可以在第１回合使出需要蓄力的招式。",
+    descZh: "携带它的宝可梦仅有1次机会可以在第1回合使出需要蓄力的招式。",
     effectzh: "蓄力招式可于使出当回合立即发动。"
   },
   "macho-brace": {
@@ -486,7 +486,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/soothe-bell.png",
     descZh: "音色悦耳的铃铛。携带它的宝可梦会受到安抚，变得容易和训练家亲密。",
-    effectzh: "亲密度提升速度加快（约１.５倍）。"
+    effectzh: "亲密度提升速度加快（约1.5倍）。"
   },
   "choice-band": {
     nameZh: "讲究头带",
@@ -495,7 +495,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/choice-band.png",
     descZh: "有点讲究的头带。虽然携带后攻击会提高，但只能使出相同的招式。",
-    effectzh: "攻击提升５０％，但只能使用上场后使出的第一个招式。"
+    effectzh: "攻击提升50%，但只能使用上场后使出的第一个招式。"
   },
   "choice-specs": {
     nameZh: "讲究眼镜",
@@ -504,7 +504,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/choice-specs.png",
     descZh: "有点讲究的眼镜。虽然携带后特攻会提高，但只能使出相同的招式。",
-    effectzh: "特攻提升５０％，但只能使用上场后使出的第一个招式。"
+    effectzh: "特攻提升50%，但只能使用上场后使出的第一个招式。"
   },
   "choice-scarf": {
     nameZh: "讲究围巾",
@@ -513,7 +513,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/choice-scarf.png",
     descZh: "有点讲究的围巾。虽然携带后速度会提高，但只能使出相同的招式。",
-    effectzh: "速度提升５０％，但只能使用上场后使出的第一个招式。"
+    effectzh: "速度提升50%，但只能使用上场后使出的第一个招式。"
   },
   "soul-dew": {
     nameZh: "心之水滴",
@@ -522,7 +522,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/soul-dew.png",
     descZh: "让拉帝欧斯或拉帝亚斯携带后，超能力和龙属性的招式威力就会提高的神奇珠子。",
-    effectzh: "拉帝亚斯／拉帝欧斯携带时超能／龙属性招式威力提升２０％。"
+    effectzh: "拉帝亚斯／拉帝欧斯携带时超能／龙属性招式威力提升20%。"
   },
   "deep-sea-tooth": {
     nameZh: "深海之牙",
@@ -531,7 +531,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/deep-sea-tooth.png",
     descZh: "让珍珠贝携带后，特攻就会提高的牙齿。散发着闪亮的银光。",
-    effectzh: "珍珠贝携带时特攻大幅提升（×２）。"
+    effectzh: "珍珠贝携带时特攻大幅提升（×2）。"
   },
   "deep-sea-scale": {
     nameZh: "深海鳞片",
@@ -548,8 +548,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Shell Bell",
     category: "携带物品",
     icon: "./items/shell-bell.png",
-    descZh: "当携带它的宝可梦攻击对手并造成伤害时，能回复少量ＨＰ。",
-    effectzh: "造成伤害的１／８回复自身ＨＰ。"
+    descZh: "当携带它的宝可梦攻击对手并造成伤害时，能回复少量HP。",
+    effectzh: "造成伤害的1／8回复自身HP。"
   },
   "sea-incense": {
     nameZh: "海潮薰香",
@@ -567,7 +567,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/lax-incense.png",
     descZh: "携带后，薰香的神奇香气会迷惑对手，其招式会变得不容易命中。",
-    effectzh: "对手招式命中率降低１０％。"
+    effectzh: "对手招式命中率降低10%。"
   },
   "odd-incense": {
     nameZh: "奇异薰香",
@@ -620,8 +620,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Luck Incense",
     category: "携带物品",
     icon: "./items/luck-incense.png",
-    descZh: "只要携带它的宝可梦在战斗时出场一次，就能获得２倍金钱。",
-    effectzh: "战斗获得金钱变为２倍。"
+    descZh: "只要携带它的宝可梦在战斗时出场一次，就能获得2倍金钱。",
+    effectzh: "战斗获得金钱变为2倍。"
   },
   "pure-incense": {
     nameZh: "洁净薰香",
@@ -702,7 +702,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/flame-plate.png",
     descZh: "火属性的石板。携带后，火属性的招式威力就会增强。",
-    effectzh: "火属性招式威力提升２０％。"
+    effectzh: "火属性招式威力提升20%。"
   },
   "splash-plate": {
     nameZh: "水滴石板",
@@ -711,7 +711,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/splash-plate.png",
     descZh: "水属性的石板。携带后，水属性的招式威力就会增强。",
-    effectzh: "水属性招式威力提升２０％。"
+    effectzh: "水属性招式威力提升20%。"
   },
   "zap-plate": {
     nameZh: "雷电石板",
@@ -720,7 +720,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/zap-plate.png",
     descZh: "电属性的石板。携带后，电属性的招式威力就会增强。",
-    effectzh: "电属性招式威力提升２０％。"
+    effectzh: "电属性招式威力提升20%。"
   },
   "meadow-plate": {
     nameZh: "碧绿石板",
@@ -729,7 +729,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/meadow-plate.png",
     descZh: "草属性的石板。携带后，草属性的招式威力就会增强。",
-    effectzh: "草属性招式威力提升２０％。"
+    effectzh: "草属性招式威力提升20%。"
   },
   "icicle-plate": {
     nameZh: "冰柱石板",
@@ -738,7 +738,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/icicle-plate.png",
     descZh: "冰属性的石板。携带后，冰属性的招式威力就会增强。",
-    effectzh: "冰属性招式威力提升２０％。"
+    effectzh: "冰属性招式威力提升20%。"
   },
   "fist-plate": {
     nameZh: "拳头石板",
@@ -747,7 +747,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/fist-plate.png",
     descZh: "格斗属性的石板。携带后，格斗属性的招式威力就会增强。",
-    effectzh: "格斗属性招式威力提升２０％。"
+    effectzh: "格斗属性招式威力提升20%。"
   },
   "toxic-plate": {
     nameZh: "剧毒石板",
@@ -756,7 +756,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/toxic-plate.png",
     descZh: "毒属性的石板。携带后，毒属性的招式威力就会增强。",
-    effectzh: "毒属性招式威力提升２０％。"
+    effectzh: "毒属性招式威力提升20%。"
   },
   "earth-plate": {
     nameZh: "大地石板",
@@ -765,7 +765,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/earth-plate.png",
     descZh: "地面属性的石板。携带后，地面属性的招式威力就会增强。",
-    effectzh: "地面属性招式威力提升２０％。"
+    effectzh: "地面属性招式威力提升20%。"
   },
   "sky-plate": {
     nameZh: "蓝天石板",
@@ -774,7 +774,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/sky-plate.png",
     descZh: "飞行属性的石板。携带后，飞行属性的招式威力就会增强。",
-    effectzh: "飞行属性招式威力提升２０％。"
+    effectzh: "飞行属性招式威力提升20%。"
   },
   "mind-plate": {
     nameZh: "神奇石板",
@@ -783,7 +783,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/mind-plate.png",
     descZh: "超能力属性的石板。携带后，超能力属性的招式威力就会增强。",
-    effectzh: "超能属性招式威力提升２０％。"
+    effectzh: "超能属性招式威力提升20%。"
   },
   "insect-plate": {
     nameZh: "玉虫石板",
@@ -792,7 +792,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/insect-plate.png",
     descZh: "虫属性的石板。携带后，虫属性的招式威力就会增强。",
-    effectzh: "虫属性招式威力提升２０％。"
+    effectzh: "虫属性招式威力提升20%。"
   },
   "stone-plate": {
     nameZh: "岩石石板",
@@ -801,7 +801,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/stone-plate.png",
     descZh: "岩石属性的石板。携带后，岩石属性的招式威力就会增强。",
-    effectzh: "岩石属性招式威力提升２０％。"
+    effectzh: "岩石属性招式威力提升20%。"
   },
   "spooky-plate": {
     nameZh: "妖怪石板",
@@ -810,7 +810,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/spooky-plate.png",
     descZh: "幽灵属性的石板。携带后，幽灵属性的招式威力就会增强。",
-    effectzh: "幽灵属性招式威力提升２０％。"
+    effectzh: "幽灵属性招式威力提升20%。"
   },
   "draco-plate": {
     nameZh: "龙之石板",
@@ -819,7 +819,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/draco-plate.png",
     descZh: "龙属性的石板。携带后，龙属性的招式威力就会增强。",
-    effectzh: "龙属性招式威力提升２０％。"
+    effectzh: "龙属性招式威力提升20%。"
   },
   "dread-plate": {
     nameZh: "恶颜石板",
@@ -828,7 +828,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/dread-plate.png",
     descZh: "恶属性的石板。携带后，恶属性的招式威力就会增强。",
-    effectzh: "恶属性招式威力提升２０％。"
+    effectzh: "恶属性招式威力提升20%。"
   },
   "iron-plate": {
     nameZh: "钢铁石板",
@@ -837,7 +837,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/iron-plate.png",
     descZh: "钢属性的石板。携带后，钢属性的招式威力就会增强。",
-    effectzh: "钢属性招式威力提升２０％。"
+    effectzh: "钢属性招式威力提升20%。"
   },
   "pixie-plate": {
     nameZh: "妖精石板",
@@ -846,7 +846,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/pixie-plate.png",
     descZh: "妖精属性的石板。携带后，妖精属性的招式威力就会增强。",
-    effectzh: "妖精属性招式威力提升２０％。"
+    effectzh: "妖精属性招式威力提升20%。"
   },
   "oval-stone": {
     nameZh: "浑圆之石",
@@ -864,7 +864,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/adamant-orb.png",
     descZh: "让帝牙卢卡携带的话，龙和钢属性的招式威力就会提高。散发着光辉的宝珠。",
-    effectzh: "帝牙卢卡携带时钢／龙属性招式威力提升２０％。"
+    effectzh: "帝牙卢卡携带时钢／龙属性招式威力提升20%。"
   },
   "lustrous-orb": {
     nameZh: "白玉宝珠",
@@ -873,7 +873,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/lustrous-orb.png",
     descZh: "让帕路奇亚携带的话，龙和水属性的招式威力就会提高。散发着美丽光辉的宝珠。",
-    effectzh: "帕路奇亚携带时水／龙属性招式威力提升２０％。"
+    effectzh: "帕路奇亚携带时水／龙属性招式威力提升20%。"
   },
   "griseous-orb": {
     nameZh: "白金宝珠",
@@ -882,7 +882,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/griseous-orb.png",
     descZh: "让骑拉帝纳携带的话，龙和幽灵属性的招式威力就会提高。散发着光辉的宝珠。",
-    effectzh: "骑拉帝纳携带时幽灵／龙属性招式威力提升２０％。"
+    effectzh: "骑拉帝纳携带时幽灵／龙属性招式威力提升20%。"
   },
   "protector": {
     nameZh: "护具",
@@ -945,7 +945,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/razor-fang.png",
     descZh: "尖锐的牙齿。携带后，在给予伤害时，有时会让对手畏缩。",
-    effectzh: "３０％几率使被击中者陷入害怕。"
+    effectzh: "30%几率使被击中者陷入害怕。"
   },
   "wide-lens": {
     nameZh: "广角镜",
@@ -954,7 +954,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/wide-lens.png",
     descZh: "能放大观看物体的镜片。携带后，招式的命中率就会少量提高。",
-    effectzh: "招式命中率提升１０％。"
+    effectzh: "招式命中率提升10%。"
   },
   "muscle-band": {
     nameZh: "力量头带",
@@ -963,7 +963,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/muscle-band.png",
     descZh: "力如泉涌的头带。携带后，物理招式的威力就会少量提高。",
-    effectzh: "物理招式威力提升１０％。"
+    effectzh: "物理招式威力提升10%。"
   },
   "wise-glasses": {
     nameZh: "博识眼镜",
@@ -972,7 +972,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/wise-glasses.png",
     descZh: "装着很厚镜片的眼镜。携带后，特殊招式的威力就会少量提高。",
-    effectzh: "特殊招式威力提升１０％。"
+    effectzh: "特殊招式威力提升10%。"
   },
   "expert-belt": {
     nameZh: "达人带",
@@ -981,7 +981,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/expert-belt.png",
     descZh: "用惯了的黑色带子。携带后，效果绝佳时的招式威力就会少量提高。",
-    effectzh: "效果绝佳的招式威力提升２０％。"
+    effectzh: "效果绝佳的招式威力提升20%。"
   },
   "light-clay": {
     nameZh: "光之黏土",
@@ -990,7 +990,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/light-clay.png",
     descZh: "当携带它的宝可梦使出光墙或反射壁时，效果会比平时持续得更长。",
-    effectzh: "反射壁／光墙／戏法空间持续时间延长至８回合。"
+    effectzh: "反射壁／光墙／戏法空间持续时间延长至8回合。"
   },
   "life-orb": {
     nameZh: "生命宝珠",
@@ -998,8 +998,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Life Orb",
     category: "携带物品",
     icon: "./items/life-orb.png",
-    descZh: "携带后，虽然每次攻击时ＨＰ少量减少，但招式的威力会提高。",
-    effectzh: "招式威力提升３０％，但每回合损失最大ＨＰ的１／１０。"
+    descZh: "携带后，虽然每次攻击时HP少量减少，但招式的威力会提高。",
+    effectzh: "招式威力提升30%，但每回合损失最大HP的1／10。"
   },
   "toxic-orb": {
     nameZh: "剧毒宝珠",
@@ -1025,8 +1025,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Focus Sash",
     category: "携带物品",
     icon: "./items/focus-sash.png",
-    descZh: "携带后，在ＨＰ全满时，即便受到可能会导致濒死的招式，也能仅以１ＨＰ撑过去１次。",
-    effectzh: "满ＨＰ时受到致命伤害仅剩１ＨＰ（每场战斗一次）。"
+    descZh: "携带后，在HP全满时，即便受到可能会导致濒死的招式，也能仅以1HP撑过去1次。",
+    effectzh: "满HP时受到致命伤害仅剩1HP（每场战斗一次）。"
   },
   "zoom-lens": {
     nameZh: "对焦镜",
@@ -1035,7 +1035,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/zoom-lens.png",
     descZh: "当携带它的宝可梦比对手行动迟缓时，招式会变得容易命中。",
-    effectzh: "后手时招式命中率提升２０％。"
+    effectzh: "后手时招式命中率提升20%。"
   },
   "metronome": {
     nameZh: "节拍器",
@@ -1044,7 +1044,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/metronome.png",
     descZh: "携带后，连续使出相同招式时，威力就会提高。不再使出相同招式时，威力就会复原。",
-    effectzh: "连续使用同一招式时，威力每回合提升１０％（最多２０％）。"
+    effectzh: "连续使用同一招式时，威力每回合提升10%（最多20%）。"
   },
   "iron-ball": {
     nameZh: "黑色铁球",
@@ -1071,7 +1071,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/destiny-knot.png",
     descZh: "长长的鲜红色细线。携带后，在自己着迷时能让对手也着迷。",
-    effectzh: "孵蛋时父母双方各随机遗传５项个体值中的高个体。"
+    effectzh: "孵蛋时父母双方各随机遗传5项个体值中的高个体。"
   },
   "black-sludge": {
     nameZh: "黑色污泥",
@@ -1079,8 +1079,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Black Sludge",
     category: "携带物品",
     icon: "./items/black-sludge.png",
-    descZh: "携带后，毒属性的宝可梦会缓缓回复ＨＰ。其他属性的话，ＨＰ则会减少。",
-    effectzh: "毒属性每回合回复最大ＨＰ的１／１６；非毒属性每回合损失最大ＨＰ的１／８。"
+    descZh: "携带后，毒属性的宝可梦会缓缓回复HP。其他属性的话，HP则会减少。",
+    effectzh: "毒属性每回合回复最大HP的1／16；非毒属性每回合损失最大HP的1／8。"
   },
   "icy-rock": {
     nameZh: "冰冷岩石",
@@ -1089,7 +1089,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/icy-rock.png",
     descZh: "携带它的宝可梦使出冰雹的话，冰雹的时间就会比平时更长。",
-    effectzh: "使出的冰雹持续时间延长至８回合。"
+    effectzh: "使出的冰雹持续时间延长至8回合。"
   },
   "smooth-rock": {
     nameZh: "沙沙岩石",
@@ -1098,7 +1098,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/smooth-rock.png",
     descZh: "携带它的宝可梦使出沙暴的话，沙暴的时间就会比平时更长。",
-    effectzh: "使出的沙暴持续时间延长至８回合。"
+    effectzh: "使出的沙暴持续时间延长至8回合。"
   },
   "heat-rock": {
     nameZh: "炽热岩石",
@@ -1107,7 +1107,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/heat-rock.png",
     descZh: "携带它的宝可梦使出大晴天的话，晴天的时间就会比平时更长。",
-    effectzh: "使出的大晴天持续时间延长至８回合。"
+    effectzh: "使出的大晴天持续时间延长至8回合。"
   },
   "damp-rock": {
     nameZh: "潮湿岩石",
@@ -1116,7 +1116,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/damp-rock.png",
     descZh: "携带它的宝可梦使出求雨的话，下雨的时间就会比平时更长。",
-    effectzh: "使出的求雨持续时间延长至８回合。"
+    effectzh: "使出的求雨持续时间延长至8回合。"
   },
   "grip-claw": {
     nameZh: "紧缠钩爪",
@@ -1134,7 +1134,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/sticky-barb.png",
     descZh: "携带后，每回合都会受到伤害。有时也会附着到碰到自己的对手身上。",
-    effectzh: "接触类招式攻击后附着对手，每回合损失其最大ＨＰ的１／８；可被夺取。"
+    effectzh: "接触类招式攻击后附着对手，每回合损失其最大HP的1／8；可被夺取。"
   },
   "power-bracer": {
     nameZh: "力量护腕",
@@ -1187,8 +1187,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Power Weight",
     category: "携带物品",
     icon: "./items/power-weight.png",
-    descZh: "虽然携带后速度会降低，但宝可梦的ＨＰ会比平时成长得更高。",
-    effectzh: "携带时获得的ＨＰ努力值翻倍。"
+    descZh: "虽然携带后速度会降低，但宝可梦的HP会比平时成长得更高。",
+    effectzh: "携带时获得的HP努力值翻倍。"
   },
   "shed-shell": {
     nameZh: "美丽空壳",
@@ -1205,8 +1205,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Big Root",
     category: "携带物品",
     icon: "./items/big-root.png",
-    descZh: "携带后，吸取ＨＰ的招式可以比平时更多地回复自己的ＨＰ。",
-    effectzh: "吸取类招式回复量提升３０％。"
+    descZh: "携带后，吸取HP的招式可以比平时更多地回复自己的HP。",
+    effectzh: "吸取类招式回复量提升30%。"
   },
   "douse-drive": {
     nameZh: "水流卡带",
@@ -1260,7 +1260,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/eviolite.png",
     descZh: "进化的神奇石块。携带后，还能进化的宝可梦的防御和特防就会提高。",
-    effectzh: "未进化宝可梦的防御与特防提升５０％。"
+    effectzh: "未进化宝可梦的防御与特防提升50%。"
   },
   "float-stone": {
     nameZh: "轻石",
@@ -1278,7 +1278,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/rocky-helmet.png",
     descZh: "让宝可梦携带后，在受到打击招式攻击时，能给予对手伤害。",
-    effectzh: "受到接触类招式攻击时，攻击方受到最大ＨＰ的１／６伤害。"
+    effectzh: "受到接触类招式攻击时，攻击方受到最大HP的1／6伤害。"
   },
   "air-balloon": {
     nameZh: "气球",
@@ -1314,7 +1314,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/binding-band.png",
     descZh: "能增强绑紧招式的束带。携带后，绑紧招式的威力会变强。",
-    effectzh: "束缚／绑定造成的伤害提升（每回合约最大ＨＰ的１／８）。"
+    effectzh: "束缚／绑定造成的伤害提升（每回合约最大HP的1／8）。"
   },
   "absorb-bulb": {
     nameZh: "球根",
@@ -1323,7 +1323,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/absorb-bulb.png",
     descZh: "一次性使用的球根。携带它的宝可梦如果受到水属性招式的攻击，特攻就会提高。",
-    effectzh: "受到水属性招式攻击时特攻提升１级并消耗。"
+    effectzh: "受到水属性招式攻击时特攻提升1级并消耗。"
   },
   "cell-battery": {
     nameZh: "充电电池",
@@ -1332,7 +1332,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/cell-battery.png",
     descZh: "一次性使用的充电电池。携带它的宝可梦如果受到电属性招式的攻击，攻击就会提高。",
-    effectzh: "受到电属性招式攻击时特攻提升１级并消耗。"
+    effectzh: "受到电属性招式攻击时特攻提升1级并消耗。"
   },
   "eject-button": {
     nameZh: "逃脱按键",
@@ -1349,8 +1349,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Fire Gem",
     category: "携带物品",
     icon: "./items/fire-gem.png",
-    descZh: "火属性的宝石。携带后，火属性的招式威力仅会增强１次。",
-    effectzh: "火属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "火属性的宝石。携带后，火属性的招式威力仅会增强1次。",
+    effectzh: "火属性招式威力提升30%（使用一次后消耗）。"
   },
   "water-gem": {
     nameZh: "水之宝石",
@@ -1358,8 +1358,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Water Gem",
     category: "携带物品",
     icon: "./items/water-gem.png",
-    descZh: "水属性的宝石。携带后，水属性的招式威力仅会增强１次。",
-    effectzh: "水属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "水属性的宝石。携带后，水属性的招式威力仅会增强1次。",
+    effectzh: "水属性招式威力提升30%（使用一次后消耗）。"
   },
   "electric-gem": {
     nameZh: "电之宝石",
@@ -1367,8 +1367,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Electric Gem",
     category: "携带物品",
     icon: "./items/electric-gem.png",
-    descZh: "电属性的宝石。携带后，电属性的招式威力仅会增强１次。",
-    effectzh: "电属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "电属性的宝石。携带后，电属性的招式威力仅会增强1次。",
+    effectzh: "电属性招式威力提升30%（使用一次后消耗）。"
   },
   "grass-gem": {
     nameZh: "草之宝石",
@@ -1376,8 +1376,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Grass Gem",
     category: "携带物品",
     icon: "./items/grass-gem.png",
-    descZh: "草属性的宝石。携带后，草属性的招式威力仅会增强１次。",
-    effectzh: "草属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "草属性的宝石。携带后，草属性的招式威力仅会增强1次。",
+    effectzh: "草属性招式威力提升30%（使用一次后消耗）。"
   },
   "ice-gem": {
     nameZh: "冰之宝石",
@@ -1385,8 +1385,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Ice Gem",
     category: "携带物品",
     icon: "./items/ice-gem.png",
-    descZh: "冰属性的宝石。携带后，冰属性的招式威力仅会增强１次。",
-    effectzh: "冰属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "冰属性的宝石。携带后，冰属性的招式威力仅会增强1次。",
+    effectzh: "冰属性招式威力提升30%（使用一次后消耗）。"
   },
   "fighting-gem": {
     nameZh: "格斗宝石",
@@ -1394,8 +1394,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Fighting Gem",
     category: "携带物品",
     icon: "./items/fighting-gem.png",
-    descZh: "格斗属性的宝石。携带后，格斗属性的招式威力仅会增强１次。",
-    effectzh: "格斗属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "格斗属性的宝石。携带后，格斗属性的招式威力仅会增强1次。",
+    effectzh: "格斗属性招式威力提升30%（使用一次后消耗）。"
   },
   "poison-gem": {
     nameZh: "毒之宝石",
@@ -1403,8 +1403,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Poison Gem",
     category: "携带物品",
     icon: "./items/poison-gem.png",
-    descZh: "毒属性的宝石。携带后，毒属性的招式威力仅会增强１次。",
-    effectzh: "毒属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "毒属性的宝石。携带后，毒属性的招式威力仅会增强1次。",
+    effectzh: "毒属性招式威力提升30%（使用一次后消耗）。"
   },
   "ground-gem": {
     nameZh: "地面宝石",
@@ -1412,8 +1412,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Ground Gem",
     category: "携带物品",
     icon: "./items/ground-gem.png",
-    descZh: "地面属性的宝石。携带后，地面属性的招式威力仅会增强１次。",
-    effectzh: "地面属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "地面属性的宝石。携带后，地面属性的招式威力仅会增强1次。",
+    effectzh: "地面属性招式威力提升30%（使用一次后消耗）。"
   },
   "flying-gem": {
     nameZh: "飞行宝石",
@@ -1421,8 +1421,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Flying Gem",
     category: "携带物品",
     icon: "./items/flying-gem.png",
-    descZh: "飞行属性的宝石。携带后，飞行属性的招式威力仅会增强１次。",
-    effectzh: "飞行属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "飞行属性的宝石。携带后，飞行属性的招式威力仅会增强1次。",
+    effectzh: "飞行属性招式威力提升30%（使用一次后消耗）。"
   },
   "psychic-gem": {
     nameZh: "超能力宝石",
@@ -1430,8 +1430,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Psychic Gem",
     category: "携带物品",
     icon: "./items/psychic-gem.png",
-    descZh: "超能力属性的宝石。携带后，超能力属性的招式威力仅会增强１次。",
-    effectzh: "超能属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "超能力属性的宝石。携带后，超能力属性的招式威力仅会增强1次。",
+    effectzh: "超能属性招式威力提升30%（使用一次后消耗）。"
   },
   "bug-gem": {
     nameZh: "虫之宝石",
@@ -1439,8 +1439,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Bug Gem",
     category: "携带物品",
     icon: "./items/bug-gem.png",
-    descZh: "虫属性的宝石。携带后，虫属性的招式威力仅会增强１次。",
-    effectzh: "虫属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "虫属性的宝石。携带后，虫属性的招式威力仅会增强1次。",
+    effectzh: "虫属性招式威力提升30%（使用一次后消耗）。"
   },
   "rock-gem": {
     nameZh: "岩石宝石",
@@ -1448,8 +1448,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Rock Gem",
     category: "携带物品",
     icon: "./items/rock-gem.png",
-    descZh: "岩石属性的宝石。携带后，岩石属性的招式威力仅会增强１次。",
-    effectzh: "岩石属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "岩石属性的宝石。携带后，岩石属性的招式威力仅会增强1次。",
+    effectzh: "岩石属性招式威力提升30%（使用一次后消耗）。"
   },
   "ghost-gem": {
     nameZh: "幽灵宝石",
@@ -1457,8 +1457,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Ghost Gem",
     category: "携带物品",
     icon: "./items/ghost-gem.png",
-    descZh: "幽灵属性的宝石。携带后，幽灵属性的招式威力仅会增强１次。",
-    effectzh: "幽灵属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "幽灵属性的宝石。携带后，幽灵属性的招式威力仅会增强1次。",
+    effectzh: "幽灵属性招式威力提升30%（使用一次后消耗）。"
   },
   "dragon-gem": {
     nameZh: "龙之宝石",
@@ -1466,8 +1466,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Dragon Gem",
     category: "携带物品",
     icon: "./items/dragon-gem.png",
-    descZh: "龙属性的宝石。携带后，龙属性的招式威力仅会增强１次。",
-    effectzh: "龙属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "龙属性的宝石。携带后，龙属性的招式威力仅会增强1次。",
+    effectzh: "龙属性招式威力提升30%（使用一次后消耗）。"
   },
   "dark-gem": {
     nameZh: "恶之宝石",
@@ -1475,8 +1475,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Dark Gem",
     category: "携带物品",
     icon: "./items/dark-gem.png",
-    descZh: "恶属性的宝石。携带后，恶属性的招式威力仅会增强１次。",
-    effectzh: "恶属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "恶属性的宝石。携带后，恶属性的招式威力仅会增强1次。",
+    effectzh: "恶属性招式威力提升30%（使用一次后消耗）。"
   },
   "steel-gem": {
     nameZh: "钢之宝石",
@@ -1484,8 +1484,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Steel Gem",
     category: "携带物品",
     icon: "./items/steel-gem.png",
-    descZh: "钢属性的宝石。携带后，钢属性的招式威力仅会增强１次。",
-    effectzh: "钢属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "钢属性的宝石。携带后，钢属性的招式威力仅会增强1次。",
+    effectzh: "钢属性招式威力提升30%（使用一次后消耗）。"
   },
   "normal-gem": {
     nameZh: "一般宝石",
@@ -1493,8 +1493,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Normal Gem",
     category: "携带物品",
     icon: "./items/normal-gem.png",
-    descZh: "一般属性的宝石。携带后，一般属性的招式威力仅会增强１次。",
-    effectzh: "一般属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "一般属性的宝石。携带后，一般属性的招式威力仅会增强1次。",
+    effectzh: "一般属性招式威力提升30%（使用一次后消耗）。"
   },
   "fairy-gem": {
     nameZh: "妖精宝石",
@@ -1502,8 +1502,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Fairy Gem",
     category: "携带物品",
     icon: "./items/fairy-gem.png",
-    descZh: "妖精属性的宝石。携带后，妖精属性的招式威力会仅增强１次。",
-    effectzh: "妖精属性招式威力提升３０％（使用一次后消耗）。"
+    descZh: "妖精属性的宝石。携带后，妖精属性的招式威力会仅增强1次。",
+    effectzh: "妖精属性招式威力提升30%（使用一次后消耗）。"
   },
   "weakness-policy": {
     nameZh: "弱点保险",
@@ -1512,7 +1512,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/weakness-policy.png",
     descZh: "被针对弱点时，攻击和特攻就会大幅提高。",
-    effectzh: "受到效果绝佳伤害时，攻击与特攻各提升２级。"
+    effectzh: "受到效果绝佳伤害时，攻击与特攻各提升2级。"
   },
   "blunder-policy": {
     nameZh: "打空保险",
@@ -1521,7 +1521,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/blunder-policy.png",
     descZh: "招式因命中率影响而落空时，速度会大幅提高。",
-    effectzh: "招式落空（Miss）时速度提升２级。"
+    effectzh: "招式落空（Miss）时速度提升2级。"
   },
   "assault-vest": {
     nameZh: "突击背心",
@@ -1530,7 +1530,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/assault-vest.png",
     descZh: "会变得富有攻击性的背心。虽然携带后特防会提高，但会无法使出变化招式。",
-    effectzh: "特防提升５０％，但只能使用攻击招式。"
+    effectzh: "特防提升50%，但只能使用攻击招式。"
   },
   "whipped-dream": {
     nameZh: "泡沫奶油",
@@ -1584,7 +1584,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/adrenaline-orb.png",
     descZh: "让宝可梦携带后，在受到威吓时速度会提高。",
-    effectzh: "被威吓等迫使退场的效果触发时，速度提升１级。"
+    effectzh: "被威吓等迫使退场的效果触发时，速度提升1级。"
   },
   "terrain-extender": {
     nameZh: "大地膜",
@@ -1593,7 +1593,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/terrain-extender.png",
     descZh: "当携带它的宝可梦利用招式或特性展开场地时，场地的持续时间会比平时更长。",
-    effectzh: "场地类状态持续时间延长至８回合。"
+    effectzh: "场地类状态持续时间延长至8回合。"
   },
   "protective-pads": {
     nameZh: "部位护具",
@@ -1881,7 +1881,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/throat-spray.png",
     descZh: "使用声音相关的招式时，特攻会提高。",
-    effectzh: "使出变化招式后特攻提升１级（每场一次）。"
+    effectzh: "使出变化招式后特攻提升1级（每场一次）。"
   },
   "eject-pack": {
     nameZh: "避难背包",
@@ -1926,7 +1926,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/adamant-crystal.png",
     descZh: "光辉灿烂的大珠子。对帝牙卢卡使用后，能使之力量高涨并改变形态。",
-    effectzh: "帝牙卢卡携带时钢／龙属性招式威力提升２０％。"
+    effectzh: "帝牙卢卡携带时钢／龙属性招式威力提升20%。"
   },
   "lustrous-globe": {
     nameZh: "大白宝玉",
@@ -1935,7 +1935,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/lustrous-globe.png",
     descZh: "光辉灿烂的大珠子。对帕路奇亚使用后，能使之力量高涨并改变形态。",
-    effectzh: "帕路奇亚携带时水／龙属性招式威力提升２０％。"
+    effectzh: "帕路奇亚携带时水／龙属性招式威力提升20%。"
   },
   "griseous-core": {
     nameZh: "大白金宝玉",
@@ -1944,7 +1944,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/griseous-core.png",
     descZh: "光辉灿烂的大珠子。对骑拉帝纳使用后，能使之力量高涨并改变形态。",
-    effectzh: "骑拉帝纳携带时幽灵／龙属性招式威力提升２０％。"
+    effectzh: "骑拉帝纳携带时幽灵／龙属性招式威力提升20%。"
   },
   "booster-energy": {
     nameZh: "驱劲能量",
@@ -1979,7 +1979,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Mirror Herb",
     category: "携带物品",
     icon: "./items/mirror-herb.png",
-    descZh: "携带它的宝可梦仅有１次机会可以在对手提高能力时，对其进行模仿并提高同样的能力。",
+    descZh: "携带它的宝可梦仅有1次机会可以在对手提高能力时，对其进行模仿并提高同样的能力。",
     effectzh: "复制对手获得的能力提升效果。"
   },
   "punching-glove": {
@@ -1989,7 +1989,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/punching-glove.png",
     descZh: "保护拳头的手套。携带后，拳击招式的威力会提高，且变得拳击时不会接触到对手。",
-    effectzh: "拳击招式威力提升１０％且不被接触类招式影响。"
+    effectzh: "拳击招式威力提升10%且不被接触类招式影响。"
   },
   "covert-cloak": {
     nameZh: "密探斗篷",
@@ -2025,7 +2025,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "携带物品",
     icon: "./items/fairy-feather.png",
     descZh: "接触到光后就会微微发光的羽毛。携带后，妖精属性的招式威力就会提高。",
-    effectzh: "妖精属性招式威力提升２０％。"
+    effectzh: "妖精属性招式威力提升20%。"
   },
   "cornerstone-mask": {
     nameZh: "础石面具",
@@ -2276,7 +2276,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Heal Ball",
     category: "精灵球",
     icon: "./items/heal-ball.png",
-    descZh: "有点温柔的球。能回复捉到的宝可梦的ＨＰ并治愈异常状态。",
+    descZh: "有点温柔的球。能回复捉到的宝可梦的HP并治愈异常状态。",
     effectzh: "捕获后宝可梦的HP与异常状态完全回复。"
   },
   "quick-ball": {
@@ -2357,8 +2357,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Guard Spec.",
     category: "战斗道具",
     icon: "./items/guard-spec.png",
-    descZh: "在战斗中，５回合内不让我方能力降低的道具。",
-    effectzh: "５回合内防止我方能力被降低。"
+    descZh: "在战斗中，5回合内不让我方能力降低的道具。",
+    effectzh: "5回合内防止我方能力被降低。"
   },
   "dire-hit": {
     nameZh: "要害攻击",
@@ -2366,8 +2366,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Dire Hit",
     category: "战斗道具",
     icon: "./items/dire-hit.png",
-    descZh: "击中要害的几率会大幅提高。只能使用１次。离场后，效果便会消失。",
-    effectzh: "战斗中使用１次，会心率提升２级（离场后失效）。"
+    descZh: "击中要害的几率会大幅提高。只能使用1次。离场后，效果便会消失。",
+    effectzh: "战斗中使用1次，会心率提升2级（离场后失效）。"
   },
   "x-attack": {
     nameZh: "力量强化",
@@ -2376,7 +2376,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "战斗道具",
     icon: "./items/x-attack.png",
     descZh: "大幅提高战斗中宝可梦攻击的道具。离场后，效果便会消失。",
-    effectzh: "战斗中使用１次，攻击提升２级（离场后失效）。"
+    effectzh: "战斗中使用1次，攻击提升2级（离场后失效）。"
   },
   "x-defense": {
     nameZh: "防御强化",
@@ -2385,7 +2385,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "战斗道具",
     icon: "./items/x-defense.png",
     descZh: "大幅提高战斗中宝可梦防御的道具。离场后，效果便会消失。",
-    effectzh: "战斗中使用１次，防御提升２级（离场后失效）。"
+    effectzh: "战斗中使用1次，防御提升2级（离场后失效）。"
   },
   "x-sp-atk": {
     nameZh: "特攻强化",
@@ -2394,7 +2394,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "战斗道具",
     icon: "./items/x-sp-atk.png",
     descZh: "大幅提高战斗中宝可梦特攻的道具。离场后，效果便会消失。",
-    effectzh: "战斗中使用１次，特攻提升２级（离场后失效）。"
+    effectzh: "战斗中使用1次，特攻提升2级（离场后失效）。"
   },
   "x-sp-def": {
     nameZh: "特防强化",
@@ -2403,7 +2403,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "战斗道具",
     icon: "./items/x-sp-def.png",
     descZh: "大幅提高战斗中宝可梦特防的道具。离场后，效果便会消失。",
-    effectzh: "战斗中使用１次，特防提升２级（离场后失效）。"
+    effectzh: "战斗中使用1次，特防提升2级（离场后失效）。"
   },
   "x-speed": {
     nameZh: "速度强化",
@@ -2412,7 +2412,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "战斗道具",
     icon: "./items/x-speed.png",
     descZh: "大幅提高战斗中宝可梦速度的道具。离场后，效果便会消失。",
-    effectzh: "战斗中使用１次，速度提升２级（离场后失效）。"
+    effectzh: "战斗中使用1次，速度提升2级（离场后失效）。"
   },
   "x-accuracy": {
     nameZh: "命中强化",
@@ -2421,7 +2421,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "战斗道具",
     icon: "./items/x-accuracy.png",
     descZh: "大幅提高战斗中宝可梦命中的道具。离场后，效果便会消失。",
-    effectzh: "战斗中使用１次，命中率提升２级（离场后失效）。"
+    effectzh: "战斗中使用1次，命中率提升2级（离场后失效）。"
   },
   "poke-doll": {
     nameZh: "皮皮玩偶",
@@ -2510,8 +2510,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Twice-Spiced Radish",
     category: "战斗道具",
     icon: "./items/twice-spiced-radish.png",
-    descZh: "可让宝可梦获得加倍效果的腌菜。使用后宝可梦的招式造成的伤害会暂时变成１.５倍。",
-    effectzh: "可让宝可梦获得加倍效果的腌菜。使用后宝可梦的招式造成的伤害会暂时变成１.５倍。"
+    descZh: "可让宝可梦获得加倍效果的腌菜。使用后宝可梦的招式造成的伤害会暂时变成1.5倍。",
+    effectzh: "可让宝可梦获得加倍效果的腌菜。使用后宝可梦的招式造成的伤害会暂时变成1.5倍。"
   },
   "swap-snack": {
     nameZh: "颠倒烧",
@@ -2528,8 +2528,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Potion",
     category: "回复道具",
     icon: "./items/potion.png",
-    descZh: "喷雾式伤药。能让１只宝可梦回复２０ＨＰ。",
-    effectzh: "回复２０点ＨＰ。"
+    descZh: "喷雾式伤药。能让1只宝可梦回复20HP。",
+    effectzh: "回复20点HP。"
   },
   "super-potion": {
     nameZh: "好伤药",
@@ -2537,8 +2537,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Super Potion",
     category: "回复道具",
     icon: "./items/super-potion.png",
-    descZh: "喷雾式伤药。能让１只宝可梦回复６０ＨＰ。",
-    effectzh: "回复６０点ＨＰ。"
+    descZh: "喷雾式伤药。能让1只宝可梦回复60HP。",
+    effectzh: "回复60点HP。"
   },
   "hyper-potion": {
     nameZh: "厉害伤药",
@@ -2546,8 +2546,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Hyper Potion",
     category: "回复道具",
     icon: "./items/hyper-potion.png",
-    descZh: "喷雾式伤药。能让１只宝可梦回复１２０ＨＰ。",
-    effectzh: "回复２００点ＨＰ。"
+    descZh: "喷雾式伤药。能让1只宝可梦回复120HP。",
+    effectzh: "回复200点HP。"
   },
   "max-potion": {
     nameZh: "全满药",
@@ -2555,8 +2555,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Max Potion",
     category: "回复道具",
     icon: "./items/max-potion.png",
-    descZh: "喷雾式伤药。能让１只宝可梦回复所有ＨＰ。",
-    effectzh: "回复全部ＨＰ。"
+    descZh: "喷雾式伤药。能让1只宝可梦回复所有HP。",
+    effectzh: "回复全部HP。"
   },
   "full-restore": {
     nameZh: "全复药",
@@ -2564,8 +2564,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Full Restore",
     category: "回复道具",
     icon: "./items/full-restore.png",
-    descZh: "能回复１只宝可梦的所有ＨＰ并治愈所有异常状态。",
-    effectzh: "回复全部ＨＰ并治愈所有异常状态。"
+    descZh: "能回复1只宝可梦的所有HP并治愈所有异常状态。",
+    effectzh: "回复全部HP并治愈所有异常状态。"
   },
   "antidote": {
     nameZh: "解毒药",
@@ -2573,7 +2573,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Antidote",
     category: "回复道具",
     icon: "./items/antidote.png",
-    descZh: "喷雾式药水。能治愈１只宝可梦的中毒状态。",
+    descZh: "喷雾式药水。能治愈1只宝可梦的中毒状态。",
     effectzh: "治愈中毒。"
   },
   "burn-heal": {
@@ -2582,7 +2582,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Burn Heal",
     category: "回复道具",
     icon: "./items/burn-heal.png",
-    descZh: "喷雾式药水。能治愈１只宝可梦的灼伤状态。",
+    descZh: "喷雾式药水。能治愈1只宝可梦的灼伤状态。",
     effectzh: "治愈灼伤。"
   },
   "ice-heal": {
@@ -2591,7 +2591,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Ice Heal",
     category: "回复道具",
     icon: "./items/ice-heal.png",
-    descZh: "喷雾式药水。能治愈１只宝可梦的冰冻状态。",
+    descZh: "喷雾式药水。能治愈1只宝可梦的冰冻状态。",
     effectzh: "治愈冰冻。"
   },
   "awakening": {
@@ -2600,7 +2600,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Awakening",
     category: "回复道具",
     icon: "./items/awakening.png",
-    descZh: "喷雾式药水。能治愈１只宝可梦的睡眠状态。",
+    descZh: "喷雾式药水。能治愈1只宝可梦的睡眠状态。",
     effectzh: "治愈睡眠。"
   },
   "paralyze-heal": {
@@ -2609,8 +2609,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Paralyze Heal",
     category: "回复道具",
     icon: "./items/paralyze-heal.png",
-    descZh: "喷雾式药水。能治愈１只宝可梦的麻痹状态。",
-    effectzh: "喷雾式药水。能治愈１只宝可梦的麻痹状态。"
+    descZh: "喷雾式药水。能治愈1只宝可梦的麻痹状态。",
+    effectzh: "喷雾式药水。能治愈1只宝可梦的麻痹状态。"
   },
   "full-heal": {
     nameZh: "万灵药",
@@ -2618,7 +2618,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Full Heal",
     category: "回复道具",
     icon: "./items/full-heal.png",
-    descZh: "喷雾式药水。能治愈１只宝可梦的所有异常状态。",
+    descZh: "喷雾式药水。能治愈1只宝可梦的所有异常状态。",
     effectzh: "治愈所有异常状态。"
   },
   "revive": {
@@ -2627,8 +2627,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Revive",
     category: "回复道具",
     icon: "./items/revive.png",
-    descZh: "能让１只陷入濒死的宝可梦重获生机，并回复一半ＨＰ。",
-    effectzh: "复活并回复一半ＨＰ。"
+    descZh: "能让1只陷入濒死的宝可梦重获生机，并回复一半HP。",
+    effectzh: "复活并回复一半HP。"
   },
   "max-revive": {
     nameZh: "活力块",
@@ -2636,8 +2636,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Max Revive",
     category: "回复道具",
     icon: "./items/max-revive.png",
-    descZh: "能让１只陷入濒死的宝可梦重获生机，并回复所有ＨＰ。",
-    effectzh: "复活并回复全部ＨＰ。"
+    descZh: "能让1只陷入濒死的宝可梦重获生机，并回复所有HP。",
+    effectzh: "复活并回复全部HP。"
   },
   "fresh-water": {
     nameZh: "美味之水",
@@ -2645,8 +2645,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Fresh Water",
     category: "回复道具",
     icon: "./items/fresh-water.png",
-    descZh: "富含矿物质的水。能让１只宝可梦回复３０ＨＰ。",
-    effectzh: "回复５０点ＨＰ。"
+    descZh: "富含矿物质的水。能让1只宝可梦回复30HP。",
+    effectzh: "回复50点HP。"
   },
   "soda-pop": {
     nameZh: "劲爽汽水",
@@ -2654,8 +2654,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Soda Pop",
     category: "回复道具",
     icon: "./items/soda-pop.png",
-    descZh: "翻腾着气泡的汽水。能让１只宝可梦回复５０ＨＰ。",
-    effectzh: "回复６０点ＨＰ。"
+    descZh: "翻腾着气泡的汽水。能让1只宝可梦回复50HP。",
+    effectzh: "回复60点HP。"
   },
   "lemonade": {
     nameZh: "果汁牛奶",
@@ -2663,8 +2663,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Lemonade",
     category: "回复道具",
     icon: "./items/lemonade.png",
-    descZh: "非常香甜的牛奶。能让１只宝可梦回复７０ＨＰ。",
-    effectzh: "回复８０点ＨＰ。"
+    descZh: "非常香甜的牛奶。能让1只宝可梦回复70HP。",
+    effectzh: "回复80点HP。"
   },
   "moomoo-milk": {
     nameZh: "哞哞鲜奶",
@@ -2672,8 +2672,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Moomoo Milk",
     category: "回复道具",
     icon: "./items/moomoo-milk.png",
-    descZh: "营养百分百的牛奶。能让１只宝可梦回复１００ＨＰ。",
-    effectzh: "营养百分百的牛奶。能让１只宝可梦回复１００ＨＰ。"
+    descZh: "营养百分百的牛奶。能让1只宝可梦回复100HP。",
+    effectzh: "营养百分百的牛奶。能让1只宝可梦回复100HP。"
   },
   "energy-powder": {
     nameZh: "元气粉",
@@ -2681,8 +2681,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Energy Powder",
     category: "回复道具",
     icon: "./items/energy-powder.png",
-    descZh: "非常苦的药粉。能让１只宝可梦回复６０ＨＰ。",
-    effectzh: "回复６０点ＨＰ（但亲密度下降）。"
+    descZh: "非常苦的药粉。能让1只宝可梦回复60HP。",
+    effectzh: "回复60点HP（但亲密度下降）。"
   },
   "energy-root": {
     nameZh: "元气根",
@@ -2690,8 +2690,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Energy Root",
     category: "回复道具",
     icon: "./items/energy-root.png",
-    descZh: "非常苦的根。能让１只宝可梦回复１２０ＨＰ。",
-    effectzh: "回复１２０点ＨＰ（但亲密度大幅下降）。"
+    descZh: "非常苦的根。能让1只宝可梦回复120HP。",
+    effectzh: "回复120点HP（但亲密度大幅下降）。"
   },
   "heal-powder": {
     nameZh: "万能粉",
@@ -2699,7 +2699,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Heal Powder",
     category: "回复道具",
     icon: "./items/heal-powder.png",
-    descZh: "非常苦的药粉。能治愈１只宝可梦的所有异常状态。",
+    descZh: "非常苦的药粉。能治愈1只宝可梦的所有异常状态。",
     effectzh: "治愈所有异常状态（但亲密度下降）。"
   },
   "revival-herb": {
@@ -2708,44 +2708,44 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Revival Herb",
     category: "回复道具",
     icon: "./items/revival-herb.png",
-    descZh: "非常苦的药草。能让１只濒死的宝可梦回复所有ＨＰ。",
-    effectzh: "复活并使ＨＰ回复一半（但亲密度大幅下降）。"
+    descZh: "非常苦的药草。能让1只濒死的宝可梦回复所有HP。",
+    effectzh: "复活并使HP回复一半（但亲密度大幅下降）。"
   },
   "ether": {
-    nameZh: "ＰＰ单项小补剂",
+    nameZh: "PP单项小补剂",
     nameJa: "ピーピーエイド",
     nameEn: "Ether",
     category: "回复道具",
     icon: "./items/ether.png",
-    descZh: "能让宝可梦学会的其中１个招式回复１０ＰＰ。",
-    effectzh: "能让宝可梦学会的其中１个招式回复１０ＰＰ。"
+    descZh: "能让宝可梦学会的其中1个招式回复10PP。",
+    effectzh: "能让宝可梦学会的其中1个招式回复10PP。"
   },
   "max-ether": {
-    nameZh: "ＰＰ单项全补剂",
+    nameZh: "PP单项全补剂",
     nameJa: "ピーピーリカバー",
     nameEn: "Max Ether",
     category: "回复道具",
     icon: "./items/max-ether.png",
-    descZh: "能让宝可梦学会的其中１个招式回复所有ＰＰ。",
-    effectzh: "能让宝可梦学会的其中１个招式回复所有ＰＰ。"
+    descZh: "能让宝可梦学会的其中1个招式回复所有PP。",
+    effectzh: "能让宝可梦学会的其中1个招式回复所有PP。"
   },
   "elixir": {
-    nameZh: "ＰＰ多项小补剂",
+    nameZh: "PP多项小补剂",
     nameJa: "ピーピーエイダー",
     nameEn: "Elixir",
     category: "回复道具",
     icon: "./items/elixir.png",
-    descZh: "能让宝可梦学会的４个招式各回复１０ＰＰ。",
-    effectzh: "能让宝可梦学会的４个招式各回复１０ＰＰ。"
+    descZh: "能让宝可梦学会的4个招式各回复10PP。",
+    effectzh: "能让宝可梦学会的4个招式各回复10PP。"
   },
   "max-elixir": {
-    nameZh: "ＰＰ多项全补剂",
+    nameZh: "PP多项全补剂",
     nameJa: "ピーピーマックス",
     nameEn: "Max Elixir",
     category: "回复道具",
     icon: "./items/max-elixir.png",
-    descZh: "能让宝可梦学会的４个招式回复所有ＰＰ。",
-    effectzh: "能让宝可梦学会的４个招式回复所有ＰＰ。"
+    descZh: "能让宝可梦学会的4个招式回复所有PP。",
+    effectzh: "能让宝可梦学会的4个招式回复所有PP。"
   },
   "rage-candy-bar": {
     nameZh: "愤怒馒头",
@@ -2753,8 +2753,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Rage Candy Bar",
     category: "回复道具",
     icon: "./items/rage-candy-bar.png",
-    descZh: "卡吉镇特产的馒头。能治愈１只宝可梦的所有异常状态。",
-    effectzh: "卡吉镇特产的馒头。能治愈１只宝可梦的所有异常状态。"
+    descZh: "卡吉镇特产的馒头。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "卡吉镇特产的馒头。能治愈1只宝可梦的所有异常状态。"
   },
   "lava-cookie": {
     nameZh: "釜炎仙贝",
@@ -2762,8 +2762,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Lava Cookie",
     category: "回复道具",
     icon: "./items/lava-cookie.png",
-    descZh: "釜炎特产的仙贝。能治愈１只宝可梦的所有异常状态。",
-    effectzh: "回复８０点ＨＰ。"
+    descZh: "釜炎特产的仙贝。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "回复80点HP。"
   },
   "old-gateau": {
     nameZh: "森之羊羹",
@@ -2771,7 +2771,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Old Gateau",
     category: "回复道具",
     icon: "./items/old-gateau.png",
-    descZh: "百代不为人知的特产。能治愈１只宝可梦的所有异常状态。",
+    descZh: "百代不为人知的特产。能治愈1只宝可梦的所有异常状态。",
     effectzh: "治愈所有异常状态。"
   },
   "casteliacone": {
@@ -2780,8 +2780,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Casteliacone",
     category: "回复道具",
     icon: "./items/casteliacone.png",
-    descZh: "飞云市特产的冰淇淋。能治愈１只宝可梦的所有异常状态。",
-    effectzh: "回复８０点ＨＰ。"
+    descZh: "飞云市特产的冰淇淋。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "回复80点HP。"
   },
   "lumiose-galette": {
     nameZh: "密阿雷格雷派饼",
@@ -2789,8 +2789,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Lumiose Galette",
     category: "回复道具",
     icon: "./items/lumiose-galette.png",
-    descZh: "在密阿雷市很受欢迎的点心。能治愈１只宝可梦的所有异常状态。",
-    effectzh: "在密阿雷市很受欢迎的点心。能治愈１只宝可梦的所有异常状态。"
+    descZh: "在密阿雷市很受欢迎的点心。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "在密阿雷市很受欢迎的点心。能治愈1只宝可梦的所有异常状态。"
   },
   "shalour-sable": {
     nameZh: "娑罗沙布蕾",
@@ -2798,8 +2798,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Shalour Sable",
     category: "回复道具",
     icon: "./items/shalour-sable.png",
-    descZh: "娑罗市特产的沙布蕾。能治愈１只宝可梦的所有异常状态。",
-    effectzh: "回复６０点ＨＰ。"
+    descZh: "娑罗市特产的沙布蕾。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "回复60点HP。"
   },
   "big-malasada": {
     nameZh: "大马拉萨达",
@@ -2807,8 +2807,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Big Malasada",
     category: "回复道具",
     icon: "./items/big-malasada.png",
-    descZh: "阿罗拉特产的油炸面包。能治愈１只宝可梦的所有异常状态。",
-    effectzh: "阿罗拉特产的油炸面包。能治愈１只宝可梦的所有异常状态。"
+    descZh: "阿罗拉特产的油炸面包。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "阿罗拉特产的油炸面包。能治愈1只宝可梦的所有异常状态。"
   },
   "pewter-crunchies": {
     nameZh: "深灰米果",
@@ -2816,8 +2816,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Pewter Crunchies",
     category: "回复道具",
     icon: "./items/pewter-crunchies.png",
-    descZh: "深灰特产的糕点。能治愈１只宝可梦的所有异常状态。",
-    effectzh: "深灰特产的糕点。能治愈１只宝可梦的所有异常状态。"
+    descZh: "深灰特产的糕点。能治愈1只宝可梦的所有异常状态。",
+    effectzh: "深灰特产的糕点。能治愈1只宝可梦的所有异常状态。"
   },
   "jubilife-muffin": {
     nameZh: "祝庆玛芬",
@@ -2834,8 +2834,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Berry Juice",
     category: "回复道具",
     icon: "./items/berry-juice.png",
-    descZh: "１００％树果果汁。能让１只宝可梦回复２０ＨＰ。",
-    effectzh: "ＨＰ低于１／２时自动回复２０点ＨＰ（仅一次）。"
+    descZh: "100%树果果汁。能让1只宝可梦回复20HP。",
+    effectzh: "HP低于1／2时自动回复20点HP（仅一次）。"
   },
   "sweet-heart": {
     nameZh: "心形甜点",
@@ -2843,8 +2843,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Sweet Heart",
     category: "回复道具",
     icon: "./items/sweet-heart.png",
-    descZh: "非常甜腻的巧克力。能让１只宝可梦回复２０ＨＰ。",
-    effectzh: "回复２０点ＨＰ。"
+    descZh: "非常甜腻的巧克力。能让1只宝可梦回复20HP。",
+    effectzh: "回复20点HP。"
   },
   "sacred-ash": {
     nameZh: "圣灰",
@@ -2852,8 +2852,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Sacred Ash",
     category: "回复道具",
     icon: "./items/sacred-ash.png",
-    descZh: "能让陷入濒死的全部宝可梦回复所有ＨＰ。",
-    effectzh: "使我方全部失去战斗能力的宝可梦复活并回复全部ＨＰ。"
+    descZh: "能让陷入濒死的全部宝可梦回复所有HP。",
+    effectzh: "使我方全部失去战斗能力的宝可梦复活并回复全部HP。"
   },
   "max-honey": {
     nameZh: "极巨甜蜜",
@@ -2870,8 +2870,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Remedy",
     category: "回复道具",
     icon: "./items/remedy.png",
-    descZh: "效果和伤药一样，能让１只宝可梦回复６０ＨＰ，但味道很苦，友好度会降低。",
-    effectzh: "效果和伤药一样，能让１只宝可梦回复６０ＨＰ，但味道很苦，友好度会降低。"
+    descZh: "效果和伤药一样，能让1只宝可梦回复60HP，但味道很苦，友好度会降低。",
+    effectzh: "效果和伤药一样，能让1只宝可梦回复60HP，但味道很苦，友好度会降低。"
   },
   "fine-remedy": {
     nameZh: "好中药",
@@ -2879,8 +2879,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Fine Remedy",
     category: "回复道具",
     icon: "./items/fine-remedy.png",
-    descZh: "效果和好伤药一样，能让１只宝可梦回复１００ＨＰ，但味道很苦，友好度会降低。",
-    effectzh: "效果和好伤药一样，能让１只宝可梦回复１００ＨＰ，但味道很苦，友好度会降低。"
+    descZh: "效果和好伤药一样，能让1只宝可梦回复100HP，但味道很苦，友好度会降低。",
+    effectzh: "效果和好伤药一样，能让1只宝可梦回复100HP，但味道很苦，友好度会降低。"
   },
   "superb-remedy": {
     nameZh: "厉害中药",
@@ -2888,8 +2888,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Superb Remedy",
     category: "回复道具",
     icon: "./items/superb-remedy.png",
-    descZh: "效果和厉害伤药一样，能让１只宝可梦回复１５０ＨＰ，但味道很苦，友好度会降低。",
-    effectzh: "效果和厉害伤药一样，能让１只宝可梦回复１５０ＨＰ，但味道很苦，友好度会降低。"
+    descZh: "效果和厉害伤药一样，能让1只宝可梦回复150HP，但味道很苦，友好度会降低。",
+    effectzh: "效果和厉害伤药一样，能让1只宝可梦回复150HP，但味道很苦，友好度会降低。"
   },
   "venusaurite": {
     nameZh: "妙蛙花进化石",
@@ -4229,8 +4229,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Leppa Berry",
     category: "树果",
     icon: "./items/leppa-berry.png",
-    descZh: "让宝可梦携带后，可以回复１０ＰＰ。",
-    effectzh: "ＰＰ归零时自动回复１０点ＰＰ并消耗。"
+    descZh: "让宝可梦携带后，可以回复10PP。",
+    effectzh: "PP归零时自动回复10点PP并消耗。"
   },
   "oran-berry": {
     nameZh: "橙橙果",
@@ -4238,8 +4238,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Oran Berry",
     category: "树果",
     icon: "./items/oran-berry.png",
-    descZh: "让宝可梦携带后，可以回复１０ＨＰ。",
-    effectzh: "ＨＰ低于１／２时自动回复１０点ＨＰ并消耗。"
+    descZh: "让宝可梦携带后，可以回复10HP。",
+    effectzh: "HP低于1／2时自动回复10点HP并消耗。"
   },
   "persim-berry": {
     nameZh: "柿仔果",
@@ -4265,8 +4265,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Sitrus Berry",
     category: "树果",
     icon: "./items/sitrus-berry.png",
-    descZh: "让宝可梦携带后，可以回复少量ＨＰ。",
-    effectzh: "ＨＰ低于１／２时自动回复最大ＨＰ的１／４并消耗。"
+    descZh: "让宝可梦携带后，可以回复少量HP。",
+    effectzh: "HP低于1／2时自动回复最大HP的1／4并消耗。"
   },
   "figy-berry": {
     nameZh: "勿花果",
@@ -4274,8 +4274,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Figy Berry",
     category: "树果",
     icon: "./items/figy-berry.png",
-    descZh: "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
-    effectzh: "ＨＰ低于１／２时回复最大ＨＰ的１／３；若讨厌其口味则陷入混乱。"
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
   },
   "wiki-berry": {
     nameZh: "异奇果",
@@ -4283,8 +4283,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Wiki Berry",
     category: "树果",
     icon: "./items/wiki-berry.png",
-    descZh: "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
-    effectzh: "ＨＰ低于１／２时回复最大ＨＰ的１／３；若讨厌其口味则陷入混乱。"
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
   },
   "mago-berry": {
     nameZh: "芒芒果",
@@ -4292,8 +4292,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Mago Berry",
     category: "树果",
     icon: "./items/mago-berry.png",
-    descZh: "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
-    effectzh: "ＨＰ低于１／２时回复最大ＨＰ的１／３；若讨厌其口味则陷入混乱。"
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
   },
   "aguav-berry": {
     nameZh: "乐芭果",
@@ -4301,8 +4301,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Aguav Berry",
     category: "树果",
     icon: "./items/aguav-berry.png",
-    descZh: "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
-    effectzh: "ＨＰ低于１／２时回复最大ＨＰ的１／３；若讨厌其口味则陷入混乱。"
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
   },
   "iapapa-berry": {
     nameZh: "芭亚果",
@@ -4310,8 +4310,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Iapapa Berry",
     category: "树果",
     icon: "./items/iapapa-berry.png",
-    descZh: "让宝可梦携带后，危机时可以回复ＨＰ。如果讨厌这味道就会混乱。",
-    effectzh: "ＨＰ低于１／２时回复最大ＨＰ的１／３；若讨厌其口味则陷入混乱。"
+    descZh: "让宝可梦携带后，危机时可以回复HP。如果讨厌这味道就会混乱。",
+    effectzh: "HP低于1／2时回复最大HP的1／3；若讨厌其口味则陷入混乱。"
   },
   "razz-berry": {
     nameZh: "蔓莓果",
@@ -4418,8 +4418,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Pomeg Berry",
     category: "树果",
     icon: "./items/pomeg-berry.png",
-    descZh: "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但ＨＰ的基础点数会降低。",
-    effectzh: "提升亲密度，但ＨＰ基础点数减少。"
+    descZh: "如果把它交给宝可梦，宝可梦就会变得非常容易和训练家亲密，但HP的基础点数会降低。",
+    effectzh: "提升亲密度，但HP基础点数减少。"
   },
   "kelpsy-berry": {
     nameZh: "藻根果",
@@ -4707,7 +4707,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/liechi-berry.png",
     descZh: "让宝可梦携带后，危机时，自己的攻击就会提高。",
-    effectzh: "ＨＰ≤１／４时攻击提升２级并消耗。"
+    effectzh: "HP≤1／4时攻击提升2级并消耗。"
   },
   "ganlon-berry": {
     nameZh: "龙睛果",
@@ -4716,7 +4716,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/ganlon-berry.png",
     descZh: "让宝可梦携带后，危机时，自己的防御就会提高。",
-    effectzh: "ＨＰ≤１／４时防御提升２级并消耗。"
+    effectzh: "HP≤1／4时防御提升2级并消耗。"
   },
   "salac-berry": {
     nameZh: "沙鳞果",
@@ -4725,7 +4725,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/salac-berry.png",
     descZh: "让宝可梦携带后，危机时，自己的速度就会提高。",
-    effectzh: "ＨＰ≤１／４时速度提升２级并消耗。"
+    effectzh: "HP≤1／4时速度提升2级并消耗。"
   },
   "petaya-berry": {
     nameZh: "龙火果",
@@ -4734,7 +4734,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/petaya-berry.png",
     descZh: "让宝可梦携带后，危机时，自己的特攻就会提高。",
-    effectzh: "ＨＰ≤１／４时特攻提升２级并消耗。"
+    effectzh: "HP≤1／4时特攻提升2级并消耗。"
   },
   "apicot-berry": {
     nameZh: "杏仔果",
@@ -4743,7 +4743,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/apicot-berry.png",
     descZh: "让宝可梦携带后，危机时，自己的特防就会提高。",
-    effectzh: "ＨＰ≤１／４时特防提升２级并消耗。"
+    effectzh: "HP≤1／4时特防提升2级并消耗。"
   },
   "lansat-berry": {
     nameZh: "兰萨果",
@@ -4752,7 +4752,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/lansat-berry.png",
     descZh: "让宝可梦携带后，危机时，攻击会变得容易击中要害。",
-    effectzh: "ＨＰ≤１／４时会心率提升２级并消耗。"
+    effectzh: "HP≤1／4时会心率提升2级并消耗。"
   },
   "starf-berry": {
     nameZh: "星桃果",
@@ -4761,7 +4761,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/starf-berry.png",
     descZh: "让宝可梦携带后，危机时，某一项能力就会大幅提高。",
-    effectzh: "ＨＰ≤１／４时随机一项能力提升２级并消耗。"
+    effectzh: "HP≤1／4时随机一项能力提升2级并消耗。"
   },
   "enigma-berry": {
     nameZh: "谜芝果",
@@ -4769,7 +4769,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Enigma Berry",
     category: "树果",
     icon: "./items/enigma-berry.png",
-    descZh: "让宝可梦携带后，在受到效果绝佳的招式攻击时，可以回复ＨＰ。",
+    descZh: "让宝可梦携带后，在受到效果绝佳的招式攻击时，可以回复HP。",
     effectzh: "受到效果绝佳伤害时随机获得一种效果。"
   },
   "pumkin-berry": {
@@ -4886,8 +4886,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Micle Berry",
     category: "树果",
     icon: "./items/micle-berry.png",
-    descZh: "让宝可梦携带后，危机时，招式的命中率仅会提高１次。",
-    effectzh: "ＨＰ≤１／４时下一只招式命中率提升（不会Miss）并消耗。"
+    descZh: "让宝可梦携带后，危机时，招式的命中率仅会提高1次。",
+    effectzh: "HP≤1／4时下一只招式命中率提升（不会Miss）并消耗。"
   },
   "custap-berry": {
     nameZh: "释陀果",
@@ -4895,8 +4895,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Custap Berry",
     category: "树果",
     icon: "./items/custap-berry.png",
-    descZh: "让宝可梦携带后，危机时，行动仅会变快１次。",
-    effectzh: "ＨＰ≤１／４时必定先制行动并消耗。"
+    descZh: "让宝可梦携带后，危机时，行动仅会变快1次。",
+    effectzh: "HP≤1／4时必定先制行动并消耗。"
   },
   "jaboca-berry": {
     nameZh: "嘉珍果",
@@ -4932,7 +4932,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/kee-berry.png",
     descZh: "让宝可梦携带后，在受到物理招式攻击时，自己的防御就会提高。",
-    effectzh: "受到物理招式攻击时防御提升１级并消耗。"
+    effectzh: "受到物理招式攻击时防御提升1级并消耗。"
   },
   "maranga-berry": {
     nameZh: "香罗果",
@@ -4941,7 +4941,7 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     category: "树果",
     icon: "./items/maranga-berry.png",
     descZh: "让宝可梦携带后，在受到特殊招式攻击时，自己的特防就会提高。",
-    effectzh: "受到特殊招式攻击时特防提升１级并消耗。"
+    effectzh: "受到特殊招式攻击时特防提升1级并消耗。"
   },
   "hopo-berry": {
     nameZh: "花啤果",
@@ -4949,8 +4949,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Hopo Berry",
     category: "树果",
     icon: "./items/hopo-berry.png",
-    descZh: "让宝可梦吃下后，可以回复ＰＰ。野生的宝可梦吃下后，对周围的反应会变得迟钝。",
-    effectzh: "吃下后可回复１０点ＰＰ。"
+    descZh: "让宝可梦吃下后，可以回复PP。野生的宝可梦吃下后，对周围的反应会变得迟钝。",
+    effectzh: "吃下后可回复10点PP。"
   },
   "roto-hatch": {
     nameZh: "孵蛋碰碰",
@@ -4976,8 +4976,8 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     nameEn: "Roto Prize Money",
     category: "洛托姆之力",
     icon: "./items/roto-prize-money.png",
-    descZh: "洛托姆之力的一种，对战后能得到的零花钱会变成３倍。",
-    effectzh: "洛托姆之力的一种，对战后能得到的零花钱会变成３倍。"
+    descZh: "洛托姆之力的一种，对战后能得到的零花钱会变成3倍。",
+    effectzh: "洛托姆之力的一种，对战后能得到的零花钱会变成3倍。"
   },
   "roto-exp-points": {
     nameZh: "经验碰碰",
@@ -5016,22 +5016,22 @@ export const ITEM_DB: Record<string, ItemInfo> = {
     effectzh: "洛托姆之力的一种，一定时间内，会变得完全不会遇到野生宝可梦。"
   },
   "roto-hp-restore": {
-    nameZh: "ＨＰ回复碰碰",
-    nameJa: "ＨＰかいふくポン",
+    nameZh: "HP回复碰碰",
+    nameJa: "HPかいふくポン",
     nameEn: "Roto HP Restore",
     category: "洛托姆之力",
     icon: "./items/roto-hp-restore.png",
-    descZh: "洛托姆之力的一种，正在战斗的我方宝可梦的ＨＰ会全部回复。",
-    effectzh: "洛托姆之力的一种，正在战斗的我方宝可梦的ＨＰ会全部回复。"
+    descZh: "洛托姆之力的一种，正在战斗的我方宝可梦的HP会全部回复。",
+    effectzh: "洛托姆之力的一种，正在战斗的我方宝可梦的HP会全部回复。"
   },
   "roto-pp-restore": {
-    nameZh: "ＰＰ回复碰碰",
-    nameJa: "ＰＰかいふくポン",
+    nameZh: "PP回复碰碰",
+    nameJa: "PPかいふくポン",
     nameEn: "Roto PP Restore",
     category: "洛托姆之力",
     icon: "./items/roto-pp-restore.png",
-    descZh: "洛托姆之力的一种，正在战斗的我方宝可梦的ＰＰ会全部回复。",
-    effectzh: "洛托姆之力的一种，正在战斗的我方宝可梦的ＰＰ会全部回复。"
+    descZh: "洛托姆之力的一种，正在战斗的我方宝可梦的PP会全部回复。",
+    effectzh: "洛托姆之力的一种，正在战斗的我方宝可梦的PP会全部回复。"
   },
   "roto-boost": {
     nameZh: "加油碰碰",
