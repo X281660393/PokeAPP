@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import { Capacitor } from '@capacitor/core'
+import { App as CapApp } from '@capacitor/app'
 import router from './router'
 import App from './App.vue'
 
@@ -57,3 +59,18 @@ app.use(Sticky)
 app.use(Loading)
 
 app.mount('#app')
+
+// ===== Android 硬件返回键 / 侧滑返回手势处理 =====
+// Capacitor 默认行为是 webView.goBack()，但在 hash 路由 + 部分国产 ROM 下不可靠。
+// 这里显式监听 backButton 事件，用 Vue Router 控制返回逻辑：
+//   - 有浏览历史（非根页面）→ router.back() 回退一页
+//   - 无浏览历史（已在根页面）→ exitApp() 退出应用
+if (Capacitor.isNativePlatform()) {
+  CapApp.addListener('backButton', ({ canGoBack }) => {
+    if (canGoBack) {
+      window.history.back()
+    } else {
+      CapApp.exitApp()
+    }
+  })
+}
